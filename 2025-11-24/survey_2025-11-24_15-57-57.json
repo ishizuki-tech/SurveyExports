@@ -1,0 +1,40 @@
+{
+  "answers": {
+    "Start": {
+      "question": "Start",
+      "answer": ""
+    },
+    "Q1": {
+      "question": "Is 10% an average loss over the last 3 seasons?",
+      "answer": "yes"
+    },
+    "Q2": {
+      "question": "Failed to add query chunk: %s, %sYou are a well-known farmer survey expert. Read the Question and the Answer. OUTPUT FORMAT: - In English. - Keys: • \"analysis\": short string • \"expected answer\": short string • \"follow-up question\": a single short confirm/validate question (NOT an array) • \"score\": integer 1–100 FOLLOW-UP INTENT: - The follow-up must confirm or clarify the respondent's original answer to the SAME question. - It must target the biggest uncertainty: missing unit/scale, missing number, time window, baseline, or method used. - Keep it single-scope (no multi-part), concrete, and answerable immediately. - Do not introduce new topics or additional objectives. LENGTH LIMITS: - analysis<=60 chars; follow-up<=120; expected answer<=120. Scoring rule: Judge ONLY content relevance/completeness/accuracy. Do NOT penalize style or formatting. STRICT OUTPUT (NO MARKDOWN): - RAW JSON only, ONE LINE. - Use COMPACT JSON (no spaces around ':' and ','). - No extra text. <start_of_turn>user Task: - Note weaknesses (e.g., vague trade-off, no units, no rationale). - Provide a strong expected answer: willingness-to-accept yield loss to harvest 10 days earlier (% or bags/acre) with a one-clause reason (rain risk/price). - Ask exactly 1 follow-up question to CONFIRM/VALIDATE the same answer (single short sentence). Prefer clarifying the unit/amount or rationale boundary (max acceptable loss). - Score 1–100 (integer). Question: If you could harvest 10 days earlier, how much yield would you be willing to give up?",
+      "answer": "10%"
+    },
+    "Q3": {
+      "question": "What level of pest or disease damage would make you stop using your current maize variety and switch to a new variety? (Give a clear threshold, e.g., % plants/ears damaged or severity.)",
+      "answer": ""
+    },
+    "Q4": {
+      "question": "What would you expect from a new maize variety to replace the one you currently grow? Please be as detailed as possible (e.g., DTM, FAW tolerance, drought stage tolerance, typical yield).",
+      "answer": ""
+    },
+    "Q5": {
+      "question": "In a bad year, what is the smallest harvest you would accept and still plant this maize again next season? (Percent of usual harvest or bags per acre.)",
+      "answer": ""
+    },
+    "Q6": {
+      "question": "When in the season is drought most devastating for your crop? What is the most difficult drought moment? (e.g., pre-tassel, tasseling/silking, grain fill, pre-harvest.)",
+      "answer": ""
+    }
+  },
+  "followups": {
+    "Q1": [
+      { "question": "Is 10% an average loss over the last 3 seasons?", "answer": "yes" }
+    ],
+    "Q2": [
+      { "question": "Failed to add query chunk: %s, %sYou are a well-known farmer survey expert. Read the Question and the Answer. OUTPUT FORMAT: - In English. - Keys: • \"analysis\": short string • \"expected answer\": short string • \"follow-up question\": a single short confirm/validate question (NOT an array) • \"score\": integer 1–100 FOLLOW-UP INTENT: - The follow-up must confirm or clarify the respondent's original answer to the SAME question. - It must target the biggest uncertainty: missing unit/scale, missing number, time window, baseline, or method used. - Keep it single-scope (no multi-part), concrete, and answerable immediately. - Do not introduce new topics or additional objectives. LENGTH LIMITS: - analysis<=60 chars; follow-up<=120; expected answer<=120. Scoring rule: Judge ONLY content relevance/completeness/accuracy. Do NOT penalize style or formatting. STRICT OUTPUT (NO MARKDOWN): - RAW JSON only, ONE LINE. - Use COMPACT JSON (no spaces around ':' and ','). - No extra text. <start_of_turn>user Task: - Note weaknesses (e.g., vague trade-off, no units, no rationale). - Provide a strong expected answer: willingness-to-accept yield loss to harvest 10 days earlier (% or bags/acre) with a one-clause reason (rain risk/price). - Ask exactly 1 follow-up question to CONFIRM/VALIDATE the same answer (single short sentence). Prefer clarifying the unit/amount or rationale boundary (max acceptable loss). - Score 1–100 (integer). Question: If you could harvest 10 days earlier, how much yield would you be willing to give up?", "answer": "" }
+    ]
+  }
+}
