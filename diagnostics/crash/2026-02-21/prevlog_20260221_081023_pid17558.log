@@ -1,0 +1,71 @@
+=== Previous Session Logcat ===
+captured_time_utc=20260221_081023
+captured_time_local=20260221_001023
+marker=2026-02-20 23:45:40.279
+preferred_prev_pid=-1
+note=best-effort; buffers may be overwritten before next start
+sdk=36
+device=Google Pixel 9a
+appId=com.negi.survey
+versionName=0.0.1
+versionCode=1
+
+=== Logcat (since marker) ===
+--------- beginning of main
+02-21 00:09:06.027 16589 16595 I com.negi.survey: Background concurrent mark compact GC freed 24MB AllocSpace bytes, 0(0B) LOS objects, 80% free, 5776KB/29MB, paused 2.388ms,3.560ms total 168.656ms
+02-21 00:10:23.195 17558 17558 I libc    : SetHeapTaggingLevel: tag level set to 0
+02-21 00:10:23.204 17558 17558 I Zygote  : Process 17558 created for com.negi.survey
+02-21 00:10:23.205 17558 17558 I com.negi.survey: Using CollectorTypeCMC GC.
+02-21 00:10:23.216 17558 17558 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+02-21 00:10:23.265 17558 17558 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+02-21 00:10:23.265 17558 17558 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+02-21 00:10:23.280 17558 17558 D nativeloader: Configuring clns-9 for other apk /data/app/~~0v_Z8t8n9MN_cPpAJyoo9Q==/com.negi.survey-HY5a6JFOh2yfW4m3UdQfEA==/base.apk. target_sdk_version=36, uses_libraries=libOpenCL.so:libOpenCL-pixel.so, library_path=/data/app/~~0v_Z8t8n9MN_cPpAJyoo9Q==/com.negi.survey-HY5a6JFOh2yfW4m3UdQfEA==/lib/arm64:/data/app/~~0v_Z8t8n9MN_cPpAJyoo9Q==/com.negi.survey-HY5a6JFOh2yfW4m3UdQfEA==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.negi.survey
+02-21 00:10:23.288 17558 17558 V GraphicsEnvironment: Currently set values for:
+02-21 00:10:23.288 17558 17558 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[com.android.angle, com.google.android.apps.tachyon]
+02-21 00:10:23.288 17558 17558 V GraphicsEnvironment:   angle_gl_driver_selection_values=[angle, native]
+02-21 00:10:23.288 17558 17558 V GraphicsEnvironment: com.negi.survey is not listed in per-application setting
+02-21 00:10:23.288 17558 17558 V GraphicsEnvironment: ANGLE allowlist from config: 
+02-21 00:10:23.288 17558 17558 V GraphicsEnvironment: No special selections for ANGLE, returning default driver choice
+02-21 00:10:23.288 17558 17558 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+02-21 00:10:23.304 17558 17558 D AppRingLogStore: installed: dir=/data/user/0/com.negi.survey/files/diagnostics/applog_ring idx=0
+02-21 00:10:23.304 17558 17573 D RuntimeLogStore: openWriter: start -> /data/user/0/com.negi.survey/files/diagnostics/runtime_logs/rtlog_20260221_081023_302_pid17558_seq1.log (bytes=0 format=LEGACY)
+02-21 00:10:23.305 17558 17558 D CrashCapture: install: ensured default handler. where=SurveyApp:attachBaseContext pid=17558 default=com.negi.survey.CrashCapture$CrashHandler@9e57f47
+02-21 00:10:23.305 17558 17573 D RuntimeLogStore: retention: start files=2 kept=2 totalBytes=23118
+02-21 00:10:23.326 17558 17558 D WM-PackageManagerHelper: Skipping component enablement for androidx.work.impl.background.systemjob.SystemJobService
+02-21 00:10:23.326 17558 17558 D WM-Schedulers: Created SystemJobScheduler and enabled SystemJobService
+02-21 00:10:23.327 17558 17575 D WM-ForceStopRunnable: Is default app process = true
+02-21 00:10:23.328 17558 17575 D WM-ForceStopRunnable: Performing cleanup operations.
+02-21 00:10:23.347 17558 17575 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+02-21 00:10:23.358 17558 17575 D WM-SystemJobScheduler: Reconciling jobs
+02-21 00:10:23.377 17558 17575 D WM-ForceStopRunnable: Application was force-stopped, rescheduling.
+02-21 00:10:23.395 17558 17558 D github_upload: choosePolicy: uniqueName=upload_runtime_logs_startup policy=REPLACE states=[SUCCEEDED]
+02-21 00:10:23.395 17558 17558 D github_upload: enqueueStartupRuntimeLogsUpload: uniqueName=upload_runtime_logs_startup policy=REPLACE
+02-21 00:10:23.397 17558 17558 D CrashCapture: install: ensured default handler. where=SurveyApp:onCreate(rewrap) pid=17558 default=com.negi.survey.CrashCapture$CrashHandler@9e57f47
+02-21 00:10:23.397 17558 17558 D CrashCapture: registerSelfHealing: ActivityLifecycleCallbacks registered. mode=onResumedOnly
+02-21 00:10:23.399 17558 17580 D CrashCapture: enqueuePendingCrashUploadsIfPossible enter where=SurveyApp:enqueuePending(immediate):bg pid=17558 thread=CrashCapture-Enqueue
+--------- beginning of system
+02-21 00:10:23.412 17558 17584 I DisplayManager: Choreographer implicitly registered for the refresh rate.
+02-21 00:10:23.412 17558 17558 D DesktopExperienceFlags: Toggle override initialized to: false
+02-21 00:10:23.413 17558 17582 D UploadRescheduleRcvr: No GitHub pending files for action=android.intent.action.BOOT_COMPLETED
+02-21 00:10:23.415 17558 17584 D vulkan  : searching for layers in '/data/app/~~0v_Z8t8n9MN_cPpAJyoo9Q==/com.negi.survey-HY5a6JFOh2yfW4m3UdQfEA==/lib/arm64'
+02-21 00:10:23.416 17558 17584 D vulkan  : searching for layers in '/data/app/~~0v_Z8t8n9MN_cPpAJyoo9Q==/com.negi.survey-HY5a6JFOh2yfW4m3UdQfEA==/base.apk!/lib/arm64-v8a'
+02-21 00:10:23.419 17558 17558 D CrashCapture: install: ensured default handler. where=install(legacy) pid=17558 default=com.negi.survey.CrashCapture$CrashHandler@9e57f47
+02-21 00:10:23.422 17558 17589 D CrashCapture: enqueuePendingCrashUploadsIfPossible skipped (already running). where=enqueue(legacy):bg
+02-21 00:10:23.426 17558 17558 D CompatChangeReporter: Compat change id reported: 377864165; UID 14738; state: ENABLED
+02-21 00:10:23.426 17558 17558 D DesktopModeFlags: Toggle override initialized to: OVERRIDE_UNSET
+02-21 00:10:23.434 17558 17558 I ContentCaptureHelper: Setting logging level to OFF
+02-21 00:10:23.436 17558 17558 D CrashCapture: install: ensured default handler. where=selfHeal:onActivityResumed pid=17558 default=com.negi.survey.CrashCapture$CrashHandler@9e57f47
+02-21 00:10:23.454 17558 17579 D WM-SystemJobScheduler: Scheduling work ID 662187dd-6e41-4c5c-a199-938869b5bd17Job ID 252
+02-21 00:10:23.462 17558 17579 D WM-GreedyScheduler: Starting tracking for 662187dd-6e41-4c5c-a199-938869b5bd17
+02-21 00:10:23.466 17558 17582 D github_upload: choosePolicy: uniqueName=upload_runtime_logs_startup policy=KEEP states=[ENQUEUED]
+02-21 00:10:23.466 17558 17582 D github_upload: enqueueStartupRuntimeLogsUpload: uniqueName=upload_runtime_logs_startup policy=KEEP
+02-21 00:10:23.466 17558 17582 D UploadRescheduleRcvr: Enqueued runtime logs upload for action=android.intent.action.BOOT_COMPLETED reason=receiver_boot_completed
+02-21 00:10:23.481 17558 17558 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@7507fa9
+02-21 00:10:23.489 17558 17578 D WM-PackageManagerHelper: androidx.work.impl.background.systemalarm.RescheduleReceiver enabled
+02-21 00:10:23.501 17558 17578 D WM-ConstraintTracker: NetworkStateTracker24: initial state = NetworkState(isConnected=true, isValidated=true, isMetered=false, isNotRoaming=true, isBlocked=false)
+02-21 00:10:23.501 17558 17578 D WM-NetworkStateTracker: Registering network callback
+02-21 00:10:23.505 17558 17578 D WM-GreedyScheduler: Constraints met: Scheduling work ID WorkGenerationalId(workSpecId=662187dd-6e41-4c5c-a199-938869b5bd17, generation=0)
+02-21 00:10:23.507 17558 17578 D WM-Processor: Processor: processing WorkGenerationalId(workSpecId=662187dd-6e41-4c5c-a199-938869b5bd17, generation=0)
+02-21 00:10:23.508 17558 17558 E VibratorInfo: Invalid frequency profile received from HAL. resonantFrequencyHz=NaN, frequenciesHz=null, outputAccelerationsGs=null
+02-21 00:10:23.517 17558 17603 D WM-NetworkStateTracker: Network capabilities changed: [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=13861Kbps LinkDnBandwidth>=101944Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /192.168.1.27, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 11ac, RSSI: -39, Link speed: 866Mbps, Tx Link speed: 866Mbps, Max Supported Tx Link speed: 866Mbps, Rx Link speed: 866Mbps, Max Supported Rx Link speed: 866Mbps, Frequency: 5805MHz, Net ID: -1, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -39 UnderlyingNetworks: Null]
+02-21 00:10:23.517 17558 17603 D WM-NetworkStateTracker: Network blocked status changed: false
