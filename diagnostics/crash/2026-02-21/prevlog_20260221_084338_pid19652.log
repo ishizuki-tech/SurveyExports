@@ -1,0 +1,250 @@
+=== Previous Session Logcat ===
+captured_time_utc=20260221_084338
+captured_time_local=20260221_004338
+marker=2026-02-21 00:36:28.614
+preferred_prev_pid=-1
+note=best-effort; buffers may be overwritten before next start
+sdk=36
+device=Google Pixel 9a
+appId=com.negi.survey
+versionName=0.0.1
+versionCode=1
+
+=== Logcat (since marker) ===
+--------- beginning of system
+02-21 00:36:28.813 18948 18948 D InsetsController: hide(ime())
+02-21 00:36:29.423 18948 18948 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey, tag=null, id=9903], rate limit (5.0) exceeded: input 7.295479, output would be 5.112432
+02-21 00:36:30.425 18948 18948 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey, tag=null, id=8048], rate limit (5.0) exceeded: input 240.83293, output would be 5.2339964
+02-21 00:36:31.441 18948 18948 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey, tag=null, id=3751], rate limit (5.0) exceeded: input 117.829575, output would be 6.138762
+02-21 00:36:33.701 18948 18948 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey, tag=null, id=9419], rate limit (5.0) exceeded: input 8.793668, output would be 5.0124946
+02-21 00:36:34.703 18948 18948 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey, tag=null, id=10638], rate limit (5.0) exceeded: input 130.37723, output would be 5.521086
+02-21 00:36:35.703 18948 18948 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey, tag=null, id=4288], rate limit (5.0) exceeded: input 12.432397, output would be 5.5986333
+02-21 00:36:38.558 18948 18948 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey, tag=null, id=9419], rate limit (5.0) exceeded: input 9.029029, output would be 5.6098304
+02-21 00:41:02.312 18948 18948 D InsetsController: show(ime())
+02-21 00:41:02.314 18948 18948 D InsetsController: Setting requestedVisibleTypes to 511 (was 503)
+02-21 00:41:02.387 18948 18948 D InsetsController: show(ime())
+02-21 00:41:10.261 18948 18948 D InsetsController: hide(ime())
+--------- beginning of main
+02-21 00:41:10.262 18948 18948 I ImeTracker: com.negi.survey:27d9347: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT_BY_INSETS_API fromUser false
+02-21 00:41:10.262 18948 18948 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): androidx.navigationevent.OnBackInvokedInput$createOnBackAnimationCallback$1@a660ab6
+02-21 00:41:10.262 18948 18948 D InsetsController: Setting requestedVisibleTypes to 503 (was 511)
+02-21 00:41:10.266 18948 18948 D VRI[MainActivity]: WindowInsets changed: ime:null 
+02-21 00:41:10.324 18948 18948 I ImeTracker: system_server:5181f5ee: onCancelled at PHASE_CLIENT_ON_CONTROLS_CHANGED
+02-21 00:41:10.387 18948 19027 I native  : I0000 00:00:1771663270.385701   19027 session_basic.cc:312] RunPrefillAsync: 
+02-21 00:41:10.387 18948 19027 I native  : I0000 00:00:1771663270.387742   19027 session_basic.cc:314] <start_of_turn>user
+02-21 00:41:10.387 18948 19027 I native  : You are a well-known farmer survey expert. Read the Question and the Answer.
+02-21 00:41:10.387 18948 19027 I native  : OUTPUT FORMAT:
+02-21 00:41:10.387 18948 19027 I native  : - In English.
+02-21 00:41:10.387 18948 19027 I native  : - Keys exactly:
+02-21 00:41:10.387 18948 19027 I native  :   • "analysis": short string
+02-21 00:41:10.387 18948 19027 I native  :   • "expected_answer": short string
+02-21 00:41:10.387 18948 19027 I native  :   • "followup_question": a single short confirm/validate question (NOT an array; may be empty string)
+02-21 00:41:10.387 18948 19027 I native  :   • "score": integer 1–100
+02-21 00:41:10.387 18948 19027 I native  : 
+02-21 00:41:10.387 18948 19027 I native  : FOLLOW-UP INTENT:
+02-21 00:41:10.387 18948 19027 I native  : - The follow-up must confirm or clarify the respondent's original answer to the SAME question.
+02-21 00:41:10.387 18948 19027 I native  : - Target the biggest uncertainty: missing unit/scale, missing number, time window, baseline, or method used.
+02-21 00:41:10.387 18948 19027 I native  : - Keep it single-scope (no multi-part), concrete, and answerable immediately.
+02-21 00:41:10.387 18948 19027 I native  : - Do not introduce new topics or additional objectives.
+02-21 00:41:10.387 18948 19027 I native  : LENGTH LIMITS:
+02-21 00:41:10.387 18948 19027 I native  : - analysis<=60 chars
+02-21 00:41:10.387 18948 19027 I native  : - expected_answer<=120 chars
+02-21 00:41:10.387 18948 19027 I native  : - followup_question<=120 chars
+02-21 00:41:10.387 18948 19027 I native  : Scoring rule: Judge ONLY content relevance/completeness/accuracy. Do NOT penalize style or formatting.
+02-21 00:41:10.387 18948 19027 I native  : STRICT OUTPUT (NO MARKDOWN):
+02-21 00:41:10.387 18948 19027 I native  : - RAW JSON only, ONE LINE.
+02-21 00:41:10.387 18948 19027 I native  : - Use COMPACT JSON (no spaces around ':' and ',').
+02-21 00:41:10.387 18948 19027 I native  : - No extra text.
+02-21 00:41:10.387 18948 19027 I native  : Respond with an empty JSON object: {}
+02-21 00:41:10.387 18948 19027 I native  : INPUT:
+02-21 00:41:10.387 18948 19027 I native  : Task:
+02-21 00:41:10.387 18948 19027 I native  : - Note weaknesses (unclear units, missing seasons, baseline ambiguity).
+02-21 00:41:10.387 18948 19027 I native  : - Provide ONE strong expected_answer: avg FAW loss over last 3 seasons (% or bags/acre).
+02-21 00:41:10.387 18948 19027 I native  : - Ask exactly 1 followup_question to confirm the SAME answer (or empty string if not needed).
+02-21 00:41:10.387 18948 19027 I native  : - Score 1–100.
+02-21 00:41:10.387 18948 19027 I native  : 
+02-21 00:41:10.387 18948 19027 I native  : Question: How much yield do you lose because of fall armyworm? Please think back over the last 3 seasons. (Percent or bags per acre are fine.)
+02-21 00:41:10.387 18948 19027 I native  : Answer: who<end_of_turn>
+02-21 00:41:10.387 18948 19027 I native  : <start_of_turn>model
+02-21 00:41:10.395 18948 18948 I ImeTracker: system_server:86bcb1c: onCancelled at PHASE_CLIENT_ON_CONTROLS_CHANGED
+02-21 00:41:10.431 18948 19027 I native  : I0000 00:00:1771663270.430956   19027 threadpool.cc:86] ThreadPool 'engine': Created a worker thread since all 0 worker threads are (supposed to be) busy.
+02-21 00:41:12.798 18948 19406 I native  : I0000 00:00:1771663272.797947   19406 session_basic.cc:350] RunPrefillAsync status: OK
+02-21 00:41:12.798 18948 19406 I native  : I0000 00:00:1771663272.798110   19406 session_basic.cc:470] RunDecodeAsync
+02-21 00:41:13.236 18948 19406 W native  : W0000 00:00:1771663273.235443   19406 sampler_factory.cc:335] OpenCL sampler not available, falling back to statically linked C API: UNAVAILABLE: ERROR: [third_party/odml/litert_lm/runtime/components/sampler_factory.cc:255]
+02-21 00:41:13.236 18948 19406 W native  : └ Could not load shared library libLiteRtTopKOpenClSampler.so: dlopen failed: library "libLiteRtTopKOpenClSampler.so" not found.
+02-21 00:41:13.236 18948 19406 W native  : === Source Location Trace: ===
+02-21 00:41:13.236 18948 19406 W native  : third_party/odml/litert/litert/cc/litert_macros.cc:109
+02-21 00:41:13.236 18948 19406 I native  : I0000 00:00:1771663273.236091   19406 sampler_factory.cc:342] Statically linked LiteRtTopKOpenClSampler C API.
+02-21 00:41:16.141 18948 18953 I com.negi.survey: Background young concurrent mark compact GC freed 23MB AllocSpace bytes, 0(0B) LOS objects, 74% free, 7928KB/30MB, paused 2.777ms,3.283ms total 145.259ms
+02-21 00:41:24.378 18948 19073 I native  : I0000 00:00:1771663284.377975   19073 model_data_processor_factory.cc:266] Creating Gemma3DataProcessor
+02-21 00:41:31.037 18948 18953 I com.negi.survey: Background concurrent mark compact GC freed 22MB AllocSpace bytes, 104(2080KB) LOS objects, 80% free, 5909KB/29MB, paused 1.833ms,5.870ms total 131.636ms
+02-21 00:41:47.593 18948 18948 D InsetsController: show(ime())
+02-21 00:41:47.593 18948 18948 I ImeTracker: com.negi.survey:73bbe70d: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT_BY_INSETS_API fromUser false
+02-21 00:41:47.593 18948 18948 D InsetsController: Setting requestedVisibleTypes to 511 (was 503)
+02-21 00:41:47.606 18948 18948 I ImeTracker: com.negi.survey:23eaa3af: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+02-21 00:41:47.606 18948 18948 D InsetsController: show(ime())
+02-21 00:41:47.606 18948 18948 I ImeTracker: com.negi.survey:23eaa3af: onCancelled at PHASE_CLIENT_REPORT_REQUESTED_VISIBLE_TYPES
+02-21 00:41:47.767 18948 18948 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.view.ImeBackAnimationController@fb63ae9
+02-21 00:41:47.810 18948 18948 D VRI[MainActivity]: WindowInsets changed: ime:[0,0,0,1043] 
+02-21 00:41:48.127 18948 18948 I ImeTracker: com.negi.survey:73bbe70d: onShown
+02-21 00:41:51.115 18948 18948 D WhisperSpeechController: updateContext: surveyId=610b826a-81e3-44c5-8006-30dedff5d5ae, questionId=Start
+02-21 00:41:51.115 18948 18948 D WhisperSpeechController: updateContext: surveyId=610b826a-81e3-44c5-8006-30dedff5d5ae, questionId=Start
+02-21 00:41:51.158 18948 18948 D InsetsController: show(ime())
+02-21 00:41:51.158 18948 18948 I ImeTracker: com.negi.survey:fadc7aa0: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT_BY_INSETS_API fromUser false
+02-21 00:41:51.158 18948 18948 I ImeTracker: com.negi.survey:fadc7aa0: onCancelled at PHASE_CLIENT_APPLY_ANIMATION
+02-21 00:41:51.170 18948 18948 I ImeTracker: com.negi.survey:90fb47e: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+02-21 00:41:51.171 18948 18948 D InsetsController: show(ime())
+02-21 00:41:51.171 18948 18948 I ImeTracker: com.negi.survey:90fb47e: onCancelled at PHASE_CLIENT_APPLY_ANIMATION
+02-21 00:41:51.839 18948 18948 D InsetsController: hide(ime())
+02-21 00:41:51.839 18948 18948 I ImeTracker: com.negi.survey:dacc520: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT_BY_INSETS_API fromUser false
+02-21 00:41:51.839 18948 18948 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@38b2730
+02-21 00:41:51.839 18948 18948 D InsetsController: Setting requestedVisibleTypes to 503 (was 511)
+02-21 00:41:51.840 18948 18948 D VRI[MainActivity]: WindowInsets changed: ime:null 
+02-21 00:41:51.874 18948 18948 I ImeTracker: system_server:96d957d0: onCancelled at PHASE_CLIENT_ON_CONTROLS_CHANGED
+02-21 00:41:51.915 18948 18948 I ImeTracker: system_server:efe22378: onCancelled at PHASE_CLIENT_ON_CONTROLS_CHANGED
+02-21 00:41:55.068 18948 18948 D MainActivity: Home -> Start survey. session=survey_config10.yaml@1
+02-21 00:41:55.078 18948 18948 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): androidx.navigationevent.OnBackInvokedInput$createOnBackAnimationCallback$1@a660ab6
+02-21 00:41:55.080 18948 18948 D WhisperSpeechController: updateContext: surveyId=7365c8fc-54cb-4508-a5d5-c749959d9956, questionId=Q1
+02-21 00:41:55.106 18948 18948 D WhisperSpeechController: updateContext: surveyId=7365c8fc-54cb-4508-a5d5-c749959d9956, questionId=Q1
+02-21 00:41:55.150 18948 18948 D InsetsController: show(ime())
+02-21 00:41:55.150 18948 18948 I ImeTracker: com.negi.survey:9fb773b2: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT_BY_INSETS_API fromUser false
+02-21 00:41:55.150 18948 18948 D InsetsController: Setting requestedVisibleTypes to 511 (was 503)
+02-21 00:41:55.159 18948 18948 I AssistStructure: Flattened final assist data: 516 bytes, containing 1 windows, 3 views
+02-21 00:41:55.161 18948 18948 I ImeTracker: com.negi.survey:bf2084c9: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+02-21 00:41:55.161 18948 18948 D InsetsController: show(ime())
+02-21 00:41:55.161 18948 18948 I ImeTracker: com.negi.survey:bf2084c9: onCancelled at PHASE_CLIENT_REPORT_REQUESTED_VISIBLE_TYPES
+02-21 00:41:55.198 18948 18948 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.view.ImeBackAnimationController@fb63ae9
+02-21 00:41:55.243 18948 18948 D VRI[MainActivity]: WindowInsets changed: ime:[0,0,0,1043] 
+02-21 00:41:55.561 18948 18948 I ImeTracker: com.negi.survey:9fb773b2: onShown
+02-21 00:41:55.610 18948 18948 D Autofill Status: Autofill popup isn't shown because autofill is not available.
+02-21 00:41:55.610 18948 18948 D Autofill Status: 
+02-21 00:41:55.610 18948 18948 D Autofill Status: Did you set up autofill?
+02-21 00:41:55.610 18948 18948 D Autofill Status: 1. Go to Settings > System > Languages&input > Advanced > Autofill Service
+02-21 00:41:55.610 18948 18948 D Autofill Status: 2. Pick a service
+02-21 00:41:55.610 18948 18948 D Autofill Status: 
+02-21 00:41:55.610 18948 18948 D Autofill Status: Did you add an account?
+02-21 00:41:55.610 18948 18948 D Autofill Status: 1. Go to Settings > System > Languages&input > Advanced
+02-21 00:41:55.610 18948 18948 D Autofill Status: 2. Click on the settings icon next to the Autofill Service
+02-21 00:41:55.610 18948 18948 D Autofill Status: 3. Add your account
+02-21 00:41:58.935 18948 18948 D InsetsController: hide(ime())
+02-21 00:41:58.935 18948 18948 I ImeTracker: com.negi.survey:22a4434d: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT_BY_INSETS_API fromUser false
+02-21 00:41:58.936 18948 18948 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): androidx.navigationevent.OnBackInvokedInput$createOnBackAnimationCallback$1@a660ab6
+02-21 00:41:58.936 18948 18948 D InsetsController: Setting requestedVisibleTypes to 503 (was 511)
+02-21 00:41:58.937 18948 18948 D VRI[MainActivity]: WindowInsets changed: ime:null 
+02-21 00:41:58.950 18948 19027 I native  : I0000 00:00:1771663318.950518   19027 session_basic.cc:312] RunPrefillAsync: 
+02-21 00:41:58.951 18948 19027 I native  : I0000 00:00:1771663318.950816   19027 session_basic.cc:314] <start_of_turn>user
+02-21 00:41:58.951 18948 19027 I native  : You are a well-known farmer survey expert. Read the Question and the Answer.
+02-21 00:41:58.951 18948 19027 I native  : OUTPUT FORMAT:
+02-21 00:41:58.951 18948 19027 I native  : - In English.
+02-21 00:41:58.951 18948 19027 I native  : - Keys exactly:
+02-21 00:41:58.951 18948 19027 I native  :   • "analysis": short string
+02-21 00:41:58.951 18948 19027 I native  :   • "expected_answer": short string
+02-21 00:41:58.951 18948 19027 I native  :   • "followup_question": a single short confirm/validate question (NOT an array; may be empty string)
+02-21 00:41:58.951 18948 19027 I native  :   • "score": integer 1–100
+02-21 00:41:58.951 18948 19027 I native  : 
+02-21 00:41:58.951 18948 19027 I native  : FOLLOW-UP INTENT:
+02-21 00:41:58.951 18948 19027 I native  : - The follow-up must confirm or clarify the respondent's original answer to the SAME question.
+02-21 00:41:58.951 18948 19027 I native  : - Target the biggest uncertainty: missing unit/scale, missing number, time window, baseline, or method used.
+02-21 00:41:58.951 18948 19027 I native  : - Keep it single-scope (no multi-part), concrete, and answerable immediately.
+02-21 00:41:58.951 18948 19027 I native  : - Do not introduce new topics or additional objectives.
+02-21 00:41:58.951 18948 19027 I native  : LENGTH LIMITS:
+02-21 00:41:58.951 18948 19027 I native  : - analysis<=60 chars
+02-21 00:41:58.951 18948 19027 I native  : - expected_answer<=120 chars
+02-21 00:41:58.951 18948 19027 I native  : - followup_question<=120 chars
+02-21 00:41:58.951 18948 19027 I native  : Scoring rule: Judge ONLY content relevance/completeness/accuracy. Do NOT penalize style or formatting.
+02-21 00:41:58.951 18948 19027 I native  : STRICT OUTPUT (NO MARKDOWN):
+02-21 00:41:58.951 18948 19027 I native  : - RAW JSON only, ONE LINE.
+02-21 00:41:58.951 18948 19027 I native  : - Use COMPACT JSON (no spaces around ':' and ',').
+02-21 00:41:58.951 18948 19027 I native  : - No extra text.
+02-21 00:41:58.951 18948 19027 I native  : Respond with an empty JSON object: {}
+02-21 00:41:58.951 18948 19027 I native  : INPUT:
+02-21 00:41:58.951 18948 19027 I native  : Task:
+02-21 00:41:58.951 18948 19027 I native  : - Note weaknesses (unclear units, missing seasons, baseline ambiguity).
+02-21 00:41:58.951 18948 19027 I native  : - Provide ONE strong expected_answer: avg FAW loss over last 3 seasons (% or bags/acre).
+02-21 00:41:58.951 18948 19027 I native  : - Ask exactly 1 followup_question to confirm the SAME answer (or empty string if not needed).
+02-21 00:41:58.951 18948 19027 I native  : - Score 1–100.
+02-21 00:41:58.951 18948 19027 I native  : 
+02-21 00:41:58.951 18948 19027 I native  : Question: How much yield do you lose because of fall armyworm? Please think back over the last 3 seasons. (Percent or bags per acre are fine.)
+02-21 00:41:58.951 18948 19027 I native  : Answer: dfasdf<end_of_turn>
+02-21 00:41:58.951 18948 19027 I native  : <start_of_turn>model
+02-21 00:41:58.990 18948 18948 I ImeTracker: system_server:81371c4c: onCancelled at PHASE_CLIENT_ON_CONTROLS_CHANGED
+02-21 00:41:59.087 18948 18948 I ImeTracker: system_server:44e6de84: onCancelled at PHASE_CLIENT_ON_CONTROLS_CHANGED
+02-21 00:42:00.371 18948 19406 I native  : I0000 00:00:1771663320.371929   19406 session_basic.cc:350] RunPrefillAsync status: OK
+02-21 00:42:00.375 18948 19406 I native  : I0000 00:00:1771663320.372020   19406 session_basic.cc:470] RunDecodeAsync
+02-21 00:42:12.952 18948 19027 I native  : I0000 00:00:1771663332.952577   19027 model_data_processor_factory.cc:266] Creating Gemma3DataProcessor
+02-21 00:42:19.826 18948 18953 I com.negi.survey: Background young concurrent mark compact GC freed 23MB AllocSpace bytes, 0(0B) LOS objects, 80% free, 5957KB/29MB, paused 2.218ms,3.744ms total 123.622ms
+02-21 00:42:37.760 18948 18953 I com.negi.survey: Background concurrent mark compact GC freed 23MB AllocSpace bytes, 20(400KB) LOS objects, 81% free, 5525KB/29MB, paused 2.785ms,4.191ms total 212.181ms
+02-21 00:42:50.433 18948 18948 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@38b2730
+02-21 00:42:50.449 18948 18948 D WhisperSpeechController: updateContext: surveyId=7365c8fc-54cb-4508-a5d5-c749959d9956, questionId=Start
+02-21 00:42:50.449 18948 18948 D WhisperSpeechController: updateContext: surveyId=7365c8fc-54cb-4508-a5d5-c749959d9956, questionId=Start
+02-21 00:42:50.511 18948 18948 D InsetsController: show(ime())
+02-21 00:42:50.511 18948 18948 I ImeTracker: com.negi.survey:b39cafa: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT_BY_INSETS_API fromUser false
+02-21 00:42:50.511 18948 18948 D InsetsController: Setting requestedVisibleTypes to 511 (was 503)
+02-21 00:42:50.550 18948 18948 I ImeTracker: com.negi.survey:8486455c: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+02-21 00:42:50.550 18948 18952 W com.negi.survey: Missing inline cache for void androidx.navigation3.ui.NavDisplayKt__NavDisplayKt.NavDisplay(androidx.navigation3.scene.SceneState, androidx.navigationevent.compose.NavigationEventState, androidx.compose.ui.Modifier, androidx.compose.ui.Alignment, androidx.compose.animation.SizeTransform, kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function2, androidx.compose.runtime.Composer, int, int)
+02-21 00:42:50.550 18948 18952 W com.negi.survey: Missing inline cache for void androidx.navigation3.ui.NavDisplayKt__NavDisplayKt.NavDisplay(androidx.navigation3.scene.SceneState, androidx.navigationevent.compose.NavigationEventState, androidx.compose.ui.Modifier, androidx.compose.ui.Alignment, androidx.compose.animation.SizeTransform, kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function2, androidx.compose.runtime.Composer, int, int)
+02-21 00:42:50.550 18948 18948 D InsetsController: show(ime())
+02-21 00:42:50.550 18948 18948 I ImeTracker: com.negi.survey:8486455c: onCancelled at PHASE_CLIENT_REPORT_REQUESTED_VISIBLE_TYPES
+02-21 00:42:50.638 18948 18948 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.view.ImeBackAnimationController@fb63ae9
+02-21 00:42:50.685 18948 18948 D VRI[MainActivity]: WindowInsets changed: ime:[0,0,0,1043] 
+02-21 00:42:51.035 18948 18948 I ImeTracker: com.negi.survey:b39cafa: onShown
+02-21 00:42:51.189 18948 18948 D InsetsController: hide(ime())
+02-21 00:42:51.189 18948 18948 I ImeTracker: com.negi.survey:5dc28c7: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT_BY_INSETS_API fromUser false
+02-21 00:42:51.189 18948 18948 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@38b2730
+02-21 00:42:51.190 18948 18948 D InsetsController: Setting requestedVisibleTypes to 503 (was 511)
+02-21 00:42:51.190 18948 18948 D VRI[MainActivity]: WindowInsets changed: ime:null 
+02-21 00:42:51.253 18948 18948 I ImeTracker: system_server:c1be04be: onCancelled at PHASE_CLIENT_ON_CONTROLS_CHANGED
+02-21 00:42:51.358 18948 18948 I ImeTracker: system_server:7e67203d: onCancelled at PHASE_CLIENT_ON_CONTROLS_CHANGED
+02-21 00:43:38.157 19652 19652 I libc    : SetHeapTaggingLevel: tag level set to 0
+02-21 00:43:38.161 19652 19652 I Zygote  : Process 19652 created for com.negi.survey
+02-21 00:43:38.162 19652 19652 I com.negi.survey: Using CollectorTypeCMC GC.
+02-21 00:43:38.170 19652 19652 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+02-21 00:43:38.190 19652 19652 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+02-21 00:43:38.190 19652 19652 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+02-21 00:43:38.243 19652 19652 D nativeloader: Configuring clns-9 for other apk /data/app/~~oTlMwi2Hna70ErgoON50Rw==/com.negi.survey-qmTwop5urpma1_Fq1MG1HQ==/base.apk. target_sdk_version=36, uses_libraries=libOpenCL.so:libOpenCL-pixel.so, library_path=/data/app/~~oTlMwi2Hna70ErgoON50Rw==/com.negi.survey-qmTwop5urpma1_Fq1MG1HQ==/lib/arm64:/data/app/~~oTlMwi2Hna70ErgoON50Rw==/com.negi.survey-qmTwop5urpma1_Fq1MG1HQ==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.negi.survey
+02-21 00:43:38.252 19652 19652 V GraphicsEnvironment: Currently set values for:
+02-21 00:43:38.252 19652 19652 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[com.android.angle, com.google.android.apps.tachyon]
+02-21 00:43:38.252 19652 19652 V GraphicsEnvironment:   angle_gl_driver_selection_values=[angle, native]
+02-21 00:43:38.253 19652 19652 V GraphicsEnvironment: com.negi.survey is not listed in per-application setting
+02-21 00:43:38.253 19652 19652 V GraphicsEnvironment: ANGLE allowlist from config: 
+02-21 00:43:38.253 19652 19652 V GraphicsEnvironment: No special selections for ANGLE, returning default driver choice
+02-21 00:43:38.253 19652 19652 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+02-21 00:43:38.260 19652 19667 D RuntimeLogStore: openWriter: start -> /data/user/0/com.negi.survey/files/diagnostics/runtime_logs/rtlog_20260221_084338_259_pid19652_seq1.log (bytes=0 format=LEGACY)
+02-21 00:43:38.262 19652 19667 D RuntimeLogStore: retention: start files=2 kept=2 totalBytes=22983
+02-21 00:43:38.263 19652 19652 D AppRingLogStore: installed: dir=/data/user/0/com.negi.survey/files/diagnostics/applog_ring idx=0
+02-21 00:43:38.264 19652 19652 D CrashCapture: install: ensured default handler. where=SurveyApp:attachBaseContext pid=19652 default=com.negi.survey.CrashCapture$CrashHandler@9e57f47
+02-21 00:43:38.273 19652 19652 D WM-PackageManagerHelper: Skipping component enablement for androidx.work.impl.background.systemjob.SystemJobService
+02-21 00:43:38.273 19652 19652 D WM-Schedulers: Created SystemJobScheduler and enabled SystemJobService
+02-21 00:43:38.274 19652 19669 D WM-ForceStopRunnable: Is default app process = true
+02-21 00:43:38.274 19652 19669 D WM-ForceStopRunnable: Performing cleanup operations.
+02-21 00:43:38.287 19652 19669 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+02-21 00:43:38.309 19652 19669 D WM-SystemJobScheduler: Reconciling jobs
+02-21 00:43:38.316 19652 19669 D WM-ForceStopRunnable: Application was force-stopped, rescheduling.
+02-21 00:43:38.323 19652 19652 D github_upload: choosePolicy: uniqueName=upload_runtime_logs_startup policy=REPLACE states=[SUCCEEDED]
+02-21 00:43:38.323 19652 19652 D github_upload: enqueueStartupRuntimeLogsUpload: uniqueName=upload_runtime_logs_startup policy=REPLACE
+02-21 00:43:38.324 19652 19652 D CrashCapture: install: ensured default handler. where=SurveyApp:onCreate(rewrap) pid=19652 default=com.negi.survey.CrashCapture$CrashHandler@9e57f47
+02-21 00:43:38.324 19652 19652 D CrashCapture: registerSelfHealing: ActivityLifecycleCallbacks registered. mode=onResumedOnly
+02-21 00:43:38.324 19652 19674 D CrashCapture: enqueuePendingCrashUploadsIfPossible enter where=SurveyApp:enqueuePending(immediate):bg pid=19652 thread=CrashCapture-Enqueue
+02-21 00:43:38.338 19652 19677 I DisplayManager: Choreographer implicitly registered for the refresh rate.
+02-21 00:43:38.342 19652 19652 D DesktopExperienceFlags: Toggle override initialized to: false
+02-21 00:43:38.343 19652 19677 D vulkan  : searching for layers in '/data/app/~~oTlMwi2Hna70ErgoON50Rw==/com.negi.survey-qmTwop5urpma1_Fq1MG1HQ==/lib/arm64'
+02-21 00:43:38.343 19652 19677 D vulkan  : searching for layers in '/data/app/~~oTlMwi2Hna70ErgoON50Rw==/com.negi.survey-qmTwop5urpma1_Fq1MG1HQ==/base.apk!/lib/arm64-v8a'
+02-21 00:43:38.343 19652 19676 D UploadRescheduleRcvr: No GitHub pending files for action=android.intent.action.BOOT_COMPLETED
+02-21 00:43:38.349 19652 19652 D CrashCapture: install: ensured default handler. where=install(legacy) pid=19652 default=com.negi.survey.CrashCapture$CrashHandler@9e57f47
+02-21 00:43:38.350 19652 19685 D CrashCapture: enqueuePendingCrashUploadsIfPossible skipped (already running). where=enqueue(legacy):bg
+02-21 00:43:38.351 19652 19671 D WM-SystemJobScheduler: Scheduling work ID 8930edce-e516-486f-a2e6-10a09285f512Job ID 312
+02-21 00:43:38.356 19652 19652 D CompatChangeReporter: Compat change id reported: 377864165; UID 14738; state: ENABLED
+02-21 00:43:38.356 19652 19652 D DesktopModeFlags: Toggle override initialized to: OVERRIDE_UNSET
+02-21 00:43:38.366 19652 19652 I ContentCaptureHelper: Setting logging level to OFF
+02-21 00:43:38.369 19652 19652 D CrashCapture: install: ensured default handler. where=selfHeal:onActivityResumed pid=19652 default=com.negi.survey.CrashCapture$CrashHandler@9e57f47
+02-21 00:43:38.369 19652 19671 D WM-GreedyScheduler: Starting tracking for 8930edce-e516-486f-a2e6-10a09285f512
+02-21 00:43:38.372 19652 19676 D github_upload: choosePolicy: uniqueName=upload_runtime_logs_startup policy=KEEP states=[ENQUEUED]
+02-21 00:43:38.372 19652 19676 D github_upload: enqueueStartupRuntimeLogsUpload: uniqueName=upload_runtime_logs_startup policy=KEEP
+02-21 00:43:38.372 19652 19676 D UploadRescheduleRcvr: Enqueued runtime logs upload for action=android.intent.action.BOOT_COMPLETED reason=receiver_boot_completed
+02-21 00:43:38.380 19652 19671 D WM-PackageManagerHelper: androidx.work.impl.background.systemalarm.RescheduleReceiver enabled
+02-21 00:43:38.391 19652 19671 D WM-ConstraintTracker: NetworkStateTracker24: initial state = NetworkState(isConnected=true, isValidated=true, isMetered=false, isNotRoaming=true, isBlocked=false)
+02-21 00:43:38.391 19652 19671 D WM-NetworkStateTracker: Registering network callback
+02-21 00:43:38.394 19652 19671 D WM-GreedyScheduler: Constraints met: Scheduling work ID WorkGenerationalId(workSpecId=8930edce-e516-486f-a2e6-10a09285f512, generation=0)
+02-21 00:43:38.397 19652 19671 D WM-Processor: Processor: processing WorkGenerationalId(workSpecId=8930edce-e516-486f-a2e6-10a09285f512, generation=0)
+02-21 00:43:38.400 19652 19694 D WM-NetworkStateTracker: Network capabilities changed: [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=13861Kbps LinkDnBandwidth>=101944Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /192.168.1.27, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 11ac, RSSI: -39, Link speed: 866Mbps, Tx Link speed: 866Mbps, Max Supported Tx Link speed: 866Mbps, Rx Link speed: 866Mbps, Max Supported Rx Link speed: 866Mbps, Frequency: 5805MHz, Net ID: -1, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -39 UnderlyingNetworks: Null]
+02-21 00:43:38.402 19652 19694 D WM-NetworkStateTracker: Network blocked status changed: false
