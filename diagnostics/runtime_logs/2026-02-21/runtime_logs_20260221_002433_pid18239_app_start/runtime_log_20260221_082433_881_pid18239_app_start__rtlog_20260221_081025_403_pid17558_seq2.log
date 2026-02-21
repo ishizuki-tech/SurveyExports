@@ -1,0 +1,971 @@
+=== RuntimeLogStore Header ===
+ts=2026-02-21T08:10:25.403Z
+fileNameFormat=LEGACY
+appId=com.negi.survey
+versionName=0.0.1
+versionCode=1
+debug=false
+device=Google Pixel 9a
+sdk=36
+pid=17558
+==============================
+2026-02-21T08:10:25.403Z I/RuntimeLogStore [rtlog-io] --- rotated (reason=plain_snapshot:app_start) ---
+2026-02-21T08:10:37.487Z D/LiteRtLM [DefaultDispatcher-worker-2] Initializing LiteRT-LM: model='Gemma3n4B', key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm'
+2026-02-21T08:10:37.487Z D/LiteRtLM [DefaultDispatcher-worker-2] Capabilities: image=false audio=false
+2026-02-21T08:10:37.487Z D/LiteRtLM [DefaultDispatcher-worker-2] Backend=GPU maxNumTokens=4096 (raw=4096) topK=64 topP=0.95 temp=1.0
+2026-02-21T08:11:03.754Z D/LiteRtLM [DefaultDispatcher-worker-2] LiteRT-LM initialization succeeded: model='Gemma3n4B', key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm'
+2026-02-21T08:11:03.826Z D/AiTrace [main] Installed (enabled=false)
+2026-02-21T08:11:03.831Z D/SurveyVM [main] init -> Start, session=0, uuid=5befca04-0b6d-49b2-af27-1e79b318c19b, navSize=1, graphSize=9
+2026-02-21T08:11:03.840Z D/SurveyVM [main] config.validate -> issues=0
+2026-02-21T08:11:03.842Z D/SurveyVM [main] promptSources -> legacy=0, eval=6, follow=6
+2026-02-21T08:11:03.843Z D/SurveyVM [main] promptSources.preview -> legacy=[], eval=[Q1, Q2, Q3, Q4, Q5, Q6], follow=[Q1, Q2, Q3, Q4, Q5, Q6]
+2026-02-21T08:11:03.844Z D/SurveyVM [main] hasTwoStepPrompt[Q1] -> true (eval=303, fu=240)
+2026-02-21T08:11:03.844Z D/SurveyVM [main] hasTwoStepPrompt[Q2] -> true (eval=303, fu=240)
+2026-02-21T08:11:03.844Z D/SurveyVM [main] hasTwoStepPrompt[Q3] -> true (eval=303, fu=240)
+2026-02-21T08:11:03.844Z D/SurveyVM [main] hasTwoStepPrompt[Q4] -> true (eval=303, fu=240)
+2026-02-21T08:11:03.844Z D/SurveyVM [main] hasTwoStepPrompt[Q5] -> true (eval=303, fu=240)
+2026-02-21T08:11:03.844Z D/SurveyVM [main] hasTwoStepPrompt[Q6] -> true (eval=303, fu=240)
+2026-02-21T08:11:03.844Z D/SurveyVM [main] AI prompt coverage OK (aiCount=6)
+2026-02-21T08:11:10.762Z D/SurveyVM [main] resetAudioRefs -> cleared
+2026-02-21T08:11:10.764Z D/SurveyVM [main] resetNavToStart -> key=com.negi.survey.vm.FlowHome@6efd943, navSize=1
+2026-02-21T08:11:10.764Z D/SurveyVM [main] resetToStart -> Start, session=1, uuid=97a90737-e358-449c-898f-74c95c8dbe46
+2026-02-21T08:11:10.764Z D/SurveyVM [main] push -> Q1, navSize=2, stackSize=2
+2026-02-21T08:11:26.116Z D/SurveyVM [main] hasTwoStepPrompt[Q1] -> true (eval=303, fu=240)
+2026-02-21T08:11:26.117Z I/AiScreen [main] Submit begin runId=ai-Q1-1691515047-1691515047517866 node=Q1 role=MAIN isTwoStep=true sessionId=1 surveyUuid=97a90737-e358-449c-898f-74c95c8dbe46 qLen=175 aLen=12 qPreview="Unapoteza kiasi gani cha mavuno kwa sababu ya funza jeshi vamizi (Fall Armyworm/FAW)? Tafadhali …" aPreview="sfbsdfb asdf"
+2026-02-21T08:11:26.118Z D/SurveyVM [main] getEvalPrompt[Q1] -> len=468
+2026-02-21T08:11:26.121Z I/AiScreen [main] Submit end runId=ai-Q1-1691515047-1691515047517866 node=Q1 elapsed=5ms
+2026-02-21T08:11:26.123Z D/AiViewModel [DefaultDispatcher-worker-2] run[1]: mode=EVAL_JSON phase=EVAL commit=true prompt.len=468, fullPrompt.len=1612, timeoutMs=120000
+2026-02-21T08:11:26.123Z D/AiViewModel [DefaultDispatcher-worker-2] run[1]: sha(prompt)=7b06a6524e695b585cfb55b6e689f291739abcea6c6adb8ebead9b0d0d6aca62 sha(full)=6f9b8263e3ce7e08402c35971d223fa3e9bbe3bb7e9d57da5a100b9e70d0cd41
+2026-02-21T08:11:26.125Z D/LiteRtRepository [DefaultDispatcher-worker-2] [1] request start: model='Gemma3n4B', prompt.len=1612, sha=6f9b8263e3ce7e08, gateWaitMs=1
+2026-02-21T08:11:26.140Z D/LiteRtRepository [DefaultDispatcher-worker-2] [1] initializeIfNeeded ok (initMs=14)
+2026-02-21T08:11:26.144Z D/LiteRtLM [DefaultDispatcher-worker-2] runInference start: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=1 hasText=true textLen=1612 images=0 audioClips=0
+2026-02-21T08:11:26.145Z I/LiteRtLM [DefaultDispatcher-worker-2] LiteRT-LM sendMessageAsync(text): key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=1 len=1612
+2026-02-21T08:11:31.847Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[1].preview='{"'
+2026-02-21T08:11:32.087Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[2].preview='analysis'
+2026-02-21T08:11:32.277Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[3].preview='":'
+2026-02-21T08:11:32.479Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[4].preview='␠"'
+2026-02-21T08:11:32.604Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[5].preview='J'
+2026-02-21T08:11:32.828Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[6].preview='ibu'
+2026-02-21T08:11:32.944Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[7].preview='␠ha'
+2026-02-21T08:11:33.139Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[8].preview='ina'
+2026-02-21T08:11:33.295Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[9].preview='␠ma'
+2026-02-21T08:11:33.508Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[10].preview='na'
+2026-02-21T08:11:33.629Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[11].preview='␠na'
+2026-02-21T08:11:33.846Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[12].preview='␠ha'
+2026-02-21T08:11:33.975Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[13].preview='ifai'
+2026-02-21T08:11:34.223Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[14].preview='.",'
+2026-02-21T08:11:34.355Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[15].preview='␠"'
+2026-02-21T08:11:34.543Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[16].preview='weak'
+2026-02-21T08:11:34.718Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[17].preview='ness'
+2026-02-21T08:11:34.923Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[18].preview='":'
+2026-02-21T08:11:35.054Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[19].preview='␠"'
+2026-02-21T08:11:35.263Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[20].preview='J'
+2026-02-21T08:11:35.395Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[21].preview='ibu'
+2026-02-21T08:11:35.598Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[22].preview='␠ha'
+2026-02-21T08:11:35.729Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[23].preview='itoa'
+2026-02-21T08:11:35.948Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[24].preview='␠ta'
+2026-02-21T08:11:36.067Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[25].preview='r'
+2026-02-21T08:11:36.259Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[26].preview='ifa'
+2026-02-21T08:11:36.421Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[27].preview='␠kuhusu'
+2026-02-21T08:11:36.648Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[28].preview='␠mav'
+2026-02-21T08:11:36.782Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[29].preview='uno'
+2026-02-21T08:11:36.981Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[30].preview='␠y'
+2026-02-21T08:11:37.115Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[31].preview='apolis'
+2026-02-21T08:11:37.366Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[32].preview='wa'
+2026-02-21T08:11:37.488Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[33].preview='␠na'
+2026-02-21T08:11:37.697Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[34].preview='␠FA'
+2026-02-21T08:11:37.857Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[35].preview='W'
+2026-02-21T08:11:38.069Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[36].preview='.",'
+2026-02-21T08:11:38.200Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[37].preview='␠"'
+2026-02-21T08:11:38.401Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[38].preview='follow'
+2026-02-21T08:11:38.601Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[39].preview='up'
+2026-02-21T08:11:38.818Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[40].preview='_'
+2026-02-21T08:11:38.934Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[41].preview='needed'
+2026-02-21T08:11:39.122Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[42].preview='":'
+2026-02-21T08:11:39.265Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[43].preview='␠true'
+2026-02-21T08:11:39.463Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[44].preview=','
+2026-02-21T08:11:39.607Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[45].preview='␠"'
+2026-02-21T08:11:39.840Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[46].preview='follow'
+2026-02-21T08:11:39.958Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[47].preview='up'
+2026-02-21T08:11:40.153Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[48].preview='_'
+2026-02-21T08:11:40.290Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[49].preview='target'
+2026-02-21T08:11:40.503Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[50].preview='":'
+2026-02-21T08:11:40.629Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[51].preview='␠"'
+2026-02-21T08:11:40.817Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[52].preview='Muh'
+2026-02-21T08:11:41.046Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[53].preview='iri'
+2026-02-21T08:11:41.274Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[54].preview='␠kuhusu'
+2026-02-21T08:11:41.402Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[55].preview='␠mat'
+2026-02-21T08:11:41.625Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[56].preview='oi'
+2026-02-21T08:11:41.776Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[57].preview='␠ya'
+2026-02-21T08:11:41.982Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[58].preview='␠mav'
+2026-02-21T08:11:42.112Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[59].preview='uno'
+2026-02-21T08:11:42.323Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[60].preview='␠y'
+2026-02-21T08:11:42.450Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[61].preview='apolis'
+2026-02-21T08:11:42.673Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[62].preview='wa'
+2026-02-21T08:11:42.804Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[63].preview='␠na'
+2026-02-21T08:11:42.960Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[64].preview='␠FA'
+2026-02-21T08:11:43.173Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[65].preview='W'
+2026-02-21T08:11:43.295Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[66].preview='␠katika'
+2026-02-21T08:11:43.523Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[67].preview='␠mis'
+2026-02-21T08:11:43.642Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[68].preview='imu'
+2026-02-21T08:11:43.841Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[69].preview='␠il'
+2026-02-21T08:11:43.981Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[70].preview='iy'
+2026-02-21T08:11:44.191Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[71].preview='op'
+2026-02-21T08:11:44.325Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[72].preview='ita'
+2026-02-21T08:11:44.542Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[73].preview='.",'
+2026-02-21T08:11:44.664Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[74].preview='␠"'
+2026-02-21T08:11:44.892Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[75].preview='score'
+2026-02-21T08:11:45.025Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[76].preview='":'
+2026-02-21T08:11:45.235Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[77].preview='␠'
+2026-02-21T08:11:45.375Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[78].preview='1'
+2026-02-21T08:11:45.590Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[79].preview='}'
+2026-02-21T08:11:45.759Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[80].preview='↩'
+2026-02-21T08:11:45.881Z D/LiteRtRepository [main] [1] logical done=true (waiting native termination safe point)
+2026-02-21T08:11:45.881Z D/LiteRtRepository [main] [1] cleanUpListener (native termination safe point)
+2026-02-21T08:11:45.881Z D/LiteRtRepository [DefaultDispatcher-worker-3] [1] scheduleResetAfterSafepoint: begin (tag='native-terminated')
+2026-02-21T08:11:45.884Z D/LiteRtRepository [DefaultDispatcher-worker-1] [1] resetConversation ok (after safepoint, tag='native-terminated')
+2026-02-21T08:11:45.884Z D/LiteRtRepository [DefaultDispatcher-worker-1] [1] scheduleResetAfterSafepoint: end (tag='native-terminated')
+2026-02-21T08:11:45.887Z D/AiViewModel [DefaultDispatcher-worker-4] run[1] stats: chunks=80, chars=240, raw.len=240
+2026-02-21T08:11:45.893Z D/AiViewModel [DefaultDispatcher-worker-4] run[1] sha(raw)=086d1a34927370e6910b939c95d8ba47095ad5176fb4f691547ca352bdf465cb
+2026-02-21T08:11:45.893Z D/AiViewModel [DefaultDispatcher-worker-4] run[1] rawVisible='{"analysis":␠"Jibu␠haina␠mana␠na␠haifai.",␠"weakness":␠"Jibu␠haitoa␠tarifa␠kuhusu␠mavuno␠yapoliswa␠na␠FAW.",␠"followup_needed":␠true,␠"followup_target":␠"Muhiri␠kuhusu␠matoi␠ya␠mavuno␠yapoliswa␠na␠FAW␠katika␠misimu␠iliyopita.",␠"score":␠1}↩'
+2026-02-21T08:11:45.900Z D/AiViewModel [DefaultDispatcher-worker-4] run[1]: EVAL_JSON parsed score=1 followups=0 fu0=''
+2026-02-21T08:11:45.900Z D/AiViewModel [DefaultDispatcher-worker-4] stepHistory+ runId=1 phase=EVAL mode=EVAL_JSON raw.len=240 score=1 FU=0 FU0='<none>' timeout=false err=null
+2026-02-21T08:11:45.900Z I/AiViewModel [DefaultDispatcher-worker-4] run[1] done: phase=EVAL mode=EVAL_JSON score=1 FU[0]=<none> commit=true err=<none>
+2026-02-21T08:11:45.907Z I/AiScreen [DefaultDispatcher-worker-4] TWO_STEP shouldRunSecond runId=ai-Q1-1691515047-1691515047517866 node=Q1 role=MAIN followup_needed=true timedOut=false rawLen=240
+2026-02-21T08:11:45.909Z D/SurveyVM [DefaultDispatcher-worker-4] getFollowupPrompt[Q1] -> len=466 evalLen=240
+2026-02-21T08:11:45.910Z D/AiViewModel [DefaultDispatcher-worker-4] run[2]: mode=FOLLOWUP_JSON_OR_TEXT phase=FOLLOWUP commit=false prompt.len=466, fullPrompt.len=1510, timeoutMs=120000
+2026-02-21T08:11:45.913Z D/AiViewModel [DefaultDispatcher-worker-4] run[2]: sha(prompt)=080349d01257b83bbee452372a010893786cf450a0bba595ad292b3188789a91 sha(full)=102aa051b79b4619aa576a52c77b69eac1b36077bc307b6fe4c684bc035dc4f4
+2026-02-21T08:11:45.914Z D/AiScreen [main] Step rendered (context=sid=1|nid=Q1 node=Q1 runId=1 mode=EVAL_JSON showJson=true rawLen=240 followups=0 timedOut=false)
+2026-02-21T08:11:45.915Z D/LiteRtRepository [DefaultDispatcher-worker-4] [2] request start: model='Gemma3n4B', prompt.len=1510, sha=102aa051b79b4619, gateWaitMs=0
+2026-02-21T08:11:45.917Z D/LiteRtRepository [DefaultDispatcher-worker-4] [2] initializeIfNeeded ok (initMs=1)
+2026-02-21T08:11:45.918Z D/LiteRtLM [DefaultDispatcher-worker-4] Cooldown delay: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' delay=212ms reason='runInference-start'
+2026-02-21T08:11:46.165Z D/LiteRtLM [DefaultDispatcher-worker-4] resetConversationInternal done: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' reason='resetConversation'
+2026-02-21T08:11:46.167Z D/LiteRtLM [DefaultDispatcher-worker-10] runInference start: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=2 hasText=true textLen=1510 images=0 audioClips=0
+2026-02-21T08:11:46.168Z I/LiteRtLM [DefaultDispatcher-worker-10] LiteRT-LM sendMessageAsync(text): key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=2 len=1510
+2026-02-21T08:11:49.196Z D/AiViewModel [DefaultDispatcher-worker-10] run[2] chunk[1].preview='Muh'
+2026-02-21T08:11:49.416Z D/AiViewModel [DefaultDispatcher-worker-10] run[2] chunk[2].preview='iri'
+2026-02-21T08:11:49.547Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[3].preview='␠kuhusu'
+2026-02-21T08:11:49.769Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[4].preview='␠mat'
+2026-02-21T08:11:49.946Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[5].preview='oi'
+2026-02-21T08:11:50.066Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[6].preview='␠ya'
+2026-02-21T08:11:50.242Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[7].preview='␠mav'
+2026-02-21T08:11:50.461Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[8].preview='uno'
+2026-02-21T08:11:50.589Z D/AiViewModel [DefaultDispatcher-worker-10] run[2] chunk[9].preview='␠yap'
+2026-02-21T08:11:50.769Z D/AiViewModel [DefaultDispatcher-worker-10] run[2] chunk[10].preview='olis'
+2026-02-21T08:11:50.944Z D/AiViewModel [DefaultDispatcher-worker-10] run[2] chunk[11].preview='wa'
+2026-02-21T08:11:51.111Z D/AiViewModel [DefaultDispatcher-worker-10] run[2] chunk[12].preview='␠na'
+2026-02-21T08:11:51.287Z D/AiViewModel [DefaultDispatcher-worker-10] run[2] chunk[13].preview='␠FA'
+2026-02-21T08:11:51.466Z D/AiViewModel [DefaultDispatcher-worker-10] run[2] chunk[14].preview='W'
+2026-02-21T08:11:51.657Z D/AiViewModel [DefaultDispatcher-worker-10] run[2] chunk[15].preview='␠katika'
+2026-02-21T08:11:51.852Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[16].preview='␠mis'
+2026-02-21T08:11:52.015Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[17].preview='imu'
+2026-02-21T08:11:52.214Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[18].preview='␠il'
+2026-02-21T08:11:52.382Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[19].preview='iy'
+2026-02-21T08:11:52.548Z D/AiViewModel [DefaultDispatcher-worker-10] run[2] chunk[20].preview='op'
+2026-02-21T08:11:52.732Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[21].preview='ita'
+2026-02-21T08:11:52.900Z D/AiViewModel [DefaultDispatcher-worker-10] run[2] chunk[22].preview='␠ni'
+2026-02-21T08:11:53.066Z D/AiViewModel [DefaultDispatcher-worker-10] run[2] chunk[23].preview='␠n'
+2026-02-21T08:11:53.236Z D/AiViewModel [DefaultDispatcher-worker-10] run[2] chunk[24].preview='ini'
+2026-02-21T08:11:53.413Z D/AiViewModel [DefaultDispatcher-worker-10] run[2] chunk[25].preview='?'
+2026-02-21T08:11:53.582Z D/LiteRtRepository [main] [2] logical done=true (waiting native termination safe point)
+2026-02-21T08:11:53.582Z D/LiteRtRepository [main] [2] cleanUpListener (native termination safe point)
+2026-02-21T08:11:53.583Z D/LiteRtRepository [DefaultDispatcher-worker-11] [2] scheduleResetAfterSafepoint: begin (tag='native-terminated')
+2026-02-21T08:11:53.585Z D/AiViewModel [DefaultDispatcher-worker-11] run[2] stats: chunks=25, chars=79, raw.len=79
+2026-02-21T08:11:53.585Z D/LiteRtRepository [DefaultDispatcher-worker-8] [2] resetConversation ok (after safepoint, tag='native-terminated')
+2026-02-21T08:11:53.585Z D/LiteRtRepository [DefaultDispatcher-worker-8] [2] scheduleResetAfterSafepoint: end (tag='native-terminated')
+2026-02-21T08:11:53.587Z D/AiViewModel [DefaultDispatcher-worker-11] run[2] sha(raw)=14a84d77c1e2a6aefb92d053f798c318eb6627b70830541b2b4cb948406cf8b2
+2026-02-21T08:11:53.588Z D/AiViewModel [DefaultDispatcher-worker-11] run[2] rawVisible='Muhiri␠kuhusu␠matoi␠ya␠mavuno␠yapoliswa␠na␠FAW␠katika␠misimu␠iliyopita␠ni␠nini?'
+2026-02-21T08:11:53.590Z D/AiViewModel [DefaultDispatcher-worker-11] run[2]: FOLLOWUP parse extractorQ='Muhiri␠kuhusu␠matoi␠ya␠mavuno␠yapoliswa␠na␠FAW␠katika␠misimu␠iliyopita␠ni␠nini?' textQ='Muhiri␠kuhusu␠matoi␠ya␠mavuno␠yapoliswa␠na␠FAW␠katika␠misimu␠iliyopita␠ni␠nini?' best='Muhiri␠kuhusu␠matoi␠ya␠mavuno␠yapoliswa␠na␠FAW␠katika␠misimu␠iliyopita␠ni␠nini?'
+2026-02-21T08:11:53.590Z D/AiViewModel [DefaultDispatcher-worker-11] stepHistory+ runId=2 phase=FOLLOWUP mode=FOLLOWUP_JSON_OR_TEXT raw.len=79 score=null FU=1 FU0='Muhiri␠kuhusu␠matoi␠ya␠mavuno␠yapoliswa␠na␠FAW␠katika␠misimu␠iliyopita␠ni␠nini?' timeout=false err=null
+2026-02-21T08:11:53.590Z I/AiViewModel [DefaultDispatcher-worker-11] run[2] done: phase=FOLLOWUP mode=FOLLOWUP_JSON_OR_TEXT score=null FU[0]=Muhiri kuhusu matoi ya mavuno yapoliswa na FAW katika misimu iliyopita ni nini? commit=false err=<none>
+2026-02-21T08:11:53.610Z I/AiScreen [main] Follow-up persisted (context=sid=1|nid=Q1 node=Q1 runId=2 mode=FOLLOWUP_JSON_OR_TEXT len=79 preview="Muhiri kuhusu matoi ya mavuno yapoliswa na FAW katika misimu iliyopita ni nini?")
+2026-02-21T08:11:53.610Z D/AiScreen [main] Step rendered (context=sid=1|nid=Q1 node=Q1 runId=2 mode=FOLLOWUP_JSON_OR_TEXT showJson=false rawLen=79 followups=1 timedOut=false)
+2026-02-21T08:11:53.841Z D/LiteRtLM [DefaultDispatcher-worker-11] resetConversationInternal done: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' reason='resetConversation'
+2026-02-21T08:12:11.932Z D/SurveyVM [main] hasTwoStepPrompt[Q1] -> true (eval=303, fu=240)
+2026-02-21T08:12:11.933Z I/AiScreen [main] Submit begin runId=ai-Q1-1691560864-1691560864783472 node=Q1 role=FOLLOWUP isTwoStep=true sessionId=1 surveyUuid=97a90737-e358-449c-898f-74c95c8dbe46 qLen=79 aLen=7 qPreview="Muhiri kuhusu matoi ya mavuno yapoliswa na FAW katika misimu iliyopita ni nini?" aPreview="sdvasdv"
+2026-02-21T08:12:11.933Z D/SurveyVM [main] getEvalPrompt[Q1] -> len=367
+2026-02-21T08:12:11.935Z I/AiScreen [main] Submit end runId=ai-Q1-1691560864-1691560864783472 node=Q1 elapsed=3ms
+2026-02-21T08:12:11.952Z D/AiViewModel [DefaultDispatcher-worker-11] run[3]: mode=EVAL_JSON phase=EVAL commit=true prompt.len=367, fullPrompt.len=1511, timeoutMs=120000
+2026-02-21T08:12:11.953Z D/AiViewModel [DefaultDispatcher-worker-11] run[3]: sha(prompt)=bb00c27e841650dec1294d2fcfca78c619a4c6487dc9685cce3abc7f8f0a6744 sha(full)=1c9a1663c51f60e929a196d2e444cf77716a818d84d177d0e3014aaa7a55d043
+2026-02-21T08:12:11.955Z D/LiteRtRepository [DefaultDispatcher-worker-9] [3] request start: model='Gemma3n4B', prompt.len=1511, sha=1c9a1663c51f60e9, gateWaitMs=0
+2026-02-21T08:12:11.956Z D/LiteRtRepository [DefaultDispatcher-worker-11] [3] initializeIfNeeded ok (initMs=1)
+2026-02-21T08:12:11.958Z D/LiteRtLM [DefaultDispatcher-worker-4] runInference start: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=3 hasText=true textLen=1511 images=0 audioClips=0
+2026-02-21T08:12:11.958Z I/LiteRtLM [DefaultDispatcher-worker-4] LiteRT-LM sendMessageAsync(text): key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=3 len=1511
+2026-02-21T08:12:14.276Z D/AiViewModel [DefaultDispatcher-worker-4] run[3] chunk[1].preview='{"'
+2026-02-21T08:12:14.415Z D/AiViewModel [DefaultDispatcher-worker-4] run[3] chunk[2].preview='analysis'
+2026-02-21T08:12:14.627Z D/AiViewModel [DefaultDispatcher-worker-4] run[3] chunk[3].preview='":'
+2026-02-21T08:12:14.765Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[4].preview='␠"'
+2026-02-21T08:12:14.920Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[5].preview='J'
+2026-02-21T08:12:15.135Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[6].preview='ibu'
+2026-02-21T08:12:15.268Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[7].preview='␠ha'
+2026-02-21T08:12:15.419Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[8].preview='ifai'
+2026-02-21T08:12:15.634Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[9].preview='␠kwa'
+2026-02-21T08:12:15.758Z D/AiViewModel [DefaultDispatcher-worker-4] run[3] chunk[10].preview='␠sw'
+2026-02-21T08:12:15.980Z D/AiViewModel [DefaultDispatcher-worker-4] run[3] chunk[11].preview='ali'
+2026-02-21T08:12:16.099Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[12].preview='.",'
+2026-02-21T08:12:16.303Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[13].preview='␠"'
+2026-02-21T08:12:16.434Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[14].preview='weak'
+2026-02-21T08:12:16.606Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[15].preview='ness'
+2026-02-21T08:12:16.804Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[16].preview='":'
+2026-02-21T08:12:16.950Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[17].preview='␠"'
+2026-02-21T08:12:17.132Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[18].preview='J'
+2026-02-21T08:12:17.343Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[19].preview='ibu'
+2026-02-21T08:12:17.468Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[20].preview='␠haz'
+2026-02-21T08:12:17.730Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[21].preview='ima'
+2026-02-21T08:12:17.887Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[22].preview='nish'
+2026-02-21T08:12:18.025Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[23].preview='i'
+2026-02-21T08:12:18.222Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[24].preview='␠cho'
+2026-02-21T08:12:18.358Z D/AiViewModel [DefaultDispatcher-worker-4] run[3] chunk[25].preview='ch'
+2026-02-21T08:12:18.568Z D/AiViewModel [DefaultDispatcher-worker-4] run[3] chunk[26].preview='ote'
+2026-02-21T08:12:18.699Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[27].preview='␠kuhusu'
+2026-02-21T08:12:18.917Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[28].preview='␠mat'
+2026-02-21T08:12:19.051Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[29].preview='oi'
+2026-02-21T08:12:19.301Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[30].preview='␠ya'
+2026-02-21T08:12:19.413Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[31].preview='␠mav'
+2026-02-21T08:12:19.633Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[32].preview='uno'
+2026-02-21T08:12:19.753Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[33].preview='␠yap'
+2026-02-21T08:12:19.985Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[34].preview='olis'
+2026-02-21T08:12:20.096Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[35].preview='wa'
+2026-02-21T08:12:20.318Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[36].preview='␠na'
+2026-02-21T08:12:20.429Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[37].preview='␠FA'
+2026-02-21T08:12:20.641Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[38].preview='W'
+2026-02-21T08:12:20.769Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[39].preview='.",'
+2026-02-21T08:12:20.982Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[40].preview='␠"'
+2026-02-21T08:12:21.105Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[41].preview='follow'
+2026-02-21T08:12:21.319Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[42].preview='up'
+2026-02-21T08:12:21.445Z D/AiViewModel [DefaultDispatcher-worker-2] run[3] chunk[43].preview='_'
+2026-02-21T08:12:21.672Z D/AiViewModel [DefaultDispatcher-worker-2] run[3] chunk[44].preview='needed'
+2026-02-21T08:12:21.787Z D/AiViewModel [DefaultDispatcher-worker-2] run[3] chunk[45].preview='":'
+2026-02-21T08:12:22.005Z D/AiViewModel [DefaultDispatcher-worker-2] run[3] chunk[46].preview='␠true'
+2026-02-21T08:12:22.121Z D/AiViewModel [DefaultDispatcher-worker-2] run[3] chunk[47].preview=','
+2026-02-21T08:12:22.303Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[48].preview='␠"'
+2026-02-21T08:12:22.506Z D/AiViewModel [DefaultDispatcher-worker-2] run[3] chunk[49].preview='follow'
+2026-02-21T08:12:22.633Z D/AiViewModel [DefaultDispatcher-worker-2] run[3] chunk[50].preview='up'
+2026-02-21T08:12:22.855Z D/AiViewModel [DefaultDispatcher-worker-2] run[3] chunk[51].preview='_'
+2026-02-21T08:12:22.972Z D/AiViewModel [DefaultDispatcher-worker-2] run[3] chunk[52].preview='target'
+2026-02-21T08:12:23.187Z D/AiViewModel [DefaultDispatcher-worker-2] run[3] chunk[53].preview='":'
+2026-02-21T08:12:23.323Z D/AiViewModel [DefaultDispatcher-worker-2] run[3] chunk[54].preview='␠"'
+2026-02-21T08:12:23.532Z D/AiViewModel [DefaultDispatcher-worker-2] run[3] chunk[55].preview='Muh'
+2026-02-21T08:12:23.651Z D/AiViewModel [DefaultDispatcher-worker-2] run[3] chunk[56].preview='iri'
+2026-02-21T08:12:23.847Z D/AiViewModel [DefaultDispatcher-worker-2] run[3] chunk[57].preview='␠kuhusu'
+2026-02-21T08:12:23.993Z D/AiViewModel [DefaultDispatcher-worker-2] run[3] chunk[58].preview='␠mat'
+2026-02-21T08:12:24.206Z D/AiViewModel [DefaultDispatcher-worker-2] run[3] chunk[59].preview='oi'
+2026-02-21T08:12:24.332Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[60].preview='␠ya'
+2026-02-21T08:12:24.547Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[61].preview='␠mav'
+2026-02-21T08:12:24.677Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[62].preview='uno'
+2026-02-21T08:12:24.861Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[63].preview='␠yap'
+2026-02-21T08:12:25.043Z D/AiViewModel [DefaultDispatcher-worker-2] run[3] chunk[64].preview='olis'
+2026-02-21T08:12:25.210Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[65].preview='wa'
+2026-02-21T08:12:25.409Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[66].preview='␠na'
+2026-02-21T08:12:25.527Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[67].preview='␠FA'
+2026-02-21T08:12:25.738Z D/AiViewModel [DefaultDispatcher-worker-2] run[3] chunk[68].preview='W'
+2026-02-21T08:12:25.877Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[69].preview='␠katika'
+2026-02-21T08:12:26.094Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[70].preview='␠mis'
+2026-02-21T08:12:26.225Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[71].preview='imu'
+2026-02-21T08:12:26.444Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[72].preview='␠il'
+2026-02-21T08:12:26.565Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[73].preview='iy'
+2026-02-21T08:12:26.776Z D/AiViewModel [DefaultDispatcher-worker-9] run[3] chunk[74].preview='op'
+2026-02-21T08:12:26.904Z D/AiViewModel [DefaultDispatcher-worker-2] run[3] chunk[75].preview='ita'
+2026-02-21T08:12:27.115Z D/AiViewModel [DefaultDispatcher-worker-2] run[3] chunk[76].preview='␠ni'
+2026-02-21T08:12:27.249Z D/AiViewModel [DefaultDispatcher-worker-2] run[3] chunk[77].preview='␠n'
+2026-02-21T08:12:27.452Z D/AiViewModel [DefaultDispatcher-worker-2] run[3] chunk[78].preview='ini'
+2026-02-21T08:12:27.592Z D/AiViewModel [DefaultDispatcher-worker-2] run[3] chunk[79].preview='?",'
+2026-02-21T08:12:27.801Z D/AiViewModel [DefaultDispatcher-worker-2] run[3] chunk[80].preview='␠"'
+2026-02-21T08:12:27.951Z D/AiViewModel [DefaultDispatcher-worker-2] run[3] chunk[81].preview='score'
+2026-02-21T08:12:28.167Z D/AiViewModel [DefaultDispatcher-worker-2] run[3] chunk[82].preview='":'
+2026-02-21T08:12:28.298Z D/AiViewModel [DefaultDispatcher-worker-2] run[3] chunk[83].preview='␠'
+2026-02-21T08:12:28.485Z D/AiViewModel [DefaultDispatcher-worker-2] run[3] chunk[84].preview='1'
+2026-02-21T08:12:28.712Z D/AiViewModel [DefaultDispatcher-worker-2] run[3] chunk[85].preview='}'
+2026-02-21T08:12:28.824Z D/AiViewModel [DefaultDispatcher-worker-2] run[3] chunk[86].preview='↩'
+2026-02-21T08:12:29.033Z D/LiteRtRepository [main] [3] logical done=true (waiting native termination safe point)
+2026-02-21T08:12:29.034Z D/LiteRtRepository [main] [3] cleanUpListener (native termination safe point)
+2026-02-21T08:12:29.035Z D/LiteRtRepository [DefaultDispatcher-worker-11] [3] scheduleResetAfterSafepoint: begin (tag='native-terminated')
+2026-02-21T08:12:29.039Z D/LiteRtRepository [DefaultDispatcher-worker-9] [3] resetConversation ok (after safepoint, tag='native-terminated')
+2026-02-21T08:12:29.039Z D/LiteRtRepository [DefaultDispatcher-worker-9] [3] scheduleResetAfterSafepoint: end (tag='native-terminated')
+2026-02-21T08:12:29.041Z D/AiViewModel [DefaultDispatcher-worker-1] run[3] stats: chunks=86, chars=260, raw.len=260
+2026-02-21T08:12:29.042Z D/AiViewModel [DefaultDispatcher-worker-1] run[3] sha(raw)=9578cc6db5f57c2726c0f80bb135dadc5cb38ad6e8ba2a94fc2fb1c815647020
+2026-02-21T08:12:29.042Z D/AiViewModel [DefaultDispatcher-worker-1] run[3] rawVisible='{"analysis":␠"Jibu␠haifai␠kwa␠swali.",␠"weakness":␠"Jibu␠hazimanishi␠chochote␠kuhusu␠matoi␠ya␠mavuno␠yapoliswa␠na␠FAW.",␠"followup_needed":␠true,␠"followup_target":␠"Muhiri␠kuhusu␠matoi␠ya␠mavuno␠yapoliswa␠na␠FAW␠katika␠misimu␠iliyopita␠ni␠'
+2026-02-21T08:12:29.043Z D/AiViewModel [DefaultDispatcher-worker-1] run[3]: EVAL_JSON parsed score=1 followups=1 fu0='",␠"followup_needed":␠true,␠"followup_target":␠"Muhiri␠kuhusu␠matoi␠ya␠mavuno␠yapoliswa␠na␠FAW␠katika␠misimu␠iliyopita␠ni␠nini?'
+2026-02-21T08:12:29.043Z D/AiViewModel [DefaultDispatcher-worker-1] stepHistory+ runId=3 phase=EVAL mode=EVAL_JSON raw.len=260 score=1 FU=1 FU0='",␠"followup_needed":␠true,␠"followup_target":␠"Muhiri␠kuhusu␠matoi␠ya␠mavuno␠yapoliswa␠na␠FAW␠katika␠misimu␠iliyopita␠ni␠nini?' timeout=false err=null
+2026-02-21T08:12:29.043Z I/AiViewModel [DefaultDispatcher-worker-1] run[3] done: phase=EVAL mode=EVAL_JSON score=1 FU[0]=", "followup_needed": true, "followup_target": "Muhiri kuhusu matoi ya mavuno yapoliswa na FAW katika misimu iliyopita ni nini? commit=true err=<none>
+2026-02-21T08:12:29.044Z I/AiScreen [DefaultDispatcher-worker-1] TWO_STEP shouldRunSecond runId=ai-Q1-1691560864-1691560864783472 node=Q1 role=FOLLOWUP followup_needed=true timedOut=false rawLen=260
+2026-02-21T08:12:29.044Z D/SurveyVM [DefaultDispatcher-worker-1] getFollowupPrompt[Q1] -> len=486 evalLen=260
+2026-02-21T08:12:29.047Z D/AiViewModel [DefaultDispatcher-worker-1] run[4]: mode=FOLLOWUP_JSON_OR_TEXT phase=FOLLOWUP commit=false prompt.len=486, fullPrompt.len=1530, timeoutMs=120000
+2026-02-21T08:12:29.049Z D/AiViewModel [DefaultDispatcher-worker-1] run[4]: sha(prompt)=3dfa356c9078bb569ab16d5ff823c12ee28ccb8cc7b8499c898cc80727093a0c sha(full)=3a9ce2f515567b584bd21e31e673c8c6e853fb3693d673e603750a341bca9a42
+2026-02-21T08:12:29.050Z D/LiteRtRepository [DefaultDispatcher-worker-1] [4] request start: model='Gemma3n4B', prompt.len=1530, sha=3a9ce2f515567b58, gateWaitMs=0
+2026-02-21T08:12:29.053Z D/LiteRtRepository [DefaultDispatcher-worker-1] [4] initializeIfNeeded ok (initMs=2)
+2026-02-21T08:12:29.054Z D/LiteRtLM [DefaultDispatcher-worker-1] Cooldown delay: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' delay=192ms reason='runInference-start'
+2026-02-21T08:12:29.074Z I/AiScreen [main] Follow-up persisted (context=sid=1|nid=Q1 node=Q1 runId=3 mode=EVAL_JSON len=127 preview="", "followup_needed": true, "followup_target": "Muhiri kuhusu matoi ya mavuno yapoliswa na FAW katika misimu iliyopita n…")
+2026-02-21T08:12:29.074Z D/AiScreen [main] Step rendered (context=sid=1|nid=Q1 node=Q1 runId=3 mode=EVAL_JSON showJson=true rawLen=260 followups=1 timedOut=false)
+2026-02-21T08:12:29.293Z D/LiteRtLM [DefaultDispatcher-worker-1] resetConversationInternal done: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' reason='resetConversation'
+2026-02-21T08:12:29.294Z D/LiteRtLM [DefaultDispatcher-worker-1] runInference start: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=4 hasText=true textLen=1530 images=0 audioClips=0
+2026-02-21T08:12:29.294Z I/LiteRtLM [DefaultDispatcher-worker-1] LiteRT-LM sendMessageAsync(text): key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=4 len=1530
+2026-02-21T08:12:31.537Z D/AiViewModel [DefaultDispatcher-worker-1] run[4] chunk[1].preview='Muh'
+2026-02-21T08:12:31.718Z D/AiViewModel [DefaultDispatcher-worker-1] run[4] chunk[2].preview='iri'
+2026-02-21T08:12:31.840Z D/AiViewModel [DefaultDispatcher-worker-1] run[4] chunk[3].preview='␠kuhusu'
+2026-02-21T08:12:32.067Z D/AiViewModel [DefaultDispatcher-worker-1] run[4] chunk[4].preview='␠mat'
+2026-02-21T08:12:32.206Z D/AiViewModel [DefaultDispatcher-worker-1] run[4] chunk[5].preview='oi'
+2026-02-21T08:12:32.424Z D/AiViewModel [DefaultDispatcher-worker-1] run[4] chunk[6].preview='␠ya'
+2026-02-21T08:12:32.542Z D/AiViewModel [DefaultDispatcher-worker-10] run[4] chunk[7].preview='␠mav'
+2026-02-21T08:12:32.739Z D/AiViewModel [DefaultDispatcher-worker-10] run[4] chunk[8].preview='uno'
+2026-02-21T08:12:32.909Z D/AiViewModel [DefaultDispatcher-worker-10] run[4] chunk[9].preview='␠yap'
+2026-02-21T08:12:33.131Z D/AiViewModel [DefaultDispatcher-worker-10] run[4] chunk[10].preview='olis'
+2026-02-21T08:12:33.247Z D/AiViewModel [DefaultDispatcher-worker-10] run[4] chunk[11].preview='wa'
+2026-02-21T08:12:33.435Z D/AiViewModel [DefaultDispatcher-worker-10] run[4] chunk[12].preview='␠na'
+2026-02-21T08:12:33.625Z D/AiViewModel [DefaultDispatcher-worker-1] run[4] chunk[13].preview='␠FA'
+2026-02-21T08:12:33.755Z D/AiViewModel [DefaultDispatcher-worker-1] run[4] chunk[14].preview='W'
+2026-02-21T08:12:33.936Z D/AiViewModel [DefaultDispatcher-worker-1] run[4] chunk[15].preview='␠katika'
+2026-02-21T08:12:34.136Z D/AiViewModel [DefaultDispatcher-worker-1] run[4] chunk[16].preview='␠mis'
+2026-02-21T08:12:34.289Z D/AiViewModel [DefaultDispatcher-worker-1] run[4] chunk[17].preview='imu'
+2026-02-21T08:12:34.478Z D/AiViewModel [DefaultDispatcher-worker-1] run[4] chunk[18].preview='␠il'
+2026-02-21T08:12:34.669Z D/AiViewModel [DefaultDispatcher-worker-1] run[4] chunk[19].preview='iy'
+2026-02-21T08:12:34.839Z D/AiViewModel [DefaultDispatcher-worker-1] run[4] chunk[20].preview='op'
+2026-02-21T08:12:35.010Z D/AiViewModel [DefaultDispatcher-worker-10] run[4] chunk[21].preview='ita'
+2026-02-21T08:12:35.195Z D/AiViewModel [DefaultDispatcher-worker-1] run[4] chunk[22].preview='␠ni'
+2026-02-21T08:12:35.370Z D/AiViewModel [DefaultDispatcher-worker-1] run[4] chunk[23].preview='␠n'
+2026-02-21T08:12:35.513Z D/AiViewModel [DefaultDispatcher-worker-1] run[4] chunk[24].preview='ini'
+2026-02-21T08:12:35.679Z D/AiViewModel [DefaultDispatcher-worker-10] run[4] chunk[25].preview='?'
+2026-02-21T08:12:35.872Z D/LiteRtRepository [main] [4] logical done=true (waiting native termination safe point)
+2026-02-21T08:12:35.872Z D/LiteRtRepository [main] [4] cleanUpListener (native termination safe point)
+2026-02-21T08:12:35.873Z D/LiteRtRepository [DefaultDispatcher-worker-2] [4] scheduleResetAfterSafepoint: begin (tag='native-terminated')
+2026-02-21T08:12:35.875Z D/AiViewModel [DefaultDispatcher-worker-1] run[4] stats: chunks=25, chars=79, raw.len=79
+2026-02-21T08:12:35.876Z D/AiViewModel [DefaultDispatcher-worker-1] run[4] sha(raw)=14a84d77c1e2a6aefb92d053f798c318eb6627b70830541b2b4cb948406cf8b2
+2026-02-21T08:12:35.876Z D/LiteRtRepository [DefaultDispatcher-worker-4] [4] resetConversation ok (after safepoint, tag='native-terminated')
+2026-02-21T08:12:35.876Z D/LiteRtRepository [DefaultDispatcher-worker-4] [4] scheduleResetAfterSafepoint: end (tag='native-terminated')
+2026-02-21T08:12:35.876Z D/AiViewModel [DefaultDispatcher-worker-1] run[4] rawVisible='Muhiri␠kuhusu␠matoi␠ya␠mavuno␠yapoliswa␠na␠FAW␠katika␠misimu␠iliyopita␠ni␠nini?'
+2026-02-21T08:12:35.879Z D/AiViewModel [DefaultDispatcher-worker-1] run[4]: FOLLOWUP parse extractorQ='Muhiri␠kuhusu␠matoi␠ya␠mavuno␠yapoliswa␠na␠FAW␠katika␠misimu␠iliyopita␠ni␠nini?' textQ='Muhiri␠kuhusu␠matoi␠ya␠mavuno␠yapoliswa␠na␠FAW␠katika␠misimu␠iliyopita␠ni␠nini?' best='Muhiri␠kuhusu␠matoi␠ya␠mavuno␠yapoliswa␠na␠FAW␠katika␠misimu␠iliyopita␠ni␠nini?'
+2026-02-21T08:12:35.880Z D/AiViewModel [DefaultDispatcher-worker-1] stepHistory+ runId=4 phase=FOLLOWUP mode=FOLLOWUP_JSON_OR_TEXT raw.len=79 score=null FU=1 FU0='Muhiri␠kuhusu␠matoi␠ya␠mavuno␠yapoliswa␠na␠FAW␠katika␠misimu␠iliyopita␠ni␠nini?' timeout=false err=null
+2026-02-21T08:12:35.880Z I/AiViewModel [DefaultDispatcher-worker-1] run[4] done: phase=FOLLOWUP mode=FOLLOWUP_JSON_OR_TEXT score=null FU[0]=Muhiri kuhusu matoi ya mavuno yapoliswa na FAW katika misimu iliyopita ni nini? commit=false err=<none>
+2026-02-21T08:12:35.920Z D/AiScreen [main] Step rendered (context=sid=1|nid=Q1 node=Q1 runId=4 mode=FOLLOWUP_JSON_OR_TEXT showJson=false rawLen=79 followups=1 timedOut=false)
+2026-02-21T08:12:36.130Z D/LiteRtLM [DefaultDispatcher-worker-1] resetConversationInternal done: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' reason='resetConversation'
+2026-02-21T08:13:59.292Z D/SurveyVM [main] push -> Q2, navSize=3, stackSize=3
+2026-02-21T08:14:01.153Z D/SurveyVM [main] backToPrevious -> Q1
+2026-02-21T08:14:09.369Z D/SurveyVM [main] hasTwoStepPrompt[Q1] -> true (eval=303, fu=240)
+2026-02-21T08:14:09.369Z I/AiScreen [main] Submit begin runId=ai-Q1-1691678301-1691678301294720 node=Q1 role=FOLLOWUP isTwoStep=true sessionId=1 surveyUuid=97a90737-e358-449c-898f-74c95c8dbe46 qLen=127 aLen=25 qPreview="", "followup_needed": true, "followup_target": "Muhiri kuhusu matoi ya mavuno yapoliswa na FAW k…" aPreview="sfbsdfb asdf sdvasdv asdv"
+2026-02-21T08:14:09.369Z D/SurveyVM [main] getEvalPrompt[Q1] -> len=433
+2026-02-21T08:14:09.370Z I/AiScreen [main] Submit end runId=ai-Q1-1691678301-1691678301294720 node=Q1 elapsed=1ms
+2026-02-21T08:14:09.370Z D/AiViewModel [DefaultDispatcher-worker-1] run[5]: mode=EVAL_JSON phase=EVAL commit=true prompt.len=433, fullPrompt.len=1577, timeoutMs=120000
+2026-02-21T08:14:09.371Z D/AiViewModel [DefaultDispatcher-worker-1] run[5]: sha(prompt)=37d1249d6a6371e9ff4b21fc8b3ffb0e3fcebb884f117f6b2a471687c4264dd5 sha(full)=1ad8bbd3acf8bd0b2a93f0f70a2412cafa4bbea70fef715af261cfb2e8f32790
+2026-02-21T08:14:09.371Z D/LiteRtRepository [DefaultDispatcher-worker-6] [5] request start: model='Gemma3n4B', prompt.len=1577, sha=1ad8bbd3acf8bd0b, gateWaitMs=0
+2026-02-21T08:14:09.373Z D/LiteRtRepository [DefaultDispatcher-worker-6] [5] initializeIfNeeded ok (initMs=3)
+2026-02-21T08:14:09.374Z D/LiteRtLM [DefaultDispatcher-worker-1] runInference start: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=5 hasText=true textLen=1577 images=0 audioClips=0
+2026-02-21T08:14:09.374Z I/LiteRtLM [DefaultDispatcher-worker-1] LiteRT-LM sendMessageAsync(text): key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=5 len=1577
+2026-02-21T08:14:11.361Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[1].preview='{"'
+2026-02-21T08:14:11.572Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[2].preview='analysis'
+2026-02-21T08:14:11.700Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[3].preview='":'
+2026-02-21T08:14:11.871Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[4].preview='␠"'
+2026-02-21T08:14:12.089Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[5].preview='J'
+2026-02-21T08:14:12.207Z D/AiViewModel [DefaultDispatcher-worker-6] run[5] chunk[6].preview='ibu'
+2026-02-21T08:14:12.405Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[7].preview='␠h'
+2026-02-21T08:14:12.537Z D/AiViewModel [DefaultDispatcher-worker-6] run[5] chunk[8].preview='aina'
+2026-02-21T08:14:12.754Z D/AiViewModel [DefaultDispatcher-worker-6] run[5] chunk[9].preview='␠ma'
+2026-02-21T08:14:12.878Z D/AiViewModel [DefaultDispatcher-worker-6] run[5] chunk[10].preview='na'
+2026-02-21T08:14:13.088Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[11].preview='␠na'
+2026-02-21T08:14:13.216Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[12].preview='␠ha'
+2026-02-21T08:14:13.425Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[13].preview='ifai'
+2026-02-21T08:14:13.556Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[14].preview='.",'
+2026-02-21T08:14:13.780Z D/AiViewModel [DefaultDispatcher-worker-6] run[5] chunk[15].preview='␠"'
+2026-02-21T08:14:13.885Z D/AiViewModel [DefaultDispatcher-worker-6] run[5] chunk[16].preview='weak'
+2026-02-21T08:14:14.075Z D/AiViewModel [DefaultDispatcher-worker-6] run[5] chunk[17].preview='ness'
+2026-02-21T08:14:14.222Z D/AiViewModel [DefaultDispatcher-worker-6] run[5] chunk[18].preview='":'
+2026-02-21T08:14:14.428Z D/AiViewModel [DefaultDispatcher-worker-6] run[5] chunk[19].preview='␠"'
+2026-02-21T08:14:14.556Z D/AiViewModel [DefaultDispatcher-worker-6] run[5] chunk[20].preview='J'
+2026-02-21T08:14:14.757Z D/AiViewModel [DefaultDispatcher-worker-6] run[5] chunk[21].preview='ibu'
+2026-02-21T08:14:14.894Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[22].preview='␠ha'
+2026-02-21T08:14:15.106Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[23].preview='itoa'
+2026-02-21T08:14:15.230Z D/AiViewModel [DefaultDispatcher-worker-6] run[5] chunk[24].preview='␠ta'
+2026-02-21T08:14:15.442Z D/AiViewModel [DefaultDispatcher-worker-6] run[5] chunk[25].preview='r'
+2026-02-21T08:14:15.572Z D/AiViewModel [DefaultDispatcher-worker-6] run[5] chunk[26].preview='ifa'
+2026-02-21T08:14:15.790Z D/AiViewModel [DefaultDispatcher-worker-6] run[5] chunk[27].preview='␠muhimu'
+2026-02-21T08:14:15.940Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[28].preview='␠kuhusu'
+2026-02-21T08:14:16.141Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[29].preview='␠mav'
+2026-02-21T08:14:16.264Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[30].preview='uno'
+2026-02-21T08:14:16.474Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[31].preview='␠ya'
+2026-02-21T08:14:16.608Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[32].preview='␠polis'
+2026-02-21T08:14:16.938Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[33].preview='wa'
+2026-02-21T08:14:17.058Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[34].preview='␠na'
+2026-02-21T08:14:17.261Z D/AiViewModel [DefaultDispatcher-worker-6] run[5] chunk[35].preview='␠FA'
+2026-02-21T08:14:17.394Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[36].preview='W'
+2026-02-21T08:14:17.610Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[37].preview='.",'
+2026-02-21T08:14:17.742Z D/AiViewModel [DefaultDispatcher-worker-6] run[5] chunk[38].preview='␠"'
+2026-02-21T08:14:17.950Z D/AiViewModel [DefaultDispatcher-worker-6] run[5] chunk[39].preview='follow'
+2026-02-21T08:14:18.076Z D/AiViewModel [DefaultDispatcher-worker-6] run[5] chunk[40].preview='up'
+2026-02-21T08:14:18.276Z D/AiViewModel [DefaultDispatcher-worker-6] run[5] chunk[41].preview='_'
+2026-02-21T08:14:18.410Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[42].preview='needed'
+2026-02-21T08:14:18.622Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[43].preview='":'
+2026-02-21T08:14:18.749Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[44].preview='␠true'
+2026-02-21T08:14:18.946Z D/AiViewModel [DefaultDispatcher-worker-6] run[5] chunk[45].preview=','
+2026-02-21T08:14:19.094Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[46].preview='␠"'
+2026-02-21T08:14:19.314Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[47].preview='follow'
+2026-02-21T08:14:19.436Z D/AiViewModel [DefaultDispatcher-worker-6] run[5] chunk[48].preview='up'
+2026-02-21T08:14:19.645Z D/AiViewModel [DefaultDispatcher-worker-6] run[5] chunk[49].preview='_'
+2026-02-21T08:14:19.773Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[50].preview='target'
+2026-02-21T08:14:19.980Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[51].preview='":'
+2026-02-21T08:14:20.111Z D/AiViewModel [DefaultDispatcher-worker-6] run[5] chunk[52].preview='␠"'
+2026-02-21T08:14:20.330Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[53].preview='Muh'
+2026-02-21T08:14:20.445Z D/AiViewModel [DefaultDispatcher-worker-6] run[5] chunk[54].preview='iri'
+2026-02-21T08:14:20.662Z D/AiViewModel [DefaultDispatcher-worker-6] run[5] chunk[55].preview='␠kuhusu'
+2026-02-21T08:14:20.798Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[56].preview='␠mat'
+2026-02-21T08:14:20.946Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[57].preview='oi'
+2026-02-21T08:14:21.135Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[58].preview='␠ya'
+2026-02-21T08:14:21.332Z D/AiViewModel [DefaultDispatcher-worker-6] run[5] chunk[59].preview='␠mav'
+2026-02-21T08:14:21.455Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[60].preview='uno'
+2026-02-21T08:14:21.652Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[61].preview='␠yap'
+2026-02-21T08:14:21.815Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[62].preview='olis'
+2026-02-21T08:14:21.971Z D/AiViewModel [DefaultDispatcher-worker-6] run[5] chunk[63].preview='wa'
+2026-02-21T08:14:22.149Z D/AiViewModel [DefaultDispatcher-worker-6] run[5] chunk[64].preview='␠na'
+2026-02-21T08:14:22.319Z D/AiViewModel [DefaultDispatcher-worker-6] run[5] chunk[65].preview='␠FA'
+2026-02-21T08:14:22.499Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[66].preview='W'
+2026-02-21T08:14:22.667Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[67].preview='␠katika'
+2026-02-21T08:14:22.834Z D/AiViewModel [DefaultDispatcher-worker-6] run[5] chunk[68].preview='␠mis'
+2026-02-21T08:14:23.015Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[69].preview='imu'
+2026-02-21T08:14:23.201Z D/AiViewModel [DefaultDispatcher-worker-6] run[5] chunk[70].preview='␠il'
+2026-02-21T08:14:23.369Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[71].preview='iy'
+2026-02-21T08:14:23.533Z D/AiViewModel [DefaultDispatcher-worker-6] run[5] chunk[72].preview='op'
+2026-02-21T08:14:23.754Z D/AiViewModel [DefaultDispatcher-worker-6] run[5] chunk[73].preview='ita'
+2026-02-21T08:14:23.871Z D/AiViewModel [DefaultDispatcher-worker-6] run[5] chunk[74].preview='␠ni'
+2026-02-21T08:14:24.074Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[75].preview='␠n'
+2026-02-21T08:14:24.218Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[76].preview='ini'
+2026-02-21T08:14:24.436Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[77].preview='?",'
+2026-02-21T08:14:24.554Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[78].preview='␠"'
+2026-02-21T08:14:24.755Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[79].preview='score'
+2026-02-21T08:14:24.894Z D/AiViewModel [DefaultDispatcher-worker-6] run[5] chunk[80].preview='":'
+2026-02-21T08:14:25.122Z D/AiViewModel [DefaultDispatcher-worker-6] run[5] chunk[81].preview='␠'
+2026-02-21T08:14:25.243Z D/AiViewModel [DefaultDispatcher-worker-6] run[5] chunk[82].preview='1'
+2026-02-21T08:14:25.456Z D/AiViewModel [DefaultDispatcher-worker-6] run[5] chunk[83].preview='}'
+2026-02-21T08:14:25.587Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[84].preview='↩'
+2026-02-21T08:14:25.785Z D/LiteRtRepository [main] [5] logical done=true (waiting native termination safe point)
+2026-02-21T08:14:25.785Z D/LiteRtRepository [main] [5] cleanUpListener (native termination safe point)
+2026-02-21T08:14:25.786Z D/LiteRtRepository [DefaultDispatcher-worker-1] [5] scheduleResetAfterSafepoint: begin (tag='native-terminated')
+2026-02-21T08:14:25.787Z D/AiViewModel [DefaultDispatcher-worker-8] run[5] stats: chunks=84, chars=256, raw.len=256
+2026-02-21T08:14:25.788Z D/AiViewModel [DefaultDispatcher-worker-8] run[5] sha(raw)=30d52458f22ded7dc3ad3dff72d5731f85a86f191eeb7c929ae61a3d7d12d19e
+2026-02-21T08:14:25.788Z D/AiViewModel [DefaultDispatcher-worker-8] run[5] rawVisible='{"analysis":␠"Jibu␠haina␠mana␠na␠haifai.",␠"weakness":␠"Jibu␠haitoa␠tarifa␠muhimu␠kuhusu␠mavuno␠ya␠poliswa␠na␠FAW.",␠"followup_needed":␠true,␠"followup_target":␠"Muhiri␠kuhusu␠matoi␠ya␠mavuno␠yapoliswa␠na␠FAW␠katika␠misimu␠iliyopita␠ni␠nini'
+2026-02-21T08:14:25.789Z D/LiteRtRepository [DefaultDispatcher-worker-2] [5] resetConversation ok (after safepoint, tag='native-terminated')
+2026-02-21T08:14:25.789Z D/LiteRtRepository [DefaultDispatcher-worker-2] [5] scheduleResetAfterSafepoint: end (tag='native-terminated')
+2026-02-21T08:14:25.791Z D/AiViewModel [DefaultDispatcher-worker-8] run[5]: EVAL_JSON parsed score=1 followups=1 fu0='",␠"followup_needed":␠true,␠"followup_target":␠"Muhiri␠kuhusu␠matoi␠ya␠mavuno␠yapoliswa␠na␠FAW␠katika␠misimu␠iliyopita␠ni␠nini?'
+2026-02-21T08:14:25.791Z D/AiViewModel [DefaultDispatcher-worker-8] stepHistory+ runId=5 phase=EVAL mode=EVAL_JSON raw.len=256 score=1 FU=1 FU0='",␠"followup_needed":␠true,␠"followup_target":␠"Muhiri␠kuhusu␠matoi␠ya␠mavuno␠yapoliswa␠na␠FAW␠katika␠misimu␠iliyopita␠ni␠nini?' timeout=false err=null
+2026-02-21T08:14:25.791Z I/AiViewModel [DefaultDispatcher-worker-8] run[5] done: phase=EVAL mode=EVAL_JSON score=1 FU[0]=", "followup_needed": true, "followup_target": "Muhiri kuhusu matoi ya mavuno yapoliswa na FAW katika misimu iliyopita ni nini? commit=true err=<none>
+2026-02-21T08:14:25.792Z I/AiScreen [DefaultDispatcher-worker-8] TWO_STEP shouldRunSecond runId=ai-Q1-1691678301-1691678301294720 node=Q1 role=FOLLOWUP followup_needed=true timedOut=false rawLen=256
+2026-02-21T08:14:25.792Z D/SurveyVM [DefaultDispatcher-worker-8] getFollowupPrompt[Q1] -> len=482 evalLen=256
+2026-02-21T08:14:25.793Z D/AiViewModel [DefaultDispatcher-worker-8] run[6]: mode=FOLLOWUP_JSON_OR_TEXT phase=FOLLOWUP commit=false prompt.len=482, fullPrompt.len=1526, timeoutMs=120000
+2026-02-21T08:14:25.794Z D/AiViewModel [DefaultDispatcher-worker-8] run[6]: sha(prompt)=793292401aa9a320e0431584a927633f509a96e8d14edff5c76cea4a8aa281e7 sha(full)=f0c3cba21c60fe1a618ae9f4f0e6bb2e9ead695bda850be91e4b011de0472fa1
+2026-02-21T08:14:25.796Z D/LiteRtRepository [DefaultDispatcher-worker-8] [6] request start: model='Gemma3n4B', prompt.len=1526, sha=f0c3cba21c60fe1a, gateWaitMs=0
+2026-02-21T08:14:25.796Z D/LiteRtRepository [DefaultDispatcher-worker-8] [6] initializeIfNeeded ok (initMs=0)
+2026-02-21T08:14:25.797Z D/LiteRtLM [DefaultDispatcher-worker-8] Cooldown delay: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' delay=204ms reason='runInference-start'
+2026-02-21T08:14:25.824Z D/AiScreen [main] Step rendered (context=sid=1|nid=Q1 node=Q1 runId=5 mode=EVAL_JSON showJson=true rawLen=256 followups=1 timedOut=false)
+2026-02-21T08:14:26.050Z D/LiteRtLM [DefaultDispatcher-worker-8] resetConversationInternal done: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' reason='resetConversation'
+2026-02-21T08:14:26.051Z D/LiteRtLM [DefaultDispatcher-worker-8] runInference start: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=6 hasText=true textLen=1526 images=0 audioClips=0
+2026-02-21T08:14:26.052Z I/LiteRtLM [DefaultDispatcher-worker-8] LiteRT-LM sendMessageAsync(text): key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=6 len=1526
+2026-02-21T08:14:28.128Z D/AiViewModel [DefaultDispatcher-worker-8] run[6] chunk[1].preview='Muh'
+2026-02-21T08:14:28.326Z D/AiViewModel [DefaultDispatcher-worker-8] run[6] chunk[2].preview='iri'
+2026-02-21T08:14:28.461Z D/AiViewModel [DefaultDispatcher-worker-10] run[6] chunk[3].preview='␠kuhusu'
+2026-02-21T08:14:28.698Z D/AiViewModel [DefaultDispatcher-worker-8] run[6] chunk[4].preview='␠mat'
+2026-02-21T08:14:28.817Z D/AiViewModel [DefaultDispatcher-worker-10] run[6] chunk[5].preview='oi'
+2026-02-21T08:14:29.049Z D/AiViewModel [DefaultDispatcher-worker-8] run[6] chunk[6].preview='␠ya'
+2026-02-21T08:14:29.170Z D/AiViewModel [DefaultDispatcher-worker-10] run[6] chunk[7].preview='␠mav'
+2026-02-21T08:14:29.390Z D/AiViewModel [DefaultDispatcher-worker-10] run[6] chunk[8].preview='uno'
+2026-02-21T08:14:29.516Z D/AiViewModel [DefaultDispatcher-worker-8] run[6] chunk[9].preview='␠yap'
+2026-02-21T08:14:29.731Z D/AiViewModel [DefaultDispatcher-worker-8] run[6] chunk[10].preview='olis'
+2026-02-21T08:14:29.862Z D/AiViewModel [DefaultDispatcher-worker-8] run[6] chunk[11].preview='wa'
+2026-02-21T08:14:30.076Z D/AiViewModel [DefaultDispatcher-worker-8] run[6] chunk[12].preview='␠na'
+2026-02-21T08:14:30.214Z D/AiViewModel [DefaultDispatcher-worker-8] run[6] chunk[13].preview='␠FA'
+2026-02-21T08:14:30.444Z D/AiViewModel [DefaultDispatcher-worker-10] run[6] chunk[14].preview='W'
+2026-02-21T08:14:30.577Z D/AiViewModel [DefaultDispatcher-worker-8] run[6] chunk[15].preview='␠katika'
+2026-02-21T08:14:30.801Z D/AiViewModel [DefaultDispatcher-worker-8] run[6] chunk[16].preview='␠mis'
+2026-02-21T08:14:30.920Z D/AiViewModel [DefaultDispatcher-worker-10] run[6] chunk[17].preview='imu'
+2026-02-21T08:14:31.114Z D/AiViewModel [DefaultDispatcher-worker-8] run[6] chunk[18].preview='␠il'
+2026-02-21T08:14:31.269Z D/AiViewModel [DefaultDispatcher-worker-8] run[6] chunk[19].preview='iy'
+2026-02-21T08:14:31.469Z D/AiViewModel [DefaultDispatcher-worker-8] run[6] chunk[20].preview='op'
+2026-02-21T08:14:31.599Z D/AiViewModel [DefaultDispatcher-worker-10] run[6] chunk[21].preview='ita'
+2026-02-21T08:14:31.801Z D/AiViewModel [DefaultDispatcher-worker-10] run[6] chunk[22].preview='␠ni'
+2026-02-21T08:14:32.006Z D/AiViewModel [DefaultDispatcher-worker-10] run[6] chunk[23].preview='␠n'
+2026-02-21T08:14:32.113Z D/AiViewModel [DefaultDispatcher-worker-10] run[6] chunk[24].preview='ini'
+2026-02-21T08:14:32.337Z D/AiViewModel [DefaultDispatcher-worker-10] run[6] chunk[25].preview='?'
+2026-02-21T08:14:32.455Z D/LiteRtRepository [main] [6] logical done=true (waiting native termination safe point)
+2026-02-21T08:14:32.456Z D/LiteRtRepository [main] [6] cleanUpListener (native termination safe point)
+2026-02-21T08:14:32.456Z D/LiteRtRepository [DefaultDispatcher-worker-10] [6] scheduleResetAfterSafepoint: begin (tag='native-terminated')
+2026-02-21T08:14:32.457Z D/AiViewModel [DefaultDispatcher-worker-10] run[6] stats: chunks=25, chars=79, raw.len=79
+2026-02-21T08:14:32.457Z D/AiViewModel [DefaultDispatcher-worker-10] run[6] sha(raw)=14a84d77c1e2a6aefb92d053f798c318eb6627b70830541b2b4cb948406cf8b2
+2026-02-21T08:14:32.457Z D/AiViewModel [DefaultDispatcher-worker-10] run[6] rawVisible='Muhiri␠kuhusu␠matoi␠ya␠mavuno␠yapoliswa␠na␠FAW␠katika␠misimu␠iliyopita␠ni␠nini?'
+2026-02-21T08:14:32.457Z D/AiViewModel [DefaultDispatcher-worker-10] run[6]: FOLLOWUP parse extractorQ='Muhiri␠kuhusu␠matoi␠ya␠mavuno␠yapoliswa␠na␠FAW␠katika␠misimu␠iliyopita␠ni␠nini?' textQ='Muhiri␠kuhusu␠matoi␠ya␠mavuno␠yapoliswa␠na␠FAW␠katika␠misimu␠iliyopita␠ni␠nini?' best='Muhiri␠kuhusu␠matoi␠ya␠mavuno␠yapoliswa␠na␠FAW␠katika␠misimu␠iliyopita␠ni␠nini?'
+2026-02-21T08:14:32.458Z D/AiViewModel [DefaultDispatcher-worker-10] stepHistory+ runId=6 phase=FOLLOWUP mode=FOLLOWUP_JSON_OR_TEXT raw.len=79 score=null FU=1 FU0='Muhiri␠kuhusu␠matoi␠ya␠mavuno␠yapoliswa␠na␠FAW␠katika␠misimu␠iliyopita␠ni␠nini?' timeout=false err=null
+2026-02-21T08:14:32.458Z I/AiViewModel [DefaultDispatcher-worker-10] run[6] done: phase=FOLLOWUP mode=FOLLOWUP_JSON_OR_TEXT score=null FU[0]=Muhiri kuhusu matoi ya mavuno yapoliswa na FAW katika misimu iliyopita ni nini? commit=false err=<none>
+2026-02-21T08:14:32.459Z D/LiteRtRepository [DefaultDispatcher-worker-4] [6] resetConversation ok (after safepoint, tag='native-terminated')
+2026-02-21T08:14:32.459Z D/LiteRtRepository [DefaultDispatcher-worker-4] [6] scheduleResetAfterSafepoint: end (tag='native-terminated')
+2026-02-21T08:14:32.467Z D/AiScreen [main] Step rendered (context=sid=1|nid=Q1 node=Q1 runId=6 mode=FOLLOWUP_JSON_OR_TEXT showJson=false rawLen=79 followups=1 timedOut=false)
+2026-02-21T08:14:32.718Z D/LiteRtLM [DefaultDispatcher-worker-11] resetConversationInternal done: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' reason='resetConversation'
+2026-02-21T08:15:03.955Z D/SurveyVM [main] hasTwoStepPrompt[Q1] -> true (eval=303, fu=240)
+2026-02-21T08:15:03.955Z I/AiScreen [main] Submit begin runId=ai-Q1-1691732887-1691732887206327 node=Q1 role=FOLLOWUP isTwoStep=true sessionId=1 surveyUuid=97a90737-e358-449c-898f-74c95c8dbe46 qLen=127 aLen=29 qPreview="", "followup_needed": true, "followup_target": "Muhiri kuhusu matoi ya mavuno yapoliswa na FAW k…" aPreview="vasdvsadv dasdvsdv adasdvasdv"
+2026-02-21T08:15:03.955Z D/SurveyVM [main] getEvalPrompt[Q1] -> len=437
+2026-02-21T08:15:03.955Z I/AiScreen [main] Submit end runId=ai-Q1-1691732887-1691732887206327 node=Q1 elapsed=0ms
+2026-02-21T08:15:03.956Z D/AiViewModel [DefaultDispatcher-worker-11] run[7]: mode=EVAL_JSON phase=EVAL commit=true prompt.len=437, fullPrompt.len=1581, timeoutMs=120000
+2026-02-21T08:15:03.957Z D/AiViewModel [DefaultDispatcher-worker-11] run[7]: sha(prompt)=9583fbfec994c66ef75babd832b805e5f4688171314b7bc67175b64c1277da60 sha(full)=8edf66405daa393b88d2df84aa61c1698dea9d61fcaf2412e853218592901469
+2026-02-21T08:15:03.958Z D/LiteRtRepository [DefaultDispatcher-worker-5] [7] request start: model='Gemma3n4B', prompt.len=1581, sha=8edf66405daa393b, gateWaitMs=1
+2026-02-21T08:15:03.959Z D/LiteRtRepository [DefaultDispatcher-worker-11] [7] initializeIfNeeded ok (initMs=1)
+2026-02-21T08:15:03.959Z D/LiteRtLM [DefaultDispatcher-worker-11] runInference start: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=7 hasText=true textLen=1581 images=0 audioClips=0
+2026-02-21T08:15:03.960Z I/LiteRtLM [DefaultDispatcher-worker-11] LiteRT-LM sendMessageAsync(text): key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=7 len=1581
+2026-02-21T08:15:05.939Z D/AiViewModel [DefaultDispatcher-worker-11] run[7] chunk[1].preview='{"'
+2026-02-21T08:15:06.076Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[2].preview='analysis'
+2026-02-21T08:15:06.268Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[3].preview='":'
+2026-02-21T08:15:06.447Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[4].preview='␠"'
+2026-02-21T08:15:06.617Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[5].preview='J'
+2026-02-21T08:15:06.785Z D/AiViewModel [DefaultDispatcher-worker-11] run[7] chunk[6].preview='ibu'
+2026-02-21T08:15:06.974Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[7].preview='␠ha'
+2026-02-21T08:15:07.136Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[8].preview='ifai'
+2026-02-21T08:15:07.334Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[9].preview='␠na'
+2026-02-21T08:15:07.524Z D/AiViewModel [DefaultDispatcher-worker-11] run[7] chunk[10].preview='␠ha'
+2026-02-21T08:15:07.696Z D/AiViewModel [DefaultDispatcher-worker-11] run[7] chunk[11].preview='ina'
+2026-02-21T08:15:07.839Z D/AiViewModel [DefaultDispatcher-worker-11] run[7] chunk[12].preview='␠ma'
+2026-02-21T08:15:08.045Z D/AiViewModel [DefaultDispatcher-worker-11] run[7] chunk[13].preview='na'
+2026-02-21T08:15:08.197Z D/AiViewModel [DefaultDispatcher-worker-11] run[7] chunk[14].preview='.",'
+2026-02-21T08:15:08.368Z D/AiViewModel [DefaultDispatcher-worker-11] run[7] chunk[15].preview='␠"'
+2026-02-21T08:15:08.543Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[16].preview='weak'
+2026-02-21T08:15:08.706Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[17].preview='ness'
+2026-02-21T08:15:08.895Z D/AiViewModel [DefaultDispatcher-worker-11] run[7] chunk[18].preview='":'
+2026-02-21T08:15:09.047Z D/AiViewModel [DefaultDispatcher-worker-11] run[7] chunk[19].preview='␠"'
+2026-02-21T08:15:09.230Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[20].preview='J'
+2026-02-21T08:15:09.398Z D/AiViewModel [DefaultDispatcher-worker-11] run[7] chunk[21].preview='ibu'
+2026-02-21T08:15:09.571Z D/AiViewModel [DefaultDispatcher-worker-11] run[7] chunk[22].preview='␠ha'
+2026-02-21T08:15:09.732Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[23].preview='itoa'
+2026-02-21T08:15:09.901Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[24].preview='␠maj'
+2026-02-21T08:15:10.096Z D/AiViewModel [DefaultDispatcher-worker-11] run[7] chunk[25].preview='ibu'
+2026-02-21T08:15:10.256Z D/AiViewModel [DefaultDispatcher-worker-11] run[7] chunk[26].preview='␠kwa'
+2026-02-21T08:15:10.423Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[27].preview='␠sw'
+2026-02-21T08:15:10.611Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[28].preview='ali'
+2026-02-21T08:15:10.747Z D/AiViewModel [DefaultDispatcher-worker-11] run[7] chunk[29].preview='␠lil'
+2026-02-21T08:15:11.018Z D/AiViewModel [DefaultDispatcher-worker-11] run[7] chunk[30].preview='ios'
+2026-02-21T08:15:11.135Z D/AiViewModel [DefaultDispatcher-worker-11] run[7] chunk[31].preview='ingi'
+2026-02-21T08:15:11.372Z D/AiViewModel [DefaultDispatcher-worker-11] run[7] chunk[32].preview='␠kwa'
+2026-02-21T08:15:11.508Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[33].preview='␠taf'
+2026-02-21T08:15:11.714Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[34].preview='iti'
+2026-02-21T08:15:11.841Z D/AiViewModel [DefaultDispatcher-worker-11] run[7] chunk[35].preview='␠za'
+2026-02-21T08:15:12.038Z D/AiViewModel [DefaultDispatcher-worker-11] run[7] chunk[36].preview='␠wak'
+2026-02-21T08:15:12.179Z D/AiViewModel [DefaultDispatcher-worker-11] run[7] chunk[37].preview='ul'
+2026-02-21T08:15:12.402Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[38].preview='ima'
+2026-02-21T08:15:12.520Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[39].preview='␠kuhusu'
+2026-02-21T08:15:12.734Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[40].preview='␠mat'
+2026-02-21T08:15:12.863Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[41].preview='oi'
+2026-02-21T08:15:13.039Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[42].preview='␠ya'
+2026-02-21T08:15:13.251Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[43].preview='␠mav'
+2026-02-21T08:15:13.389Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[44].preview='uno'
+2026-02-21T08:15:13.590Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[45].preview='␠yap'
+2026-02-21T08:15:13.729Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[46].preview='olis'
+2026-02-21T08:15:13.907Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[47].preview='wa'
+2026-02-21T08:15:14.124Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[48].preview='␠na'
+2026-02-21T08:15:14.246Z D/AiViewModel [DefaultDispatcher-worker-11] run[7] chunk[49].preview='␠FA'
+2026-02-21T08:15:14.435Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[50].preview='W'
+2026-02-21T08:15:14.595Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[51].preview='.",'
+2026-02-21T08:15:14.828Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[52].preview='␠"'
+2026-02-21T08:15:14.989Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[53].preview='follow'
+2026-02-21T08:15:15.185Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[54].preview='up'
+2026-02-21T08:15:15.322Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[55].preview='_'
+2026-02-21T08:15:15.488Z D/AiViewModel [DefaultDispatcher-worker-11] run[7] chunk[56].preview='needed'
+2026-02-21T08:15:15.701Z D/AiViewModel [DefaultDispatcher-worker-11] run[7] chunk[57].preview='":'
+2026-02-21T08:15:15.854Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[58].preview='␠true'
+2026-02-21T08:15:16.066Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[59].preview=','
+2026-02-21T08:15:16.194Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[60].preview='␠"'
+2026-02-21T08:15:16.396Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[61].preview='follow'
+2026-02-21T08:15:16.533Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[62].preview='up'
+2026-02-21T08:15:16.697Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[63].preview='_'
+2026-02-21T08:15:16.912Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[64].preview='target'
+2026-02-21T08:15:17.031Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[65].preview='":'
+2026-02-21T08:15:17.244Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[66].preview='␠"'
+2026-02-21T08:15:17.370Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[67].preview='Muh'
+2026-02-21T08:15:17.581Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[68].preview='iri'
+2026-02-21T08:15:17.713Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[69].preview='␠kuhusu'
+2026-02-21T08:15:17.923Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[70].preview='␠mat'
+2026-02-21T08:15:18.088Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[71].preview='oi'
+2026-02-21T08:15:18.218Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[72].preview='␠ya'
+2026-02-21T08:15:18.422Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[73].preview='␠mav'
+2026-02-21T08:15:18.554Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[74].preview='uno'
+2026-02-21T08:15:18.756Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[75].preview='␠yap'
+2026-02-21T08:15:18.898Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[76].preview='olis'
+2026-02-21T08:15:19.110Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[77].preview='wa'
+2026-02-21T08:15:19.245Z D/AiViewModel [DefaultDispatcher-worker-11] run[7] chunk[78].preview='␠na'
+2026-02-21T08:15:19.446Z D/AiViewModel [DefaultDispatcher-worker-11] run[7] chunk[79].preview='␠FA'
+2026-02-21T08:15:19.589Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[80].preview='W'
+2026-02-21T08:15:19.755Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[81].preview='␠katika'
+2026-02-21T08:15:19.970Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[82].preview='␠mis'
+2026-02-21T08:15:20.092Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[83].preview='imu'
+2026-02-21T08:15:20.324Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[84].preview='␠il'
+2026-02-21T08:15:20.444Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[85].preview='iy'
+2026-02-21T08:15:20.671Z D/AiViewModel [DefaultDispatcher-worker-11] run[7] chunk[86].preview='op'
+2026-02-21T08:15:20.788Z D/AiViewModel [DefaultDispatcher-worker-11] run[7] chunk[87].preview='ita'
+2026-02-21T08:15:20.955Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[88].preview='␠ni'
+2026-02-21T08:15:21.162Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[89].preview='␠n'
+2026-02-21T08:15:21.352Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[90].preview='ini'
+2026-02-21T08:15:21.537Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[91].preview='?",'
+2026-02-21T08:15:21.658Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[92].preview='␠"'
+2026-02-21T08:15:21.884Z D/AiViewModel [DefaultDispatcher-worker-11] run[7] chunk[93].preview='score'
+2026-02-21T08:15:22.023Z D/AiViewModel [DefaultDispatcher-worker-11] run[7] chunk[94].preview='":'
+2026-02-21T08:15:22.224Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[95].preview='␠'
+2026-02-21T08:15:22.363Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[96].preview='1'
+2026-02-21T08:15:22.565Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[97].preview='}'
+2026-02-21T08:15:22.692Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[98].preview='↩'
+2026-02-21T08:15:22.898Z D/LiteRtRepository [main] [7] logical done=true (waiting native termination safe point)
+2026-02-21T08:15:22.899Z D/LiteRtRepository [main] [7] cleanUpListener (native termination safe point)
+2026-02-21T08:15:22.899Z D/LiteRtRepository [DefaultDispatcher-worker-8] [7] scheduleResetAfterSafepoint: begin (tag='native-terminated')
+2026-02-21T08:15:22.900Z D/LiteRtRepository [DefaultDispatcher-worker-4] [7] resetConversation ok (after safepoint, tag='native-terminated')
+2026-02-21T08:15:22.900Z D/AiViewModel [DefaultDispatcher-worker-11] run[7] stats: chunks=98, chars=301, raw.len=301
+2026-02-21T08:15:22.900Z D/LiteRtRepository [DefaultDispatcher-worker-4] [7] scheduleResetAfterSafepoint: end (tag='native-terminated')
+2026-02-21T08:15:22.901Z D/AiViewModel [DefaultDispatcher-worker-11] run[7] sha(raw)=c539213677222c03885f93e004e6f23a85baa72f9ff60a2e2f2f7e25803d617b
+2026-02-21T08:15:22.901Z D/AiViewModel [DefaultDispatcher-worker-11] run[7] rawVisible='{"analysis":␠"Jibu␠haifai␠na␠haina␠mana.",␠"weakness":␠"Jibu␠haitoa␠majibu␠kwa␠swali␠liliosingi␠kwa␠tafiti␠za␠wakulima␠kuhusu␠matoi␠ya␠mavuno␠yapoliswa␠na␠FAW.",␠"followup_needed":␠true,␠"followup_target":␠"Muhiri␠kuhusu␠matoi␠ya␠mavuno␠yap'
+2026-02-21T08:15:22.902Z D/AiViewModel [DefaultDispatcher-worker-11] run[7]: EVAL_JSON parsed score=1 followups=1 fu0='",␠"followup_needed":␠true,␠"followup_target":␠"Muhiri␠kuhusu␠matoi␠ya␠mavuno␠yapoliswa␠na␠FAW␠katika␠misimu␠iliyopita␠ni␠nini?'
+2026-02-21T08:15:22.903Z D/AiViewModel [DefaultDispatcher-worker-11] stepHistory+ runId=7 phase=EVAL mode=EVAL_JSON raw.len=301 score=1 FU=1 FU0='",␠"followup_needed":␠true,␠"followup_target":␠"Muhiri␠kuhusu␠matoi␠ya␠mavuno␠yapoliswa␠na␠FAW␠katika␠misimu␠iliyopita␠ni␠nini?' timeout=false err=null
+2026-02-21T08:15:22.903Z I/AiViewModel [DefaultDispatcher-worker-11] run[7] done: phase=EVAL mode=EVAL_JSON score=1 FU[0]=", "followup_needed": true, "followup_target": "Muhiri kuhusu matoi ya mavuno yapoliswa na FAW katika misimu iliyopita ni nini? commit=true err=<none>
+2026-02-21T08:15:22.903Z I/AiScreen [DefaultDispatcher-worker-11] TWO_STEP shouldRunSecond runId=ai-Q1-1691732887-1691732887206327 node=Q1 role=FOLLOWUP followup_needed=true timedOut=false rawLen=301
+2026-02-21T08:15:22.903Z D/SurveyVM [DefaultDispatcher-worker-11] getFollowupPrompt[Q1] -> len=527 evalLen=301
+2026-02-21T08:15:22.904Z D/AiViewModel [DefaultDispatcher-worker-11] run[8]: mode=FOLLOWUP_JSON_OR_TEXT phase=FOLLOWUP commit=false prompt.len=527, fullPrompt.len=1571, timeoutMs=120000
+2026-02-21T08:15:22.904Z D/AiViewModel [DefaultDispatcher-worker-11] run[8]: sha(prompt)=f17b4e81375c1d7d961ded51a7c9a679d74be44dfbcc6e008d02175fe63075ef sha(full)=72b94d8aeab9bad5b930f64b0358d1a10ea31f6608fd0547991ced10d4421b1f
+2026-02-21T08:15:22.905Z D/LiteRtRepository [DefaultDispatcher-worker-10] [8] request start: model='Gemma3n4B', prompt.len=1571, sha=72b94d8aeab9bad5, gateWaitMs=0
+2026-02-21T08:15:22.906Z D/LiteRtRepository [DefaultDispatcher-worker-8] [8] initializeIfNeeded ok (initMs=1)
+2026-02-21T08:15:22.907Z D/LiteRtLM [DefaultDispatcher-worker-8] Cooldown delay: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' delay=204ms reason='runInference-start'
+2026-02-21T08:15:22.933Z D/AiScreen [main] Step rendered (context=sid=1|nid=Q1 node=Q1 runId=7 mode=EVAL_JSON showJson=true rawLen=301 followups=1 timedOut=false)
+2026-02-21T08:15:23.170Z D/LiteRtLM [DefaultDispatcher-worker-8] resetConversationInternal done: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' reason='resetConversation'
+2026-02-21T08:15:23.171Z D/LiteRtLM [DefaultDispatcher-worker-8] runInference start: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=8 hasText=true textLen=1571 images=0 audioClips=0
+2026-02-21T08:15:23.171Z I/LiteRtLM [DefaultDispatcher-worker-8] LiteRT-LM sendMessageAsync(text): key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=8 len=1571
+2026-02-21T08:15:25.286Z D/AiViewModel [DefaultDispatcher-worker-8] run[8] chunk[1].preview='Muh'
+2026-02-21T08:15:25.422Z D/AiViewModel [DefaultDispatcher-worker-8] run[8] chunk[2].preview='iri'
+2026-02-21T08:15:25.636Z D/AiViewModel [DefaultDispatcher-worker-8] run[8] chunk[3].preview='␠kuhusu'
+2026-02-21T08:15:25.778Z D/AiViewModel [DefaultDispatcher-worker-8] run[8] chunk[4].preview='␠mat'
+2026-02-21T08:15:25.986Z D/AiViewModel [DefaultDispatcher-worker-8] run[8] chunk[5].preview='oi'
+2026-02-21T08:15:26.128Z D/AiViewModel [DefaultDispatcher-worker-8] run[8] chunk[6].preview='␠ya'
+2026-02-21T08:15:26.335Z D/AiViewModel [DefaultDispatcher-worker-8] run[8] chunk[7].preview='␠mav'
+2026-02-21T08:15:26.498Z D/AiViewModel [DefaultDispatcher-worker-11] run[8] chunk[8].preview='uno'
+2026-02-21T08:15:26.696Z D/AiViewModel [DefaultDispatcher-worker-11] run[8] chunk[9].preview='␠yap'
+2026-02-21T08:15:26.914Z D/AiViewModel [DefaultDispatcher-worker-8] run[8] chunk[10].preview='olis'
+2026-02-21T08:15:27.024Z D/AiViewModel [DefaultDispatcher-worker-11] run[8] chunk[11].preview='wa'
+2026-02-21T08:15:27.254Z D/AiViewModel [DefaultDispatcher-worker-8] run[8] chunk[12].preview='␠na'
+2026-02-21T08:15:27.421Z D/AiViewModel [DefaultDispatcher-worker-8] run[8] chunk[13].preview='␠FA'
+2026-02-21T08:15:27.547Z D/AiViewModel [DefaultDispatcher-worker-8] run[8] chunk[14].preview='W'
+2026-02-21T08:15:27.772Z D/AiViewModel [DefaultDispatcher-worker-8] run[8] chunk[15].preview='␠katika'
+2026-02-21T08:15:27.891Z D/AiViewModel [DefaultDispatcher-worker-8] run[8] chunk[16].preview='␠mis'
+2026-02-21T08:15:28.078Z D/AiViewModel [DefaultDispatcher-worker-8] run[8] chunk[17].preview='imu'
+2026-02-21T08:15:28.292Z D/AiViewModel [DefaultDispatcher-worker-8] run[8] chunk[18].preview='␠il'
+2026-02-21T08:15:28.419Z D/AiViewModel [DefaultDispatcher-worker-8] run[8] chunk[19].preview='iy'
+2026-02-21T08:15:28.614Z D/AiViewModel [DefaultDispatcher-worker-8] run[8] chunk[20].preview='op'
+2026-02-21T08:15:28.756Z D/AiViewModel [DefaultDispatcher-worker-8] run[8] chunk[21].preview='ita'
+2026-02-21T08:15:28.929Z D/AiViewModel [DefaultDispatcher-worker-8] run[8] chunk[22].preview='␠ni'
+2026-02-21T08:15:29.151Z D/AiViewModel [DefaultDispatcher-worker-8] run[8] chunk[23].preview='␠n'
+2026-02-21T08:15:29.308Z D/AiViewModel [DefaultDispatcher-worker-8] run[8] chunk[24].preview='ini'
+2026-02-21T08:15:29.492Z D/AiViewModel [DefaultDispatcher-worker-8] run[8] chunk[25].preview='?'
+2026-02-21T08:15:29.624Z D/LiteRtRepository [main] [8] logical done=true (waiting native termination safe point)
+2026-02-21T08:15:29.624Z D/LiteRtRepository [main] [8] cleanUpListener (native termination safe point)
+2026-02-21T08:15:29.625Z D/AiViewModel [DefaultDispatcher-worker-11] run[8] stats: chunks=25, chars=79, raw.len=79
+2026-02-21T08:15:29.626Z D/AiViewModel [DefaultDispatcher-worker-11] run[8] sha(raw)=14a84d77c1e2a6aefb92d053f798c318eb6627b70830541b2b4cb948406cf8b2
+2026-02-21T08:15:29.626Z D/AiViewModel [DefaultDispatcher-worker-11] run[8] rawVisible='Muhiri␠kuhusu␠matoi␠ya␠mavuno␠yapoliswa␠na␠FAW␠katika␠misimu␠iliyopita␠ni␠nini?'
+2026-02-21T08:15:29.627Z D/LiteRtRepository [DefaultDispatcher-worker-10] [8] scheduleResetAfterSafepoint: begin (tag='native-terminated')
+2026-02-21T08:15:29.629Z D/LiteRtRepository [DefaultDispatcher-worker-10] [8] resetConversation ok (after safepoint, tag='native-terminated')
+2026-02-21T08:15:29.629Z D/LiteRtRepository [DefaultDispatcher-worker-10] [8] scheduleResetAfterSafepoint: end (tag='native-terminated')
+2026-02-21T08:15:29.629Z D/AiViewModel [DefaultDispatcher-worker-11] run[8]: FOLLOWUP parse extractorQ='Muhiri␠kuhusu␠matoi␠ya␠mavuno␠yapoliswa␠na␠FAW␠katika␠misimu␠iliyopita␠ni␠nini?' textQ='Muhiri␠kuhusu␠matoi␠ya␠mavuno␠yapoliswa␠na␠FAW␠katika␠misimu␠iliyopita␠ni␠nini?' best='Muhiri␠kuhusu␠matoi␠ya␠mavuno␠yapoliswa␠na␠FAW␠katika␠misimu␠iliyopita␠ni␠nini?'
+2026-02-21T08:15:29.630Z D/AiViewModel [DefaultDispatcher-worker-11] stepHistory+ runId=8 phase=FOLLOWUP mode=FOLLOWUP_JSON_OR_TEXT raw.len=79 score=null FU=1 FU0='Muhiri␠kuhusu␠matoi␠ya␠mavuno␠yapoliswa␠na␠FAW␠katika␠misimu␠iliyopita␠ni␠nini?' timeout=false err=null
+2026-02-21T08:15:29.630Z I/AiViewModel [DefaultDispatcher-worker-11] run[8] done: phase=FOLLOWUP mode=FOLLOWUP_JSON_OR_TEXT score=null FU[0]=Muhiri kuhusu matoi ya mavuno yapoliswa na FAW katika misimu iliyopita ni nini? commit=false err=<none>
+2026-02-21T08:15:29.648Z D/AiScreen [main] Step rendered (context=sid=1|nid=Q1 node=Q1 runId=8 mode=FOLLOWUP_JSON_OR_TEXT showJson=false rawLen=79 followups=1 timedOut=false)
+2026-02-21T08:15:29.886Z D/LiteRtLM [DefaultDispatcher-worker-9] resetConversationInternal done: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' reason='resetConversation'
+2026-02-21T08:16:03.855Z D/SurveyVM [main] hasTwoStepPrompt[Q1] -> true (eval=303, fu=240)
+2026-02-21T08:16:03.855Z I/AiScreen [main] Submit begin runId=ai-Q1-1691792787-1691792787347225 node=Q1 role=FOLLOWUP isTwoStep=true sessionId=1 surveyUuid=97a90737-e358-449c-898f-74c95c8dbe46 qLen=127 aLen=14 qPreview="", "followup_needed": true, "followup_target": "Muhiri kuhusu matoi ya mavuno yapoliswa na FAW k…" aPreview="asdv dasdfafwe"
+2026-02-21T08:16:03.856Z D/SurveyVM [main] getEvalPrompt[Q1] -> len=422
+2026-02-21T08:16:03.856Z I/AiScreen [main] Submit end runId=ai-Q1-1691792787-1691792787347225 node=Q1 elapsed=1ms
+2026-02-21T08:16:03.857Z D/AiViewModel [DefaultDispatcher-worker-9] run[9]: mode=EVAL_JSON phase=EVAL commit=true prompt.len=422, fullPrompt.len=1566, timeoutMs=120000
+2026-02-21T08:16:03.859Z D/AiViewModel [DefaultDispatcher-worker-9] run[9]: sha(prompt)=044d9da972e0413921c26e03fc78d77462264c91c1575d67d8313b9aa32f185f sha(full)=3e330b8b904976741b9054ba32f07796b815b9457d3135cc0a6ffa41d78df272
+2026-02-21T08:16:03.860Z D/LiteRtRepository [DefaultDispatcher-worker-11] [9] request start: model='Gemma3n4B', prompt.len=1566, sha=3e330b8b90497674, gateWaitMs=0
+2026-02-21T08:16:03.862Z D/LiteRtRepository [DefaultDispatcher-worker-11] [9] initializeIfNeeded ok (initMs=2)
+2026-02-21T08:16:03.863Z D/LiteRtLM [DefaultDispatcher-worker-9] runInference start: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=9 hasText=true textLen=1566 images=0 audioClips=0
+2026-02-21T08:16:03.863Z I/LiteRtLM [DefaultDispatcher-worker-9] LiteRT-LM sendMessageAsync(text): key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=9 len=1566
+2026-02-21T08:16:05.785Z D/AiViewModel [DefaultDispatcher-worker-9] run[9] chunk[1].preview='{"'
+2026-02-21T08:16:06.008Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[2].preview='analysis'
+2026-02-21T08:16:06.133Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[3].preview='":'
+2026-02-21T08:16:06.323Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[4].preview='␠"'
+2026-02-21T08:16:06.464Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[5].preview='J'
+2026-02-21T08:16:06.683Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[6].preview='ibu'
+2026-02-21T08:16:06.805Z D/AiViewModel [DefaultDispatcher-worker-9] run[9] chunk[7].preview='␠ha'
+2026-02-21T08:16:07.023Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[8].preview='ina'
+2026-02-21T08:16:07.152Z D/AiViewModel [DefaultDispatcher-worker-9] run[9] chunk[9].preview='␠ma'
+2026-02-21T08:16:07.355Z D/AiViewModel [DefaultDispatcher-worker-9] run[9] chunk[10].preview='na'
+2026-02-21T08:16:07.487Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[11].preview='␠na'
+2026-02-21T08:16:07.702Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[12].preview='␠ha'
+2026-02-21T08:16:07.828Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[13].preview='ifai'
+2026-02-21T08:16:08.052Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[14].preview='.",'
+2026-02-21T08:16:08.161Z D/AiViewModel [DefaultDispatcher-worker-9] run[9] chunk[15].preview='␠"'
+2026-02-21T08:16:08.396Z D/AiViewModel [DefaultDispatcher-worker-9] run[9] chunk[16].preview='weak'
+2026-02-21T08:16:08.519Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[17].preview='ness'
+2026-02-21T08:16:08.724Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[18].preview='":'
+2026-02-21T08:16:08.867Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[19].preview='␠"'
+2026-02-21T08:16:09.059Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[20].preview='J'
+2026-02-21T08:16:09.231Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[21].preview='ibu'
+2026-02-21T08:16:09.421Z D/AiViewModel [DefaultDispatcher-worker-9] run[9] chunk[22].preview='␠ha'
+2026-02-21T08:16:09.551Z D/AiViewModel [DefaultDispatcher-worker-9] run[9] chunk[23].preview='itoa'
+2026-02-21T08:16:09.772Z D/AiViewModel [DefaultDispatcher-worker-9] run[9] chunk[24].preview='␠ta'
+2026-02-21T08:16:09.881Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[25].preview='r'
+2026-02-21T08:16:10.108Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[26].preview='ifa'
+2026-02-21T08:16:10.227Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[27].preview='␠muhimu'
+2026-02-21T08:16:10.432Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[28].preview='␠kuhusu'
+2026-02-21T08:16:10.579Z D/AiViewModel [DefaultDispatcher-worker-9] run[9] chunk[29].preview='␠mav'
+2026-02-21T08:16:10.795Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[30].preview='uno'
+2026-02-21T08:16:10.925Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[31].preview='␠ya'
+2026-02-21T08:16:11.118Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[32].preview='␠polis'
+2026-02-21T08:16:11.262Z D/AiViewModel [DefaultDispatcher-worker-9] run[9] chunk[33].preview='wa'
+2026-02-21T08:16:11.490Z D/AiViewModel [DefaultDispatcher-worker-9] run[9] chunk[34].preview='␠na'
+2026-02-21T08:16:11.604Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[35].preview='␠FA'
+2026-02-21T08:16:11.798Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[36].preview='W'
+2026-02-21T08:16:11.945Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[37].preview='.",'
+2026-02-21T08:16:12.147Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[38].preview='␠"'
+2026-02-21T08:16:12.281Z D/AiViewModel [DefaultDispatcher-worker-9] run[9] chunk[39].preview='follow'
+2026-02-21T08:16:12.497Z D/AiViewModel [DefaultDispatcher-worker-9] run[9] chunk[40].preview='up'
+2026-02-21T08:16:12.622Z D/AiViewModel [DefaultDispatcher-worker-9] run[9] chunk[41].preview='_'
+2026-02-21T08:16:12.840Z D/AiViewModel [DefaultDispatcher-worker-9] run[9] chunk[42].preview='needed'
+2026-02-21T08:16:12.962Z D/AiViewModel [DefaultDispatcher-worker-9] run[9] chunk[43].preview='":'
+2026-02-21T08:16:13.165Z D/AiViewModel [DefaultDispatcher-worker-9] run[9] chunk[44].preview='␠true'
+2026-02-21T08:16:13.318Z D/AiViewModel [DefaultDispatcher-worker-9] run[9] chunk[45].preview=','
+2026-02-21T08:16:13.545Z D/AiViewModel [DefaultDispatcher-worker-9] run[9] chunk[46].preview='␠"'
+2026-02-21T08:16:13.661Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[47].preview='follow'
+2026-02-21T08:16:13.883Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[48].preview='up'
+2026-02-21T08:16:14.006Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[49].preview='_'
+2026-02-21T08:16:14.216Z D/AiViewModel [DefaultDispatcher-worker-9] run[9] chunk[50].preview='target'
+2026-02-21T08:16:14.359Z D/AiViewModel [DefaultDispatcher-worker-9] run[9] chunk[51].preview='":'
+2026-02-21T08:16:14.568Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[52].preview='␠"'
+2026-02-21T08:16:14.710Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[53].preview='Muh'
+2026-02-21T08:16:14.901Z D/AiViewModel [DefaultDispatcher-worker-9] run[9] chunk[54].preview='iri'
+2026-02-21T08:16:15.056Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[55].preview='␠kuhusu'
+2026-02-21T08:16:15.218Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[56].preview='␠mat'
+2026-02-21T08:16:15.402Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[57].preview='oi'
+2026-02-21T08:16:15.614Z D/AiViewModel [DefaultDispatcher-worker-11] run[9] chunk[58].preview='␠ya'
+2026-02-21T08:16:15.729Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[59].preview='␠mav'
+2026-02-21T08:16:15.944Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[60].preview='uno'
+2026-02-21T08:16:16.079Z D/AiViewModel [DefaultDispatcher-worker-11] run[9] chunk[61].preview='␠yap'
+2026-02-21T08:16:16.303Z D/AiViewModel [DefaultDispatcher-worker-11] run[9] chunk[62].preview='olis'
+2026-02-21T08:16:16.422Z D/AiViewModel [DefaultDispatcher-worker-11] run[9] chunk[63].preview='wa'
+2026-02-21T08:16:16.636Z D/AiViewModel [DefaultDispatcher-worker-11] run[9] chunk[64].preview='␠na'
+2026-02-21T08:16:16.767Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[65].preview='␠FA'
+2026-02-21T08:16:16.986Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[66].preview='W'
+2026-02-21T08:16:17.108Z D/AiViewModel [DefaultDispatcher-worker-11] run[9] chunk[67].preview='␠katika'
+2026-02-21T08:16:17.322Z D/AiViewModel [DefaultDispatcher-worker-11] run[9] chunk[68].preview='␠mis'
+2026-02-21T08:16:17.448Z D/AiViewModel [DefaultDispatcher-worker-11] run[9] chunk[69].preview='imu'
+2026-02-21T08:16:17.656Z D/AiViewModel [DefaultDispatcher-worker-11] run[9] chunk[70].preview='␠il'
+2026-02-21T08:16:17.792Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[71].preview='iy'
+2026-02-21T08:16:18.007Z D/AiViewModel [DefaultDispatcher-worker-11] run[9] chunk[72].preview='op'
+2026-02-21T08:16:18.128Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[73].preview='ita'
+2026-02-21T08:16:18.325Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[74].preview='␠ni'
+2026-02-21T08:16:18.472Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[75].preview='␠n'
+2026-02-21T08:16:18.692Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[76].preview='ini'
+2026-02-21T08:16:18.813Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[77].preview='?",'
+2026-02-21T08:16:19.025Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[78].preview='␠"'
+2026-02-21T08:16:19.151Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[79].preview='score'
+2026-02-21T08:16:19.343Z D/AiViewModel [DefaultDispatcher-worker-4] run[9] chunk[80].preview='":'
+2026-02-21T08:16:19.495Z D/AiViewModel [DefaultDispatcher-worker-11] run[9] chunk[81].preview='␠'
+2026-02-21T08:16:19.708Z D/AiViewModel [DefaultDispatcher-worker-11] run[9] chunk[82].preview='1'
+2026-02-21T08:16:19.832Z D/AiViewModel [DefaultDispatcher-worker-11] run[9] chunk[83].preview='}'
+2026-02-21T08:16:20.043Z D/AiViewModel [DefaultDispatcher-worker-11] run[9] chunk[84].preview='↩'
+2026-02-21T08:16:20.169Z D/LiteRtRepository [main] [9] logical done=true (waiting native termination safe point)
+2026-02-21T08:16:20.170Z D/LiteRtRepository [main] [9] cleanUpListener (native termination safe point)
+2026-02-21T08:16:20.170Z D/LiteRtRepository [DefaultDispatcher-worker-11] [9] scheduleResetAfterSafepoint: begin (tag='native-terminated')
+2026-02-21T08:16:20.171Z D/AiViewModel [DefaultDispatcher-worker-7] run[9] stats: chunks=84, chars=256, raw.len=256
+2026-02-21T08:16:20.173Z D/LiteRtRepository [DefaultDispatcher-worker-9] [9] resetConversation ok (after safepoint, tag='native-terminated')
+2026-02-21T08:16:20.173Z D/LiteRtRepository [DefaultDispatcher-worker-9] [9] scheduleResetAfterSafepoint: end (tag='native-terminated')
+2026-02-21T08:16:20.177Z D/AiViewModel [DefaultDispatcher-worker-7] run[9] sha(raw)=30d52458f22ded7dc3ad3dff72d5731f85a86f191eeb7c929ae61a3d7d12d19e
+2026-02-21T08:16:20.177Z D/AiViewModel [DefaultDispatcher-worker-7] run[9] rawVisible='{"analysis":␠"Jibu␠haina␠mana␠na␠haifai.",␠"weakness":␠"Jibu␠haitoa␠tarifa␠muhimu␠kuhusu␠mavuno␠ya␠poliswa␠na␠FAW.",␠"followup_needed":␠true,␠"followup_target":␠"Muhiri␠kuhusu␠matoi␠ya␠mavuno␠yapoliswa␠na␠FAW␠katika␠misimu␠iliyopita␠ni␠nini'
+2026-02-21T08:16:20.185Z D/AiViewModel [DefaultDispatcher-worker-7] run[9]: EVAL_JSON parsed score=1 followups=1 fu0='",␠"followup_needed":␠true,␠"followup_target":␠"Muhiri␠kuhusu␠matoi␠ya␠mavuno␠yapoliswa␠na␠FAW␠katika␠misimu␠iliyopita␠ni␠nini?'
+2026-02-21T08:16:20.186Z D/AiViewModel [DefaultDispatcher-worker-7] stepHistory+ runId=9 phase=EVAL mode=EVAL_JSON raw.len=256 score=1 FU=1 FU0='",␠"followup_needed":␠true,␠"followup_target":␠"Muhiri␠kuhusu␠matoi␠ya␠mavuno␠yapoliswa␠na␠FAW␠katika␠misimu␠iliyopita␠ni␠nini?' timeout=false err=null
+2026-02-21T08:16:20.186Z I/AiViewModel [DefaultDispatcher-worker-7] run[9] done: phase=EVAL mode=EVAL_JSON score=1 FU[0]=", "followup_needed": true, "followup_target": "Muhiri kuhusu matoi ya mavuno yapoliswa na FAW katika misimu iliyopita ni nini? commit=true err=<none>
+2026-02-21T08:16:20.187Z I/AiScreen [DefaultDispatcher-worker-7] TWO_STEP shouldRunSecond runId=ai-Q1-1691792787-1691792787347225 node=Q1 role=FOLLOWUP followup_needed=true timedOut=false rawLen=256
+2026-02-21T08:16:20.187Z D/SurveyVM [DefaultDispatcher-worker-7] getFollowupPrompt[Q1] -> len=482 evalLen=256
+2026-02-21T08:16:20.189Z D/AiViewModel [DefaultDispatcher-worker-7] run[10]: mode=FOLLOWUP_JSON_OR_TEXT phase=FOLLOWUP commit=false prompt.len=482, fullPrompt.len=1526, timeoutMs=120000
+2026-02-21T08:16:20.191Z D/AiViewModel [DefaultDispatcher-worker-7] run[10]: sha(prompt)=793292401aa9a320e0431584a927633f509a96e8d14edff5c76cea4a8aa281e7 sha(full)=f0c3cba21c60fe1a618ae9f4f0e6bb2e9ead695bda850be91e4b011de0472fa1
+2026-02-21T08:16:20.193Z D/LiteRtRepository [DefaultDispatcher-worker-7] [10] request start: model='Gemma3n4B', prompt.len=1526, sha=f0c3cba21c60fe1a, gateWaitMs=0
+2026-02-21T08:16:20.195Z D/AiScreen [main] Step rendered (context=sid=1|nid=Q1 node=Q1 runId=9 mode=EVAL_JSON showJson=true rawLen=256 followups=1 timedOut=false)
+2026-02-21T08:16:20.195Z D/LiteRtRepository [DefaultDispatcher-worker-4] [10] initializeIfNeeded ok (initMs=2)
+2026-02-21T08:16:20.196Z D/LiteRtLM [DefaultDispatcher-worker-4] Cooldown delay: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' delay=223ms reason='runInference-start'
+2026-02-21T08:16:20.431Z D/LiteRtLM [DefaultDispatcher-worker-4] resetConversationInternal done: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' reason='resetConversation'
+2026-02-21T08:16:20.432Z D/LiteRtLM [DefaultDispatcher-worker-4] runInference start: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=10 hasText=true textLen=1526 images=0 audioClips=0
+2026-02-21T08:16:20.432Z I/LiteRtLM [DefaultDispatcher-worker-4] LiteRT-LM sendMessageAsync(text): key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=10 len=1526
+2026-02-21T08:16:22.432Z D/AiViewModel [DefaultDispatcher-worker-4] run[10] chunk[1].preview='Muh'
+2026-02-21T08:16:22.571Z D/AiViewModel [DefaultDispatcher-worker-4] run[10] chunk[2].preview='iri'
+2026-02-21T08:16:22.795Z D/AiViewModel [DefaultDispatcher-worker-6] run[10] chunk[3].preview='␠kuhusu'
+2026-02-21T08:16:22.926Z D/AiViewModel [DefaultDispatcher-worker-6] run[10] chunk[4].preview='␠mat'
+2026-02-21T08:16:23.128Z D/AiViewModel [DefaultDispatcher-worker-6] run[10] chunk[5].preview='oi'
+2026-02-21T08:16:23.259Z D/AiViewModel [DefaultDispatcher-worker-4] run[10] chunk[6].preview='␠ya'
+2026-02-21T08:16:23.479Z D/AiViewModel [DefaultDispatcher-worker-6] run[10] chunk[7].preview='␠mav'
+2026-02-21T08:16:23.608Z D/AiViewModel [DefaultDispatcher-worker-4] run[10] chunk[8].preview='uno'
+2026-02-21T08:16:23.846Z D/AiViewModel [DefaultDispatcher-worker-6] run[10] chunk[9].preview='␠yap'
+2026-02-21T08:16:23.978Z D/AiViewModel [DefaultDispatcher-worker-4] run[10] chunk[10].preview='olis'
+2026-02-21T08:16:24.145Z D/AiViewModel [DefaultDispatcher-worker-4] run[10] chunk[11].preview='wa'
+2026-02-21T08:16:24.351Z D/AiViewModel [DefaultDispatcher-worker-4] run[10] chunk[12].preview='␠na'
+2026-02-21T08:16:24.564Z D/AiViewModel [DefaultDispatcher-worker-6] run[10] chunk[13].preview='␠FA'
+2026-02-21T08:16:24.741Z D/AiViewModel [DefaultDispatcher-worker-6] run[10] chunk[14].preview='W'
+2026-02-21T08:16:24.911Z D/AiViewModel [DefaultDispatcher-worker-6] run[10] chunk[15].preview='␠katika'
+2026-02-21T08:16:25.125Z D/AiViewModel [DefaultDispatcher-worker-6] run[10] chunk[16].preview='␠mis'
+2026-02-21T08:16:25.347Z D/AiViewModel [DefaultDispatcher-worker-4] run[10] chunk[17].preview='imu'
+2026-02-21T08:16:25.468Z D/AiViewModel [DefaultDispatcher-worker-4] run[10] chunk[18].preview='␠il'
+2026-02-21T08:16:25.672Z D/AiViewModel [DefaultDispatcher-worker-6] run[10] chunk[19].preview='iy'
+2026-02-21T08:16:25.815Z D/AiViewModel [DefaultDispatcher-worker-4] run[10] chunk[20].preview='op'
+2026-02-21T08:16:26.022Z D/AiViewModel [DefaultDispatcher-worker-4] run[10] chunk[21].preview='ita'
+2026-02-21T08:16:26.177Z D/AiViewModel [DefaultDispatcher-worker-4] run[10] chunk[22].preview='␠ni'
+2026-02-21T08:16:26.383Z D/AiViewModel [DefaultDispatcher-worker-4] run[10] chunk[23].preview='␠n'
+2026-02-21T08:16:26.504Z D/AiViewModel [DefaultDispatcher-worker-6] run[10] chunk[24].preview='ini'
+2026-02-21T08:16:26.734Z D/AiViewModel [DefaultDispatcher-worker-6] run[10] chunk[25].preview='?'
+2026-02-21T08:16:26.860Z D/LiteRtRepository [main] [10] logical done=true (waiting native termination safe point)
+2026-02-21T08:16:26.860Z D/LiteRtRepository [main] [10] cleanUpListener (native termination safe point)
+2026-02-21T08:16:26.860Z D/LiteRtRepository [DefaultDispatcher-worker-6] [10] scheduleResetAfterSafepoint: begin (tag='native-terminated')
+2026-02-21T08:16:26.861Z D/LiteRtRepository [DefaultDispatcher-worker-7] [10] resetConversation ok (after safepoint, tag='native-terminated')
+2026-02-21T08:16:26.861Z D/LiteRtRepository [DefaultDispatcher-worker-7] [10] scheduleResetAfterSafepoint: end (tag='native-terminated')
+2026-02-21T08:16:26.861Z D/AiViewModel [DefaultDispatcher-worker-8] run[10] stats: chunks=25, chars=79, raw.len=79
+2026-02-21T08:16:26.862Z D/AiViewModel [DefaultDispatcher-worker-8] run[10] sha(raw)=14a84d77c1e2a6aefb92d053f798c318eb6627b70830541b2b4cb948406cf8b2
+2026-02-21T08:16:26.862Z D/AiViewModel [DefaultDispatcher-worker-8] run[10] rawVisible='Muhiri␠kuhusu␠matoi␠ya␠mavuno␠yapoliswa␠na␠FAW␠katika␠misimu␠iliyopita␠ni␠nini?'
+2026-02-21T08:16:26.865Z D/AiViewModel [DefaultDispatcher-worker-8] run[10]: FOLLOWUP parse extractorQ='Muhiri␠kuhusu␠matoi␠ya␠mavuno␠yapoliswa␠na␠FAW␠katika␠misimu␠iliyopita␠ni␠nini?' textQ='Muhiri␠kuhusu␠matoi␠ya␠mavuno␠yapoliswa␠na␠FAW␠katika␠misimu␠iliyopita␠ni␠nini?' best='Muhiri␠kuhusu␠matoi␠ya␠mavuno␠yapoliswa␠na␠FAW␠katika␠misimu␠iliyopita␠ni␠nini?'
+2026-02-21T08:16:26.865Z D/AiViewModel [DefaultDispatcher-worker-8] stepHistory+ runId=10 phase=FOLLOWUP mode=FOLLOWUP_JSON_OR_TEXT raw.len=79 score=null FU=1 FU0='Muhiri␠kuhusu␠matoi␠ya␠mavuno␠yapoliswa␠na␠FAW␠katika␠misimu␠iliyopita␠ni␠nini?' timeout=false err=null
+2026-02-21T08:16:26.865Z I/AiViewModel [DefaultDispatcher-worker-8] run[10] done: phase=FOLLOWUP mode=FOLLOWUP_JSON_OR_TEXT score=null FU[0]=Muhiri kuhusu matoi ya mavuno yapoliswa na FAW katika misimu iliyopita ni nini? commit=false err=<none>
+2026-02-21T08:16:26.918Z D/AiScreen [main] Step rendered (context=sid=1|nid=Q1 node=Q1 runId=10 mode=FOLLOWUP_JSON_OR_TEXT showJson=false rawLen=79 followups=1 timedOut=false)
+2026-02-21T08:16:27.119Z D/LiteRtLM [DefaultDispatcher-worker-8] resetConversationInternal done: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' reason='resetConversation'
+2026-02-21T08:17:30.460Z D/SurveyVM [main] backToPrevious -> Start
+2026-02-21T08:17:33.285Z D/SurveyVM [main] resetAudioRefs -> cleared
+2026-02-21T08:17:33.285Z D/SurveyVM [main] resetNavToStart -> key=com.negi.survey.vm.FlowHome@6efd943, navSize=1
+2026-02-21T08:17:33.286Z D/SurveyVM [main] resetToStart -> Start, session=2, uuid=bb16c15f-6dd9-4c51-af8a-f5dd2603d47f
+2026-02-21T08:17:33.286Z D/SurveyVM [main] push -> Q1, navSize=2, stackSize=2
+2026-02-21T08:18:40.419Z D/SurveyVM [main] hasTwoStepPrompt[Q1] -> true (eval=303, fu=240)
+2026-02-21T08:18:40.420Z I/AiScreen [main] Submit begin runId=ai-Q1-1691949351-1691949351696545 node=Q1 role=MAIN isTwoStep=true sessionId=2 surveyUuid=bb16c15f-6dd9-4c51-af8a-f5dd2603d47f qLen=175 aLen=12 qPreview="Unapoteza kiasi gani cha mavuno kwa sababu ya funza jeshi vamizi (Fall Armyworm/FAW)? Tafadhali …" aPreview="ah sdfg sdfg"
+2026-02-21T08:18:40.420Z D/SurveyVM [main] getEvalPrompt[Q1] -> len=468
+2026-02-21T08:18:40.420Z I/AiScreen [main] Submit end runId=ai-Q1-1691949351-1691949351696545 node=Q1 elapsed=1ms
+2026-02-21T08:18:40.421Z D/AiViewModel [DefaultDispatcher-worker-8] run[11]: mode=EVAL_JSON phase=EVAL commit=true prompt.len=468, fullPrompt.len=1612, timeoutMs=120000
+2026-02-21T08:18:40.423Z D/AiViewModel [DefaultDispatcher-worker-8] run[11]: sha(prompt)=73a5effb106c7147a9bf5deffda8405094471f3dbf9a2605d48b891aba88cf88 sha(full)=7602ead7d82ba440e20592dcfdb741eb388aa22ce6842ff165e7099e41b1545d
+2026-02-21T08:18:40.425Z D/LiteRtRepository [DefaultDispatcher-worker-7] [11] request start: model='Gemma3n4B', prompt.len=1612, sha=7602ead7d82ba440, gateWaitMs=0
+2026-02-21T08:18:40.437Z D/LiteRtRepository [DefaultDispatcher-worker-7] [11] initializeIfNeeded ok (initMs=12)
+2026-02-21T08:18:40.441Z D/LiteRtLM [DefaultDispatcher-worker-8] runInference start: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=11 hasText=true textLen=1612 images=0 audioClips=0
+2026-02-21T08:18:40.441Z I/LiteRtLM [DefaultDispatcher-worker-8] LiteRT-LM sendMessageAsync(text): key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=11 len=1612
+2026-02-21T08:18:42.397Z D/AiViewModel [DefaultDispatcher-worker-8] run[11] chunk[1].preview='{"'
+2026-02-21T08:18:42.595Z D/AiViewModel [DefaultDispatcher-worker-8] run[11] chunk[2].preview='analysis'
+2026-02-21T08:18:42.733Z D/AiViewModel [DefaultDispatcher-worker-8] run[11] chunk[3].preview='":'
+2026-02-21T08:18:42.953Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[4].preview='␠"'
+2026-02-21T08:18:43.066Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[5].preview='J'
+2026-02-21T08:18:43.251Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[6].preview='ibu'
+2026-02-21T08:18:43.441Z D/AiViewModel [DefaultDispatcher-worker-8] run[11] chunk[7].preview='␠ha'
+2026-02-21T08:18:43.562Z D/AiViewModel [DefaultDispatcher-worker-8] run[11] chunk[8].preview='ina'
+2026-02-21T08:18:43.754Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[9].preview='␠ma'
+2026-02-21T08:18:43.908Z D/AiViewModel [DefaultDispatcher-worker-8] run[11] chunk[10].preview='na'
+2026-02-21T08:18:44.137Z D/AiViewModel [DefaultDispatcher-worker-8] run[11] chunk[11].preview='␠na'
+2026-02-21T08:18:44.251Z D/AiViewModel [DefaultDispatcher-worker-8] run[11] chunk[12].preview='␠ha'
+2026-02-21T08:18:44.440Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[13].preview='itoa'
+2026-02-21T08:18:44.588Z D/AiViewModel [DefaultDispatcher-worker-8] run[11] chunk[14].preview='␠ta'
+2026-02-21T08:18:44.789Z D/AiViewModel [DefaultDispatcher-worker-8] run[11] chunk[15].preview='r'
+2026-02-21T08:18:44.919Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[16].preview='ifa'
+2026-02-21T08:18:45.122Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[17].preview='␠kuhusu'
+2026-02-21T08:18:45.252Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[18].preview='␠FA'
+2026-02-21T08:18:45.439Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[19].preview='W'
+2026-02-21T08:18:45.624Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[20].preview='.",'
+2026-02-21T08:18:45.752Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[21].preview='␠"'
+2026-02-21T08:18:45.921Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[22].preview='weak'
+2026-02-21T08:18:46.139Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[23].preview='ness'
+2026-02-21T08:18:46.292Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[24].preview='":'
+2026-02-21T08:18:46.437Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[25].preview='␠"'
+2026-02-21T08:18:46.641Z D/AiViewModel [DefaultDispatcher-worker-8] run[11] chunk[26].preview='J'
+2026-02-21T08:18:46.763Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[27].preview='ibu'
+2026-02-21T08:18:46.956Z D/AiViewModel [DefaultDispatcher-worker-8] run[11] chunk[28].preview='␠ha'
+2026-02-21T08:18:47.105Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[29].preview='itoa'
+2026-02-21T08:18:47.271Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[30].preview='␠ta'
+2026-02-21T08:18:47.495Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[31].preview='r'
+2026-02-21T08:18:47.614Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[32].preview='ifa'
+2026-02-21T08:18:47.823Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[33].preview='␠sahi'
+2026-02-21T08:18:48.211Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[34].preview='␠kuhusu'
+2026-02-21T08:18:48.336Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[35].preview='␠ath'
+2026-02-21T08:18:48.558Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[36].preview='ari'
+2026-02-21T08:18:48.725Z D/AiViewModel [DefaultDispatcher-worker-8] run[11] chunk[37].preview='␠za'
+2026-02-21T08:18:48.887Z D/AiViewModel [DefaultDispatcher-worker-8] run[11] chunk[38].preview='␠FA'
+2026-02-21T08:18:49.075Z D/AiViewModel [DefaultDispatcher-worker-8] run[11] chunk[39].preview='W'
+2026-02-21T08:18:49.255Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[40].preview='␠kwenye'
+2026-02-21T08:18:49.476Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[41].preview='␠mav'
+2026-02-21T08:18:49.641Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[42].preview='uno'
+2026-02-21T08:18:49.827Z D/AiViewModel [DefaultDispatcher-worker-8] run[11] chunk[43].preview='.",'
+2026-02-21T08:18:49.988Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[44].preview='␠"'
+2026-02-21T08:18:50.158Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[45].preview='follow'
+2026-02-21T08:18:50.328Z D/AiViewModel [DefaultDispatcher-worker-8] run[11] chunk[46].preview='up'
+2026-02-21T08:18:50.492Z D/AiViewModel [DefaultDispatcher-worker-8] run[11] chunk[47].preview='_'
+2026-02-21T08:18:50.658Z D/AiViewModel [DefaultDispatcher-worker-8] run[11] chunk[48].preview='needed'
+2026-02-21T08:18:50.842Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[49].preview='":'
+2026-02-21T08:18:51.028Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[50].preview='␠true'
+2026-02-21T08:18:51.193Z D/AiViewModel [DefaultDispatcher-worker-8] run[11] chunk[51].preview=','
+2026-02-21T08:18:51.378Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[52].preview='␠"'
+2026-02-21T08:18:51.543Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[53].preview='follow'
+2026-02-21T08:18:51.731Z D/AiViewModel [DefaultDispatcher-worker-8] run[11] chunk[54].preview='up'
+2026-02-21T08:18:51.929Z D/AiViewModel [DefaultDispatcher-worker-8] run[11] chunk[55].preview='_'
+2026-02-21T08:18:52.056Z D/AiViewModel [DefaultDispatcher-worker-8] run[11] chunk[56].preview='target'
+2026-02-21T08:18:52.265Z D/AiViewModel [DefaultDispatcher-worker-8] run[11] chunk[57].preview='":'
+2026-02-21T08:18:52.401Z D/AiViewModel [DefaultDispatcher-worker-8] run[11] chunk[58].preview='␠"'
+2026-02-21T08:18:52.609Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[59].preview='Muh'
+2026-02-21T08:18:52.769Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[60].preview='akam'
+2026-02-21T08:18:52.996Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[61].preview='isha'
+2026-02-21T08:18:53.138Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[62].preview='␠mat'
+2026-02-21T08:18:53.347Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[63].preview='elli'
+2026-02-21T08:18:53.484Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[64].preview='␠ya'
+2026-02-21T08:18:53.681Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[65].preview='␠mav'
+2026-02-21T08:18:53.829Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[66].preview='uno'
+2026-02-21T08:18:54.023Z D/AiViewModel [DefaultDispatcher-worker-8] run[11] chunk[67].preview='␠yen'
+2026-02-21T08:18:54.205Z D/AiViewModel [DefaultDispatcher-worker-8] run[11] chunk[68].preview='ye'
+2026-02-21T08:18:54.400Z D/AiViewModel [DefaultDispatcher-worker-8] run[11] chunk[69].preview='␠FA'
+2026-02-21T08:18:54.550Z D/AiViewModel [DefaultDispatcher-worker-8] run[11] chunk[70].preview='W'
+2026-02-21T08:18:54.767Z D/AiViewModel [DefaultDispatcher-worker-8] run[11] chunk[71].preview='␠kwa'
+2026-02-21T08:18:54.893Z D/AiViewModel [DefaultDispatcher-worker-8] run[11] chunk[72].preview='␠k'
+2026-02-21T08:18:55.099Z D/AiViewModel [DefaultDispatcher-worker-8] run[11] chunk[73].preview='iasi'
+2026-02-21T08:18:55.232Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[74].preview='␠g'
+2026-02-21T08:18:55.436Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[75].preview='ani'
+2026-02-21T08:18:55.569Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[76].preview='␠kwa'
+2026-02-21T08:18:55.786Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[77].preview='␠mis'
+2026-02-21T08:18:55.932Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[78].preview='imu'
+2026-02-21T08:18:56.135Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[79].preview='␠il'
+2026-02-21T08:18:56.270Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[80].preview='iy'
+2026-02-21T08:18:56.486Z D/AiViewModel [DefaultDispatcher-worker-8] run[11] chunk[81].preview='op'
+2026-02-21T08:18:56.608Z D/AiViewModel [DefaultDispatcher-worker-8] run[11] chunk[82].preview='ita'
+2026-02-21T08:18:56.835Z D/AiViewModel [DefaultDispatcher-worker-8] run[11] chunk[83].preview='?",'
+2026-02-21T08:18:56.951Z D/AiViewModel [DefaultDispatcher-worker-8] run[11] chunk[84].preview='␠"'
+2026-02-21T08:18:57.152Z D/AiViewModel [DefaultDispatcher-worker-8] run[11] chunk[85].preview='score'
+2026-02-21T08:18:57.292Z D/AiViewModel [DefaultDispatcher-worker-8] run[11] chunk[86].preview='":'
+2026-02-21T08:18:57.519Z D/AiViewModel [DefaultDispatcher-worker-8] run[11] chunk[87].preview='␠'
+2026-02-21T08:18:57.644Z D/AiViewModel [DefaultDispatcher-worker-8] run[11] chunk[88].preview='1'
+2026-02-21T08:18:57.854Z D/AiViewModel [DefaultDispatcher-worker-8] run[11] chunk[89].preview='}'
+2026-02-21T08:18:57.986Z D/AiViewModel [DefaultDispatcher-worker-7] run[11] chunk[90].preview='↩'
+2026-02-21T08:18:58.200Z D/LiteRtRepository [main] [11] logical done=true (waiting native termination safe point)
+2026-02-21T08:18:58.200Z D/LiteRtRepository [main] [11] cleanUpListener (native termination safe point)
+2026-02-21T08:18:58.201Z D/LiteRtRepository [DefaultDispatcher-worker-3] [11] scheduleResetAfterSafepoint: begin (tag='native-terminated')
+2026-02-21T08:18:58.202Z D/LiteRtRepository [DefaultDispatcher-worker-4] [11] resetConversation ok (after safepoint, tag='native-terminated')
+2026-02-21T08:18:58.203Z D/LiteRtRepository [DefaultDispatcher-worker-4] [11] scheduleResetAfterSafepoint: end (tag='native-terminated')
+2026-02-21T08:18:58.204Z D/AiViewModel [DefaultDispatcher-worker-3] run[11] stats: chunks=90, chars=272, raw.len=272
+2026-02-21T08:18:58.205Z D/AiViewModel [DefaultDispatcher-worker-3] run[11] sha(raw)=95f9ccabd3db48db2454e03804a67f8e6243a9d3032499091c449f3dd2912c8a
+2026-02-21T08:18:58.205Z D/AiViewModel [DefaultDispatcher-worker-3] run[11] rawVisible='{"analysis":␠"Jibu␠haina␠mana␠na␠haitoa␠tarifa␠kuhusu␠FAW.",␠"weakness":␠"Jibu␠haitoa␠tarifa␠sahi␠kuhusu␠athari␠za␠FAW␠kwenye␠mavuno.",␠"followup_needed":␠true,␠"followup_target":␠"Muhakamisha␠matelli␠ya␠mavuno␠yenye␠FAW␠kwa␠kiasi␠gani␠kwa␠'
+2026-02-21T08:18:58.209Z D/AiViewModel [DefaultDispatcher-worker-3] run[11]: EVAL_JSON parsed score=1 followups=1 fu0='",␠"followup_needed":␠true,␠"followup_target":␠"Muhakamisha␠matelli␠ya␠mavuno␠yenye␠FAW␠kwa␠kiasi␠gani␠kwa␠misimu␠iliyopita?'
+2026-02-21T08:18:58.209Z D/AiViewModel [DefaultDispatcher-worker-3] stepHistory+ runId=11 phase=EVAL mode=EVAL_JSON raw.len=272 score=1 FU=1 FU0='",␠"followup_needed":␠true,␠"followup_target":␠"Muhakamisha␠matelli␠ya␠mavuno␠yenye␠FAW␠kwa␠kiasi␠gani␠kwa␠misimu␠iliyopita?' timeout=false err=null
+2026-02-21T08:18:58.209Z I/AiViewModel [DefaultDispatcher-worker-3] run[11] done: phase=EVAL mode=EVAL_JSON score=1 FU[0]=", "followup_needed": true, "followup_target": "Muhakamisha matelli ya mavuno yenye FAW kwa kiasi gani kwa misimu iliyopita? commit=true err=<none>
+2026-02-21T08:18:58.210Z I/AiScreen [DefaultDispatcher-worker-3] TWO_STEP shouldRunSecond runId=ai-Q1-1691949351-1691949351696545 node=Q1 role=MAIN followup_needed=true timedOut=false rawLen=272
+2026-02-21T08:18:58.211Z D/SurveyVM [DefaultDispatcher-worker-3] getFollowupPrompt[Q1] -> len=498 evalLen=272
+2026-02-21T08:18:58.212Z D/AiViewModel [DefaultDispatcher-worker-3] run[12]: mode=FOLLOWUP_JSON_OR_TEXT phase=FOLLOWUP commit=false prompt.len=498, fullPrompt.len=1542, timeoutMs=120000
+2026-02-21T08:18:58.213Z D/AiViewModel [DefaultDispatcher-worker-3] run[12]: sha(prompt)=f2cdd4d5824a55b8e16a72178866c0446061d2de70ca396c52382436762f7453 sha(full)=8cbb3193c9b9066e1a102433b312f870d0c9efa843a10caea0341725e09a82f4
+2026-02-21T08:18:58.215Z D/LiteRtRepository [DefaultDispatcher-worker-9] [12] request start: model='Gemma3n4B', prompt.len=1542, sha=8cbb3193c9b9066e, gateWaitMs=0
+2026-02-21T08:18:58.215Z D/LiteRtRepository [DefaultDispatcher-worker-3] [12] initializeIfNeeded ok (initMs=0)
+2026-02-21T08:18:58.216Z D/LiteRtLM [DefaultDispatcher-worker-6] Cooldown delay: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' delay=187ms reason='runInference-start'
+2026-02-21T08:18:58.242Z I/AiScreen [main] Follow-up persisted (context=sid=2|nid=Q1 node=Q1 runId=11 mode=EVAL_JSON len=124 preview="", "followup_needed": true, "followup_target": "Muhakamisha matelli ya mavuno yenye FAW kwa kiasi gani kwa misimu iliyop…")
+2026-02-21T08:18:58.242Z D/AiScreen [main] Step rendered (context=sid=2|nid=Q1 node=Q1 runId=11 mode=EVAL_JSON showJson=true rawLen=272 followups=1 timedOut=false)
+2026-02-21T08:18:58.466Z D/LiteRtLM [DefaultDispatcher-worker-6] resetConversationInternal done: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' reason='resetConversation'
+2026-02-21T08:18:58.467Z D/LiteRtLM [DefaultDispatcher-worker-6] runInference start: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=12 hasText=true textLen=1542 images=0 audioClips=0
+2026-02-21T08:18:58.468Z I/LiteRtLM [DefaultDispatcher-worker-6] LiteRT-LM sendMessageAsync(text): key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=12 len=1542
+2026-02-21T08:19:00.574Z D/AiViewModel [DefaultDispatcher-worker-6] run[12] chunk[1].preview='Muh'
+2026-02-21T08:19:00.787Z D/AiViewModel [DefaultDispatcher-worker-6] run[12] chunk[2].preview='akam'
+2026-02-21T08:19:00.914Z D/AiViewModel [DefaultDispatcher-worker-6] run[12] chunk[3].preview='isha'
+2026-02-21T08:19:01.141Z D/AiViewModel [DefaultDispatcher-worker-6] run[12] chunk[4].preview='␠mat'
+2026-02-21T08:19:01.272Z D/AiViewModel [DefaultDispatcher-worker-6] run[12] chunk[5].preview='elli'
+2026-02-21T08:19:01.492Z D/AiViewModel [DefaultDispatcher-worker-9] run[12] chunk[6].preview='␠ya'
+2026-02-21T08:19:01.620Z D/AiViewModel [DefaultDispatcher-worker-9] run[12] chunk[7].preview='␠mav'
+2026-02-21T08:19:01.797Z D/AiViewModel [DefaultDispatcher-worker-9] run[12] chunk[8].preview='uno'
+2026-02-21T08:19:02.005Z D/AiViewModel [DefaultDispatcher-worker-9] run[12] chunk[9].preview='␠yen'
+2026-02-21T08:19:02.141Z D/AiViewModel [DefaultDispatcher-worker-6] run[12] chunk[10].preview='ye'
+2026-02-21T08:19:02.360Z D/AiViewModel [DefaultDispatcher-worker-6] run[12] chunk[11].preview='␠FA'
+2026-02-21T08:19:02.490Z D/AiViewModel [DefaultDispatcher-worker-6] run[12] chunk[12].preview='W'
+2026-02-21T08:19:02.658Z D/AiViewModel [DefaultDispatcher-worker-6] run[12] chunk[13].preview='␠kwa'
+2026-02-21T08:19:02.829Z D/AiViewModel [DefaultDispatcher-worker-6] run[12] chunk[14].preview='␠k'
+2026-02-21T08:19:03.008Z D/AiViewModel [DefaultDispatcher-worker-6] run[12] chunk[15].preview='iasi'
+2026-02-21T08:19:03.184Z D/AiViewModel [DefaultDispatcher-worker-6] run[12] chunk[16].preview='␠g'
+2026-02-21T08:19:03.364Z D/AiViewModel [DefaultDispatcher-worker-6] run[12] chunk[17].preview='ani'
+2026-02-21T08:19:03.555Z D/AiViewModel [DefaultDispatcher-worker-6] run[12] chunk[18].preview='␠kwa'
+2026-02-21T08:19:03.737Z D/AiViewModel [DefaultDispatcher-worker-9] run[12] chunk[19].preview='␠mis'
+2026-02-21T08:19:03.939Z D/AiViewModel [DefaultDispatcher-worker-9] run[12] chunk[20].preview='imu'
+2026-02-21T08:19:04.090Z D/AiViewModel [DefaultDispatcher-worker-6] run[12] chunk[21].preview='␠il'
+2026-02-21T08:19:04.259Z D/AiViewModel [DefaultDispatcher-worker-9] run[12] chunk[22].preview='iy'
+2026-02-21T08:19:04.425Z D/AiViewModel [DefaultDispatcher-worker-9] run[12] chunk[23].preview='op'
+2026-02-21T08:19:04.609Z D/AiViewModel [DefaultDispatcher-worker-9] run[12] chunk[24].preview='ita'
+2026-02-21T08:19:04.795Z D/AiViewModel [DefaultDispatcher-worker-6] run[12] chunk[25].preview='?'
