@@ -1,0 +1,311 @@
+=== Crash Report ===
+time_utc=20260221_043719
+time_local=20260220_203719
+pid=4468
+tid=4468
+thread=main
+sdk=36
+device=Google Pixel 9a
+appId=com.negi.survey
+versionName=0.0.1
+versionCode=1
+
+=== Exception ===
+java.lang.RuntimeException: Debug crash button pressed
+	at com.negi.survey.screens.AiScreenKt.AiScreen$lambda$70$1$0$1$0$0$0(AiScreen.kt:1038)
+	at com.negi.survey.screens.AiScreenKt.$r8$lambda$zwsH71QyJNnPPnS4Yv-wN0UIW7Y(Unknown Source:0)
+	at com.negi.survey.screens.AiScreenKt$$ExternalSyntheticLambda16.invoke(D8$$SyntheticClass:0)
+	at androidx.compose.foundation.ClickableNode.onPointerEvent-H0pRuoY(Clickable.kt:935)
+	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:446)
+	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:432)
+	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:432)
+	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:432)
+	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:432)
+	at androidx.compose.ui.input.pointer.NodeParent.dispatchMainEventPass(HitPathTracker.kt:285)
+	at androidx.compose.ui.input.pointer.HitPathTracker.dispatchChanges(HitPathTracker.kt:181)
+	at androidx.compose.ui.input.pointer.PointerInputEventProcessor.process-BIzXfog(PointerInputEventProcessor.kt:118)
+	at androidx.compose.ui.platform.AndroidComposeView.sendMotionEvent-8iAsVTc(AndroidComposeView.android.kt:2685)
+	at androidx.compose.ui.platform.AndroidComposeView.handleMotionEvent-8iAsVTc(AndroidComposeView.android.kt:2629)
+	at androidx.compose.ui.platform.AndroidComposeView.dispatchTouchEvent(AndroidComposeView.android.kt:2467)
+	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+	at com.android.internal.policy.DecorView.superDispatchTouchEvent(DecorView.java:503)
+	at com.android.internal.policy.PhoneWindow.superDispatchTouchEvent(PhoneWindow.java:2017)
+	at android.app.Activity.dispatchTouchEvent(Activity.java:4665)
+	at com.android.internal.policy.DecorView.dispatchTouchEvent(DecorView.java:441)
+	at android.view.View.dispatchPointerEvent(View.java:17110)
+	at android.view.ViewRootImpl$ViewPostImeInputStage.processPointerEvent(ViewRootImpl.java:8349)
+	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:8103)
+	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:7480)
+	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:7537)
+	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:7503)
+	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:7674)
+	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:7511)
+	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:7731)
+	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:7484)
+	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:7537)
+	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:7503)
+	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:7511)
+	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:7484)
+	at android.view.ViewRootImpl.deliverInputEvent(ViewRootImpl.java:10697)
+	at android.view.ViewRootImpl.doProcessInputEvents(ViewRootImpl.java:10648)
+	at android.view.ViewRootImpl.enqueueInputEvent(ViewRootImpl.java:10616)
+	at android.view.ViewRootImpl.processRawInputEvent(ViewRootImpl.java:11039)
+	at android.view.ViewRootImpl$WindowInputEventReceiver.onInputEvent(ViewRootImpl.java:10825)
+	at android.view.InputEventReceiver.dispatchInputEvent(InputEventReceiver.java:277)
+	at android.os.MessageQueue.nativePollOnce(Native Method)
+	at android.os.MessageQueue.nextLegacy(MessageQueue.java:985)
+	at android.os.MessageQueue.next(MessageQueue.java:1094)
+	at android.os.Looper.loopOnce(Looper.java:197)
+	at android.os.Looper.loop(Looper.java:367)
+	at android.app.ActivityThread.main(ActivityThread.java:9287)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:566)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:929)
+
+
+=== Logcat (best-effort) ===
+--------- beginning of system
+02-20 20:31:09.668  4468  4521 I DisplayManager: Choreographer implicitly registered for the refresh rate.
+02-20 20:31:09.767  4468  4468 E VibratorInfo: Invalid frequency profile received from HAL. resonantFrequencyHz=NaN, frequenciesHz=null, outputAccelerationsGs=null
+02-20 20:31:10.082  4468  4468 D InsetsController: hide(ime())
+02-20 20:31:10.957  4468  4468 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey, tag=null, id=3736], rate limit (5.0) exceeded: input 9.895592, output would be 6.9372153
+02-20 20:31:12.489  4468  4468 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey, tag=null, id=7222], rate limit (5.0) exceeded: input 13.14674, output would be 6.450863
+02-20 20:31:14.796  4468  4468 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey, tag=null, id=7222], rate limit (5.0) exceeded: input 8.843835, output would be 5.24703
+02-20 20:31:15.859  4468  4468 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey, tag=null, id=3736], rate limit (5.0) exceeded: input 15.96067, output would be 7.0647206
+--------- beginning of main
+02-20 20:32:06.087  4468  4579 I native  : I0000 00:00:1771648326.087377    4579 model_resources_litert_lm.cc:67] model_type: TF_LITE_END_OF_AUDIO
+02-20 20:32:06.087  4468  4579 I native  : I0000 00:00:1771648326.087478    4579 model_resources_litert_lm.cc:68] litert model size: 8820
+02-20 20:32:06.088  4468  4579 I native  : I0000 00:00:1771648326.088569    4579 model_resources_litert_lm.cc:67] model_type: TF_LITE_EMBEDDER
+02-20 20:32:06.088  4468  4579 I native  : I0000 00:00:1771648326.088619    4579 model_resources_litert_lm.cc:68] litert model size: 271585104
+02-20 20:32:06.090  4468  4579 I litert  : [environment.cc:29] Creating LiteRT environment with options
+02-20 20:32:06.091  4468  4579 W litert  : [auto_registration.cc:158] NPU accelerator could not be loaded and registered: kLiteRtStatusErrorInvalidArgument.
+02-20 20:32:06.091  4468  4579 I litert  : [accelerator_registry.cc:52] RegisterAccelerator: ptr=0x72cc51e9e0, name=LiteRT GPU
+02-20 20:32:06.091  4468  4579 I litert  : [auto_registration.cc:223] Statically linked GPU accelerator registered.
+02-20 20:32:06.091  4468  4579 I litert  : [accelerator_registry.cc:52] RegisterAccelerator: ptr=0x72cc487610, name=CpuAccelerator
+02-20 20:32:06.091  4468  4579 I litert  : [auto_registration.cc:275] CPU accelerator registered.
+02-20 20:32:06.091  4468  4579 I litert  : [compiled_model.cc:552] Flatbuffer model initialized directly from incoming litert model.
+02-20 20:32:06.108  4468  4579 I tflite  : Created TensorFlow Lite XNNPACK delegate for CPU.
+02-20 20:32:06.108  4468  4579 I tflite  : Replacing 2 out of 10 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 2 partitions for subgraph 0.
+02-20 20:32:06.117  4468  4579 I litert  : [environment.cc:29] Creating LiteRT environment with options
+02-20 20:32:06.117  4468  4579 W litert  : [auto_registration.cc:158] NPU accelerator could not be loaded and registered: kLiteRtStatusErrorInvalidArgument.
+02-20 20:32:06.117  4468  4579 I litert  : [accelerator_registry.cc:52] RegisterAccelerator: ptr=0x72cc4854d0, name=LiteRT GPU
+02-20 20:32:06.117  4468  4579 I litert  : [auto_registration.cc:223] Statically linked GPU accelerator registered.
+02-20 20:32:06.117  4468  4579 I litert  : [accelerator_registry.cc:52] RegisterAccelerator: ptr=0x72cc48c620, name=CpuAccelerator
+02-20 20:32:06.117  4468  4579 I litert  : [auto_registration.cc:275] CPU accelerator registered.
+02-20 20:32:06.118  4468  4579 I litert  : [compiled_model.cc:552] Flatbuffer model initialized directly from incoming litert model.
+02-20 20:32:06.118  4468  4579 I litert  : [compiled_model.cc:1174] Tracked constant output tensor eoa_embedding with locked address
+02-20 20:32:06.119  4468  4579 I native  : I0000 00:00:1771648326.119596    4579 model_resources_litert_lm.cc:67] model_type: TF_LITE_PER_LAYER_EMBEDDER
+02-20 20:32:06.119  4468  4579 I native  : I0000 00:00:1771648326.119668    4579 model_resources_litert_lm.cc:68] litert model size: 1284522128
+02-20 20:32:06.214  4468  4579 I litert  : [environment.cc:29] Creating LiteRT environment with options
+02-20 20:32:06.214  4468  4579 W litert  : [auto_registration.cc:158] NPU accelerator could not be loaded and registered: kLiteRtStatusErrorInvalidArgument.
+02-20 20:32:06.214  4468  4579 I litert  : [accelerator_registry.cc:52] RegisterAccelerator: ptr=0x72cc473480, name=LiteRT GPU
+02-20 20:32:06.214  4468  4579 I litert  : [auto_registration.cc:223] Statically linked GPU accelerator registered.
+02-20 20:32:06.214  4468  4579 I litert  : [accelerator_registry.cc:52] RegisterAccelerator: ptr=0x72cc472920, name=CpuAccelerator
+02-20 20:32:06.214  4468  4579 I litert  : [auto_registration.cc:275] CPU accelerator registered.
+02-20 20:32:06.214  4468  4579 I litert  : [compiled_model.cc:552] Flatbuffer model initialized directly from incoming litert model.
+02-20 20:32:06.790  4468  4579 I tflite  : Replacing 1 out of 44 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 2 partitions for subgraph 0.
+02-20 20:32:06.792  4468  4579 I native  : I0000 00:00:1771648326.791948    4579 threadpool.cc:41] ThreadPool 'engine': Running up to 1 threads.
+02-20 20:32:06.888  4468  4579 I native  : I0000 00:00:1771648326.888476    4579 model_data_processor_factory.cc:266] Creating Gemma3DataProcessor
+02-20 20:32:07.002  4468  4468 D WhisperSpeechController: updateContext: surveyId=812d36bb-de77-4098-b6ee-887676a54f5c, questionId=Start
+02-20 20:37:11.650  4468  4468 D MainActivity: Home -> Start survey. session=survey_config_sw_20.yaml@1
+02-20 20:37:11.782  4468  4468 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): androidx.navigationevent.OnBackInvokedInput$createOnBackAnimationCallback$1@6ca568c
+02-20 20:37:11.795  4468  4468 D WhisperSpeechController: updateContext: surveyId=574d47fd-8df2-4fc3-8b23-0a07ae4af2cd, questionId=Q1
+02-20 20:37:11.918  4468  4468 D WhisperSpeechController: updateContext: surveyId=574d47fd-8df2-4fc3-8b23-0a07ae4af2cd, questionId=Q1
+02-20 20:37:12.034  4468  4468 D InsetsController: show(ime())
+02-20 20:37:12.044  4468  4468 I ImeTracker: com.negi.survey:8bd0a33d: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT_BY_INSETS_API fromUser false
+02-20 20:37:12.045  4468  4468 D InsetsController: Setting requestedVisibleTypes to 511 (was 503)
+02-20 20:37:12.064  4468  4468 I AssistStructure: Flattened final assist data: 516 bytes, containing 1 windows, 3 views
+02-20 20:37:12.067  4468  4468 I ImeTracker: com.negi.survey:7826485a: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+02-20 20:37:12.067  4468  4468 D InsetsController: show(ime())
+02-20 20:37:12.067  4468  4468 I ImeTracker: com.negi.survey:7826485a: onCancelled at PHASE_CLIENT_REPORT_REQUESTED_VISIBLE_TYPES
+02-20 20:37:12.358  4468  4468 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.view.ImeBackAnimationController@eea8d9d
+02-20 20:37:12.434  4468  4468 D VRI[MainActivity]: WindowInsets changed: ime:[0,0,0,1043] 
+02-20 20:37:12.442  4468  4468 W InteractionJankMonitor: Initializing without READ_DEVICE_CONFIG permission. enabled=false, interval=1, missedFrameThreshold=3, frameTimeThreshold=64, package=com.negi.survey
+02-20 20:37:12.750  4468  4468 I ImeTracker: com.negi.survey:8bd0a33d: onShown
+02-20 20:37:13.018  4468  4468 D Autofill Status: Autofill popup isn't shown because autofill is not available.
+02-20 20:37:13.018  4468  4468 D Autofill Status: 
+02-20 20:37:13.018  4468  4468 D Autofill Status: Did you set up autofill?
+02-20 20:37:13.018  4468  4468 D Autofill Status: 1. Go to Settings > System > Languages&input > Advanced > Autofill Service
+02-20 20:37:13.018  4468  4468 D Autofill Status: 2. Pick a service
+02-20 20:37:13.018  4468  4468 D Autofill Status: 
+02-20 20:37:13.018  4468  4468 D Autofill Status: Did you add an account?
+02-20 20:37:13.018  4468  4468 D Autofill Status: 1. Go to Settings > System > Languages&input > Advanced
+02-20 20:37:13.018  4468  4468 D Autofill Status: 2. Click on the settings icon next to the Autofill Service
+02-20 20:37:13.018  4468  4468 D Autofill Status: 3. Add your account
+02-20 20:37:17.590  4468  4468 D InsetsController: hide(ime())
+02-20 20:37:17.590  4468  4468 I ImeTracker: com.negi.survey:f97818f3: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT_BY_INSETS_API fromUser false
+02-20 20:37:17.590  4468  4468 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): androidx.navigationevent.OnBackInvokedInput$createOnBackAnimationCallback$1@6ca568c
+02-20 20:37:17.591  4468  4468 D InsetsController: Setting requestedVisibleTypes to 503 (was 511)
+02-20 20:37:17.592  4468  4468 D VRI[MainActivity]: WindowInsets changed: ime:null 
+02-20 20:37:17.630  4468  4468 I ImeTracker: system_server:de83dfc: onCancelled at PHASE_CLIENT_ON_CONTROLS_CHANGED
+02-20 20:37:17.677  4468  4468 I ImeTracker: system_server:fc9bc52f: onCancelled at PHASE_CLIENT_ON_CONTROLS_CHANGED
+02-20 20:37:17.751  4468  4518 I native  : I0000 00:00:1771648637.740464    4518 session_basic.cc:312] RunPrefillAsync: 
+02-20 20:37:17.751  4468  4518 I native  : I0000 00:00:1771648637.751469    4518 session_basic.cc:314] <start_of_turn>user
+02-20 20:37:17.751  4468  4518 I native  : Wewe ni mtaalamu mashuhuri wa tafiti za wakulima. Soma Swali na Jibu.
+02-20 20:37:17.751  4468  4518 I native  : OUTPUT FORMAT:
+02-20 20:37:17.751  4468  4518 I native  : - In Swahili.
+02-20 20:37:17.751  4468  4518 I native  : - Keys exactly:
+02-20 20:37:17.751  4468  4518 I native  :   • "analysis": short string
+02-20 20:37:17.751  4468  4518 I native  :   • "weakness": short string
+02-20 20:37:17.751  4468  4518 I native  :   • "followup_needed": boolean
+02-20 20:37:17.751  4468  4518 I native  :   • "followup_target": short string
+02-20 20:37:17.751  4468  4518 I native  :   • "score": integer 1–100
+02-20 20:37:17.751  4468  4518 I native  : 
+02-20 20:37:17.751  4468  4518 I native  : RULES:
+02-20 20:37:17.751  4468  4518 I native  : - Judge ONLY content relevance/completeness/accuracy.
+02-20 20:37:17.751  4468  4518 I native  : - Do NOT generate a follow-up question here.
+02-20 20:37:17.751  4468  4518 I native  : - followup_target must be single-scope (one biggest uncertainty).
+02-20 20:37:17.751  4468  4518 I native  : - Do NOT use double quotes (") inside string values. Use single quotes or no quotes.
+02-20 20:37:17.751  4468  4518 I native  : - Do NOT copy the Answer verbatim into the JSON.
+02-20 20:37:17.751  4468  4518 I native  : LENGTH LIMITS:
+02-20 20:37:17.751  4468  4518 I native  : - analysis<=60 chars
+02-20 20:37:17.751  4468  4518 I native  : - weakness<=120 chars
+02-20 20:37:17.751  4468  4518 I native  : - followup_target<=80 chars
+02-20 20:37:17.751  4468  4518 I native  : - score is integer 1–100
+02-20 20:37:17.751  4468  4518 I native  : Scoring rule: Judge ONLY content relevance/completeness/accuracy. Do NOT penalize style or formatting.
+02-20 20:37:17.751  4468  4518 I native  : STRICT OUTPUT (NO MARKDOWN):
+02-20 20:37:17.751  4468  4518 I native  : - If the task is EVAL: output RAW JSON only, ONE LINE.
+02-20 20:37:17.751  4468  4518 I native  :   - Use COMPACT JSON (no spaces around ':' and ',').
+02-20 20:37:17.751  4468  4518 I native  :   - No extra text.
+02-20 20:37:17.751  4468  4518 I native  : - If the task is FOLLOWUP: output ONLY the follow-up question as plain text on ONE LINE, or EMPTY output if none.
+02-20 20:37:17.751  4468  4518 I native  :   - No JSON, no quotes, no extra text.
+02-20 20:37:17.751  4468  4518 I native  : Jibu kwa kitu cha JSON kilicho tupu: {}
+02-20 20:37:17.751  4468  4518 I native  : INPUT:
+02-20 20:37:17.751  4468  4518 I native  : Kazi: EVAL
+02-20 20:37:17.751  4468  4518 I native  : - Tathmini Jibu kwa Swali.
+02-20 20:37:17.751  4468  4518 I native  : - Andika weakness (kile kinachokosekana/kisicho wazi).
+02-20 20:37:17.751  4468  4518 I native  : - Tambua hoja moja kubwa zaidi iliyokosekana/kutoeleweka kama followup_target.
+02-20 20:37:17.751  4468  4518 I native  : - Weka followup_needed true ikiwa ufafanuzi unahitajika, vinginevyo false.
+02-20 20:37:17.751  4468  4518 I native  : - Toa score 1–100.
+02-20 20:37:17.751  4468  4518 I native  : 
+02-20 20:37:17.751  4468  4518 I native  : Swali: Unapoteza kiasi gani cha mavuno kwa sababu ya funza jeshi vamizi (Fall Armyworm/FAW)? Tafadhali fikiria misimu 3 iliyopita. (Asilimia au magunia kwa ekari vyote vinakubalika.)
+02-20 20:37:17.751  4468  4518 I native  : Jibu: entry info the<end_of_turn>
+02-20 20:37:17.751  4468  4518 I native  : <start_of_turn>model
+02-20 20:37:17.779  4468  4518 I native  : I0000 00:00:1771648637.779276    4518 threadpool.cc:86] ThreadPool 'engine': Created a worker thread since all 0 worker threads are (supposed to be) busy.
+02-20 20:37:19.798  4468  4468 E InputEventReceiver: Exception dispatching input event.
+02-20 20:37:19.798  4468  4468 E MessageQueue-JNI: Exception in MessageQueue callback: handleReceiveCallback
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: java.lang.RuntimeException: Debug crash button pressed
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at com.negi.survey.screens.AiScreenKt.AiScreen$lambda$70$1$0$1$0$0$0(AiScreen.kt:1038)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at com.negi.survey.screens.AiScreenKt.$r8$lambda$zwsH71QyJNnPPnS4Yv-wN0UIW7Y(Unknown Source:0)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at com.negi.survey.screens.AiScreenKt$$ExternalSyntheticLambda16.invoke(D8$$SyntheticClass:0)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at androidx.compose.foundation.ClickableNode.onPointerEvent-H0pRuoY(Clickable.kt:935)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:446)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:432)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:432)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:432)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:432)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at androidx.compose.ui.input.pointer.NodeParent.dispatchMainEventPass(HitPathTracker.kt:285)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at androidx.compose.ui.input.pointer.HitPathTracker.dispatchChanges(HitPathTracker.kt:181)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at androidx.compose.ui.input.pointer.PointerInputEventProcessor.process-BIzXfog(PointerInputEventProcessor.kt:118)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at androidx.compose.ui.platform.AndroidComposeView.sendMotionEvent-8iAsVTc(AndroidComposeView.android.kt:2685)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at androidx.compose.ui.platform.AndroidComposeView.handleMotionEvent-8iAsVTc(AndroidComposeView.android.kt:2629)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at androidx.compose.ui.platform.AndroidComposeView.dispatchTouchEvent(AndroidComposeView.android.kt:2467)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at com.android.internal.policy.DecorView.superDispatchTouchEvent(DecorView.java:503)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at com.android.internal.policy.PhoneWindow.superDispatchTouchEvent(PhoneWindow.java:2017)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at android.app.Activity.dispatchTouchEvent(Activity.java:4665)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at com.android.internal.policy.DecorView.dispatchTouchEvent(DecorView.java:441)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at android.view.View.dispatchPointerEvent(View.java:17110)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at android.view.ViewRootImpl$ViewPostImeInputStage.processPointerEvent(ViewRootImpl.java:8349)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:8103)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:7480)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:7537)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:7503)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:7674)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:7511)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:7731)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:7484)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:7537)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:7503)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:7511)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:7484)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at android.view.ViewRootImpl.deliverInputEvent(ViewRootImpl.java:10697)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at android.view.ViewRootImpl.doProcessInputEvents(ViewRootImpl.java:10648)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at android.view.ViewRootImpl.enqueueInputEvent(ViewRootImpl.java:10616)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at android.view.ViewRootImpl.processRawInputEvent(ViewRootImpl.java:11039)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at android.view.ViewRootImpl$WindowInputEventReceiver.onInputEvent(ViewRootImpl.java:10825)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at android.view.InputEventReceiver.dispatchInputEvent(InputEventReceiver.java:277)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at android.os.MessageQueue.nextLegacy(MessageQueue.java:985)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at android.os.MessageQueue.next(MessageQueue.java:1094)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at android.os.Looper.loopOnce(Looper.java:197)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at android.os.Looper.loop(Looper.java:367)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at android.app.ActivityThread.main(ActivityThread.java:9287)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at java.lang.reflect.Method.invoke(Native Method)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:566)
+02-20 20:37:19.800  4468  4468 E MessageQueue-JNI: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:929)
+02-20 20:37:19.800  4468  4468 D AndroidRuntime: Shutting down VM
+--------- beginning of crash
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: FATAL EXCEPTION: main
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: Process: com.negi.survey, PID: 4468
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: java.lang.RuntimeException: Debug crash button pressed
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at com.negi.survey.screens.AiScreenKt.AiScreen$lambda$70$1$0$1$0$0$0(AiScreen.kt:1038)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at com.negi.survey.screens.AiScreenKt.$r8$lambda$zwsH71QyJNnPPnS4Yv-wN0UIW7Y(Unknown Source:0)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at com.negi.survey.screens.AiScreenKt$$ExternalSyntheticLambda16.invoke(D8$$SyntheticClass:0)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at androidx.compose.foundation.ClickableNode.onPointerEvent-H0pRuoY(Clickable.kt:935)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:446)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:432)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:432)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:432)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:432)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at androidx.compose.ui.input.pointer.NodeParent.dispatchMainEventPass(HitPathTracker.kt:285)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at androidx.compose.ui.input.pointer.HitPathTracker.dispatchChanges(HitPathTracker.kt:181)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at androidx.compose.ui.input.pointer.PointerInputEventProcessor.process-BIzXfog(PointerInputEventProcessor.kt:118)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at androidx.compose.ui.platform.AndroidComposeView.sendMotionEvent-8iAsVTc(AndroidComposeView.android.kt:2685)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at androidx.compose.ui.platform.AndroidComposeView.handleMotionEvent-8iAsVTc(AndroidComposeView.android.kt:2629)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at androidx.compose.ui.platform.AndroidComposeView.dispatchTouchEvent(AndroidComposeView.android.kt:2467)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at com.android.internal.policy.DecorView.superDispatchTouchEvent(DecorView.java:503)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at com.android.internal.policy.PhoneWindow.superDispatchTouchEvent(PhoneWindow.java:2017)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.app.Activity.dispatchTouchEvent(Activity.java:4665)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at com.android.internal.policy.DecorView.dispatchTouchEvent(DecorView.java:441)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.View.dispatchPointerEvent(View.java:17110)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewRootImpl$ViewPostImeInputStage.processPointerEvent(ViewRootImpl.java:8349)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:8103)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:7480)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:7537)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:7503)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:7674)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:7511)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:7731)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:7484)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:7537)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:7503)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:7511)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:7484)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewRootImpl.deliverInputEvent(ViewRootImpl.java:10697)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewRootImpl.doProcessInputEvents(ViewRootImpl.java:10648)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewRootImpl.enqueueInputEvent(ViewRootImpl.java:10616)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewRootImpl.processRawInputEvent(ViewRootImpl.java:11039)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewRootImpl$WindowInputEventReceiver.onInputEvent(ViewRootImpl.java:10825)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.InputEventReceiver.dispatchInputEvent(InputEventReceiver.java:277)
+02-20 20:37:19.801  4468  4468 E AndroidRuntime: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+02-20 20:37:19.801  4468  4468 E AndroidRuntime: 	at android.os.MessageQueue.nextLegacy(MessageQueue.java:985)
+02-20 20:37:19.801  4468  4468 E AndroidRuntime: 	at android.os.MessageQueue.next(MessageQueue.java:1094)
+02-20 20:37:19.801  4468  4468 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:197)
+02-20 20:37:19.801  4468  4468 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:367)
+02-20 20:37:19.801  4468  4468 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:9287)
+02-20 20:37:19.801  4468  4468 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+02-20 20:37:19.801  4468  4468 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:566)
+02-20 20:37:19.801  4468  4468 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:929)
