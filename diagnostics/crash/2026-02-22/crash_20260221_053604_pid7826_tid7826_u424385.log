@@ -1,0 +1,611 @@
+=== Crash Report ===
+time_utc=20260221_053604
+time_local=20260220_213604
+pid=7826
+tid=7826
+thread=main
+sdk=36
+device=Google Pixel 9a
+appId=com.negi.survey
+versionName=0.0.1
+versionCode=1
+
+=== Exception ===
+java.lang.RuntimeException: Debug crash button pressed
+	at com.negi.survey.screens.AiScreenKt.AiScreen$lambda$70$1$0$1$0$0$0(AiScreen.kt:1038)
+	at com.negi.survey.screens.AiScreenKt.$r8$lambda$zwsH71QyJNnPPnS4Yv-wN0UIW7Y(Unknown Source:0)
+	at com.negi.survey.screens.AiScreenKt$$ExternalSyntheticLambda16.invoke(D8$$SyntheticClass:0)
+	at androidx.compose.foundation.ClickableNode.onPointerEvent-H0pRuoY(Clickable.kt:935)
+	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:446)
+	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:432)
+	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:432)
+	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:432)
+	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:432)
+	at androidx.compose.ui.input.pointer.NodeParent.dispatchMainEventPass(HitPathTracker.kt:285)
+	at androidx.compose.ui.input.pointer.HitPathTracker.dispatchChanges(HitPathTracker.kt:181)
+	at androidx.compose.ui.input.pointer.PointerInputEventProcessor.process-BIzXfog(PointerInputEventProcessor.kt:118)
+	at androidx.compose.ui.platform.AndroidComposeView.sendMotionEvent-8iAsVTc(AndroidComposeView.android.kt:2685)
+	at androidx.compose.ui.platform.AndroidComposeView.handleMotionEvent-8iAsVTc(AndroidComposeView.android.kt:2629)
+	at androidx.compose.ui.platform.AndroidComposeView.dispatchTouchEvent(AndroidComposeView.android.kt:2467)
+	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+	at com.android.internal.policy.DecorView.superDispatchTouchEvent(DecorView.java:503)
+	at com.android.internal.policy.PhoneWindow.superDispatchTouchEvent(PhoneWindow.java:2017)
+	at android.app.Activity.dispatchTouchEvent(Activity.java:4665)
+	at com.android.internal.policy.DecorView.dispatchTouchEvent(DecorView.java:441)
+	at android.view.View.dispatchPointerEvent(View.java:17110)
+	at android.view.ViewRootImpl$ViewPostImeInputStage.processPointerEvent(ViewRootImpl.java:8349)
+	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:8103)
+	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:7480)
+	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:7537)
+	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:7503)
+	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:7674)
+	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:7511)
+	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:7731)
+	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:7484)
+	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:7537)
+	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:7503)
+	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:7511)
+	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:7484)
+	at android.view.ViewRootImpl.deliverInputEvent(ViewRootImpl.java:10697)
+	at android.view.ViewRootImpl.doProcessInputEvents(ViewRootImpl.java:10648)
+	at android.view.ViewRootImpl.enqueueInputEvent(ViewRootImpl.java:10616)
+	at android.view.ViewRootImpl.processRawInputEvent(ViewRootImpl.java:11039)
+	at android.view.ViewRootImpl$WindowInputEventReceiver.onInputEvent(ViewRootImpl.java:10825)
+	at android.view.InputEventReceiver.dispatchInputEvent(InputEventReceiver.java:277)
+	at android.os.MessageQueue.nativePollOnce(Native Method)
+	at android.os.MessageQueue.nextLegacy(MessageQueue.java:985)
+	at android.os.MessageQueue.next(MessageQueue.java:1094)
+	at android.os.Looper.loopOnce(Looper.java:197)
+	at android.os.Looper.loop(Looper.java:367)
+	at android.app.ActivityThread.main(ActivityThread.java:9287)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:566)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:929)
+
+
+=== Logcat (best-effort) ===
+--------- beginning of system
+02-20 21:15:35.132  7826  7859 I DisplayManager: Choreographer implicitly registered for the refresh rate.
+02-20 21:15:35.240  7826  7826 E VibratorInfo: Invalid frequency profile received from HAL. resonantFrequencyHz=NaN, frequenciesHz=null, outputAccelerationsGs=null
+02-20 21:15:35.435  7826  7826 D InsetsController: hide(ime())
+02-20 21:15:35.807  7826  7826 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey, tag=null, id=7788], rate limit (5.0) exceeded: input 7.311473, output would be 5.12365
+02-20 21:15:36.815  7826  7826 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey, tag=null, id=7421], rate limit (5.0) exceeded: input 24.026731, output would be 5.1089954
+02-20 21:15:37.898  7826  7826 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey, tag=null, id=3355], rate limit (5.0) exceeded: input 38.122906, output would be 6.2459626
+02-20 21:15:39.832  7826  7826 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey, tag=null, id=6804], rate limit (5.0) exceeded: input 11.047412, output would be 6.6004357
+02-20 21:15:40.906  7826  7826 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey, tag=null, id=5187], rate limit (5.0) exceeded: input 34.651142, output would be 6.44771
+02-20 21:15:42.128  7826  7826 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey, tag=null, id=7788], rate limit (5.0) exceeded: input 10.724078, output would be 6.3508224
+02-20 21:15:44.068  7826  7826 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey, tag=null, id=6804], rate limit (5.0) exceeded: input 11.246996, output would be 6.830174
+02-20 21:23:15.112  7826  7826 D InsetsController: show(ime())
+02-20 21:23:15.114  7826  7826 D InsetsController: Setting requestedVisibleTypes to 511 (was 503)
+02-20 21:23:15.125  7826  7826 D InsetsController: show(ime())
+02-20 21:23:29.665  7826  7826 D InsetsController: hide(ime())
+02-20 21:23:29.665  7826  7826 D InsetsController: Setting requestedVisibleTypes to 503 (was 511)
+02-20 21:23:33.437  7826  7826 D InsetsController: hide(ime())
+02-20 21:23:58.927  7826  7826 D InsetsController: show(ime())
+02-20 21:23:58.928  7826  7826 D InsetsController: Setting requestedVisibleTypes to 511 (was 503)
+02-20 21:23:58.931  7826  7826 D InsetsController: show(ime())
+02-20 21:24:01.116  7826  7826 D InsetsController: show(ime())
+02-20 21:24:01.132  7826  7826 D InsetsController: show(ime())
+02-20 21:24:05.310  7826  7826 D InsetsController: show(ime())
+02-20 21:24:05.326  7826  7826 D InsetsController: show(ime())
+02-20 21:24:09.153  7826  7826 D InsetsController: hide(ime())
+02-20 21:24:09.154  7826  7826 D InsetsController: Setting requestedVisibleTypes to 503 (was 511)
+02-20 21:24:33.241  7826  7826 D InsetsController: hide(ime())
+02-20 21:24:36.294  7826  7826 D InsetsController: show(ime())
+02-20 21:24:36.294  7826  7826 D InsetsController: Setting requestedVisibleTypes to 511 (was 503)
+02-20 21:24:36.309  7826  7826 D InsetsController: show(ime())
+02-20 21:24:43.161  7826  7826 D InsetsController: hide(ime())
+02-20 21:24:43.162  7826  7826 D InsetsController: Setting requestedVisibleTypes to 503 (was 511)
+02-20 21:24:44.469  7826  7826 D InsetsController: hide(ime())
+02-20 21:24:45.955  7826  7826 D InsetsController: hide(ime())
+02-20 21:24:46.804  7826  7826 D InsetsController: hide(ime())
+02-20 21:24:47.869  7826  7826 D InsetsController: hide(ime())
+02-20 21:24:49.920  7826  7826 D InsetsController: show(ime())
+02-20 21:24:49.921  7826  7826 D InsetsController: Setting requestedVisibleTypes to 511 (was 503)
+02-20 21:24:49.924  7826  7826 D InsetsController: show(ime())
+02-20 21:24:54.912  7826  7826 D InsetsController: hide(ime())
+02-20 21:24:54.912  7826  7826 D InsetsController: Setting requestedVisibleTypes to 503 (was 511)
+02-20 21:25:14.714  7826  7826 D InsetsController: hide(ime())
+02-20 21:25:16.266  7826  7826 D InsetsController: show(ime())
+02-20 21:25:16.266  7826  7826 D InsetsController: Setting requestedVisibleTypes to 511 (was 503)
+02-20 21:25:16.271  7826  7826 D InsetsController: show(ime())
+02-20 21:25:19.822  7826  7826 D InsetsController: show(ime())
+02-20 21:25:19.844  7826  7826 D InsetsController: show(ime())
+02-20 21:25:23.371  7826  7826 D InsetsController: hide(ime())
+02-20 21:25:23.372  7826  7826 D InsetsController: Setting requestedVisibleTypes to 503 (was 511)
+02-20 21:25:53.783  7826  7826 D InsetsController: show(ime())
+02-20 21:25:53.783  7826  7826 D InsetsController: Setting requestedVisibleTypes to 511 (was 503)
+02-20 21:25:53.789  7826  7826 D InsetsController: show(ime())
+02-20 21:27:01.087  7826  7826 D InsetsController: hide(ime())
+02-20 21:27:01.089  7826  7826 D InsetsController: Setting requestedVisibleTypes to 503 (was 511)
+02-20 21:27:27.321  7826  7826 D InsetsController: hide(ime())
+02-20 21:27:30.756  7826  7826 D InsetsController: show(ime())
+02-20 21:27:30.756  7826  7826 D InsetsController: Setting requestedVisibleTypes to 511 (was 503)
+02-20 21:27:30.810  7826  7826 D InsetsController: show(ime())
+02-20 21:27:30.958  7826  7826 D InsetsController: show(ime())
+02-20 21:27:30.975  7826  7826 D InsetsController: show(ime())
+02-20 21:27:35.832  7826  7826 D InsetsController: show(ime())
+02-20 21:27:35.862  7826  7826 D InsetsController: show(ime())
+02-20 21:27:46.391  7826  7826 D InsetsController: hide(ime())
+02-20 21:27:46.393  7826  7826 D InsetsController: Setting requestedVisibleTypes to 503 (was 511)
+02-20 21:28:03.454  7826  7826 D InsetsController: hide(ime())
+02-20 21:28:16.355  7826  7826 D InsetsController: show(ime())
+02-20 21:28:16.355  7826  7826 D InsetsController: Setting requestedVisibleTypes to 511 (was 503)
+02-20 21:28:16.362  7826  7826 D InsetsController: show(ime())
+02-20 21:28:27.684  7826  7826 D InsetsController: show(ime())
+02-20 21:28:27.692  7826  7826 D InsetsController: show(ime())
+02-20 21:28:50.430  7826  7826 D InsetsController: hide(ime())
+02-20 21:28:50.431  7826  7826 D InsetsController: Setting requestedVisibleTypes to 503 (was 511)
+02-20 21:29:21.390  7826  7826 D InsetsController: show(ime())
+02-20 21:29:21.391  7826  7826 D InsetsController: Setting requestedVisibleTypes to 511 (was 503)
+02-20 21:29:21.420  7826  7826 D InsetsController: show(ime())
+02-20 21:29:25.354  7826  7826 D InsetsController: show(ime())
+02-20 21:29:25.368  7826  7826 D InsetsController: show(ime())
+02-20 21:29:27.222  7826  7826 D InsetsController: show(ime())
+02-20 21:29:27.242  7826  7826 D InsetsController: show(ime())
+02-20 21:29:40.324  7826  7826 D InsetsController: hide(ime())
+02-20 21:29:40.325  7826  7826 D InsetsController: Setting requestedVisibleTypes to 503 (was 511)
+02-20 21:30:10.105  7826  7826 D InsetsController: show(ime())
+02-20 21:30:10.106  7826  7826 D InsetsController: Setting requestedVisibleTypes to 511 (was 503)
+02-20 21:30:10.127  7826  7826 D InsetsController: show(ime())
+02-20 21:30:13.987  7826  7826 D InsetsController: show(ime())
+02-20 21:30:14.015  7826  7826 D InsetsController: show(ime())
+02-20 21:30:15.403  7826  7826 D InsetsController: show(ime())
+02-20 21:30:15.423  7826  7826 D InsetsController: show(ime())
+02-20 21:30:18.826  7826  7826 D InsetsController: show(ime())
+02-20 21:30:18.838  7826  7826 D InsetsController: show(ime())
+02-20 21:30:21.098  7826  7826 D InsetsController: show(ime())
+02-20 21:30:21.120  7826  7826 D InsetsController: show(ime())
+02-20 21:30:26.291  7826  7826 D InsetsController: hide(ime())
+02-20 21:30:26.292  7826  7826 D InsetsController: Setting requestedVisibleTypes to 503 (was 511)
+02-20 21:30:41.915  7826  7826 D InsetsController: hide(ime())
+02-20 21:31:21.875  7826  7826 D InsetsController: hide(ime())
+02-20 21:31:27.809  7826  7826 D InsetsController: show(ime())
+02-20 21:31:27.810  7826  7826 D InsetsController: Setting requestedVisibleTypes to 511 (was 503)
+02-20 21:31:27.817  7826  7826 D InsetsController: show(ime())
+02-20 21:31:31.961  7826  7826 D InsetsController: hide(ime())
+02-20 21:31:31.962  7826  7826 D InsetsController: Setting requestedVisibleTypes to 503 (was 511)
+02-20 21:31:45.850  7826  7826 D InsetsController: hide(ime())
+02-20 21:31:50.033  7826  7826 D InsetsController: show(ime())
+02-20 21:31:50.034  7826  7826 D InsetsController: Setting requestedVisibleTypes to 511 (was 503)
+02-20 21:31:50.038  7826  7826 D InsetsController: show(ime())
+02-20 21:32:00.211  7826  7826 D InsetsController: show(ime())
+02-20 21:32:00.269  7826  7826 D InsetsController: show(ime())
+02-20 21:32:07.973  7826  7826 D InsetsController: hide(ime())
+02-20 21:32:07.974  7826  7826 D InsetsController: Setting requestedVisibleTypes to 503 (was 511)
+02-20 21:32:26.133  7826  7826 D InsetsController: show(ime())
+02-20 21:32:26.134  7826  7826 D InsetsController: Setting requestedVisibleTypes to 511 (was 503)
+02-20 21:32:26.139  7826  7826 D InsetsController: show(ime())
+02-20 21:32:49.801  7826  7826 D InsetsController: show(ime())
+02-20 21:32:49.834  7826  7826 D InsetsController: show(ime())
+02-20 21:32:52.339  7826  7826 D InsetsController: hide(ime())
+02-20 21:32:52.340  7826  7826 D InsetsController: Setting requestedVisibleTypes to 503 (was 511)
+--------- beginning of main
+02-20 21:32:53.399  7826  8165 I native  : I0000 00:00:1771651973.399838    8165 session_basic.cc:350] RunPrefillAsync status: OK
+02-20 21:32:53.400  7826  8165 I native  : I0000 00:00:1771651973.400054    8165 session_basic.cc:470] RunDecodeAsync
+02-20 21:32:55.826  7826  7831 W com.negi.survey: Suspending all threads took: 6.194ms
+02-20 21:32:55.908  7826  7831 I com.negi.survey: Background concurrent mark compact GC freed 24MB AllocSpace bytes, 0(0B) LOS objects, 79% free, 6272KB/30MB, paused 10.443ms,6.380ms total 226.943ms
+02-20 21:33:07.700  7826  7831 I com.negi.survey: Background young concurrent mark compact GC freed 23MB AllocSpace bytes, 0(0B) LOS objects, 79% free, 6252KB/30MB, paused 2.780ms,4.827ms total 188.032ms
+02-20 21:33:10.590  7826  7826 D InsetsController: show(ime())
+02-20 21:33:10.590  7826  7826 I ImeTracker: com.negi.survey:1a2dfa55: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT_BY_INSETS_API fromUser false
+02-20 21:33:10.591  7826  7826 D InsetsController: Setting requestedVisibleTypes to 511 (was 503)
+02-20 21:33:10.598  7826  7826 I ImeTracker: com.negi.survey:796fbab: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+02-20 21:33:10.598  7826  7826 D InsetsController: show(ime())
+02-20 21:33:10.598  7826  7826 I ImeTracker: com.negi.survey:796fbab: onCancelled at PHASE_CLIENT_REPORT_REQUESTED_VISIBLE_TYPES
+02-20 21:33:10.702  7826  7826 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.view.ImeBackAnimationController@ee48d66
+02-20 21:33:10.766  7826  8559 I native  : I0000 00:00:1771651990.766750    8559 model_data_processor_factory.cc:266] Creating Gemma3DataProcessor
+02-20 21:33:10.777  7826  7826 D VRI[MainActivity]: WindowInsets changed: ime:[0,0,0,1043] 
+02-20 21:33:11.118  7826  7826 I ImeTracker: com.negi.survey:1a2dfa55: onShown
+02-20 21:33:19.010  7826  7831 I com.negi.survey: Background concurrent mark compact GC freed 24MB AllocSpace bytes, 0(0B) LOS objects, 79% free, 6468KB/30MB, paused 3.459ms,16.682ms total 324.906ms
+02-20 21:33:31.792  7826  7831 I com.negi.survey: Background young concurrent mark compact GC freed 23MB AllocSpace bytes, 0(0B) LOS objects, 78% free, 6572KB/30MB, paused 5.603ms,6.111ms total 254.124ms
+02-20 21:33:43.855  7826  7831 I com.negi.survey: Background concurrent mark compact GC freed 23MB AllocSpace bytes, 0(0B) LOS objects, 79% free, 6468KB/30MB, paused 3.927ms,5.246ms total 258.567ms
+02-20 21:33:47.692  7826  7826 D WhisperSpeechController: updateContext: surveyId=49b51a27-f54c-488f-a313-80d29a08d546, questionId=Q5
+02-20 21:33:47.692  7826  7826 D WhisperSpeechController: updateContext: surveyId=49b51a27-f54c-488f-a313-80d29a08d546, questionId=Q5
+02-20 21:33:47.702  7826  7830 W com.negi.survey: Missing inline cache for void androidx.navigation3.ui.NavDisplayKt__NavDisplayKt.NavDisplay(androidx.navigation3.scene.SceneState, androidx.navigationevent.compose.NavigationEventState, androidx.compose.ui.Modifier, androidx.compose.ui.Alignment, androidx.compose.animation.SizeTransform, kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function2, androidx.compose.runtime.Composer, int, int)
+02-20 21:33:47.702  7826  7830 W com.negi.survey: Missing inline cache for void androidx.navigation3.ui.NavDisplayKt__NavDisplayKt.NavDisplay(androidx.navigation3.scene.SceneState, androidx.navigationevent.compose.NavigationEventState, androidx.compose.ui.Modifier, androidx.compose.ui.Alignment, androidx.compose.animation.SizeTransform, kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function1, kotlin.jvm.functions.Function2, androidx.compose.runtime.Composer, int, int)
+02-20 21:33:47.746  7826  7826 D InsetsController: show(ime())
+02-20 21:33:47.747  7826  7826 I ImeTracker: com.negi.survey:b83c362e: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT_BY_INSETS_API fromUser false
+02-20 21:33:47.747  7826  7826 I ImeTracker: com.negi.survey:b83c362e: onCancelled at PHASE_CLIENT_APPLY_ANIMATION
+02-20 21:33:47.774  7826  7826 I ImeTracker: com.negi.survey:bd06c6a8: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+02-20 21:33:47.775  7826  7826 D InsetsController: show(ime())
+02-20 21:33:47.775  7826  7826 I ImeTracker: com.negi.survey:bd06c6a8: onCancelled at PHASE_CLIENT_APPLY_ANIMATION
+02-20 21:33:57.401  7826  7831 I com.negi.survey: Background young concurrent mark compact GC freed 24MB AllocSpace bytes, 0(0B) LOS objects, 80% free, 5912KB/30MB, paused 2.770ms,4.258ms total 189.276ms
+02-20 21:33:58.359  7826  7826 D InsetsController: hide(ime())
+02-20 21:33:58.359  7826  7826 I ImeTracker: com.negi.survey:9115e00e: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT_BY_INSETS_API fromUser false
+02-20 21:33:58.359  7826  7826 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): androidx.navigationevent.OnBackInvokedInput$createOnBackAnimationCallback$1@fdc6e79
+02-20 21:33:58.359  7826  7826 D InsetsController: Setting requestedVisibleTypes to 503 (was 511)
+02-20 21:33:58.361  7826  7826 D VRI[MainActivity]: WindowInsets changed: ime:null 
+02-20 21:33:58.367  7826  8559 I native  : I0000 00:00:1771652038.367087    8559 session_basic.cc:312] RunPrefillAsync: 
+02-20 21:33:58.367  7826  8559 I native  : I0000 00:00:1771652038.367242    8559 session_basic.cc:314] <start_of_turn>user
+02-20 21:33:58.367  7826  8559 I native  : Wewe ni mtaalamu mashuhuri wa tafiti za wakulima. Soma Swali na Jibu.
+02-20 21:33:58.367  7826  8559 I native  : OUTPUT FORMAT:
+02-20 21:33:58.367  7826  8559 I native  : - In Swahili.
+02-20 21:33:58.367  7826  8559 I native  : - Keys exactly:
+02-20 21:33:58.367  7826  8559 I native  :   • "analysis": short string
+02-20 21:33:58.367  7826  8559 I native  :   • "weakness": short string
+02-20 21:33:58.367  7826  8559 I native  :   • "followup_needed": boolean
+02-20 21:33:58.367  7826  8559 I native  :   • "followup_target": short string
+02-20 21:33:58.367  7826  8559 I native  :   • "score": integer 1–100
+02-20 21:33:58.367  7826  8559 I native  : 
+02-20 21:33:58.367  7826  8559 I native  : RULES:
+02-20 21:33:58.367  7826  8559 I native  : - Judge ONLY content relevance/completeness/accuracy.
+02-20 21:33:58.367  7826  8559 I native  : - Do NOT generate a follow-up question here.
+02-20 21:33:58.367  7826  8559 I native  : - followup_target must be single-scope (one biggest uncertainty).
+02-20 21:33:58.367  7826  8559 I native  : - Do NOT use double quotes (") inside string values. Use single quotes or no quotes.
+02-20 21:33:58.367  7826  8559 I native  : - Do NOT copy the Answer verbatim into the JSON.
+02-20 21:33:58.367  7826  8559 I native  : LENGTH LIMITS:
+02-20 21:33:58.367  7826  8559 I native  : - analysis<=60 chars
+02-20 21:33:58.367  7826  8559 I native  : - weakness<=120 chars
+02-20 21:33:58.367  7826  8559 I native  : - followup_target<=80 chars
+02-20 21:33:58.367  7826  8559 I native  : - score is integer 1–100
+02-20 21:33:58.367  7826  8559 I native  : Scoring rule: Judge ONLY content relevance/completeness/accuracy. Do NOT penalize style or formatting.
+02-20 21:33:58.367  7826  8559 I native  : STRICT OUTPUT (NO MARKDOWN):
+02-20 21:33:58.367  7826  8559 I native  : - If the task is EVAL: output RAW JSON only, ONE LINE.
+02-20 21:33:58.367  7826  8559 I native  :   - Use COMPACT JSON (no spaces around ':' and ',').
+02-20 21:33:58.367  7826  8559 I native  :   - No extra text.
+02-20 21:33:58.367  7826  8559 I native  : - If the task is FOLLOWUP: output ONLY the follow-up question as plain text on ONE LINE, or EMPTY output if none.
+02-20 21:33:58.367  7826  8559 I native  :   - No JSON, no quotes, no extra text.
+02-20 21:33:58.367  7826  8559 I native  : Jibu kwa kitu cha JSON kilicho tupu: {}
+02-20 21:33:58.367  7826  8559 I native  : INPUT:
+02-20 21:33:58.367  7826  8559 I native  : Kazi: EVAL
+02-20 21:33:58.367  7826  8559 I native  : - Tathmini Jibu kwa Swali.
+02-20 21:33:58.367  7826  8559 I native  : - Andika weakness (kile kinachokosekana/kisicho wazi).
+02-20 21:33:58.367  7826  8559 I native  : - Tambua hoja moja kubwa zaidi iliyokosekana/kutoeleweka kama followup_target.
+02-20 21:33:58.367  7826  8559 I native  : - Weka followup_needed true ikiwa ufafanuzi unahitajika, vinginevyo false.
+02-20 21:33:58.367  7826  8559 I native  : - Toa score 1–100.
+02-20 21:33:58.367  7826  8559 I native  : 
+02-20 21:33:58.367  7826  8559 I native  : Swali: Katika mwaka mbaya, mavuno madogo kabisa ambayo ungeyakubali na bado upande mahindi haya tena msimu ujao ni kiasi gani? (Asilimia ya mavuno ya kawaida au magunia kwa ekari.)
+02-20 21:33:58.367  7826  8559 I native  : Jibu: the fawetawet awet awetaweta weta wetawet wetawet aweta weta wet awet awet awetawet awetawet<end_of_turn>
+02-20 21:33:58.367  7826  8559 I native  : <start_of_turn>model
+02-20 21:33:58.457  7826  7826 I ImeTracker: system_server:81adba2d: onCancelled at PHASE_CLIENT_ON_CONTROLS_CHANGED
+02-20 21:33:58.590  7826  7826 I ImeTracker: system_server:18b8de3f: onCancelled at PHASE_CLIENT_ON_CONTROLS_CHANGED
+02-20 21:33:59.414  7826  8165 I native  : I0000 00:00:1771652039.414022    8165 session_basic.cc:350] RunPrefillAsync status: OK
+02-20 21:33:59.414  7826  8165 I native  : I0000 00:00:1771652039.414278    8165 session_basic.cc:470] RunDecodeAsync
+02-20 21:34:15.303  7826  7826 D InsetsController: show(ime())
+02-20 21:34:15.304  7826  7826 I ImeTracker: com.negi.survey:318f982a: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT_BY_INSETS_API fromUser false
+02-20 21:34:15.304  7826  7826 D InsetsController: Setting requestedVisibleTypes to 511 (was 503)
+02-20 21:34:15.321  7826  7826 I ImeTracker: com.negi.survey:34743b92: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+02-20 21:34:15.321  7826  7826 D InsetsController: show(ime())
+02-20 21:34:15.322  7826  7826 I ImeTracker: com.negi.survey:34743b92: onCancelled at PHASE_CLIENT_REPORT_REQUESTED_VISIBLE_TYPES
+02-20 21:34:15.463  7826  7826 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.view.ImeBackAnimationController@ee48d66
+02-20 21:34:15.473  7826  8530 I native  : I0000 00:00:1771652055.473796    8530 model_data_processor_factory.cc:266] Creating Gemma3DataProcessor
+02-20 21:34:15.495  7826  7826 D VRI[MainActivity]: WindowInsets changed: ime:[0,0,0,1043] 
+02-20 21:34:15.858  7826  7826 I ImeTracker: com.negi.survey:318f982a: onShown
+02-20 21:34:16.552  7826  7831 I com.negi.survey: Background concurrent mark compact GC freed 24MB AllocSpace bytes, 0(0B) LOS objects, 81% free, 5556KB/29MB, paused 2.937ms,4.528ms total 217.169ms
+02-20 21:34:34.942  7826  7831 I com.negi.survey: Background young concurrent mark compact GC freed 23MB AllocSpace bytes, 0(0B) LOS objects, 80% free, 5844KB/29MB, paused 1.358ms,2.220ms total 109.918ms
+02-20 21:34:50.334  7826  7826 D WhisperSpeechController: updateContext: surveyId=49b51a27-f54c-488f-a313-80d29a08d546, questionId=Q6
+02-20 21:34:50.334  7826  7826 D WhisperSpeechController: updateContext: surveyId=49b51a27-f54c-488f-a313-80d29a08d546, questionId=Q6
+02-20 21:34:50.375  7826  7826 D InsetsController: show(ime())
+02-20 21:34:50.376  7826  7826 I ImeTracker: com.negi.survey:5f517dbd: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT_BY_INSETS_API fromUser false
+02-20 21:34:50.376  7826  7826 I ImeTracker: com.negi.survey:5f517dbd: onCancelled at PHASE_CLIENT_APPLY_ANIMATION
+02-20 21:34:50.397  7826  7826 I ImeTracker: com.negi.survey:df60bff0: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+02-20 21:34:50.397  7826  7826 D InsetsController: show(ime())
+02-20 21:34:50.397  7826  7826 I ImeTracker: com.negi.survey:df60bff0: onCancelled at PHASE_CLIENT_APPLY_ANIMATION
+02-20 21:34:52.224  7826  7826 D InsetsController: show(ime())
+02-20 21:34:52.225  7826  7826 I ImeTracker: com.negi.survey:45a7ba34: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT_BY_INSETS_API fromUser false
+02-20 21:34:52.225  7826  7826 I ImeTracker: com.negi.survey:45a7ba34: onCancelled at PHASE_CLIENT_APPLY_ANIMATION
+02-20 21:34:52.282  7826  7826 I ImeTracker: com.negi.survey:b7288a52: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+02-20 21:34:52.282  7826  7826 D InsetsController: show(ime())
+02-20 21:34:52.282  7826  7826 I ImeTracker: com.negi.survey:b7288a52: onCancelled at PHASE_CLIENT_APPLY_ANIMATION
+02-20 21:34:52.621  7826  7831 I com.negi.survey: Background concurrent mark compact GC freed 23MB AllocSpace bytes, 0(0B) LOS objects, 81% free, 5724KB/29MB, paused 3.133ms,8.623ms total 170.740ms
+02-20 21:35:02.820  7826  7826 D InsetsController: hide(ime())
+02-20 21:35:02.821  7826  7826 I ImeTracker: com.negi.survey:3ab87c8d: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT_BY_INSETS_API fromUser false
+02-20 21:35:02.821  7826  7826 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): androidx.navigationevent.OnBackInvokedInput$createOnBackAnimationCallback$1@fdc6e79
+02-20 21:35:02.821  7826  7826 D InsetsController: Setting requestedVisibleTypes to 503 (was 511)
+02-20 21:35:02.823  7826  7826 D VRI[MainActivity]: WindowInsets changed: ime:null 
+02-20 21:35:02.825  7826  7885 I native  : I0000 00:00:1771652102.825430    7885 session_basic.cc:312] RunPrefillAsync: 
+02-20 21:35:02.825  7826  7885 I native  : I0000 00:00:1771652102.825576    7885 session_basic.cc:314] <start_of_turn>user
+02-20 21:35:02.825  7826  7885 I native  : Wewe ni mtaalamu mashuhuri wa tafiti za wakulima. Soma Swali na Jibu.
+02-20 21:35:02.825  7826  7885 I native  : OUTPUT FORMAT:
+02-20 21:35:02.825  7826  7885 I native  : - In Swahili.
+02-20 21:35:02.825  7826  7885 I native  : - Keys exactly:
+02-20 21:35:02.825  7826  7885 I native  :   • "analysis": short string
+02-20 21:35:02.825  7826  7885 I native  :   • "weakness": short string
+02-20 21:35:02.825  7826  7885 I native  :   • "followup_needed": boolean
+02-20 21:35:02.825  7826  7885 I native  :   • "followup_target": short string
+02-20 21:35:02.825  7826  7885 I native  :   • "score": integer 1–100
+02-20 21:35:02.825  7826  7885 I native  : 
+02-20 21:35:02.825  7826  7885 I native  : RULES:
+02-20 21:35:02.825  7826  7885 I native  : - Judge ONLY content relevance/completeness/accuracy.
+02-20 21:35:02.825  7826  7885 I native  : - Do NOT generate a follow-up question here.
+02-20 21:35:02.825  7826  7885 I native  : - followup_target must be single-scope (one biggest uncertainty).
+02-20 21:35:02.825  7826  7885 I native  : - Do NOT use double quotes (") inside string values. Use single quotes or no quotes.
+02-20 21:35:02.825  7826  7885 I native  : - Do NOT copy the Answer verbatim into the JSON.
+02-20 21:35:02.825  7826  7885 I native  : LENGTH LIMITS:
+02-20 21:35:02.825  7826  7885 I native  : - analysis<=60 chars
+02-20 21:35:02.825  7826  7885 I native  : - weakness<=120 chars
+02-20 21:35:02.825  7826  7885 I native  : - followup_target<=80 chars
+02-20 21:35:02.825  7826  7885 I native  : - score is integer 1–100
+02-20 21:35:02.825  7826  7885 I native  : Scoring rule: Judge ONLY content relevance/completeness/accuracy. Do NOT penalize style or formatting.
+02-20 21:35:02.825  7826  7885 I native  : STRICT OUTPUT (NO MARKDOWN):
+02-20 21:35:02.825  7826  7885 I native  : - If the task is EVAL: output RAW JSON only, ONE LINE.
+02-20 21:35:02.825  7826  7885 I native  :   - Use COMPACT JSON (no spaces around ':' and ',').
+02-20 21:35:02.825  7826  7885 I native  :   - No extra text.
+02-20 21:35:02.825  7826  7885 I native  : - If the task is FOLLOWUP: output ONLY the follow-up question as plain text on ONE LINE, or EMPTY output if none.
+02-20 21:35:02.825  7826  7885 I native  :   - No JSON, no quotes, no extra text.
+02-20 21:35:02.825  7826  7885 I native  : Jibu kwa kitu cha JSON kilicho tupu: {}
+02-20 21:35:02.825  7826  7885 I native  : INPUT:
+02-20 21:35:02.825  7826  7885 I native  : Kazi: EVAL
+02-20 21:35:02.825  7826  7885 I native  : - Tathmini Jibu kwa Swali.
+02-20 21:35:02.825  7826  7885 I native  : - Andika weakness (kile kinachokosekana/kisicho wazi).
+02-20 21:35:02.825  7826  7885 I native  : - Tambua hoja moja kubwa zaidi iliyokosekana/kutoeleweka kama followup_target.
+02-20 21:35:02.825  7826  7885 I native  : - Weka followup_needed true ikiwa ufafanuzi unahitajika, vinginevyo false.
+02-20 21:35:02.825  7826  7885 I native  : - Toa score 1–100.
+02-20 21:35:02.825  7826  7885 I native  : 
+02-20 21:35:02.825  7826  7885 I native  : Swali: Ni lini katika msimu ukame huwa na madhara makubwa zaidi kwa zao lako? Ni wakati gani wa ukame unaokuwa mgumu zaidi? (kwa mfano: kabla ya kutokeza kishada, kutokeza kishada/kutoa hariri, kujaza punje, kabla ya kuvuna.)
+02-20 21:35:02.825  7826  7885 I native  : Jibu: ert sert sertsertsert sert sert sertsert<end_of_turn>
+02-20 21:35:02.825  7826  7885 I native  : <start_of_turn>model
+02-20 21:35:03.103  7826  7826 I ImeTracker: system_server:71f712fc: onCancelled at PHASE_CLIENT_ON_CONTROLS_CHANGED
+02-20 21:35:03.402  7826  7826 I ImeTracker: system_server:f01518b: onCancelled at PHASE_CLIENT_ON_CONTROLS_CHANGED
+02-20 21:35:03.801  7826  8165 I native  : I0000 00:00:1771652103.801868    8165 session_basic.cc:350] RunPrefillAsync status: OK
+02-20 21:35:03.802  7826  8165 I native  : I0000 00:00:1771652103.802084    8165 session_basic.cc:470] RunDecodeAsync
+02-20 21:35:13.666  7826  7831 I com.negi.survey: Background young concurrent mark compact GC freed 24MB AllocSpace bytes, 0(0B) LOS objects, 81% free, 5532KB/29MB, paused 2.255ms,5.049ms total 142.106ms
+02-20 21:35:19.619  7826  7826 D InsetsController: show(ime())
+02-20 21:35:19.619  7826  7826 I ImeTracker: com.negi.survey:8332c99c: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT_BY_INSETS_API fromUser false
+02-20 21:35:19.619  7826  7826 D InsetsController: Setting requestedVisibleTypes to 511 (was 503)
+02-20 21:35:19.622  7826  7826 I ImeTracker: com.negi.survey:811189bf: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+02-20 21:35:19.622  7826  7826 D InsetsController: show(ime())
+02-20 21:35:19.623  7826  7826 I ImeTracker: com.negi.survey:811189bf: onCancelled at PHASE_CLIENT_REPORT_REQUESTED_VISIBLE_TYPES
+02-20 21:35:19.672  7826  7826 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.view.ImeBackAnimationController@ee48d66
+02-20 21:35:19.728  7826  7826 D VRI[MainActivity]: WindowInsets changed: ime:[0,0,0,1043] 
+02-20 21:35:19.826  7826  8693 I native  : I0000 00:00:1771652119.825999    8693 model_data_processor_factory.cc:266] Creating Gemma3DataProcessor
+02-20 21:35:20.062  7826  7826 I ImeTracker: com.negi.survey:8332c99c: onShown
+02-20 21:35:31.171  7826  7831 I com.negi.survey: Background concurrent mark compact GC freed 23MB AllocSpace bytes, 0(0B) LOS objects, 81% free, 5716KB/29MB, paused 2.833ms,8.192ms total 134.436ms
+02-20 21:35:34.046  7826  7826 D WhisperSpeechController: updateContext: surveyId=49b51a27-f54c-488f-a313-80d29a08d546, questionId=Review
+02-20 21:35:34.047  7826  7826 D WhisperSpeechController: updateContext: surveyId=49b51a27-f54c-488f-a313-80d29a08d546, questionId=Review
+02-20 21:35:34.113  7826  7826 D InsetsController: show(ime())
+02-20 21:35:34.114  7826  7826 I ImeTracker: com.negi.survey:2c5d09e6: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT_BY_INSETS_API fromUser false
+02-20 21:35:34.114  7826  7826 I ImeTracker: com.negi.survey:2c5d09e6: onCancelled at PHASE_CLIENT_APPLY_ANIMATION
+02-20 21:35:34.210  7826  7826 I ImeTracker: com.negi.survey:ef9b43e8: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+02-20 21:35:34.210  7826  7826 D InsetsController: show(ime())
+02-20 21:35:34.210  7826  7826 I ImeTracker: com.negi.survey:ef9b43e8: onCancelled at PHASE_CLIENT_APPLY_ANIMATION
+02-20 21:35:34.850  7826  7826 D InsetsController: hide(ime())
+02-20 21:35:34.850  7826  7826 I ImeTracker: com.negi.survey:a6cdce0e: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT_BY_INSETS_API fromUser false
+02-20 21:35:34.851  7826  7826 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): androidx.navigationevent.OnBackInvokedInput$createOnBackAnimationCallback$1@fdc6e79
+02-20 21:35:34.851  7826  7826 D InsetsController: Setting requestedVisibleTypes to 503 (was 511)
+02-20 21:35:34.852  7826  7826 D VRI[MainActivity]: WindowInsets changed: ime:null 
+02-20 21:35:34.902  7826  7826 I ImeTracker: system_server:afcf1b5f: onCancelled at PHASE_CLIENT_ON_CONTROLS_CHANGED
+02-20 21:35:35.025  7826  7826 I ImeTracker: system_server:bb460e43: onCancelled at PHASE_CLIENT_ON_CONTROLS_CHANGED
+02-20 21:35:38.123  7826  7826 D WhisperSpeechController: updateContext: surveyId=49b51a27-f54c-488f-a313-80d29a08d546, questionId=Done
+02-20 21:35:38.270  7826  8693 D DoneScreen: Voice scan: expected=0 found=0 dir=/storage/emulated/0/Android/data/com.negi.survey/files/exports/voice
+02-20 21:35:44.242  7826  7852 D WM-SystemJobScheduler: Scheduling work ID b11e854d-26dd-4e08-bb21-cfc2af8ad840Job ID 147
+02-20 21:35:44.290  7826  7852 D WM-GreedyScheduler: Starting tracking for b11e854d-26dd-4e08-bb21-cfc2af8ad840
+02-20 21:35:44.334  7826  7852 D WM-ConstraintTracker: NetworkStateTracker24: initial state = NetworkState(isConnected=true, isValidated=true, isMetered=false, isNotRoaming=true, isBlocked=false)
+02-20 21:35:44.334  7826  7852 D WM-NetworkStateTracker: Registering network callback
+02-20 21:35:44.345  7826  7826 D WM-SystemJobService: onStartJob for WorkGenerationalId(workSpecId=b11e854d-26dd-4e08-bb21-cfc2af8ad840, generation=0)
+02-20 21:35:44.346  7826  7852 D WM-PackageManagerHelper: androidx.work.impl.background.systemalarm.RescheduleReceiver enabled
+02-20 21:35:44.349  7826  7852 D WM-Processor: Processor: processing WorkGenerationalId(workSpecId=b11e854d-26dd-4e08-bb21-cfc2af8ad840, generation=0)
+02-20 21:35:44.349  7826  7852 D WM-GreedyScheduler: Constraints met: Scheduling work ID WorkGenerationalId(workSpecId=b11e854d-26dd-4e08-bb21-cfc2af8ad840, generation=0)
+02-20 21:35:44.352  7826  7852 D WM-Processor: Work WorkGenerationalId(workSpecId=b11e854d-26dd-4e08-bb21-cfc2af8ad840, generation=0) is already enqueued for processing
+02-20 21:35:44.357  7826  7876 D WM-NetworkStateTracker: Network capabilities changed: [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=13861Kbps LinkDnBandwidth>=102533Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /192.168.1.27, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 11ac, RSSI: -30, Link speed: 866Mbps, Tx Link speed: 866Mbps, Max Supported Tx Link speed: 866Mbps, Rx Link speed: 866Mbps, Max Supported Rx Link speed: 866Mbps, Frequency: 5805MHz, Net ID: -1, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -30 UnderlyingNetworks: Null]
+02-20 21:35:44.358  7826  7876 D WM-NetworkStateTracker: Network blocked status changed: false
+02-20 21:35:44.377  7826  7826 D WM-WorkerWrapper: Starting work for com.negi.survey.net.GitHubUploadWorker
+02-20 21:35:44.386  7826  7856 I WM-Processor: Moving WorkSpec (b11e854d-26dd-4e08-bb21-cfc2af8ad840) to the foreground
+02-20 21:35:44.409  7826  7826 I WM-SystemFgDispatcher: Started foreground service Intent { act=ACTION_START_FOREGROUND xflg=0x4 cmp=com.negi.survey/androidx.work.impl.foreground.SystemForegroundService (has extras) }
+02-20 21:35:44.409  7826  7826 D WM-SystemFgDispatcher: Notifying with (id:4626, workSpecId: b11e854d-26dd-4e08-bb21-cfc2af8ad840, notificationType :1)
+02-20 21:35:44.413  7826  7826 D WM-SystemFgDispatcher: Notifying with (id:4626, workSpecId: b11e854d-26dd-4e08-bb21-cfc2af8ad840, notificationType :1)
+02-20 21:35:44.431  7826  8693 D GitHubUploader: uploadStream: owner=ishizuki-tech repo=SurveyExports branch=main path=2026-02-21/exports/survey_49b51a27-f54c-488f-a313-80d29a08d546_2026-02-20_21-35-38.json size=5466 maxRawBytesHint=1000000 maxRequestBytesHint=2800000
+02-20 21:35:44.431  7826  7856 D WM-WorkProgressUpdater: Updating progress for b11e854d-26dd-4e08-bb21-cfc2af8ad840 (Data {pct : 0, mode : file})
+02-20 21:35:44.436  7826  7856 I WM-Processor: Moving WorkSpec (b11e854d-26dd-4e08-bb21-cfc2af8ad840) to the foreground
+02-20 21:35:44.440  7826  7826 D WM-SystemFgDispatcher: Notifying with (id:4626, workSpecId: b11e854d-26dd-4e08-bb21-cfc2af8ad840, notificationType :1)
+02-20 21:35:44.824  7826  7852 D WM-WorkProgressUpdater: Updating progress for b11e854d-26dd-4e08-bb21-cfc2af8ad840 (Data {pct : 10, mode : file})
+02-20 21:35:44.827  7826  7855 I WM-Processor: Moving WorkSpec (b11e854d-26dd-4e08-bb21-cfc2af8ad840) to the foreground
+02-20 21:35:44.833  7826  7855 D WM-WorkProgressUpdater: Updating progress for b11e854d-26dd-4e08-bb21-cfc2af8ad840 (Data {pct : 90, mode : file})
+02-20 21:35:44.833  7826  7826 D WM-SystemFgDispatcher: Notifying with (id:4626, workSpecId: b11e854d-26dd-4e08-bb21-cfc2af8ad840, notificationType :1)
+02-20 21:35:44.839  7826  7855 I WM-Processor: Moving WorkSpec (b11e854d-26dd-4e08-bb21-cfc2af8ad840) to the foreground
+02-20 21:35:44.843  7826  7826 D WM-SystemFgDispatcher: Notifying with (id:4626, workSpecId: b11e854d-26dd-4e08-bb21-cfc2af8ad840, notificationType :1)
+02-20 21:35:45.489  7826  8693 D GitHubUploader: uploadStream: done url=https://github.com/ishizuki-tech/SurveyExports/blob/main/2026-02-21/exports/survey_49b51a27-f54c-488f-a313-80d29a08d546_2026-02-20_21-35-38.json sha=1fd1400099d438ef1780941da12aa8c22df40f37
+02-20 21:35:45.490  7826  7856 D WM-WorkProgressUpdater: Updating progress for b11e854d-26dd-4e08-bb21-cfc2af8ad840 (Data {pct : 95, mode : file})
+02-20 21:35:45.510  7826  7856 I WM-Processor: Moving WorkSpec (b11e854d-26dd-4e08-bb21-cfc2af8ad840) to the foreground
+02-20 21:35:45.519  7826  7826 D WM-SystemFgDispatcher: Notifying with (id:4626, workSpecId: b11e854d-26dd-4e08-bb21-cfc2af8ad840, notificationType :1)
+02-20 21:35:45.526  7826  7856 I WM-Processor: Moving WorkSpec (b11e854d-26dd-4e08-bb21-cfc2af8ad840) to the foreground
+02-20 21:35:45.532  7826  7826 D WM-SystemFgDispatcher: Notifying with (id:4626, workSpecId: b11e854d-26dd-4e08-bb21-cfc2af8ad840, notificationType :1)
+02-20 21:35:45.536  7826  7856 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=b11e854d-26dd-4e08-bb21-cfc2af8ad840, tags={ com.negi.survey.net.GitHubUploadWorker,github_upload,github_upload:file:exports_survey_49b51a27-f54c-488f-a313-80d29a08d546_2026-02-20_21-35-38.json } ]
+02-20 21:35:45.550  7826  7826 D WM-Processor: Processor b11e854d-26dd-4e08-bb21-cfc2af8ad840 executed; reschedule = false
+02-20 21:35:45.550  7826  7826 D WM-GreedyScheduler: Stopping tracking for WorkGenerationalId(workSpecId=b11e854d-26dd-4e08-bb21-cfc2af8ad840, generation=0)
+02-20 21:35:45.550  7826  7826 D WM-SystemJobService: b11e854d-26dd-4e08-bb21-cfc2af8ad840 executed on JobScheduler
+02-20 21:35:45.550  7826  7826 D WM-SystemFgDispatcher: Removing Notification (id: 4626, workSpecId: WorkGenerationalId(workSpecId=b11e854d-26dd-4e08-bb21-cfc2af8ad840, generation=0), notificationType: 1
+02-20 21:35:45.551  7826  7826 I WM-SystemFgDispatcher: Stopping foreground service
+02-20 21:35:45.551  7826  7826 D WM-SystemFgService: Shutting down.
+02-20 21:35:45.560  7826  7826 D WM-SystemJobService: onStopJob for WorkGenerationalId(workSpecId=b11e854d-26dd-4e08-bb21-cfc2af8ad840, generation=0)
+02-20 21:35:45.560  7826  7856 D WM-GreedyScheduler: Cancelling work ID b11e854d-26dd-4e08-bb21-cfc2af8ad840
+02-20 21:35:45.566  7826  7856 D WM-NetworkStateTracker: Unregistering network callback
+02-20 21:35:45.593  7826  7856 D WM-PackageManagerHelper: androidx.work.impl.background.systemalarm.RescheduleReceiver disabled
+02-20 21:35:48.388  7826  7885 D DoneScreen: Captured logcat snapshot: /data/user/0/com.negi.survey/files/pending_uploads/logcat_2026-02-20_21-35-38_pid7826_49b51a27.log.gz (515 bytes gz)
+02-20 21:35:48.415  7826  7855 D WM-SystemJobScheduler: Scheduling work ID f9b0e0e5-e2d1-41ac-af45-a8c27f2747b8Job ID 148
+02-20 21:35:48.440  7826  7855 D WM-GreedyScheduler: Starting tracking for f9b0e0e5-e2d1-41ac-af45-a8c27f2747b8
+02-20 21:35:48.447  7826  7855 D WM-ConstraintTracker: NetworkStateTracker24: initial state = NetworkState(isConnected=true, isValidated=true, isMetered=false, isNotRoaming=true, isBlocked=false)
+02-20 21:35:48.448  7826  7855 D WM-NetworkStateTracker: Registering network callback
+02-20 21:35:48.455  7826  7876 D WM-NetworkStateTracker: Network capabilities changed: [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=13861Kbps LinkDnBandwidth>=102533Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /192.168.1.27, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 11ac, RSSI: -30, Link speed: 866Mbps, Tx Link speed: 866Mbps, Max Supported Tx Link speed: 866Mbps, Rx Link speed: 866Mbps, Max Supported Rx Link speed: 866Mbps, Frequency: 5805MHz, Net ID: -1, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -30 UnderlyingNetworks: Null]
+02-20 21:35:48.456  7826  7876 D WM-NetworkStateTracker: Network blocked status changed: false
+02-20 21:35:48.456  7826  7855 D WM-PackageManagerHelper: androidx.work.impl.background.systemalarm.RescheduleReceiver enabled
+02-20 21:35:48.457  7826  7856 D WM-GreedyScheduler: Constraints met: Scheduling work ID WorkGenerationalId(workSpecId=f9b0e0e5-e2d1-41ac-af45-a8c27f2747b8, generation=0)
+02-20 21:35:48.462  7826  7856 D WM-Processor: Processor: processing WorkGenerationalId(workSpecId=f9b0e0e5-e2d1-41ac-af45-a8c27f2747b8, generation=0)
+02-20 21:35:48.502  7826  7826 D WM-SystemJobService: onStartJob for WorkGenerationalId(workSpecId=f9b0e0e5-e2d1-41ac-af45-a8c27f2747b8, generation=0)
+02-20 21:35:48.504  7826  7826 D WM-WorkerWrapper: Starting work for com.negi.survey.net.GitHubUploadWorker
+02-20 21:35:48.505  7826  7856 D WM-Processor: Work WorkGenerationalId(workSpecId=f9b0e0e5-e2d1-41ac-af45-a8c27f2747b8, generation=0) is already enqueued for processing
+02-20 21:35:48.507  7826  7855 I WM-Processor: Moving WorkSpec (f9b0e0e5-e2d1-41ac-af45-a8c27f2747b8) to the foreground
+02-20 21:35:48.515  7826  7885 D GitHubUploader: uploadStream: owner=ishizuki-tech repo=SurveyExports branch=main path=2026-02-21/diagnostics/logcat/logcat_2026-02-20_21-35-38_pid7826_49b51a27.log.gz size=515 maxRawBytesHint=1000000 maxRequestBytesHint=2800000
+02-20 21:35:48.515  7826  7852 D WM-WorkProgressUpdater: Updating progress for f9b0e0e5-e2d1-41ac-af45-a8c27f2747b8 (Data {pct : 0, mode : file})
+02-20 21:35:48.519  7826  7852 I WM-Processor: Moving WorkSpec (f9b0e0e5-e2d1-41ac-af45-a8c27f2747b8) to the foreground
+02-20 21:35:48.532  7826  7826 I WM-SystemFgDispatcher: Started foreground service Intent { act=ACTION_START_FOREGROUND xflg=0x4 cmp=com.negi.survey/androidx.work.impl.foreground.SystemForegroundService (has extras) }
+02-20 21:35:48.532  7826  7826 D WM-SystemFgDispatcher: Notifying with (id:9162, workSpecId: f9b0e0e5-e2d1-41ac-af45-a8c27f2747b8, notificationType :1)
+02-20 21:35:48.535  7826  7826 D WM-SystemFgDispatcher: Notifying with (id:9162, workSpecId: f9b0e0e5-e2d1-41ac-af45-a8c27f2747b8, notificationType :1)
+02-20 21:35:48.561  7826  7826 D WM-SystemFgDispatcher: Notifying with (id:9162, workSpecId: f9b0e0e5-e2d1-41ac-af45-a8c27f2747b8, notificationType :1)
+02-20 21:35:48.709  7826  7842 D WM-WorkProgressUpdater: Updating progress for f9b0e0e5-e2d1-41ac-af45-a8c27f2747b8 (Data {pct : 10, mode : file})
+02-20 21:35:48.718  7826  7842 I WM-Processor: Moving WorkSpec (f9b0e0e5-e2d1-41ac-af45-a8c27f2747b8) to the foreground
+02-20 21:35:48.725  7826  7826 D WM-SystemFgDispatcher: Notifying with (id:9162, workSpecId: f9b0e0e5-e2d1-41ac-af45-a8c27f2747b8, notificationType :1)
+02-20 21:35:48.725  7826  7842 D WM-WorkProgressUpdater: Updating progress for f9b0e0e5-e2d1-41ac-af45-a8c27f2747b8 (Data {pct : 90, mode : file})
+02-20 21:35:48.730  7826  7842 I WM-Processor: Moving WorkSpec (f9b0e0e5-e2d1-41ac-af45-a8c27f2747b8) to the foreground
+02-20 21:35:48.733  7826  7826 D WM-SystemFgDispatcher: Notifying with (id:9162, workSpecId: f9b0e0e5-e2d1-41ac-af45-a8c27f2747b8, notificationType :1)
+02-20 21:35:49.289  7826  7885 D GitHubUploader: uploadStream: done url=https://github.com/ishizuki-tech/SurveyExports/blob/main/2026-02-21/diagnostics/logcat/logcat_2026-02-20_21-35-38_pid7826_49b51a27.log.gz sha=9b0ff2a3a883ba02c56b1212bbc96109f5acafa1
+02-20 21:35:49.289  7826  7856 D WM-WorkProgressUpdater: Updating progress for f9b0e0e5-e2d1-41ac-af45-a8c27f2747b8 (Data {pct : 95, mode : file})
+02-20 21:35:49.298  7826  7856 I WM-Processor: Moving WorkSpec (f9b0e0e5-e2d1-41ac-af45-a8c27f2747b8) to the foreground
+02-20 21:35:49.304  7826  7826 D WM-SystemFgDispatcher: Notifying with (id:9162, workSpecId: f9b0e0e5-e2d1-41ac-af45-a8c27f2747b8, notificationType :1)
+02-20 21:35:49.305  7826  7856 I WM-Processor: Moving WorkSpec (f9b0e0e5-e2d1-41ac-af45-a8c27f2747b8) to the foreground
+02-20 21:35:49.311  7826  7856 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=f9b0e0e5-e2d1-41ac-af45-a8c27f2747b8, tags={ com.negi.survey.net.GitHubUploadWorker,github_upload,github_upload:file:diagnostics_logcat_logcat_2026-02-20_21-35-38_pid7826_49b51a27.log.gz } ]
+02-20 21:35:49.311  7826  7826 D WM-SystemFgDispatcher: Notifying with (id:9162, workSpecId: f9b0e0e5-e2d1-41ac-af45-a8c27f2747b8, notificationType :1)
+02-20 21:35:49.322  7826  7826 D WM-Processor: Processor f9b0e0e5-e2d1-41ac-af45-a8c27f2747b8 executed; reschedule = false
+02-20 21:35:49.323  7826  7826 D WM-GreedyScheduler: Stopping tracking for WorkGenerationalId(workSpecId=f9b0e0e5-e2d1-41ac-af45-a8c27f2747b8, generation=0)
+02-20 21:35:49.323  7826  7826 D WM-SystemJobService: f9b0e0e5-e2d1-41ac-af45-a8c27f2747b8 executed on JobScheduler
+02-20 21:35:49.324  7826  7826 D WM-SystemFgDispatcher: Removing Notification (id: 9162, workSpecId: WorkGenerationalId(workSpecId=f9b0e0e5-e2d1-41ac-af45-a8c27f2747b8, generation=0), notificationType: 1
+02-20 21:35:49.325  7826  7826 I WM-SystemFgDispatcher: Stopping foreground service
+02-20 21:35:49.325  7826  7826 D WM-SystemFgService: Shutting down.
+02-20 21:35:49.339  7826  7842 D WM-GreedyScheduler: Cancelling work ID f9b0e0e5-e2d1-41ac-af45-a8c27f2747b8
+02-20 21:35:49.347  7826  7842 D WM-PackageManagerHelper: androidx.work.impl.background.systemalarm.RescheduleReceiver disabled
+02-20 21:35:49.348  7826  7842 D WM-NetworkStateTracker: Unregistering network callback
+02-20 21:36:00.733  7826  7826 D MainActivity: BackHandler -> backToPrevious. session=survey_config_sw_20.yaml@1 voice=true
+02-20 21:36:00.733  7826  7826 D WhisperSpeechController: stopRecording: not recording, ignoring
+02-20 21:36:00.759  7826  7826 D WhisperSpeechController: updateContext: surveyId=49b51a27-f54c-488f-a313-80d29a08d546, questionId=Review
+02-20 21:36:00.964  7826  7831 I com.negi.survey: Background young concurrent mark compact GC freed 21MB AllocSpace bytes, 11(1036KB) LOS objects, 75% free, 7430KB/29MB, paused 4.006ms,4.668ms total 173.100ms
+02-20 21:36:02.422  7826  7826 D MainActivity: BackHandler -> backToPrevious. session=survey_config_sw_20.yaml@1 voice=true
+02-20 21:36:02.422  7826  7826 D WhisperSpeechController: stopRecording: not recording, ignoring
+02-20 21:36:02.436  7826  7826 D WhisperSpeechController: updateContext: surveyId=49b51a27-f54c-488f-a313-80d29a08d546, questionId=Q6
+02-20 21:36:02.466  7826  7826 D WhisperSpeechController: updateContext: surveyId=49b51a27-f54c-488f-a313-80d29a08d546, questionId=Q6
+02-20 21:36:02.534  7826  7826 D InsetsController: show(ime())
+02-20 21:36:02.534  7826  7826 I ImeTracker: com.negi.survey:864d35ff: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT_BY_INSETS_API fromUser false
+02-20 21:36:02.534  7826  7826 D InsetsController: Setting requestedVisibleTypes to 511 (was 503)
+02-20 21:36:02.540  7826  7826 I AssistStructure: Flattened final assist data: 556 bytes, containing 1 windows, 3 views
+02-20 21:36:02.542  7826  7826 I ImeTracker: com.negi.survey:a8fd310d: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false
+02-20 21:36:02.543  7826  7826 D InsetsController: show(ime())
+02-20 21:36:02.543  7826  7826 I ImeTracker: com.negi.survey:a8fd310d: onCancelled at PHASE_CLIENT_REPORT_REQUESTED_VISIBLE_TYPES
+02-20 21:36:02.595  7826  7826 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.view.ImeBackAnimationController@ee48d66
+02-20 21:36:02.674  7826  7826 D VRI[MainActivity]: WindowInsets changed: ime:[0,0,0,1043] 
+02-20 21:36:02.993  7826  7826 I ImeTracker: com.negi.survey:864d35ff: onShown
+02-20 21:36:03.407  7826  7826 D Autofill Status: Autofill popup isn't shown because autofill is not available.
+02-20 21:36:03.407  7826  7826 D Autofill Status: 
+02-20 21:36:03.407  7826  7826 D Autofill Status: Did you set up autofill?
+02-20 21:36:03.407  7826  7826 D Autofill Status: 1. Go to Settings > System > Languages&input > Advanced > Autofill Service
+02-20 21:36:03.407  7826  7826 D Autofill Status: 2. Pick a service
+02-20 21:36:03.407  7826  7826 D Autofill Status: 
+02-20 21:36:03.407  7826  7826 D Autofill Status: Did you add an account?
+02-20 21:36:03.407  7826  7826 D Autofill Status: 1. Go to Settings > System > Languages&input > Advanced
+02-20 21:36:03.407  7826  7826 D Autofill Status: 2. Click on the settings icon next to the Autofill Service
+02-20 21:36:03.407  7826  7826 D Autofill Status: 3. Add your account
+02-20 21:36:04.334  7826  7826 E InputEventReceiver: Exception dispatching input event.
+02-20 21:36:04.334  7826  7826 E MessageQueue-JNI: Exception in MessageQueue callback: handleReceiveCallback
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: java.lang.RuntimeException: Debug crash button pressed
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at com.negi.survey.screens.AiScreenKt.AiScreen$lambda$70$1$0$1$0$0$0(AiScreen.kt:1038)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at com.negi.survey.screens.AiScreenKt.$r8$lambda$zwsH71QyJNnPPnS4Yv-wN0UIW7Y(Unknown Source:0)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at com.negi.survey.screens.AiScreenKt$$ExternalSyntheticLambda16.invoke(D8$$SyntheticClass:0)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at androidx.compose.foundation.ClickableNode.onPointerEvent-H0pRuoY(Clickable.kt:935)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:446)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:432)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:432)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:432)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:432)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at androidx.compose.ui.input.pointer.NodeParent.dispatchMainEventPass(HitPathTracker.kt:285)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at androidx.compose.ui.input.pointer.HitPathTracker.dispatchChanges(HitPathTracker.kt:181)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at androidx.compose.ui.input.pointer.PointerInputEventProcessor.process-BIzXfog(PointerInputEventProcessor.kt:118)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at androidx.compose.ui.platform.AndroidComposeView.sendMotionEvent-8iAsVTc(AndroidComposeView.android.kt:2685)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at androidx.compose.ui.platform.AndroidComposeView.handleMotionEvent-8iAsVTc(AndroidComposeView.android.kt:2629)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at androidx.compose.ui.platform.AndroidComposeView.dispatchTouchEvent(AndroidComposeView.android.kt:2467)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at com.android.internal.policy.DecorView.superDispatchTouchEvent(DecorView.java:503)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at com.android.internal.policy.PhoneWindow.superDispatchTouchEvent(PhoneWindow.java:2017)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at android.app.Activity.dispatchTouchEvent(Activity.java:4665)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at com.android.internal.policy.DecorView.dispatchTouchEvent(DecorView.java:441)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at android.view.View.dispatchPointerEvent(View.java:17110)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at android.view.ViewRootImpl$ViewPostImeInputStage.processPointerEvent(ViewRootImpl.java:8349)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:8103)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:7480)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:7537)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:7503)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:7674)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:7511)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:7731)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:7484)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:7537)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:7503)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:7511)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:7484)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at android.view.ViewRootImpl.deliverInputEvent(ViewRootImpl.java:10697)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at android.view.ViewRootImpl.doProcessInputEvents(ViewRootImpl.java:10648)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at android.view.ViewRootImpl.enqueueInputEvent(ViewRootImpl.java:10616)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at android.view.ViewRootImpl.processRawInputEvent(ViewRootImpl.java:11039)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at android.view.ViewRootImpl$WindowInputEventReceiver.onInputEvent(ViewRootImpl.java:10825)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at android.view.InputEventReceiver.dispatchInputEvent(InputEventReceiver.java:277)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at android.os.MessageQueue.nextLegacy(MessageQueue.java:985)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at android.os.MessageQueue.next(MessageQueue.java:1094)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at android.os.Looper.loopOnce(Looper.java:197)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at android.os.Looper.loop(Looper.java:367)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at android.app.ActivityThread.main(ActivityThread.java:9287)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at java.lang.reflect.Method.invoke(Native Method)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:566)
+02-20 21:36:04.338  7826  7826 E MessageQueue-JNI: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:929)
+02-20 21:36:04.339  7826  7826 D AndroidRuntime: Shutting down VM
+--------- beginning of crash
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: FATAL EXCEPTION: main
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: Process: com.negi.survey, PID: 7826
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: java.lang.RuntimeException: Debug crash button pressed
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at com.negi.survey.screens.AiScreenKt.AiScreen$lambda$70$1$0$1$0$0$0(AiScreen.kt:1038)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at com.negi.survey.screens.AiScreenKt.$r8$lambda$zwsH71QyJNnPPnS4Yv-wN0UIW7Y(Unknown Source:0)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at com.negi.survey.screens.AiScreenKt$$ExternalSyntheticLambda16.invoke(D8$$SyntheticClass:0)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at androidx.compose.foundation.ClickableNode.onPointerEvent-H0pRuoY(Clickable.kt:935)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:446)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:432)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:432)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:432)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:432)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at androidx.compose.ui.input.pointer.NodeParent.dispatchMainEventPass(HitPathTracker.kt:285)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at androidx.compose.ui.input.pointer.HitPathTracker.dispatchChanges(HitPathTracker.kt:181)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at androidx.compose.ui.input.pointer.PointerInputEventProcessor.process-BIzXfog(PointerInputEventProcessor.kt:118)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at androidx.compose.ui.platform.AndroidComposeView.sendMotionEvent-8iAsVTc(AndroidComposeView.android.kt:2685)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at androidx.compose.ui.platform.AndroidComposeView.handleMotionEvent-8iAsVTc(AndroidComposeView.android.kt:2629)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at androidx.compose.ui.platform.AndroidComposeView.dispatchTouchEvent(AndroidComposeView.android.kt:2467)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at com.android.internal.policy.DecorView.superDispatchTouchEvent(DecorView.java:503)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at com.android.internal.policy.PhoneWindow.superDispatchTouchEvent(PhoneWindow.java:2017)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at android.app.Activity.dispatchTouchEvent(Activity.java:4665)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at com.android.internal.policy.DecorView.dispatchTouchEvent(DecorView.java:441)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at android.view.View.dispatchPointerEvent(View.java:17110)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at android.view.ViewRootImpl$ViewPostImeInputStage.processPointerEvent(ViewRootImpl.java:8349)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:8103)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:7480)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:7537)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:7503)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:7674)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:7511)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:7731)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:7484)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:7537)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:7503)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:7511)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:7484)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at android.view.ViewRootImpl.deliverInputEvent(ViewRootImpl.java:10697)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at android.view.ViewRootImpl.doProcessInputEvents(ViewRootImpl.java:10648)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at android.view.ViewRootImpl.enqueueInputEvent(ViewRootImpl.java:10616)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at android.view.ViewRootImpl.processRawInputEvent(ViewRootImpl.java:11039)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at android.view.ViewRootImpl$WindowInputEventReceiver.onInputEvent(ViewRootImpl.java:10825)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at android.view.InputEventReceiver.dispatchInputEvent(InputEventReceiver.java:277)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at android.os.MessageQueue.nextLegacy(MessageQueue.java:985)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at android.os.MessageQueue.next(MessageQueue.java:1094)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:197)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:367)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:9287)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:566)
+02-20 21:36:04.339  7826  7826 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:929)
