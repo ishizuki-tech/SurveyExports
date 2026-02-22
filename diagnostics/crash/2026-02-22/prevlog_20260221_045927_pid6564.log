@@ -1,0 +1,142 @@
+=== Previous Session Logcat ===
+captured_time_utc=20260221_045927
+captured_time_local=20260220_205927
+marker=2026-02-20 20:31:09.860
+preferred_prev_pid=-1
+note=best-effort; buffers may be overwritten before next start
+sdk=36
+device=Google Pixel 9a
+appId=com.negi.survey
+versionName=0.0.1
+versionCode=1
+
+=== Logcat (since marker) ===
+--------- beginning of system
+02-20 20:31:10.082  4468  4468 D InsetsController: hide(ime())
+02-20 20:31:10.957  4468  4468 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey, tag=null, id=3736], rate limit (5.0) exceeded: input 9.895592, output would be 6.9372153
+02-20 20:31:12.489  4468  4468 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey, tag=null, id=7222], rate limit (5.0) exceeded: input 13.14674, output would be 6.450863
+02-20 20:31:14.796  4468  4468 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey, tag=null, id=7222], rate limit (5.0) exceeded: input 8.843835, output would be 5.24703
+02-20 20:31:15.859  4468  4468 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey, tag=null, id=3736], rate limit (5.0) exceeded: input 15.96067, output would be 7.0647206
+02-20 20:37:12.034  4468  4468 D InsetsController: show(ime())
+02-20 20:37:12.045  4468  4468 D InsetsController: Setting requestedVisibleTypes to 511 (was 503)
+02-20 20:37:12.067  4468  4468 D InsetsController: show(ime())
+02-20 20:37:17.590  4468  4468 D InsetsController: hide(ime())
+02-20 20:37:17.591  4468  4468 D InsetsController: Setting requestedVisibleTypes to 503 (was 511)
+--------- beginning of crash
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: FATAL EXCEPTION: main
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: Process: com.negi.survey, PID: 4468
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: java.lang.RuntimeException: Debug crash button pressed
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at com.negi.survey.screens.AiScreenKt.AiScreen$lambda$70$1$0$1$0$0$0(AiScreen.kt:1038)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at com.negi.survey.screens.AiScreenKt.$r8$lambda$zwsH71QyJNnPPnS4Yv-wN0UIW7Y(Unknown Source:0)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at com.negi.survey.screens.AiScreenKt$$ExternalSyntheticLambda16.invoke(D8$$SyntheticClass:0)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at androidx.compose.foundation.ClickableNode.onPointerEvent-H0pRuoY(Clickable.kt:935)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:446)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:432)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:432)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:432)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:432)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at androidx.compose.ui.input.pointer.NodeParent.dispatchMainEventPass(HitPathTracker.kt:285)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at androidx.compose.ui.input.pointer.HitPathTracker.dispatchChanges(HitPathTracker.kt:181)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at androidx.compose.ui.input.pointer.PointerInputEventProcessor.process-BIzXfog(PointerInputEventProcessor.kt:118)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at androidx.compose.ui.platform.AndroidComposeView.sendMotionEvent-8iAsVTc(AndroidComposeView.android.kt:2685)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at androidx.compose.ui.platform.AndroidComposeView.handleMotionEvent-8iAsVTc(AndroidComposeView.android.kt:2629)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at androidx.compose.ui.platform.AndroidComposeView.dispatchTouchEvent(AndroidComposeView.android.kt:2467)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at com.android.internal.policy.DecorView.superDispatchTouchEvent(DecorView.java:503)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at com.android.internal.policy.PhoneWindow.superDispatchTouchEvent(PhoneWindow.java:2017)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.app.Activity.dispatchTouchEvent(Activity.java:4665)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at com.android.internal.policy.DecorView.dispatchTouchEvent(DecorView.java:441)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.View.dispatchPointerEvent(View.java:17110)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewRootImpl$ViewPostImeInputStage.processPointerEvent(ViewRootImpl.java:8349)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:8103)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:7480)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:7537)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:7503)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:7674)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:7511)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:7731)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:7484)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:7537)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:7503)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:7511)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:7484)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewRootImpl.deliverInputEvent(ViewRootImpl.java:10697)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewRootImpl.doProcessInputEvents(ViewRootImpl.java:10648)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewRootImpl.enqueueInputEvent(ViewRootImpl.java:10616)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewRootImpl.processRawInputEvent(ViewRootImpl.java:11039)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.ViewRootImpl$WindowInputEventReceiver.onInputEvent(ViewRootImpl.java:10825)
+02-20 20:37:19.800  4468  4468 E AndroidRuntime: 	at android.view.InputEventReceiver.dispatchInputEvent(InputEventReceiver.java:277)
+02-20 20:37:19.801  4468  4468 E AndroidRuntime: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+02-20 20:37:19.801  4468  4468 E AndroidRuntime: 	at android.os.MessageQueue.nextLegacy(MessageQueue.java:985)
+02-20 20:37:19.801  4468  4468 E AndroidRuntime: 	at android.os.MessageQueue.next(MessageQueue.java:1094)
+02-20 20:37:19.801  4468  4468 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:197)
+02-20 20:37:19.801  4468  4468 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:367)
+02-20 20:37:19.801  4468  4468 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:9287)
+02-20 20:37:19.801  4468  4468 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+02-20 20:37:19.801  4468  4468 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:566)
+02-20 20:37:19.801  4468  4468 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:929)
+--------- beginning of main
+02-20 20:59:27.336  6564  6564 I libc    : SetHeapTaggingLevel: tag level set to 0
+02-20 20:59:27.339  6564  6564 I Zygote  : Process 6564 created for com.negi.survey
+02-20 20:59:27.339  6564  6564 I com.negi.survey: Using CollectorTypeCMC GC.
+02-20 20:59:27.348  6564  6564 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+02-20 20:59:27.364  6564  6564 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+02-20 20:59:27.364  6564  6564 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+02-20 20:59:27.382  6564  6564 D nativeloader: Configuring clns-9 for other apk /data/app/~~T9PgrdQtjDljeopnT0p4Uw==/com.negi.survey-cyLniDmam_SHUMUNvzuD8w==/base.apk. target_sdk_version=36, uses_libraries=libOpenCL.so:libOpenCL-pixel.so, library_path=/data/app/~~T9PgrdQtjDljeopnT0p4Uw==/com.negi.survey-cyLniDmam_SHUMUNvzuD8w==/lib/arm64:/data/app/~~T9PgrdQtjDljeopnT0p4Uw==/com.negi.survey-cyLniDmam_SHUMUNvzuD8w==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.negi.survey
+02-20 20:59:27.393  6564  6564 V GraphicsEnvironment: Currently set values for:
+02-20 20:59:27.393  6564  6564 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[com.android.angle, com.google.android.apps.tachyon]
+02-20 20:59:27.393  6564  6564 V GraphicsEnvironment:   angle_gl_driver_selection_values=[angle, native]
+02-20 20:59:27.393  6564  6564 V GraphicsEnvironment: com.negi.survey is not listed in per-application setting
+02-20 20:59:27.394  6564  6564 V GraphicsEnvironment: ANGLE allowlist from config: 
+02-20 20:59:27.394  6564  6564 V GraphicsEnvironment: No special selections for ANGLE, returning default driver choice
+02-20 20:59:27.394  6564  6564 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+02-20 20:59:27.406  6564  6564 D AppRingLogStore: installed: dir=/data/user/0/com.negi.survey/files/diagnostics/applog_ring idx=0
+02-20 20:59:27.406  6564  6581 D RuntimeLogStore: openWriter: start -> /data/user/0/com.negi.survey/files/diagnostics/runtime_logs/rtlog_20260221_045927_403_pid6564_seq1.log (bytes=0 format=LEGACY)
+02-20 20:59:27.407  6564  6564 D CrashCapture: install: ensured default handler. where=SurveyApp:attachBaseContext pid=6564 default=com.negi.survey.CrashCapture$CrashHandler@9e57f47
+02-20 20:59:27.412  6564  6581 D RuntimeLogStore: retention: start files=2 kept=2 totalBytes=2860
+02-20 20:59:27.415  6564  6564 D WM-PackageManagerHelper: Skipping component enablement for androidx.work.impl.background.systemjob.SystemJobService
+02-20 20:59:27.415  6564  6564 D WM-Schedulers: Created SystemJobScheduler and enabled SystemJobService
+02-20 20:59:27.418  6564  6583 D WM-ForceStopRunnable: Is default app process = true
+02-20 20:59:27.418  6564  6583 D WM-ForceStopRunnable: Performing cleanup operations.
+02-20 20:59:27.656  6564  6583 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+02-20 20:59:27.667  6564  6583 D WM-SystemJobScheduler: Reconciling jobs
+02-20 20:59:27.676  6564  6583 D WM-ForceStopRunnable: Found unfinished work, scheduling it.
+02-20 20:59:27.697  6564  6564 D github_upload: choosePolicy: uniqueName=upload_runtime_logs_startup policy=REPLACE states=[SUCCEEDED]
+02-20 20:59:27.697  6564  6564 D github_upload: enqueueStartupRuntimeLogsUpload: uniqueName=upload_runtime_logs_startup policy=REPLACE
+02-20 20:59:27.698  6564  6564 D CrashCapture: install: ensured default handler. where=SurveyApp:onCreate(rewrap) pid=6564 default=com.negi.survey.CrashCapture$CrashHandler@9e57f47
+02-20 20:59:27.698  6564  6564 D CrashCapture: registerSelfHealing: ActivityLifecycleCallbacks registered. mode=onResumedOnly
+02-20 20:59:27.699  6564  6591 D CrashCapture: enqueuePendingCrashUploadsIfPossible enter where=SurveyApp:enqueuePending(immediate):bg pid=6564 thread=CrashCapture-Enqueue
+02-20 20:59:27.710  6564  6564 D DesktopExperienceFlags: Toggle override initialized to: false
+02-20 20:59:27.711  6564  6593 D UploadRescheduleRcvr: No GitHub pending files for action=android.intent.action.BOOT_COMPLETED
+02-20 20:59:27.711  6564  6594 I DisplayManager: Choreographer implicitly registered for the refresh rate.
+02-20 20:59:27.713  6564  6594 D vulkan  : searching for layers in '/data/app/~~T9PgrdQtjDljeopnT0p4Uw==/com.negi.survey-cyLniDmam_SHUMUNvzuD8w==/lib/arm64'
+02-20 20:59:27.713  6564  6564 D CrashCapture: install: ensured default handler. where=install(legacy) pid=6564 default=com.negi.survey.CrashCapture$CrashHandler@9e57f47
+02-20 20:59:27.714  6564  6594 D vulkan  : searching for layers in '/data/app/~~T9PgrdQtjDljeopnT0p4Uw==/com.negi.survey-cyLniDmam_SHUMUNvzuD8w==/base.apk!/lib/arm64-v8a'
+02-20 20:59:27.714  6564  6599 D CrashCapture: enqueuePendingCrashUploadsIfPossible skipped (already running). where=enqueue(legacy):bg
+02-20 20:59:27.718  6564  6564 D CompatChangeReporter: Compat change id reported: 377864165; UID 14738; state: ENABLED
+02-20 20:59:27.718  6564  6564 D DesktopModeFlags: Toggle override initialized to: OVERRIDE_UNSET
+02-20 20:59:27.731  6564  6564 I ContentCaptureHelper: Setting logging level to OFF
+02-20 20:59:27.733  6564  6564 D CrashCapture: install: ensured default handler. where=selfHeal:onActivityResumed pid=6564 default=com.negi.survey.CrashCapture$CrashHandler@9e57f47
+02-20 20:59:27.744  6564  6590 D WM-SystemJobScheduler: Scheduling work ID ccfce774-d650-4c3c-9ce9-2387258743abJob ID 91
+02-20 20:59:27.753  6564  6590 D WM-GreedyScheduler: Starting tracking for ccfce774-d650-4c3c-9ce9-2387258743ab
+02-20 20:59:27.759  6564  6593 D github_upload: choosePolicy: uniqueName=upload_runtime_logs_startup policy=KEEP states=[ENQUEUED]
+02-20 20:59:27.759  6564  6593 D github_upload: enqueueStartupRuntimeLogsUpload: uniqueName=upload_runtime_logs_startup policy=KEEP
+02-20 20:59:27.759  6564  6593 D UploadRescheduleRcvr: Enqueued runtime logs upload for action=android.intent.action.BOOT_COMPLETED reason=receiver_boot_completed
+02-20 20:59:27.768  6564  6564 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@9e2092e
+02-20 20:59:27.772  6564  6590 D WM-PackageManagerHelper: androidx.work.impl.background.systemalarm.RescheduleReceiver enabled
+02-20 20:59:27.779  6564  6590 D WM-ConstraintTracker: NetworkStateTracker24: initial state = NetworkState(isConnected=true, isValidated=true, isMetered=false, isNotRoaming=true, isBlocked=false)
+02-20 20:59:27.780  6564  6590 D WM-NetworkStateTracker: Registering network callback
+02-20 20:59:27.786  6564  6590 D WM-GreedyScheduler: Constraints met: Scheduling work ID WorkGenerationalId(workSpecId=ccfce774-d650-4c3c-9ce9-2387258743ab, generation=0)
+02-20 20:59:27.790  6564  6589 D WM-Processor: Processor: processing WorkGenerationalId(workSpecId=ccfce774-d650-4c3c-9ce9-2387258743ab, generation=0)
+02-20 20:59:27.793  6564  6613 D WM-NetworkStateTracker: Network capabilities changed: [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=13861Kbps LinkDnBandwidth>=102533Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /192.168.1.27, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 11ac, RSSI: -30, Link speed: 866Mbps, Tx Link speed: 866Mbps, Max Supported Tx Link speed: 866Mbps, Rx Link speed: 866Mbps, Max Supported Rx Link speed: 866Mbps, Frequency: 5805MHz, Net ID: -1, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -30 UnderlyingNetworks: Null]
+02-20 20:59:27.794  6564  6613 D WM-NetworkStateTracker: Network blocked status changed: false
+02-20 20:59:27.799  6564  6564 E VibratorInfo: Invalid frequency profile received from HAL. resonantFrequencyHz=NaN, frequenciesHz=null, outputAccelerationsGs=null
+02-20 20:59:27.828  6564  6564 D VRI[MainActivity]: WindowInsets changed: 1080x2424 statusBars:[0,152,0,0] navigationBars:[0,0,0,69] mandatorySystemGestures:[0,187,0,92] 
+02-20 20:59:27.832  6564  6564 I HWUI    : Using FreeType backend (prop=Auto)
