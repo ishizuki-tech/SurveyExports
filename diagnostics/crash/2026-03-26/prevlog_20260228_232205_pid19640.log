@@ -1,0 +1,83 @@
+=== Previous Session Logcat ===
+captured_time_utc=20260228_232205
+captured_time_local=20260228_152205
+marker=2026-02-28 15:20:41.768
+preferred_prev_pid=-1
+note=best-effort; buffers may be overwritten before next start
+sdk=36
+device=Google Pixel 9a
+appId=com.negi.survey
+versionName=0.0.1
+versionCode=1
+
+=== Logcat (since marker) ===
+--------- beginning of main
+02-28 15:22:02.818 19640 19640 I libc    : SetHeapTaggingLevel: tag level set to 0
+02-28 15:22:02.822 19640 19640 I Zygote  : Process 19640 created for com.negi.survey
+02-28 15:22:02.823 19640 19640 I com.negi.survey: Using CollectorTypeCMC GC.
+02-28 15:22:02.834 19640 19640 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+02-28 15:22:02.865 19640 19640 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+02-28 15:22:02.865 19640 19640 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+02-28 15:22:02.929 19640 19640 D nativeloader: Configuring clns-9 for other apk /data/app/~~PRxWpjzYxyoI5sk5lmDIEw==/com.negi.survey-WdDB-fctmo--QDr4IHn5sQ==/base.apk. target_sdk_version=36, uses_libraries=libOpenCL.so:libOpenCL-pixel.so, library_path=/data/app/~~PRxWpjzYxyoI5sk5lmDIEw==/com.negi.survey-WdDB-fctmo--QDr4IHn5sQ==/lib/arm64:/data/app/~~PRxWpjzYxyoI5sk5lmDIEw==/com.negi.survey-WdDB-fctmo--QDr4IHn5sQ==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.negi.survey
+02-28 15:22:02.940 19640 19640 V GraphicsEnvironment: Currently set values for:
+02-28 15:22:02.940 19640 19640 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[com.android.angle, com.google.android.apps.tachyon]
+02-28 15:22:02.940 19640 19640 V GraphicsEnvironment:   angle_gl_driver_selection_values=[angle, native]
+02-28 15:22:02.940 19640 19640 V GraphicsEnvironment: com.negi.survey is not listed in per-application setting
+02-28 15:22:02.940 19640 19640 V GraphicsEnvironment: ANGLE allowlist from config: 
+02-28 15:22:02.940 19640 19640 V GraphicsEnvironment: No special selections for ANGLE, returning default driver choice
+02-28 15:22:02.940 19640 19640 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+02-28 15:22:02.973 19640 19640 D nativeloader: Load /data/app/~~PRxWpjzYxyoI5sk5lmDIEw==/com.negi.survey-WdDB-fctmo--QDr4IHn5sQ==/base.apk!/lib/arm64-v8a/liblitertlm_jni.so using class loader ns clns-9 (caller=/data/app/~~PRxWpjzYxyoI5sk5lmDIEw==/com.negi.survey-WdDB-fctmo--QDr4IHn5sQ==/base.apk!classes4.dex): ok
+02-28 15:22:02.973 19640 19640 D SurveyApp: Loaded LiteRTLM JNI: litertlm_jni where=attachBaseContext
+02-28 15:22:02.988 19640 19640 D AppRingLogStore: installed: dir=/data/user/0/com.negi.survey/files/diagnostics/applog_ring idx=0
+02-28 15:22:02.989 19640 19640 D CrashCapture: install: ensured default handler. where=SurveyApp:attachBaseContext pid=19640 default=com.negi.survey.CrashCapture$CrashHandler@c280a86
+02-28 15:22:02.989 19640 19654 D RuntimeLogStore: openWriter: start -> /data/user/0/com.negi.survey/files/diagnostics/runtime_logs/rtlog_20260228_232202_979_pid19640_seq1.log (bytes=0 format=LEGACY)
+02-28 15:22:02.990 19640 19640 D CrashCapture: install: ensured default handler. where=SurveyApp:onCreate(rewrap) pid=19640 default=com.negi.survey.CrashCapture$CrashHandler@c280a86
+02-28 15:22:02.990 19640 19640 D CrashCapture: registerSelfHealing: ActivityLifecycleCallbacks registered. mode=onResumedOnly
+02-28 15:22:02.990 19640 19654 D RuntimeLogStore: retention: start files=3 kept=3 totalBytes=3199
+--------- beginning of system
+02-28 15:22:02.997 19640 19656 I DisplayManager: Choreographer implicitly registered for the refresh rate.
+02-28 15:22:02.998 19640 19656 D vulkan  : searching for layers in '/data/app/~~PRxWpjzYxyoI5sk5lmDIEw==/com.negi.survey-WdDB-fctmo--QDr4IHn5sQ==/lib/arm64'
+02-28 15:22:02.998 19640 19656 D vulkan  : searching for layers in '/data/app/~~PRxWpjzYxyoI5sk5lmDIEw==/com.negi.survey-WdDB-fctmo--QDr4IHn5sQ==/base.apk!/lib/arm64-v8a'
+02-28 15:22:03.001 19640 19640 D DesktopExperienceFlags: Toggle override initialized to: false
+02-28 15:22:03.004 19640 19640 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+02-28 15:22:03.010 19640 19640 D CompatChangeReporter: Compat change id reported: 377864165; UID 14741; state: ENABLED
+02-28 15:22:03.010 19640 19640 D DesktopModeFlags: Toggle override initialized to: OVERRIDE_UNSET
+02-28 15:22:03.017 19640 19640 I ContentCaptureHelper: Setting logging level to OFF
+02-28 15:22:03.019 19640 19640 D CrashCapture: install: ensured default handler. where=selfHeal:onActivityResumed pid=19640 default=com.negi.survey.CrashCapture$CrashHandler@c280a86
+02-28 15:22:03.054 19640 19640 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@8fab891
+02-28 15:22:03.077 19640 19640 E VibratorInfo: Invalid frequency profile received from HAL. resonantFrequencyHz=NaN, frequenciesHz=null, outputAccelerationsGs=null
+02-28 15:22:03.117 19640 19640 D VRI[MainActivity]: WindowInsets changed: 1080x2424 statusBars:[0,152,0,0] navigationBars:[0,0,0,69] mandatorySystemGestures:[0,187,0,92] 
+02-28 15:22:03.122 19640 19640 I HWUI    : Using FreeType backend (prop=Auto)
+02-28 15:22:03.194 19640 19640 D IntroScreen: Resolved config details: id=survey_config10.yaml in 6ms
+02-28 15:22:03.374 19640 19640 D InsetsController: hide(ime())
+02-28 15:22:03.374 19640 19640 I ImeTracker: com.negi.survey:ea5adf33: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+02-28 15:22:05.515 19640 19640 D WM-PackageManagerHelper: Skipping component enablement for androidx.work.impl.background.systemjob.SystemJobService
+02-28 15:22:05.515 19640 19640 D WM-Schedulers: Created SystemJobScheduler and enabled SystemJobService
+02-28 15:22:05.519 19640 19679 D WM-ForceStopRunnable: Is default app process = true
+02-28 15:22:05.520 19640 19679 D WM-ForceStopRunnable: Performing cleanup operations.
+02-28 15:22:05.587 19640 19679 D WM-ForceStopRunnable: Application was force-stopped, rescheduling.
+02-28 15:22:05.599 19640 19679 D WM-SystemJobScheduler: Scheduling work ID a85e37dd-2a61-41b4-bfcd-c760e4fde2a6Job ID 24
+02-28 15:22:05.602 19640 19679 D WM-SystemJobScheduler: Scheduling work ID 3cd6a6bb-7a1d-43c4-accb-fb1096ec839fJob ID 25
+02-28 15:22:05.605 19640 19679 D WM-SystemJobScheduler: Scheduling work ID 2ab0deb1-3f85-40d0-a0f7-dffef9529303Job ID 26
+02-28 15:22:05.608 19640 19679 D WM-SystemJobScheduler: Scheduling work ID 83165ee6-cace-42d9-85fa-961b3986e744Job ID 27
+02-28 15:22:05.611 19640 19679 D WM-SystemJobScheduler: Scheduling work ID 9dd21ad3-1f6b-428d-99a7-9ea5d7a320cbJob ID 28
+02-28 15:22:05.614 19640 19679 D WM-SystemJobScheduler: Scheduling work ID 4ab1c05e-24ac-4804-b8f5-f7a314422e49Job ID 29
+02-28 15:22:05.620 19640 19679 D WM-SystemJobScheduler: Scheduling work ID 47a7b941-966c-4108-9dae-f4d8abaa394eJob ID 30
+02-28 15:22:05.622 19640 19679 D WM-SystemJobScheduler: Scheduling work ID 2622565f-d7ca-4e8b-8d7b-4d4fa94844ccJob ID 31
+02-28 15:22:05.623 19640 19679 D WM-GreedyScheduler: Starting tracking for a85e37dd-2a61-41b4-bfcd-c760e4fde2a6,3cd6a6bb-7a1d-43c4-accb-fb1096ec839f,2ab0deb1-3f85-40d0-a0f7-dffef9529303,4ab1c05e-24ac-4804-b8f5-f7a314422e49,2622565f-d7ca-4e8b-8d7b-4d4fa94844cc,47a7b941-966c-4108-9dae-f4d8abaa394e,83165ee6-cace-42d9-85fa-961b3986e744,9dd21ad3-1f6b-428d-99a7-9ea5d7a320cb
+02-28 15:22:05.639 19640 19640 D github_upload: choosePolicy: uniqueName=upload_runtime_logs_startup policy=KEEP states=[ENQUEUED]
+02-28 15:22:05.639 19640 19640 D github_upload: enqueueStartupRuntimeLogsUpload: uniqueName=upload_runtime_logs_startup policy=KEEP
+02-28 15:22:05.647 19640 19640 D github_upload: choosePolicy: uniqueName=upload_ring_logs_startup policy=KEEP states=[ENQUEUED]
+02-28 15:22:05.647 19640 19640 D github_upload: enqueueStartupRingLogsUpload: uniqueName=upload_ring_logs_startup policy=KEEP
+02-28 15:22:05.653 19640 19684 D CrashCapture: enqueuePendingCrashUploadsIfPossible enter where=SurveyApp:enqueuePending(immediate):bg pid=19640 thread=CrashCapture-Enqueue
+02-28 15:22:05.660 19640 19679 D WM-ConstraintTracker: NetworkStateTracker24: initial state = NetworkState(isConnected=false, isValidated=false, isMetered=true, isNotRoaming=false, isBlocked=false)
+02-28 15:22:05.660 19640 19679 D WM-NetworkStateTracker: Registering network callback
+02-28 15:22:05.678 19640 19681 D WM-PackageManagerHelper: Skipping component enablement for androidx.work.impl.background.systemalarm.RescheduleReceiver
+02-28 15:22:05.678 19640 19681 D WM-GreedyScheduler: Constraints not met: Cancelling work ID WorkGenerationalId(workSpecId=83165ee6-cace-42d9-85fa-961b3986e744, generation=0)
+02-28 15:22:05.679 19640 19681 D WM-GreedyScheduler: Constraints not met: Cancelling work ID WorkGenerationalId(workSpecId=47a7b941-966c-4108-9dae-f4d8abaa394e, generation=0)
+02-28 15:22:05.679 19640 19681 D WM-GreedyScheduler: Constraints not met: Cancelling work ID WorkGenerationalId(workSpecId=4ab1c05e-24ac-4804-b8f5-f7a314422e49, generation=0)
+02-28 15:22:05.679 19640 19681 D WM-GreedyScheduler: Constraints not met: Cancelling work ID WorkGenerationalId(workSpecId=2ab0deb1-3f85-40d0-a0f7-dffef9529303, generation=0)
+02-28 15:22:05.679 19640 19682 D WM-GreedyScheduler: Constraints not met: Cancelling work ID WorkGenerationalId(workSpecId=2622565f-d7ca-4e8b-8d7b-4d4fa94844cc, generation=0)
+02-28 15:22:05.679 19640 19682 D WM-GreedyScheduler: Constraints not met: Cancelling work ID WorkGenerationalId(workSpecId=a85e37dd-2a61-41b4-bfcd-c760e4fde2a6, generation=0)
+02-28 15:22:05.680 19640 19682 D WM-GreedyScheduler: Constraints not met: Cancelling work ID WorkGenerationalId(workSpecId=3cd6a6bb-7a1d-43c4-accb-fb1096ec839f, generation=0)
+02-28 15:22:05.680 19640 19682 D WM-GreedyScheduler: Constraints not met: Cancelling work ID WorkGenerationalId(workSpecId=9dd21ad3-1f6b-428d-99a7-9ea5d7a320cb, generation=0)
