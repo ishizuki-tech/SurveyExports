@@ -1,0 +1,370 @@
+=== Previous Session Logcat ===
+captured_time_utc=20260228_232236
+captured_time_local=20260228_152236
+marker=2026-02-28 15:22:05.999
+preferred_prev_pid=-1
+note=best-effort; buffers may be overwritten before next start
+sdk=36
+device=Google Pixel 9a
+appId=com.negi.survey
+versionName=0.0.1
+versionCode=1
+
+=== Logcat (since marker) ===
+--------- beginning of main
+02-28 15:22:05.999 19640 19684 D CrashCapture: Staged prev session logcat: /data/user/0/com.negi.survey/files/diagnostics/crash/prevlog_20260228_232205_pid19640.log bytes=10100 marker=2026-02-28 15:20:41.768 pid=-1
+02-28 15:22:06.002 19640 19684 D CrashCapture: Persisted logcat marker for next run: 2026-02-28 15:22:05.999
+02-28 15:22:06.008 19640 19684 D CrashCapture: GitHub hints: owner=ishizuki-tech repo=SurveyExports branch=main pathPrefix=diagnostics/crash
+02-28 15:22:06.008 19640 19684 D CrashCapture: Enqueuing GitHub crash uploads… (mirror-first) where=SurveyApp:enqueuePending(immediate):bg
+02-28 15:22:06.008 19640 19684 D CrashCapture: GitHub enqueue(crash file): name=prevlog_20260228_232205_pid19640.log bytes=10100 remote=prevlog_20260228_232205_pid19640.log where=SurveyApp:enqueuePending(immediate):bg
+02-28 15:22:06.012 19640 19684 D CrashCapture: GitHub enqueue(crash file): name=prevlog_20260228_232041_pid19186.log bytes=8083 remote=prevlog_20260228_232041_pid19186.log where=SurveyApp:enqueuePending(immediate):bg
+02-28 15:22:06.015 19640 19684 D CrashCapture: GitHub enqueue(crash file): name=prevlog_20260226_085659_pid24920.log bytes=29441 remote=prevlog_20260226_085659_pid24920.log where=SurveyApp:enqueuePending(immediate):bg
+02-28 15:22:06.016 19640 19684 D CrashCapture: GitHub enqueue(crash file): name=prevlog_20260223_192811_pid14228.log bytes=36388 remote=prevlog_20260223_192811_pid14228.log where=SurveyApp:enqueuePending(immediate):bg
+02-28 15:22:06.021 19640 19684 D CrashCapture: GitHub enqueue(crash file): name=prevlog_20260223_191219_pid13054.log bytes=17168 remote=prevlog_20260223_191219_pid13054.log where=SurveyApp:enqueuePending(immediate):bg
+02-28 15:22:06.022 19640 19684 D CrashCapture: GitHub enqueue(crash file): name=prevlog_20260223_175100_pid9757.log bytes=16647 remote=prevlog_20260223_175100_pid9757.log where=SurveyApp:enqueuePending(immediate):bg
+02-28 15:22:06.030 19640 19684 D CrashCapture: GitHub enqueue(ring file): bytes=33839 remote=ring_store/20260228_232206/seg_00.log src=seg_00.log where=SurveyApp:enqueuePending(immediate):bg
+02-28 15:22:06.030 19640 19682 D WM-SystemJobScheduler: Scheduling work ID fe40d1c1-d2fd-4140-be85-cb6e385ba512Job ID 32
+02-28 15:22:06.030 19640 19684 D CrashCapture: Ring store enqueue done. dir=/data/user/0/com.negi.survey/files/diagnostics/applog_ring files=1 bytes=33839 capFiles=300 capBytes=90000000 where=SurveyApp:enqueuePending(immediate):bg
+02-28 15:22:06.034 19640 19682 D WM-GreedyScheduler: Starting tracking for a85e37dd-2a61-41b4-bfcd-c760e4fde2a6,3cd6a6bb-7a1d-43c4-accb-fb1096ec839f,2ab0deb1-3f85-40d0-a0f7-dffef9529303,4ab1c05e-24ac-4804-b8f5-f7a314422e49,2622565f-d7ca-4e8b-8d7b-4d4fa94844cc,47a7b941-966c-4108-9dae-f4d8abaa394e,83165ee6-cace-42d9-85fa-961b3986e744,9dd21ad3-1f6b-428d-99a7-9ea5d7a320cb,fe40d1c1-d2fd-4140-be85-cb6e385ba512
+02-28 15:22:06.048 19640 19683 D WM-SystemJobScheduler: Scheduling work ID 47146da2-694a-4f58-a95a-5bbe2a00637dJob ID 33
+02-28 15:22:06.054 19640 19683 D WM-GreedyScheduler: Starting tracking for a85e37dd-2a61-41b4-bfcd-c760e4fde2a6,3cd6a6bb-7a1d-43c4-accb-fb1096ec839f,2ab0deb1-3f85-40d0-a0f7-dffef9529303,4ab1c05e-24ac-4804-b8f5-f7a314422e49,2622565f-d7ca-4e8b-8d7b-4d4fa94844cc,47a7b941-966c-4108-9dae-f4d8abaa394e,47146da2-694a-4f58-a95a-5bbe2a00637d,83165ee6-cace-42d9-85fa-961b3986e744,9dd21ad3-1f6b-428d-99a7-9ea5d7a320cb,fe40d1c1-d2fd-4140-be85-cb6e385ba512
+02-28 15:22:06.061 19640 19681 D WM-GreedyScheduler: Constraints not met: Cancelling work ID WorkGenerationalId(workSpecId=fe40d1c1-d2fd-4140-be85-cb6e385ba512, generation=0)
+02-28 15:22:06.062 19640 19679 D WM-GreedyScheduler: Constraints not met: Cancelling work ID WorkGenerationalId(workSpecId=47146da2-694a-4f58-a95a-5bbe2a00637d, generation=0)
+02-28 15:22:07.167 19640 19640 D MainActivity: Intro -> Start session. epoch=1, file=survey_config10.yaml
+02-28 15:22:07.191 19640 19674 D SurveyConfigLoader: fromString -> format=YAML, reason=file extension .yml/.yaml, firstLine='graph:', leading='graph:\n  startId: Start\n  node...' file='survey_config10.yaml'
+02-28 15:22:07.284 19640 19674 D SurveyConfigLoader: fromString loaded (survey_config10.yaml): legacy=6(one=6,inline2=0) splitEval=0 splitFollow=0 followMode=JSON legacyIds=[Q1,Q2,Q3,Q4,Q5,Q6] evalIds=[-] followIds=[-]
+02-28 15:22:07.288 19640 19674 D SurveyConfigLoader: SurveyConfigDump(legacy=6(one=6,inline2=0) splitEval=0 splitFollow=0 followMode=JSON legacyIds=[Q1,Q2,Q3,Q4,Q5,Q6] evalIds=[-] followIds=[-])
+02-28 15:22:07.288 19640 19674 D SurveyConfigLoader: System(oneStep,len=1033): You are a well-known farmer survey expert. Read the Question and the Answer.\nOUTPUT FORMAT:\n- In English.\n- Keys exactly:\n  • "analysis": short string\n  • "expected_answer": short string\n  • "followup_question": a single short confirm/validate question (NOT an array; may be empty string)\n  • "score": integer 1–1...(truncated)
+02-28 15:22:07.288 19640 19674 D SurveyConfigLoader: System(eval,len=1033): You are a well-known farmer survey expert. Read the Question and the Answer.\nOUTPUT FORMAT:\n- In English.\n- Keys exactly:\n  • "analysis": short string\n  • "expected_answer": short string\n  • "followup_question": a single short confirm/validate question (NOT an array; may be empty string)\n  • "score": integer 1–1...(truncated)
+02-28 15:22:07.288 19640 19674 D SurveyConfigLoader: System(followup,len=1033): You are a well-known farmer survey expert. Read the Question and the Answer.\nOUTPUT FORMAT:\n- In English.\n- Keys exactly:\n  • "analysis": short string\n  • "expected_answer": short string\n  • "followup_question": a single short confirm/validate question (NOT an array; may be empty string)\n  • "score": integer 1–1...(truncated)
+02-28 15:22:07.288 19640 19674 D SurveyConfigLoader: AI coverage: Q1(one=true,two=false),Q2(one=true,two=false),Q3(one=true,two=false),Q4(one=true,two=false),Q5(one=true,two=false),Q6(one=true,two=false)
+02-28 15:22:07.288 19640 19674 D SurveyConfigLoader: Loaded config (assets/survey_config10.yaml): legacy=6(one=6,inline2=0) splitEval=0 splitFollow=0 followMode=JSON legacyIds=[Q1,Q2,Q3,Q4,Q5,Q6] evalIds=[-] followIds=[-]
+02-28 15:22:07.297 19640 19674 D SurveyConfigLoader: fromAssetsValidated -> issues=0 (legacy=6(one=6,inline2=0) splitEval=0 splitFollow=0 followMode=JSON legacyIds=[Q1,Q2,Q3,Q4,Q5,Q6] evalIds=[-] followIds=[-])
+02-28 15:22:07.298 19640 19674 D SurveyConfigLoader: SurveyConfigDump(legacy=6(one=6,inline2=0) splitEval=0 splitFollow=0 followMode=JSON legacyIds=[Q1,Q2,Q3,Q4,Q5,Q6] evalIds=[-] followIds=[-])
+02-28 15:22:07.298 19640 19674 D SurveyConfigLoader: System(oneStep,len=1033): You are a well-known farmer survey expert. Read the Question and the Answer.\nOUTPUT FORMAT:\n- In English.\n- Keys exactly:\n  • "analysis": short string\n  • "expected_answer": short string\n  • "followup_question": a single short confirm/validate question (NOT an array; may be empty string)\n  • "score": integer 1–1...(truncated)
+02-28 15:22:07.298 19640 19674 D SurveyConfigLoader: System(eval,len=1033): You are a well-known farmer survey expert. Read the Question and the Answer.\nOUTPUT FORMAT:\n- In English.\n- Keys exactly:\n  • "analysis": short string\n  • "expected_answer": short string\n  • "followup_question": a single short confirm/validate question (NOT an array; may be empty string)\n  • "score": integer 1–1...(truncated)
+02-28 15:22:07.298 19640 19674 D SurveyConfigLoader: System(followup,len=1033): You are a well-known farmer survey expert. Read the Question and the Answer.\nOUTPUT FORMAT:\n- In English.\n- Keys exactly:\n  • "analysis": short string\n  • "expected_answer": short string\n  • "followup_question": a single short confirm/validate question (NOT an array; may be empty string)\n  • "score": integer 1–1...(truncated)
+02-28 15:22:07.298 19640 19674 D SurveyConfigLoader: AI coverage: Q1(one=true,two=false),Q2(one=true,two=false),Q3(one=true,two=false),Q4(one=true,two=false),Q5(one=true,two=false),Q6(one=true,two=false)
+02-28 15:22:07.305 19640 19640 D MainActivity: Config loaded. session=survey_config10.yaml@1
+02-28 15:22:07.315 19640 19640 D MainActivity: DownloadGate idle -> start download. session=survey_config10.yaml@1
+02-28 15:22:07.348 19640 19673 I native  : I0000 00:00:1772320927.347121   19673 litert_lm_loader.cc:125] LitertLmLoader::Initialize
+02-28 15:22:07.348 19640 19673 I native  : I0000 00:00:1772320927.348309   19673 litert_lm_loader.cc:148] mmap_status is ok
+02-28 15:22:07.348 19640 19673 I native  : I0000 00:00:1772320927.348654   19673 litert_lm_loader.cc:154] status: OK
+02-28 15:22:07.348 19640 19673 I native  : I0000 00:00:1772320927.348719   19673 litert_lm_loader.cc:155] major_version: 1
+02-28 15:22:07.348 19640 19673 I native  : I0000 00:00:1772320927.348774   19673 litert_lm_loader.cc:156] minor_version: 4
+02-28 15:22:07.348 19640 19673 I native  : I0000 00:00:1772320927.348801   19673 litert_lm_loader.cc:157] patch_version: 0
+02-28 15:22:07.348 19640 19673 I native  : I0000 00:00:1772320927.348876   19673 litert_lm_loader.cc:208] section_index: 0
+02-28 15:22:07.348 19640 19673 I native  : I0000 00:00:1772320927.348906   19673 litert_lm_loader.cc:209] section_data_type: LlmMetadataProto
+02-28 15:22:07.348 19640 19673 I native  : I0000 00:00:1772320927.348937   19673 litert_lm_loader.cc:211] section_begin_offset: 16384
+02-28 15:22:07.348 19640 19673 I native  : I0000 00:00:1772320927.348963   19673 litert_lm_loader.cc:212] section_end_offset: 19446
+02-28 15:22:07.349 19640 19673 I native  : I0000 00:00:1772320927.348988   19673 litert_lm_loader.cc:208] section_index: 1
+02-28 15:22:07.349 19640 19673 I native  : I0000 00:00:1772320927.349012   19673 litert_lm_loader.cc:209] section_data_type: SP_Tokenizer
+02-28 15:22:07.349 19640 19673 I native  : I0000 00:00:1772320927.349037   19673 litert_lm_loader.cc:211] section_begin_offset: 32768
+02-28 15:22:07.349 19640 19673 I native  : I0000 00:00:1772320927.349064   19673 litert_lm_loader.cc:212] section_end_offset: 4728788
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350092   19673 litert_lm_loader.cc:189] model_type: tf_lite_embedder
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350152   19673 litert_lm_loader.cc:208] section_index: 2
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350177   19673 litert_lm_loader.cc:209] section_data_type: TFLiteModel
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350193   19673 litert_lm_loader.cc:211] section_begin_offset: 4734976
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350206   19673 litert_lm_loader.cc:212] section_end_offset: 276320080
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350221   19673 litert_lm_loader.cc:189] model_type: tf_lite_per_layer_embedder
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350234   19673 litert_lm_loader.cc:208] section_index: 3
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350247   19673 litert_lm_loader.cc:209] section_data_type: TFLiteModel
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350257   19673 litert_lm_loader.cc:211] section_begin_offset: 276332544
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350267   19673 litert_lm_loader.cc:212] section_end_offset: 1560854672
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350282   19673 litert_lm_loader.cc:189] model_type: tf_lite_audio_encoder_hw
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350294   19673 litert_lm_loader.cc:202] section_backend_constraint: cpu
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350307   19673 litert_lm_loader.cc:208] section_index: 4
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350319   19673 litert_lm_loader.cc:209] section_data_type: TFLiteModel
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350328   19673 litert_lm_loader.cc:211] section_begin_offset: 1560870912
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350339   19673 litert_lm_loader.cc:212] section_end_offset: 2225535832
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350350   19673 litert_lm_loader.cc:189] model_type: tf_lite_audio_adapter
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350360   19673 litert_lm_loader.cc:202] section_backend_constraint: cpu
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350371   19673 litert_lm_loader.cc:208] section_index: 5
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350382   19673 litert_lm_loader.cc:209] section_data_type: TFLiteModel
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350391   19673 litert_lm_loader.cc:211] section_begin_offset: 2225537024
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350401   19673 litert_lm_loader.cc:212] section_end_offset: 2238132084
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350411   19673 litert_lm_loader.cc:189] model_type: tf_lite_end_of_audio
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350421   19673 litert_lm_loader.cc:208] section_index: 6
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350431   19673 litert_lm_loader.cc:209] section_data_type: TFLiteModel
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350440   19673 litert_lm_loader.cc:211] section_begin_offset: 2238136320
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350450   19673 litert_lm_loader.cc:212] section_end_offset: 2238145140
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350463   19673 litert_lm_loader.cc:189] model_type: tf_lite_vision_adapter
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350474   19673 litert_lm_loader.cc:202] section_backend_constraint: cpu
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350483   19673 litert_lm_loader.cc:208] section_index: 7
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350497   19673 litert_lm_loader.cc:209] section_data_type: TFLiteModel
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350507   19673 litert_lm_loader.cc:211] section_begin_offset: 2238152704
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350516   19673 litert_lm_loader.cc:212] section_end_offset: 2256007332
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350528   19673 litert_lm_loader.cc:189] model_type: tf_lite_vision_encoder
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350538   19673 litert_lm_loader.cc:202] section_backend_constraint: gpu
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350550   19673 litert_lm_loader.cc:208] section_index: 8
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350561   19673 litert_lm_loader.cc:209] section_data_type: TFLiteModel
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350570   19673 litert_lm_loader.cc:211] section_begin_offset: 2256011264
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350580   19673 litert_lm_loader.cc:212] section_end_offset: 2408748152
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350591   19673 litert_lm_loader.cc:189] model_type: tf_lite_prefill_decode
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350600   19673 litert_lm_loader.cc:202] section_backend_constraint: cpu,gpu
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350610   19673 litert_lm_loader.cc:208] section_index: 9
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350622   19673 litert_lm_loader.cc:209] section_data_type: TFLiteModel
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350631   19673 litert_lm_loader.cc:211] section_begin_offset: 2408759296
+02-28 15:22:07.350 19640 19673 I native  : I0000 00:00:1772320927.350641   19673 litert_lm_loader.cc:212] section_end_offset: 4919525632
+02-28 15:22:07.822 19640 19673 I native  : I0000 00:00:1772320927.822089   19673 engine_settings.cc:95] The Main backend constraint is matched: GPU
+02-28 15:22:07.825 19640 19673 I native  : I0000 00:00:1772320927.822370   19673 engine_settings.cc:290] The validated engine settings: EngineSettings: 
+02-28 15:22:07.825 19640 19673 I native  :   MainExecutorSettings: backend: GPU
+02-28 15:22:07.825 19640 19673 I native  : backend_config:
+02-28 15:22:07.825 19640 19673 I native  : max_top_k: 1
+02-28 15:22:07.825 19640 19673 I native  : 
+02-28 15:22:07.825 19640 19673 I native  : max_tokens: 4096
+02-28 15:22:07.825 19640 19673 I native  : activation_data_type: Not set
+02-28 15:22:07.825 19640 19673 I native  : max_num_images: 0
+02-28 15:22:07.825 19640 19673 I native  : lora_rank: 0
+02-28 15:22:07.825 19640 19673 I native  : cache_dir: /data/user/0/com.negi.survey/no_backup/litertlm_cache/38ee02279954774b94ec113b62b8169a30d6fd48
+02-28 15:22:07.825 19640 19673 I native  : cache_file: Not set
+02-28 15:22:07.825 19640 19673 I native  : litert_dispatch_lib_dir: Not set
+02-28 15:22:07.825 19640 19673 I native  : model_assets: model_path: /data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm
+02-28 15:22:07.825 19640 19673 I native  : fake_weights_mode: FAKE_WEIGHTS_NONE
+02-28 15:22:07.825 19640 19673 I native  : 
+02-28 15:22:07.825 19640 19673 I native  : advanced_settings: prefill_batch_sizes: []
+02-28 15:22:07.825 19640 19673 I native  : num_output_candidates: 1
+02-28 15:22:07.825 19640 19673 I native  : configure_magic_numbers: true
+02-28 15:22:07.825 19640 19673 I native  : verify_magic_numbers: false
+02-28 15:22:07.825 19640 19673 I native  : clear_kv_cache_before_prefill: true
+02-28 15:22:07.825 19640 19673 I native  : num_logits_to_print_after_decode: 0
+02-28 15:22:07.825 19640 19673 I native  : gpu_madvise_original_shared_tensors: true
+02-28 15:22:07.825 19640 19673 I native  : is_benchmark: false
+02-28 15:22:07.825 19640 19673 I native  : preferred_device_substr: 
+02-28 15:22:07.825 19640 19673 I native  : num_threads_to_upload: -1
+02-28 15:22:07.825 19640 19673 I native  : num_threads_to_compile: -1
+02-28 15:22:07.825 19640 19673 I native  : convert_weights_on_gpu: true
+02-28 15:22:07.825 19640 19673 I native  : optimize_shader_compilation: true
+02-28 15:22:07.825 19640 19673 I native  : share_constant_tensors: true
+02-28 15:22:07.825 19640 19673 I native  : sampler_handles_input: true
+02-28 15:22:07.825 19640 19673 I native  : allow_src_quantized_fc_conv_ops: true
+02-28 15:22:07.825 19640 19673 I native  : 
+02-28 15:22:07.825 19640 19673 I native  :   LlmMetadata: MessageLite at 0x721d2b4530  BenchmarkParams: Not set
+02-28 15:22:07.825 19640 19673 I native  :   VisionExecutorSettings: Not set
+02-28 15:22:07.825 19640 19673 I native  :   AudioExecutorSettings: Not set
+02-28 15:22:07.828 19640 19673 I native  : I0000 00:00:1772320927.828008   19673 model_resources_litert_lm.cc:67] model_type: TF_LITE_PREFILL_DECODE
+02-28 15:22:07.828 19640 19673 I native  : I0000 00:00:1772320927.828094   19673 model_resources_litert_lm.cc:68] litert model size: 2510766336
+02-28 15:22:08.681 19640 19673 I litert  : [environment.cc:29] Creating LiteRT environment with options
+02-28 15:22:08.683 19640 19673 W litert  : [auto_registration.cc:158] NPU accelerator could not be loaded and registered: kLiteRtStatusErrorInvalidArgument.
+02-28 15:22:08.685 19640 19673 I litert  : [accelerator_registry.cc:52] RegisterAccelerator: ptr=0x72cc44c200, name=LiteRT GPU
+02-28 15:22:08.686 19640 19673 I litert  : [auto_registration.cc:223] Statically linked GPU accelerator registered.
+02-28 15:22:08.686 19640 19673 I litert  : [accelerator_registry.cc:52] RegisterAccelerator: ptr=0x72cc4480d0, name=CpuAccelerator
+02-28 15:22:08.686 19640 19673 I litert  : [auto_registration.cc:275] CPU accelerator registered.
+02-28 15:22:08.690 19640 19673 I native  : I0000 00:00:1772320928.690624   19673 llm_litert_compiled_model_executor.cc:1978] Setting serialization dir: /data/user/0/com.negi.survey/no_backup/litertlm_cache/38ee02279954774b94ec113b62b8169a30d6fd48
+02-28 15:22:08.691 19640 19673 I litert  : [compiled_model.cc:552] Flatbuffer model initialized directly from incoming litert model.
+02-28 15:22:08.709 19640 19673 I tflite  : Initialized TensorFlow Lite runtime.
+02-28 15:22:08.889 19640 19673 W libc    : Access denied finding property "ro.mediatek.platform"
+02-28 15:22:08.891 19640 19673 W libc    : Access denied finding property "ro.chipname"
+02-28 15:22:08.891 19640 19673 W libc    : Access denied finding property "ro.hardware.chipname"
+02-28 15:22:09.118 19640 19673 E libEGL  : call to OpenGL ES API with no current context (logged once per thread)
+02-28 15:22:09.122 19640 19673 I litert  : [environment.cc:40] Adding options to the existing LiteRT environment
+02-28 15:22:09.123 19640 19673 I tflite  : Loaded OpenCL library with dlopen.
+02-28 15:22:09.128 19640 19673 I litert  : [gpu_environment.cc:223] Created OpenCL device from provided device id and platform id.
+02-28 15:22:09.136 19640 19673 I litert  : [gpu_environment.cc:286] Reusing provided EGL environment.
+02-28 15:22:09.136 19640 19673 I litert  : [gpu_environment.h:150] Created LiteRT GpuEnvironment.
+02-28 15:22:09.302 19640 19673 I tflite  : Replacing 3326 out of 3326 node(s) with delegate (LITERT_CL) node, yielding 1 partitions for subgraph 0.
+02-28 15:22:09.502 19640 19640 D VRI[MainActivity]: visibilityChanged oldVisibility=true newVisibility=false
+02-28 15:22:09.587 19640 19640 D CrashCapture: install: ensured default handler. where=selfHeal:onActivityResumed pid=19640 default=com.negi.survey.CrashCapture$CrashHandler@c280a86
+02-28 15:22:09.587 19640 19640 D VRI[MainActivity]: visibilityChanged oldVisibility=false newVisibility=true
+--------- beginning of system
+02-28 15:22:09.720 19640 19640 D InsetsController: hide(ime())
+02-28 15:22:09.720 19640 19640 I ImeTracker: com.negi.survey:895380ea: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+02-28 15:22:09.761 19640 19644 W com.negi.survey: userfaultfd: MOVE ioctl seems unsupported: Connection timed out
+02-28 15:22:09.771 19640 19644 I com.negi.survey: CollectorTransition concurrent mark compact GC freed 19MB AllocSpace bytes, 27(952KB) LOS objects, 87% free, 3659KB/27MB, paused 690us,1.208ms total 295.662ms
+02-28 15:22:09.816 19640 19673 W native  : W0000 00:00:1772320929.816860   19673 delegate_kernel.cc:326] Weights preparation on Gpu is disabled for PowerVR, Mail GPU and non-OpenCL/WebGPU backends.
+02-28 15:22:13.322 19640 19640 D VRI[MainActivity]: visibilityChanged oldVisibility=true newVisibility=false
+02-28 15:22:13.558 19640 19640 D ViewRootImpl: Skipping stats log for color mode
+02-28 15:22:13.571 19640 19640 D CrashCapture: install: ensured default handler. where=selfHeal:onActivityResumed pid=19640 default=com.negi.survey.CrashCapture$CrashHandler@c280a86
+02-28 15:22:13.783 19640 19640 D InsetsController: hide(ime())
+02-28 15:22:13.783 19640 19640 I ImeTracker: com.negi.survey:5bb6450d: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+02-28 15:22:23.422 19640 19673 I native  : I0000 00:00:1772320943.422078   19673 delegate_kernel.cc:260] Total 81 external tensors are used for delegate inputs and outputs
+02-28 15:22:23.422 19640 19673 I native  : I0000 00:00:1772320943.422324   19673 delegate_kernel.cc:670] Initializing OpenCL-based API from serialized data.
+02-28 15:22:24.083 19640 19640 D VRI[MainActivity]: visibilityChanged oldVisibility=true newVisibility=false
+02-28 15:22:25.997 19640 19673 I native  : I0000 00:00:1772320945.996723   19673 delegate_kernel.cc:575] Initialized InferenceContext from serialized data.
+02-28 15:22:27.318 19640 19673 I tflite  : Replacing 2145 out of 2145 node(s) with delegate (LITERT_CL) node, yielding 1 partitions for subgraph 1.
+02-28 15:22:27.824 19640 19673 I native  : I0000 00:00:1772320947.824069   19673 delegate_kernel.cc:260] Total 80 external tensors are used for delegate inputs and outputs
+02-28 15:22:27.824 19640 19673 I native  : I0000 00:00:1772320947.824452   19673 delegate_kernel.cc:670] Initializing OpenCL-based API from serialized data.
+02-28 15:22:30.460 19640 19673 I native  : I0000 00:00:1772320950.460224   19673 delegate_kernel.cc:575] Initialized InferenceContext from serialized data.
+02-28 15:22:30.622 19640 19673 I tflite  : Replacing 2145 out of 2145 node(s) with delegate (LITERT_CL) node, yielding 1 partitions for subgraph 2.
+02-28 15:22:30.833 19640 19673 I native  : I0000 00:00:1772320950.833754   19673 delegate_kernel.cc:260] Total 80 external tensors are used for delegate inputs and outputs
+02-28 15:22:30.834 19640 19673 I native  : I0000 00:00:1772320950.834127   19673 delegate_kernel.cc:670] Initializing OpenCL-based API from serialized data.
+02-28 15:22:34.038 19855 19855 I libc    : SetHeapTaggingLevel: tag level set to 0
+02-28 15:22:34.043 19855 19855 I Zygote  : Process 19855 created for com.negi.survey
+02-28 15:22:34.043 19855 19855 I com.negi.survey: Using CollectorTypeCMC GC.
+02-28 15:22:34.052 19855 19855 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+02-28 15:22:34.084 19855 19855 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+02-28 15:22:34.084 19855 19855 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+02-28 15:22:34.139 19855 19855 D nativeloader: Configuring clns-9 for other apk /data/app/~~PRxWpjzYxyoI5sk5lmDIEw==/com.negi.survey-WdDB-fctmo--QDr4IHn5sQ==/base.apk. target_sdk_version=36, uses_libraries=libOpenCL.so:libOpenCL-pixel.so, library_path=/data/app/~~PRxWpjzYxyoI5sk5lmDIEw==/com.negi.survey-WdDB-fctmo--QDr4IHn5sQ==/lib/arm64:/data/app/~~PRxWpjzYxyoI5sk5lmDIEw==/com.negi.survey-WdDB-fctmo--QDr4IHn5sQ==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.negi.survey
+02-28 15:22:34.148 19855 19855 V GraphicsEnvironment: Currently set values for:
+02-28 15:22:34.148 19855 19855 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[com.android.angle, com.google.android.apps.tachyon]
+02-28 15:22:34.148 19855 19855 V GraphicsEnvironment:   angle_gl_driver_selection_values=[angle, native]
+02-28 15:22:34.148 19855 19855 V GraphicsEnvironment: com.negi.survey is not listed in per-application setting
+02-28 15:22:34.149 19855 19855 V GraphicsEnvironment: ANGLE allowlist from config: 
+02-28 15:22:34.149 19855 19855 V GraphicsEnvironment: No special selections for ANGLE, returning default driver choice
+02-28 15:22:34.149 19855 19855 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+02-28 15:22:34.168 19855 19855 D nativeloader: Load /data/app/~~PRxWpjzYxyoI5sk5lmDIEw==/com.negi.survey-WdDB-fctmo--QDr4IHn5sQ==/base.apk!/lib/arm64-v8a/liblitertlm_jni.so using class loader ns clns-9 (caller=/data/app/~~PRxWpjzYxyoI5sk5lmDIEw==/com.negi.survey-WdDB-fctmo--QDr4IHn5sQ==/base.apk!classes4.dex): ok
+02-28 15:22:34.169 19855 19855 D SurveyApp: Loaded LiteRTLM JNI: litertlm_jni where=attachBaseContext
+02-28 15:22:34.175 19855 19855 D AppRingLogStore: installed: dir=/data/user/0/com.negi.survey/files/diagnostics/applog_ring idx=0
+02-28 15:22:34.176 19855 19855 D CrashCapture: install: ensured default handler. where=SurveyApp:attachBaseContext pid=19855 default=com.negi.survey.CrashCapture$CrashHandler@c280a86
+02-28 15:22:34.177 19855 19855 D CrashCapture: install: ensured default handler. where=SurveyApp:onCreate(rewrap) pid=19855 default=com.negi.survey.CrashCapture$CrashHandler@c280a86
+02-28 15:22:34.177 19855 19855 D CrashCapture: registerSelfHealing: ActivityLifecycleCallbacks registered. mode=onResumedOnly
+02-28 15:22:34.185 19855 19870 I DisplayManager: Choreographer implicitly registered for the refresh rate.
+02-28 15:22:34.186 19855 19870 D vulkan  : searching for layers in '/data/app/~~PRxWpjzYxyoI5sk5lmDIEw==/com.negi.survey-WdDB-fctmo--QDr4IHn5sQ==/lib/arm64'
+02-28 15:22:34.186 19855 19870 D vulkan  : searching for layers in '/data/app/~~PRxWpjzYxyoI5sk5lmDIEw==/com.negi.survey-WdDB-fctmo--QDr4IHn5sQ==/base.apk!/lib/arm64-v8a'
+02-28 15:22:34.189 19855 19855 D DesktopExperienceFlags: Toggle override initialized to: false
+02-28 15:22:34.192 19855 19855 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+02-28 15:22:34.199 19855 19868 D RuntimeLogStore: openWriter: start -> /data/user/0/com.negi.survey/files/diagnostics/runtime_logs/rtlog_20260228_232234_176_pid19855_seq1.log (bytes=0 format=LEGACY)
+02-28 15:22:34.200 19855 19855 D CompatChangeReporter: Compat change id reported: 377864165; UID 14741; state: ENABLED
+02-28 15:22:34.200 19855 19855 D DesktopModeFlags: Toggle override initialized to: OVERRIDE_UNSET
+02-28 15:22:34.202 19855 19868 D RuntimeLogStore: retention: start files=4 kept=4 totalBytes=5947
+02-28 15:22:34.206 19855 19855 I ContentCaptureHelper: Setting logging level to OFF
+02-28 15:22:34.210 19855 19855 D CrashCapture: install: ensured default handler. where=selfHeal:onActivityResumed pid=19855 default=com.negi.survey.CrashCapture$CrashHandler@c280a86
+02-28 15:22:34.241 19855 19855 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@822f3f6
+02-28 15:22:34.263 19855 19855 E VibratorInfo: Invalid frequency profile received from HAL. resonantFrequencyHz=NaN, frequenciesHz=null, outputAccelerationsGs=null
+02-28 15:22:34.286 19855 19855 D VRI[MainActivity]: WindowInsets changed: 1080x2424 statusBars:[0,152,0,0] navigationBars:[0,0,0,69] mandatorySystemGestures:[0,187,0,92] 
+02-28 15:22:34.291 19855 19855 I HWUI    : Using FreeType backend (prop=Auto)
+02-28 15:22:34.338 19855 19886 D SurveyConfigLoader: fromString -> format=YAML, reason=file extension .yml/.yaml, firstLine='graph:', leading='graph:\n  startId: Start\n  node...' file='survey_config10.yaml'
+02-28 15:22:34.406 19855 19886 D SurveyConfigLoader: fromString loaded (survey_config10.yaml): legacy=6(one=6,inline2=0) splitEval=0 splitFollow=0 followMode=JSON legacyIds=[Q1,Q2,Q3,Q4,Q5,Q6] evalIds=[-] followIds=[-]
+02-28 15:22:34.407 19855 19886 D SurveyConfigLoader: SurveyConfigDump(legacy=6(one=6,inline2=0) splitEval=0 splitFollow=0 followMode=JSON legacyIds=[Q1,Q2,Q3,Q4,Q5,Q6] evalIds=[-] followIds=[-])
+02-28 15:22:34.407 19855 19886 D SurveyConfigLoader: System(oneStep,len=1033): You are a well-known farmer survey expert. Read the Question and the Answer.\nOUTPUT FORMAT:\n- In English.\n- Keys exactly:\n  • "analysis": short string\n  • "expected_answer": short string\n  • "followup_question": a single short confirm/validate question (NOT an array; may be empty string)\n  • "score": integer 1–1...(truncated)
+02-28 15:22:34.407 19855 19886 D SurveyConfigLoader: System(eval,len=1033): You are a well-known farmer survey expert. Read the Question and the Answer.\nOUTPUT FORMAT:\n- In English.\n- Keys exactly:\n  • "analysis": short string\n  • "expected_answer": short string\n  • "followup_question": a single short confirm/validate question (NOT an array; may be empty string)\n  • "score": integer 1–1...(truncated)
+02-28 15:22:34.407 19855 19886 D SurveyConfigLoader: System(followup,len=1033): You are a well-known farmer survey expert. Read the Question and the Answer.\nOUTPUT FORMAT:\n- In English.\n- Keys exactly:\n  • "analysis": short string\n  • "expected_answer": short string\n  • "followup_question": a single short confirm/validate question (NOT an array; may be empty string)\n  • "score": integer 1–1...(truncated)
+02-28 15:22:34.407 19855 19886 D SurveyConfigLoader: AI coverage: Q1(one=true,two=false),Q2(one=true,two=false),Q3(one=true,two=false),Q4(one=true,two=false),Q5(one=true,two=false),Q6(one=true,two=false)
+02-28 15:22:34.418 19855 19886 D SurveyConfigLoader: Loaded config (assets/survey_config10.yaml): legacy=6(one=6,inline2=0) splitEval=0 splitFollow=0 followMode=JSON legacyIds=[Q1,Q2,Q3,Q4,Q5,Q6] evalIds=[-] followIds=[-]
+02-28 15:22:34.426 19855 19886 D SurveyConfigLoader: fromAssetsValidated -> issues=0 (legacy=6(one=6,inline2=0) splitEval=0 splitFollow=0 followMode=JSON legacyIds=[Q1,Q2,Q3,Q4,Q5,Q6] evalIds=[-] followIds=[-])
+02-28 15:22:34.426 19855 19886 D SurveyConfigLoader: SurveyConfigDump(legacy=6(one=6,inline2=0) splitEval=0 splitFollow=0 followMode=JSON legacyIds=[Q1,Q2,Q3,Q4,Q5,Q6] evalIds=[-] followIds=[-])
+02-28 15:22:34.426 19855 19886 D SurveyConfigLoader: System(oneStep,len=1033): You are a well-known farmer survey expert. Read the Question and the Answer.\nOUTPUT FORMAT:\n- In English.\n- Keys exactly:\n  • "analysis": short string\n  • "expected_answer": short string\n  • "followup_question": a single short confirm/validate question (NOT an array; may be empty string)\n  • "score": integer 1–1...(truncated)
+02-28 15:22:34.426 19855 19886 D SurveyConfigLoader: System(eval,len=1033): You are a well-known farmer survey expert. Read the Question and the Answer.\nOUTPUT FORMAT:\n- In English.\n- Keys exactly:\n  • "analysis": short string\n  • "expected_answer": short string\n  • "followup_question": a single short confirm/validate question (NOT an array; may be empty string)\n  • "score": integer 1–1...(truncated)
+02-28 15:22:34.426 19855 19886 D SurveyConfigLoader: System(followup,len=1033): You are a well-known farmer survey expert. Read the Question and the Answer.\nOUTPUT FORMAT:\n- In English.\n- Keys exactly:\n  • "analysis": short string\n  • "expected_answer": short string\n  • "followup_question": a single short confirm/validate question (NOT an array; may be empty string)\n  • "score": integer 1–1...(truncated)
+02-28 15:22:34.426 19855 19886 D SurveyConfigLoader: AI coverage: Q1(one=true,two=false),Q2(one=true,two=false),Q3(one=true,two=false),Q4(one=true,two=false),Q5(one=true,two=false),Q6(one=true,two=false)
+02-28 15:22:34.473 19855 19855 D MainActivity: Config loaded. session=survey_config10.yaml@1
+02-28 15:22:34.506 19855 19855 D MainActivity: DownloadGate idle -> start download. session=survey_config10.yaml@1
+02-28 15:22:34.510 19855 19855 D InsetsController: hide(ime())
+02-28 15:22:34.510 19855 19855 I ImeTracker: com.negi.survey:bb05c59a: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+02-28 15:22:34.551 19855 19888 I native  : I0000 00:00:1772320954.550707   19888 litert_lm_loader.cc:125] LitertLmLoader::Initialize
+02-28 15:22:34.552 19855 19888 I native  : I0000 00:00:1772320954.552372   19888 litert_lm_loader.cc:148] mmap_status is ok
+02-28 15:22:34.553 19855 19888 I native  : I0000 00:00:1772320954.553697   19888 litert_lm_loader.cc:154] status: OK
+02-28 15:22:34.553 19855 19888 I native  : I0000 00:00:1772320954.553773   19888 litert_lm_loader.cc:155] major_version: 1
+02-28 15:22:34.553 19855 19888 I native  : I0000 00:00:1772320954.553834   19888 litert_lm_loader.cc:156] minor_version: 4
+02-28 15:22:34.553 19855 19888 I native  : I0000 00:00:1772320954.553870   19888 litert_lm_loader.cc:157] patch_version: 0
+02-28 15:22:34.553 19855 19888 I native  : I0000 00:00:1772320954.553914   19888 litert_lm_loader.cc:208] section_index: 0
+02-28 15:22:34.553 19855 19888 I native  : I0000 00:00:1772320954.553950   19888 litert_lm_loader.cc:209] section_data_type: LlmMetadataProto
+02-28 15:22:34.554 19855 19888 I native  : I0000 00:00:1772320954.553988   19888 litert_lm_loader.cc:211] section_begin_offset: 16384
+02-28 15:22:34.554 19855 19888 I native  : I0000 00:00:1772320954.554025   19888 litert_lm_loader.cc:212] section_end_offset: 19446
+02-28 15:22:34.554 19855 19888 I native  : I0000 00:00:1772320954.554062   19888 litert_lm_loader.cc:208] section_index: 1
+02-28 15:22:34.554 19855 19888 I native  : I0000 00:00:1772320954.554098   19888 litert_lm_loader.cc:209] section_data_type: SP_Tokenizer
+02-28 15:22:34.554 19855 19888 I native  : I0000 00:00:1772320954.554131   19888 litert_lm_loader.cc:211] section_begin_offset: 32768
+02-28 15:22:34.554 19855 19888 I native  : I0000 00:00:1772320954.554167   19888 litert_lm_loader.cc:212] section_end_offset: 4728788
+02-28 15:22:34.554 19855 19888 I native  : I0000 00:00:1772320954.554237   19888 litert_lm_loader.cc:189] model_type: tf_lite_embedder
+02-28 15:22:34.554 19855 19888 I native  : I0000 00:00:1772320954.554300   19888 litert_lm_loader.cc:208] section_index: 2
+02-28 15:22:34.554 19855 19888 I native  : I0000 00:00:1772320954.554337   19888 litert_lm_loader.cc:209] section_data_type: TFLiteModel
+02-28 15:22:34.554 19855 19888 I native  : I0000 00:00:1772320954.554369   19888 litert_lm_loader.cc:211] section_begin_offset: 4734976
+02-28 15:22:34.554 19855 19888 I native  : I0000 00:00:1772320954.554403   19888 litert_lm_loader.cc:212] section_end_offset: 276320080
+02-28 15:22:34.554 19855 19888 I native  : I0000 00:00:1772320954.554440   19888 litert_lm_loader.cc:189] model_type: tf_lite_per_layer_embedder
+02-28 15:22:34.554 19855 19888 I native  : I0000 00:00:1772320954.554475   19888 litert_lm_loader.cc:208] section_index: 3
+02-28 15:22:34.554 19855 19888 I native  : I0000 00:00:1772320954.554509   19888 litert_lm_loader.cc:209] section_data_type: TFLiteModel
+02-28 15:22:34.554 19855 19888 I native  : I0000 00:00:1772320954.554541   19888 litert_lm_loader.cc:211] section_begin_offset: 276332544
+02-28 15:22:34.554 19855 19888 I native  : I0000 00:00:1772320954.554576   19888 litert_lm_loader.cc:212] section_end_offset: 1560854672
+02-28 15:22:34.554 19855 19888 I native  : I0000 00:00:1772320954.554615   19888 litert_lm_loader.cc:189] model_type: tf_lite_audio_encoder_hw
+02-28 15:22:34.554 19855 19888 I native  : I0000 00:00:1772320954.554652   19888 litert_lm_loader.cc:202] section_backend_constraint: cpu
+02-28 15:22:34.554 19855 19888 I native  : I0000 00:00:1772320954.554686   19888 litert_lm_loader.cc:208] section_index: 4
+02-28 15:22:34.554 19855 19888 I native  : I0000 00:00:1772320954.554721   19888 litert_lm_loader.cc:209] section_data_type: TFLiteModel
+02-28 15:22:34.554 19855 19888 I native  : I0000 00:00:1772320954.554754   19888 litert_lm_loader.cc:211] section_begin_offset: 1560870912
+02-28 15:22:34.554 19855 19888 I native  : I0000 00:00:1772320954.554792   19888 litert_lm_loader.cc:212] section_end_offset: 2225535832
+02-28 15:22:34.554 19855 19888 I native  : I0000 00:00:1772320954.554831   19888 litert_lm_loader.cc:189] model_type: tf_lite_audio_adapter
+02-28 15:22:34.563 19855 19888 I native  : I0000 00:00:1772320954.554865   19888 litert_lm_loader.cc:202] section_backend_constraint: cpu
+02-28 15:22:34.563 19855 19888 I native  : I0000 00:00:1772320954.563731   19888 litert_lm_loader.cc:208] section_index: 5
+02-28 15:22:34.563 19855 19888 I native  : I0000 00:00:1772320954.563835   19888 litert_lm_loader.cc:209] section_data_type: TFLiteModel
+02-28 15:22:34.563 19855 19888 I native  : I0000 00:00:1772320954.563873   19888 litert_lm_loader.cc:211] section_begin_offset: 2225537024
+02-28 15:22:34.563 19855 19888 I native  : I0000 00:00:1772320954.563908   19888 litert_lm_loader.cc:212] section_end_offset: 2238132084
+02-28 15:22:34.563 19855 19888 I native  : I0000 00:00:1772320954.563953   19888 litert_lm_loader.cc:189] model_type: tf_lite_end_of_audio
+02-28 15:22:34.564 19855 19888 I native  : I0000 00:00:1772320954.563994   19888 litert_lm_loader.cc:208] section_index: 6
+02-28 15:22:34.564 19855 19888 I native  : I0000 00:00:1772320954.564028   19888 litert_lm_loader.cc:209] section_data_type: TFLiteModel
+02-28 15:22:34.564 19855 19888 I native  : I0000 00:00:1772320954.564061   19888 litert_lm_loader.cc:211] section_begin_offset: 2238136320
+02-28 15:22:34.564 19855 19888 I native  : I0000 00:00:1772320954.564096   19888 litert_lm_loader.cc:212] section_end_offset: 2238145140
+02-28 15:22:34.564 19855 19888 I native  : I0000 00:00:1772320954.564133   19888 litert_lm_loader.cc:189] model_type: tf_lite_vision_adapter
+02-28 15:22:34.564 19855 19888 I native  : I0000 00:00:1772320954.564172   19888 litert_lm_loader.cc:202] section_backend_constraint: cpu
+02-28 15:22:34.564 19855 19888 I native  : I0000 00:00:1772320954.564210   19888 litert_lm_loader.cc:208] section_index: 7
+02-28 15:22:34.564 19855 19888 I native  : I0000 00:00:1772320954.564245   19888 litert_lm_loader.cc:209] section_data_type: TFLiteModel
+02-28 15:22:34.564 19855 19888 I native  : I0000 00:00:1772320954.564278   19888 litert_lm_loader.cc:211] section_begin_offset: 2238152704
+02-28 15:22:34.564 19855 19888 I native  : I0000 00:00:1772320954.564313   19888 litert_lm_loader.cc:212] section_end_offset: 2256007332
+02-28 15:22:34.564 19855 19888 I native  : I0000 00:00:1772320954.564350   19888 litert_lm_loader.cc:189] model_type: tf_lite_vision_encoder
+02-28 15:22:34.564 19855 19888 I native  : I0000 00:00:1772320954.564384   19888 litert_lm_loader.cc:202] section_backend_constraint: gpu
+02-28 15:22:34.564 19855 19888 I native  : I0000 00:00:1772320954.564416   19888 litert_lm_loader.cc:208] section_index: 8
+02-28 15:22:34.564 19855 19888 I native  : I0000 00:00:1772320954.564450   19888 litert_lm_loader.cc:209] section_data_type: TFLiteModel
+02-28 15:22:34.564 19855 19888 I native  : I0000 00:00:1772320954.564482   19888 litert_lm_loader.cc:211] section_begin_offset: 2256011264
+02-28 15:22:34.564 19855 19888 I native  : I0000 00:00:1772320954.564517   19888 litert_lm_loader.cc:212] section_end_offset: 2408748152
+02-28 15:22:34.564 19855 19888 I native  : I0000 00:00:1772320954.564556   19888 litert_lm_loader.cc:189] model_type: tf_lite_prefill_decode
+02-28 15:22:34.564 19855 19888 I native  : I0000 00:00:1772320954.564590   19888 litert_lm_loader.cc:202] section_backend_constraint: cpu,gpu
+02-28 15:22:34.564 19855 19888 I native  : I0000 00:00:1772320954.564623   19888 litert_lm_loader.cc:208] section_index: 9
+02-28 15:22:34.564 19855 19888 I native  : I0000 00:00:1772320954.564658   19888 litert_lm_loader.cc:209] section_data_type: TFLiteModel
+02-28 15:22:34.564 19855 19888 I native  : I0000 00:00:1772320954.564691   19888 litert_lm_loader.cc:211] section_begin_offset: 2408759296
+02-28 15:22:34.564 19855 19888 I native  : I0000 00:00:1772320954.564726   19888 litert_lm_loader.cc:212] section_end_offset: 4919525632
+02-28 15:22:34.792 19855 19888 I native  : I0000 00:00:1772320954.786603   19888 engine_settings.cc:95] The Main backend constraint is matched: GPU
+02-28 15:22:34.795 19855 19888 I native  : I0000 00:00:1772320954.792131   19888 engine_settings.cc:290] The validated engine settings: EngineSettings: 
+02-28 15:22:34.795 19855 19888 I native  :   MainExecutorSettings: backend: GPU
+02-28 15:22:34.795 19855 19888 I native  : backend_config:
+02-28 15:22:34.795 19855 19888 I native  : max_top_k: 1
+02-28 15:22:34.795 19855 19888 I native  : 
+02-28 15:22:34.795 19855 19888 I native  : max_tokens: 4096
+02-28 15:22:34.795 19855 19888 I native  : activation_data_type: Not set
+02-28 15:22:34.795 19855 19888 I native  : max_num_images: 0
+02-28 15:22:34.795 19855 19888 I native  : lora_rank: 0
+02-28 15:22:34.795 19855 19888 I native  : cache_dir: /data/user/0/com.negi.survey/no_backup/litertlm_cache/38ee02279954774b94ec113b62b8169a30d6fd48
+02-28 15:22:34.795 19855 19888 I native  : cache_file: Not set
+02-28 15:22:34.795 19855 19888 I native  : litert_dispatch_lib_dir: Not set
+02-28 15:22:34.795 19855 19888 I native  : model_assets: model_path: /data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm
+02-28 15:22:34.795 19855 19888 I native  : fake_weights_mode: FAKE_WEIGHTS_NONE
+02-28 15:22:34.795 19855 19888 I native  : 
+02-28 15:22:34.795 19855 19888 I native  : advanced_settings: prefill_batch_sizes: []
+02-28 15:22:34.795 19855 19888 I native  : num_output_candidates: 1
+02-28 15:22:34.795 19855 19888 I native  : configure_magic_numbers: true
+02-28 15:22:34.795 19855 19888 I native  : verify_magic_numbers: false
+02-28 15:22:34.795 19855 19888 I native  : clear_kv_cache_before_prefill: true
+02-28 15:22:34.795 19855 19888 I native  : num_logits_to_print_after_decode: 0
+02-28 15:22:34.795 19855 19888 I native  : gpu_madvise_original_shared_tensors: true
+02-28 15:22:34.795 19855 19888 I native  : is_benchmark: false
+02-28 15:22:34.795 19855 19888 I native  : preferred_device_substr: 
+02-28 15:22:34.795 19855 19888 I native  : num_threads_to_upload: -1
+02-28 15:22:34.795 19855 19888 I native  : num_threads_to_compile: -1
+02-28 15:22:34.795 19855 19888 I native  : convert_weights_on_gpu: true
+02-28 15:22:34.795 19855 19888 I native  : optimize_shader_compilation: true
+02-28 15:22:34.795 19855 19888 I native  : share_constant_tensors: true
+02-28 15:22:34.795 19855 19888 I native  : sampler_handles_input: true
+02-28 15:22:34.795 19855 19888 I native  : allow_src_quantized_fc_conv_ops: true
+02-28 15:22:34.795 19855 19888 I native  : 
+02-28 15:22:34.795 19855 19888 I native  :   LlmMetadata: MessageLite at 0x7223eed530  BenchmarkParams: Not set
+02-28 15:22:34.795 19855 19888 I native  :   VisionExecutorSettings: Not set
+02-28 15:22:34.795 19855 19888 I native  :   AudioExecutorSettings: Not set
+02-28 15:22:34.800 19855 19888 I native  : I0000 00:00:1772320954.800704   19888 model_resources_litert_lm.cc:67] model_type: TF_LITE_PREFILL_DECODE
+02-28 15:22:34.800 19855 19888 I native  : I0000 00:00:1772320954.800759   19888 model_resources_litert_lm.cc:68] litert model size: 2510766336
+02-28 15:22:35.291 19855 19888 I litert  : [environment.cc:29] Creating LiteRT environment with options
+02-28 15:22:35.292 19855 19888 W litert  : [auto_registration.cc:158] NPU accelerator could not be loaded and registered: kLiteRtStatusErrorInvalidArgument.
+02-28 15:22:35.292 19855 19888 I litert  : [accelerator_registry.cc:52] RegisterAccelerator: ptr=0x72cc43a1b0, name=LiteRT GPU
+02-28 15:22:35.292 19855 19888 I litert  : [auto_registration.cc:223] Statically linked GPU accelerator registered.
+02-28 15:22:35.292 19855 19888 I litert  : [accelerator_registry.cc:52] RegisterAccelerator: ptr=0x72cc43c670, name=CpuAccelerator
+02-28 15:22:35.292 19855 19888 I litert  : [auto_registration.cc:275] CPU accelerator registered.
+02-28 15:22:35.296 19855 19888 I native  : I0000 00:00:1772320955.296129   19888 llm_litert_compiled_model_executor.cc:1978] Setting serialization dir: /data/user/0/com.negi.survey/no_backup/litertlm_cache/38ee02279954774b94ec113b62b8169a30d6fd48
+02-28 15:22:35.296 19855 19888 I litert  : [compiled_model.cc:552] Flatbuffer model initialized directly from incoming litert model.
+02-28 15:22:35.304 19855 19888 I tflite  : Initialized TensorFlow Lite runtime.
+02-28 15:22:35.373 19855 19888 W libc    : Access denied finding property "ro.mediatek.platform"
+02-28 15:22:35.374 19855 19888 W libc    : Access denied finding property "ro.chipname"
+02-28 15:22:35.374 19855 19888 W libc    : Access denied finding property "ro.hardware.chipname"
+02-28 15:22:35.484 19855 19888 E libEGL  : call to OpenGL ES API with no current context (logged once per thread)
+02-28 15:22:35.488 19855 19888 I litert  : [environment.cc:40] Adding options to the existing LiteRT environment
+02-28 15:22:35.488 19855 19888 I tflite  : Loaded OpenCL library with dlopen.
+02-28 15:22:35.489 19855 19888 I litert  : [gpu_environment.cc:223] Created OpenCL device from provided device id and platform id.
+02-28 15:22:35.490 19855 19888 I litert  : [gpu_environment.cc:286] Reusing provided EGL environment.
+02-28 15:22:35.490 19855 19888 I litert  : [gpu_environment.h:150] Created LiteRT GpuEnvironment.
+02-28 15:22:35.533 19855 19888 I tflite  : Replacing 3326 out of 3326 node(s) with delegate (LITERT_CL) node, yielding 1 partitions for subgraph 0.
+02-28 15:22:35.688 19855 19888 W native  : W0000 00:00:1772320955.688596   19888 delegate_kernel.cc:326] Weights preparation on Gpu is disabled for PowerVR, Mail GPU and non-OpenCL/WebGPU backends.
+02-28 15:22:36.689 19855 19855 D WM-PackageManagerHelper: Skipping component enablement for androidx.work.impl.background.systemjob.SystemJobService
+02-28 15:22:36.689 19855 19855 D WM-Schedulers: Created SystemJobScheduler and enabled SystemJobService
+02-28 15:22:36.691 19855 19945 D WM-ForceStopRunnable: Is default app process = true
+02-28 15:22:36.693 19855 19945 D WM-ForceStopRunnable: Performing cleanup operations.
+02-28 15:22:36.730 19855 19855 D github_upload: choosePolicy: uniqueName=upload_runtime_logs_startup policy=KEEP states=[ENQUEUED]
+02-28 15:22:36.730 19855 19855 D github_upload: enqueueStartupRuntimeLogsUpload: uniqueName=upload_runtime_logs_startup policy=KEEP
+02-28 15:22:36.739 19855 19855 D github_upload: choosePolicy: uniqueName=upload_ring_logs_startup policy=KEEP states=[ENQUEUED]
+02-28 15:22:36.740 19855 19855 D github_upload: enqueueStartupRingLogsUpload: uniqueName=upload_ring_logs_startup policy=KEEP
+02-28 15:22:36.747 19855 19950 D CrashCapture: enqueuePendingCrashUploadsIfPossible enter where=SurveyApp:enqueuePending(immediate):bg pid=19855 thread=CrashCapture-Enqueue
+02-28 15:22:36.753 19855 19945 D WM-PackageManagerHelper: Skipping component enablement for androidx.work.impl.background.systemalarm.RescheduleReceiver
