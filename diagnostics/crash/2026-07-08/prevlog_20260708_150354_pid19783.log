@@ -1,0 +1,350 @@
+=== Previous Session Logcat ===
+captured_time_utc=20260708_150354
+captured_time_local=20260708_080354
+marker=2026-07-06 06:31:46.020
+preferred_prev_pid=-1
+note=best-effort; buffers may be overwritten before next start
+sdk=36
+device=samsung SM-S931U1
+appId=com.negi.survey
+versionName=v0.0.1-20260318-172107
+versionCode=22
+
+=== Logcat (since marker) ===
+--------- beginning of main
+07-08 08:03:51.776 19783 19783 I com.negi.survey: Using CollectorTypeCMC GC.
+07-08 08:03:51.783 19783 19783 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+07-08 08:03:51.785 19783 19783 D ActivityThread: setConscryptValidator
+07-08 08:03:51.785 19783 19783 D ActivityThread: setConscryptValidator - put
+07-08 08:03:51.798 19783 19783 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+07-08 08:03:51.798 19783 19783 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+07-08 08:03:51.807 19783 19783 I com.negi.survey: Could not load runtime generated app image: Boot image checksum mismatch (0x8711e6d7 != 0x2f2c3bf7) in image /data/user/0/com.negi.survey/cache/oat_primary/arm64/base.art
+07-08 08:03:51.808 19783 19783 D nativeloader: Configuring clns-9 for other apk /data/app/~~iGpZo-lJAbYSSAaeRWZ8xw==/com.negi.survey-2KnbEk2cM_Zw9CsocNBXMA==/base.apk. target_sdk_version=36, uses_libraries=libOpenCL.so, library_path=/data/app/~~iGpZo-lJAbYSSAaeRWZ8xw==/com.negi.survey-2KnbEk2cM_Zw9CsocNBXMA==/lib/arm64:/data/app/~~iGpZo-lJAbYSSAaeRWZ8xw==/com.negi.survey-2KnbEk2cM_Zw9CsocNBXMA==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.negi.survey
+07-08 08:03:51.819 19783 19783 V GraphicsEnvironment: Currently set values for:
+07-08 08:03:51.819 19783 19783 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+07-08 08:03:51.819 19783 19783 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+07-08 08:03:51.819 19783 19783 V GraphicsEnvironment: com.negi.survey is not listed in per-application setting
+07-08 08:03:51.819 19783 19783 V GraphicsEnvironment: ANGLE allowlist from config: 
+07-08 08:03:51.819 19783 19783 V GraphicsEnvironment: com.negi.survey is not listed in ANGLE allowlist or settings, returning default
+07-08 08:03:51.819 19783 19783 V GraphicsEnvironment: App is not on the allowlist for updatable production driver.
+07-08 08:03:51.869 19783 19783 D nativeloader: Load /data/app/~~iGpZo-lJAbYSSAaeRWZ8xw==/com.negi.survey-2KnbEk2cM_Zw9CsocNBXMA==/base.apk!/lib/arm64-v8a/liblitertlm_jni.so using class loader ns clns-9 (caller=/data/app/~~iGpZo-lJAbYSSAaeRWZ8xw==/com.negi.survey-2KnbEk2cM_Zw9CsocNBXMA==/base.apk!classes4.dex): ok
+07-08 08:03:51.869 19783 19783 D SurveyApp: Loaded LiteRTLM JNI: litertlm_jni where=attachBaseContext
+07-08 08:03:51.886 19783 19783 D AppRingLogStore: installed: dir=/data/user/0/com.negi.survey/files/diagnostics/applog_ring idx=0
+07-08 08:03:51.892 19783 19833 D RuntimeLogStore: openWriter: start -> /data/user/0/com.negi.survey/files/diagnostics/runtime_logs/rtlog_20260708_150351_884_pid19783_seq1.log (bytes=0 format=LEGACY)
+07-08 08:03:51.893 19783 19783 D CrashCapture: install: ensured default handler. where=SurveyApp:attachBaseContext pid=19783 default=com.negi.survey.CrashCapture$CrashHandler@b736dfa
+07-08 08:03:51.893 19783 19833 D RuntimeLogStore: retention: start files=2 kept=2 totalBytes=1768
+07-08 08:03:51.895 19783 19783 D CrashCapture: install: ensured default handler. where=SurveyApp:onCreate(rewrap) pid=19783 default=com.negi.survey.CrashCapture$CrashHandler@b736dfa
+07-08 08:03:51.896 19783 19783 D CrashCapture: registerSelfHealing: ActivityLifecycleCallbacks registered. mode=onResumedOnly
+07-08 08:03:51.906 19783 19849 D UploadRescheduleRcvr: No GitHub pending files for action=android.intent.action.BOOT_COMPLETED
+07-08 08:03:52.037 19783 19849 D WM-PackageManagerHelper: Skipping component enablement for androidx.work.impl.background.systemjob.SystemJobService
+07-08 08:03:52.037 19783 19849 D WM-Schedulers: Created SystemJobScheduler and enabled SystemJobService
+07-08 08:03:52.038 19783 19923 D WM-ForceStopRunnable: Is default app process = true
+07-08 08:03:52.039 19783 19923 D WM-ForceStopRunnable: Performing cleanup operations.
+07-08 08:03:52.053 19783 19923 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+07-08 08:03:52.219 19783 19849 D github_upload: choosePolicy: uniqueName=upload_runtime_logs_startup policy=REPLACE states=[]
+07-08 08:03:52.219 19783 19849 D github_upload: enqueueStartupRuntimeLogsUpload: uniqueName=upload_runtime_logs_startup policy=REPLACE
+07-08 08:03:52.222 19783 19849 D UploadRescheduleRcvr: Enqueued runtime logs upload for action=android.intent.action.BOOT_COMPLETED reason=receiver_boot_completed
+07-08 08:03:52.259 19783 20015 D WM-SystemJobScheduler: Scheduling work ID 3c78b496-2fd0-4dab-bcda-60cc14f23e60Job ID 24
+07-08 08:03:52.262 19783 20015 D WM-GreedyScheduler: Starting tracking for 3c78b496-2fd0-4dab-bcda-60cc14f23e60
+07-08 08:03:52.266 19783 20015 D WM-PackageManagerHelper: Skipping component enablement for androidx.work.impl.background.systemalarm.RescheduleReceiver
+07-08 08:03:52.276 19783 20015 D WM-ConstraintTracker: NetworkStateTracker24: initial state = NetworkState(isConnected=true, isValidated=true, isMetered=false, isNotRoaming=true, isBlocked=false)
+07-08 08:03:52.276 19783 20015 D WM-NetworkStateTracker: Registering network callback
+07-08 08:03:52.280 19783 20015 D ConnectivityManager: StackLog: [android.net.ConnectivityManager.sendRequestForNetwork(ConnectivityManager.java:4744)] [android.net.ConnectivityManager.registerDefaultNetworkCallbackForUid(ConnectivityManager.java:5469)] [android.net.ConnectivityManager.registerDefaultNetworkCallback(ConnectivityManager.java:5436)] [android.net.ConnectivityManager.registerDefaultNetworkCallback(ConnectivityManager.java:5410)] [androidx.work.impl.utils.NetworkApi24.registerDefaultNetworkCallbackCompat(NetworkApi24.kt:26)] [androidx.work.impl.constraints.trackers.NetworkStateTracker24.startTracking(NetworkStateTracker.kt:215)] [androidx.work.impl.constraints.trackers.ConstraintTracker.addListener(ConstraintTracker.kt:51)] [androidx.work.impl.constraints.controllers.BaseConstraintController$track$1.invokeSuspend(ContraintControllers.kt:62)] [androidx.work.impl.constraints.controllers.BaseConstraintController$track$1.invoke(Unknown Source:8)] [androidx.work.impl.constraints.controllers.BaseConstraintController$track$1.invoke(Unknown Source:4)] [kotlinx.coroutines.flow.ChannelFlowBuilder.collectTo$suspendImpl(Builders.kt:316)] [kotlinx.coroutines.flow.ChannelFlowBuilder.collectTo(Unknown Source:0)] [kotlinx.coroutines.flow.CallbackFlowBuilder.collectTo(Builders.kt:330)] [kotlinx.coroutines.flow.internal.ChannelFlow$collectToFun$1.invokeSuspend(ChannelFlow.kt:56)] [kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)] [kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)] [androidx.work.impl.utils.SerialExecutorImpl$Task.run(SerialExecutorImpl.java:96)] [java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1154)] [java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:652)] [java.lang.Thread.run(Thread.java:1564)]
+07-08 08:03:52.284 19783 20014 D WM-PackageManagerHelper: androidx.work.impl.background.systemalarm.RescheduleReceiver enabled
+07-08 08:03:52.286 19783 20030 D WM-NetworkStateTracker: Network capabilities changed: [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=11186Kbps LinkDnBandwidth>=255114Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /192.168.1.137, Security type: 4, Supplicant state: COMPLETED, Wi-Fi standard: 11ax, RSSI: -52, Link speed: 137Mbps, Tx Link speed: 137Mbps, Max Supported Tx Link speed: 573Mbps, Rx Link speed: 172Mbps, Max Supported Rx Link speed: 573Mbps, Frequency: 5220MHz, Net ID: -1, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -52 UnderlyingNetworks: Null]
+07-08 08:03:52.286 19783 20030 D WM-NetworkStateTracker: Network blocked status changed: false
+07-08 08:03:52.289 19783 20014 D WM-GreedyScheduler: Constraints met: Scheduling work ID WorkGenerationalId(workSpecId=3c78b496-2fd0-4dab-bcda-60cc14f23e60, generation=0)
+07-08 08:03:52.292 19783 20014 D WM-Processor: Processor: processing WorkGenerationalId(workSpecId=3c78b496-2fd0-4dab-bcda-60cc14f23e60, generation=0)
+07-08 08:03:52.302 19783 19783 D WM-WorkerWrapper: Starting work for com.negi.survey.net.GitHubUploadWorker
+07-08 08:03:52.310 19783 20015 I WM-Processor: Moving WorkSpec (3c78b496-2fd0-4dab-bcda-60cc14f23e60) to the foreground
+07-08 08:03:52.329 19783 20014 D WM-WorkProgressUpdater: Updating progress for 3c78b496-2fd0-4dab-bcda-60cc14f23e60 (Data {pct : 3, mode : startup_runtime_logs})
+07-08 08:03:52.330 19783 19783 I WM-SystemFgDispatcher: Started foreground service Intent { act=ACTION_START_FOREGROUND xflg=0x4 cmp=com.negi.survey/androidx.work.impl.foreground.SystemForegroundService (has extras) }
+07-08 08:03:52.330 19783 19783 D WM-SystemFgDispatcher: Notifying with (id:4096, workSpecId: 3c78b496-2fd0-4dab-bcda-60cc14f23e60, notificationType :1)
+07-08 08:03:52.337 19783 19783 W WM-SystemFgService: Unable to start foreground service
+07-08 08:03:52.337 19783 19783 W WM-SystemFgService: android.app.ForegroundServiceStartNotAllowedException: FGS type dataSync not allowed to start from BOOT_COMPLETED!
+07-08 08:03:52.337 19783 19783 W WM-SystemFgService: 	at android.app.ForegroundServiceStartNotAllowedException$1.createFromParcel(ForegroundServiceStartNotAllowedException.java:54)
+07-08 08:03:52.337 19783 19783 W WM-SystemFgService: 	at android.app.ForegroundServiceStartNotAllowedException$1.createFromParcel(ForegroundServiceStartNotAllowedException.java:50)
+07-08 08:03:52.337 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.readParcelableInternal(Parcel.java:5229)
+07-08 08:03:52.337 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.readParcelable(Parcel.java:5211)
+07-08 08:03:52.337 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3349)
+07-08 08:03:52.337 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.createException(Parcel.java:3338)
+07-08 08:03:52.337 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.readException(Parcel.java:3321)
+07-08 08:03:52.337 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.readException(Parcel.java:3263)
+07-08 08:03:52.337 19783 19783 W WM-SystemFgService: 	at android.app.IActivityManager$Stub$Proxy.setServiceForeground(IActivityManager.java:7539)
+07-08 08:03:52.337 19783 19783 W WM-SystemFgService: 	at android.app.Service.startForeground(Service.java:863)
+07-08 08:03:52.337 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundService$Api31Impl.startForeground(SystemForegroundService.java:192)
+07-08 08:03:52.337 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundService.startForeground(SystemForegroundService.java:141)
+07-08 08:03:52.337 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundDispatcher.handleNotify(SystemForegroundDispatcher.java:332)
+07-08 08:03:52.337 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundDispatcher.onStartCommand(SystemForegroundDispatcher.java:221)
+07-08 08:03:52.337 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundService.onStartCommand(SystemForegroundService.java:80)
+07-08 08:03:52.337 19783 19783 W WM-SystemFgService: 	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:6087)
+07-08 08:03:52.337 19783 19783 W WM-SystemFgService: 	at android.app.ActivityThread.-$$Nest$mhandleServiceArgs(Unknown Source:0)
+07-08 08:03:52.337 19783 19783 W WM-SystemFgService: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2974)
+07-08 08:03:52.337 19783 19783 W WM-SystemFgService: 	at android.os.Handler.dispatchMessage(Handler.java:110)
+07-08 08:03:52.337 19783 19783 W WM-SystemFgService: 	at android.os.Looper.loopOnce(Looper.java:273)
+07-08 08:03:52.337 19783 19783 W WM-SystemFgService: 	at android.os.Looper.loop(Looper.java:363)
+07-08 08:03:52.337 19783 19783 W WM-SystemFgService: 	at android.app.ActivityThread.main(ActivityThread.java:10060)
+07-08 08:03:52.337 19783 19783 W WM-SystemFgService: 	at java.lang.reflect.Method.invoke(Native Method)
+07-08 08:03:52.337 19783 19783 W WM-SystemFgService: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:632)
+07-08 08:03:52.337 19783 19783 W WM-SystemFgService: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:975)
+07-08 08:03:52.337 19783 19783 D WM-SystemFgDispatcher: Notifying with (id:4096, workSpecId: 3c78b496-2fd0-4dab-bcda-60cc14f23e60, notificationType :1)
+--------- beginning of system
+07-08 08:03:52.337 19783 19783 I NotificationManager: com.negi.survey: notify(4096, null, Notification(channel=uploads shortcut=null contentView=null vibrate=null sound=null defaults=0 flags=ONGOING_EVENT|ONLY_ALERT_ONCE color=0x00000000 category=progress vis=PRIVATE semFlags=0x0 semPriority=0 semMissedCount=0)) as user
+07-08 08:03:52.339 19783 19783 D NotificationManager: BOOTING pkg =com.negi.survey mBlockedChannelsForOverflowNoti=[]
+07-08 08:03:52.342 19783 19783 W WM-SystemFgService: Unable to start foreground service
+07-08 08:03:52.342 19783 19783 W WM-SystemFgService: android.app.ForegroundServiceStartNotAllowedException: FGS type dataSync not allowed to start from BOOT_COMPLETED!
+07-08 08:03:52.342 19783 19783 W WM-SystemFgService: 	at android.app.ForegroundServiceStartNotAllowedException$1.createFromParcel(ForegroundServiceStartNotAllowedException.java:54)
+07-08 08:03:52.342 19783 19783 W WM-SystemFgService: 	at android.app.ForegroundServiceStartNotAllowedException$1.createFromParcel(ForegroundServiceStartNotAllowedException.java:50)
+07-08 08:03:52.342 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.readParcelableInternal(Parcel.java:5229)
+07-08 08:03:52.342 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.readParcelable(Parcel.java:5211)
+07-08 08:03:52.342 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3349)
+07-08 08:03:52.342 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.createException(Parcel.java:3338)
+07-08 08:03:52.342 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.readException(Parcel.java:3321)
+07-08 08:03:52.342 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.readException(Parcel.java:3263)
+07-08 08:03:52.342 19783 19783 W WM-SystemFgService: 	at android.app.IActivityManager$Stub$Proxy.setServiceForeground(IActivityManager.java:7539)
+07-08 08:03:52.342 19783 19783 W WM-SystemFgService: 	at android.app.Service.startForeground(Service.java:863)
+07-08 08:03:52.342 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundService$Api31Impl.startForeground(SystemForegroundService.java:192)
+07-08 08:03:52.342 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundService.startForeground(SystemForegroundService.java:141)
+07-08 08:03:52.342 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundDispatcher.handleNotify(SystemForegroundDispatcher.java:332)
+07-08 08:03:52.342 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundDispatcher.onStartCommand(SystemForegroundDispatcher.java:223)
+07-08 08:03:52.342 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundService.onStartCommand(SystemForegroundService.java:80)
+07-08 08:03:52.342 19783 19783 W WM-SystemFgService: 	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:6087)
+07-08 08:03:52.342 19783 19783 W WM-SystemFgService: 	at android.app.ActivityThread.-$$Nest$mhandleServiceArgs(Unknown Source:0)
+07-08 08:03:52.342 19783 19783 W WM-SystemFgService: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2974)
+07-08 08:03:52.342 19783 19783 W WM-SystemFgService: 	at android.os.Handler.dispatchMessage(Handler.java:110)
+07-08 08:03:52.342 19783 19783 W WM-SystemFgService: 	at android.os.Looper.loopOnce(Looper.java:273)
+07-08 08:03:52.342 19783 19783 W WM-SystemFgService: 	at android.os.Looper.loop(Looper.java:363)
+07-08 08:03:52.342 19783 19783 W WM-SystemFgService: 	at android.app.ActivityThread.main(ActivityThread.java:10060)
+07-08 08:03:52.342 19783 19783 W WM-SystemFgService: 	at java.lang.reflect.Method.invoke(Native Method)
+07-08 08:03:52.342 19783 19783 W WM-SystemFgService: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:632)
+07-08 08:03:52.342 19783 19783 W WM-SystemFgService: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:975)
+07-08 08:03:52.353 19783 20014 I WM-Processor: Moving WorkSpec (3c78b496-2fd0-4dab-bcda-60cc14f23e60) to the foreground
+07-08 08:03:52.354 19783 19783 D WM-SystemFgDispatcher: Notifying with (id:4096, workSpecId: 3c78b496-2fd0-4dab-bcda-60cc14f23e60, notificationType :1)
+07-08 08:03:52.354 19783 19783 I NotificationManager: com.negi.survey: notify(4096, null, Notification(channel=uploads shortcut=null contentView=null vibrate=null sound=null defaults=0 flags=ONGOING_EVENT|ONLY_ALERT_ONCE color=0x00000000 category=progress vis=PRIVATE semFlags=0x0 semPriority=0 semMissedCount=0)) as user
+07-08 08:03:52.359 19783 19783 W WM-SystemFgService: Unable to start foreground service
+07-08 08:03:52.359 19783 19783 W WM-SystemFgService: android.app.ForegroundServiceStartNotAllowedException: FGS type dataSync not allowed to start from BOOT_COMPLETED!
+07-08 08:03:52.359 19783 19783 W WM-SystemFgService: 	at android.app.ForegroundServiceStartNotAllowedException$1.createFromParcel(ForegroundServiceStartNotAllowedException.java:54)
+07-08 08:03:52.359 19783 19783 W WM-SystemFgService: 	at android.app.ForegroundServiceStartNotAllowedException$1.createFromParcel(ForegroundServiceStartNotAllowedException.java:50)
+07-08 08:03:52.359 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.readParcelableInternal(Parcel.java:5229)
+07-08 08:03:52.359 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.readParcelable(Parcel.java:5211)
+07-08 08:03:52.359 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3349)
+07-08 08:03:52.359 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.createException(Parcel.java:3338)
+07-08 08:03:52.359 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.readException(Parcel.java:3321)
+07-08 08:03:52.359 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.readException(Parcel.java:3263)
+07-08 08:03:52.359 19783 19783 W WM-SystemFgService: 	at android.app.IActivityManager$Stub$Proxy.setServiceForeground(IActivityManager.java:7539)
+07-08 08:03:52.359 19783 19783 W WM-SystemFgService: 	at android.app.Service.startForeground(Service.java:863)
+07-08 08:03:52.359 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundService$Api31Impl.startForeground(SystemForegroundService.java:192)
+07-08 08:03:52.359 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundService.startForeground(SystemForegroundService.java:141)
+07-08 08:03:52.359 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundDispatcher.handleNotify(SystemForegroundDispatcher.java:332)
+07-08 08:03:52.359 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundDispatcher.onStartCommand(SystemForegroundDispatcher.java:223)
+07-08 08:03:52.359 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundService.onStartCommand(SystemForegroundService.java:80)
+07-08 08:03:52.359 19783 19783 W WM-SystemFgService: 	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:6087)
+07-08 08:03:52.359 19783 19783 W WM-SystemFgService: 	at android.app.ActivityThread.-$$Nest$mhandleServiceArgs(Unknown Source:0)
+07-08 08:03:52.359 19783 19783 W WM-SystemFgService: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2974)
+07-08 08:03:52.359 19783 19783 W WM-SystemFgService: 	at android.os.Handler.dispatchMessage(Handler.java:110)
+07-08 08:03:52.359 19783 19783 W WM-SystemFgService: 	at android.os.Looper.loopOnce(Looper.java:273)
+07-08 08:03:52.359 19783 19783 W WM-SystemFgService: 	at android.os.Looper.loop(Looper.java:363)
+07-08 08:03:52.359 19783 19783 W WM-SystemFgService: 	at android.app.ActivityThread.main(ActivityThread.java:10060)
+07-08 08:03:52.359 19783 19783 W WM-SystemFgService: 	at java.lang.reflect.Method.invoke(Native Method)
+07-08 08:03:52.359 19783 19783 W WM-SystemFgService: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:632)
+07-08 08:03:52.359 19783 19783 W WM-SystemFgService: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:975)
+07-08 08:03:53.436 19783 19783 D WM-SystemJobService: onStartJob for WorkGenerationalId(workSpecId=3c78b496-2fd0-4dab-bcda-60cc14f23e60, generation=0)
+07-08 08:03:53.441 19783 20014 D WM-Processor: Work WorkGenerationalId(workSpecId=3c78b496-2fd0-4dab-bcda-60cc14f23e60, generation=0) is already enqueued for processing
+07-08 08:03:53.549 19783 19833 D RuntimeLogStore: openWriter: rotate:plain_snapshot:receiver_boot_completed -> /data/user/0/com.negi.survey/files/diagnostics/runtime_logs/rtlog_20260708_150353_548_pid19783_seq2.log (bytes=0 format=LEGACY)
+07-08 08:03:53.549 19783 19833 D RuntimeLogStore: retention: rotate:plain_snapshot:receiver_boot_completed files=3 kept=3 totalBytes=3497
+07-08 08:03:53.554 19783 19851 D github_upload: doRuntimeLogsUpload: remoteBaseDir=diagnostics/runtime_logs/2026-07-08/runtime_logs_20260708_080353_pid19783_receiver_boot_completed toUpload=3 bytes=4687 dedupe=true deleteSource=true deletedSourcePre=0 preview='plain_logs_manifest_20260708_150353_551_pid19783_receiver_boot_completed.json|runtime_log_20260708_150353_551_pid19783_receiver_boot_completed__rtlog_20260708_150351_884_pid19783_seq1.log|runtime_log_20260708_150353_551_pid19783_receiver_boot_completed__rtlog_20260706_133144_632_pid17044_seq2.log'
+07-08 08:03:53.554 19783 19851 D GitHubUploader: uploadStream: owner=ishizuki-tech repo=SurveyExports branch=main path=diagnostics/runtime_logs/2026-07-08/runtime_logs_20260708_080353_pid19783_receiver_boot_completed/plain_logs_manifest_20260708_150353_551_pid19783_receiver_boot_completed.json size=1546 maxRawBytesHint=1000000 maxRequestBytesHint=2800000
+07-08 08:03:53.555 19783 20015 D WM-WorkProgressUpdater: Updating progress for 3c78b496-2fd0-4dab-bcda-60cc14f23e60 (Data {pct : 10, mode : startup_runtime_logs})
+07-08 08:03:53.559 19783 20019 I WM-Processor: Moving WorkSpec (3c78b496-2fd0-4dab-bcda-60cc14f23e60) to the foreground
+07-08 08:03:53.560 19783 19783 D WM-SystemFgDispatcher: Notifying with (id:4096, workSpecId: 3c78b496-2fd0-4dab-bcda-60cc14f23e60, notificationType :1)
+07-08 08:03:53.560 19783 19783 I NotificationManager: com.negi.survey: notify(4096, null, Notification(channel=uploads shortcut=null contentView=null vibrate=null sound=null defaults=0 flags=ONGOING_EVENT|ONLY_ALERT_ONCE color=0x00000000 category=progress vis=PRIVATE semFlags=0x0 semPriority=0 semMissedCount=0)) as user
+07-08 08:03:53.564 19783 19783 W WM-SystemFgService: Unable to start foreground service
+07-08 08:03:53.564 19783 19783 W WM-SystemFgService: android.app.ForegroundServiceStartNotAllowedException: FGS type dataSync not allowed to start from BOOT_COMPLETED!
+07-08 08:03:53.564 19783 19783 W WM-SystemFgService: 	at android.app.ForegroundServiceStartNotAllowedException$1.createFromParcel(ForegroundServiceStartNotAllowedException.java:54)
+07-08 08:03:53.564 19783 19783 W WM-SystemFgService: 	at android.app.ForegroundServiceStartNotAllowedException$1.createFromParcel(ForegroundServiceStartNotAllowedException.java:50)
+07-08 08:03:53.564 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.readParcelableInternal(Parcel.java:5229)
+07-08 08:03:53.564 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.readParcelable(Parcel.java:5211)
+07-08 08:03:53.564 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3349)
+07-08 08:03:53.564 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.createException(Parcel.java:3338)
+07-08 08:03:53.564 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.readException(Parcel.java:3321)
+07-08 08:03:53.564 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.readException(Parcel.java:3263)
+07-08 08:03:53.564 19783 19783 W WM-SystemFgService: 	at android.app.IActivityManager$Stub$Proxy.setServiceForeground(IActivityManager.java:7539)
+07-08 08:03:53.564 19783 19783 W WM-SystemFgService: 	at android.app.Service.startForeground(Service.java:863)
+07-08 08:03:53.564 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundService$Api31Impl.startForeground(SystemForegroundService.java:192)
+07-08 08:03:53.564 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundService.startForeground(SystemForegroundService.java:141)
+07-08 08:03:53.564 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundDispatcher.handleNotify(SystemForegroundDispatcher.java:332)
+07-08 08:03:53.564 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundDispatcher.onStartCommand(SystemForegroundDispatcher.java:223)
+07-08 08:03:53.564 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundService.onStartCommand(SystemForegroundService.java:80)
+07-08 08:03:53.564 19783 19783 W WM-SystemFgService: 	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:6087)
+07-08 08:03:53.564 19783 19783 W WM-SystemFgService: 	at android.app.ActivityThread.-$$Nest$mhandleServiceArgs(Unknown Source:0)
+07-08 08:03:53.564 19783 19783 W WM-SystemFgService: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2974)
+07-08 08:03:53.564 19783 19783 W WM-SystemFgService: 	at android.os.Handler.dispatchMessage(Handler.java:110)
+07-08 08:03:53.564 19783 19783 W WM-SystemFgService: 	at android.os.Looper.loopOnce(Looper.java:273)
+07-08 08:03:53.564 19783 19783 W WM-SystemFgService: 	at android.os.Looper.loop(Looper.java:363)
+07-08 08:03:53.564 19783 19783 W WM-SystemFgService: 	at android.app.ActivityThread.main(ActivityThread.java:10060)
+07-08 08:03:53.564 19783 19783 W WM-SystemFgService: 	at java.lang.reflect.Method.invoke(Native Method)
+07-08 08:03:53.564 19783 19783 W WM-SystemFgService: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:632)
+07-08 08:03:53.564 19783 19783 W WM-SystemFgService: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:975)
+07-08 08:03:53.823 19783 20014 D WM-WorkProgressUpdater: Updating progress for 3c78b496-2fd0-4dab-bcda-60cc14f23e60 (Data {pct : 12, mode : startup_runtime_logs})
+07-08 08:03:53.827 19783 20014 I WM-Processor: Moving WorkSpec (3c78b496-2fd0-4dab-bcda-60cc14f23e60) to the foreground
+07-08 08:03:53.842 19783 19783 D WM-SystemFgDispatcher: Notifying with (id:4096, workSpecId: 3c78b496-2fd0-4dab-bcda-60cc14f23e60, notificationType :1)
+07-08 08:03:53.842 19783 19783 I NotificationManager: com.negi.survey: notify(4096, null, Notification(channel=uploads shortcut=null contentView=null vibrate=null sound=null defaults=0 flags=ONGOING_EVENT|ONLY_ALERT_ONCE color=0x00000000 category=progress vis=PRIVATE semFlags=0x0 semPriority=0 semMissedCount=0)) as user
+07-08 08:03:53.844 19783 20019 D WM-WorkProgressUpdater: Updating progress for 3c78b496-2fd0-4dab-bcda-60cc14f23e60 (Data {pct : 33, mode : startup_runtime_logs})
+07-08 08:03:53.845 19783 19783 W WM-SystemFgService: Unable to start foreground service
+07-08 08:03:53.845 19783 19783 W WM-SystemFgService: android.app.ForegroundServiceStartNotAllowedException: FGS type dataSync not allowed to start from BOOT_COMPLETED!
+07-08 08:03:53.845 19783 19783 W WM-SystemFgService: 	at android.app.ForegroundServiceStartNotAllowedException$1.createFromParcel(ForegroundServiceStartNotAllowedException.java:54)
+07-08 08:03:53.845 19783 19783 W WM-SystemFgService: 	at android.app.ForegroundServiceStartNotAllowedException$1.createFromParcel(ForegroundServiceStartNotAllowedException.java:50)
+07-08 08:03:53.845 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.readParcelableInternal(Parcel.java:5229)
+07-08 08:03:53.845 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.readParcelable(Parcel.java:5211)
+07-08 08:03:53.845 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3349)
+07-08 08:03:53.845 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.createException(Parcel.java:3338)
+07-08 08:03:53.845 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.readException(Parcel.java:3321)
+07-08 08:03:53.845 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.readException(Parcel.java:3263)
+07-08 08:03:53.845 19783 19783 W WM-SystemFgService: 	at android.app.IActivityManager$Stub$Proxy.setServiceForeground(IActivityManager.java:7539)
+07-08 08:03:53.845 19783 19783 W WM-SystemFgService: 	at android.app.Service.startForeground(Service.java:863)
+07-08 08:03:53.845 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundService$Api31Impl.startForeground(SystemForegroundService.java:192)
+07-08 08:03:53.845 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundService.startForeground(SystemForegroundService.java:141)
+07-08 08:03:53.845 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundDispatcher.handleNotify(SystemForegroundDispatcher.java:332)
+07-08 08:03:53.845 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundDispatcher.onStartCommand(SystemForegroundDispatcher.java:223)
+07-08 08:03:53.845 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundService.onStartCommand(SystemForegroundService.java:80)
+07-08 08:03:53.845 19783 19783 W WM-SystemFgService: 	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:6087)
+07-08 08:03:53.845 19783 19783 W WM-SystemFgService: 	at android.app.ActivityThread.-$$Nest$mhandleServiceArgs(Unknown Source:0)
+07-08 08:03:53.845 19783 19783 W WM-SystemFgService: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2974)
+07-08 08:03:53.845 19783 19783 W WM-SystemFgService: 	at android.os.Handler.dispatchMessage(Handler.java:110)
+07-08 08:03:53.845 19783 19783 W WM-SystemFgService: 	at android.os.Looper.loopOnce(Looper.java:273)
+07-08 08:03:53.845 19783 19783 W WM-SystemFgService: 	at android.os.Looper.loop(Looper.java:363)
+07-08 08:03:53.845 19783 19783 W WM-SystemFgService: 	at android.app.ActivityThread.main(ActivityThread.java:10060)
+07-08 08:03:53.845 19783 19783 W WM-SystemFgService: 	at java.lang.reflect.Method.invoke(Native Method)
+07-08 08:03:53.845 19783 19783 W WM-SystemFgService: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:632)
+07-08 08:03:53.845 19783 19783 W WM-SystemFgService: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:975)
+07-08 08:03:53.849 19783 20019 I WM-Processor: Moving WorkSpec (3c78b496-2fd0-4dab-bcda-60cc14f23e60) to the foreground
+07-08 08:03:53.852 19783 19783 D WM-SystemFgDispatcher: Notifying with (id:4096, workSpecId: 3c78b496-2fd0-4dab-bcda-60cc14f23e60, notificationType :1)
+07-08 08:03:53.852 19783 19783 I NotificationManager: com.negi.survey: notify(4096, null, Notification(channel=uploads shortcut=null contentView=null vibrate=null sound=null defaults=0 flags=ONGOING_EVENT|ONLY_ALERT_ONCE color=0x00000000 category=progress vis=PRIVATE semFlags=0x0 semPriority=0 semMissedCount=0)) as user
+07-08 08:03:53.855 19783 19783 W WM-SystemFgService: Unable to start foreground service
+07-08 08:03:53.855 19783 19783 W WM-SystemFgService: android.app.ForegroundServiceStartNotAllowedException: FGS type dataSync not allowed to start from BOOT_COMPLETED!
+07-08 08:03:53.855 19783 19783 W WM-SystemFgService: 	at android.app.ForegroundServiceStartNotAllowedException$1.createFromParcel(ForegroundServiceStartNotAllowedException.java:54)
+07-08 08:03:53.855 19783 19783 W WM-SystemFgService: 	at android.app.ForegroundServiceStartNotAllowedException$1.createFromParcel(ForegroundServiceStartNotAllowedException.java:50)
+07-08 08:03:53.855 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.readParcelableInternal(Parcel.java:5229)
+07-08 08:03:53.855 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.readParcelable(Parcel.java:5211)
+07-08 08:03:53.855 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3349)
+07-08 08:03:53.855 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.createException(Parcel.java:3338)
+07-08 08:03:53.855 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.readException(Parcel.java:3321)
+07-08 08:03:53.855 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.readException(Parcel.java:3263)
+07-08 08:03:53.855 19783 19783 W WM-SystemFgService: 	at android.app.IActivityManager$Stub$Proxy.setServiceForeground(IActivityManager.java:7539)
+07-08 08:03:53.855 19783 19783 W WM-SystemFgService: 	at android.app.Service.startForeground(Service.java:863)
+07-08 08:03:53.855 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundService$Api31Impl.startForeground(SystemForegroundService.java:192)
+07-08 08:03:53.855 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundService.startForeground(SystemForegroundService.java:141)
+07-08 08:03:53.855 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundDispatcher.handleNotify(SystemForegroundDispatcher.java:332)
+07-08 08:03:53.855 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundDispatcher.onStartCommand(SystemForegroundDispatcher.java:223)
+07-08 08:03:53.855 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundService.onStartCommand(SystemForegroundService.java:80)
+07-08 08:03:53.855 19783 19783 W WM-SystemFgService: 	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:6087)
+07-08 08:03:53.855 19783 19783 W WM-SystemFgService: 	at android.app.ActivityThread.-$$Nest$mhandleServiceArgs(Unknown Source:0)
+07-08 08:03:53.855 19783 19783 W WM-SystemFgService: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2974)
+07-08 08:03:53.855 19783 19783 W WM-SystemFgService: 	at android.os.Handler.dispatchMessage(Handler.java:110)
+07-08 08:03:53.855 19783 19783 W WM-SystemFgService: 	at android.os.Looper.loopOnce(Looper.java:273)
+07-08 08:03:53.855 19783 19783 W WM-SystemFgService: 	at android.os.Looper.loop(Looper.java:363)
+07-08 08:03:53.855 19783 19783 W WM-SystemFgService: 	at android.app.ActivityThread.main(ActivityThread.java:10060)
+07-08 08:03:53.855 19783 19783 W WM-SystemFgService: 	at java.lang.reflect.Method.invoke(Native Method)
+07-08 08:03:53.855 19783 19783 W WM-SystemFgService: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:632)
+07-08 08:03:53.855 19783 19783 W WM-SystemFgService: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:975)
+07-08 08:03:54.412 19783 19783 D github_upload: choosePolicy: uniqueName=upload_runtime_logs_startup policy=KEEP states=[RUNNING]
+07-08 08:03:54.412 19783 19783 D github_upload: enqueueStartupRuntimeLogsUpload: uniqueName=upload_runtime_logs_startup policy=KEEP
+07-08 08:03:54.416 19783 19783 D github_upload: choosePolicy: uniqueName=upload_ring_logs_startup policy=REPLACE states=[]
+07-08 08:03:54.416 19783 19783 D github_upload: enqueueStartupRingLogsUpload: uniqueName=upload_ring_logs_startup policy=REPLACE
+07-08 08:03:54.418 19783 20726 D CrashCapture: enqueuePendingCrashUploadsIfPossible enter where=SurveyApp:enqueuePending(immediate):bg pid=19783 thread=CrashCapture-Enqueue
+07-08 08:03:54.430 19783 20014 D WM-SystemJobScheduler: Scheduling work ID 48872408-4f27-4c4d-92c0-a94a5f24a5e7Job ID 25
+07-08 08:03:54.432 19783 20014 D WM-GreedyScheduler: Starting tracking for 48872408-4f27-4c4d-92c0-a94a5f24a5e7
+07-08 08:03:54.433 19783 19923 D WM-GreedyScheduler: Constraints met: Scheduling work ID WorkGenerationalId(workSpecId=48872408-4f27-4c4d-92c0-a94a5f24a5e7, generation=0)
+07-08 08:03:54.434 19783 19923 D WM-Processor: Processor: processing WorkGenerationalId(workSpecId=48872408-4f27-4c4d-92c0-a94a5f24a5e7, generation=0)
+07-08 08:03:54.437 19783 19783 D WM-WorkerWrapper: Starting work for com.negi.survey.net.GitHubUploadWorker
+07-08 08:03:54.444 19783 19923 I WM-Processor: Moving WorkSpec (48872408-4f27-4c4d-92c0-a94a5f24a5e7) to the foreground
+07-08 08:03:54.447 19783 19783 I WM-SystemFgDispatcher: Started foreground service Intent { act=ACTION_START_FOREGROUND xflg=0x4 cmp=com.negi.survey/androidx.work.impl.foreground.SystemForegroundService (has extras) }
+07-08 08:03:54.447 19783 19783 D WM-SystemFgDispatcher: Notifying with (id:9161, workSpecId: 48872408-4f27-4c4d-92c0-a94a5f24a5e7, notificationType :1)
+07-08 08:03:54.447 19783 19783 I NotificationManager: com.negi.survey: notify(9161, null, Notification(channel=uploads shortcut=null contentView=null vibrate=null sound=null defaults=0 flags=ONGOING_EVENT|ONLY_ALERT_ONCE color=0x00000000 category=progress vis=PRIVATE semFlags=0x0 semPriority=0 semMissedCount=0)) as user
+07-08 08:03:54.450 19783 19783 W WM-SystemFgService: Unable to start foreground service
+07-08 08:03:54.450 19783 19783 W WM-SystemFgService: android.app.ForegroundServiceStartNotAllowedException: FGS type dataSync not allowed to start from BOOT_COMPLETED!
+07-08 08:03:54.450 19783 19783 W WM-SystemFgService: 	at android.app.ForegroundServiceStartNotAllowedException$1.createFromParcel(ForegroundServiceStartNotAllowedException.java:54)
+07-08 08:03:54.450 19783 19783 W WM-SystemFgService: 	at android.app.ForegroundServiceStartNotAllowedException$1.createFromParcel(ForegroundServiceStartNotAllowedException.java:50)
+07-08 08:03:54.450 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.readParcelableInternal(Parcel.java:5229)
+07-08 08:03:54.450 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.readParcelable(Parcel.java:5211)
+07-08 08:03:54.450 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3349)
+07-08 08:03:54.450 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.createException(Parcel.java:3338)
+07-08 08:03:54.450 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.readException(Parcel.java:3321)
+07-08 08:03:54.450 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.readException(Parcel.java:3263)
+07-08 08:03:54.450 19783 19783 W WM-SystemFgService: 	at android.app.IActivityManager$Stub$Proxy.setServiceForeground(IActivityManager.java:7539)
+07-08 08:03:54.450 19783 19783 W WM-SystemFgService: 	at android.app.Service.startForeground(Service.java:863)
+07-08 08:03:54.450 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundService$Api31Impl.startForeground(SystemForegroundService.java:192)
+07-08 08:03:54.450 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundService.startForeground(SystemForegroundService.java:141)
+07-08 08:03:54.450 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundDispatcher.handleNotify(SystemForegroundDispatcher.java:332)
+07-08 08:03:54.450 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundDispatcher.onStartCommand(SystemForegroundDispatcher.java:221)
+07-08 08:03:54.450 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundService.onStartCommand(SystemForegroundService.java:80)
+07-08 08:03:54.450 19783 19783 W WM-SystemFgService: 	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:6087)
+07-08 08:03:54.450 19783 19783 W WM-SystemFgService: 	at android.app.ActivityThread.-$$Nest$mhandleServiceArgs(Unknown Source:0)
+07-08 08:03:54.450 19783 19783 W WM-SystemFgService: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2974)
+07-08 08:03:54.450 19783 19783 W WM-SystemFgService: 	at android.os.Handler.dispatchMessage(Handler.java:110)
+07-08 08:03:54.450 19783 19783 W WM-SystemFgService: 	at android.os.Looper.loopOnce(Looper.java:273)
+07-08 08:03:54.450 19783 19783 W WM-SystemFgService: 	at android.os.Looper.loop(Looper.java:363)
+07-08 08:03:54.450 19783 19783 W WM-SystemFgService: 	at android.app.ActivityThread.main(ActivityThread.java:10060)
+07-08 08:03:54.450 19783 19783 W WM-SystemFgService: 	at java.lang.reflect.Method.invoke(Native Method)
+07-08 08:03:54.450 19783 19783 W WM-SystemFgService: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:632)
+07-08 08:03:54.450 19783 19783 W WM-SystemFgService: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:975)
+07-08 08:03:54.450 19783 19783 D WM-SystemFgDispatcher: Notifying with (id:9161, workSpecId: 48872408-4f27-4c4d-92c0-a94a5f24a5e7, notificationType :1)
+07-08 08:03:54.451 19783 19783 I NotificationManager: com.negi.survey: notify(9161, null, Notification(channel=uploads shortcut=null contentView=null vibrate=null sound=null defaults=0 flags=ONGOING_EVENT|ONLY_ALERT_ONCE color=0x00000000 category=progress vis=PRIVATE semFlags=0x0 semPriority=0 semMissedCount=0)) as user
+07-08 08:03:54.452 19783 20014 D WM-WorkProgressUpdater: Updating progress for 48872408-4f27-4c4d-92c0-a94a5f24a5e7 (Data {pct : 3, mode : startup_ring_logs})
+07-08 08:03:54.456 19783 19783 W WM-SystemFgService: Unable to start foreground service
+07-08 08:03:54.456 19783 19783 W WM-SystemFgService: android.app.ForegroundServiceStartNotAllowedException: FGS type dataSync not allowed to start from BOOT_COMPLETED!
+07-08 08:03:54.456 19783 19783 W WM-SystemFgService: 	at android.app.ForegroundServiceStartNotAllowedException$1.createFromParcel(ForegroundServiceStartNotAllowedException.java:54)
+07-08 08:03:54.456 19783 19783 W WM-SystemFgService: 	at android.app.ForegroundServiceStartNotAllowedException$1.createFromParcel(ForegroundServiceStartNotAllowedException.java:50)
+07-08 08:03:54.456 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.readParcelableInternal(Parcel.java:5229)
+07-08 08:03:54.456 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.readParcelable(Parcel.java:5211)
+07-08 08:03:54.456 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3349)
+07-08 08:03:54.456 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.createException(Parcel.java:3338)
+07-08 08:03:54.456 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.readException(Parcel.java:3321)
+07-08 08:03:54.456 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.readException(Parcel.java:3263)
+07-08 08:03:54.456 19783 19783 W WM-SystemFgService: 	at android.app.IActivityManager$Stub$Proxy.setServiceForeground(IActivityManager.java:7539)
+07-08 08:03:54.456 19783 19783 W WM-SystemFgService: 	at android.app.Service.startForeground(Service.java:863)
+07-08 08:03:54.456 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundService$Api31Impl.startForeground(SystemForegroundService.java:192)
+07-08 08:03:54.456 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundService.startForeground(SystemForegroundService.java:141)
+07-08 08:03:54.456 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundDispatcher.handleNotify(SystemForegroundDispatcher.java:332)
+07-08 08:03:54.456 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundDispatcher.onStartCommand(SystemForegroundDispatcher.java:223)
+07-08 08:03:54.456 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundService.onStartCommand(SystemForegroundService.java:80)
+07-08 08:03:54.456 19783 19783 W WM-SystemFgService: 	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:6087)
+07-08 08:03:54.456 19783 19783 W WM-SystemFgService: 	at android.app.ActivityThread.-$$Nest$mhandleServiceArgs(Unknown Source:0)
+07-08 08:03:54.456 19783 19783 W WM-SystemFgService: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2974)
+07-08 08:03:54.456 19783 19783 W WM-SystemFgService: 	at android.os.Handler.dispatchMessage(Handler.java:110)
+07-08 08:03:54.456 19783 19783 W WM-SystemFgService: 	at android.os.Looper.loopOnce(Looper.java:273)
+07-08 08:03:54.456 19783 19783 W WM-SystemFgService: 	at android.os.Looper.loop(Looper.java:363)
+07-08 08:03:54.456 19783 19783 W WM-SystemFgService: 	at android.app.ActivityThread.main(ActivityThread.java:10060)
+07-08 08:03:54.456 19783 19783 W WM-SystemFgService: 	at java.lang.reflect.Method.invoke(Native Method)
+07-08 08:03:54.456 19783 19783 W WM-SystemFgService: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:632)
+07-08 08:03:54.456 19783 19783 W WM-SystemFgService: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:975)
+07-08 08:03:54.457 19783 20014 I WM-Processor: Moving WorkSpec (48872408-4f27-4c4d-92c0-a94a5f24a5e7) to the foreground
+07-08 08:03:54.460 19783 19783 D WM-SystemFgDispatcher: Notifying with (id:9161, workSpecId: 48872408-4f27-4c4d-92c0-a94a5f24a5e7, notificationType :1)
+07-08 08:03:54.460 19783 19783 I NotificationManager: com.negi.survey: notify(9161, null, Notification(channel=uploads shortcut=null contentView=null vibrate=null sound=null defaults=0 flags=ONGOING_EVENT|ONLY_ALERT_ONCE color=0x00000000 category=progress vis=PRIVATE semFlags=0x0 semPriority=0 semMissedCount=0)) as user
+07-08 08:03:54.464 19783 19783 W WM-SystemFgService: Unable to start foreground service
+07-08 08:03:54.464 19783 19783 W WM-SystemFgService: android.app.ForegroundServiceStartNotAllowedException: FGS type dataSync not allowed to start from BOOT_COMPLETED!
+07-08 08:03:54.464 19783 19783 W WM-SystemFgService: 	at android.app.ForegroundServiceStartNotAllowedException$1.createFromParcel(ForegroundServiceStartNotAllowedException.java:54)
+07-08 08:03:54.464 19783 19783 W WM-SystemFgService: 	at android.app.ForegroundServiceStartNotAllowedException$1.createFromParcel(ForegroundServiceStartNotAllowedException.java:50)
+07-08 08:03:54.464 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.readParcelableInternal(Parcel.java:5229)
+07-08 08:03:54.464 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.readParcelable(Parcel.java:5211)
+07-08 08:03:54.464 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3349)
+07-08 08:03:54.464 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.createException(Parcel.java:3338)
+07-08 08:03:54.464 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.readException(Parcel.java:3321)
+07-08 08:03:54.464 19783 19783 W WM-SystemFgService: 	at android.os.Parcel.readException(Parcel.java:3263)
+07-08 08:03:54.464 19783 19783 W WM-SystemFgService: 	at android.app.IActivityManager$Stub$Proxy.setServiceForeground(IActivityManager.java:7539)
+07-08 08:03:54.464 19783 19783 W WM-SystemFgService: 	at android.app.Service.startForeground(Service.java:863)
+07-08 08:03:54.464 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundService$Api31Impl.startForeground(SystemForegroundService.java:192)
+07-08 08:03:54.464 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundService.startForeground(SystemForegroundService.java:141)
+07-08 08:03:54.464 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundDispatcher.handleNotify(SystemForegroundDispatcher.java:332)
+07-08 08:03:54.464 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundDispatcher.onStartCommand(SystemForegroundDispatcher.java:223)
+07-08 08:03:54.464 19783 19783 W WM-SystemFgService: 	at androidx.work.impl.foreground.SystemForegroundService.onStartCommand(SystemForegroundService.java:80)
+07-08 08:03:54.464 19783 19783 W WM-SystemFgService: 	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:6087)
+07-08 08:03:54.464 19783 19783 W WM-SystemFgService: 	at android.app.ActivityThread.-$$Nest$mhandleServiceArgs(Unknown Source:0)
+07-08 08:03:54.464 19783 19783 W WM-SystemFgService: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2974)
+07-08 08:03:54.464 19783 19783 W WM-SystemFgService: 	at android.os.Handler.dispatchMessage(Handler.java:110)
+07-08 08:03:54.464 19783 19783 W WM-SystemFgService: 	at android.os.Looper.loopOnce(Looper.java:273)
+07-08 08:03:54.464 19783 19783 W WM-SystemFgService: 	at android.os.Looper.loop(Looper.java:363)
+07-08 08:03:54.464 19783 19783 W WM-SystemFgService: 	at android.app.ActivityThread.main(ActivityThread.java:10060)
+07-08 08:03:54.464 19783 19783 W WM-SystemFgService: 	at java.lang.reflect.Method.invoke(Native Method)
+07-08 08:03:54.464 19783 19783 W WM-SystemFgService: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:632)
+07-08 08:03:54.464 19783 19783 W WM-SystemFgService: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:975)
