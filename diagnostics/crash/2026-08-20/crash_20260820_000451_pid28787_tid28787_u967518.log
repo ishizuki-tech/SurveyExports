@@ -1,0 +1,576 @@
+=== Crash Report ===
+time_utc=20260820_000451
+time_local=20260819_170451
+pid=28787
+tid=28787
+thread=main
+sdk=36
+device=Google Pixel 9a
+appId=com.negi.survey
+versionName=0.0.1
+versionCode=1
+app_ring_snapshot=applog_20260820_000451_pid28787.log
+app_ring_snapshot_bytes=13190
+
+=== Exception ===
+java.lang.RuntimeException: Debug crash button pressed
+	at com.negi.survey.screens.AiScreenKt.AiScreen$lambda$61$1$0$1$0$0$0(AiScreen.kt:778)
+	at com.negi.survey.screens.AiScreenKt.$r8$lambda$sZZho4M_o6vlo3EpXRzcJsLxmk8(Unknown Source:0)
+	at com.negi.survey.screens.AiScreenKt$$ExternalSyntheticLambda22.invoke(D8$$SyntheticClass:0)
+	at androidx.compose.foundation.AbstractClickableNode.performClick(Clickable.kt:1701)
+	at androidx.compose.foundation.ClickableNode.handleUpEvent(Clickable.kt:950)
+	at androidx.compose.foundation.ClickableNode.onPointerEvent-H0pRuoY(Clickable.kt:884)
+	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:445)
+	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:431)
+	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:431)
+	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:431)
+	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:431)
+	at androidx.compose.ui.input.pointer.NodeParent.dispatchMainEventPass(HitPathTracker.kt:285)
+	at androidx.compose.ui.input.pointer.HitPathTracker.dispatchChanges(HitPathTracker.kt:182)
+	at androidx.compose.ui.input.pointer.PointerInputEventProcessor.process-BIzXfog(PointerInputEventProcessor.kt:116)
+	at androidx.compose.ui.platform.AndroidComposeView.sendMotionEvent-8iAsVTc(AndroidComposeView.android.kt:2869)
+	at androidx.compose.ui.platform.AndroidComposeView.handleMotionEvent-8iAsVTc(AndroidComposeView.android.kt:2809)
+	at androidx.compose.ui.platform.AndroidComposeView.dispatchTouchEvent(AndroidComposeView.android.kt:2630)
+	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+	at com.android.internal.policy.DecorView.superDispatchTouchEvent(DecorView.java:503)
+	at com.android.internal.policy.PhoneWindow.superDispatchTouchEvent(PhoneWindow.java:2017)
+	at android.app.Activity.dispatchTouchEvent(Activity.java:4666)
+	at com.android.internal.policy.DecorView.dispatchTouchEvent(DecorView.java:441)
+	at android.view.View.dispatchPointerEvent(View.java:17196)
+	at android.view.ViewRootImpl$ViewPostImeInputStage.processPointerEvent(ViewRootImpl.java:8585)
+	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:8335)
+	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:7702)
+	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:7759)
+	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:7725)
+	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:7896)
+	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:7733)
+	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:7953)
+	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:7706)
+	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:7759)
+	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:7725)
+	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:7733)
+	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:7706)
+	at android.view.ViewRootImpl.deliverInputEvent(ViewRootImpl.java:11033)
+	at android.view.ViewRootImpl.doProcessInputEvents(ViewRootImpl.java:10973)
+	at android.view.ViewRootImpl.enqueueInputEvent(ViewRootImpl.java:10941)
+	at android.view.ViewRootImpl.processRawInputEvent(ViewRootImpl.java:11377)
+	at android.view.ViewRootImpl$WindowInputEventReceiver.onInputEvent(ViewRootImpl.java:11161)
+	at android.view.InputEventReceiver.dispatchInputEvent(InputEventReceiver.java:284)
+	at android.os.MessageQueue.nativePollOnce(Native Method)
+	at android.os.MessageQueue.nextDeliQueue(MessageQueue.java:780)
+	at android.os.MessageQueue.next(MessageQueue.java:760)
+	at android.os.Looper.loopOnce(Looper.java:196)
+	at android.os.Looper.loop(Looper.java:367)
+	at android.app.ActivityThread.main(ActivityThread.java:9333)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:566)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:929)
+
+
+=== Logcat (best-effort) ===
+--------- beginning of system
+08-19 16:56:05.029 28787 28813 I DisplayManager: Choreographer implicitly registered for the refresh rate.
+08-19 16:56:05.448 28787 28787 D InsetsController: hide(ime())
+08-19 16:56:08.313 28787 28787 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey, tag=null, id=10497], rate limit (5.0) exceeded: input 7.87589, output would be 5.519644
+08-19 16:56:10.750 28787 28787 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey, tag=null, id=8830], rate limit (5.0) exceeded: input 8.987671, output would be 5.834321
+08-19 16:56:13.448 28787 28787 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey, tag=null, id=8830], rate limit (5.0) exceeded: input 8.383135, output would be 5.293779
+08-19 16:56:14.581 28787 28787 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey, tag=null, id=10362], rate limit (5.0) exceeded: input 15.209906, output would be 6.2075224
+08-19 16:56:16.637 28787 28787 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey, tag=null, id=7995], rate limit (5.0) exceeded: input 9.826258, output would be 5.97923
+08-19 16:56:21.245 28787 28787 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey, tag=null, id=9050], rate limit (5.0) exceeded: input 8.441809, output would be 5.871676
+--------- beginning of main
+08-19 17:02:50.057 28787 28855 I native  : I0000 00:00:1787184170.055473   28855 delegate_kernel.cc:330] Total 81 external tensors are used for delegate inputs and outputs
+08-19 17:02:50.058 28787 28855 I native  : I0000 00:00:1787184170.057996   28855 delegate_kernel.cc:906] Initializing OpenCL-based API from serialized data.
+08-19 17:02:51.903 28787 28855 I tflite  : Replacing 2145 out of 2145 node(s) with delegate (LITERT_CL) node, yielding 1 partitions for subgraph 1 (prefill_16).
+08-19 17:02:54.559 28787 28855 I native  : I0000 00:00:1787184174.558982   28855 delegate_kernel.cc:330] Total 80 external tensors are used for delegate inputs and outputs
+08-19 17:02:54.559 28787 28855 I native  : I0000 00:00:1787184174.559130   28855 delegate_kernel.cc:906] Initializing OpenCL-based API from serialized data.
+08-19 17:02:56.294 28787 28855 I tflite  : Replacing 2145 out of 2145 node(s) with delegate (LITERT_CL) node, yielding 1 partitions for subgraph 2 (prefill_256).
+08-19 17:02:56.339 28787 28855 I native  : I0000 00:00:1787184176.339682   28855 delegate_kernel.cc:330] Total 80 external tensors are used for delegate inputs and outputs
+08-19 17:02:56.339 28787 28855 I native  : I0000 00:00:1787184176.339788   28855 delegate_kernel.cc:906] Initializing OpenCL-based API from serialized data.
+08-19 17:02:57.494 28787 28855 I litert  : [environment.cc:36] Creating LiteRT environment with options
+08-19 17:02:57.494 28787 28855 W litert  : [npu_registry.cc:34] NPU accelerator could not be loaded and registered: kLiteRtStatusErrorInvalidArgument.
+08-19 17:02:57.494 28787 28855 I litert  : [accelerator_registry.cc:54] RegisterAccelerator: ptr=0xb4000074714913f0, name=LiteRT GPU
+08-19 17:02:57.494 28787 28855 I litert  : [gpu_registry.cc:87] Statically linked GPU accelerator registered.
+08-19 17:02:57.494 28787 28855 I litert  : [accelerator_registry.cc:54] RegisterAccelerator: ptr=0xb400007471e54150, name=CpuAccelerator
+08-19 17:02:57.494 28787 28855 I litert  : [cpu_registry.cc:75] XNNPACK CPU accelerator registered.
+08-19 17:02:57.730 28787 28855 W native  : W0000 00:00:1787184177.729630   28855 litert_lm_loader.cc:291] Section not found: 
+08-19 17:02:57.730 28787 28855 W native  : W0000 00:00:1787184177.730083   28855 litert_lm_loader.h:129] TFLite model for type: TF_LITE_END_OF_VISION not found. Skipping.
+08-19 17:02:57.732 28787 28855 I litert  : [compiled_model.cc:833] Flatbuffer model initialized directly from incoming litert model.
+08-19 17:02:57.744 28787 28855 W litert  : [compiled_model.cc:986] You should provide the `DispatchLibraryDir` option to use NPU.
+08-19 17:02:57.744 28787 28855 I tflite  : Created TensorFlow Lite XNNPACK delegate for CPU.
+08-19 17:02:57.744 28787 28855 I tflite  : Replacing 2 out of 10 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 2 partitions for subgraph 0 (main).
+08-19 17:02:57.747 28787 28855 I litert  : [compiled_model.cc:833] Flatbuffer model initialized directly from incoming litert model.
+08-19 17:02:57.748 28787 28855 W litert  : [compiled_model.cc:986] You should provide the `DispatchLibraryDir` option to use NPU.
+08-19 17:02:57.748 28787 28855 I litert  : [compiled_model.cc:1790] Tracked constant output tensor eoa_embedding with locked address
+08-19 17:02:57.797 28787 28855 I litert  : [compiled_model.cc:833] Flatbuffer model initialized directly from incoming litert model.
+08-19 17:02:57.971 28787 28855 W litert  : [compiled_model.cc:986] You should provide the `DispatchLibraryDir` option to use NPU.
+08-19 17:02:57.972 28787 28855 I tflite  : Replacing 1 out of 44 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 2 partitions for subgraph 0 (main).
+08-19 17:02:57.978 28787 28855 W LiteRtLM: Engine.initialize completed: key='Gemma3n4B|/data/data/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' backend=com.google.ai.edge.litertlm.Backend$GPU@c15cdf3 took=43405ms
+08-19 17:02:58.043 28787 28855 D LiteRtLM: createConversation completed: key='Gemma3n4B|/data/data/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' took=52ms
+08-19 17:02:58.044 28787 28855 D LiteRtLM: LiteRT-LM initialization succeeded: model='Gemma3n4B', key='Gemma3n4B|/data/data/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm'
+08-19 17:02:58.062 28787 28787 D AiTrace : Installed (enabled=true ringEnabled=true)
+08-19 17:02:58.065 28787 28787 D SurveyVM: init -> Start, session=0, uuid=ae11df6f-7801-413e-96df-49bfa4a6ed0f, navSize=1, graphSize=9
+08-19 17:02:58.068 28787 28787 D SurveyVM: config.validate -> issues=0
+08-19 17:02:58.068 28787 28787 D SurveyVM: promptSources -> legacy=6, eval=0, follow=0
+08-19 17:02:58.068 28787 28787 D SurveyVM: promptSources.preview -> legacy=[Q1, Q2, Q3, Q4, Q5, Q6], eval=[], follow=[]
+08-19 17:02:58.068 28787 28787 D SurveyVM: hasTwoStepPrompt[Q1] -> false (eval=0, fu=0)
+08-19 17:02:58.068 28787 28787 D SurveyVM: hasTwoStepPrompt[Q2] -> false (eval=0, fu=0)
+08-19 17:02:58.068 28787 28787 D SurveyVM: hasTwoStepPrompt[Q3] -> false (eval=0, fu=0)
+08-19 17:02:58.068 28787 28787 D SurveyVM: hasTwoStepPrompt[Q4] -> false (eval=0, fu=0)
+08-19 17:02:58.068 28787 28787 D SurveyVM: hasTwoStepPrompt[Q5] -> false (eval=0, fu=0)
+08-19 17:02:58.068 28787 28787 D SurveyVM: hasTwoStepPrompt[Q6] -> false (eval=0, fu=0)
+08-19 17:02:58.068 28787 28787 D SurveyVM: AI prompt coverage OK (aiCount=6)
+08-19 17:03:04.205 28787 28787 D CrashCapture: install: ensured default handler. where=selfHeal:onActivityResumed pid=28787 default=com.negi.survey.CrashCapture$CrashHandler@ce052d0
+08-19 17:03:04.342 28787 28787 D WhisperSpeechController: updateContext: surveyId=ae11df6f-7801-413e-96df-49bfa4a6ed0f, questionId=Start
+08-19 17:03:04.360 28787 28787 D InsetsController: hide(ime())
+08-19 17:03:04.360 28787 28787 I ImeTracker: com.negi.survey:87a181de: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+08-19 17:03:08.756 28787 28787 D WhisperSpeechController: stopRecording: not recording, ignoring
+08-19 17:03:08.784 28787 28787 D MainActivity: Home -> Start survey. session=survey_config10.yaml@1 freeTextDraftLen=0 (run-scoped)
+08-19 17:03:08.784 28787 28787 D SurveyVM: resetAudioRefs -> cleared
+08-19 17:03:08.784 28787 28787 D SurveyVM: resetNavToStart -> key=com.negi.survey.vm.FlowHome@36089fb, navSize=1
+08-19 17:03:08.784 28787 28787 D SurveyVM: resetToStart -> Start, session=1, uuid=ab2cb127-ed9f-45a6-b8a3-a2c8fa21dfb6, preserveDraft=true, draftLen=0
+08-19 17:03:08.784 28787 28787 D MainActivity: Home -> Start survey: runNoteLen=0 (restoredAfterReset)
+08-19 17:03:08.784 28787 28787 D SurveyVM: activateRunIfNeeded(advanceToNext:Q1) -> runNoteLen=0, draftCleared=true, uuid=ab2cb127-ed9f-45a6-b8a3-a2c8fa21dfb6
+08-19 17:03:08.784 28787 28787 D SurveyVM: push -> Q1, navSize=2, stackSize=2
+08-19 17:03:08.796 28787 28787 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): androidx.navigationevent.OnBackInvokedInput$createOnBackAnimationCallback$1@b9e1b1d
+08-19 17:03:08.801 28787 28787 D WhisperSpeechController: updateContext: surveyId=ab2cb127-ed9f-45a6-b8a3-a2c8fa21dfb6, questionId=Q1
+08-19 17:03:08.818 28787 28787 D SurveyVM: hasTwoStepPrompt[Q1] -> false (eval=0, fu=0)
+08-19 17:03:08.867 28787 28787 D WhisperSpeechController: updateContext: surveyId=ab2cb127-ed9f-45a6-b8a3-a2c8fa21dfb6, questionId=Q1
+08-19 17:03:08.981 28787 28787 D InsetsController: show(ime())
+08-19 17:03:08.982 28787 28787 I ImeTracker: com.negi.survey:959b4138: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT_BY_INSETS_API fromUser false userId 0 displayId 0
+08-19 17:03:08.982 28787 28787 D InsetsController: Setting requestedVisibleTypes to 511 (was 503)
+08-19 17:03:09.008 28787 28787 I AssistStructure: Flattened final assist data: 672 bytes, containing 1 windows, 4 views
+08-19 17:03:09.016 28787 28787 I ImeTracker: com.negi.survey:2f114c0d: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false userId 0 displayId 0
+08-19 17:03:09.016 28787 28787 D InsetsController: show(ime())
+08-19 17:03:09.016 28787 28787 I ImeTracker: com.negi.survey:2f114c0d: onCancelled at PHASE_CLIENT_REPORT_REQUESTED_VISIBLE_TYPES
+08-19 17:03:09.151 28787 28787 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.view.ImeBackAnimationController@7ca534b
+08-19 17:03:09.246 28787 28787 D VRI[MainActivity]: WindowInsets changed: ime:[0,0,0,1043] 
+08-19 17:03:09.253 28787 28787 W InteractionJankMonitor: Initializing without READ_DEVICE_CONFIG permission. enabled=false, interval=1, missedFrameThreshold=3, frameTimeThreshold=64, package=com.negi.survey
+08-19 17:03:09.570 28787 28787 I ImeTracker: com.negi.survey:959b4138: onShown
+08-19 17:03:11.762 28787 28787 D InsetsController: hide(ime())
+08-19 17:03:11.763 28787 28787 I ImeTracker: com.negi.survey:d1688f1d: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT_BY_INSETS_API fromUser false userId 0 displayId 0
+08-19 17:03:11.763 28787 28787 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): androidx.navigationevent.OnBackInvokedInput$createOnBackAnimationCallback$1@b9e1b1d
+08-19 17:03:11.763 28787 28787 D InsetsController: Setting requestedVisibleTypes to 503 (was 511)
+08-19 17:03:11.765 28787 28787 D SurveyVM: hasTwoStepPrompt[Q1] -> false (eval=0, fu=0)
+08-19 17:03:11.767 28787 28787 I AiScreen: Submit begin runId=ai-Q1-118357214-118357214534717 node=Q1 role=MAIN isTwoStep=false sessionId=1 surveyUuid=ab2cb127-ed9f-45a6-b8a3-a2c8fa21dfb6 qLen=132 aLen=7 qSha6=59bd94d4be3b aSha6=87b35cb1e4cc
+08-19 17:03:11.767 28787 28787 D AiScreen: Submit payload preview (debug) runId=ai-Q1-118357214-118357214534717 node=Q1 qPreview="How much yield do you lose because of fall armyworm? Please think back over the last 3 seasons. …" aPreview="j,vkzkd"
+08-19 17:03:11.768 28787 28787 D SurveyVM: getPrompt[Q1] -> len=435 (src=one_step)
+08-19 17:03:11.770 28787 28787 I AiScreen: Submit end runId=ai-Q1-118357214-118357214534717 node=Q1 elapsed=3ms
+08-19 17:03:11.771 28787 28835 D AiViewModel: run[1]: mode=EVAL_JSON phase=ONE_STEP commit=true prompt.len=435, fullPrompt.len=1476, timeoutMs=120000
+08-19 17:03:11.773 28787 28835 D AiViewModel: run[1]: sha(prompt)=6e9bae6b4b4dfb49f671236e2859b263fa9b772be818127ad96ec12847815606 sha(full)=f6c67761e082f610d179a598cdad35cac0f6f7859f3880f1a0b4580a7006b3dc
+08-19 17:03:11.773 28787 28835 I FullPromptReview: [part=000] run[1]: phase=ONE_STEP FullPrompt
+08-19 17:03:11.773 28787 28835 I FullPromptReview: You are a well-known farmer survey expert. Read the Question and the Answer.
+08-19 17:03:11.773 28787 28835 I FullPromptReview: OUTPUT FORMAT:
+08-19 17:03:11.773 28787 28835 I FullPromptReview: - In English.
+08-19 17:03:11.773 28787 28835 I FullPromptReview: - Keys exactly:
+08-19 17:03:11.773 28787 28835 I FullPromptReview:   • "analysis": short string
+08-19 17:03:11.773 28787 28835 I FullPromptReview:   • "expected_answer": short string
+08-19 17:03:11.773 28787 28835 I FullPromptReview:   • "followup_question": a single short confirm/validate question (NOT an array; may be empty string)
+08-19 17:03:11.773 28787 28835 I FullPromptReview:   • "score": integer 1–100
+08-19 17:03:11.773 28787 28835 I FullPromptReview: 
+08-19 17:03:11.773 28787 28835 I FullPromptReview: FOLLOW-UP INTENT:
+08-19 17:03:11.773 28787 28835 I FullPromptReview: - The follow-up must confirm or clarify the respondent's original answer to the SAME question.
+08-19 17:03:11.773 28787 28835 I FullPromptReview: - Target the biggest uncertainty: missing unit/scale, missing number, time window, baseline, or method used.
+08-19 17:03:11.773 28787 28835 I FullPromptReview: - Keep it single-scope (no multi-part), concrete, and answerable immediately.
+08-19 17:03:11.773 28787 28835 I FullPromptReview: - Do not introduce new topics or additional objectives.
+08-19 17:03:11.773 28787 28835 I FullPromptReview: LENGTH LIMITS:
+08-19 17:03:11.773 28787 28835 I FullPromptReview: - analysis<=60 chars
+08-19 17:03:11.773 28787 28835 I FullPromptReview: - expected_answer<=120 chars
+08-19 17:03:11.773 28787 28835 I FullPromptReview: - followup_question<=120 chars
+08-19 17:03:11.773 28787 28835 I FullPromptReview: Scoring rule: Judge ONLY content relevance/completeness/accuracy. Do NOT penalize style or formatting.
+08-19 17:03:11.773 28787 28835 I FullPromptReview: STRICT OUTPUT (NO MARKDOWN):
+08-19 17:03:11.773 28787 28835 I FullPromptReview: - RAW JSON only, ONE LINE.
+08-19 17:03:11.773 28787 28835 I FullPromptReview: - Use COMPACT JSON (no spaces around ':' and ',').
+08-19 17:03:11.773 28787 28835 I FullPromptReview: - No extra text.
+08-19 17:03:11.773 28787 28835 I FullPromptReview: Respond with an empty JSON object: {}
+08-19 17:03:11.773 28787 28835 I FullPromptReview: INPUT:
+08-19 17:03:11.773 28787 28835 I FullPromptReview: Task:
+08-19 17:03:11.773 28787 28835 I FullPromptReview: - Note weaknesses (unclear units, missing seasons, baseline ambiguity).
+08-19 17:03:11.773 28787 28835 I FullPromptReview: - Provide ONE strong expected_answer: avg FAW loss over last 3 seasons (% or bags/acre).
+08-19 17:03:11.773 28787 28835 I FullPromptReview: - Ask exactly 1 followup_question to confirm the SAME answer (or empty string if not needed).
+08-19 17:03:11.773 28787 28835 I FullPromptReview: - Score 1–100.
+08-19 17:03:11.773 28787 28835 I FullPromptReview: 
+08-19 17:03:11.773 28787 28835 I FullPromptReview: Question: How much yield do you lose because of fall armyworm? Please think back over the last 3 seasons. (Percent or bags per acre are fine.)
+08-19 17:03:11.773 28787 28835 I FullPromptReview: Answer: j,vkzkd
+08-19 17:03:11.782 28787 28855 D LiteRtRepository: [1] request start model='Gemma3n4B' prompt.len=1476 sha=f6c67761e082f610 gateWaitMs=6
+08-19 17:03:11.784 28787 28855 D LiteRtRepository: [part=000] [1] PROMPT (FULL) sha=f6c67761e082f610
+08-19 17:03:11.784 28787 28855 D LiteRtRepository: You are a well-known farmer survey expert. Read the Question and the Answer.
+08-19 17:03:11.784 28787 28855 D LiteRtRepository: OUTPUT FORMAT:
+08-19 17:03:11.784 28787 28855 D LiteRtRepository: - In English.
+08-19 17:03:11.784 28787 28855 D LiteRtRepository: - Keys exactly:
+08-19 17:03:11.784 28787 28855 D LiteRtRepository:   • "analysis": short string
+08-19 17:03:11.784 28787 28855 D LiteRtRepository:   • "expected_answer": short string
+08-19 17:03:11.784 28787 28855 D LiteRtRepository:   • "followup_question": a single short confirm/validate question (NOT an array; may be empty string)
+08-19 17:03:11.784 28787 28855 D LiteRtRepository:   • "score": integer 1–100
+08-19 17:03:11.784 28787 28855 D LiteRtRepository: 
+08-19 17:03:11.784 28787 28855 D LiteRtRepository: FOLLOW-UP INTENT:
+08-19 17:03:11.784 28787 28855 D LiteRtRepository: - The follow-up must confirm or clarify the respondent's original answer to the SAME question.
+08-19 17:03:11.784 28787 28855 D LiteRtRepository: - Target the biggest uncertainty: missing unit/scale, missing number, time window, baseline, or method used.
+08-19 17:03:11.784 28787 28855 D LiteRtRepository: - Keep it single-scope (no multi-part), concrete, and answerable immediately.
+08-19 17:03:11.784 28787 28855 D LiteRtRepository: - Do not introduce new topics or additional objectives.
+08-19 17:03:11.784 28787 28855 D LiteRtRepository: LENGTH LIMITS:
+08-19 17:03:11.784 28787 28855 D LiteRtRepository: - analysis<=60 chars
+08-19 17:03:11.784 28787 28855 D LiteRtRepository: - expected_answer<=120 chars
+08-19 17:03:11.784 28787 28855 D LiteRtRepository: - followup_question<=120 chars
+08-19 17:03:11.784 28787 28855 D LiteRtRepository: Scoring rule: Judge ONLY content relevance/completeness/accuracy. Do NOT penalize style or formatting.
+08-19 17:03:11.784 28787 28855 D LiteRtRepository: STRICT OUTPUT (NO MARKDOWN):
+08-19 17:03:11.784 28787 28855 D LiteRtRepository: - RAW JSON only, ONE LINE.
+08-19 17:03:11.784 28787 28855 D LiteRtRepository: - Use COMPACT JSON (no spaces around ':' and ',').
+08-19 17:03:11.784 28787 28855 D LiteRtRepository: - No extra text.
+08-19 17:03:11.784 28787 28855 D LiteRtRepository: Respond with an empty JSON object: {}
+08-19 17:03:11.784 28787 28855 D LiteRtRepository: INPUT:
+08-19 17:03:11.784 28787 28855 D LiteRtRepository: Task:
+08-19 17:03:11.784 28787 28855 D LiteRtRepository: - Note weaknesses (unclear units, missing seasons, baseline ambiguity).
+08-19 17:03:11.784 28787 28855 D LiteRtRepository: - Provide ONE strong expected_answer: avg FAW loss over last 3 seasons (% or bags/acre).
+08-19 17:03:11.784 28787 28855 D LiteRtRepository: - Ask exactly 1 followup_question to confirm the SAME answer (or empty string if not needed).
+08-19 17:03:11.784 28787 28855 D LiteRtRepository: - Score 1–100.
+08-19 17:03:11.784 28787 28855 D LiteRtRepository: 
+08-19 17:03:11.784 28787 28855 D LiteRtRepository: Question: How much yield do you lose because of fall armyworm? Please think back over the last 3 seasons. (Percent or bags per acre are fine.)
+08-19 17:03:11.784 28787 28855 D LiteRtRepository: Answer: j,vkzkd
+08-19 17:03:11.787 28787 28787 D VRI[MainActivity]: WindowInsets changed: ime:null 
+08-19 17:03:11.787 28787 29193 D SLM     : initializeIfNeeded: model='Gemma3n4B' image=false audio=false
+08-19 17:03:11.789 28787 28855 D LiteRtRepository: [1] initializeIfNeeded ok initMs=4
+08-19 17:03:11.791 28787 29193 D SLM     : runInference: model='Gemma3n4B' textLen=1476 images=0 audio=0
+08-19 17:03:11.795 28787 28835 D LiteRtLM: state[run:start] key='Gemma3n4B|/data/data/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=1 active=true terminated=false logicalDone=false cancel=false pendingCancel=false lastMsgAt=464867813 lastTermAt=0
+08-19 17:03:11.796 28787 28835 D LiteRtLM: runInference start: key='Gemma3n4B|/data/data/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=1 hasText=true textLen=1476 images=0 audioClips=0
+08-19 17:03:11.796 28787 28835 D LiteRtLM: LiteRT-LM sendMessageAsync(text): key='Gemma3n4B|/data/data/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=1 len=1476 preview='You are a well-known farmer survey expert. Read …'
+08-19 17:03:11.810 28787 28787 I ImeTracker: system_server:826b0ec8: onCancelled at PHASE_CLIENT_ON_CONTROLS_CHANGED
+08-19 17:03:11.853 28787 28787 I ImeTracker: system_server:ccbfebf6: onCancelled at PHASE_CLIENT_ON_CONTROLS_CHANGED
+08-19 17:03:14.722 28787 29194 W native  : W0000 00:00:1787184194.721069   29194 sampler_factory.cc:403] OpenCL sampler not available, falling back to statically linked C API: UNAVAILABLE: ERROR: [third_party/odml/litert_lm/runtime/components/sampler_factory.cc:319]
+08-19 17:03:14.722 28787 29194 W native  : └ Could not load shared library libLiteRtTopKOpenClSampler.so: dlopen failed: library "libLiteRtTopKOpenClSampler.so" not found.
+08-19 17:03:14.722 28787 29194 W native  : === Source Location Trace: ===
+08-19 17:03:14.722 28787 29194 W native  : ./third_party/odml/litert/litert/cc/litert_macros.h:573
+08-19 17:03:15.374 28787 29194 D LiteRtLM: extractRenderedText[#1] fromContents.len=2 msgToString.len=2 parsedToString.len=0
+08-19 17:03:15.376 28787 29194 D LiteRtLM: stream[key=Gemma3n4B|/data/data/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm runId=1] msg#1 snapLen=2 deltaLen=2 lead=U+7B ws=false ch='{' snapPreview='{"' deltaPreview='{"' emittedLen=2
+08-19 17:03:15.377 28787 28787 D LiteRtRepository: stream[rid=1 msg#1] done=false deltaLen=2 outLen=2 outPreview='{"' deltaPreview='{"'
+08-19 17:03:15.378 28787 28835 D AiViewModel: run[1] chunk[1].preview='{"'
+08-19 17:03:15.635 28787 28835 D AiViewModel: run[1] chunk[2].preview='analysis'
+08-19 17:03:15.803 28787 28835 D AiViewModel: run[1] chunk[3].preview='":"'
+08-19 17:03:15.963 28787 28835 D AiViewModel: run[1] chunk[4].preview='In'
+08-19 17:03:16.147 28787 28835 D AiViewModel: run[1] chunk[5].preview='complete'
+08-19 17:03:16.313 28787 28835 D AiViewModel: run[1] chunk[6].preview='␠answer'
+08-19 17:03:16.477 28787 28835 D AiViewModel: run[1] chunk[7].preview=','
+08-19 17:03:16.638 28787 28787 D LiteRtRepository: stream[rid=1 msg#8] done=false deltaLen=6 outLen=37 outPreview='{"analysis":"Incomplete answer, lacks' deltaPreview=' lacks'
+08-19 17:03:16.639 28787 28835 D AiViewModel: run[1] chunk[8].preview='␠lacks'
+08-19 17:03:16.829 28787 28835 D AiViewModel: run[1] chunk[9].preview='␠yield'
+08-19 17:03:16.993 28787 28835 D AiViewModel: run[1] chunk[10].preview='␠loss'
+08-19 17:03:17.158 28787 28835 D AiViewModel: run[1] chunk[11].preview='␠data'
+08-19 17:03:17.330 28787 28835 D AiViewModel: run[1] chunk[12].preview='.'
+08-19 17:03:17.494 28787 28835 D AiViewModel: run[1] chunk[13].preview='","'
+08-19 17:03:17.664 28787 28835 D AiViewModel: run[1] chunk[14].preview='expected'
+08-19 17:03:17.837 28787 28835 D AiViewModel: run[1] chunk[15].preview='_'
+08-19 17:03:18.003 28787 29194 D LiteRtLM: stream[key=Gemma3n4B|/data/data/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm runId=1] msg#16 snapLen=6 deltaLen=6 lead=U+61 ws=false ch='a' snapPreview='answer' deltaPreview='answer' emittedLen=72
+08-19 17:03:18.004 28787 28787 D LiteRtRepository: stream[rid=1 msg#16] done=false deltaLen=6 outLen=72 outPreview='{"analysis":"Incomplete answer, lacks yield loss data.","expected_answer' deltaPreview='answer'
+08-19 17:03:18.005 28787 28835 D AiViewModel: run[1] chunk[16].preview='answer'
+08-19 17:03:18.172 28787 28835 D AiViewModel: run[1] chunk[17].preview='":"'
+08-19 17:03:18.338 28787 28835 D AiViewModel: run[1] chunk[18].preview='Avg'
+08-19 17:03:18.505 28787 28835 D AiViewModel: run[1] chunk[19].preview='␠FA'
+08-19 17:03:18.670 28787 28835 D AiViewModel: run[1] chunk[20].preview='W'
+08-19 17:03:18.839 28787 28835 D AiViewModel: run[1] chunk[21].preview='␠loss'
+08-19 17:03:18.995 28787 28835 D AiViewModel: run[1] chunk[22].preview='␠over'
+08-19 17:03:19.174 28787 28835 D AiViewModel: run[1] chunk[23].preview='␠last'
+08-19 17:03:19.322 28787 28787 D LiteRtRepository: stream[rid=1 msg#24] done=false deltaLen=1 outLen=98 outPreview='{"analysis":"Incomplete answer, lacks yield loss data.","expected_answer":"Avg FAW loss over last ' deltaPreview=' '
+08-19 17:03:19.322 28787 28835 D AiViewModel: run[1] chunk[24].preview='␠'
+08-19 17:03:19.491 28787 28810 D AiViewModel: run[1] chunk[25].preview='3'
+08-19 17:03:19.658 28787 28810 D AiViewModel: run[1] chunk[26].preview='␠seasons'
+08-19 17:03:19.824 28787 28810 D AiViewModel: run[1] chunk[27].preview='␠(%'
+08-19 17:03:19.989 28787 28810 D AiViewModel: run[1] chunk[28].preview='␠or'
+08-19 17:03:20.160 28787 28810 D AiViewModel: run[1] chunk[29].preview='␠bags'
+08-19 17:03:20.312 28787 28810 D AiViewModel: run[1] chunk[30].preview='/'
+08-19 17:03:20.491 28787 28810 D AiViewModel: run[1] chunk[31].preview='acre'
+08-19 17:03:20.635 28787 29194 D LiteRtLM: stream[key=Gemma3n4B|/data/data/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm runId=1] msg#32 snapLen=2 deltaLen=2 lead=U+29 ws=false ch=')' snapPreview=').' deltaPreview=').' emittedLen=125
+08-19 17:03:20.642 28787 28787 D LiteRtRepository: stream[rid=1 msg#32] done=false deltaLen=2 outLen=125 outPreview='{"analysis":"Incomplete answer, lacks yield loss data.","expected_answer":"Avg FAW loss over last 3 seasons (% or bags/acre).' deltaPreview=').'
+08-19 17:03:20.643 28787 28810 D AiViewModel: run[1] chunk[32].preview=').'
+08-19 17:03:20.807 28787 28810 D AiViewModel: run[1] chunk[33].preview='","'
+08-19 17:03:20.975 28787 28810 D AiViewModel: run[1] chunk[34].preview='follow'
+08-19 17:03:21.141 28787 28810 D AiViewModel: run[1] chunk[35].preview='up'
+08-19 17:03:21.308 28787 28810 D AiViewModel: run[1] chunk[36].preview='_'
+08-19 17:03:21.475 28787 28810 D AiViewModel: run[1] chunk[37].preview='question'
+08-19 17:03:21.640 28787 28810 D AiViewModel: run[1] chunk[38].preview='":"'
+08-19 17:03:21.808 28787 28810 D AiViewModel: run[1] chunk[39].preview='Can'
+08-19 17:03:21.973 28787 28787 D LiteRtRepository: stream[rid=1 msg#40] done=false deltaLen=4 outLen=155 outPreview='{"analysis":"Incomplete answer, lacks yield loss data.","expected_answer":"Avg FAW loss over last 3 seasons (% or bags/acre).","followup_question":"Can you' deltaPreview=' you'
+08-19 17:03:21.974 28787 28810 D AiViewModel: run[1] chunk[40].preview='␠you'
+08-19 17:03:22.134 28787 28810 D AiViewModel: run[1] chunk[41].preview='␠specify'
+08-19 17:03:22.325 28787 28810 D AiViewModel: run[1] chunk[42].preview='␠the'
+08-19 17:03:22.491 28787 28810 D AiViewModel: run[1] chunk[43].preview='␠units'
+08-19 17:03:22.659 28787 28810 D AiViewModel: run[1] chunk[44].preview='␠used'
+08-19 17:03:22.826 28787 28810 D AiViewModel: run[1] chunk[45].preview='␠for'
+08-19 17:03:22.991 28787 28810 D AiViewModel: run[1] chunk[46].preview='␠the'
+08-19 17:03:23.144 28787 28810 D AiViewModel: run[1] chunk[47].preview='␠yield'
+08-19 17:03:23.302 28787 29194 D LiteRtLM: stream[key=Gemma3n4B|/data/data/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm runId=1] msg#48 snapLen=5 deltaLen=5 lead=U+20 ws=true ch=' ' snapPreview=' loss' deltaPreview=' loss' emittedLen=197
+08-19 17:03:23.410 28787 28787 D LiteRtRepository: stream[rid=1 msg#48] done=false deltaLen=5 outLen=197 outPreview='{"analysis":"Incomplete answer, lacks yield loss data.","expected_answer":"Avg FAW loss over last 3 seasons (% or bags/acre).","followup_question":"Can you specify the units used f' deltaPreview=' loss'
+08-19 17:03:23.410 28787 28810 D AiViewModel: run[1] chunk[48].preview='␠loss'
+08-19 17:03:23.469 28787 28810 D AiViewModel: run[1] chunk[49].preview='␠estimate'
+08-19 17:03:23.661 28787 28810 D AiViewModel: run[1] chunk[50].preview='␠('
+08-19 17:03:23.811 28787 28810 D AiViewModel: run[1] chunk[51].preview='percent'
+08-19 17:03:24.095 28787 28810 D AiViewModel: run[1] chunk[52].preview='␠or'
+08-19 17:03:24.152 28787 28810 D AiViewModel: run[1] chunk[53].preview='␠bags'
+08-19 17:03:24.327 28787 28810 D AiViewModel: run[1] chunk[54].preview='/'
+08-19 17:03:24.481 28787 28810 D AiViewModel: run[1] chunk[55].preview='acre'
+08-19 17:03:24.643 28787 28787 D LiteRtRepository: stream[rid=1 msg#56] done=false deltaLen=2 outLen=230 outPreview='{"analysis":"Incomplete answer, lacks yield loss data.","expected_answer":"Avg FAW loss over last 3 seasons (% or bags/acre).","followup_question":"Can you specify the units used f' deltaPreview=')?'
+08-19 17:03:24.643 28787 28810 D AiViewModel: run[1] chunk[56].preview=')?'
+08-19 17:03:24.719 28787 28792 I com.negi.survey: Background concurrent mark compact GC freed 22MB AllocSpace bytes, 28(624KB) LOS objects, 76% free, 7569KB/31MB, paused 469us,5.680ms total 80.344ms
+08-19 17:03:24.816 28787 28810 D AiViewModel: run[1] chunk[57].preview='","'
+08-19 17:03:24.995 28787 28810 D AiViewModel: run[1] chunk[58].preview='score'
+08-19 17:03:25.143 28787 28810 D AiViewModel: run[1] chunk[59].preview='":'
+08-19 17:03:25.327 28787 28810 D AiViewModel: run[1] chunk[60].preview='2'
+08-19 17:03:25.479 28787 28810 D AiViewModel: run[1] chunk[61].preview='0'
+08-19 17:03:25.643 28787 28810 D AiViewModel: run[1] chunk[62].preview='}'
+08-19 17:03:25.804 28787 29195 D LiteRtLM: state[logicalDone] key='Gemma3n4B|/data/data/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=1 active=false terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=464881658 lastTermAt=464881821
+08-19 17:03:25.806 28787 29195 D LiteRtLM: state[nativeDone] key='Gemma3n4B|/data/data/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=1 active=false terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=464881658 lastTermAt=464881821
+08-19 17:03:25.810 28787 28787 D LiteRtRepository: [1] logical done=true; waiting native cleanup
+08-19 17:03:25.812 28787 28787 D LiteRtRepository: [1] native cleanup safepoint
+08-19 17:03:25.814 28787 29193 D SLM     : resetConversation: model='Gemma3n4B' image=false audio=false
+08-19 17:03:25.817 28787 28810 D LiteRtRepository: [1] resetConversation ok after safepoint
+08-19 17:03:25.820 28787 28855 D LiteRtRepository: [part=000] [1] FINALIZE: native-terminated
+08-19 17:03:25.820 28787 28855 D LiteRtRepository: === AI TRACE STATS (LiteRtRepository) ===
+08-19 17:03:25.820 28787 28855 D LiteRtRepository: rid=1 model='Gemma3n4B' reason=native-terminated
+08-19 17:03:25.820 28787 28855 D LiteRtRepository: totalMs=14039 inferenceMs=14031 firstTokenMs=3587
+08-19 17:03:25.820 28787 28855 D LiteRtRepository: logicalDone=true logicalDoneAt=464881827
+08-19 17:03:25.820 28787 28855 D LiteRtRepository: nativeTerminated=true cancelTag='null'
+08-19 17:03:25.820 28787 28855 D LiteRtRepository: lastDeltaMsAgo=178 lastEventMsAgo=8
+08-19 17:03:25.820 28787 28855 D LiteRtRepository: chunks=62 emittedChars=243 capturedAll=true out.len=243
+08-19 17:03:25.820 28787 28855 D LiteRtRepository: === OUTPUT (FULL) ===
+08-19 17:03:25.820 28787 28855 D LiteRtRepository: {"analysis":"Incomplete answer, lacks yield loss data.","expected_answer":"Avg FAW loss over last 3 seasons (% or bags/acre).","followup_question":"Can you specify the units used for the yield loss estimate (percent or bags/acre)?","score":20}
+08-19 17:03:25.822 28787 28835 D AiViewModel: run[1] stats: chunks=62, chars=243, raw.len=243
+08-19 17:03:25.824 28787 28835 D AiViewModel: run[1] sha(raw)=7c2263456998b9b83e270633fd85a9f9c8710735f6293240eb36097ee9b04ed2
+08-19 17:03:25.825 28787 28835 D AiViewModel: run[1] rawVisible='{"analysis":"Incomplete␠answer,␠lacks␠yield␠loss␠data.","expected_answer":"Avg␠FAW␠loss␠over␠last␠3␠seasons␠(%␠or␠bags/acre).","followup_question":"Can␠you␠specify␠the␠units␠used␠for␠the␠yield␠loss␠estimate␠(percent␠or␠bags/acre)?","score":'
+08-19 17:03:25.846 28787 28835 D AiViewModel: run[1]: EVAL_JSON parsed score=20 followups=1 fu0='Can␠you␠specify␠the␠units␠used␠for␠the␠yield␠loss␠estimate␠(percent␠or␠bags/acre)?'
+08-19 17:03:25.848 28787 28835 D AiViewModel: stepHistory+ runId=1 phase=ONE_STEP mode=EVAL_JSON raw.len=243 score=20 FU=1 FU0='Can␠you␠specify␠the␠units␠used␠for␠the␠yield␠loss␠estimate␠(percent␠or␠bags/acre)?' timeout=false err=null
+08-19 17:03:25.849 28787 28835 I AiViewModel: run[1] done: phase=ONE_STEP mode=EVAL_JSON score=20 FU0.len=82 FU0.sha16=56f291802ad38b12 commit=true err=<none>
+08-19 17:03:25.850 28787 28835 I FullTextOut: [part=000] run[1]: RawTextOut
+08-19 17:03:25.850 28787 28835 I FullTextOut: {"analysis":"Incomplete answer, lacks yield loss data.","expected_answer":"Avg FAW loss over last 3 seasons (% or bags/acre).","followup_question":"Can you specify the units used for the yield loss estimate (percent or bags/acre)?","score":20}
+08-19 17:03:25.904 28787 28787 I AiScreen: Follow-up persisted (context=sid=1|nid=Q1 node=Q1 runId=1 phase=ONE_STEP twoStep=false mode=EVAL_JSON len=82 sha6=56f291802ad3 displayedAsPlain=false)
+08-19 17:03:25.904 28787 28787 D AiScreen: Follow-up preview (debug) node=Q1 runId=1 preview="Can you specify the units used for the yield loss estimate (percent or bags/acre)?"
+08-19 17:03:25.904 28787 28787 D AiScreen: Step rendered (context=sid=1|nid=Q1 node=Q1 runId=1 phase=ONE_STEP mode=EVAL_JSON showJson=true rawLen=243 followups=1 timedOut=false twoStep=false)
+08-19 17:03:25.973 28787 28787 D InsetsController: show(ime())
+08-19 17:03:25.973 28787 28787 I ImeTracker: com.negi.survey:47d9c397: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT_BY_INSETS_API fromUser false userId 0 displayId 0
+08-19 17:03:25.974 28787 28787 D InsetsController: Setting requestedVisibleTypes to 511 (was 503)
+08-19 17:03:25.986 28787 28787 I ImeTracker: com.negi.survey:ff6f8044: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false userId 0 displayId 0
+08-19 17:03:25.986 28787 28787 D InsetsController: show(ime())
+08-19 17:03:25.986 28787 28787 I ImeTracker: com.negi.survey:ff6f8044: onCancelled at PHASE_CLIENT_REPORT_REQUESTED_VISIBLE_TYPES
+08-19 17:03:26.047 28787 28787 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.view.ImeBackAnimationController@7ca534b
+08-19 17:03:26.086 28787 28835 D LiteRtLM: resetConversationInternal done: key='Gemma3n4B|/data/data/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' reason='resetConversation'
+08-19 17:03:26.108 28787 28787 D VRI[MainActivity]: WindowInsets changed: ime:[0,0,0,1043] 
+08-19 17:03:26.425 28787 28787 I ImeTracker: com.negi.survey:47d9c397: onShown
+08-19 17:03:28.995 28787 28787 I ImeTracker: system_server:b77f8369: onCancelled at PHASE_CLIENT_ON_CONTROLS_CHANGED
+08-19 17:03:29.666 28787 28787 I ImeTracker: system_server:b014b5ea: onCancelled at PHASE_CLIENT_ON_CONTROLS_CHANGED
+08-19 17:03:29.666 28787 28787 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): androidx.navigationevent.OnBackInvokedInput$createOnBackAnimationCallback$1@b9e1b1d
+08-19 17:03:29.666 28787 28787 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.view.ImeBackAnimationController@7ca534b
+08-19 17:03:43.067 28787 28787 D WhisperSpeechController: startRecording: requested
+08-19 17:03:43.080 28787 28835 I WhisperEngine: [1][init:asset] Init start. assetCheckMs=3 lockWaitMs=0 prevKey=null newKey=asset:models/ggml-small-q5_1.bin bytes=n/a thread=DefaultDispatcher-worker-4
+08-19 17:03:43.080 28787 28835 D WhisperEngine: [1][init:asset] mem: javaUsed=15.56MB javaTotal=31.39MB javaMax=256.00MB nativeAllocated=523.79MB
+08-19 17:03:43.080 28787 28835 I WhisperEngine: [1][init:asset] Creating WhisperContext from assets/models/ggml-small-q5_1.bin
+08-19 17:03:43.095 28787 28787 D InsetsController: hide(ime())
+08-19 17:03:43.095 28787 28787 I ImeTracker: com.negi.survey:8aca9868: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT_BY_INSETS_API fromUser false userId 0 displayId 0
+08-19 17:03:43.095 28787 28787 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): androidx.navigationevent.OnBackInvokedInput$createOnBackAnimationCallback$1@b9e1b1d
+08-19 17:03:43.095 28787 28787 D InsetsController: Setting requestedVisibleTypes to 503 (was 511)
+08-19 17:03:43.096 28787 28787 D AiScreen: Speech started (node=Q1 role=FOLLOWUP)
+08-19 17:03:43.109 28787 28787 D VRI[MainActivity]: WindowInsets changed: ime:null 
+08-19 17:03:43.116 28787 28835 D nativeloader: Load /data/app/~~Uebk6-SjfNSXqA3emg8xQw==/com.negi.survey-aAi9lhCdlreEt6icWSPQxA==/base.apk!/lib/arm64-v8a/libwhisper_v8fp16_va.so using class loader ns clns-9 (caller=/data/app/~~Uebk6-SjfNSXqA3emg8xQw==/com.negi.survey-aAi9lhCdlreEt6icWSPQxA==/base.apk!classes3.dex): ok
+08-19 17:03:43.117 28787 28835 I JNI-Whisper: JNI_OnLoad(): Whisper JNI initialized (JNI v1.6)
+08-19 17:03:43.117 28787 28835 I WhisperJNI: Loaded libwhisper_v8fp16_va.so (ABI=arm64-v8a fp16=true vfpv4=false)
+08-19 17:03:43.120 28787 28835 I JNI-Whisper: Loading Whisper model from Asset: models/ggml-small-q5_1.bin
+08-19 17:03:43.131 28787 28787 I ImeTracker: system_server:731d6e5b: onCancelled at PHASE_CLIENT_ON_CONTROLS_CHANGED
+08-19 17:03:43.166 28787 28787 I ImeTracker: system_server:20d8fd06: onCancelled at PHASE_CLIENT_ON_CONTROLS_CHANGED
+08-19 17:03:44.336 28787 28835 I WhisperJNI: WhisperContext created from asset: models/ggml-small-q5_1.bin
+08-19 17:03:44.337 28787 28835 I WhisperEngine: [1][init:asset] Init OK. totalMs=1260 assetCheckMs=3 lockWaitMs=0 lockHoldMs=1257 releasePrevMs=0 createMs=1256 key=asset:models/ggml-small-q5_1.bin bytes=n/a
+08-19 17:03:44.337 28787 28835 D WhisperEngine: [1][init:asset] mem: javaUsed=8.99MB javaTotal=31.43MB javaMax=256.00MB nativeAllocated=1.33GB
+08-19 17:03:44.337 28787 28835 D WhisperSpeechController: WhisperEngine initialized: assets/models/ggml-small-q5_1.bin
+08-19 17:03:44.338 28787 28835 D WhisperSpeechController: startRecording: recorder.startRecording -> /data/user/0/com.negi.survey/cache/whisper_rec/survey_input_8593560772387131940.wav
+08-19 17:03:44.339 28787 28835 D WhisperSpeechController: startRecording: started
+08-19 17:03:44.355 28787 29212 D AudioSystem: onNewServiceWithAdapter: media.audio_flinger service obtained 0xb4000073614af110
+08-19 17:03:44.364 28787 28792 I com.negi.survey: NativeAlloc concurrent mark compact GC freed 1992KB AllocSpace bytes, 0(0B) LOS objects, 76% free, 7377KB/31MB, paused 466us,6.833ms total 36.871ms
+08-19 17:03:44.367 28787 29212 D AudioSystem: getService: IAudioFlingerService retrieved: 0xb4000073e2985ce0  IAudioFlinger cached: 0xb4000073614af110
+08-19 17:03:44.367 28787 29212 D AudioSystem: getClient: checking for service: 0xb4000073614af110
+08-19 17:03:44.582 28787 28835 I Recorder: 🎙 start 16000Hz buf=3840
+08-19 17:03:47.189 28787 28787 D WhisperSpeechController: stopRecording: requested
+08-19 17:03:47.193 28787 28855 D WhisperSpeechController: stopRecording: awaiting recorder.stopRecording()
+08-19 17:03:47.197 28787 29212 D Recorder: stopRecording() invoked (state=Recording)
+08-19 17:03:47.197 28787 29212 D Recorder: Calling AudioRecord.stop() to unblock read() ...
+08-19 17:03:47.222 28787 28787 D AiScreen: Speech finished with empty/no-change (node=Q1 role=FOLLOWUP)
+08-19 17:03:47.222 28787 29212 D Recorder: Joining writer job ...
+08-19 17:03:47.225 28787 28835 I Recorder: 🎙 stopped & released (writer exit)
+08-19 17:03:47.225 28787 29212 D Recorder: Writer job joined successfully
+08-19 17:03:47.226 28787 29212 D Recorder: post-join: pcm=/data/user/0/com.negi.survey/cache/rec_4996845971401070350.pcm wav=/data/user/0/com.negi.survey/cache/whisper_rec/survey_input_8593560772387131940.wav cfg=Config(sampleRate=16000, channelMask=16, format=2, bufferSize=3840)
+08-19 17:03:47.229 28787 29212 D Recorder: WAV header written
+08-19 17:03:47.229 28787 29212 I Recorder: ✅ WAV finalized: /data/user/0/com.negi.survey/cache/whisper_rec/survey_input_8593560772387131940.wav (80680 bytes)
+08-19 17:03:47.229 28787 29212 D Recorder: Cleanup complete, state=Idle
+08-19 17:03:47.230 28787 28835 D WhisperSpeechController: recorder.stopRecording OK in 37ms
+08-19 17:03:47.292 28787 28835 D WhisperSpeechController: stopRecording: wav.size(stable)=80680 path=/data/user/0/com.negi.survey/cache/whisper_rec/survey_input_8593560772387131940.wav
+08-19 17:03:47.297 28787 28835 D WhisperSpeechController: stopRecording: wav.info fmt=1 ch=1 sr=16000 bits=16 dataBytes=80636 durationSec=2.520
+08-19 17:03:47.338 28787 28835 D WhisperSpeechController: stopRecording: wav.stats rms=0.05503 peak=0.48083 nonSilent=0.434 samples=40318
+08-19 17:03:47.361 28787 28835 D ExportUtils: exportRecordedVoice: copying /data/user/0/com.negi.survey/cache/whisper_rec/survey_input_8593560772387131940.wav -> /storage/emulated/0/Android/data/com.negi.survey/files/exports/voice/voice_ab2cb127-ed9f-45a6-b8a3-a2c8fa21dfb6_Q1_20260820_000347.wav
+08-19 17:03:47.363 28787 28835 D ExportUtils: exportRecordedVoice: done, size=80680 bytes
+08-19 17:03:47.364 28787 28835 D ExportUtils: writeVoiceMeta: wrote /storage/emulated/0/Android/data/com.negi.survey/files/exports/voice/voice_ab2cb127-ed9f-45a6-b8a3-a2c8fa21dfb6_Q1_20260820_000347.meta.json
+08-19 17:03:47.370 28787 28835 D MainActivity: onVoiceExported: q=Q1, file=voice_ab2cb127-ed9f-45a6-b8a3-a2c8fa21dfb6_Q1_20260820_000347.wav, bytes=80680, checksum=4667fb6b75b30ded061ecd1fe884d539b9e9837d492bce8abdfcf951a9c892b7
+08-19 17:03:47.371 28787 28835 D SurveyVM: addAudioRef -> q=Q1, file=voice_ab2cb127-ed9f-45a6-b8a3-a2c8fa21dfb6_Q1_20260820_000347.wav, sid=ab2cb127-ed9f-45a6-b8a3-a2c8fa21dfb6
+08-19 17:03:47.371 28787 28835 D SurveyVM: onVoiceExported -> q=Q1, file=voice_ab2cb127-ed9f-45a6-b8a3-a2c8fa21dfb6_Q1_20260820_000347.wav, replace=false
+08-19 17:03:47.371 28787 28835 D WhisperSpeechController: onVoiceExported -> file=voice_ab2cb127-ed9f-45a6-b8a3-a2c8fa21dfb6_Q1_20260820_000347.wav, bytes=80680, qid=Q1, sid=ab2cb127-ed9f-45a6-b8a3-a2c8fa21dfb6, checksum=4667fb6b75b3...
+08-19 17:03:47.371 28787 28835 D WhisperSpeechController: stopRecording: transcribing -> /data/user/0/com.negi.survey/cache/whisper_rec/survey_input_8593560772387131940.wav
+08-19 17:03:47.373 28787 28855 D WhisperEngine: [1][asr] Start. file=survey_input_8593560772387131940.wav bytes=78.79KB approxSec(pcm16mono@16000Hz)=2.52 lang=en translate=false printTimestamp=false sr=16000 modelKey=asset:models/ggml-small-q5_1.bin thread=DefaultDispatcher-worker-6
+08-19 17:03:47.374 28787 28855 D WhisperEngine: [1][asr] mem: javaUsed=12.54MB javaTotal=31.20MB javaMax=256.00MB nativeAllocated=1.33GB
+08-19 17:03:47.375 28787 28855 D WaveCodec: fmt: format=1, ch=1, rate=16000, bits=16
+08-19 17:03:47.376 28787 28855 V WaveCodec: data chunk start=44 declared=80636 effective=80636
+08-19 17:03:47.407 28787 28787 D AiScreen: Speech started (node=Q1 role=FOLLOWUP)
+08-19 17:03:47.433 28787 28855 D WaveCodec: Decoded WAV: 1ch 16000Hz 16-bit (frames=40318, dataHeader=80636, effective=80636)
+08-19 17:03:47.450 28787 28855 D WhisperEngine: [1][asr] PCM stats(sampled): samples=40318 seconds=2.52 min=-0.42819214 max=0.48083496 rms=0.06 decodeMs=60
+08-19 17:03:47.450 28787 28855 I WhisperEngine: [1][asr] Mutex acquired. lockWaitMs=0 attempts=en audio=2.52s modelKey=asset:models/ggml-small-q5_1.bin
+08-19 17:03:47.450 28787 28855 I WhisperEngine: [1][asr] Transcribing: lang=en translate=false ts=false samples=40318 audio=2.52s
+08-19 17:03:47.455 28787 29228 D WhisperCpuConfig: CPU detection start: available=8 indices=[0, 1, 2, 3, 4, 5, 6, 7]
+08-19 17:03:47.459 28787 29228 D WhisperCpuConfig: CPU capacity bins={191=4, 741=3, 1024=1}
+08-19 17:03:47.459 28787 29228 D WhisperCpuConfig: Detected faster clusters via capacity: cores=4 slowestValue=191
+08-19 17:03:47.459 28787 29228 I WhisperCpuConfig: Selected whisper thread count=4 (detected=4 available=8)
+08-19 17:03:47.459 28787 29228 I WhisperJNI: Transcribe start: threads=4 lang=en translate=false samples=40318
+08-19 17:03:47.468 28787 29228 I JNI-Whisper: Starting whisper_full(): samples=40318 threads=4 translate=0 lang=en
+08-19 17:03:58.909 28787 28792 I com.negi.survey: Background young concurrent mark compact GC freed 22MB AllocSpace bytes, 11(236KB) LOS objects, 73% free, 8383KB/31MB, paused 788us,9.473ms total 86.458ms
+08-19 17:04:13.812 28787 28792 I com.negi.survey: Background concurrent mark compact GC freed 23MB AllocSpace bytes, 0(0B) LOS objects, 75% free, 8347KB/32MB, paused 258us,5.307ms total 107.187ms
+08-19 17:04:14.261 28787 28787 D InsetsController: hide(ime())
+08-19 17:04:14.262 28787 28787 I ImeTracker: com.negi.survey:5d081b07: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT_BY_INSETS_API fromUser false userId 0 displayId 0
+08-19 17:04:14.262 28787 28787 I ImeTracker: com.negi.survey:5d081b07: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+08-19 17:04:29.488 28787 28792 I com.negi.survey: Background young concurrent mark compact GC freed 24MB AllocSpace bytes, 0(0B) LOS objects, 74% free, 8359KB/32MB, paused 1.548ms,6.999ms total 80.716ms
+08-19 17:04:45.314 28787 28792 I com.negi.survey: Background concurrent mark compact GC freed 24MB AllocSpace bytes, 0(0B) LOS objects, 75% free, 8439KB/32MB, paused 508us,8.230ms total 137.696ms
+08-19 17:04:46.435 28787 28787 D SurveyVM: push -> Q2, navSize=3, stackSize=3
+08-19 17:04:46.449 28787 28787 D SurveyVM: hasTwoStepPrompt[Q2] -> false (eval=0, fu=0)
+08-19 17:04:46.464 28787 28787 D WhisperSpeechController: updateContext: surveyId=ab2cb127-ed9f-45a6-b8a3-a2c8fa21dfb6, questionId=Q2
+08-19 17:04:46.464 28787 28787 D WhisperSpeechController: updateContext: surveyId=ab2cb127-ed9f-45a6-b8a3-a2c8fa21dfb6, questionId=Q2
+08-19 17:04:48.240 28787 28787 D SurveyVM: backToPrevious -> Q1 (runActive=true, uiLen=0, runLen=0, draftLen=0)
+08-19 17:04:48.251 28787 28787 D SurveyVM: hasTwoStepPrompt[Q1] -> false (eval=0, fu=0)
+08-19 17:04:48.263 28787 28787 D WhisperSpeechController: updateContext: surveyId=ab2cb127-ed9f-45a6-b8a3-a2c8fa21dfb6, questionId=Q1
+08-19 17:04:48.264 28787 28787 D WhisperSpeechController: updateContext: surveyId=ab2cb127-ed9f-45a6-b8a3-a2c8fa21dfb6, questionId=Q1
+08-19 17:04:49.282 28787 28787 D InsetsController: hide(ime())
+08-19 17:04:49.283 28787 28787 I ImeTracker: com.negi.survey:f467cc2e: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT_BY_INSETS_API fromUser false userId 0 displayId 0
+08-19 17:04:49.283 28787 28787 I ImeTracker: com.negi.survey:f467cc2e: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+08-19 17:04:50.148 28787 28787 D InsetsController: hide(ime())
+08-19 17:04:50.148 28787 28787 I ImeTracker: com.negi.survey:52cb22fd: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT_BY_INSETS_API fromUser false userId 0 displayId 0
+08-19 17:04:50.148 28787 28787 I ImeTracker: com.negi.survey:52cb22fd: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+08-19 17:04:51.484 28787 28787 E InputEventReceiver: Exception dispatching input event.
+08-19 17:04:51.484 28787 28787 E MessageQueue-JNI: Exception in MessageQueue callback: handleReceiveCallback
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: java.lang.RuntimeException: Debug crash button pressed
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at com.negi.survey.screens.AiScreenKt.AiScreen$lambda$61$1$0$1$0$0$0(AiScreen.kt:778)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at com.negi.survey.screens.AiScreenKt.$r8$lambda$sZZho4M_o6vlo3EpXRzcJsLxmk8(Unknown Source:0)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at com.negi.survey.screens.AiScreenKt$$ExternalSyntheticLambda22.invoke(D8$$SyntheticClass:0)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at androidx.compose.foundation.AbstractClickableNode.performClick(Clickable.kt:1701)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at androidx.compose.foundation.ClickableNode.handleUpEvent(Clickable.kt:950)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at androidx.compose.foundation.ClickableNode.onPointerEvent-H0pRuoY(Clickable.kt:884)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:445)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:431)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:431)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:431)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:431)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at androidx.compose.ui.input.pointer.NodeParent.dispatchMainEventPass(HitPathTracker.kt:285)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at androidx.compose.ui.input.pointer.HitPathTracker.dispatchChanges(HitPathTracker.kt:182)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at androidx.compose.ui.input.pointer.PointerInputEventProcessor.process-BIzXfog(PointerInputEventProcessor.kt:116)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at androidx.compose.ui.platform.AndroidComposeView.sendMotionEvent-8iAsVTc(AndroidComposeView.android.kt:2869)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at androidx.compose.ui.platform.AndroidComposeView.handleMotionEvent-8iAsVTc(AndroidComposeView.android.kt:2809)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at androidx.compose.ui.platform.AndroidComposeView.dispatchTouchEvent(AndroidComposeView.android.kt:2630)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at com.android.internal.policy.DecorView.superDispatchTouchEvent(DecorView.java:503)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at com.android.internal.policy.PhoneWindow.superDispatchTouchEvent(PhoneWindow.java:2017)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at android.app.Activity.dispatchTouchEvent(Activity.java:4666)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at com.android.internal.policy.DecorView.dispatchTouchEvent(DecorView.java:441)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at android.view.View.dispatchPointerEvent(View.java:17196)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at android.view.ViewRootImpl$ViewPostImeInputStage.processPointerEvent(ViewRootImpl.java:8585)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:8335)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:7702)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:7759)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:7725)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:7896)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:7733)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:7953)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:7706)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:7759)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:7725)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:7733)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:7706)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at android.view.ViewRootImpl.deliverInputEvent(ViewRootImpl.java:11033)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at android.view.ViewRootImpl.doProcessInputEvents(ViewRootImpl.java:10973)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at android.view.ViewRootImpl.enqueueInputEvent(ViewRootImpl.java:10941)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at android.view.ViewRootImpl.processRawInputEvent(ViewRootImpl.java:11377)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at android.view.ViewRootImpl$WindowInputEventReceiver.onInputEvent(ViewRootImpl.java:11161)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at android.view.InputEventReceiver.dispatchInputEvent(InputEventReceiver.java:284)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at android.os.MessageQueue.nextDeliQueue(MessageQueue.java:780)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at android.os.MessageQueue.next(MessageQueue.java:760)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at android.os.Looper.loopOnce(Looper.java:196)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at android.os.Looper.loop(Looper.java:367)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at android.app.ActivityThread.main(ActivityThread.java:9333)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at java.lang.reflect.Method.invoke(Native Method)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:566)
+08-19 17:04:51.490 28787 28787 E MessageQueue-JNI: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:929)
+08-19 17:04:51.491 28787 28787 D AndroidRuntime: Shutting down VM
+--------- beginning of crash
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: FATAL EXCEPTION: main
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: Process: com.negi.survey, PID: 28787
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: java.lang.RuntimeException: Debug crash button pressed
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at com.negi.survey.screens.AiScreenKt.AiScreen$lambda$61$1$0$1$0$0$0(AiScreen.kt:778)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at com.negi.survey.screens.AiScreenKt.$r8$lambda$sZZho4M_o6vlo3EpXRzcJsLxmk8(Unknown Source:0)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at com.negi.survey.screens.AiScreenKt$$ExternalSyntheticLambda22.invoke(D8$$SyntheticClass:0)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at androidx.compose.foundation.AbstractClickableNode.performClick(Clickable.kt:1701)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at androidx.compose.foundation.ClickableNode.handleUpEvent(Clickable.kt:950)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at androidx.compose.foundation.ClickableNode.onPointerEvent-H0pRuoY(Clickable.kt:884)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:445)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:431)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:431)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:431)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:431)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at androidx.compose.ui.input.pointer.NodeParent.dispatchMainEventPass(HitPathTracker.kt:285)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at androidx.compose.ui.input.pointer.HitPathTracker.dispatchChanges(HitPathTracker.kt:182)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at androidx.compose.ui.input.pointer.PointerInputEventProcessor.process-BIzXfog(PointerInputEventProcessor.kt:116)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at androidx.compose.ui.platform.AndroidComposeView.sendMotionEvent-8iAsVTc(AndroidComposeView.android.kt:2869)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at androidx.compose.ui.platform.AndroidComposeView.handleMotionEvent-8iAsVTc(AndroidComposeView.android.kt:2809)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at androidx.compose.ui.platform.AndroidComposeView.dispatchTouchEvent(AndroidComposeView.android.kt:2630)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at com.android.internal.policy.DecorView.superDispatchTouchEvent(DecorView.java:503)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at com.android.internal.policy.PhoneWindow.superDispatchTouchEvent(PhoneWindow.java:2017)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at android.app.Activity.dispatchTouchEvent(Activity.java:4666)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at com.android.internal.policy.DecorView.dispatchTouchEvent(DecorView.java:441)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at android.view.View.dispatchPointerEvent(View.java:17196)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at android.view.ViewRootImpl$ViewPostImeInputStage.processPointerEvent(ViewRootImpl.java:8585)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:8335)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:7702)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:7759)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:7725)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:7896)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:7733)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:7953)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:7706)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:7759)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:7725)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:7733)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:7706)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at android.view.ViewRootImpl.deliverInputEvent(ViewRootImpl.java:11033)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at android.view.ViewRootImpl.doProcessInputEvents(ViewRootImpl.java:10973)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at android.view.ViewRootImpl.enqueueInputEvent(ViewRootImpl.java:10941)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at android.view.ViewRootImpl.processRawInputEvent(ViewRootImpl.java:11377)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at android.view.ViewRootImpl$WindowInputEventReceiver.onInputEvent(ViewRootImpl.java:11161)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at android.view.InputEventReceiver.dispatchInputEvent(InputEventReceiver.java:284)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at android.os.MessageQueue.nextDeliQueue(MessageQueue.java:780)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at android.os.MessageQueue.next(MessageQueue.java:760)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:196)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:367)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:9333)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:566)
+08-19 17:04:51.498 28787 28787 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:929)
