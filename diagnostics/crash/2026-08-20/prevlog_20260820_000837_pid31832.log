@@ -1,0 +1,101 @@
+=== Previous Session Logcat ===
+captured_time_utc=20260820_000837
+captured_time_local=20260819_170837
+marker=2026-08-19 16:56:07.722
+preferred_prev_pid=28787
+note=best-effort; buffers may be overwritten before next start
+sdk=36
+device=Google Pixel 9a
+appId=com.negi.survey
+versionName=0.0.1
+versionCode=1
+
+=== Logcat (since marker) ===
+--------- beginning of main
+08-19 17:08:33.738 31832 31832 I Zygote  : Process 31832 created for com.negi.survey
+08-19 17:08:33.739 31832 31832 I com.negi.survey: Late-enabling -Xcheck:jni
+08-19 17:08:33.774 31832 31832 I com.negi.survey: Using CollectorTypeCMC GC.
+08-19 17:08:33.795 31832 31832 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+08-19 17:08:33.821 31832 31832 W re-initialized>: type=1400 audit(0.0:9109): avc:  granted  { execute } for  path="/data/data/com.negi.survey/code_cache/startup_agents/b0fe613d-agent.so" dev="dm-62" ino=111317 scontext=u:r:untrusted_app:s0:c134,c274,c512,c768 tcontext=u:object_r:app_data_file:s0:c134,c274,c512,c768 tclass=file app=com.negi.survey
+08-19 17:08:33.829 31832 31832 D nativeloader: Load /data/user/0/com.negi.survey/code_cache/startup_agents/b0fe613d-agent.so using system ns (caller=<unknown>): ok
+08-19 17:08:33.829 31832 31832 V studio.deploy: Startup agent attached to VM
+08-19 17:08:33.830 31832 31832 V studio.deploy: No existing instrumentation found. Loading instrumentation from instruments-4d0b62be.jar
+08-19 17:08:33.836 31832 31832 W com.negi.survey: hiddenapi: DexFile /data/data/com.negi.survey/code_cache/.studio/instruments-4d0b62be.jar is in boot class path but is not in a known location
+08-19 17:08:33.839 31832 31832 V studio.deploy: Applying transforms with cached classes
+08-19 17:08:33.914 31832 31832 W com.negi.survey: Redefining intrinsic method java.lang.Thread java.lang.Thread.currentThread(). This may cause the unexpected use of the original definition of java.lang.Thread java.lang.Thread.currentThread()in methods that have already been compiled.
+08-19 17:08:33.914 31832 31832 W com.negi.survey: Redefining intrinsic method boolean java.lang.Thread.interrupted(). This may cause the unexpected use of the original definition of boolean java.lang.Thread.interrupted()in methods that have already been compiled.
+08-19 17:08:33.916 31832 31832 I studio.deploy: Registering DispatchJNI
+08-19 17:08:33.916 31832 31832 I studio.deploy: Found com/android/tools/deploy/interpreter/JNI
+08-19 17:08:33.934 31832 31832 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+08-19 17:08:33.934 31832 31832 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+08-19 17:08:34.511 31832 31832 D nativeloader: Configuring clns-9 for other apk /data/app/~~Uebk6-SjfNSXqA3emg8xQw==/com.negi.survey-aAi9lhCdlreEt6icWSPQxA==/base.apk. target_sdk_version=36, uses_libraries=libOpenCL.so:libOpenCL-pixel.so, library_path=/data/app/~~Uebk6-SjfNSXqA3emg8xQw==/com.negi.survey-aAi9lhCdlreEt6icWSPQxA==/lib/arm64:/data/app/~~Uebk6-SjfNSXqA3emg8xQw==/com.negi.survey-aAi9lhCdlreEt6icWSPQxA==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.negi.survey
+08-19 17:08:34.547 31832 31832 V GraphicsEnvironment: Currently set values for:
+08-19 17:08:34.547 31832 31832 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[com.android.angle]
+08-19 17:08:34.547 31832 31832 V GraphicsEnvironment:   angle_gl_driver_selection_values=[angle]
+08-19 17:08:34.547 31832 31832 V GraphicsEnvironment: com.negi.survey is not listed in per-application setting
+08-19 17:08:34.547 31832 31832 V GraphicsEnvironment: No special selections for ANGLE, returning default driver choice
+08-19 17:08:34.547 31832 31832 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+08-19 17:08:34.623 31832 31832 D nativeloader: Load /data/app/~~Uebk6-SjfNSXqA3emg8xQw==/com.negi.survey-aAi9lhCdlreEt6icWSPQxA==/base.apk!/lib/arm64-v8a/liblitertlm_jni.so using class loader ns clns-9 (caller=/data/data/com.negi.survey/code_cache/.overlay/base.apk/classes10.dex): ok
+08-19 17:08:34.623 31832 31832 D SurveyApp: Loaded LiteRTLM JNI: litertlm_jni where=attachBaseContext
+08-19 17:08:34.646 31832 31832 D AppRingLogStore: installed: dir=/data/user/0/com.negi.survey/files/diagnostics/applog_ring idx=0
+08-19 17:08:34.647 31832 31832 D SurveyApp: attachBaseContext: pid=31832 process=com.negi.survey isMain=true sdk=36
+08-19 17:08:34.647 31832 31832 D SurveyApp: bootTiming: attachBaseContext total=90ms
+08-19 17:08:34.647 31832 31832 D SurveyApp: Skipping WorkManager init in attachBaseContext; will init lazily on first enqueue.
+08-19 17:08:34.651 31832 31832 D CrashCapture: install: ensured default handler. where=SurveyApp:attachBaseContext pid=31832 default=com.negi.survey.CrashCapture$CrashHandler@54d4293
+08-19 17:08:34.651 31832 31832 D SurveyApp: CrashCapture installed: where=SurveyApp:attachBaseContext
+08-19 17:08:34.658 31832 31832 E com.negi.survey: hiddenapi: Accessing hidden method Landroid/net/ssl/EchConfigMismatchException;->getRetryConfigList()Landroid/net/ssl/EchConfigList; (runtime_flags=0, domain=core-platform, api=blocked) from /data/app/~~Uebk6-SjfNSXqA3emg8xQw==/com.negi.survey-aAi9lhCdlreEt6icWSPQxA==/base.apk!classes17.dex (domain=app, TargetSdkVersion=36) using linking: denied
+08-19 17:08:34.658 31832 31832 E com.negi.survey: hiddenapi: Accessing hidden method Landroid/net/ssl/EchConfigList;->toBytes()[B (runtime_flags=0, domain=core-platform, api=blocked) from /data/app/~~Uebk6-SjfNSXqA3emg8xQw==/com.negi.survey-aAi9lhCdlreEt6icWSPQxA==/base.apk!classes17.dex (domain=app, TargetSdkVersion=36) using linking: denied
+08-19 17:08:34.658 31832 31832 E com.negi.survey: hiddenapi: Accessing hidden method Landroid/net/ssl/EchConfigList;->fromBytes([B)Landroid/net/ssl/EchConfigList; (runtime_flags=0, domain=core-platform, api=blocked) from /data/app/~~Uebk6-SjfNSXqA3emg8xQw==/com.negi.survey-aAi9lhCdlreEt6icWSPQxA==/base.apk!classes17.dex (domain=app, TargetSdkVersion=36) using linking: denied
+08-19 17:08:34.658 31832 31832 E com.negi.survey: hiddenapi: Accessing hidden method Landroid/net/ssl/SSLSockets;->setEchConfigList(Ljavax/net/ssl/SSLSocket;Landroid/net/ssl/EchConfigList;)V (runtime_flags=0, domain=core-platform, api=blocked) from /data/app/~~Uebk6-SjfNSXqA3emg8xQw==/com.negi.survey-aAi9lhCdlreEt6icWSPQxA==/base.apk!classes17.dex (domain=app, TargetSdkVersion=36) using linking: denied
+08-19 17:08:34.684 31832 31856 D RuntimeLogStore: openWriter: start -> /data/user/0/com.negi.survey/files/diagnostics/runtime_logs/rtlog_20260820_000834_638_pid31832_seq1.log (bytes=0 format=LEGACY)
+08-19 17:08:34.688 31832 31856 D RuntimeLogStore: retention: start files=2 kept=2 totalBytes=25147
+08-19 17:08:34.692 31832 31832 D SurveyApp: LiteRTLM JNI already loaded; skip. where=onCreate(retry)
+08-19 17:08:34.693 31832 31832 D SurveyApp: bootTiming: RuntimeLogStore.start took=0ms
+08-19 17:08:34.693 31832 31832 D SurveyApp: bootTiming: AppRingLogStore.install took=0ms
+08-19 17:08:34.693 31832 31832 D SurveyApp: onCreate: pid=31832 process=com.negi.survey isMain=true sdk=36
+08-19 17:08:34.696 31832 31832 D CrashCapture: install: ensured default handler. where=SurveyApp:onCreate(rewrap) pid=31832 default=com.negi.survey.CrashCapture$CrashHandler@54d4293
+08-19 17:08:34.696 31832 31832 D SurveyApp: CrashCapture installed: where=SurveyApp:onCreate(rewrap)
+08-19 17:08:34.697 31832 31832 D CrashCapture: registerSelfHealing: ActivityLifecycleCallbacks registered. mode=onResumedOnly
+08-19 17:08:34.697 31832 31832 D SurveyApp: CrashCapture self-healing registered.
+08-19 17:08:34.697 31832 31832 W SurveyApp: Startup enqueues deferred: delay=2500ms (to reduce init contention)
+08-19 17:08:34.697 31832 31832 D SurveyApp: bootTiming: onCreate total=5ms
+--------- beginning of system
+08-19 17:08:34.703 31832 31886 I DisplayManager: Choreographer implicitly registered for the refresh rate.
+08-19 17:08:34.704 31832 31886 D vulkan  : searching for layers in '/data/app/~~Uebk6-SjfNSXqA3emg8xQw==/com.negi.survey-aAi9lhCdlreEt6icWSPQxA==/lib/arm64'
+08-19 17:08:34.704 31832 31886 D vulkan  : searching for layers in '/data/app/~~Uebk6-SjfNSXqA3emg8xQw==/com.negi.survey-aAi9lhCdlreEt6icWSPQxA==/base.apk!/lib/arm64-v8a'
+08-19 17:08:34.711 31832 31832 D DesktopExperienceFlags: Toggle override initialized to: false
+08-19 17:08:34.751 31832 31832 D CompatChangeReporter: Compat change id reported: 377864165; UID 14742; state: ENABLED
+08-19 17:08:34.751 31832 31832 D DesktopModeFlags: Toggle override initialized to: OVERRIDE_UNSET
+08-19 17:08:34.772 31832 31832 I ContentCaptureHelper: Setting logging level to OFF
+08-19 17:08:34.777 31832 31832 D CrashCapture: install: ensured default handler. where=selfHeal:onActivityResumed pid=31832 default=com.negi.survey.CrashCapture$CrashHandler@54d4293
+08-19 17:08:34.805 31832 31832 D ActivityThread: Package [com.google.android.verifier] reported as REPLACED, but missing application info. Assuming REMOVED.
+08-19 17:08:34.805 31832 31832 D ActivityThread: Package [com.google.android.verifier] reported as REPLACED, but missing application info. Assuming REMOVED.
+08-19 17:08:34.807 31832 31832 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@46d5e43
+08-19 17:08:35.009 31832 31838 I com.negi.survey: Compiler allocated 5049KB to compile void android.view.ViewRootImpl.performTraversals()
+08-19 17:08:35.032 31832 31832 D VRI[MainActivity]: WindowInsets changed: 1080x2424 statusBars:[0,152,0,0] navigationBars:[0,0,0,69] mandatorySystemGestures:[0,187,0,92] 
+08-19 17:08:35.047 31832 31832 I HWUI    : Using FreeType backend (prop=Auto)
+08-19 17:08:35.168 31832 31832 I com.negi.survey: hiddenapi: Accessing hidden method Landroid/os/SystemProperties;->addChangeCallback(Ljava/lang/Runnable;)V (runtime_flags=0, domain=platform, api=unsupported) from Landroidx/compose/ui/platform/AndroidComposeView$Companion; (domain=app, TargetSdkVersion=36) using reflection: allowed
+08-19 17:08:35.229 31832 31832 D InsetsController: hide(ime())
+08-19 17:08:35.229 31832 31832 I ImeTracker: com.negi.survey:6490cfbc: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+08-19 17:08:35.307 31832 31832 D IntroScreen: Resolved config details: id=survey_config10.yaml in 137ms
+08-19 17:08:35.978 31832 31832 D VRI[MainActivity]: visibilityChanged oldVisibility=true newVisibility=false
+08-19 17:08:37.198 31832 31832 W SurveyApp: Deferred startup enqueues begin...
+08-19 17:08:37.284 31832 31832 D WM-PackageManagerHelper: Skipping component enablement for androidx.work.impl.background.systemjob.SystemJobService
+08-19 17:08:37.284 31832 31832 D WM-Schedulers: Created SystemJobScheduler and enabled SystemJobService
+08-19 17:08:37.292 31832 31964 D WM-ForceStopRunnable: Is default app process = true
+08-19 17:08:37.296 31832 31964 D WM-ForceStopRunnable: Performing cleanup operations.
+08-19 17:08:37.298 31832 31832 D SurveyApp: WorkManager available. where=startupRtLogs(immediate) took=98ms
+08-19 17:08:37.314 31832 31832 D SurveyApp: Startup runtime logs target -> owner=ishizuki-tech repo=SurveyExports branch=main base='/diagnostics/runtime_logs'
+08-19 17:08:37.353 31832 31832 D github_upload: enqueueStartupRuntimeLogsUpload: uniqueName=upload_runtime_logs_startup policy=KEEP session=startup_runtime_20260820_000837_e96a3f34
+08-19 17:08:37.361 31832 31832 D SurveyApp: Startup runtime logs: enqueue requested (immediate).
+08-19 17:08:37.362 31832 31832 D SurveyApp: WorkManager available. where=startupRingLogs(immediate) took=0ms
+08-19 17:08:37.369 31832 31832 D SurveyApp: Startup ring logs target -> owner=ishizuki-tech repo=SurveyExports branch=main base='/diagnostics/applog_ring'
+08-19 17:08:37.369 31832 31964 D WM-SystemJobScheduler: Reconciling jobs
+08-19 17:08:37.374 31832 31832 D github_upload: enqueueStartupRingLogsUpload: uniqueName=upload_ring_logs_startup policy=KEEP session=startup_ring_20260820_000837_c705012f
+08-19 17:08:37.375 31832 31832 D SurveyApp: Startup ring logs: enqueue requested (immediate).
+08-19 17:08:37.375 31832 31832 D SurveyApp: WorkManager available. where=enqueuePending(immediate) took=0ms
+08-19 17:08:37.377 31832 31832 D SurveyApp: CrashCapture pending uploads requested (immediate).
+08-19 17:08:37.377 31832 31832 W SurveyApp: Deferred startup enqueues done: took=180ms
+08-19 17:08:37.385 31832 31966 D CrashCapture: enqueuePendingCrashUploadsIfPossible enter where=SurveyApp:enqueuePending(immediate):bg pid=31832 thread=CrashCapture-Enqueue
+08-19 17:08:37.402 31832 31966 D CrashCapture: Staged exit info: /data/user/0/com.negi.survey/files/diagnostics/crash/exit_20260820_000451_1787184291719_pid28787_r4.log bytes=377 reason=4 pid=28787
+08-19 17:08:37.423 31832 31964 D WM-ForceStopRunnable: Found unfinished work, scheduling it.
