@@ -1,0 +1,146 @@
+=== Previous Session Logcat ===
+captured_time_utc=20260819_223704
+captured_time_local=20260819_153704
+marker=2026-08-19 15:33:54.401
+preferred_prev_pid=23434
+note=best-effort; buffers may be overwritten before next start
+sdk=36
+device=Google Pixel 9a
+appId=com.negi.survey
+versionName=0.0.1
+versionCode=1
+
+=== Logcat (since marker) ===
+--------- beginning of main
+08-19 15:33:54.401 23434 23533 D CrashCapture: prevSessionLogcat: no marker yet; skipping.
+08-19 15:33:54.414 23434 23533 D CrashCapture: Persisted logcat marker for next run: 2026-08-19 15:33:54.401
+08-19 15:33:54.416 23434 23533 D CrashCapture: No crash artifacts found; skipping enqueue. where=SurveyApp:enqueuePending(immediate):bg
+08-19 15:33:54.461 23434 23536 D WM-PackageManagerHelper: Skipping component enablement for androidx.work.impl.background.systemalarm.RescheduleReceiver
+08-19 15:33:55.997 23434 23434 D SurveyApp: WorkManager available. where=startupRtLogs(delayed) took=0ms
+08-19 15:33:56.003 23434 23434 D SurveyApp: Startup runtime logs: GitHub config not available (delayed).
+08-19 15:33:56.003 23434 23434 D SurveyApp: Startup runtime logs: retry already scheduled; reason=config
+08-19 15:33:56.004 23434 23434 D SurveyApp: WorkManager available. where=startupRingLogs(delayed) took=0ms
+08-19 15:33:56.007 23434 23434 D SurveyApp: Startup ring logs: GitHub config not available (delayed).
+08-19 15:33:56.007 23434 23434 D SurveyApp: Startup ring logs: retry already scheduled; reason=config
+08-19 15:33:57.446 23434 23539 D ProfileInstaller: Installing profile for com.negi.survey
+08-19 15:34:01.352 23434 23469 W com.negi.survey: userfaultfd: MOVE ioctl seems unsupported: Try again
+08-19 15:36:46.408 23434 23434 E InputEventReceiver: Exception dispatching input event.
+08-19 15:36:46.408 23434 23434 E MessageQueue-JNI: Exception in MessageQueue callback: handleReceiveCallback
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: java.lang.RuntimeException: Debug crash button pressed
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at com.negi.survey.screens.IntroScreenKt.IntroScreen$lambda$2$0$0$0(IntroScreen.kt:211)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at com.negi.survey.screens.IntroScreenKt.$r8$lambda$dVJUvuvBl3BAK4vFcws4ley11cc(Unknown Source:0)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at com.negi.survey.screens.IntroScreenKt$$ExternalSyntheticLambda21.invoke(D8$$SyntheticClass:0)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at androidx.compose.foundation.AbstractClickableNode.performClick(Clickable.kt:1701)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at androidx.compose.foundation.ClickableNode.handleUpEvent(Clickable.kt:950)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at androidx.compose.foundation.ClickableNode.onPointerEvent-H0pRuoY(Clickable.kt:884)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:445)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:431)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at androidx.compose.ui.input.pointer.NodeParent.dispatchMainEventPass(HitPathTracker.kt:285)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at androidx.compose.ui.input.pointer.HitPathTracker.dispatchChanges(HitPathTracker.kt:182)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at androidx.compose.ui.input.pointer.PointerInputEventProcessor.process-BIzXfog(PointerInputEventProcessor.kt:116)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at androidx.compose.ui.platform.AndroidComposeView.sendMotionEvent-8iAsVTc(AndroidComposeView.android.kt:2869)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at androidx.compose.ui.platform.AndroidComposeView.handleMotionEvent-8iAsVTc(AndroidComposeView.android.kt:2809)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at androidx.compose.ui.platform.AndroidComposeView.dispatchTouchEvent(AndroidComposeView.android.kt:2630)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at com.android.internal.policy.DecorView.superDispatchTouchEvent(DecorView.java:503)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at com.android.internal.policy.PhoneWindow.superDispatchTouchEvent(PhoneWindow.java:2017)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at android.app.Activity.dispatchTouchEvent(Activity.java:4666)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at com.android.internal.policy.DecorView.dispatchTouchEvent(DecorView.java:441)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at android.view.View.dispatchPointerEvent(View.java:17196)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at android.view.ViewRootImpl$ViewPostImeInputStage.processPointerEvent(ViewRootImpl.java:8585)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:8335)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:7702)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:7759)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:7725)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:7896)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:7733)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:7953)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:7706)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:7759)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:7725)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:7733)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:7706)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at android.view.ViewRootImpl.deliverInputEvent(ViewRootImpl.java:11033)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at android.view.ViewRootImpl.doProcessInputEvents(ViewRootImpl.java:10973)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at android.view.ViewRootImpl.enqueueInputEvent(ViewRootImpl.java:10941)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at android.view.ViewRootImpl.processRawInputEvent(ViewRootImpl.java:11377)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at android.view.ViewRootImpl$WindowInputEventReceiver.onInputEvent(ViewRootImpl.java:11161)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at android.view.InputEventReceiver.dispatchInputEvent(InputEventReceiver.java:284)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at android.os.MessageQueue.nextDeliQueue(MessageQueue.java:780)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at android.os.MessageQueue.next(MessageQueue.java:760)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at android.os.Looper.loopOnce(Looper.java:196)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at android.os.Looper.loop(Looper.java:367)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at android.app.ActivityThread.main(ActivityThread.java:9333)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at java.lang.reflect.Method.invoke(Native Method)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:566)
+08-19 15:36:46.409 23434 23434 E MessageQueue-JNI: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:929)
+08-19 15:36:46.409 23434 23434 D AndroidRuntime: Shutting down VM
+--------- beginning of crash
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: FATAL EXCEPTION: main
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: Process: com.negi.survey, PID: 23434
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: java.lang.RuntimeException: Debug crash button pressed
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at com.negi.survey.screens.IntroScreenKt.IntroScreen$lambda$2$0$0$0(IntroScreen.kt:211)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at com.negi.survey.screens.IntroScreenKt.$r8$lambda$dVJUvuvBl3BAK4vFcws4ley11cc(Unknown Source:0)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at com.negi.survey.screens.IntroScreenKt$$ExternalSyntheticLambda21.invoke(D8$$SyntheticClass:0)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at androidx.compose.foundation.AbstractClickableNode.performClick(Clickable.kt:1701)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at androidx.compose.foundation.ClickableNode.handleUpEvent(Clickable.kt:950)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at androidx.compose.foundation.ClickableNode.onPointerEvent-H0pRuoY(Clickable.kt:884)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:445)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at androidx.compose.ui.input.pointer.Node.dispatchMainEventPass(HitPathTracker.kt:431)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at androidx.compose.ui.input.pointer.NodeParent.dispatchMainEventPass(HitPathTracker.kt:285)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at androidx.compose.ui.input.pointer.HitPathTracker.dispatchChanges(HitPathTracker.kt:182)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at androidx.compose.ui.input.pointer.PointerInputEventProcessor.process-BIzXfog(PointerInputEventProcessor.kt:116)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at androidx.compose.ui.platform.AndroidComposeView.sendMotionEvent-8iAsVTc(AndroidComposeView.android.kt:2869)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at androidx.compose.ui.platform.AndroidComposeView.handleMotionEvent-8iAsVTc(AndroidComposeView.android.kt:2809)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at androidx.compose.ui.platform.AndroidComposeView.dispatchTouchEvent(AndroidComposeView.android.kt:2630)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:3143)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2826)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at com.android.internal.policy.DecorView.superDispatchTouchEvent(DecorView.java:503)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at com.android.internal.policy.PhoneWindow.superDispatchTouchEvent(PhoneWindow.java:2017)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at android.app.Activity.dispatchTouchEvent(Activity.java:4666)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at com.android.internal.policy.DecorView.dispatchTouchEvent(DecorView.java:441)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at android.view.View.dispatchPointerEvent(View.java:17196)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at android.view.ViewRootImpl$ViewPostImeInputStage.processPointerEvent(ViewRootImpl.java:8585)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:8335)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:7702)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:7759)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:7725)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:7896)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:7733)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:7953)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:7706)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:7759)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:7725)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:7733)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:7706)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at android.view.ViewRootImpl.deliverInputEvent(ViewRootImpl.java:11033)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at android.view.ViewRootImpl.doProcessInputEvents(ViewRootImpl.java:10973)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at android.view.ViewRootImpl.enqueueInputEvent(ViewRootImpl.java:10941)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at android.view.ViewRootImpl.processRawInputEvent(ViewRootImpl.java:11377)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at android.view.ViewRootImpl$WindowInputEventReceiver.onInputEvent(ViewRootImpl.java:11161)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at android.view.InputEventReceiver.dispatchInputEvent(InputEventReceiver.java:284)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at android.os.MessageQueue.nativePollOnce(Native Method)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at android.os.MessageQueue.nextDeliQueue(MessageQueue.java:780)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at android.os.MessageQueue.next(MessageQueue.java:760)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:196)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:367)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:9333)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:566)
+08-19 15:36:46.410 23434 23434 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:929)
+08-19 15:36:46.565 23434 23434 E CrashCapture: Crash captured: /data/user/0/com.negi.survey/files/diagnostics/crash/crash_20260819_223646_pid23434_tid23434_u678198.log bytes=30537
+08-19 15:36:46.582 23434 23434 I Process : Sending signal. PID: 23434 SIG: 9
