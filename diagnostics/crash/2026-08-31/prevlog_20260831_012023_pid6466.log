@@ -1,0 +1,249 @@
+=== Previous Session Logcat ===
+captured_time_utc=20260831_012023
+captured_time_local=20260830_182023
+marker=2026-08-30 18:12:09.545
+preferred_prev_pid=-1
+note=best-effort; buffers may be overwritten before next start
+sdk=36
+device=Google Pixel 9a
+appId=com.negi.survey
+versionName=0.0.1
+versionCode=1
+
+=== Logcat (since marker) ===
+--------- beginning of main
+08-30 18:15:17.754  5424  5424 I ContentCaptureHelper: Setting logging level to OFF
+08-30 18:15:17.756  5424  5424 D CrashCapture: install: ensured default handler. where=selfHeal:onActivityResumed pid=5424 default=com.negi.survey.CrashCapture$CrashHandler@20b6291
+08-30 18:15:17.761  5424  5424 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@f6b06cd
+08-30 18:15:17.798  5424  5424 D VRI[MainActivity]: WindowInsets changed: 1080x2424 statusBars:[0,152,0,0] navigationBars:[0,0,0,69] mandatorySystemGestures:[0,187,0,92] 
+08-30 18:15:17.849  5424  5504 D SurveyConfigLoader: fromString -> format=YAML, reason=file extension .yml/.yaml, firstLine='graph:', leading='graph:\n  startId: Start\n  node...' file='survey_config10.yaml'
+08-30 18:15:17.877  5424  5504 D SurveyConfigLoader: fromString loaded (survey_config10.yaml): legacy=6(one=6,inline2=0) splitEval=0 splitFollow=0 followMode=JSON legacyIds=[Q1,Q2,Q3,Q4,Q5,Q6] evalIds=[-] followIds=[-]
+08-30 18:15:17.878  5424  5424 D IntroScreen: Resolved config details: id=survey_config10.yaml in 30ms
+--------- beginning of system
+08-30 18:15:17.885  5424  5424 D InsetsController: hide(ime())
+08-30 18:15:17.885  5424  5424 I ImeTracker: com.negi.survey:565e1ca: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+08-30 18:15:26.072  5424  5424 D MainActivity: Intro -> Start session. epoch=1, file=survey_config10.yaml
+08-30 18:15:26.103  5424  5504 D SurveyConfigLoader: fromStringStrictValidated -> format=YAML, reason=file extension .yml/.yaml, firstLine='graph:', leading='graph:\n  startId: Start\n  node...' file='survey_config10.yaml'
+08-30 18:15:26.146  5424  5504 D SurveyConfigLoader: strict config loaded (survey_config10.yaml): legacy=6(one=6,inline2=0) splitEval=0 splitFollow=0 followMode=JSON legacyIds=[Q1,Q2,Q3,Q4,Q5,Q6] evalIds=[-] followIds=[-]
+08-30 18:15:26.154  5424  5504 D SurveyConfigLoader: fromStringStrictValidated -> issues=0 (legacy=6(one=6,inline2=0) splitEval=0 splitFollow=0 followMode=JSON legacyIds=[Q1,Q2,Q3,Q4,Q5,Q6] evalIds=[-] followIds=[-])
+08-30 18:15:26.155  5424  5424 D MainActivity: Config loaded. session=survey_config10.yaml@1
+08-30 18:15:26.184  5424  5424 D MainActivity: DownloadGate idle -> start download. session=survey_config10.yaml@1
+08-30 18:15:26.188  5424  5424 D SLM     : buildModelConfig: accel=GPU maxTokens=512 topK=1 topP=0.0 temperature=0.0
+08-30 18:15:26.196  5424  5504 D LiteRtLM: initializeIfNeeded: warm runtime already ready: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm'
+08-30 18:15:26.197  5424  5424 D AiTrace : Installed (enabled=true ringEnabled=true)
+08-30 18:15:26.198  5424  5424 D SurveyVM: init -> Start, session=0, uuid=e261cab5-6be3-4b17-b21b-beaaa379e93e, navSize=1, graphSize=9
+08-30 18:15:26.201  5424  5424 D SurveyVM: config.validate -> issues=0
+08-30 18:15:26.201  5424  5424 D SurveyVM: promptSources -> legacy=6, eval=0, follow=0
+08-30 18:15:26.202  5424  5424 D SurveyVM: promptSources.preview -> legacy=[Q1, Q2, Q3, Q4, Q5, Q6], eval=[], follow=[]
+08-30 18:15:26.202  5424  5424 D SurveyVM: hasTwoStepPrompt[Q1] -> false (eval=0, fu=0)
+08-30 18:15:26.202  5424  5424 D SurveyVM: hasTwoStepPrompt[Q2] -> false (eval=0, fu=0)
+08-30 18:15:26.202  5424  5424 D SurveyVM: hasTwoStepPrompt[Q3] -> false (eval=0, fu=0)
+08-30 18:15:26.202  5424  5424 D SurveyVM: hasTwoStepPrompt[Q4] -> false (eval=0, fu=0)
+08-30 18:15:26.202  5424  5424 D SurveyVM: hasTwoStepPrompt[Q5] -> false (eval=0, fu=0)
+08-30 18:15:26.202  5424  5424 D SurveyVM: hasTwoStepPrompt[Q6] -> false (eval=0, fu=0)
+08-30 18:15:26.202  5424  5424 D SurveyVM: AI prompt coverage OK (aiCount=6)
+08-30 18:15:26.232  5424  5424 D MainActivity: SLM Engine warm-up started. session=survey_config10.yaml@1 model=Gemma3n4B
+08-30 18:15:26.232  5424  5424 D WhisperSpeechController: updateContext: surveyId=e261cab5-6be3-4b17-b21b-beaaa379e93e, questionId=Start
+08-30 18:15:26.233  5424  5692 D SLM     : initializeIfNeeded: model='Gemma3n4B' image=false audio=false
+08-30 18:15:26.235  5424  5692 D LiteRtLM: initializeIfNeeded: warm runtime already ready: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm'
+08-30 18:15:26.239  5424  5424 D LiteRtRepository: warmUp: initializeIfNeeded ok gateWaitMs=0 initMs=7
+08-30 18:15:26.239  5424  5424 D LiteRtRepository: warmUp: Engine ready; representative inference disabled totalMs=7
+08-30 18:15:26.239  5424  5424 D MainActivity: SLM Engine warm-up finished. session=survey_config10.yaml@1 model=Gemma3n4B elapsedMs=7
+08-30 18:15:38.232  5424  5424 D WhisperSpeechController: stopRecording: not recording, ignoring
+08-30 18:15:38.257  5424  5424 D MainActivity: Home -> Start survey. session=survey_config10.yaml@1 freeTextDraftLen=0 (run-scoped)
+08-30 18:15:38.257  5424  5424 D SurveyVM: resetAudioRefs -> cleared
+08-30 18:15:38.258  5424  5424 D SurveyVM: resetNavToStart -> key=com.negi.survey.vm.FlowHome@5c5dccd, navSize=1
+08-30 18:15:38.258  5424  5424 D SurveyVM: resetToStart -> Start, session=1, uuid=04a174c1-6c7b-4fb1-ade0-4c84f99a63f9, preserveDraft=true, draftLen=0
+08-30 18:15:38.258  5424  5424 D MainActivity: Home -> Start survey: runNoteLen=0 (restoredAfterReset)
+08-30 18:15:38.258  5424  5424 D SurveyVM: activateRunIfNeeded(advanceToNext:Q1) -> runNoteLen=0, draftCleared=true, uuid=04a174c1-6c7b-4fb1-ade0-4c84f99a63f9
+08-30 18:15:38.258  5424  5424 D SurveyVM: push -> Q1, navSize=2, stackSize=2
+08-30 18:15:38.268  5424  5424 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): androidx.navigationevent.OnBackInvokedInput$createOnBackAnimationCallback$1@10e89ce
+08-30 18:15:38.272  5424  5424 D WhisperSpeechController: updateContext: surveyId=04a174c1-6c7b-4fb1-ade0-4c84f99a63f9, questionId=Q1
+08-30 18:15:38.282  5424  5424 D SurveyVM: hasTwoStepPrompt[Q1] -> false (eval=0, fu=0)
+08-30 18:15:38.319  5424  5424 D WhisperSpeechController: updateContext: surveyId=04a174c1-6c7b-4fb1-ade0-4c84f99a63f9, questionId=Q1
+08-30 18:15:38.375  5424  5424 D InsetsController: show(ime())
+08-30 18:15:38.376  5424  5424 I ImeTracker: com.negi.survey:bb07d907: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT_BY_INSETS_API fromUser false userId 0 displayId 0
+08-30 18:15:38.376  5424  5424 D InsetsController: Setting requestedVisibleTypes to 511 (was 503)
+08-30 18:15:38.398  5424  5424 I AssistStructure: Flattened final assist data: 672 bytes, containing 1 windows, 4 views
+08-30 18:15:38.400  5424  5424 I ImeTracker: com.negi.survey:79138077: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false userId 0 displayId 0
+08-30 18:15:38.400  5424  5424 D InsetsController: show(ime())
+08-30 18:15:38.400  5424  5424 I ImeTracker: com.negi.survey:79138077: onCancelled at PHASE_CLIENT_REPORT_REQUESTED_VISIBLE_TYPES
+08-30 18:15:38.413  5424  5424 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.view.ImeBackAnimationController@d6b744d
+08-30 18:15:38.461  5424  5424 D VRI[MainActivity]: WindowInsets changed: ime:[0,0,0,1043] 
+08-30 18:15:38.465  5424  5424 W InteractionJankMonitor: Initializing without READ_DEVICE_CONFIG permission. enabled=false, interval=1, missedFrameThreshold=3, frameTimeThreshold=64, package=com.negi.survey
+08-30 18:15:38.776  5424  5424 I ImeTracker: com.negi.survey:bb07d907: onShown
+08-30 18:15:59.871  5424  5424 I ImeTracker: com.negi.survey:b4d6d043: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT_REQUEST_HIDE_WITH_CONTROL fromUser true userId 0 displayId 0
+08-30 18:15:59.871  5424  5424 D InsetsController: hide(ime())
+08-30 18:15:59.872  5424  5424 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): androidx.navigationevent.OnBackInvokedInput$createOnBackAnimationCallback$1@10e89ce
+08-30 18:15:59.872  5424  5424 D InsetsController: Setting requestedVisibleTypes to 503 (was 511)
+08-30 18:15:59.878  5424  5424 D VRI[MainActivity]: WindowInsets changed: ime:null 
+08-30 18:15:59.925  5424  5424 I ImeTracker: system_server:f3b3d7c: onCancelled at PHASE_CLIENT_ON_CONTROLS_CHANGED
+08-30 18:16:13.712  5424  5424 D WhisperSpeechController: startRecording: requested
+08-30 18:16:13.715  5424  5504 I WhisperEngine: [1][init:asset] Init start. assetCheckMs=1 lockWaitMs=0 prevKey=null newKey=asset:models/ggml-tiny-q5_1.bin bytes=n/a thread=DefaultDispatcher-worker-4
+08-30 18:16:13.715  5424  5504 D WhisperEngine: [1][init:asset] mem: javaUsed=11.04MB javaTotal=31.76MB javaMax=256.00MB nativeAllocated=428.52MB
+08-30 18:16:13.715  5424  5504 I WhisperEngine: [1][init:asset] Creating WhisperContext from assets/models/ggml-tiny-q5_1.bin
+08-30 18:16:13.722  5424  5504 D nativeloader: Load /data/app/~~ioVCd2nCD4p5xwkgoB3e1Q==/com.negi.survey-fc303MS-2yeenCDfUDGszg==/base.apk!/lib/arm64-v8a/libwhisper_v8fp16_va.so using class loader ns clns-9 (caller=/data/app/~~ioVCd2nCD4p5xwkgoB3e1Q==/com.negi.survey-fc303MS-2yeenCDfUDGszg==/base.apk!classes3.dex): ok
+08-30 18:16:13.722  5424  5504 I JNI-Whisper: JNI_OnLoad(): Whisper JNI initialized (JNI v1.6)
+08-30 18:16:13.722  5424  5504 I WhisperJNI: Loaded libwhisper_v8fp16_va.so (ABI=arm64-v8a fp16=true vfpv4=false)
+08-30 18:16:13.722  5424  5504 I JNI-Whisper: Loading Whisper model from Asset: models/ggml-tiny-q5_1.bin
+08-30 18:16:13.737  5424  5424 D InsetsController: hide(ime())
+08-30 18:16:13.738  5424  5424 I ImeTracker: com.negi.survey:b9649a6d: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT_BY_INSETS_API fromUser false userId 0 displayId 0
+08-30 18:16:13.738  5424  5424 I ImeTracker: com.negi.survey:b9649a6d: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+08-30 18:16:13.739  5424  5424 D AiScreen: Speech started (node=Q1 role=MAIN)
+08-30 18:16:13.927  5424  5504 I WhisperJNI: WhisperContext created from asset: models/ggml-tiny-q5_1.bin
+08-30 18:16:13.927  5424  5504 I WhisperEngine: [1][init:asset] Init OK. totalMs=213 assetCheckMs=1 lockWaitMs=0 lockHoldMs=212 releasePrevMs=0 createMs=212 key=asset:models/ggml-tiny-q5_1.bin bytes=n/a
+08-30 18:16:13.927  5424  5504 D WhisperEngine: [1][init:asset] mem: javaUsed=11.62MB javaTotal=31.76MB javaMax=256.00MB nativeAllocated=1.00GB
+08-30 18:16:13.928  5424  5504 D WhisperSpeechController: WhisperEngine initialized: assets/models/ggml-tiny-q5_1.bin
+08-30 18:16:13.930  5424  5504 D WhisperSpeechController: startRecording: recorder.startRecording -> /data/user/0/com.negi.survey/cache/whisper_rec/survey_input_846937505718126991.wav
+08-30 18:16:13.930  5424  5504 D WhisperSpeechController: startRecording: started
+08-30 18:16:13.932  5424  6054 D AudioSystem: onNewServiceWithAdapter: media.audio_flinger service obtained 0xb4000073614c0fc0
+08-30 18:16:13.933  5424  6054 D AudioSystem: getService: IAudioFlingerService retrieved: 0xb4000073e3490db0  IAudioFlinger cached: 0xb4000073614c0fc0
+08-30 18:16:13.933  5424  6054 D AudioSystem: getClient: checking for service: 0xb4000073614c0fc0
+08-30 18:16:13.989  5424  5504 I Recorder: 🎙 start 16000Hz buf=3840
+08-30 18:16:17.081  5424  5424 D WhisperSpeechController: stopRecording: requested
+08-30 18:16:17.083  5424  5511 D WhisperSpeechController: stopRecording: awaiting recorder.stopRecording()
+08-30 18:16:17.084  5424  6054 D Recorder: stopRecording() invoked (state=Recording)
+08-30 18:16:17.084  5424  6054 D Recorder: Calling AudioRecord.stop() to unblock read() ...
+08-30 18:16:17.109  5424  5424 D AiScreen: Speech finished with empty/no-change (node=Q1 role=MAIN)
+08-30 18:16:17.113  5424  6054 D Recorder: Joining writer job ...
+08-30 18:16:17.113  5424  5504 I Recorder: 🎙 stopped & released (writer exit)
+08-30 18:16:17.119  5424  6054 D Recorder: Writer job joined successfully
+08-30 18:16:17.120  5424  6054 D Recorder: post-join: pcm=/data/user/0/com.negi.survey/cache/rec_5744610068459462006.pcm wav=/data/user/0/com.negi.survey/cache/whisper_rec/survey_input_846937505718126991.wav cfg=Config(sampleRate=16000, channelMask=16, format=2, bufferSize=3840)
+08-30 18:16:17.122  5424  6054 D Recorder: WAV header written
+08-30 18:16:17.123  5424  6054 I Recorder: ✅ WAV finalized: /data/user/0/com.negi.survey/cache/whisper_rec/survey_input_846937505718126991.wav (96680 bytes)
+08-30 18:16:17.123  5424  6054 D Recorder: Cleanup complete, state=Idle
+08-30 18:16:17.124  5424  5504 D WhisperSpeechController: recorder.stopRecording OK in 41ms
+08-30 18:16:17.186  5424  5504 D WhisperSpeechController: stopRecording: wav.size(stable)=96680 path=/data/user/0/com.negi.survey/cache/whisper_rec/survey_input_846937505718126991.wav
+08-30 18:16:17.194  5424  5504 D WhisperSpeechController: stopRecording: wav.info fmt=1 ch=1 sr=16000 bits=16 dataBytes=96636 durationSec=3.020
+08-30 18:16:17.223  5424  5504 D WhisperSpeechController: stopRecording: wav.stats rms=0.00376 peak=0.03177 nonSilent=0.022 samples=48318
+08-30 18:16:17.234  5424  5504 D ExportUtils: exportRecordedVoice: copying /data/user/0/com.negi.survey/cache/whisper_rec/survey_input_846937505718126991.wav -> /storage/emulated/0/Android/data/com.negi.survey/files/exports/voice/voice_04a174c1-6c7b-4fb1-ade0-4c84f99a63f9_Q1_20260831_011617.wav
+08-30 18:16:17.236  5424  5504 D ExportUtils: exportRecordedVoice: done, size=96680 bytes
+08-30 18:16:17.237  5424  5504 D ExportUtils: writeVoiceMeta: wrote /storage/emulated/0/Android/data/com.negi.survey/files/exports/voice/voice_04a174c1-6c7b-4fb1-ade0-4c84f99a63f9_Q1_20260831_011617.meta.json
+08-30 18:16:17.238  5424  5504 D MainActivity: onVoiceExported: q=Q1, file=voice_04a174c1-6c7b-4fb1-ade0-4c84f99a63f9_Q1_20260831_011617.wav, bytes=96680, checksum=e4d99806f92d99271336e0c1e9c3aaf161a821a3407ef39dfd46b9a19e16d850
+08-30 18:16:17.238  5424  5504 D SurveyVM: addAudioRef -> q=Q1, file=voice_04a174c1-6c7b-4fb1-ade0-4c84f99a63f9_Q1_20260831_011617.wav, sid=04a174c1-6c7b-4fb1-ade0-4c84f99a63f9
+08-30 18:16:17.239  5424  5504 D SurveyVM: onVoiceExported -> q=Q1, file=voice_04a174c1-6c7b-4fb1-ade0-4c84f99a63f9_Q1_20260831_011617.wav, replace=false
+08-30 18:16:17.239  5424  5504 D WhisperSpeechController: onVoiceExported -> file=voice_04a174c1-6c7b-4fb1-ade0-4c84f99a63f9_Q1_20260831_011617.wav, bytes=96680, qid=Q1, sid=04a174c1-6c7b-4fb1-ade0-4c84f99a63f9, checksum=e4d99806f92d...
+08-30 18:16:17.239  5424  5504 D WhisperSpeechController: stopRecording: transcribing -> /data/user/0/com.negi.survey/cache/whisper_rec/survey_input_846937505718126991.wav
+08-30 18:16:17.241  5424  5504 D WhisperEngine: [1][asr] Start. file=survey_input_846937505718126991.wav bytes=94.41KB approxSec(pcm16mono@16000Hz)=3.02 lang=en translate=false printTimestamp=false sr=16000 modelKey=asset:models/ggml-tiny-q5_1.bin thread=DefaultDispatcher-worker-4
+08-30 18:16:17.241  5424  5504 D WhisperEngine: [1][asr] mem: javaUsed=11.74MB javaTotal=31.46MB javaMax=256.00MB nativeAllocated=1.00GB
+08-30 18:16:17.242  5424  5504 D WaveCodec: fmt: format=1, ch=1, rate=16000, bits=16
+08-30 18:16:17.242  5424  5504 V WaveCodec: data chunk start=44 declared=96636 effective=96636
+08-30 18:16:17.271  5424  5424 D AiScreen: Speech started (node=Q1 role=MAIN)
+08-30 18:16:17.278  5424  5504 D WaveCodec: Decoded WAV: 1ch 16000Hz 16-bit (frames=48318, dataHeader=96636, effective=96636)
+08-30 18:16:17.289  5424  5504 D WhisperEngine: [1][asr] PCM stats(sampled): samples=48318 seconds=3.02 min=-0.029724121 max=0.0317688 rms=0.00 decodeMs=38
+08-30 18:16:17.289  5424  5504 I WhisperEngine: [1][asr] Mutex acquired. lockWaitMs=0 attempts=en audio=3.02s modelKey=asset:models/ggml-tiny-q5_1.bin
+08-30 18:16:17.289  5424  5504 I WhisperEngine: [1][asr] Transcribing: lang=en translate=false ts=false samples=48318 audio=3.02s
+08-30 18:16:17.301  5424  6075 D WhisperCpuConfig: CPU detection start: available=8 indices=[0, 1, 2, 3, 4, 5, 6, 7]
+08-30 18:16:17.304  5424  6075 D WhisperCpuConfig: CPU capacity bins={191=4, 741=3, 1024=1}
+08-30 18:16:17.304  5424  6075 D WhisperCpuConfig: Detected faster clusters via capacity: cores=4 slowestValue=191
+08-30 18:16:17.304  5424  6075 I WhisperCpuConfig: Selected whisper thread count=4 (detected=4 available=8)
+08-30 18:16:17.304  5424  6075 I WhisperJNI: Transcribe start: threads=4 lang=en translate=false samples=48318
+08-30 18:16:17.304  5424  6075 I JNI-Whisper: Starting whisper_full(): samples=48318 threads=4 translate=0 lang=en
+08-30 18:16:18.625  5424  6075 I WhisperJNI: Transcribe complete: segments=1 chars=15
+08-30 18:16:18.626  5424  5504 D WhisperEngine: [1][asr] Attempt done: lang=en transcribeMs=1337 rtf=0.44 textLen=13 preview="[BLANK_AUDIO]"
+08-30 18:16:18.626  5424  5504 I WhisperEngine: [1][asr] OK. totalMs=1386 decodeMs=38 lockWaitMs=0 lockHoldMs=1337 selectedLang=en modelKey=asset:models/ggml-tiny-q5_1.bin
+08-30 18:16:18.626  5424  5504 D WhisperEngine: [1][asr] mem: javaUsed=14.02MB javaTotal=31.46MB javaMax=256.00MB nativeAllocated=1.03GB
+08-30 18:16:18.627  5424  5504 D WhisperSpeechController: Transcription success: [BLANK_AUDIO]
+08-30 18:16:18.627  5424  5504 D WhisperSpeechController: updatePartialText: len=13
+08-30 18:16:18.628  5424  5504 D WhisperSpeechController: temp delete=true reason=stop_finally -> /data/user/0/com.negi.survey/cache/whisper_rec/survey_input_846937505718126991.wav
+08-30 18:16:18.653  5424  5424 D AiScreen: Speech committed (node=Q1 role=MAIN len=13)
+08-30 18:19:29.277  5424  5435 I com.negi.survey: Background young concurrent mark compact GC freed 24MB AllocSpace bytes, 0(0B) LOS objects, 76% free, 7611KB/31MB, paused 316us,7.448ms total 43.129ms
+08-30 18:20:19.905  6466  6466 I Zygote  : Process 6466 created for com.negi.survey
+08-30 18:20:19.906  6466  6466 I com.negi.survey: Late-enabling -Xcheck:jni
+08-30 18:20:20.499  6466  6466 I com.negi.survey: Using CollectorTypeCMC GC.
+08-30 18:20:20.530  6466  6466 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+08-30 18:20:20.604  6466  6466 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+08-30 18:20:20.605  6466  6466 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+08-30 18:20:21.138  6466  6466 D nativeloader: Configuring clns-9 for other apk /data/app/~~9A8X7z4Y9COm08kt3A6ygg==/com.negi.survey-fws7iRJZGnJJ_jlrtf0iRw==/base.apk. target_sdk_version=36, uses_libraries=libOpenCL.so:libOpenCL-pixel.so, library_path=/data/app/~~9A8X7z4Y9COm08kt3A6ygg==/com.negi.survey-fws7iRJZGnJJ_jlrtf0iRw==/lib/arm64:/data/app/~~9A8X7z4Y9COm08kt3A6ygg==/com.negi.survey-fws7iRJZGnJJ_jlrtf0iRw==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.negi.survey
+08-30 18:20:21.146  6466  6466 V GraphicsEnvironment: Currently set values for:
+08-30 18:20:21.146  6466  6466 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[com.android.angle]
+08-30 18:20:21.146  6466  6466 V GraphicsEnvironment:   angle_gl_driver_selection_values=[angle]
+08-30 18:20:21.146  6466  6466 V GraphicsEnvironment: com.negi.survey is not listed in per-application setting
+08-30 18:20:21.146  6466  6466 V GraphicsEnvironment: No special selections for ANGLE, returning default driver choice
+08-30 18:20:21.146  6466  6466 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+08-30 18:20:21.185  6466  6466 D nativeloader: Load /data/app/~~9A8X7z4Y9COm08kt3A6ygg==/com.negi.survey-fws7iRJZGnJJ_jlrtf0iRw==/base.apk!/lib/arm64-v8a/liblitertlm_jni.so using class loader ns clns-9 (caller=/data/app/~~9A8X7z4Y9COm08kt3A6ygg==/com.negi.survey-fws7iRJZGnJJ_jlrtf0iRw==/base.apk!classes10.dex): ok
+08-30 18:20:21.186  6466  6466 D SurveyApp: Loaded LiteRTLM JNI: litertlm_jni where=attachBaseContext
+08-30 18:20:21.216  6466  6466 D AppRingLogStore: installed: dir=/data/user/0/com.negi.survey/files/diagnostics/applog_ring idx=0
+08-30 18:20:21.216  6466  6466 D SurveyApp: attachBaseContext: pid=6466 process=com.negi.survey isMain=true sdk=36
+08-30 18:20:21.217  6466  6466 D SurveyApp: bootTiming: attachBaseContext total=63ms
+08-30 18:20:21.217  6466  6466 D SurveyApp: Skipping WorkManager init in attachBaseContext; will init lazily on first enqueue.
+08-30 18:20:21.221  6466  6466 D CrashCapture: install: ensured default handler. where=SurveyApp:attachBaseContext pid=6466 default=com.negi.survey.CrashCapture$CrashHandler@40755f6
+08-30 18:20:21.221  6466  6466 D SurveyApp: CrashCapture installed: where=SurveyApp:attachBaseContext
+08-30 18:20:21.229  6466  6466 E com.negi.survey: hiddenapi: Accessing hidden method Landroid/net/ssl/EchConfigMismatchException;->getRetryConfigList()Landroid/net/ssl/EchConfigList; (runtime_flags=0, domain=core-platform, api=blocked) from /data/app/~~9A8X7z4Y9COm08kt3A6ygg==/com.negi.survey-fws7iRJZGnJJ_jlrtf0iRw==/base.apk!classes17.dex (domain=app, TargetSdkVersion=36) using linking: denied
+08-30 18:20:21.229  6466  6466 E com.negi.survey: hiddenapi: Accessing hidden method Landroid/net/ssl/EchConfigList;->toBytes()[B (runtime_flags=0, domain=core-platform, api=blocked) from /data/app/~~9A8X7z4Y9COm08kt3A6ygg==/com.negi.survey-fws7iRJZGnJJ_jlrtf0iRw==/base.apk!classes17.dex (domain=app, TargetSdkVersion=36) using linking: denied
+08-30 18:20:21.230  6466  6466 E com.negi.survey: hiddenapi: Accessing hidden method Landroid/net/ssl/EchConfigList;->fromBytes([B)Landroid/net/ssl/EchConfigList; (runtime_flags=0, domain=core-platform, api=blocked) from /data/app/~~9A8X7z4Y9COm08kt3A6ygg==/com.negi.survey-fws7iRJZGnJJ_jlrtf0iRw==/base.apk!classes17.dex (domain=app, TargetSdkVersion=36) using linking: denied
+08-30 18:20:21.230  6466  6466 E com.negi.survey: hiddenapi: Accessing hidden method Landroid/net/ssl/SSLSockets;->setEchConfigList(Ljavax/net/ssl/SSLSocket;Landroid/net/ssl/EchConfigList;)V (runtime_flags=0, domain=core-platform, api=blocked) from /data/app/~~9A8X7z4Y9COm08kt3A6ygg==/com.negi.survey-fws7iRJZGnJJ_jlrtf0iRw==/base.apk!classes17.dex (domain=app, TargetSdkVersion=36) using linking: denied
+08-30 18:20:21.286  6466  6580 D RuntimeLogStore: openWriter: start -> /data/user/0/com.negi.survey/files/diagnostics/runtime_logs/rtlog_20260831_012021_204_pid6466_seq1.log (bytes=0 format=LEGACY)
+08-30 18:20:21.289  6466  6466 D SurveyApp: LiteRTLM JNI already loaded; skip. where=onCreate(retry)
+08-30 18:20:21.289  6466  6466 D SurveyApp: bootTiming: RuntimeLogStore.start took=0ms
+08-30 18:20:21.289  6466  6466 D SurveyApp: bootTiming: AppRingLogStore.install took=0ms
+08-30 18:20:21.289  6466  6466 D SurveyApp: onCreate: pid=6466 process=com.negi.survey isMain=true sdk=36
+08-30 18:20:21.290  6466  6580 D RuntimeLogStore: retention: start files=2 kept=2 totalBytes=10851
+08-30 18:20:21.295  6466  6466 D CrashCapture: install: ensured default handler. where=SurveyApp:onCreate(rewrap) pid=6466 default=com.negi.survey.CrashCapture$CrashHandler@40755f6
+08-30 18:20:21.295  6466  6466 D SurveyApp: CrashCapture installed: where=SurveyApp:onCreate(rewrap)
+08-30 18:20:21.295  6466  6466 D CrashCapture: registerSelfHealing: ActivityLifecycleCallbacks registered. mode=onResumedOnly
+08-30 18:20:21.295  6466  6466 D SurveyApp: CrashCapture self-healing registered.
+08-30 18:20:21.295  6466  6466 W SurveyApp: Startup enqueues deferred: delay=2500ms (to reduce init contention)
+08-30 18:20:21.295  6466  6466 D SurveyApp: bootTiming: onCreate total=6ms
+08-30 18:20:21.362  6466  6583 D UploadRescheduleRcvr: No GitHub pending files for action=android.intent.action.MY_PACKAGE_REPLACED
+08-30 18:20:21.447  6466  6583 D github_upload: enqueueStartupRuntimeLogsUpload: uniqueName=upload_runtime_logs_startup policy=KEEP session=startup_runtime_20260831_012021_9ac50e53
+08-30 18:20:21.588  6466  6583 D WM-PackageManagerHelper: Skipping component enablement for androidx.work.impl.background.systemjob.SystemJobService
+08-30 18:20:21.588  6466  6583 D WM-Schedulers: Created SystemJobScheduler and enabled SystemJobService
+08-30 18:20:21.598  6466  6613 D WM-ForceStopRunnable: Is default app process = true
+08-30 18:20:21.600  6466  6613 D WM-ForceStopRunnable: Performing cleanup operations.
+08-30 18:20:21.648  6466  6583 D UploadRescheduleRcvr: Enqueued runtime logs upload for action=android.intent.action.MY_PACKAGE_REPLACED reason=receiver_my_package_replaced
+08-30 18:20:21.804  6466  6613 D WM-SystemJobScheduler: Reconciling jobs
+08-30 18:20:21.871  6466  6613 D WM-ForceStopRunnable: Found unfinished work, scheduling it.
+08-30 18:20:22.062  6466  6628 D WM-SystemJobScheduler: Scheduling work ID fcbd239a-ea1a-48c8-aca3-e1fb64bab485Job ID 160
+08-30 18:20:22.075  6466  6628 D WM-GreedyScheduler: Starting tracking for fcbd239a-ea1a-48c8-aca3-e1fb64bab485
+08-30 18:20:22.087  6466  6466 D WM-SystemJobService: onStartJob for WorkGenerationalId(workSpecId=fcbd239a-ea1a-48c8-aca3-e1fb64bab485, generation=0)
+08-30 18:20:22.114  6466  6630 D WM-Processor: Processor: processing WorkGenerationalId(workSpecId=fcbd239a-ea1a-48c8-aca3-e1fb64bab485, generation=0)
+08-30 18:20:22.155  6466  6466 D WM-WorkerWrapper: Starting work for com.negi.survey.net.GitHubUploadWorker
+08-30 18:20:22.156  6466  6630 D WM-WorkConstraintsTrack: NetworkRequestConstraintController register shared callback
+08-30 18:20:22.184  6466  6630 D WM-PackageManagerHelper: androidx.work.impl.background.systemalarm.RescheduleReceiver enabled
+08-30 18:20:22.187  6466  6633 D WM-WorkConstraintsTrack: NetworkRequestConstraintController onCapabilitiesChanged callback
+08-30 18:20:22.187  6466  6633 D WM-WorkConstraintsTrack: Not dispatching constraint state yet: isBlocked=null, capabilitiesInitialized=true
+08-30 18:20:22.187  6466  6633 D WM-WorkConstraintsTrack: NetworkRequestConstraintController onBlockedStatusChanged callback false
+08-30 18:20:22.195  6466  6630 I WM-Processor: Moving WorkSpec (fcbd239a-ea1a-48c8-aca3-e1fb64bab485) to the foreground
+08-30 18:20:22.219  6466  6466 I WM-SystemFgDispatcher: Started foreground service Intent { act=ACTION_START_FOREGROUND xflg=0x4 cmp=com.negi.survey/androidx.work.impl.foreground.SystemForegroundService (has extras) }
+08-30 18:20:22.220  6466  6466 D WM-SystemFgDispatcher: Notifying with (id:3437, workSpecId: fcbd239a-ea1a-48c8-aca3-e1fb64bab485, notificationType :1)
+08-30 18:20:22.224  6466  6466 D WM-SystemFgDispatcher: Notifying with (id:3437, workSpecId: fcbd239a-ea1a-48c8-aca3-e1fb64bab485, notificationType :1)
+08-30 18:20:22.231  6466  6627 D WM-GreedyScheduler: Constraints met: Scheduling work ID WorkGenerationalId(workSpecId=fcbd239a-ea1a-48c8-aca3-e1fb64bab485, generation=0)
+08-30 18:20:22.251  6466  6627 D WM-Processor: Work WorkGenerationalId(workSpecId=fcbd239a-ea1a-48c8-aca3-e1fb64bab485, generation=0) is already enqueued for processing
+08-30 18:20:22.252  6466  6627 D WM-WorkProgressUpdater: Updating progress for fcbd239a-ea1a-48c8-aca3-e1fb64bab485 (Data {pct : 3, mode : startup_runtime_logs})
+08-30 18:20:22.268  6466  6627 I WM-Processor: Moving WorkSpec (fcbd239a-ea1a-48c8-aca3-e1fb64bab485) to the foreground
+08-30 18:20:22.276  6466  6627 D WM-WorkConstraintsTrack: NetworkRequestConstraintController send initial capabilities
+08-30 18:20:22.280  6466  6466 D WM-SystemFgDispatcher: Notifying with (id:3437, workSpecId: fcbd239a-ea1a-48c8-aca3-e1fb64bab485, notificationType :1)
+08-30 18:20:23.454  6466  6580 D RuntimeLogStore: openWriter: rotate:plain_snapshot:receiver_my_package_repl -> /data/user/0/com.negi.survey/files/diagnostics/runtime_logs/rtlog_20260831_012023_450_pid6466_seq2.log (bytes=0 format=LEGACY)
+08-30 18:20:23.456  6466  6580 D RuntimeLogStore: retention: rotate:plain_snapshot:receiver_my_package_repl files=3 kept=3 totalBytes=12557
+08-30 18:20:23.500  6466  6583 D github_upload: doRuntimeLogsUpload: remoteBaseDir=diagnostics/runtime_logs/2026-08-31/runtime_logs_startup_runtime_20260831_012021_9ac50e53_receiver_my_package_repl toUpload=2 bytes=12222 dedupe=true deleteSource=true deletedSourcePre=0 preview='runtime_log_20260831_012023_462_pid6466_receiver_my_package_repl__rtlog_20260831_012021_204_pid6466_seq1.log|runtime_log_20260831_012023_462_pid6466_receiver_my_package_repl__rtlog_20260831_011208_378_pid5424_seq2.log'
+08-30 18:20:23.506  6466  6583 D GitHubUploader: uploadStream: owner=ishizuki-tech repo=SurveyExports branch=main path=diagnostics/runtime_logs/2026-08-31/runtime_logs_startup_runtime_20260831_012021_9ac50e53_receiver_my_package_repl/runtime_log_20260831_012023_462_pid6466_receiver_my_package_repl__rtlog_20260831_012021_204_pid6466_seq1.log size=1687 maxRawBytesHint=1000000 maxRequestBytesHint=2800000
+08-30 18:20:23.508  6466  6628 D WM-WorkProgressUpdater: Updating progress for fcbd239a-ea1a-48c8-aca3-e1fb64bab485 (Data {pct : 10, mode : startup_runtime_logs})
+08-30 18:20:23.523  6466  6628 I WM-Processor: Moving WorkSpec (fcbd239a-ea1a-48c8-aca3-e1fb64bab485) to the foreground
+08-30 18:20:23.529  6466  6466 D WM-SystemFgDispatcher: Notifying with (id:3437, workSpecId: fcbd239a-ea1a-48c8-aca3-e1fb64bab485, notificationType :1)
+08-30 18:20:23.796  6466  6466 W SurveyApp: Deferred startup enqueues begin...
+08-30 18:20:23.797  6466  6466 D SurveyApp: WorkManager available. where=startupRtLogs(immediate) took=0ms
+08-30 18:20:23.805  6466  6466 D SurveyApp: Startup runtime logs target -> owner=ishizuki-tech repo=SurveyExports branch=main base='/diagnostics/runtime_logs'
+08-30 18:20:23.811  6466  6466 D github_upload: enqueueStartupRuntimeLogsUpload: uniqueName=upload_runtime_logs_startup policy=KEEP session=startup_runtime_20260831_012023_96b5dba4
+08-30 18:20:23.811  6466  6466 D SurveyApp: Startup runtime logs: enqueue requested (immediate).
+08-30 18:20:23.818  6466  6466 D SurveyApp: WorkManager available. where=startupRingLogs(immediate) took=0ms
+08-30 18:20:23.828  6466  6466 D SurveyApp: Startup ring logs target -> owner=ishizuki-tech repo=SurveyExports branch=main base='/diagnostics/applog_ring'
+08-30 18:20:23.831  6466  6466 D github_upload: enqueueStartupRingLogsUpload: uniqueName=upload_ring_logs_startup policy=KEEP session=startup_ring_20260831_012023_2e03d572
+08-30 18:20:23.832  6466  6466 D SurveyApp: Startup ring logs: enqueue requested (immediate).
+08-30 18:20:23.832  6466  6466 D SurveyApp: WorkManager available. where=enqueuePending(immediate) took=0ms
+08-30 18:20:23.833  6466  6466 D SurveyApp: CrashCapture pending uploads requested (immediate).
+08-30 18:20:23.834  6466  6466 W SurveyApp: Deferred startup enqueues done: took=38ms
+08-30 18:20:23.834  6466  6662 D CrashCapture: enqueuePendingCrashUploadsIfPossible enter where=SurveyApp:enqueuePending(immediate):bg pid=6466 thread=CrashCapture-Enqueue
+08-30 18:20:23.894  6466  6627 D WM-SystemJobScheduler: Scheduling work ID 50d26f9a-a06d-48f1-81fd-1aa589400e10Job ID 161
+08-30 18:20:23.899  6466  6627 D WM-GreedyScheduler: Starting tracking for 50d26f9a-a06d-48f1-81fd-1aa589400e10
+08-30 18:20:23.899  6466  6466 D WM-SystemJobService: onStartJob for WorkGenerationalId(workSpecId=50d26f9a-a06d-48f1-81fd-1aa589400e10, generation=0)
+08-30 18:20:23.910  6466  6627 D WM-Processor: Processor: processing WorkGenerationalId(workSpecId=50d26f9a-a06d-48f1-81fd-1aa589400e10, generation=0)
+08-30 18:20:23.911  6466  6627 D WM-WorkProgressUpdater: Updating progress for fcbd239a-ea1a-48c8-aca3-e1fb64bab485 (Data {pct : 14, mode : startup_runtime_logs})
+08-30 18:20:23.920  6466  6627 I WM-Processor: Moving WorkSpec (fcbd239a-ea1a-48c8-aca3-e1fb64bab485) to the foreground
+08-30 18:20:23.923  6466  6466 D WM-SystemFgDispatcher: Notifying with (id:3437, workSpecId: fcbd239a-ea1a-48c8-aca3-e1fb64bab485, notificationType :1)
+08-30 18:20:23.931  6466  6466 D WM-WorkerWrapper: Starting work for com.negi.survey.net.GitHubUploadWorker
+08-30 18:20:23.932  6466  6627 D WM-WorkConstraintsTrack: NetworkRequestConstraintController send initial capabilities
+08-30 18:20:23.933  6466  6627 D WM-WorkProgressUpdater: Updating progress for fcbd239a-ea1a-48c8-aca3-e1fb64bab485 (Data {pct : 50, mode : startup_runtime_logs})
+08-30 18:20:23.939  6466  6627 I WM-Processor: Moving WorkSpec (fcbd239a-ea1a-48c8-aca3-e1fb64bab485) to the foreground
+08-30 18:20:23.942  6466  6466 D WM-SystemFgDispatcher: Notifying with (id:3437, workSpecId: fcbd239a-ea1a-48c8-aca3-e1fb64bab485, notificationType :1)
+08-30 18:20:23.945  6466  6627 I WM-Processor: Moving WorkSpec (50d26f9a-a06d-48f1-81fd-1aa589400e10) to the foreground
