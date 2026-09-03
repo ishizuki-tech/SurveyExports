@@ -1,0 +1,333 @@
+=== RuntimeLogStore Header ===
+ts=2026-09-03T04:49:33.238Z
+fileNameFormat=LEGACY
+appId=com.negi.survey
+versionName=0.0.1
+versionCode=37
+debug=true
+device=Google Pixel 9a
+sdk=36
+pid=31342
+==============================
+2026-09-03T04:49:33.238Z I/RuntimeLogStore [rtlog-io] --- rotated (reason=plain_snapshot:receiver_my_package_repl) ---
+2026-09-03T04:49:33.465Z W/SurveyApp [main] Deferred startup enqueues begin...
+2026-09-03T04:49:33.467Z D/SurveyApp [main] WorkManager available. where=startupRtLogs(immediate) took=0ms
+2026-09-03T04:49:33.477Z D/SurveyApp [main] Startup runtime logs target -> owner=ishizuki-tech repo=SurveyExports branch=main base='/diagnostics/runtime_logs'
+2026-09-03T04:49:33.483Z D/SurveyApp [main] Startup runtime logs: enqueue requested (immediate).
+2026-09-03T04:49:33.483Z D/SurveyApp [main] WorkManager available. where=startupRingLogs(immediate) took=0ms
+2026-09-03T04:49:33.486Z D/SurveyApp [main] Startup ring logs target -> owner=ishizuki-tech repo=SurveyExports branch=main base='/diagnostics/applog_ring'
+2026-09-03T04:49:33.488Z D/SurveyApp [main] Startup ring logs: enqueue requested (immediate).
+2026-09-03T04:49:33.488Z D/SurveyApp [main] WorkManager available. where=enqueuePending(immediate) took=0ms
+2026-09-03T04:49:33.489Z D/SurveyApp [main] CrashCapture pending uploads requested (immediate).
+2026-09-03T04:49:33.489Z W/SurveyApp [main] Deferred startup enqueues done: took=24ms
+2026-09-03T04:49:58.606Z D/SLM [main] buildModelConfig: accel=GPU maxTokens=512 topK=1 topP=0.0 temperature=0.0
+2026-09-03T04:49:58.630Z D/LiteRtLM [DefaultDispatcher-worker-1] Initializing LiteRT-LM: model='Gemma3n4B', key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm'
+2026-09-03T04:49:58.631Z D/LiteRtLM [DefaultDispatcher-worker-1] Capabilities: image=false audio=false
+2026-09-03T04:49:58.631Z D/LiteRtLM [DefaultDispatcher-worker-1] Backend=com.google.ai.edge.litertlm.Backend$GPU@2d56064 maxNumTokens=512 (raw=512) topK=1 topP=0.0 temp=0.0
+2026-09-03T04:49:58.631Z D/LiteRtLM [DefaultDispatcher-worker-1] Model path='/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' sizeBytes=4919541760 lastModified=1788408276327
+2026-09-03T04:49:58.631Z D/LiteRtLM [DefaultDispatcher-worker-1] LiteRT-LM native benchmark policy: enabled=false emulator=false
+2026-09-03T04:49:58.631Z D/LiteRtLM [DefaultDispatcher-worker-1] Speculative decoding / MTP policy: enabled=false runtimeFlagUpdated=true model='Gemma3n4B'
+2026-09-03T04:49:58.633Z D/LiteRtLM [DefaultDispatcher-worker-1] Engine cacheDir resolved: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' backend=com.google.ai.edge.litertlm.Backend$GPU@2d56064 path='/data/user/0/com.negi.survey/no_backup/litertlm_cache/6d8f74348f69271cbabd4d6b6574be45f2402b9a' filesBefore=2
+2026-09-03T04:50:05.581Z W/LiteRtLM [DefaultDispatcher-worker-1] Engine.initialize completed: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' backend=com.google.ai.edge.litertlm.Backend$GPU@2d56064 took=6871ms cacheFilesAfter=2
+2026-09-03T04:50:05.619Z D/LiteRtLM [DefaultDispatcher-worker-1] createConversation completed: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' took=37ms
+2026-09-03T04:50:05.621Z D/LiteRtLM [DefaultDispatcher-worker-1] LiteRT-LM initialization succeeded: model='Gemma3n4B', key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' engineMs=6871 conversationMs=37 totalMs=6990
+2026-09-03T04:50:05.647Z D/AiTrace [main] Installed (enabled=true ringEnabled=true)
+2026-09-03T04:50:05.652Z D/SurveyVM [main] init -> Start, session=0, uuid=6849bfb6-32c5-49f4-be25-4bea531767a4, navSize=1, graphSize=20
+2026-09-03T04:50:05.661Z D/SurveyVM [main] config.validate -> issues=0
+2026-09-03T04:50:05.661Z D/SurveyVM [main] promptSources -> legacy=10, eval=0, follow=0
+2026-09-03T04:50:05.661Z D/SurveyVM [main] promptSources.preview -> legacy=[Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q8, Q9], eval=[], follow=[]
+2026-09-03T04:50:05.661Z D/SurveyVM [main] hasTwoStepPrompt[Q10] -> false (eval=0, fu=0)
+2026-09-03T04:50:05.661Z D/SurveyVM [main] hasTwoStepPrompt[Q11] -> false (eval=0, fu=0)
+2026-09-03T04:50:05.661Z D/SurveyVM [main] hasTwoStepPrompt[Q12] -> false (eval=0, fu=0)
+2026-09-03T04:50:05.661Z D/SurveyVM [main] hasTwoStepPrompt[Q13] -> false (eval=0, fu=0)
+2026-09-03T04:50:05.661Z D/SurveyVM [main] hasTwoStepPrompt[Q14] -> false (eval=0, fu=0)
+2026-09-03T04:50:05.661Z D/SurveyVM [main] hasTwoStepPrompt[Q15] -> false (eval=0, fu=0)
+2026-09-03T04:50:05.661Z D/SurveyVM [main] hasTwoStepPrompt[Q16] -> false (eval=0, fu=0)
+2026-09-03T04:50:05.662Z D/SurveyVM [main] hasTwoStepPrompt[Q17] -> false (eval=0, fu=0)
+2026-09-03T04:50:05.662Z D/SurveyVM [main] hasTwoStepPrompt[Q8] -> false (eval=0, fu=0)
+2026-09-03T04:50:05.662Z D/SurveyVM [main] hasTwoStepPrompt[Q9] -> false (eval=0, fu=0)
+2026-09-03T04:50:05.662Z D/SurveyVM [main] AI prompt coverage OK (aiCount=10)
+2026-09-03T04:50:05.812Z D/SLM [slm-jni] initializeIfNeeded: model='Gemma3n4B' image=false audio=false
+2026-09-03T04:50:05.812Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm'
+2026-09-03T04:50:05.816Z D/LiteRtRepository [main] warmUp: initializeIfNeeded ok gateWaitMs=0 initMs=6
+2026-09-03T04:50:05.817Z D/LiteRtRepository [main] warmUp: Engine ready; representative inference disabled totalMs=6
+2026-09-03T04:50:09.159Z D/SurveyVM [main] resetAudioRefs -> cleared
+2026-09-03T04:50:09.160Z D/SurveyVM [main] resetNavToStart -> key=com.negi.survey.vm.FlowHome@f388a48, navSize=1
+2026-09-03T04:50:09.160Z D/SurveyVM [main] resetToStart -> Start, session=1, uuid=480883b7-608a-4dbd-a997-6eb9436ada88, preserveDraft=true, draftLen=0
+2026-09-03T04:50:09.160Z D/SurveyVM [main] activateRunIfNeeded(advanceToNext:Q1) -> runNoteLen=0, draftCleared=true, uuid=480883b7-608a-4dbd-a997-6eb9436ada88
+2026-09-03T04:50:09.160Z D/SurveyVM [main] push -> Q1, navSize=2, stackSize=2
+2026-09-03T04:50:10.819Z D/SurveyVM [main] push -> Q2, navSize=3, stackSize=3
+2026-09-03T04:50:11.415Z D/SurveyVM [main] push -> Q3, navSize=4, stackSize=4
+2026-09-03T04:50:12.768Z D/SurveyVM [main] push -> Q4, navSize=5, stackSize=5
+2026-09-03T04:50:13.937Z D/SurveyVM [main] push -> Q5, navSize=6, stackSize=6
+2026-09-03T04:50:15.479Z D/SurveyVM [main] push -> Q6, navSize=7, stackSize=7
+2026-09-03T04:50:16.682Z D/SurveyVM [main] push -> Q7, navSize=8, stackSize=8
+2026-09-03T04:50:18.042Z D/SurveyVM [main] push -> Q8, navSize=9, stackSize=9
+2026-09-03T04:50:18.087Z D/SurveyVM [main] hasTwoStepPrompt[Q8] -> false (eval=0, fu=0)
+2026-09-03T04:50:23.371Z D/SurveyVM [main] hasTwoStepPrompt[Q8] -> false (eval=0, fu=0)
+2026-09-03T04:50:23.374Z I/AiScreen [main] Submit begin runId=ai-Q8-576852235-576852235502972 node=Q8 role=MAIN isTwoStep=false sessionId=1 surveyUuid=480883b7-608a-4dbd-a997-6eb9436ada88 qLen=80 aLen=4 qSha6=27d6102552db aSha6=3e267b901e4c
+2026-09-03T04:50:23.374Z D/AiScreen [main] Submit payload preview (debug) runId=ai-Q8-576852235-576852235502972 node=Q8 qPreview="Has fall armyworm ever affected your maize? If yes, how did it affect your crop?" aPreview="gjhl"
+2026-09-03T04:50:23.375Z D/SurveyVM [main] getPrompt[Q8] -> len=230 (src=one_step)
+2026-09-03T04:50:23.378Z D/AiViewModel [DefaultDispatcher-worker-1] run[1]: mode=EVAL_JSON phase=ONE_STEP commit=true prompt.len=230, fullPrompt.len=788, timeoutMs=120000
+2026-09-03T04:50:23.379Z D/AiViewModel [DefaultDispatcher-worker-1] run[1]: sha(prompt)=a677839328d6c77a2b9c5743da487dad4aa1f955c7564d8ae3cd5828a004e0bb sha(full)=5f005f3eeed8762cdfd35626cf17281acb77396e572516040fb4301a701bbbe8
+2026-09-03T04:50:23.379Z I/FullPromptReview [DefaultDispatcher-worker-1] [part=000] run[1]: phase=ONE_STEP FullPrompt
+Evaluate the survey answer.
+Return only compact JSON {"followup_question":"","score":N}; no markdown. Score N=1-100 for relevance, completeness, and accuracy against the Expected answer target only. Empty followup_question is allowed ONLY when Answer fully satisfies every target-required point; then score MUST be 90-100. If any target-required point is missing or ambiguous, score MUST be below 90 and followup_question MUST contain exactly one short English question for that point. Never ask for extra detail, invent uncertainty, or change topic.
+INPUT:
+Expected answer target: Whether FAW affected the crop, and if so, a description of the effect (yield loss, damage type, etc.).
+Question: Has fall armyworm ever affected your maize? If yes, how did it affect your crop?
+Answer: gjhl
+2026-09-03T04:50:23.393Z D/LiteRtRepository [DefaultDispatcher-worker-1] [1] request start model='Gemma3n4B' prompt.len=788 sha=5f005f3eeed8762c gateWaitMs=12
+2026-09-03T04:50:23.393Z D/LiteRtRepository [DefaultDispatcher-worker-1] [part=000] [1] PROMPT (FULL) sha=5f005f3eeed8762c
+Evaluate the survey answer.
+Return only compact JSON {"followup_question":"","score":N}; no markdown. Score N=1-100 for relevance, completeness, and accuracy against the Expected answer target only. Empty followup_question is allowed ONLY when Answer fully satisfies every target-required point; then score MUST be 90-100. If any target-required point is missing or ambiguous, score MUST be below 90 and followup_question MUST contain exactly one short English question for that point. Never ask for extra detail, invent uncertainty, or change topic.
+INPUT:
+Expected answer target: Whether FAW affected the crop, and if so, a description of the effect (yield loss, damage type, etc.).
+Question: Has fall armyworm ever affected your maize? If yes, how did it affect your crop?
+Answer: gjhl
+2026-09-03T04:50:23.395Z D/SLM [slm-jni] initializeIfNeeded: model='Gemma3n4B' image=false audio=false
+2026-09-03T04:50:23.396Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm'
+2026-09-03T04:50:23.397Z D/LiteRtRepository [DefaultDispatcher-worker-1] [1] initializeIfNeeded ok initMs=4
+2026-09-03T04:50:23.399Z D/SLM [slm-jni] runInference: model='Gemma3n4B' textLen=788 images=0 audio=0
+2026-09-03T04:50:23.408Z D/LiteRtLM [DefaultDispatcher-worker-8] state[run:start] key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=1 active=true terminated=false logicalDone=false cancel=false pendingCancel=false lastMsgAt=1691724755 lastTermAt=0
+2026-09-03T04:50:23.409Z D/LiteRtLM [DefaultDispatcher-worker-8] runInference start: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=1 hasText=true originalTextLen=788 effectiveTextLen=788 images=0 audioClips=0
+2026-09-03T04:50:23.411Z D/LiteRtLM [DefaultDispatcher-worker-8] LiteRT-LM sendMessageAsync(text): key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=1 len=788 maxOutputTokens=64
+2026-09-03T04:50:23.434Z D/LiteRtLM [DefaultDispatcher-worker-8] sendMessageAsync accepted: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=1 dispatchMs=25
+2026-09-03T04:50:25.438Z W/LiteRtLM [Thread-10] Inference first output: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=1 ttftMs=2029 dispatchMs=25 postDispatchTtftMs=2004 requestToFirstOutputMs=2035
+2026-09-03T04:50:25.439Z D/LiteRtLM [Thread-10] stream[key=Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm runId=1] msg#1 rawChunkLen=2 deltaLen=2 emittedChars=2
+2026-09-03T04:50:25.440Z D/LiteRtRepository [main] stream[rid=1 msg#1] done=false deltaLen=2 outLen=2 outPreview='{"' deltaPreview='{"'
+2026-09-03T04:50:25.441Z D/AiViewModel [DefaultDispatcher-worker-8] run[1] chunk[1].preview='{"'
+2026-09-03T04:50:25.653Z D/AiViewModel [DefaultDispatcher-worker-8] run[1] chunk[2].preview='follow'
+2026-09-03T04:50:25.812Z D/AiViewModel [DefaultDispatcher-worker-8] run[1] chunk[3].preview='up'
+2026-09-03T04:50:25.974Z D/AiViewModel [DefaultDispatcher-worker-8] run[1] chunk[4].preview='_'
+2026-09-03T04:50:26.126Z D/AiViewModel [DefaultDispatcher-worker-8] run[1] chunk[5].preview='question'
+2026-09-03T04:50:26.293Z D/AiViewModel [DefaultDispatcher-worker-8] run[1] chunk[6].preview='":"","'
+2026-09-03T04:50:26.445Z D/AiViewModel [DefaultDispatcher-worker-8] run[1] chunk[7].preview='score'
+2026-09-03T04:50:26.608Z D/LiteRtRepository [main] stream[rid=1 msg#8] done=false deltaLen=2 outLen=32 outPreview='{"followup_question":"","score":' deltaPreview='":'
+2026-09-03T04:50:26.609Z D/AiViewModel [DefaultDispatcher-worker-8] run[1] chunk[8].preview='":'
+2026-09-03T04:50:26.750Z D/AiViewModel [DefaultDispatcher-worker-8] run[1] chunk[9].preview='1'
+2026-09-03T04:50:26.926Z D/AiViewModel [DefaultDispatcher-worker-8] run[1] chunk[10].preview='0'
+2026-09-03T04:50:27.065Z D/AiViewModel [DefaultDispatcher-worker-8] run[1] chunk[11].preview='}'
+2026-09-03T04:50:27.224Z D/LiteRtLM [Thread-21] state[logicalDone] key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=1 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=1691728411 lastTermAt=1691728571
+2026-09-03T04:50:27.225Z D/LiteRtLM [Thread-21] state[nativeDone:beforeRelease] key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=1 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=1691728411 lastTermAt=1691728571
+2026-09-03T04:50:27.226Z W/LiteRtLM [Thread-21] Inference timing: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=1 ttftMs=2029 dispatchMs=25 postDispatchTtftMs=2004 totalMs=3815 callbacks=11 outputChars=35 cancelled=false error=false requestTotalMs=3821
+2026-09-03T04:50:27.243Z D/LiteRtRepository [main] [1] logical done=true; responseClosed=true; waiting native cleanup
+2026-09-03T04:50:27.243Z D/LiteRtRepository [main] [1] native cleanup safepoint
+2026-09-03T04:50:27.244Z D/SLM [slm-jni] resetConversationAndWait: model='Gemma3n4B' image=false audio=false
+2026-09-03T04:50:27.246Z D/AiViewModel [DefaultDispatcher-worker-7] run[1] stats: chunks=11, chars=35, raw.len=35
+2026-09-03T04:50:27.249Z D/AiViewModel [DefaultDispatcher-worker-7] run[1] sha(raw)=4fa7d0ee9e617409eac3388c699b84e93863e73cf950a2753a691ce43273962f
+2026-09-03T04:50:27.250Z D/AiViewModel [DefaultDispatcher-worker-7] run[1] rawVisible='{"followup_question":"","score":10}'
+2026-09-03T04:50:27.252Z D/LiteRtRepository [DefaultDispatcher-worker-1] [1] Conversation reset completed after safepoint
+2026-09-03T04:50:27.254Z D/LiteRtRepository [DefaultDispatcher-worker-8] [part=000] [1] FINALIZE: native-terminated
+=== AI TRACE STATS (LiteRtRepository) ===
+rid=1 model='Gemma3n4B' reason=native-terminated
+totalMs=3861 inferenceMs=3856 firstTokenMs=2043
+logicalDone=true logicalDoneAt=1691728589
+nativeTerminated=true cancelTag='null'
+lastDeltaMsAgo=189 lastEventMsAgo=10
+chunks=11 emittedChars=35 capturedAll=true out.len=35
+=== OUTPUT (FULL) ===
+{"followup_question":"","score":10}
+2026-09-03T04:50:27.261Z D/AiViewModel [DefaultDispatcher-worker-7] run[1]: EVAL_JSON parsed score=10 followups=0 fu0=''
+2026-09-03T04:50:27.262Z D/AiViewModel [DefaultDispatcher-worker-7] stepHistory+ runId=1 phase=ONE_STEP mode=EVAL_JSON raw.len=35 score=10 FU=0 FU0='<none>' timeout=false err=null
+2026-09-03T04:50:27.262Z I/AiViewModel [DefaultDispatcher-worker-7] run[1] done: phase=ONE_STEP mode=EVAL_JSON score=10 FU0.len=0 FU0.sha16=none commit=true err=<none>
+2026-09-03T04:50:27.262Z I/FullTextOut [DefaultDispatcher-worker-7] [part=000] run[1]: RawTextOut
+{"followup_question":"","score":10}
+2026-09-03T04:50:27.263Z D/AiViewModel [DefaultDispatcher-worker-7] run[2]: mode=FOLLOWUP_JSON_OR_TEXT phase=FOLLOWUP commit=false prompt.len=230, fullPrompt.len=485, timeoutMs=120000
+2026-09-03T04:50:27.264Z D/AiViewModel [DefaultDispatcher-worker-7] run[2]: sha(prompt)=a677839328d6c77a2b9c5743da487dad4aa1f955c7564d8ae3cd5828a004e0bb sha(full)=d3874ede38399e04b2ae8790f0d89cf1db774d7c9d2d1bfd6a3cd1d0bf500c73
+2026-09-03T04:50:27.264Z I/FullPromptReview [DefaultDispatcher-worker-7] [part=000] run[2]: phase=FOLLOWUP FullPrompt
+Evaluate the survey answer.
+Output exactly one short English question for missing or ambiguous target-required information. No score, JSON, analysis, explanation, or extra text.
+Output one question only on one line; no markdown, labels, or quotes.
+INPUT:
+Expected answer target: Whether FAW affected the crop, and if so, a description of the effect (yield loss, damage type, etc.).
+Question: Has fall armyworm ever affected your maize? If yes, how did it affect your crop?
+Answer: gjhl
+2026-09-03T04:50:27.265Z D/LiteRtRepository [DefaultDispatcher-worker-7] [2] request start model='Gemma3n4B' prompt.len=485 sha=d3874ede38399e04 gateWaitMs=0
+2026-09-03T04:50:27.265Z D/LiteRtRepository [DefaultDispatcher-worker-7] [part=000] [2] PROMPT (FULL) sha=d3874ede38399e04
+Evaluate the survey answer.
+Output exactly one short English question for missing or ambiguous target-required information. No score, JSON, analysis, explanation, or extra text.
+Output one question only on one line; no markdown, labels, or quotes.
+INPUT:
+Expected answer target: Whether FAW affected the crop, and if so, a description of the effect (yield loss, damage type, etc.).
+Question: Has fall armyworm ever affected your maize? If yes, how did it affect your crop?
+Answer: gjhl
+2026-09-03T04:50:27.266Z D/SLM [slm-jni] initializeIfNeeded: model='Gemma3n4B' image=false audio=false
+2026-09-03T04:50:27.267Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm'
+2026-09-03T04:50:27.267Z D/LiteRtRepository [DefaultDispatcher-worker-7] [2] initializeIfNeeded ok initMs=2
+2026-09-03T04:50:27.269Z D/SLM [slm-jni] runInference: model='Gemma3n4B' textLen=485 images=0 audio=0
+2026-09-03T04:50:27.271Z D/LiteRtLM [DefaultDispatcher-worker-5] state[run:start] key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=2 active=true terminated=false logicalDone=false cancel=false pendingCancel=false lastMsgAt=1691728617 lastTermAt=1691728571
+2026-09-03T04:50:27.272Z D/LiteRtLM [DefaultDispatcher-worker-5] runInference start: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=2 hasText=true originalTextLen=485 effectiveTextLen=485 images=0 audioClips=0
+2026-09-03T04:50:27.273Z D/LiteRtLM [DefaultDispatcher-worker-5] LiteRT-LM sendMessageAsync(text): key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=2 len=485 maxOutputTokens=64
+2026-09-03T04:50:27.282Z D/LiteRtLM [DefaultDispatcher-worker-5] sendMessageAsync accepted: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=2 dispatchMs=9
+2026-09-03T04:50:27.283Z I/AiScreen [main] AI_FOLLOWUP_REPAIR node=Q8 initialRun=1 score=10 attempted=true
+2026-09-03T04:50:27.283Z D/AiScreen [main] Step rendered (context=sid=1|nid=Q8 node=Q8 runId=1 phase=ONE_STEP mode=EVAL_JSON showJson=true rawLen=35 followups=0 timedOut=false twoStep=false)
+2026-09-03T04:50:29.907Z W/LiteRtLM [Thread-22] Inference first output: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=2 ttftMs=2634 dispatchMs=9 postDispatchTtftMs=2625 requestToFirstOutputMs=2636
+2026-09-03T04:50:29.907Z D/LiteRtLM [Thread-22] stream[key=Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm runId=2] msg#1 rawChunkLen=3 deltaLen=3 emittedChars=3
+2026-09-03T04:50:29.913Z D/LiteRtRepository [main] stream[rid=2 msg#1] done=false deltaLen=3 outLen=3 outPreview='Can' deltaPreview='Can'
+2026-09-03T04:50:29.914Z D/AiViewModel [DefaultDispatcher-worker-5] run[2] chunk[1].preview='Can'
+2026-09-03T04:50:30.089Z D/AiViewModel [DefaultDispatcher-worker-5] run[2] chunk[2].preview='␠you'
+2026-09-03T04:50:30.265Z D/AiViewModel [DefaultDispatcher-worker-5] run[2] chunk[3].preview='␠please'
+2026-09-03T04:50:30.407Z D/AiViewModel [DefaultDispatcher-worker-5] run[2] chunk[4].preview='␠describe'
+2026-09-03T04:50:30.583Z D/AiViewModel [DefaultDispatcher-worker-5] run[2] chunk[5].preview='␠how'
+2026-09-03T04:50:30.723Z D/AiViewModel [DefaultDispatcher-worker-5] run[2] chunk[6].preview='␠fall'
+2026-09-03T04:50:30.882Z D/AiViewModel [DefaultDispatcher-worker-5] run[2] chunk[7].preview='␠army'
+2026-09-03T04:50:31.049Z D/LiteRtRepository [main] stream[rid=2 msg#8] done=false deltaLen=4 outLen=41 outPreview='Can you please describe how fall armyworm' deltaPreview='worm'
+2026-09-03T04:50:31.050Z D/AiViewModel [DefaultDispatcher-worker-5] run[2] chunk[8].preview='worm'
+2026-09-03T04:50:31.205Z D/AiViewModel [DefaultDispatcher-worker-5] run[2] chunk[9].preview='␠affected'
+2026-09-03T04:50:31.384Z D/AiViewModel [DefaultDispatcher-worker-5] run[2] chunk[10].preview='␠your'
+2026-09-03T04:50:31.527Z D/AiViewModel [DefaultDispatcher-worker-5] run[2] chunk[11].preview='␠maize'
+2026-09-03T04:50:31.701Z D/AiViewModel [DefaultDispatcher-worker-5] run[2] chunk[12].preview='␠crop'
+2026-09-03T04:50:31.841Z D/AiViewModel [DefaultDispatcher-worker-5] run[2] chunk[13].preview='?'
+2026-09-03T04:50:32.002Z D/LiteRtLM [Thread-35] state[logicalDone] key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=2 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=1691733187 lastTermAt=1691733349
+2026-09-03T04:50:32.003Z D/LiteRtLM [Thread-35] state[nativeDone:beforeRelease] key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=2 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=1691733187 lastTermAt=1691733349
+2026-09-03T04:50:32.004Z W/LiteRtLM [Thread-35] Inference timing: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=2 ttftMs=2634 dispatchMs=9 postDispatchTtftMs=2625 totalMs=4730 callbacks=13 outputChars=67 cancelled=false error=false requestTotalMs=4732
+2026-09-03T04:50:32.017Z D/LiteRtRepository [main] [2] logical done=true; responseClosed=true; waiting native cleanup
+2026-09-03T04:50:32.017Z D/LiteRtRepository [main] [2] native cleanup safepoint
+2026-09-03T04:50:32.018Z D/SLM [slm-jni] resetConversationAndWait: model='Gemma3n4B' image=false audio=false
+2026-09-03T04:50:32.019Z D/AiViewModel [DefaultDispatcher-worker-5] run[2] stats: chunks=13, chars=67, raw.len=67
+2026-09-03T04:50:32.023Z D/AiViewModel [DefaultDispatcher-worker-5] run[2] sha(raw)=67eb93f63bdb7c299ea4e418ab76c303e174ab50c71e92313c238302e4b413ee
+2026-09-03T04:50:32.024Z D/AiViewModel [DefaultDispatcher-worker-5] run[2] rawVisible='Can␠you␠please␠describe␠how␠fall␠armyworm␠affected␠your␠maize␠crop?'
+2026-09-03T04:50:32.025Z D/LiteRtRepository [DefaultDispatcher-worker-3] [2] Conversation reset completed after safepoint
+2026-09-03T04:50:32.027Z D/LiteRtRepository [DefaultDispatcher-worker-8] [part=000] [2] FINALIZE: native-terminated
+=== AI TRACE STATS (LiteRtRepository) ===
+rid=2 model='Gemma3n4B' reason=native-terminated
+totalMs=4761 inferenceMs=4758 firstTokenMs=2645
+logicalDone=true logicalDoneAt=1691733363
+nativeTerminated=true cancelTag='null'
+lastDeltaMsAgo=186 lastEventMsAgo=9
+chunks=13 emittedChars=67 capturedAll=true out.len=67
+=== OUTPUT (FULL) ===
+Can you please describe how fall armyworm affected your maize crop?
+2026-09-03T04:50:32.028Z D/AiViewModel [DefaultDispatcher-worker-5] run[2]: FOLLOWUP parse extractorQ='Can␠you␠please␠describe␠how␠fall␠armyworm␠affected␠your␠maize␠crop?' textQ='Can␠you␠please␠describe␠how␠fall␠armyworm␠affected␠your␠maize␠crop?' best='Can␠you␠please␠describe␠how␠fall␠armyworm␠affected␠your␠maize␠crop?'
+2026-09-03T04:50:32.029Z D/AiViewModel [DefaultDispatcher-worker-5] stepHistory+ runId=2 phase=FOLLOWUP mode=FOLLOWUP_JSON_OR_TEXT raw.len=67 score=null FU=1 FU0='Can␠you␠please␠describe␠how␠fall␠armyworm␠affected␠your␠maize␠crop?' timeout=false err=null
+2026-09-03T04:50:32.030Z I/AiViewModel [DefaultDispatcher-worker-5] run[2] done: phase=FOLLOWUP mode=FOLLOWUP_JSON_OR_TEXT score=null FU0.len=67 FU0.sha16=67eb93f63bdb7c29 commit=false err=<none>
+2026-09-03T04:50:32.030Z I/FullTextOut [DefaultDispatcher-worker-5] [part=000] run[2]: RawTextOut
+Can you please describe how fall armyworm affected your maize crop?
+2026-09-03T04:50:32.033Z I/AiScreen [main] Follow-up persisted (context=sid=1|nid=Q8 node=Q8 runId=2 phase=FOLLOWUP twoStep=false mode=FOLLOWUP_JSON_OR_TEXT len=67 sha6=67eb93f63bdb displayedAsPlain=true)
+2026-09-03T04:50:32.033Z D/AiScreen [main] Follow-up preview (debug) node=Q8 runId=2 preview="Can you please describe how fall armyworm affected your maize crop?"
+2026-09-03T04:50:32.034Z I/AiScreen [main] AI_FOLLOWUP_REPAIR_RESULT node=Q8 run=2 timedOut=false errorPresent=false parsedCount=1
+2026-09-03T04:50:32.034Z D/AiScreen [main] Step rendered (context=sid=1|nid=Q8 node=Q8 runId=2 phase=FOLLOWUP mode=FOLLOWUP_JSON_OR_TEXT showJson=false rawLen=67 followups=1 timedOut=false twoStep=false)
+2026-09-03T04:50:32.034Z I/AiScreen [main] Submit end runId=ai-Q8-576852235-576852235502972 node=Q8 elapsed=8663ms
+2026-09-03T04:52:40.016Z D/SurveyVM [main] backToPrevious -> Q7 (runActive=true, uiLen=0, runLen=0, draftLen=0)
+2026-09-03T04:52:40.025Z D/SurveyVM [main] hasTwoStepPrompt[Q7] -> false (eval=0, fu=0)
+2026-09-03T04:52:41.716Z D/SurveyVM [main] push -> Q8, navSize=9, stackSize=9
+2026-09-03T04:52:41.738Z D/SurveyVM [main] hasTwoStepPrompt[Q8] -> false (eval=0, fu=0)
+2026-09-03T04:52:49.921Z D/SurveyVM [main] hasTwoStepPrompt[Q8] -> false (eval=0, fu=0)
+2026-09-03T04:52:49.922Z I/AiScreen [main] Submit begin runId=ai-Q8-576998786-576998786083407 node=Q8 role=MAIN isTwoStep=false sessionId=1 surveyUuid=480883b7-608a-4dbd-a997-6eb9436ada88 qLen=80 aLen=4 qSha6=27d6102552db aSha6=3e267b901e4c
+2026-09-03T04:52:49.922Z D/AiScreen [main] Submit payload preview (debug) runId=ai-Q8-576998786-576998786083407 node=Q8 qPreview="Has fall armyworm ever affected your maize? If yes, how did it affect your crop?" aPreview="gjhl"
+2026-09-03T04:52:49.922Z D/SurveyVM [main] getPrompt[Q8] -> len=230 (src=one_step)
+2026-09-03T04:52:49.924Z D/AiViewModel [DefaultDispatcher-worker-8] run[3]: mode=EVAL_JSON phase=ONE_STEP commit=true prompt.len=230, fullPrompt.len=788, timeoutMs=120000
+2026-09-03T04:52:49.926Z D/AiViewModel [DefaultDispatcher-worker-8] run[3]: sha(prompt)=a677839328d6c77a2b9c5743da487dad4aa1f955c7564d8ae3cd5828a004e0bb sha(full)=5f005f3eeed8762cdfd35626cf17281acb77396e572516040fb4301a701bbbe8
+2026-09-03T04:52:49.926Z I/FullPromptReview [DefaultDispatcher-worker-8] [part=000] run[3]: phase=ONE_STEP FullPrompt
+Evaluate the survey answer.
+Return only compact JSON {"followup_question":"","score":N}; no markdown. Score N=1-100 for relevance, completeness, and accuracy against the Expected answer target only. Empty followup_question is allowed ONLY when Answer fully satisfies every target-required point; then score MUST be 90-100. If any target-required point is missing or ambiguous, score MUST be below 90 and followup_question MUST contain exactly one short English question for that point. Never ask for extra detail, invent uncertainty, or change topic.
+INPUT:
+Expected answer target: Whether FAW affected the crop, and if so, a description of the effect (yield loss, damage type, etc.).
+Question: Has fall armyworm ever affected your maize? If yes, how did it affect your crop?
+Answer: gjhl
+2026-09-03T04:52:49.930Z D/LiteRtRepository [DefaultDispatcher-worker-5] [3] request start model='Gemma3n4B' prompt.len=788 sha=5f005f3eeed8762c gateWaitMs=3
+2026-09-03T04:52:49.932Z D/LiteRtRepository [DefaultDispatcher-worker-5] [part=000] [3] PROMPT (FULL) sha=5f005f3eeed8762c
+Evaluate the survey answer.
+Return only compact JSON {"followup_question":"","score":N}; no markdown. Score N=1-100 for relevance, completeness, and accuracy against the Expected answer target only. Empty followup_question is allowed ONLY when Answer fully satisfies every target-required point; then score MUST be 90-100. If any target-required point is missing or ambiguous, score MUST be below 90 and followup_question MUST contain exactly one short English question for that point. Never ask for extra detail, invent uncertainty, or change topic.
+INPUT:
+Expected answer target: Whether FAW affected the crop, and if so, a description of the effect (yield loss, damage type, etc.).
+Question: Has fall armyworm ever affected your maize? If yes, how did it affect your crop?
+Answer: gjhl
+2026-09-03T04:52:49.933Z D/SLM [slm-jni] initializeIfNeeded: model='Gemma3n4B' image=false audio=false
+2026-09-03T04:52:49.935Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm'
+2026-09-03T04:52:49.936Z D/LiteRtRepository [DefaultDispatcher-worker-5] [3] initializeIfNeeded ok initMs=4
+2026-09-03T04:52:49.938Z D/SLM [slm-jni] runInference: model='Gemma3n4B' textLen=788 images=0 audio=0
+2026-09-03T04:52:49.940Z D/LiteRtLM [DefaultDispatcher-worker-8] state[run:start] key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=3 active=true terminated=false logicalDone=false cancel=false pendingCancel=false lastMsgAt=1691871286 lastTermAt=1691733349
+2026-09-03T04:52:49.940Z D/LiteRtLM [DefaultDispatcher-worker-8] runInference start: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=3 hasText=true originalTextLen=788 effectiveTextLen=788 images=0 audioClips=0
+2026-09-03T04:52:49.940Z D/LiteRtLM [DefaultDispatcher-worker-8] LiteRT-LM sendMessageAsync(text): key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=3 len=788 maxOutputTokens=64
+2026-09-03T04:52:49.950Z D/LiteRtLM [DefaultDispatcher-worker-8] sendMessageAsync accepted: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=3 dispatchMs=10
+2026-09-03T04:52:51.033Z W/LiteRtLM [Thread-36] Inference first output: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=3 ttftMs=1093 dispatchMs=10 postDispatchTtftMs=1083 requestToFirstOutputMs=1094
+2026-09-03T04:52:51.033Z D/LiteRtLM [Thread-36] stream[key=Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm runId=3] msg#1 rawChunkLen=2 deltaLen=2 emittedChars=2
+2026-09-03T04:52:51.050Z D/LiteRtRepository [main] stream[rid=3 msg#1] done=false deltaLen=2 outLen=2 outPreview='{"' deltaPreview='{"'
+2026-09-03T04:52:51.050Z D/AiViewModel [DefaultDispatcher-worker-8] run[3] chunk[1].preview='{"'
+2026-09-03T04:52:51.215Z D/AiViewModel [DefaultDispatcher-worker-8] run[3] chunk[2].preview='follow'
+2026-09-03T04:52:51.367Z D/AiViewModel [DefaultDispatcher-worker-8] run[3] chunk[3].preview='up'
+2026-09-03T04:52:51.533Z D/AiViewModel [DefaultDispatcher-worker-8] run[3] chunk[4].preview='_'
+2026-09-03T04:52:51.682Z D/AiViewModel [DefaultDispatcher-worker-8] run[3] chunk[5].preview='question'
+2026-09-03T04:52:51.850Z D/AiViewModel [DefaultDispatcher-worker-8] run[3] chunk[6].preview='":"","'
+2026-09-03T04:52:52.018Z D/AiViewModel [DefaultDispatcher-worker-8] run[3] chunk[7].preview='score'
+2026-09-03T04:52:52.267Z D/LiteRtRepository [main] stream[rid=3 msg#8] done=false deltaLen=2 outLen=32 outPreview='{"followup_question":"","score":' deltaPreview='":'
+2026-09-03T04:52:52.268Z D/AiViewModel [DefaultDispatcher-worker-8] run[3] chunk[8].preview='":'
+2026-09-03T04:52:52.324Z D/AiViewModel [DefaultDispatcher-worker-8] run[3] chunk[9].preview='1'
+2026-09-03T04:52:52.500Z D/AiViewModel [DefaultDispatcher-worker-8] run[3] chunk[10].preview='0'
+2026-09-03T04:52:52.641Z D/AiViewModel [DefaultDispatcher-worker-8] run[3] chunk[11].preview='}'
+2026-09-03T04:52:52.802Z D/LiteRtLM [Thread-47] state[logicalDone] key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=3 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=1691873987 lastTermAt=1691874149
+2026-09-03T04:52:52.804Z D/LiteRtLM [Thread-47] state[nativeDone:beforeRelease] key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=3 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=1691873987 lastTermAt=1691874149
+2026-09-03T04:52:52.804Z W/LiteRtLM [Thread-47] Inference timing: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=3 ttftMs=1093 dispatchMs=10 postDispatchTtftMs=1083 totalMs=2862 callbacks=11 outputChars=35 cancelled=false error=false requestTotalMs=2863
+2026-09-03T04:52:52.816Z D/LiteRtRepository [main] [3] logical done=true; responseClosed=true; waiting native cleanup
+2026-09-03T04:52:52.817Z D/LiteRtRepository [main] [3] native cleanup safepoint
+2026-09-03T04:52:52.818Z D/SLM [slm-jni] resetConversationAndWait: model='Gemma3n4B' image=false audio=false
+2026-09-03T04:52:52.818Z D/AiViewModel [DefaultDispatcher-worker-5] run[3] stats: chunks=11, chars=35, raw.len=35
+2026-09-03T04:52:52.821Z D/AiViewModel [DefaultDispatcher-worker-5] run[3] sha(raw)=4fa7d0ee9e617409eac3388c699b84e93863e73cf950a2753a691ce43273962f
+2026-09-03T04:52:52.822Z D/AiViewModel [DefaultDispatcher-worker-5] run[3] rawVisible='{"followup_question":"","score":10}'
+2026-09-03T04:52:52.829Z D/LiteRtRepository [DefaultDispatcher-worker-1] [3] Conversation reset completed after safepoint
+2026-09-03T04:52:52.831Z D/LiteRtRepository [DefaultDispatcher-worker-1] [part=000] [3] FINALIZE: native-terminated
+=== AI TRACE STATS (LiteRtRepository) ===
+rid=3 model='Gemma3n4B' reason=native-terminated
+totalMs=2902 inferenceMs=2893 firstTokenMs=1112
+logicalDone=true logicalDoneAt=1691874163
+nativeTerminated=true cancelTag='null'
+lastDeltaMsAgo=189 lastEventMsAgo=13
+chunks=11 emittedChars=35 capturedAll=true out.len=35
+=== OUTPUT (FULL) ===
+{"followup_question":"","score":10}
+2026-09-03T04:52:52.831Z D/AiViewModel [DefaultDispatcher-worker-5] run[3]: EVAL_JSON parsed score=10 followups=0 fu0=''
+2026-09-03T04:52:52.831Z D/AiViewModel [DefaultDispatcher-worker-5] stepHistory+ runId=3 phase=ONE_STEP mode=EVAL_JSON raw.len=35 score=10 FU=0 FU0='<none>' timeout=false err=null
+2026-09-03T04:52:52.831Z I/AiViewModel [DefaultDispatcher-worker-5] run[3] done: phase=ONE_STEP mode=EVAL_JSON score=10 FU0.len=0 FU0.sha16=none commit=true err=<none>
+2026-09-03T04:52:52.831Z I/FullTextOut [DefaultDispatcher-worker-5] [part=000] run[3]: RawTextOut
+{"followup_question":"","score":10}
+2026-09-03T04:52:52.832Z D/AiViewModel [DefaultDispatcher-worker-5] run[4]: mode=FOLLOWUP_JSON_OR_TEXT phase=FOLLOWUP commit=false prompt.len=230, fullPrompt.len=485, timeoutMs=120000
+2026-09-03T04:52:52.833Z I/AiScreen [main] AI_FOLLOWUP_REPAIR node=Q8 initialRun=3 score=10 attempted=true
+2026-09-03T04:52:52.833Z D/AiScreen [main] Step rendered (context=sid=1|nid=Q8 node=Q8 runId=3 phase=ONE_STEP mode=EVAL_JSON showJson=true rawLen=35 followups=0 timedOut=false twoStep=false)
+2026-09-03T04:52:52.833Z D/AiViewModel [DefaultDispatcher-worker-5] run[4]: sha(prompt)=a677839328d6c77a2b9c5743da487dad4aa1f955c7564d8ae3cd5828a004e0bb sha(full)=d3874ede38399e04b2ae8790f0d89cf1db774d7c9d2d1bfd6a3cd1d0bf500c73
+2026-09-03T04:52:52.833Z I/FullPromptReview [DefaultDispatcher-worker-5] [part=000] run[4]: phase=FOLLOWUP FullPrompt
+Evaluate the survey answer.
+Output exactly one short English question for missing or ambiguous target-required information. No score, JSON, analysis, explanation, or extra text.
+Output one question only on one line; no markdown, labels, or quotes.
+INPUT:
+Expected answer target: Whether FAW affected the crop, and if so, a description of the effect (yield loss, damage type, etc.).
+Question: Has fall armyworm ever affected your maize? If yes, how did it affect your crop?
+Answer: gjhl
+2026-09-03T04:52:52.835Z D/LiteRtRepository [DefaultDispatcher-worker-1] [4] request start model='Gemma3n4B' prompt.len=485 sha=d3874ede38399e04 gateWaitMs=1
+2026-09-03T04:52:52.836Z D/LiteRtRepository [DefaultDispatcher-worker-1] [part=000] [4] PROMPT (FULL) sha=d3874ede38399e04
+Evaluate the survey answer.
+Output exactly one short English question for missing or ambiguous target-required information. No score, JSON, analysis, explanation, or extra text.
+Output one question only on one line; no markdown, labels, or quotes.
+INPUT:
+Expected answer target: Whether FAW affected the crop, and if so, a description of the effect (yield loss, damage type, etc.).
+Question: Has fall armyworm ever affected your maize? If yes, how did it affect your crop?
+Answer: gjhl
+2026-09-03T04:52:52.836Z D/SLM [slm-jni] initializeIfNeeded: model='Gemma3n4B' image=false audio=false
+2026-09-03T04:52:52.837Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm'
+2026-09-03T04:52:52.838Z D/LiteRtRepository [DefaultDispatcher-worker-1] [4] initializeIfNeeded ok initMs=2
+2026-09-03T04:52:52.839Z D/SLM [slm-jni] runInference: model='Gemma3n4B' textLen=485 images=0 audio=0
+2026-09-03T04:52:52.840Z D/LiteRtLM [DefaultDispatcher-worker-1] state[run:start] key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=4 active=true terminated=false logicalDone=false cancel=false pendingCancel=false lastMsgAt=1691874187 lastTermAt=1691874149
+2026-09-03T04:52:52.841Z D/LiteRtLM [DefaultDispatcher-worker-1] runInference start: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=4 hasText=true originalTextLen=485 effectiveTextLen=485 images=0 audioClips=0
+2026-09-03T04:52:52.841Z D/LiteRtLM [DefaultDispatcher-worker-1] LiteRT-LM sendMessageAsync(text): key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=4 len=485 maxOutputTokens=64
+2026-09-03T04:52:52.846Z D/LiteRtLM [DefaultDispatcher-worker-1] sendMessageAsync accepted: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=4 dispatchMs=5
+2026-09-03T04:52:55.441Z W/LiteRtLM [Thread-48] Inference first output: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=4 ttftMs=2599 dispatchMs=5 postDispatchTtftMs=2594 requestToFirstOutputMs=2600
+2026-09-03T04:52:55.441Z D/LiteRtLM [Thread-48] stream[key=Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm runId=4] msg#1 rawChunkLen=3 deltaLen=3 emittedChars=3
+2026-09-03T04:52:55.442Z D/LiteRtRepository [main] stream[rid=4 msg#1] done=false deltaLen=3 outLen=3 outPreview='Can' deltaPreview='Can'
+2026-09-03T04:52:55.442Z D/AiViewModel [DefaultDispatcher-worker-1] run[4] chunk[1].preview='Can'
+2026-09-03T04:52:55.603Z D/AiViewModel [DefaultDispatcher-worker-1] run[4] chunk[2].preview='␠you'
+2026-09-03T04:52:55.760Z D/AiViewModel [DefaultDispatcher-worker-1] run[4] chunk[3].preview='␠please'
+2026-09-03T04:52:55.915Z D/AiViewModel [DefaultDispatcher-worker-1] run[4] chunk[4].preview='␠describe'
+2026-09-03T04:52:56.073Z D/AiViewModel [DefaultDispatcher-worker-1] run[4] chunk[5].preview='␠how'
+2026-09-03T04:52:56.237Z D/AiViewModel [DefaultDispatcher-worker-1] run[4] chunk[6].preview='␠fall'
+2026-09-03T04:52:56.392Z D/AiViewModel [DefaultDispatcher-worker-1] run[4] chunk[7].preview='␠army'
+2026-09-03T04:52:56.570Z D/LiteRtRepository [main] stream[rid=4 msg#8] done=false deltaLen=4 outLen=41 outPreview='Can you please describe how fall armyworm' deltaPreview='worm'
+2026-09-03T04:52:56.570Z D/AiViewModel [DefaultDispatcher-worker-1] run[4] chunk[8].preview='worm'
+2026-09-03T04:52:56.712Z D/AiViewModel [DefaultDispatcher-worker-5] run[4] chunk[9].preview='␠affected'
+2026-09-03T04:52:56.876Z D/AiViewModel [DefaultDispatcher-worker-5] run[4] chunk[10].preview='␠your'
+2026-09-03T04:52:57.039Z D/AiViewModel [DefaultDispatcher-worker-5] run[4] chunk[11].preview='␠maize'
+2026-09-03T04:52:57.194Z D/AiViewModel [DefaultDispatcher-worker-5] run[4] chunk[12].preview='␠crop'
+2026-09-03T04:52:57.353Z D/AiViewModel [DefaultDispatcher-worker-5] run[4] chunk[13].preview='?'
+2026-09-03T04:52:57.513Z D/LiteRtLM [Thread-61] state[logicalDone] key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=4 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=1691878695 lastTermAt=1691878860
+2026-09-03T04:52:57.514Z D/LiteRtLM [Thread-61] state[nativeDone:beforeRelease] key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=4 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=1691878695 lastTermAt=1691878860
+2026-09-03T04:52:57.515Z W/LiteRtLM [Thread-61] Inference timing: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=4 ttftMs=2599 dispatchMs=5 postDispatchTtftMs=2594 totalMs=4672 callbacks=13 outputChars=67 cancelled=false error=false requestTotalMs=4673
