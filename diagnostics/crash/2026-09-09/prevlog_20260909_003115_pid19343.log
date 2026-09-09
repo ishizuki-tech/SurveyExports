@@ -1,0 +1,657 @@
+=== Previous Session Logcat ===
+captured_time_utc=20260909_003115
+captured_time_local=20260908_173115
+marker=2026-09-08 17:27:08.839
+preferred_prev_pid=-1
+note=best-effort; buffers may be overwritten before next start
+sdk=36
+device=Google Pixel 9a
+appId=com.negi.survey
+versionName=0.0.1
+versionCode=1
+
+=== Logcat (since marker) ===
+--------- beginning of main
+09-08 17:27:08.839 19025 19060 D CrashCapture: prevSessionLogcat: no marker yet; skipping.
+09-08 17:27:08.970 19025 19060 D CrashCapture: Persisted logcat marker for next run: 2026-09-08 17:27:08.839
+09-08 17:27:08.992 19025 19060 D CrashCapture: No crash artifacts found; skipping enqueue. where=SurveyApp:enqueuePending(immediate):bg
+09-08 17:27:09.128 19025 19062 D WM-SystemJobScheduler: Scheduling work ID f29c443b-df09-4811-bda5-924d82f485ccJob ID 0
+09-08 17:27:09.133 19025 19062 D WM-GreedyScheduler: Starting tracking for f29c443b-df09-4811-bda5-924d82f485cc
+09-08 17:27:09.159 19025 19025 D WM-SystemJobService: onStartJob for WorkGenerationalId(workSpecId=f29c443b-df09-4811-bda5-924d82f485cc, generation=0)
+09-08 17:27:09.199 19025 19063 D WM-SystemJobScheduler: Scheduling work ID 908e8638-b2dd-417d-8c4e-ce242eff5ae5Job ID 1
+09-08 17:27:09.207 19025 19025 D WM-SystemJobService: onStartJob for WorkGenerationalId(workSpecId=908e8638-b2dd-417d-8c4e-ce242eff5ae5, generation=0)
+09-08 17:27:09.213 19025 19063 D WM-GreedyScheduler: Starting tracking for f29c443b-df09-4811-bda5-924d82f485cc,908e8638-b2dd-417d-8c4e-ce242eff5ae5
+09-08 17:27:09.232 19025 19063 D WM-Processor: Processor: processing WorkGenerationalId(workSpecId=f29c443b-df09-4811-bda5-924d82f485cc, generation=0)
+09-08 17:27:09.236 19025 19063 D WM-Processor: Processor: processing WorkGenerationalId(workSpecId=908e8638-b2dd-417d-8c4e-ce242eff5ae5, generation=0)
+09-08 17:27:09.253 19025 19025 D WM-WorkerWrapper: Starting work for com.negi.survey.net.GitHubUploadWorker
+09-08 17:27:09.259 19025 19025 D WM-WorkerWrapper: Starting work for com.negi.survey.net.GitHubUploadWorker
+09-08 17:27:09.260 19025 19063 D WM-WorkConstraintsTrack: NetworkRequestConstraintController register shared callback
+09-08 17:27:09.266 19025 19063 D WM-PackageManagerHelper: androidx.work.impl.background.systemalarm.RescheduleReceiver enabled
+09-08 17:27:09.281 19025 19066 D WM-WorkConstraintsTrack: NetworkRequestConstraintController onCapabilitiesChanged callback
+09-08 17:27:09.281 19025 19066 D WM-WorkConstraintsTrack: Not dispatching constraint state yet: isBlocked=null, capabilitiesInitialized=true
+09-08 17:27:09.281 19025 19066 D WM-WorkConstraintsTrack: NetworkRequestConstraintController onBlockedStatusChanged callback false
+09-08 17:27:09.289 19025 19061 I WM-Processor: Moving WorkSpec (908e8638-b2dd-417d-8c4e-ce242eff5ae5) to the foreground
+09-08 17:27:09.303 19025 19025 I WM-SystemFgDispatcher: Started foreground service Intent { act=ACTION_START_FOREGROUND xflg=0x4 cmp=com.negi.survey/androidx.work.impl.foreground.SystemForegroundService (has extras) }
+09-08 17:27:09.304 19025 19025 D WM-SystemFgDispatcher: Notifying with (id:4852, workSpecId: 908e8638-b2dd-417d-8c4e-ce242eff5ae5, notificationType :1)
+09-08 17:27:09.305 19025 19063 I WM-Processor: Moving WorkSpec (f29c443b-df09-4811-bda5-924d82f485cc) to the foreground
+09-08 17:27:09.312 19025 19025 D WM-SystemFgDispatcher: Notifying with (id:4852, workSpecId: 908e8638-b2dd-417d-8c4e-ce242eff5ae5, notificationType :1)
+09-08 17:27:09.321 19025 19063 D WM-GreedyScheduler: Constraints met: Scheduling work ID WorkGenerationalId(workSpecId=f29c443b-df09-4811-bda5-924d82f485cc, generation=0)
+09-08 17:27:09.322 19025 19063 D WM-GreedyScheduler: Constraints met: Scheduling work ID WorkGenerationalId(workSpecId=908e8638-b2dd-417d-8c4e-ce242eff5ae5, generation=0)
+09-08 17:27:09.323 19025 19025 I WM-SystemFgDispatcher: Started foreground service Intent { act=ACTION_START_FOREGROUND xflg=0x4 cmp=com.negi.survey/androidx.work.impl.foreground.SystemForegroundService (has extras) }
+09-08 17:27:09.323 19025 19025 D WM-SystemFgDispatcher: Notifying with (id:4814, workSpecId: f29c443b-df09-4811-bda5-924d82f485cc, notificationType :1)
+09-08 17:27:09.325 19025 19059 D WM-WorkProgressUpdater: Updating progress for 908e8638-b2dd-417d-8c4e-ce242eff5ae5 (Data {pct : 3, mode : startup_ring_logs})
+09-08 17:27:09.330 19025 19025 D WM-SystemFgDispatcher: Notifying with (id:4814, workSpecId: f29c443b-df09-4811-bda5-924d82f485cc, notificationType :1)
+09-08 17:27:09.344 19025 19059 I WM-Processor: Moving WorkSpec (908e8638-b2dd-417d-8c4e-ce242eff5ae5) to the foreground
+09-08 17:27:09.347 19025 19025 D WM-SystemFgDispatcher: Notifying with (id:4852, workSpecId: 908e8638-b2dd-417d-8c4e-ce242eff5ae5, notificationType :1)
+09-08 17:27:09.356 19025 19059 D WM-Processor: Work WorkGenerationalId(workSpecId=f29c443b-df09-4811-bda5-924d82f485cc, generation=0) is already enqueued for processing
+09-08 17:27:09.364 19025 19059 D WM-Processor: Work WorkGenerationalId(workSpecId=908e8638-b2dd-417d-8c4e-ce242eff5ae5, generation=0) is already enqueued for processing
+09-08 17:27:09.366 19025 19059 D WM-WorkProgressUpdater: Updating progress for f29c443b-df09-4811-bda5-924d82f485cc (Data {pct : 3, mode : startup_runtime_logs})
+09-08 17:27:09.379 19025 19059 I WM-Processor: Moving WorkSpec (f29c443b-df09-4811-bda5-924d82f485cc) to the foreground
+09-08 17:27:09.382 19025 19025 D WM-SystemFgDispatcher: Notifying with (id:4814, workSpecId: f29c443b-df09-4811-bda5-924d82f485cc, notificationType :1)
+09-08 17:27:09.383 19025 19059 D WM-WorkConstraintsTrack: NetworkRequestConstraintController send initial capabilities
+09-08 17:27:09.384 19025 19059 D WM-WorkConstraintsTrack: NetworkRequestConstraintController send initial capabilities
+09-08 17:27:10.116 19025 19064 D github_upload: doRingLogsUpload: remoteBaseDir=diagnostics/applog_ring/2026-09-09/applog_ring_startup_ring_20260909_002708_85460061_app_start segs=1 bytes=420 source=/data/user/0/com.negi.survey/files/diagnostics/applog_ring snapshot=/data/user/0/com.negi.survey/cache/diagnostics_ring_upload/startup_ring_20260909_002708_85460061
+09-08 17:27:10.129 19025 19064 D GitHubUploader: uploadStream: owner=ishizuki-tech repo=SurveyExports branch=main path=diagnostics/applog_ring/2026-09-09/applog_ring_startup_ring_20260909_002708_85460061_app_start/seg_00.log size=420 maxRawBytesHint=1000000 maxRequestBytesHint=2800000
+09-08 17:27:10.132 19025 19062 D WM-WorkProgressUpdater: Updating progress for 908e8638-b2dd-417d-8c4e-ce242eff5ae5 (Data {pct : 10, mode : startup_ring_logs})
+09-08 17:27:10.173 19025 19062 I WM-Processor: Moving WorkSpec (908e8638-b2dd-417d-8c4e-ce242eff5ae5) to the foreground
+09-08 17:27:10.184 19025 19025 D WM-SystemFgDispatcher: Notifying with (id:4852, workSpecId: 908e8638-b2dd-417d-8c4e-ce242eff5ae5, notificationType :1)
+09-08 17:27:10.552 19025 19044 D RuntimeLogStore: openWriter: rotate:plain_snapshot:app_start -> /data/user/0/com.negi.survey/files/diagnostics/runtime_logs/rtlog_20260909_002710_549_pid19025_seq2.log (bytes=0 format=LEGACY)
+09-08 17:27:10.557 19025 19044 D RuntimeLogStore: retention: rotate:plain_snapshot:app_start files=2 kept=2 totalBytes=3001
+09-08 17:27:10.601 19025 19068 D github_upload: doRuntimeLogsUpload: remoteBaseDir=diagnostics/runtime_logs/2026-09-09/runtime_logs_startup_runtime_20260909_002708_82f44a43_app_start toUpload=1 bytes=2680 dedupe=true deleteSource=true deletedSourcePre=0 preview='runtime_log_20260909_002710_577_pid19025_app_start__rtlog_20260909_002706_070_pid19025_seq1.log'
+09-08 17:27:10.604 19025 19068 D GitHubUploader: uploadStream: owner=ishizuki-tech repo=SurveyExports branch=main path=diagnostics/runtime_logs/2026-09-09/runtime_logs_startup_runtime_20260909_002708_82f44a43_app_start/runtime_log_20260909_002710_577_pid19025_app_start__rtlog_20260909_002706_070_pid19025_seq1.log size=2680 maxRawBytesHint=1000000 maxRequestBytesHint=2800000
+09-08 17:27:10.606 19025 19059 D WM-WorkProgressUpdater: Updating progress for f29c443b-df09-4811-bda5-924d82f485cc (Data {pct : 10, mode : startup_runtime_logs})
+09-08 17:27:10.636 19025 19063 I WM-Processor: Moving WorkSpec (f29c443b-df09-4811-bda5-924d82f485cc) to the foreground
+09-08 17:27:10.641 19025 19025 D WM-SystemFgDispatcher: Notifying with (id:4814, workSpecId: f29c443b-df09-4811-bda5-924d82f485cc, notificationType :1)
+09-08 17:27:10.749 19025 19062 D WM-WorkProgressUpdater: Updating progress for 908e8638-b2dd-417d-8c4e-ce242eff5ae5 (Data {pct : 19, mode : startup_ring_logs})
+09-08 17:27:10.777 19025 19062 I WM-Processor: Moving WorkSpec (908e8638-b2dd-417d-8c4e-ce242eff5ae5) to the foreground
+09-08 17:27:10.782 19025 19062 D WM-WorkProgressUpdater: Updating progress for 908e8638-b2dd-417d-8c4e-ce242eff5ae5 (Data {pct : 91, mode : startup_ring_logs})
+09-08 17:27:10.783 19025 19025 D WM-SystemFgDispatcher: Notifying with (id:4852, workSpecId: 908e8638-b2dd-417d-8c4e-ce242eff5ae5, notificationType :1)
+09-08 17:27:10.801 19025 19062 I WM-Processor: Moving WorkSpec (908e8638-b2dd-417d-8c4e-ce242eff5ae5) to the foreground
+09-08 17:27:10.807 19025 19025 D WM-SystemFgDispatcher: Notifying with (id:4852, workSpecId: 908e8638-b2dd-417d-8c4e-ce242eff5ae5, notificationType :1)
+09-08 17:27:11.014 19025 19061 D WM-WorkProgressUpdater: Updating progress for f29c443b-df09-4811-bda5-924d82f485cc (Data {pct : 19, mode : startup_runtime_logs})
+09-08 17:27:11.042 19025 19061 I WM-Processor: Moving WorkSpec (f29c443b-df09-4811-bda5-924d82f485cc) to the foreground
+09-08 17:27:11.046 19025 19061 D WM-WorkProgressUpdater: Updating progress for f29c443b-df09-4811-bda5-924d82f485cc (Data {pct : 91, mode : startup_runtime_logs})
+09-08 17:27:11.046 19025 19025 D WM-SystemFgDispatcher: Notifying with (id:4814, workSpecId: f29c443b-df09-4811-bda5-924d82f485cc, notificationType :1)
+09-08 17:27:11.063 19025 19061 I WM-Processor: Moving WorkSpec (f29c443b-df09-4811-bda5-924d82f485cc) to the foreground
+09-08 17:27:11.067 19025 19025 D WM-SystemFgDispatcher: Notifying with (id:4814, workSpecId: f29c443b-df09-4811-bda5-924d82f485cc, notificationType :1)
+09-08 17:27:11.890 19025 19059 D WM-WorkProgressUpdater: Updating progress for 908e8638-b2dd-417d-8c4e-ce242eff5ae5 (Data {pct : 95, mode : startup_ring_logs})
+09-08 17:27:11.897 19025 19064 D GitHubUploader: uploadStream: done url=https://github.com/ishizuki-tech/SurveyExports/blob/main/diagnostics/applog_ring/2026-09-09/applog_ring_startup_ring_20260909_002708_85460061_app_start/seg_00.log sha=4440c36d5a7691d79e82437b8a27ccbc4ce7a7ce
+09-08 17:27:11.929 19025 19059 I WM-Processor: Moving WorkSpec (908e8638-b2dd-417d-8c4e-ce242eff5ae5) to the foreground
+09-08 17:27:11.934 19025 19025 D WM-SystemFgDispatcher: Notifying with (id:4852, workSpecId: 908e8638-b2dd-417d-8c4e-ce242eff5ae5, notificationType :1)
+09-08 17:27:11.937 19025 19059 I WM-Processor: Moving WorkSpec (908e8638-b2dd-417d-8c4e-ce242eff5ae5) to the foreground
+09-08 17:27:11.945 19025 19059 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=908e8638-b2dd-417d-8c4e-ce242eff5ae5, tags={ com.negi.survey.net.GitHubUploadWorker,github_upload,github_upload:ring_logs } ]
+09-08 17:27:11.946 19025 19025 D WM-SystemFgDispatcher: Notifying with (id:4852, workSpecId: 908e8638-b2dd-417d-8c4e-ce242eff5ae5, notificationType :1)
+09-08 17:27:11.949 19025 19081 D ProfileInstaller: Installing profile for com.negi.survey
+09-08 17:27:11.953 19025 19025 D WM-Processor: Processor 908e8638-b2dd-417d-8c4e-ce242eff5ae5 executed; reschedule = false
+09-08 17:27:11.954 19025 19025 D WM-GreedyScheduler: Stopping tracking for WorkGenerationalId(workSpecId=908e8638-b2dd-417d-8c4e-ce242eff5ae5, generation=0)
+09-08 17:27:11.956 19025 19025 D WM-SystemJobService: 908e8638-b2dd-417d-8c4e-ce242eff5ae5 executed on JobScheduler
+09-08 17:27:11.960 19025 19025 D WM-SystemFgDispatcher: Removing Notification (id: 4852, workSpecId: WorkGenerationalId(workSpecId=908e8638-b2dd-417d-8c4e-ce242eff5ae5, generation=0), notificationType: 1
+09-08 17:27:11.961 19025 19059 D WM-GreedyScheduler: Cancelling work ID 908e8638-b2dd-417d-8c4e-ce242eff5ae5
+09-08 17:27:11.964 19025 19025 D WM-SystemJobService: onStopJob for WorkGenerationalId(workSpecId=908e8638-b2dd-417d-8c4e-ce242eff5ae5, generation=0)
+09-08 17:27:14.097 19025 19062 D WM-WorkProgressUpdater: Updating progress for f29c443b-df09-4811-bda5-924d82f485cc (Data {pct : 95, mode : startup_runtime_logs})
+09-08 17:27:14.099 19025 19064 D GitHubUploader: uploadStream: done url=https://github.com/ishizuki-tech/SurveyExports/blob/main/diagnostics/runtime_logs/2026-09-09/runtime_logs_startup_runtime_20260909_002708_82f44a43_app_start/runtime_log_20260909_002710_577_pid19025_app_start__rtlog_20260909_002706_070_pid19025_seq1.log sha=15f678a59438a6b4329e4809124f9e8e03d62f4a
+09-08 17:27:14.121 19025 19062 I WM-Processor: Moving WorkSpec (f29c443b-df09-4811-bda5-924d82f485cc) to the foreground
+09-08 17:27:14.127 19025 19025 D WM-SystemFgDispatcher: Notifying with (id:4814, workSpecId: f29c443b-df09-4811-bda5-924d82f485cc, notificationType :1)
+09-08 17:27:14.174 19025 19064 D RuntimeLogStore: deleteRolledLogFiles: deleted=1 excludeActive=true active=rtlog_20260909_002710_549_pid19025_seq2.log
+09-08 17:27:14.193 19025 19059 I WM-Processor: Moving WorkSpec (f29c443b-df09-4811-bda5-924d82f485cc) to the foreground
+09-08 17:27:14.200 19025 19025 D WM-SystemFgDispatcher: Notifying with (id:4814, workSpecId: f29c443b-df09-4811-bda5-924d82f485cc, notificationType :1)
+09-08 17:27:14.205 19025 19059 I WM-WorkerWrapper: Worker result SUCCESS for Work [ id=f29c443b-df09-4811-bda5-924d82f485cc, tags={ com.negi.survey.net.GitHubUploadWorker,github_upload,github_upload:startup_runtime_logs } ]
+09-08 17:27:14.217 19025 19025 D WM-Processor: Processor f29c443b-df09-4811-bda5-924d82f485cc executed; reschedule = false
+09-08 17:27:14.218 19025 19025 D WM-GreedyScheduler: Stopping tracking for WorkGenerationalId(workSpecId=f29c443b-df09-4811-bda5-924d82f485cc, generation=0)
+09-08 17:27:14.220 19025 19025 D WM-SystemJobService: f29c443b-df09-4811-bda5-924d82f485cc executed on JobScheduler
+09-08 17:27:14.222 19025 19025 D WM-SystemFgDispatcher: Removing Notification (id: 4814, workSpecId: WorkGenerationalId(workSpecId=f29c443b-df09-4811-bda5-924d82f485cc, generation=0), notificationType: 1
+09-08 17:27:14.223 19025 19025 I WM-SystemFgDispatcher: Stopping foreground service
+09-08 17:27:14.223 19025 19025 D WM-SystemFgService: Shutting down.
+09-08 17:27:14.226 19025 19059 D WM-GreedyScheduler: Cancelling work ID f29c443b-df09-4811-bda5-924d82f485cc
+09-08 17:27:14.232 19025 19025 D WM-SystemJobService: onStopJob for WorkGenerationalId(workSpecId=f29c443b-df09-4811-bda5-924d82f485cc, generation=0)
+09-08 17:27:14.249 19025 19059 D WM-PackageManagerHelper: androidx.work.impl.background.systemalarm.RescheduleReceiver disabled
+09-08 17:27:14.249 19025 19059 D WM-WorkConstraintsTrack: NetworkRequestConstraintController unregister shared callback
+09-08 17:27:32.580 19025 19046 I MS-ModelPrep: Copied any-owner model directly to internal: /data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm
+09-08 17:27:32.582 19025 19046 I MS-ModelPrep: drop temp all-files access
+09-08 17:27:32.582 19025 19046 I MS-ModelPrep: skip adopt for API>=33 (self-owned search path available)
+09-08 17:27:32.582 19025 19046 I MS-ModelPrep: re-adopt after temp all-files access; api=33
+09-08 17:27:32.597 19025 19046 I Tracing : Tracer added: class androidx.test.platform.tracing.AndroidXTracer
+09-08 17:27:32.615 19025 19035 W com.negi.survey: userfaultfd: MOVE ioctl seems unsupported: Connection timed out
+09-08 17:27:32.633 19025 19046 D IdlingRegistry: Registering idling resources: [androidx.compose.ui.test.EspressoLink@6049341]
+09-08 17:27:32.648 19025 19046 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+--------- beginning of system
+09-08 17:27:32.681 19025 19097 I DisplayManager: Choreographer implicitly registered for the refresh rate.
+09-08 17:27:32.682 19025 19097 D vulkan  : searching for layers in '/data/app/~~GXinNrmsBK8Ga22rbBjp0A==/com.negi.survey.test-Wa_M2cFTiFcpy2cYbR_lBg==/lib/arm64'
+09-08 17:27:32.682 19025 19097 D vulkan  : searching for layers in '/data/app/~~vuoMGReDxDLyEtQYnbuaSw==/com.negi.survey-bMqUDxlurt4yQITIB02Xyw==/lib/arm64'
+09-08 17:27:32.682 19025 19097 D vulkan  : searching for layers in '/data/app/~~GXinNrmsBK8Ga22rbBjp0A==/com.negi.survey.test-Wa_M2cFTiFcpy2cYbR_lBg==/base.apk!/lib/arm64-v8a'
+09-08 17:27:32.682 19025 19097 D vulkan  : searching for layers in '/data/app/~~vuoMGReDxDLyEtQYnbuaSw==/com.negi.survey-bMqUDxlurt4yQITIB02Xyw==/base.apk!/lib/arm64-v8a'
+09-08 17:27:32.694 19025 19025 D DesktopExperienceFlags: Toggle override initialized to: false
+09-08 17:27:32.697 19025 19025 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@6f04704 in: PRE_ON_CREATE
+09-08 17:27:32.697 19025 19025 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+09-08 17:27:32.702 19025 19025 D CompatChangeReporter: Compat change id reported: 377864165; UID 14867; state: ENABLED
+09-08 17:27:32.702 19025 19025 D DesktopModeFlags: Toggle override initialized to: OVERRIDE_UNSET
+09-08 17:27:32.707 19025 19025 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@6f04704 in: CREATED
+09-08 17:27:32.707 19025 19025 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=androidx.activity.ComponentActivity@6f04704
+09-08 17:27:32.708 19025 19025 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@6f04704 in: STARTED
+09-08 17:27:32.708 19025 19025 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=androidx.activity.ComponentActivity@6f04704
+09-08 17:27:32.708 19025 19025 I ContentCaptureHelper: Setting logging level to OFF
+09-08 17:27:32.711 19025 19025 D CrashCapture: install: ensured default handler. where=selfHeal:onActivityResumed pid=19025 default=com.negi.survey.CrashCapture$CrashHandler@6405464
+09-08 17:27:32.714 19025 19025 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@6f04704 in: RESUMED
+09-08 17:27:32.714 19025 19025 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=androidx.activity.ComponentActivity@6f04704
+09-08 17:27:32.744 19025 19025 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@c2b8df5
+09-08 17:27:32.745 19025 19025 D VRI[ComponentActivity]: WindowInsets changed: 1080x2424 statusBars:[0,152,0,0] navigationBars:[0,0,0,69] mandatorySystemGestures:[0,187,0,92] 
+09-08 17:27:32.790 19025 19025 D InsetsController: hide(ime())
+09-08 17:27:32.790 19025 19025 I ImeTracker: com.negi.survey:27708695: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+09-08 17:27:32.850 19025 19034 I com.negi.survey: Compiler allocated 5038KB to compile void android.view.ViewRootImpl.performTraversals()
+09-08 17:27:33.232 19025 19127 I HWUI    : Using FreeType backend (prop=Auto)
+09-08 17:27:33.392 19025 19046 W AiViewModelSurvey: assets/slm_config.yml not applied: slm_config.yml  
+09-08 17:27:33.392 19025 19046 I AiViewModelSurvey: ╔═ SLM MERGED CONFIG (pre-Model)  
+09-08 17:27:33.392 19025 19046 I AiViewModelSurvey: ║ ACCELERATOR: GPU  
+09-08 17:27:33.393 19025 19046 I AiViewModelSurvey: ║ MAX_TOKENS: 512  
+09-08 17:27:33.393 19025 19046 I AiViewModelSurvey: ║ TOP_K: 1  
+09-08 17:27:33.393 19025 19046 I AiViewModelSurvey: ║ TOP_P: 0.0  
+09-08 17:27:33.393 19025 19046 I AiViewModelSurvey: ║ TEMPERATURE: 0.0  
+09-08 17:27:33.393 19025 19046 I AiViewModelSurvey: ╚═ end  
+09-08 17:27:33.393 19025 19046 W AiViewModelSurvey: Initializing SLM accelerator=GPU  
+09-08 17:27:33.393 19025 19046 D SLM     : initializeIfNeeded: model='gemma-3n-E4B-it' image=false audio=false
+09-08 17:27:33.403 19025 19064 D LiteRtLM: Initializing LiteRT-LM: model='gemma-3n-E4B-it', key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm'
+09-08 17:27:33.405 19025 19064 D LiteRtLM: Capabilities: image=false audio=false
+09-08 17:27:33.406 19025 19064 D LiteRtLM: Backend=com.google.ai.edge.litertlm.Backend$GPU@222e0bf maxNumTokens=512 (raw=512) topK=1 topP=0.0 temp=0.0
+09-08 17:27:33.406 19025 19064 D LiteRtLM: Model path='/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' sizeBytes=4919541760 lastModified=1788913652575
+09-08 17:27:33.407 19025 19064 D LiteRtLM: LiteRT-LM native benchmark policy: enabled=false emulator=false
+09-08 17:27:33.407 19025 19064 D LiteRtLM: LiteRT-LM native benchmark policy: enabled=false emulator=false
+09-08 17:27:33.409 19025 19064 D LiteRtLM: Speculative decoding / MTP policy: enabled=false runtimeFlagUpdated=true model='gemma-3n-E4B-it'
+09-08 17:27:33.412 19025 19064 D LiteRtLM: Engine cacheDir resolved: key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' backend=com.google.ai.edge.litertlm.Backend$GPU@222e0bf path='/data/user/0/com.negi.survey/no_backup/litertlm_cache/8b58dd5e854e5353723e4360d401cf7d199b6f10' filesBefore=0
+09-08 17:27:33.437 19025 19064 I litert  : [environment.cc:36] Creating LiteRT environment with options
+09-08 17:27:33.438 19025 19064 W litert  : [npu_registry.cc:34] NPU accelerator could not be loaded and registered: kLiteRtStatusErrorInvalidArgument.
+09-08 17:27:33.438 19025 19064 I litert  : [accelerator_registry.cc:54] RegisterAccelerator: ptr=0xb40000747146d0f0, name=LiteRT GPU
+09-08 17:27:33.439 19025 19064 I litert  : [gpu_registry.cc:87] Statically linked GPU accelerator registered.
+09-08 17:27:33.439 19025 19064 I litert  : [accelerator_registry.cc:54] RegisterAccelerator: ptr=0xb40000747146e1d0, name=CpuAccelerator
+09-08 17:27:33.439 19025 19064 I litert  : [cpu_registry.cc:75] XNNPACK CPU accelerator registered.
+09-08 17:27:33.673 19025 19064 I litert  : [environment.cc:36] Creating LiteRT environment with options
+09-08 17:27:33.673 19025 19064 W litert  : [npu_registry.cc:34] NPU accelerator could not be loaded and registered: kLiteRtStatusErrorInvalidArgument.
+09-08 17:27:33.673 19025 19064 I litert  : [accelerator_registry.cc:54] RegisterAccelerator: ptr=0xb40000747146e0b0, name=LiteRT GPU
+09-08 17:27:33.673 19025 19064 I litert  : [gpu_registry.cc:87] Statically linked GPU accelerator registered.
+09-08 17:27:33.673 19025 19064 I litert  : [accelerator_registry.cc:54] RegisterAccelerator: ptr=0xb40000747146e830, name=CpuAccelerator
+09-08 17:27:33.673 19025 19064 I litert  : [cpu_registry.cc:75] XNNPACK CPU accelerator registered.
+09-08 17:27:33.673 19025 19064 W native  : W0000 00:00:1788913653.673290   19064 litert_lm_loader.cc:291] Section not found: 	
+09-08 17:27:33.674 19025 19064 W native  : W0000 00:00:1788913653.674006   19064 litert_lm_loader.cc:291] Section not found: 	
+09-08 17:27:33.675 19025 19064 I litert  : [compiled_model.cc:833] Flatbuffer model initialized directly from incoming litert model.
+09-08 17:27:33.682 19025 19064 I tflite  : Initialized TensorFlow Lite runtime.
+09-08 17:27:33.717 19025 19064 W libc    : Access denied finding property "ro.mediatek.platform"
+09-08 17:27:33.717 19025 19064 W libc    : Access denied finding property "ro.chipname"
+09-08 17:27:33.717 19025 19064 W libc    : Access denied finding property "ro.hardware.chipname"
+09-08 17:27:33.762 19025 19064 I native  : I0000 00:00:1788913653.762900   19064 delegate_opencl.cc:603] options->hint_waiting_for_completion: false
+09-08 17:27:33.762 19025 19064 I native  : I0000 00:00:1788913653.762961   19064 delegate_opencl.cc:605] options->kernel_batch_size: -1
+09-08 17:27:33.771 19025 19064 E libEGL  : call to OpenGL ES API with no current context (logged once per thread)
+09-08 17:27:33.775 19025 19064 I litert  : [environment.cc:47] Adding options to the existing LiteRT environment
+09-08 17:27:33.775 19025 19064 I tflite  : Loaded OpenCL library with dlopen.
+09-08 17:27:33.776 19025 19064 I litert  : [gpu_environment.cc:220] Created OpenCL device from provided device id and platform id.
+09-08 17:27:33.777 19025 19064 I litert  : [gpu_environment.cc:283] Reusing provided EGL environment.
+09-08 17:27:33.777 19025 19064 I litert  : [gpu_environment.h:155] Created LiteRT GpuEnvironment.
+09-08 17:27:33.777 19025 19064 I litert  : [environment.cc:47] Adding options to the existing LiteRT environment
+09-08 17:27:33.828 19025 19064 I tflite  : Replacing 3326 out of 3326 node(s) with delegate (LITERT_CL) node, yielding 1 partitions for subgraph 0 (decode).
+09-08 17:27:33.888 19025 19064 W native  : W0000 00:00:1788913653.888229   19064 gpu_model_builder.cc:4348] Weights preparation on Gpu is disabled for PowerVR, Broadcom, Mali GPUs and non-OpenCL/WebGPU/Metal backends.
+09-08 17:28:01.565 19025 19064 I native  : I0000 00:00:1788913681.559349   19064 delegate_kernel.cc:330] Total 81 external tensors are used for delegate inputs and outputs
+09-08 17:28:01.567 19025 19064 I native  : I0000 00:00:1788913681.567219   19064 delegate_kernel.cc:906] Initializing OpenCL-based API from serialized data.
+09-08 17:28:03.176 19025 19064 I tflite  : Replacing 2145 out of 2145 node(s) with delegate (LITERT_CL) node, yielding 1 partitions for subgraph 1 (prefill_16).
+09-08 17:28:05.458 19025 19064 I native  : I0000 00:00:1788913685.458433   19064 delegate_kernel.cc:330] Total 80 external tensors are used for delegate inputs and outputs
+09-08 17:28:05.458 19025 19064 I native  : I0000 00:00:1788913685.458604   19064 delegate_kernel.cc:906] Initializing OpenCL-based API from serialized data.
+09-08 17:28:06.869 19025 19064 I tflite  : Replacing 2145 out of 2145 node(s) with delegate (LITERT_CL) node, yielding 1 partitions for subgraph 2 (prefill_256).
+09-08 17:28:06.912 19025 19064 I native  : I0000 00:00:1788913686.912102   19064 delegate_kernel.cc:330] Total 80 external tensors are used for delegate inputs and outputs
+09-08 17:28:06.912 19025 19064 I native  : I0000 00:00:1788913686.912183   19064 delegate_kernel.cc:906] Initializing OpenCL-based API from serialized data.
+09-08 17:28:07.860 19025 19064 I litert  : [environment.cc:36] Creating LiteRT environment with options
+09-08 17:28:07.860 19025 19064 W litert  : [npu_registry.cc:34] NPU accelerator could not be loaded and registered: kLiteRtStatusErrorInvalidArgument.
+09-08 17:28:07.860 19025 19064 I litert  : [accelerator_registry.cc:54] RegisterAccelerator: ptr=0xb400007471472370, name=LiteRT GPU
+09-08 17:28:07.860 19025 19064 I litert  : [gpu_registry.cc:87] Statically linked GPU accelerator registered.
+09-08 17:28:07.860 19025 19064 I litert  : [accelerator_registry.cc:54] RegisterAccelerator: ptr=0xb4000074714706f0, name=CpuAccelerator
+09-08 17:28:07.860 19025 19064 I litert  : [cpu_registry.cc:75] XNNPACK CPU accelerator registered.
+09-08 17:28:08.068 19025 19064 W native  : W0000 00:00:1788913688.068173   19064 litert_lm_loader.cc:291] Section not found: 
+09-08 17:28:08.068 19025 19064 W native  : W0000 00:00:1788913688.068299   19064 litert_lm_loader.h:129] TFLite model for type: TF_LITE_END_OF_VISION not found. Skipping.
+09-08 17:28:08.070 19025 19064 I litert  : [compiled_model.cc:833] Flatbuffer model initialized directly from incoming litert model.
+09-08 17:28:08.082 19025 19064 W litert  : [compiled_model.cc:986] You should provide the `DispatchLibraryDir` option to use NPU.
+09-08 17:28:08.082 19025 19064 I tflite  : Created TensorFlow Lite XNNPACK delegate for CPU.
+09-08 17:28:08.082 19025 19064 I tflite  : Replacing 2 out of 10 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 2 partitions for subgraph 0 (main).
+09-08 17:28:08.085 19025 19064 I litert  : [compiled_model.cc:833] Flatbuffer model initialized directly from incoming litert model.
+09-08 17:28:08.085 19025 19064 W litert  : [compiled_model.cc:986] You should provide the `DispatchLibraryDir` option to use NPU.
+09-08 17:28:08.085 19025 19064 I litert  : [compiled_model.cc:1790] Tracked constant output tensor eoa_embedding with locked address
+09-08 17:28:08.135 19025 19064 I litert  : [compiled_model.cc:833] Flatbuffer model initialized directly from incoming litert model.
+09-08 17:28:08.293 19025 19064 W litert  : [compiled_model.cc:986] You should provide the `DispatchLibraryDir` option to use NPU.
+09-08 17:28:08.293 19025 19064 I tflite  : Replacing 1 out of 44 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 2 partitions for subgraph 0 (main).
+09-08 17:28:08.317 19025 19064 W LiteRtLM: Engine.initialize completed: key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' backend=com.google.ai.edge.litertlm.Backend$GPU@222e0bf took=34883ms cacheFilesAfter=2
+09-08 17:28:08.319 19025 19064 W LiteRtLM: Engine.initialize completed: key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' backend=com.google.ai.edge.litertlm.Backend$GPU@222e0bf took=34883ms cacheFilesAfter=2
+09-08 17:28:08.375 19025 19064 D LiteRtLM: createConversation completed: key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' took=55ms
+09-08 17:28:08.380 19025 19064 D LiteRtLM: LiteRT-LM initialization succeeded: model='gemma-3n-E4B-it', key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' engineMs=34883 conversationMs=55 totalMs=34979
+09-08 17:28:08.383 19025 19046 W AiViewModelSurvey: SLM initialization complete: accelerator=GPU  
+09-08 17:28:08.384 19025 19046 I AiViewModelSurvey: ╔═ SLM MODEL CONFIG  
+09-08 17:28:08.384 19025 19046 I AiViewModelSurvey: ║ name       : gemma-3n-E4B-it  
+09-08 17:28:08.384 19025 19046 I AiViewModelSurvey: ║ taskPath   : /data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm  
+09-08 17:28:08.384 19025 19046 I AiViewModelSurvey: ║ ACCELERATOR: GPU  
+09-08 17:28:08.384 19025 19046 I AiViewModelSurvey: ║ MAX_TOKENS : 512  
+09-08 17:28:08.384 19025 19046 I AiViewModelSurvey: ║ TOP_K      : 1  
+09-08 17:28:08.384 19025 19046 I AiViewModelSurvey: ║ TOP_P      : 0.0  
+09-08 17:28:08.384 19025 19046 I AiViewModelSurvey: ║ TEMPERATURE: 0.0  
+09-08 17:28:08.384 19025 19046 I AiViewModelSurvey: ╚═ end  
+09-08 17:28:08.388 19025 19046 D AiTrace : Installed (enabled=true ringEnabled=true)
+09-08 17:28:08.399 19025 19046 D SLM     : cancel: model='gemma-3n-E4B-it'
+09-08 17:28:08.498 19025 19025 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@6f04704 in: PAUSED
+09-08 17:28:08.498 19025 19025 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=androidx.activity.ComponentActivity@6f04704
+09-08 17:28:09.127 19025 19025 D VRI[ComponentActivity]: visibilityChanged oldVisibility=true newVisibility=false
+09-08 17:28:09.190 19025 19025 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@6f04704 in: STOPPED
+09-08 17:28:09.190 19025 19025 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=androidx.activity.ComponentActivity@6f04704
+09-08 17:28:09.192 19025 19025 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): null
+09-08 17:28:09.193 19025 19025 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@6f04704 in: DESTROYED
+09-08 17:28:09.193 19025 19025 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+09-08 17:28:09.195 19025 19025 D ViewRootImpl: Skipping stats log for color mode
+09-08 17:28:09.202 19025 19046 D IdlingRegistry: Unregistering idling resources: [androidx.compose.ui.test.EspressoLink@6049341]
+09-08 17:28:09.206 19025 19046 I TestRunner: finished: q8_real_model_soak_reports_two_step_coverage_when_requested(com.negi.survey.screens.RealLiteRtAiFollowupFlowInstrumentationTest)
+09-08 17:28:09.229 19025 19046 I TestRunner: started: q8_real_model_two_step_acceptance(com.negi.survey.screens.RealLiteRtAiFollowupFlowInstrumentationTest)
+09-08 17:28:09.239 19025 19046 I MS-ModelPrep: ModelAssetRule.before: api=36, modelName=gemma-3n-E4B-it-int4.litertlm, relDir=Download/SurveyNavModels
+09-08 17:28:09.239 19025 19046 I MS-ModelPrep: skip adopt for API>=33 (self-owned search path available)
+09-08 17:28:09.239 19025 19046 I MS-ModelPrep: Fast path: internal model exists -> /data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm len=4919541760
+09-08 17:28:09.244 19025 19046 D IdlingRegistry: Registering idling resources: [androidx.compose.ui.test.EspressoLink@a8a9953]
+09-08 17:28:09.262 19025 19046 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+09-08 17:28:09.286 19025 19025 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@8ebc4f9 in: PRE_ON_CREATE
+09-08 17:28:09.286 19025 19025 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+09-08 17:28:09.290 19025 19025 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@8ebc4f9 in: CREATED
+09-08 17:28:09.290 19025 19025 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=androidx.activity.ComponentActivity@8ebc4f9
+09-08 17:28:09.290 19025 19025 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@8ebc4f9 in: STARTED
+09-08 17:28:09.290 19025 19025 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=androidx.activity.ComponentActivity@8ebc4f9
+09-08 17:28:09.291 19025 19025 I ContentCaptureHelper: Setting logging level to OFF
+09-08 17:28:09.292 19025 19025 D CrashCapture: install: ensured default handler. where=selfHeal:onActivityResumed pid=19025 default=com.negi.survey.CrashCapture$CrashHandler@6405464
+09-08 17:28:09.292 19025 19025 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@8ebc4f9 in: RESUMED
+09-08 17:28:09.292 19025 19025 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=androidx.activity.ComponentActivity@8ebc4f9
+09-08 17:28:09.307 19025 19025 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@957286d
+09-08 17:28:09.308 19025 19025 D VRI[ComponentActivity]: WindowInsets changed: 1080x2424 statusBars:[0,152,0,0] navigationBars:[0,0,0,69] mandatorySystemGestures:[0,187,0,92] 
+09-08 17:28:09.369 19025 19025 D InsetsController: hide(ime())
+09-08 17:28:09.369 19025 19025 I ImeTracker: com.negi.survey:b48f1af3: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+09-08 17:28:09.930 19025 19046 W AiViewModelSurvey: assets/slm_config.yml not applied: slm_config.yml  
+09-08 17:28:09.930 19025 19046 I AiViewModelSurvey: ╔═ SLM MERGED CONFIG (pre-Model)  
+09-08 17:28:09.930 19025 19046 I AiViewModelSurvey: ║ ACCELERATOR: GPU  
+09-08 17:28:09.930 19025 19046 I AiViewModelSurvey: ║ MAX_TOKENS: 512  
+09-08 17:28:09.930 19025 19046 I AiViewModelSurvey: ║ TOP_K: 1  
+09-08 17:28:09.930 19025 19046 I AiViewModelSurvey: ║ TOP_P: 0.0  
+09-08 17:28:09.930 19025 19046 I AiViewModelSurvey: ║ TEMPERATURE: 0.0  
+09-08 17:28:09.930 19025 19046 I AiViewModelSurvey: ╚═ end  
+09-08 17:28:09.931 19025 19046 I AiViewModelSurvey: ╔═ SLM MODEL CONFIG  
+09-08 17:28:09.931 19025 19046 I AiViewModelSurvey: ║ name       : gemma-3n-E4B-it  
+09-08 17:28:09.931 19025 19046 I AiViewModelSurvey: ║ taskPath   : /data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm  
+09-08 17:28:09.931 19025 19046 I AiViewModelSurvey: ║ ACCELERATOR: GPU  
+09-08 17:28:09.931 19025 19046 I AiViewModelSurvey: ║ MAX_TOKENS : 512  
+09-08 17:28:09.931 19025 19046 I AiViewModelSurvey: ║ TOP_K      : 1  
+09-08 17:28:09.931 19025 19046 I AiViewModelSurvey: ║ TOP_P      : 0.0  
+09-08 17:28:09.931 19025 19046 I AiViewModelSurvey: ║ TEMPERATURE: 0.0  
+09-08 17:28:09.931 19025 19046 I AiViewModelSurvey: ╚═ end  
+09-08 17:28:09.931 19025 19046 D AiTrace : Installed (enabled=true ringEnabled=true)
+09-08 17:28:10.032 19025 19025 D SurveyVM: init -> Start, session=0, uuid=5c6edafa-064c-4883-8977-edfd29b8bde4, navSize=1, graphSize=20
+09-08 17:28:10.037 19025 19025 D SurveyVM: config.validate -> issues=0
+09-08 17:28:10.037 19025 19025 D SurveyVM: promptSources -> legacy=10, eval=0, follow=0
+09-08 17:28:10.037 19025 19025 D SurveyVM: promptSources.preview -> legacy=[Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q8, Q9], eval=[], follow=[]
+09-08 17:28:10.037 19025 19025 D SurveyVM: hasTwoStepPrompt[Q10] -> true (eval=195, fu=220)
+09-08 17:28:10.037 19025 19025 D SurveyVM: hasTwoStepPrompt[Q11] -> true (eval=219, fu=244)
+09-08 17:28:10.037 19025 19025 D SurveyVM: hasTwoStepPrompt[Q12] -> true (eval=229, fu=254)
+09-08 17:28:10.038 19025 19025 D SurveyVM: hasTwoStepPrompt[Q13] -> true (eval=184, fu=209)
+09-08 17:28:10.038 19025 19025 D SurveyVM: hasTwoStepPrompt[Q14] -> true (eval=221, fu=246)
+09-08 17:28:10.038 19025 19025 D SurveyVM: hasTwoStepPrompt[Q15] -> true (eval=160, fu=185)
+09-08 17:28:10.038 19025 19025 D SurveyVM: hasTwoStepPrompt[Q16] -> true (eval=185, fu=210)
+09-08 17:28:10.038 19025 19025 D SurveyVM: hasTwoStepPrompt[Q17] -> true (eval=200, fu=225)
+09-08 17:28:10.038 19025 19025 D SurveyVM: hasTwoStepPrompt[Q8] -> true (eval=214, fu=239)
+09-08 17:28:10.038 19025 19025 D SurveyVM: hasTwoStepPrompt[Q9] -> true (eval=190, fu=215)
+09-08 17:28:10.038 19025 19025 D SurveyVM: AI prompt coverage OK (aiCount=10)
+09-08 17:28:10.054 19025 19025 D SurveyVM: hasTwoStepPrompt[Q8] -> true (eval=214, fu=239)
+09-08 17:28:10.082 19025 19025 I com.negi.survey: hiddenapi: Accessing hidden method Landroid/os/SystemProperties;->addChangeCallback(Ljava/lang/Runnable;)V (runtime_flags=0, domain=platform, api=unsupported) from Landroidx/compose/ui/platform/AndroidComposeView$Companion; (domain=app, TargetSdkVersion=36) using reflection: allowed
+09-08 17:28:10.422 19025 19025 D InsetsController: show(ime())
+09-08 17:28:10.422 19025 19025 I ImeTracker: com.negi.survey:aa672791: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT_BY_INSETS_API fromUser false userId 0 displayId 0
+09-08 17:28:10.423 19025 19025 D InsetsController: Setting requestedVisibleTypes to 511 (was 503)
+09-08 17:28:10.483 19025 19025 I AssistStructure: Flattened final assist data: 520 bytes, containing 1 windows, 3 views
+09-08 17:28:10.486 19025 19025 I ImeTracker: com.negi.survey:52e550da: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false userId 0 displayId 0
+09-08 17:28:10.486 19025 19025 D InsetsController: show(ime())
+09-08 17:28:10.486 19025 19025 I ImeTracker: com.negi.survey:52e550da: onCancelled at PHASE_CLIENT_REPORT_REQUESTED_VISIBLE_TYPES
+09-08 17:28:10.570 19025 19025 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.view.ImeBackAnimationController@906f355
+09-08 17:28:10.576 19025 19025 D SurveyVM: resetAudioRefs -> cleared
+09-08 17:28:10.577 19025 19025 D SurveyVM: resetNavToStart -> key=com.negi.survey.vm.FlowHome@ed7b16a, navSize=1
+09-08 17:28:10.577 19025 19025 D SurveyVM: resetToStart -> Start, session=1, uuid=b93662e2-fba2-4d2c-a67f-e34a55431cb7, preserveDraft=false, draftLen=0
+09-08 17:28:10.578 19025 19025 D SurveyVM: activateRunIfNeeded(goto:Q8) -> runNoteLen=0, draftCleared=true, uuid=b93662e2-fba2-4d2c-a67f-e34a55431cb7
+09-08 17:28:10.578 19025 19025 D SurveyVM: push -> Q8, navSize=2, stackSize=2
+09-08 17:28:10.581 19025 19025 D SurveyVM: hasTwoStepPrompt[Q8] -> true (eval=214, fu=239)
+09-08 17:28:10.607 19025 19046 D SurveyVM: hasTwoStepPrompt[Q8] -> true (eval=214, fu=239)
+09-08 17:28:10.628 19025 19025 D InsetsController: show(ime())
+09-08 17:28:10.628 19025 19025 I ImeTracker: com.negi.survey:e6b39ec2: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT_BY_INSETS_API fromUser false userId 0 displayId 0
+09-08 17:28:10.628 19025 19025 I ImeTracker: com.negi.survey:e6b39ec2: onCancelled at PHASE_CLIENT_REPORT_REQUESTED_VISIBLE_TYPES
+09-08 17:28:10.637 19025 19025 I ImeTracker: com.negi.survey:485aef11: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false userId 0 displayId 0
+09-08 17:28:10.637 19025 19025 D InsetsController: show(ime())
+09-08 17:28:10.637 19025 19025 I ImeTracker: com.negi.survey:485aef11: onCancelled at PHASE_CLIENT_REPORT_REQUESTED_VISIBLE_TYPES
+09-08 17:28:10.658 19025 19025 D VRI[ComponentActivity]: WindowInsets changed: ime:[0,0,0,1043] 
+09-08 17:28:10.661 19025 19025 W InteractionJankMonitor: Initializing without READ_DEVICE_CONFIG permission. enabled=false, interval=1, missedFrameThreshold=3, frameTimeThreshold=64, package=com.negi.survey
+09-08 17:28:10.976 19025 19025 I ImeTracker: com.negi.survey:aa672791: onShown
+09-08 17:28:11.280 19025 19025 D SurveyVM: getEvalPrompt[Q8] -> len=293
+09-08 17:28:11.282 19025 19064 D AiViewModel: run[1]: mode=EVAL_JSON phase=EVAL commit=true prompt.len=292, fullPrompt.len=1133, timeoutMs=60000
+09-08 17:28:11.283 19025 19025 D InsetsController: hide(ime())
+09-08 17:28:11.283 19025 19025 I ImeTracker: com.negi.survey:76505321: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT_BY_INSETS_API fromUser false userId 0 displayId 0
+09-08 17:28:11.283 19025 19025 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@957286d
+09-08 17:28:11.283 19025 19025 D InsetsController: Setting requestedVisibleTypes to 503 (was 511)
+09-08 17:28:11.284 19025 19025 D VRI[ComponentActivity]: WindowInsets changed: ime:null 
+09-08 17:28:11.286 19025 19064 D AiViewModel: run[1]: sha(prompt)=d50398167cfe3427a9a984163543ec9195c21f4ec52a4794b3f712528412dd91 sha(full)=1b536c849e68b9b0ca573b8cb3ba9d3d6870e1ace26ecfc9b9b86ca58036bb14
+09-08 17:28:11.286 19025 19064 I FullPromptReview: [part=000] run[1]: phase=EVAL FullPrompt
+09-08 17:28:11.286 19025 19064 I FullPromptReview: Evaluate only the original survey target using all supplied answers.
+09-08 17:28:11.286 19025 19064 I FullPromptReview: Return only compact JSON {"score":N,"missing_points":[],"followup_needed":false}. N must be an integer 1-100 for relevance, completeness and accuracy against the original target. Evaluate the original answer and all answered followup pairs together. Score 90-100 only when all target-required information is satisfied; otherwise score below 90. For score below 90, missing_points must contain the specific missing or ambiguous target-required information and followup_needed must be true. Otherwise missing_points is empty and followup_needed is false. Do not generate a question. Do not penalize style or request information outside the target. Write missing_points in English.
+09-08 17:28:11.286 19025 19064 I FullPromptReview: Keep missing_points concise.
+09-08 17:28:11.286 19025 19064 I FullPromptReview: One JSON object only; no markdown or generated question.
+09-08 17:28:11.286 19025 19064 I FullPromptReview: INPUT:
+09-08 17:28:11.286 19025 19064 I FullPromptReview: Expected answer target: Whether FAW affected the crop, and if so, a description of the effect (yield loss, damage type, etc.).
+09-08 17:28:11.286 19025 19064 I FullPromptReview: Question: Has fall armyworm ever affected your maize? If yes, how did it affect your crop?
+09-08 17:28:11.286 19025 19064 I FullPromptReview: Original answer: Fall armyworm affected my maize.
+09-08 17:28:11.286 19025 19064 I FullPromptReview: Answered followup pairs:
+09-08 17:28:11.295 19025 19068 D LiteRtRepository: [1] request start model='gemma-3n-E4B-it' prompt.len=1133 sha=1b536c849e68b9b0 gateWaitMs=6
+09-08 17:28:11.295 19025 19068 D LiteRtRepository: [part=000] [1] PROMPT (FULL) sha=1b536c849e68b9b0
+09-08 17:28:11.295 19025 19068 D LiteRtRepository: Evaluate only the original survey target using all supplied answers.
+09-08 17:28:11.295 19025 19068 D LiteRtRepository: Return only compact JSON {"score":N,"missing_points":[],"followup_needed":false}. N must be an integer 1-100 for relevance, completeness and accuracy against the original target. Evaluate the original answer and all answered followup pairs together. Score 90-100 only when all target-required information is satisfied; otherwise score below 90. For score below 90, missing_points must contain the specific missing or ambiguous target-required information and followup_needed must be true. Otherwise missing_points is empty and followup_needed is false. Do not generate a question. Do not penalize style or request information outside the target. Write missing_points in English.
+09-08 17:28:11.295 19025 19068 D LiteRtRepository: Keep missing_points concise.
+09-08 17:28:11.295 19025 19068 D LiteRtRepository: One JSON object only; no markdown or generated question.
+09-08 17:28:11.295 19025 19068 D LiteRtRepository: INPUT:
+09-08 17:28:11.295 19025 19068 D LiteRtRepository: Expected answer target: Whether FAW affected the crop, and if so, a description of the effect (yield loss, damage type, etc.).
+09-08 17:28:11.295 19025 19068 D LiteRtRepository: Question: Has fall armyworm ever affected your maize? If yes, how did it affect your crop?
+09-08 17:28:11.295 19025 19068 D LiteRtRepository: Original answer: Fall armyworm affected my maize.
+09-08 17:28:11.295 19025 19068 D LiteRtRepository: Answered followup pairs:
+09-08 17:28:11.297 19025 19275 D SLM     : initializeIfNeeded: model='gemma-3n-E4B-it' image=false audio=false
+09-08 17:28:11.297 19025 19275 D LiteRtLM: initializeIfNeeded: warm runtime already ready: key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm'
+09-08 17:28:11.298 19025 19068 D LiteRtRepository: [1] initializeIfNeeded ok initMs=2
+09-08 17:28:11.301 19025 19275 D SLM     : runInference: model='gemma-3n-E4B-it' textLen=1133 images=0 audio=0
+09-08 17:28:11.306 19025 19068 D LiteRtLM: state[run:start] key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=1 active=true terminated=false logicalDone=false cancel=false pendingCancel=false lastMsgAt=2194403785 lastTermAt=0
+09-08 17:28:11.306 19025 19068 D LiteRtLM: runInference start: key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=1 hasText=true originalTextLen=1133 effectiveTextLen=1133 images=0 audioClips=0
+09-08 17:28:11.306 19025 19068 D LiteRtLM: LiteRT-LM sendMessageAsync(text): key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=1 len=1133 maxOutputTokens=64
+09-08 17:28:11.354 19025 19025 I ImeTracker: system_server:8896f0f9: onCancelled at PHASE_CLIENT_ON_CONTROLS_CHANGED
+09-08 17:28:11.355 19025 19068 D LiteRtLM: sendMessageAsync accepted: key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=1 dispatchMs=50
+09-08 17:28:11.385 19025 19025 I ImeTracker: system_server:e7447d7d: onCancelled at PHASE_CLIENT_ON_CONTROLS_CHANGED
+09-08 17:28:13.338 19025 19276 W native  : W0000 00:00:1788913693.338558   19276 sampler_factory.cc:403] OpenCL sampler not available, falling back to statically linked C API: UNAVAILABLE: ERROR: [third_party/odml/litert_lm/runtime/components/sampler_factory.cc:319]
+09-08 17:28:13.338 19025 19276 W native  : └ Could not load shared library libLiteRtTopKOpenClSampler.so: dlopen failed: library "libLiteRtTopKOpenClSampler.so" not found.
+09-08 17:28:13.338 19025 19276 W native  : === Source Location Trace: ===
+09-08 17:28:13.338 19025 19276 W native  : ./third_party/odml/litert/litert/cc/litert_macros.h:573
+09-08 17:28:13.790 19025 19276 W LiteRtLM: Inference first output: key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=1 ttftMs=2484 dispatchMs=50 postDispatchTtftMs=2434 requestToFirstOutputMs=2485
+09-08 17:28:13.790 19025 19276 W LiteRtLM: Inference first output: key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=1 ttftMs=2484 dispatchMs=50 postDispatchTtftMs=2434 requestToFirstOutputMs=2485
+09-08 17:28:13.790 19025 19276 D LiteRtLM: stream[key=gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm runId=1] msg#1 rawChunkLen=2 deltaLen=2 emittedChars=2
+09-08 17:28:13.792 19025 19025 D LiteRtRepository: stream[rid=1 msg#1] done=false deltaLen=2 outLen=2 outPreview='{"' deltaPreview='{"'
+09-08 17:28:13.792 19025 19068 D AiViewModel: run[1] chunk[1].preview='{"'
+09-08 17:28:13.980 19025 19068 D AiViewModel: run[1] chunk[2].preview='score'
+09-08 17:28:14.138 19025 19068 D AiViewModel: run[1] chunk[3].preview='":'
+09-08 17:28:14.294 19025 19068 D AiViewModel: run[1] chunk[4].preview='9'
+09-08 17:28:14.453 19025 19068 D AiViewModel: run[1] chunk[5].preview='5'
+09-08 17:28:14.621 19025 19068 D AiViewModel: run[1] chunk[6].preview=',"'
+09-08 17:28:14.778 19025 19068 D AiViewModel: run[1] chunk[7].preview='missing'
+09-08 17:28:14.939 19025 19025 D LiteRtRepository: stream[rid=1 msg#8] done=false deltaLen=1 outLen=21 outPreview='{"score":95,"missing_' deltaPreview='_'
+09-08 17:28:14.940 19025 19068 D AiViewModel: run[1] chunk[8].preview='_'
+09-08 17:28:15.099 19025 19068 D AiViewModel: run[1] chunk[9].preview='points'
+09-08 17:28:15.261 19025 19068 D AiViewModel: run[1] chunk[10].preview='":[],'
+09-08 17:28:15.416 19025 19068 D AiViewModel: run[1] chunk[11].preview='"'
+09-08 17:28:15.573 19025 19068 D AiViewModel: run[1] chunk[12].preview='follow'
+09-08 17:28:15.729 19025 19068 D AiViewModel: run[1] chunk[13].preview='up'
+09-08 17:28:15.887 19025 19068 D AiViewModel: run[1] chunk[14].preview='_'
+09-08 17:28:16.050 19025 19068 D AiViewModel: run[1] chunk[15].preview='needed'
+09-08 17:28:16.206 19025 19276 D LiteRtLM: stream[key=gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm runId=1] msg#16 rawChunkLen=2 deltaLen=2 emittedChars=50
+09-08 17:28:16.208 19025 19025 D LiteRtRepository: stream[rid=1 msg#16] done=false deltaLen=2 outLen=50 outPreview='{"score":95,"missing_points":[],"followup_needed":' deltaPreview='":'
+09-08 17:28:16.208 19025 19068 D AiViewModel: run[1] chunk[16].preview='":'
+09-08 17:28:16.367 19025 19068 D AiViewModel: run[1] chunk[17].preview='false'
+09-08 17:28:16.528 19025 19068 D AiViewModel: run[1] chunk[18].preview='}'
+09-08 17:28:16.689 19025 19068 D AiViewModel: run[1] chunk[19].preview='↩'
+09-08 17:28:16.847 19025 19282 D LiteRtLM: state[logicalDone] key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=1 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=2194409167 lastTermAt=2194409327
+09-08 17:28:16.849 19025 19282 D LiteRtLM: state[nativeDone:beforeRelease] key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=1 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=2194409167 lastTermAt=2194409327
+09-08 17:28:16.849 19025 19282 W LiteRtLM: Inference timing: key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=1 ttftMs=2484 dispatchMs=50 postDispatchTtftMs=2434 totalMs=5542 callbacks=19 outputChars=57 cancelled=false error=false requestTotalMs=5543
+09-08 17:28:16.850 19025 19282 W LiteRtLM: Inference timing: key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=1 ttftMs=2484 dispatchMs=50 postDispatchTtftMs=2434 totalMs=5542 callbacks=19 outputChars=57 cancelled=false error=false requestTotalMs=5543
+09-08 17:28:16.852 19025 19025 D LiteRtRepository: [1] logical done=true; responseClosed=true; waiting native cleanup
+09-08 17:28:16.854 19025 19068 D AiViewModel: run[1] stats: chunks=19, chars=57, raw.len=57
+09-08 17:28:16.854 19025 19025 D LiteRtRepository: [1] native cleanup safepoint
+09-08 17:28:16.858 19025 19275 D SLM     : resetConversationAndWait: model='gemma-3n-E4B-it' image=false audio=false
+09-08 17:28:16.858 19025 19068 D AiViewModel: run[1] sha(raw)=8d3bc1ac184ede55a7fda7341213618173536394a0dc1ee9002781dd5f3f75be
+09-08 17:28:16.860 19025 19068 D AiViewModel: run[1] rawVisible='{"score":95,"missing_points":[],"followup_needed":false}↩'
+09-08 17:28:16.881 19025 19284 D LiteRtRepository: [1] Conversation reset completed after safepoint
+09-08 17:28:16.884 19025 19065 D LiteRtRepository: [part=000] [1] FINALIZE: native-terminated
+09-08 17:28:16.884 19025 19065 D LiteRtRepository: === AI TRACE STATS (LiteRtRepository) ===
+09-08 17:28:16.884 19025 19065 D LiteRtRepository: rid=1 model='gemma-3n-E4B-it' reason=native-terminated
+09-08 17:28:16.884 19025 19065 D LiteRtRepository: totalMs=5588 inferenceMs=5584 firstTokenMs=2493
+09-08 17:28:16.884 19025 19065 D LiteRtRepository: logicalDone=true logicalDoneAt=2194409330
+09-08 17:28:16.884 19025 19065 D LiteRtRepository: nativeTerminated=true cancelTag='null'
+09-08 17:28:16.884 19025 19065 D LiteRtRepository: lastDeltaMsAgo=195 lastEventMsAgo=29
+09-08 17:28:16.884 19025 19065 D LiteRtRepository: chunks=19 emittedChars=57 capturedAll=true out.len=57
+09-08 17:28:16.884 19025 19065 D LiteRtRepository: === OUTPUT (FULL) ===
+09-08 17:28:16.884 19025 19065 D LiteRtRepository: {"score":95,"missing_points":[],"followup_needed":false}
+09-08 17:28:16.885 19025 19068 D AiViewModel: run[1]: EVAL_JSON parsed score=95 followups=0 fu0=''
+09-08 17:28:16.885 19025 19068 D AiViewModel: stepHistory+ runId=1 phase=EVAL mode=EVAL_JSON raw.len=57 score=95 FU=0 FU0='<none>' timeout=false err=null
+09-08 17:28:16.886 19025 19068 I AiViewModel: run[1] done: phase=EVAL mode=EVAL_JSON score=95 FU0.len=0 FU0.sha16=none commit=true err=<none>
+09-08 17:28:16.886 19025 19068 I FullTextOut: [part=000] run[1]: RawTextOut
+09-08 17:28:16.886 19025 19068 I FullTextOut: {"score":95,"missing_points":[],"followup_needed":false}
+09-08 17:28:16.898 19025 19068 D AiViewModel: chain2: step2 skipped (score=95, followups=0, timedOut=false, rawPreview='{"score":95,"missing_points":[],"followup_needed":false}↩')
+09-08 17:28:16.923 19025 19046 D SLM     : cancel: model='gemma-3n-E4B-it'
+09-08 17:28:16.953 19025 19025 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@8ebc4f9 in: PAUSED
+09-08 17:28:16.953 19025 19025 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=androidx.activity.ComponentActivity@8ebc4f9
+09-08 17:28:17.081 19025 19025 D VRI[ComponentActivity]: visibilityChanged oldVisibility=true newVisibility=false
+09-08 17:28:17.105 19025 19025 I AutofillManager: onInvisibleForAutofill(): expiringResponse
+09-08 17:28:17.105 19025 19025 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@8ebc4f9 in: STOPPED
+09-08 17:28:17.105 19025 19025 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=androidx.activity.ComponentActivity@8ebc4f9
+09-08 17:28:17.122 19025 19025 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): null
+09-08 17:28:17.123 19025 19025 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@8ebc4f9 in: DESTROYED
+09-08 17:28:17.123 19025 19025 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+09-08 17:28:17.126 19025 19025 D ViewRootImpl: Skipping stats log for color mode
+09-08 17:28:17.133 19025 19046 D IdlingRegistry: Unregistering idling resources: [androidx.compose.ui.test.EspressoLink@a8a9953]
+09-08 17:28:17.135 19025 19046 E TestRunner: failed: q8_real_model_two_step_acceptance(com.negi.survey.screens.RealLiteRtAiFollowupFlowInstrumentationTest)
+09-08 17:28:17.138 19025 19046 E TestRunner: ----- begin exception -----
+09-08 17:28:17.138 19025 19046 E TestRunner: java.lang.AssertionError: an incomplete Q8 answer must run evaluation before follow-up generation expected:<[EVAL, FOLLOWUP]> but was:<[EVAL]>
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at org.junit.Assert.fail(Assert.java:89)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at org.junit.Assert.failNotEquals(Assert.java:835)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at org.junit.Assert.assertEquals(Assert.java:120)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at com.negi.survey.screens.RealLiteRtAiFollowupFlowInstrumentationTest.runTwoStepAcceptance(RealLiteRtAiFollowupFlowInstrumentationTest.kt:127)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at com.negi.survey.screens.RealLiteRtAiFollowupFlowInstrumentationTest.q8_real_model_two_step_acceptance(RealLiteRtAiFollowupFlowInstrumentationTest.kt:54)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at java.lang.reflect.Method.invoke(Native Method)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at androidx.test.internal.runner.junit4.statement.RunBefores.evaluate(RunBefores.java:80)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at androidx.test.internal.runner.junit4.statement.RunAfters.evaluate(RunAfters.java:61)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$testWithDisposal$1.evaluate(AndroidComposeTestRule.android.kt:426)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:54)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$1$evaluate$1.invokeSuspend(AndroidComposeTestRule.android.kt:448)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$1$evaluate$1.invoke(Unknown Source:8)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$1$evaluate$1.invoke(Unknown Source:4)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1$1$1$1.invokeSuspend(ComposeUiTest.android.kt:689)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1$1$1$1.invoke(Unknown Source:8)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1$1$1$1.invoke(Unknown Source:2)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at androidx.compose.ui.test.EspressoLink.withStrategy(EspressoLink.android.kt:69)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1.invokeSuspend(ComposeUiTest.android.kt:686)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1.invoke(Unknown Source:8)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1.invoke(Unknown Source:4)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt$runTest$2$1$1.invokeSuspend(TestBuilders.kt:317)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at kotlinx.coroutines.test.TestDispatcher.processEvent$kotlinx_coroutines_test(TestDispatcher.kt:24)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at kotlinx.coroutines.test.TestCoroutineScheduler.tryRunNextTaskUnless$kotlinx_coroutines_test(TestCoroutineScheduler.kt:98)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt$runTest$2$1$workRunner$1.invokeSuspend(TestBuilders.kt:326)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:256)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:54)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at kotlinx.coroutines.BuildersKt__BuildersKt.runBlockingImpl(Builders.kt:30)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at kotlinx.coroutines.BuildersKt.runBlockingImpl(Unknown Source:1)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at kotlinx.coroutines.BuildersKt__Builders_concurrentKt.runBlockingK(Builders.concurrent.kt:172)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at kotlinx.coroutines.BuildersKt.runBlockingK(Unknown Source:1)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at kotlinx.coroutines.BuildersKt__Builders_concurrentKt.runBlockingK$default(Builders.concurrent.kt:157)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at kotlinx.coroutines.BuildersKt.runBlockingK$default(Unknown Source:1)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at kotlinx.coroutines.test.TestBuildersJvmKt.createTestResult(TestBuildersJvm.kt:10)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:309)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at kotlinx.coroutines.test.TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:1)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:167)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at kotlinx.coroutines.test.TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:1)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment.runTest(ComposeUiTest.android.kt:665)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$1.evaluate(AndroidComposeTestRule.android.kt:447)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:54)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at androidx.test.ext.junit.runners.AndroidJUnit4.run(AndroidJUnit4.java:162)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at org.junit.runners.Suite.runChild(Suite.java:128)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at org.junit.runners.Suite.runChild(Suite.java:27)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:68)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:467)
+09-08 17:28:17.138 19025 19046 E TestRunner: 	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2634)
+09-08 17:28:17.138 19025 19046 E TestRunner: ----- end exception -----
+09-08 17:28:17.140 19025 19046 I TestRunner: finished: q8_real_model_two_step_acceptance(com.negi.survey.screens.RealLiteRtAiFollowupFlowInstrumentationTest)
+09-08 17:28:17.143 19025 19046 D SLM     : forceCleanUp: model='gemma-3n-E4B-it'
+09-08 17:28:17.977 19025 19285 I litert  : [accelerator_registry.cc:43] DestroyAccelerator: ptr=0xb40000747146e830, name=CpuAccelerator
+09-08 17:28:17.977 19025 19285 I litert  : [accelerator_registry.cc:43] DestroyAccelerator: ptr=0xb40000747146e0b0, name=LiteRT GPU
+09-08 17:28:18.086 19025 19046 I TestRunner: run finished: 2 tests, 1 failed, 0 ignored
+09-08 17:31:09.762 19343 19343 I Zygote  : Process 19343 created for com.negi.survey
+09-08 17:31:09.764 19343 19343 I com.negi.survey: Late-enabling -Xcheck:jni
+09-08 17:31:10.458 19343 19343 I com.negi.survey: Using CollectorTypeCMC GC.
+09-08 17:31:10.533 19343 19343 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+09-08 17:31:10.765 19343 19343 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+09-08 17:31:10.765 19343 19343 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+09-08 17:31:11.621 19343 19343 D nativeloader: Configuring clns-9 for other apk /data/app/~~GXinNrmsBK8Ga22rbBjp0A==/com.negi.survey.test-Wa_M2cFTiFcpy2cYbR_lBg==/base.apk:/data/app/~~vuoMGReDxDLyEtQYnbuaSw==/com.negi.survey-bMqUDxlurt4yQITIB02Xyw==/base.apk. target_sdk_version=36, uses_libraries=libOpenCL.so:libOpenCL-pixel.so, library_path=/data/app/~~GXinNrmsBK8Ga22rbBjp0A==/com.negi.survey.test-Wa_M2cFTiFcpy2cYbR_lBg==/lib/arm64:/data/app/~~vuoMGReDxDLyEtQYnbuaSw==/com.negi.survey-bMqUDxlurt4yQITIB02Xyw==/lib/arm64:/data/app/~~GXinNrmsBK8Ga22rbBjp0A==/com.negi.survey.test-Wa_M2cFTiFcpy2cYbR_lBg==/base.apk!/lib/arm64-v8a:/data/app/~~vuoMGReDxDLyEtQYnbuaSw==/com.negi.survey-bMqUDxlurt4yQITIB02Xyw==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.negi.survey
+09-08 17:31:11.664 19343 19343 V GraphicsEnvironment: Currently set values for:
+09-08 17:31:11.664 19343 19343 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[com.android.angle]
+09-08 17:31:11.664 19343 19343 V GraphicsEnvironment:   angle_gl_driver_selection_values=[angle]
+09-08 17:31:11.664 19343 19343 V GraphicsEnvironment: com.negi.survey is not listed in per-application setting
+09-08 17:31:11.665 19343 19343 V GraphicsEnvironment: No special selections for ANGLE, returning default driver choice
+09-08 17:31:11.665 19343 19343 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+09-08 17:31:12.306 19343 19343 I AndroidJUnitRunner: newApplication com.negi.survey.SurveyApp
+09-08 17:31:12.355 19343 19343 D nativeloader: Load /data/app/~~vuoMGReDxDLyEtQYnbuaSw==/com.negi.survey-bMqUDxlurt4yQITIB02Xyw==/base.apk!/lib/arm64-v8a/liblitertlm_jni.so using class loader ns clns-9 (caller=/data/app/~~vuoMGReDxDLyEtQYnbuaSw==/com.negi.survey-bMqUDxlurt4yQITIB02Xyw==/base.apk!classes10.dex): ok
+09-08 17:31:12.355 19343 19343 D SurveyApp: Loaded LiteRTLM JNI: litertlm_jni where=attachBaseContext
+09-08 17:31:12.387 19343 19343 D AppRingLogStore: installed: dir=/data/user/0/com.negi.survey/files/diagnostics/applog_ring idx=0
+09-08 17:31:12.387 19343 19343 D SurveyApp: attachBaseContext: pid=19343 process=com.negi.survey isMain=true sdk=36
+09-08 17:31:12.388 19343 19343 D SurveyApp: bootTiming: attachBaseContext total=71ms
+09-08 17:31:12.388 19343 19343 D SurveyApp: Skipping WorkManager init in attachBaseContext; will init lazily on first enqueue.
+09-08 17:31:12.392 19343 19343 D CrashCapture: install: ensured default handler. where=SurveyApp:attachBaseContext pid=19343 default=com.negi.survey.CrashCapture$CrashHandler@6405464
+09-08 17:31:12.392 19343 19343 D SurveyApp: CrashCapture installed: where=SurveyApp:attachBaseContext
+09-08 17:31:12.413 19343 19343 E com.negi.survey: hiddenapi: Accessing hidden method Landroid/net/ssl/EchConfigMismatchException;->getRetryConfigList()Landroid/net/ssl/EchConfigList; (runtime_flags=0, domain=core-platform, api=blocked) from /data/app/~~vuoMGReDxDLyEtQYnbuaSw==/com.negi.survey-bMqUDxlurt4yQITIB02Xyw==/base.apk!classes17.dex (domain=app, TargetSdkVersion=36) using linking: denied
+09-08 17:31:12.413 19343 19343 E com.negi.survey: hiddenapi: Accessing hidden method Landroid/net/ssl/EchConfigList;->toBytes()[B (runtime_flags=0, domain=core-platform, api=blocked) from /data/app/~~vuoMGReDxDLyEtQYnbuaSw==/com.negi.survey-bMqUDxlurt4yQITIB02Xyw==/base.apk!classes17.dex (domain=app, TargetSdkVersion=36) using linking: denied
+09-08 17:31:12.413 19343 19343 E com.negi.survey: hiddenapi: Accessing hidden method Landroid/net/ssl/EchConfigList;->fromBytes([B)Landroid/net/ssl/EchConfigList; (runtime_flags=0, domain=core-platform, api=blocked) from /data/app/~~vuoMGReDxDLyEtQYnbuaSw==/com.negi.survey-bMqUDxlurt4yQITIB02Xyw==/base.apk!classes17.dex (domain=app, TargetSdkVersion=36) using linking: denied
+09-08 17:31:12.414 19343 19343 E com.negi.survey: hiddenapi: Accessing hidden method Landroid/net/ssl/SSLSockets;->setEchConfigList(Ljavax/net/ssl/SSLSocket;Landroid/net/ssl/EchConfigList;)V (runtime_flags=0, domain=core-platform, api=blocked) from /data/app/~~vuoMGReDxDLyEtQYnbuaSw==/com.negi.survey-bMqUDxlurt4yQITIB02Xyw==/base.apk!classes17.dex (domain=app, TargetSdkVersion=36) using linking: denied
+09-08 17:31:12.448 19343 19343 I AndroidJUnitRunner: onCreate Bundle[mParcelledData.dataSize=232]
+09-08 17:31:12.450 19343 19343 D AndroidJUnitRunner: Use the raw file system for managing file I/O.
+09-08 17:31:12.460 19343 19357 D RuntimeLogStore: openWriter: start -> /data/user/0/com.negi.survey/files/diagnostics/runtime_logs/rtlog_20260909_003112_379_pid19343_seq1.log (bytes=0 format=LEGACY)
+09-08 17:31:12.463 19343 19343 V TestEventClient: No service name argument was given (testDiscoveryService, testRunEventService or orchestratorService)
+09-08 17:31:12.464 19343 19343 D SurveyApp: LiteRTLM JNI already loaded; skip. where=onCreate(retry)
+09-08 17:31:12.464 19343 19359 D AndroidJUnitRunner: onStart is called.
+09-08 17:31:12.464 19343 19343 D SurveyApp: bootTiming: RuntimeLogStore.start took=0ms
+09-08 17:31:12.464 19343 19343 D SurveyApp: bootTiming: AppRingLogStore.install took=0ms
+09-08 17:31:12.464 19343 19343 D SurveyApp: onCreate: pid=19343 process=com.negi.survey isMain=true sdk=36
+09-08 17:31:12.467 19343 19357 D RuntimeLogStore: retention: start files=2 kept=2 totalBytes=14091
+09-08 17:31:12.476 19343 19343 D CrashCapture: install: ensured default handler. where=SurveyApp:onCreate(rewrap) pid=19343 default=com.negi.survey.CrashCapture$CrashHandler@6405464
+09-08 17:31:12.476 19343 19343 D SurveyApp: CrashCapture installed: where=SurveyApp:onCreate(rewrap)
+09-08 17:31:12.477 19343 19343 D CrashCapture: registerSelfHealing: ActivityLifecycleCallbacks registered. mode=onResumedOnly
+09-08 17:31:12.477 19343 19343 D SurveyApp: CrashCapture self-healing registered.
+09-08 17:31:12.477 19343 19343 W SurveyApp: Startup enqueues deferred: delay=2500ms (to reduce init contention)
+09-08 17:31:12.477 19343 19343 D SurveyApp: bootTiming: onCreate total=13ms
+09-08 17:31:12.494 19343 19359 I InstrConnection: Could not send broadcast or register receiver (isolatedProcess?)
+09-08 17:31:12.566 19343 19359 I TestRunner: run started: 1 tests
+09-08 17:31:12.567 19343 19359 I TestRunner: started: q8_real_model_two_step_acceptance(com.negi.survey.screens.RealLiteRtAiFollowupFlowInstrumentationTest)
+09-08 17:31:12.604 19343 19359 I MS-ModelPrep: ModelAssetRule.before: api=36, modelName=gemma-3n-E4B-it-int4.litertlm, relDir=Download/SurveyNavModels
+09-08 17:31:12.605 19343 19359 I UiAutomation: Initialized for user 0 on display 0
+09-08 17:31:12.620 19343 19359 I MS-ModelPrep: skip adopt for API>=33 (self-owned search path available)
+09-08 17:31:12.621 19343 19359 I MS-ModelPrep: Fast path: internal model exists -> /data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm len=4919541760
+09-08 17:31:12.639 19343 19359 I Tracing : Tracer added: class androidx.test.platform.tracing.AndroidXTracer
+09-08 17:31:12.658 19343 19359 D IdlingRegistry: Registering idling resources: [androidx.compose.ui.test.EspressoLink@37ee8b6]
+09-08 17:31:12.670 19343 19359 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+09-08 17:31:12.693 19343 19363 I DisplayManager: Choreographer implicitly registered for the refresh rate.
+09-08 17:31:12.695 19343 19363 D vulkan  : searching for layers in '/data/app/~~GXinNrmsBK8Ga22rbBjp0A==/com.negi.survey.test-Wa_M2cFTiFcpy2cYbR_lBg==/lib/arm64'
+09-08 17:31:12.695 19343 19363 D vulkan  : searching for layers in '/data/app/~~vuoMGReDxDLyEtQYnbuaSw==/com.negi.survey-bMqUDxlurt4yQITIB02Xyw==/lib/arm64'
+09-08 17:31:12.695 19343 19363 D vulkan  : searching for layers in '/data/app/~~GXinNrmsBK8Ga22rbBjp0A==/com.negi.survey.test-Wa_M2cFTiFcpy2cYbR_lBg==/base.apk!/lib/arm64-v8a'
+09-08 17:31:12.697 19343 19363 D vulkan  : searching for layers in '/data/app/~~vuoMGReDxDLyEtQYnbuaSw==/com.negi.survey-bMqUDxlurt4yQITIB02Xyw==/base.apk!/lib/arm64-v8a'
+09-08 17:31:12.698 19343 19343 D DesktopExperienceFlags: Toggle override initialized to: false
+09-08 17:31:12.703 19343 19343 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@d077efd in: PRE_ON_CREATE
+09-08 17:31:12.704 19343 19343 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+09-08 17:31:12.713 19343 19343 D CompatChangeReporter: Compat change id reported: 377864165; UID 14867; state: ENABLED
+09-08 17:31:12.713 19343 19343 D DesktopModeFlags: Toggle override initialized to: OVERRIDE_UNSET
+09-08 17:31:12.721 19343 19343 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@d077efd in: CREATED
+09-08 17:31:12.721 19343 19343 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=androidx.activity.ComponentActivity@d077efd
+09-08 17:31:12.722 19343 19343 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@d077efd in: STARTED
+09-08 17:31:12.722 19343 19343 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=androidx.activity.ComponentActivity@d077efd
+09-08 17:31:12.722 19343 19343 I ContentCaptureHelper: Setting logging level to OFF
+09-08 17:31:12.728 19343 19343 D CrashCapture: install: ensured default handler. where=selfHeal:onActivityResumed pid=19343 default=com.negi.survey.CrashCapture$CrashHandler@6405464
+09-08 17:31:12.732 19343 19343 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@d077efd in: RESUMED
+09-08 17:31:12.732 19343 19343 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=androidx.activity.ComponentActivity@d077efd
+09-08 17:31:12.756 19343 19343 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@6969d7c
+09-08 17:31:12.757 19343 19343 D VRI[ComponentActivity]: WindowInsets changed: 1080x2424 statusBars:[0,152,0,0] navigationBars:[0,0,0,69] mandatorySystemGestures:[0,187,0,92] 
+09-08 17:31:12.792 19343 19343 D InsetsController: hide(ime())
+09-08 17:31:12.792 19343 19343 I ImeTracker: com.negi.survey:944bb40d: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+09-08 17:31:12.867 19343 19347 I com.negi.survey: Compiler allocated 5038KB to compile void android.view.ViewRootImpl.performTraversals()
+09-08 17:31:13.275 19343 19394 I HWUI    : Using FreeType backend (prop=Auto)
+09-08 17:31:13.425 19343 19359 W AiViewModelSurvey: assets/slm_config.yml not applied: slm_config.yml  
+09-08 17:31:13.426 19343 19359 I AiViewModelSurvey: ╔═ SLM MERGED CONFIG (pre-Model)  
+09-08 17:31:13.426 19343 19359 I AiViewModelSurvey: ║ ACCELERATOR: GPU  
+09-08 17:31:13.426 19343 19359 I AiViewModelSurvey: ║ MAX_TOKENS: 512  
+09-08 17:31:13.426 19343 19359 I AiViewModelSurvey: ║ TOP_K: 1  
+09-08 17:31:13.426 19343 19359 I AiViewModelSurvey: ║ TOP_P: 0.0  
+09-08 17:31:13.426 19343 19359 I AiViewModelSurvey: ║ TEMPERATURE: 0.0  
+09-08 17:31:13.426 19343 19359 I AiViewModelSurvey: ╚═ end  
+09-08 17:31:13.426 19343 19359 W AiViewModelSurvey: Initializing SLM accelerator=GPU  
+09-08 17:31:13.426 19343 19359 D SLM     : initializeIfNeeded: model='gemma-3n-E4B-it' image=false audio=false
+09-08 17:31:13.437 19343 19399 D LiteRtLM: Initializing LiteRT-LM: model='gemma-3n-E4B-it', key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm'
+09-08 17:31:13.438 19343 19399 D LiteRtLM: Capabilities: image=false audio=false
+09-08 17:31:13.439 19343 19399 D LiteRtLM: Backend=com.google.ai.edge.litertlm.Backend$GPU@2f52529 maxNumTokens=512 (raw=512) topK=1 topP=0.0 temp=0.0
+09-08 17:31:13.439 19343 19399 D LiteRtLM: Model path='/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' sizeBytes=4919541760 lastModified=1788913652575
+09-08 17:31:13.439 19343 19399 D LiteRtLM: LiteRT-LM native benchmark policy: enabled=false emulator=false
+09-08 17:31:13.439 19343 19399 D LiteRtLM: LiteRT-LM native benchmark policy: enabled=false emulator=false
+09-08 17:31:13.440 19343 19399 D LiteRtLM: Speculative decoding / MTP policy: enabled=false runtimeFlagUpdated=true model='gemma-3n-E4B-it'
+09-08 17:31:13.442 19343 19399 D LiteRtLM: Engine cacheDir resolved: key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' backend=com.google.ai.edge.litertlm.Backend$GPU@2f52529 path='/data/user/0/com.negi.survey/no_backup/litertlm_cache/8b58dd5e854e5353723e4360d401cf7d199b6f10' filesBefore=2
+09-08 17:31:13.447 19343 19399 I litert  : [environment.cc:36] Creating LiteRT environment with options
+09-08 17:31:13.447 19343 19399 W litert  : [npu_registry.cc:34] NPU accelerator could not be loaded and registered: kLiteRtStatusErrorInvalidArgument.
+09-08 17:31:13.447 19343 19399 I litert  : [accelerator_registry.cc:54] RegisterAccelerator: ptr=0xb40000747146ba70, name=LiteRT GPU
+09-08 17:31:13.447 19343 19399 I litert  : [gpu_registry.cc:87] Statically linked GPU accelerator registered.
+09-08 17:31:13.447 19343 19399 I litert  : [accelerator_registry.cc:54] RegisterAccelerator: ptr=0xb40000747146b2f0, name=CpuAccelerator
+09-08 17:31:13.447 19343 19399 I litert  : [cpu_registry.cc:75] XNNPACK CPU accelerator registered.
+09-08 17:31:13.690 19343 19399 I litert  : [environment.cc:36] Creating LiteRT environment with options
+09-08 17:31:13.690 19343 19399 W litert  : [npu_registry.cc:34] NPU accelerator could not be loaded and registered: kLiteRtStatusErrorInvalidArgument.
+09-08 17:31:13.690 19343 19399 I litert  : [accelerator_registry.cc:54] RegisterAccelerator: ptr=0xb40000747146acf0, name=LiteRT GPU
+09-08 17:31:13.690 19343 19399 I litert  : [gpu_registry.cc:87] Statically linked GPU accelerator registered.
+09-08 17:31:13.690 19343 19399 I litert  : [accelerator_registry.cc:54] RegisterAccelerator: ptr=0xb40000747146a990, name=CpuAccelerator
+09-08 17:31:13.690 19343 19399 I litert  : [cpu_registry.cc:75] XNNPACK CPU accelerator registered.
+09-08 17:31:13.691 19343 19399 W native  : W0000 00:00:1788913873.690963   19399 litert_lm_loader.cc:291] Section not found: 	
+09-08 17:31:13.691 19343 19399 W native  : W0000 00:00:1788913873.691108   19399 litert_lm_loader.cc:291] Section not found: 	
+09-08 17:31:13.691 19343 19399 I litert  : [compiled_model.cc:833] Flatbuffer model initialized directly from incoming litert model.
+09-08 17:31:13.695 19343 19399 I tflite  : Initialized TensorFlow Lite runtime.
+09-08 17:31:13.728 19343 19399 W libc    : Access denied finding property "ro.mediatek.platform"
+09-08 17:31:13.728 19343 19399 W libc    : Access denied finding property "ro.chipname"
+09-08 17:31:13.728 19343 19399 W libc    : Access denied finding property "ro.hardware.chipname"
+09-08 17:31:13.772 19343 19399 I native  : I0000 00:00:1788913873.772145   19399 delegate_opencl.cc:603] options->hint_waiting_for_completion: false
+09-08 17:31:13.772 19343 19399 I native  : I0000 00:00:1788913873.772209   19399 delegate_opencl.cc:605] options->kernel_batch_size: -1
+09-08 17:31:13.777 19343 19399 E libEGL  : call to OpenGL ES API with no current context (logged once per thread)
+09-08 17:31:13.780 19343 19399 I litert  : [environment.cc:47] Adding options to the existing LiteRT environment
+09-08 17:31:13.780 19343 19399 I tflite  : Loaded OpenCL library with dlopen.
+09-08 17:31:13.780 19343 19399 I litert  : [gpu_environment.cc:220] Created OpenCL device from provided device id and platform id.
+09-08 17:31:13.782 19343 19399 I litert  : [gpu_environment.cc:283] Reusing provided EGL environment.
+09-08 17:31:13.782 19343 19399 I litert  : [gpu_environment.h:155] Created LiteRT GpuEnvironment.
+09-08 17:31:13.782 19343 19399 I litert  : [environment.cc:47] Adding options to the existing LiteRT environment
+09-08 17:31:13.860 19343 19399 I tflite  : Replacing 3326 out of 3326 node(s) with delegate (LITERT_CL) node, yielding 1 partitions for subgraph 0 (decode).
+09-08 17:31:13.940 19343 19399 W native  : W0000 00:00:1788913873.940220   19399 gpu_model_builder.cc:4348] Weights preparation on Gpu is disabled for PowerVR, Broadcom, Mali GPUs and non-OpenCL/WebGPU/Metal backends.
+09-08 17:31:14.978 19343 19343 W SurveyApp: Deferred startup enqueues begin...
+09-08 17:31:14.998 19343 19343 D WM-PackageManagerHelper: Skipping component enablement for androidx.work.impl.background.systemjob.SystemJobService
+09-08 17:31:14.999 19343 19343 D WM-Schedulers: Created SystemJobScheduler and enabled SystemJobService
+09-08 17:31:15.002 19343 19407 D WM-ForceStopRunnable: Is default app process = true
+09-08 17:31:15.004 19343 19407 D WM-ForceStopRunnable: Performing cleanup operations.
+09-08 17:31:15.004 19343 19343 D SurveyApp: WorkManager available. where=startupRtLogs(immediate) took=26ms
+09-08 17:31:15.008 19343 19343 D SurveyApp: Startup runtime logs target -> owner=ishizuki-tech repo=SurveyExports branch=main base='/diagnostics/runtime_logs'
+09-08 17:31:15.014 19343 19343 D github_upload: enqueueStartupRuntimeLogsUpload: uniqueName=upload_runtime_logs_startup policy=KEEP session=startup_runtime_20260909_003115_ae844cd1
+09-08 17:31:15.018 19343 19343 D SurveyApp: Startup runtime logs: enqueue requested (immediate).
+09-08 17:31:15.018 19343 19343 D SurveyApp: WorkManager available. where=startupRingLogs(immediate) took=0ms
+09-08 17:31:15.019 19343 19343 D SurveyApp: Startup ring logs target -> owner=ishizuki-tech repo=SurveyExports branch=main base='/diagnostics/applog_ring'
+09-08 17:31:15.019 19343 19343 D github_upload: enqueueStartupRingLogsUpload: uniqueName=upload_ring_logs_startup policy=KEEP session=startup_ring_20260909_003115_9766052b
+09-08 17:31:15.019 19343 19343 D SurveyApp: Startup ring logs: enqueue requested (immediate).
+09-08 17:31:15.019 19343 19343 D SurveyApp: WorkManager available. where=enqueuePending(immediate) took=0ms
+09-08 17:31:15.020 19343 19343 D SurveyApp: CrashCapture pending uploads requested (immediate).
+09-08 17:31:15.020 19343 19343 W SurveyApp: Deferred startup enqueues done: took=42ms
+09-08 17:31:15.021 19343 19409 D CrashCapture: enqueuePendingCrashUploadsIfPossible enter where=SurveyApp:enqueuePending(immediate):bg pid=19343 thread=CrashCapture-Enqueue
+09-08 17:31:15.039 19343 19407 D WM-ForceStopRunnable: Application was force-stopped, rescheduling.
