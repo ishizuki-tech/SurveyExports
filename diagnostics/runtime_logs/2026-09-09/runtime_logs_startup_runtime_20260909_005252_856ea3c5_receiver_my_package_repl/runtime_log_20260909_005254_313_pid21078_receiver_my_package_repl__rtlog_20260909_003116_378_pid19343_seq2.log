@@ -1,0 +1,99 @@
+=== RuntimeLogStore Header ===
+ts=2026-09-09T00:31:16.381Z
+fileNameFormat=LEGACY
+appId=com.negi.survey
+versionName=0.0.1
+versionCode=1
+debug=true
+device=Google Pixel 9a
+sdk=36
+pid=19343
+==============================
+2026-09-09T00:31:16.381Z I/RuntimeLogStore [rtlog-io] --- rotated (reason=plain_snapshot:app_start) ---
+2026-09-09T00:31:20.060Z W/LiteRtLM [DefaultDispatcher-worker-1] Engine.initialize completed: key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' backend=com.google.ai.edge.litertlm.Backend$GPU@2f52529 took=6617ms cacheFilesAfter=2
+2026-09-09T00:31:20.066Z D/LiteRtLM [DefaultDispatcher-worker-1] createConversation completed: key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' took=6ms
+2026-09-09T00:31:20.067Z D/LiteRtLM [DefaultDispatcher-worker-1] LiteRT-LM initialization succeeded: model='gemma-3n-E4B-it', key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' engineMs=6617 conversationMs=6 totalMs=6631
+2026-09-09T00:31:20.068Z D/AiTrace [Instr: androidx.test.runner.AndroidJUnitRunner] Installed (enabled=true ringEnabled=true)
+2026-09-09T00:31:20.182Z D/SurveyVM [main] init -> Start, session=0, uuid=196da37d-2571-4b8d-b3d7-4060eb38022a, navSize=1, graphSize=20
+2026-09-09T00:31:20.187Z D/SurveyVM [main] config.validate -> issues=0
+2026-09-09T00:31:20.187Z D/SurveyVM [main] promptSources -> legacy=10, eval=0, follow=0
+2026-09-09T00:31:20.187Z D/SurveyVM [main] promptSources.preview -> legacy=[Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q8, Q9], eval=[], follow=[]
+2026-09-09T00:31:20.187Z D/SurveyVM [main] hasTwoStepPrompt[Q10] -> true (eval=195, fu=220)
+2026-09-09T00:31:20.187Z D/SurveyVM [main] hasTwoStepPrompt[Q11] -> true (eval=219, fu=244)
+2026-09-09T00:31:20.187Z D/SurveyVM [main] hasTwoStepPrompt[Q12] -> true (eval=229, fu=254)
+2026-09-09T00:31:20.187Z D/SurveyVM [main] hasTwoStepPrompt[Q13] -> true (eval=184, fu=209)
+2026-09-09T00:31:20.187Z D/SurveyVM [main] hasTwoStepPrompt[Q14] -> true (eval=221, fu=246)
+2026-09-09T00:31:20.188Z D/SurveyVM [main] hasTwoStepPrompt[Q15] -> true (eval=160, fu=185)
+2026-09-09T00:31:20.188Z D/SurveyVM [main] hasTwoStepPrompt[Q16] -> true (eval=185, fu=210)
+2026-09-09T00:31:20.188Z D/SurveyVM [main] hasTwoStepPrompt[Q17] -> true (eval=200, fu=225)
+2026-09-09T00:31:20.188Z D/SurveyVM [main] hasTwoStepPrompt[Q8] -> true (eval=214, fu=239)
+2026-09-09T00:31:20.188Z D/SurveyVM [main] hasTwoStepPrompt[Q9] -> true (eval=190, fu=215)
+2026-09-09T00:31:20.188Z D/SurveyVM [main] AI prompt coverage OK (aiCount=10)
+2026-09-09T00:31:20.203Z D/SurveyVM [main] hasTwoStepPrompt[Q8] -> true (eval=214, fu=239)
+2026-09-09T00:31:20.611Z D/SurveyVM [main] resetAudioRefs -> cleared
+2026-09-09T00:31:20.611Z D/SurveyVM [main] resetNavToStart -> key=com.negi.survey.vm.FlowHome@d609b70, navSize=1
+2026-09-09T00:31:20.611Z D/SurveyVM [main] resetToStart -> Start, session=1, uuid=4428671a-a0a1-4781-b3a0-dd1659823b70, preserveDraft=false, draftLen=0
+2026-09-09T00:31:20.611Z D/SurveyVM [main] activateRunIfNeeded(goto:Q8) -> runNoteLen=0, draftCleared=true, uuid=4428671a-a0a1-4781-b3a0-dd1659823b70
+2026-09-09T00:31:20.611Z D/SurveyVM [main] push -> Q8, navSize=2, stackSize=2
+2026-09-09T00:31:20.635Z D/SurveyVM [main] hasTwoStepPrompt[Q8] -> true (eval=214, fu=239)
+2026-09-09T00:31:20.661Z D/SurveyVM [Instr: androidx.test.runner.AndroidJUnitRunner] hasTwoStepPrompt[Q8] -> true (eval=214, fu=239)
+2026-09-09T00:31:21.238Z D/SurveyVM [main] getEvalPrompt[Q8] -> len=293
+2026-09-09T00:31:21.243Z D/AiViewModel [DefaultDispatcher-worker-5] run[1]: mode=EVAL_JSON phase=EVAL commit=true prompt.len=292, fullPrompt.len=1133, timeoutMs=60000
+2026-09-09T00:31:21.249Z D/AiViewModel [DefaultDispatcher-worker-5] run[1]: sha(prompt)=d50398167cfe3427a9a984163543ec9195c21f4ec52a4794b3f712528412dd91 sha(full)=1b536c849e68b9b0ca573b8cb3ba9d3d6870e1ace26ecfc9b9b86ca58036bb14
+2026-09-09T00:31:21.250Z I/FullPromptReview [DefaultDispatcher-worker-5] [part=000] run[1]: phase=EVAL FullPrompt
+Evaluate only the original survey target using all supplied answers.
+Return only compact JSON {"score":N,"missing_points":[],"followup_needed":false}. N must be an integer 1-100 for relevance, completeness and accuracy against the original target. Evaluate the original answer and all answered followup pairs together. Score 90-100 only when all target-required information is satisfied; otherwise score below 90. For score below 90, missing_points must contain the specific missing or ambiguous target-required information and followup_needed must be true. Otherwise missing_points is empty and followup_needed is false. Do not generate a question. Do not penalize style or request information outside the target. Write missing_points in English.
+Keep missing_points concise.
+One JSON object only; no markdown or generated question.
+INPUT:
+Expected answer target: Whether FAW affected the crop, and if so, a description of the effect (yield loss, damage type, etc.).
+Question: Has fall armyworm ever affected your maize? If yes, how did it affect your crop?
+Original answer: Fall armyworm affected my maize.
+Answered followup pairs:
+2026-09-09T00:31:21.253Z D/LiteRtRepository [DefaultDispatcher-worker-4] [1] request start model='gemma-3n-E4B-it' prompt.len=1133 sha=1b536c849e68b9b0 gateWaitMs=2
+2026-09-09T00:31:21.254Z D/LiteRtRepository [DefaultDispatcher-worker-4] [part=000] [1] PROMPT (FULL) sha=1b536c849e68b9b0
+Evaluate only the original survey target using all supplied answers.
+Return only compact JSON {"score":N,"missing_points":[],"followup_needed":false}. N must be an integer 1-100 for relevance, completeness and accuracy against the original target. Evaluate the original answer and all answered followup pairs together. Score 90-100 only when all target-required information is satisfied; otherwise score below 90. For score below 90, missing_points must contain the specific missing or ambiguous target-required information and followup_needed must be true. Otherwise missing_points is empty and followup_needed is false. Do not generate a question. Do not penalize style or request information outside the target. Write missing_points in English.
+Keep missing_points concise.
+One JSON object only; no markdown or generated question.
+INPUT:
+Expected answer target: Whether FAW affected the crop, and if so, a description of the effect (yield loss, damage type, etc.).
+Question: Has fall armyworm ever affected your maize? If yes, how did it affect your crop?
+Original answer: Fall armyworm affected my maize.
+Answered followup pairs:
+2026-09-09T00:31:21.254Z D/SLM [slm-jni] initializeIfNeeded: model='gemma-3n-E4B-it' image=false audio=false
+2026-09-09T00:31:21.255Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm'
+2026-09-09T00:31:21.256Z D/LiteRtRepository [DefaultDispatcher-worker-4] [1] initializeIfNeeded ok initMs=2
+2026-09-09T00:31:21.258Z D/SLM [slm-jni] runInference: model='gemma-3n-E4B-it' textLen=1133 images=0 audio=0
+2026-09-09T00:31:21.266Z D/LiteRtLM [DefaultDispatcher-worker-5] state[run:start] key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=1 active=true terminated=false logicalDone=false cancel=false pendingCancel=false lastMsgAt=2194593745 lastTermAt=0
+2026-09-09T00:31:21.267Z D/LiteRtLM [DefaultDispatcher-worker-5] runInference start: key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=1 hasText=true originalTextLen=1133 effectiveTextLen=1133 images=0 audioClips=0
+2026-09-09T00:31:21.269Z D/LiteRtLM [DefaultDispatcher-worker-5] LiteRT-LM sendMessageAsync(text): key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=1 len=1133 maxOutputTokens=64
+2026-09-09T00:31:21.280Z D/LiteRtLM [DefaultDispatcher-worker-5] sendMessageAsync accepted: key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=1 dispatchMs=13
+2026-09-09T00:31:23.708Z W/LiteRtLM [Thread-9] Inference first output: key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=1 ttftMs=2441 dispatchMs=13 postDispatchTtftMs=2428 requestToFirstOutputMs=2449
+2026-09-09T00:31:23.709Z D/LiteRtLM [Thread-9] stream[key=gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm runId=1] msg#1 rawChunkLen=2 deltaLen=2 emittedChars=2
+2026-09-09T00:31:23.710Z D/LiteRtRepository [main] stream[rid=1 msg#1] done=false deltaLen=2 outLen=2 outPreview='{"' deltaPreview='{"'
+2026-09-09T00:31:23.710Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[1].preview='{"'
+2026-09-09T00:31:23.889Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[2].preview='score'
+2026-09-09T00:31:24.045Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[3].preview='":'
+2026-09-09T00:31:24.200Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[4].preview='9'
+2026-09-09T00:31:24.354Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[5].preview='5'
+2026-09-09T00:31:24.511Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[6].preview=',"'
+2026-09-09T00:31:24.671Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[7].preview='missing'
+2026-09-09T00:31:24.831Z D/LiteRtRepository [main] stream[rid=1 msg#8] done=false deltaLen=1 outLen=21 outPreview='{"score":95,"missing_' deltaPreview='_'
+2026-09-09T00:31:24.831Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[8].preview='_'
+2026-09-09T00:31:24.990Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[9].preview='points'
+2026-09-09T00:31:25.153Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[10].preview='":[],'
+2026-09-09T00:31:25.309Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[11].preview='"'
+2026-09-09T00:31:25.466Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[12].preview='follow'
+2026-09-09T00:31:25.623Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[13].preview='up'
+2026-09-09T00:31:25.781Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[14].preview='_'
+2026-09-09T00:31:25.936Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[15].preview='needed'
+2026-09-09T00:31:26.091Z D/LiteRtLM [Thread-24] stream[key=gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm runId=1] msg#16 rawChunkLen=2 deltaLen=2 emittedChars=50
+2026-09-09T00:31:26.092Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[16].preview='":'
+2026-09-09T00:31:26.092Z D/LiteRtRepository [main] stream[rid=1 msg#16] done=false deltaLen=2 outLen=50 outPreview='{"score":95,"missing_points":[],"followup_needed":' deltaPreview='":'
+2026-09-09T00:31:26.250Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[17].preview='false'
+2026-09-09T00:31:26.404Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[18].preview='}'
+2026-09-09T00:31:26.562Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[19].preview='↩'
+2026-09-09T00:31:26.719Z D/LiteRtLM [Thread-28] state[logicalDone] key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=1 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=2194599040 lastTermAt=2194599199
+2026-09-09T00:31:26.720Z D/LiteRtLM [Thread-28] state[nativeDone:beforeRelease] key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=1 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=2194599040 lastTermAt=2194599199
+2026-09-09T00:31:26.720Z W/LiteRtLM [Thread-28] Inference timing: key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=1 ttftMs=2441 dispatchMs=13 postDispatchTtftMs=2428 totalMs=5452 callbacks=19 outputChars=57 cancelled=false error=false requestTotalMs=5460
