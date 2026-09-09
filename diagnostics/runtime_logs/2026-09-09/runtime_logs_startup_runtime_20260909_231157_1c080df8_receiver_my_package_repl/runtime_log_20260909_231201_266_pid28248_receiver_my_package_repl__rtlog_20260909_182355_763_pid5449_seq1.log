@@ -1,0 +1,263 @@
+=== RuntimeLogStore Header ===
+ts=2026-09-09T18:23:55.816Z
+fileNameFormat=LEGACY
+appId=com.negi.survey
+versionName=0.0.1
+versionCode=1
+debug=true
+device=Google Pixel 9a
+sdk=36
+pid=5449
+==============================
+2026-09-09T18:23:55.818Z I/RuntimeLogStore [rtlog-io] start: actor launched (fileNameFormat=LEGACY)
+2026-09-09T18:23:55.769Z D/SurveyApp [main] attachBaseContext: pid=5449 process=com.negi.survey isMain=true sdk=36
+2026-09-09T18:23:55.770Z D/SurveyApp [main] bootTiming: attachBaseContext total=64ms
+2026-09-09T18:23:55.770Z D/SurveyApp [main] Skipping WorkManager init in attachBaseContext; will init lazily on first enqueue.
+2026-09-09T18:23:55.773Z D/SurveyApp [main] CrashCapture installed: where=SurveyApp:attachBaseContext
+2026-09-09T18:23:55.965Z W/SurveyApp [main] Diagnostic upload work cancelled by instrumentation argument.
+2026-09-09T18:23:55.966Z I/RuntimeLogStore [main] start repair: ctx/dir refreshed
+2026-09-09T18:23:55.966Z D/SurveyApp [main] bootTiming: RuntimeLogStore.start took=1ms
+2026-09-09T18:23:55.966Z D/SurveyApp [main] bootTiming: AppRingLogStore.install took=0ms
+2026-09-09T18:23:55.966Z D/SurveyApp [main] onCreate: pid=5449 process=com.negi.survey isMain=true sdk=36
+2026-09-09T18:23:55.977Z D/SurveyApp [main] CrashCapture installed: where=SurveyApp:onCreate(rewrap)
+2026-09-09T18:23:55.977Z D/SurveyApp [main] CrashCapture self-healing registered.
+2026-09-09T18:23:55.977Z W/SurveyApp [main] Startup diagnostic upload scheduling disabled by instrumentation argument.
+2026-09-09T18:23:55.977Z D/SurveyApp [main] bootTiming: onCreate total=160ms
+2026-09-09T18:23:56.006Z I/RuntimeLogStore [DefaultDispatcher-worker-1] start repair: ctx/dir refreshed
+2026-09-09T18:23:56.815Z D/SLM [Instr: androidx.test.runner.AndroidJUnitRunner] initializeIfNeeded: model='gemma-3n-E4B-it' image=false audio=false
+2026-09-09T18:23:56.823Z D/LiteRtLM [DefaultDispatcher-worker-1] Initializing LiteRT-LM: model='gemma-3n-E4B-it', key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm'
+2026-09-09T18:23:56.824Z D/LiteRtLM [DefaultDispatcher-worker-1] Capabilities: image=false audio=false
+2026-09-09T18:23:56.824Z D/LiteRtLM [DefaultDispatcher-worker-1] Backend=com.google.ai.edge.litertlm.Backend$GPU@d739627 maxNumTokens=4096 (raw=4096) topK=64 topP=0.95 temp=1.0
+2026-09-09T18:23:56.824Z D/LiteRtLM [DefaultDispatcher-worker-1] Model path='/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' sizeBytes=4919541760 lastModified=1788913652575
+2026-09-09T18:23:56.825Z W/LiteRtLM [DefaultDispatcher-worker-1] Large maxNumTokens=4096 requested. This increases KV-cache capacity and memory pressure. For short survey JSON/follow-up generation, validate whether a smaller configured value is sufficient.
+2026-09-09T18:23:56.825Z D/LiteRtLM [DefaultDispatcher-worker-1] LiteRT-LM native benchmark policy: enabled=false emulator=false
+2026-09-09T18:23:56.825Z D/LiteRtLM [DefaultDispatcher-worker-1] Speculative decoding / MTP policy: enabled=false runtimeFlagUpdated=true model='gemma-3n-E4B-it'
+2026-09-09T18:23:56.827Z D/LiteRtLM [DefaultDispatcher-worker-1] Engine cacheDir resolved: key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' backend=com.google.ai.edge.litertlm.Backend$GPU@d739627 path='/data/user/0/com.negi.survey/no_backup/litertlm_cache/8b58dd5e854e5353723e4360d401cf7d199b6f10' filesBefore=2
+2026-09-09T18:24:03.652Z W/LiteRtLM [DefaultDispatcher-worker-1] Engine.initialize completed: key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' backend=com.google.ai.edge.litertlm.Backend$GPU@d739627 took=6817ms cacheFilesAfter=2
+2026-09-09T18:24:03.661Z D/LiteRtLM [DefaultDispatcher-worker-1] createConversation completed: key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' took=8ms
+2026-09-09T18:24:03.661Z D/LiteRtLM [DefaultDispatcher-worker-1] LiteRT-LM initialization succeeded: model='gemma-3n-E4B-it', key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' engineMs=6817 conversationMs=8 totalMs=6839
+2026-09-09T18:24:03.665Z D/AiTrace [Instr: androidx.test.runner.AndroidJUnitRunner] Installed (enabled=true ringEnabled=true)
+2026-09-09T18:24:03.793Z D/SurveyVM [main] init -> Start, session=0, uuid=c758d7c4-d065-460c-9df6-c068abaee824, navSize=1, graphSize=20
+2026-09-09T18:24:03.800Z D/SurveyVM [main] config.validate -> issues=0
+2026-09-09T18:24:03.800Z D/SurveyVM [main] promptSources -> legacy=10, eval=0, follow=0
+2026-09-09T18:24:03.800Z D/SurveyVM [main] promptSources.preview -> legacy=[Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q8, Q9], eval=[], follow=[]
+2026-09-09T18:24:03.800Z D/SurveyVM [main] hasTwoStepPrompt[Q10] -> true (eval=169, fu=194)
+2026-09-09T18:24:03.800Z D/SurveyVM [main] hasTwoStepPrompt[Q11] -> true (eval=179, fu=204)
+2026-09-09T18:24:03.800Z D/SurveyVM [main] hasTwoStepPrompt[Q12] -> true (eval=171, fu=196)
+2026-09-09T18:24:03.800Z D/SurveyVM [main] hasTwoStepPrompt[Q13] -> true (eval=159, fu=184)
+2026-09-09T18:24:03.800Z D/SurveyVM [main] hasTwoStepPrompt[Q14] -> true (eval=209, fu=234)
+2026-09-09T18:24:03.800Z D/SurveyVM [main] hasTwoStepPrompt[Q15] -> true (eval=150, fu=175)
+2026-09-09T18:24:03.801Z D/SurveyVM [main] hasTwoStepPrompt[Q16] -> true (eval=167, fu=192)
+2026-09-09T18:24:03.801Z D/SurveyVM [main] hasTwoStepPrompt[Q17] -> true (eval=194, fu=219)
+2026-09-09T18:24:03.801Z D/SurveyVM [main] hasTwoStepPrompt[Q8] -> true (eval=200, fu=225)
+2026-09-09T18:24:03.801Z D/SurveyVM [main] hasTwoStepPrompt[Q9] -> true (eval=186, fu=211)
+2026-09-09T18:24:03.801Z D/SurveyVM [main] AI prompt coverage OK (aiCount=10)
+2026-09-09T18:24:03.815Z D/SurveyVM [main] hasTwoStepPrompt[Q8] -> true (eval=200, fu=225)
+2026-09-09T18:24:04.242Z D/SurveyVM [main] resetAudioRefs -> cleared
+2026-09-09T18:24:04.243Z D/SurveyVM [main] resetNavToStart -> key=com.negi.survey.vm.FlowHome@ab83fd7, navSize=1
+2026-09-09T18:24:04.243Z D/SurveyVM [main] resetToStart -> Start, session=1, uuid=3a268468-183c-4dcf-8b84-0e299a1b516b, preserveDraft=false, draftLen=0
+2026-09-09T18:24:04.243Z D/SurveyVM [main] activateRunIfNeeded(goto:Q8) -> runNoteLen=0, draftCleared=true, uuid=3a268468-183c-4dcf-8b84-0e299a1b516b
+2026-09-09T18:24:04.244Z D/SurveyVM [main] push -> Q8, navSize=2, stackSize=2
+2026-09-09T18:24:04.246Z D/SurveyVM [main] hasTwoStepPrompt[Q8] -> true (eval=200, fu=225)
+2026-09-09T18:24:04.272Z D/SurveyVM [Instr: androidx.test.runner.AndroidJUnitRunner] hasTwoStepPrompt[Q8] -> true (eval=200, fu=225)
+2026-09-09T18:24:05.040Z D/SurveyVM [main] getEvalPrompt[Q8] -> len=303
+2026-09-09T18:24:05.042Z D/AiViewModel [DefaultDispatcher-worker-1] run[1]: mode=EVAL_JSON phase=EVAL commit=true prompt.len=302, fullPrompt.len=1143, timeoutMs=60000
+2026-09-09T18:24:05.052Z D/AiViewModel [DefaultDispatcher-worker-1] run[1]: sha(prompt)=dcc968a1743232db6c5381097e6896e3d71890a4ed8fcc3d5439c6cbda3a6397 sha(full)=5ecd9eca4a443173f4b280b23a03e9760b69b7bd57c98e599f98259170b79158
+2026-09-09T18:24:05.060Z I/FullPromptReview [DefaultDispatcher-worker-1] [part=000] run[1]: phase=EVAL FullPrompt
+Evaluate only the original survey target using all supplied answers.
+Return only compact JSON {"score":N,"missing_points":[],"followup_needed":false}. N must be an integer 1-100 for relevance, completeness and accuracy against the original target. Evaluate the original answer and all answered followup pairs together. Score 90-100 only when all target-required information is satisfied; otherwise score below 90. For score below 90, missing_points must contain the specific missing or ambiguous target-required information and followup_needed must be true. Otherwise missing_points is empty and followup_needed is false. Do not generate a question. Do not penalize style or request information outside the target. Write missing_points in Swahili.
+Keep missing_points concise.
+One JSON object only; no markdown or generated question.
+INPUT:
+Lengo la jibu: kama FAW iliathiri mazao, na maelezo ya athari hiyo (upotevu wa mavuno, aina ya uharibifu, n.k.).
+Question: Je, minyoo ya majani (Fall Armyworm) imewahi kuathiri mahindi yako? Ikiwa ndiyo, iliathiri vipi mazao yako?
+Original answer: Ndiyo, ilisababisha matatizo.
+Answered followup pairs:
+2026-09-09T18:24:05.073Z D/LiteRtRepository [DefaultDispatcher-worker-1] [1] request start model='gemma-3n-E4B-it' prompt.len=1143 sha=5ecd9eca4a443173 gateWaitMs=11
+2026-09-09T18:24:05.074Z D/LiteRtRepository [DefaultDispatcher-worker-1] [part=000] [1] PROMPT (FULL) sha=5ecd9eca4a443173
+Evaluate only the original survey target using all supplied answers.
+Return only compact JSON {"score":N,"missing_points":[],"followup_needed":false}. N must be an integer 1-100 for relevance, completeness and accuracy against the original target. Evaluate the original answer and all answered followup pairs together. Score 90-100 only when all target-required information is satisfied; otherwise score below 90. For score below 90, missing_points must contain the specific missing or ambiguous target-required information and followup_needed must be true. Otherwise missing_points is empty and followup_needed is false. Do not generate a question. Do not penalize style or request information outside the target. Write missing_points in Swahili.
+Keep missing_points concise.
+One JSON object only; no markdown or generated question.
+INPUT:
+Lengo la jibu: kama FAW iliathiri mazao, na maelezo ya athari hiyo (upotevu wa mavuno, aina ya uharibifu, n.k.).
+Question: Je, minyoo ya majani (Fall Armyworm) imewahi kuathiri mahindi yako? Ikiwa ndiyo, iliathiri vipi mazao yako?
+Original answer: Ndiyo, ilisababisha matatizo.
+Answered followup pairs:
+2026-09-09T18:24:05.075Z D/SLM [slm-jni] initializeIfNeeded: model='gemma-3n-E4B-it' image=false audio=false
+2026-09-09T18:24:05.075Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm'
+2026-09-09T18:24:05.076Z D/LiteRtRepository [DefaultDispatcher-worker-1] [1] initializeIfNeeded ok initMs=3
+2026-09-09T18:24:05.079Z D/SLM [slm-jni] runInference: model='gemma-3n-E4B-it' textLen=1143 images=0 audio=0
+2026-09-09T18:24:05.083Z D/LiteRtLM [DefaultDispatcher-worker-1] state[run:start] key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=1 active=true terminated=false logicalDone=false cancel=false pendingCancel=false lastMsgAt=2258957562 lastTermAt=0
+2026-09-09T18:24:05.083Z D/LiteRtLM [DefaultDispatcher-worker-1] runInference start: key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=1 hasText=true originalTextLen=1143 effectiveTextLen=1143 images=0 audioClips=0
+2026-09-09T18:24:05.084Z D/LiteRtLM [DefaultDispatcher-worker-1] LiteRT-LM sendMessageAsync(text): key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=1 len=1143 maxOutputTokens=64
+2026-09-09T18:24:05.091Z D/LiteRtLM [DefaultDispatcher-worker-1] sendMessageAsync accepted: key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=1 dispatchMs=7
+2026-09-09T18:24:08.255Z W/LiteRtLM [Thread-5] Inference first output: key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=1 ttftMs=3171 dispatchMs=7 postDispatchTtftMs=3164 requestToFirstOutputMs=3174
+2026-09-09T18:24:08.255Z D/LiteRtLM [Thread-5] stream[key=gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm runId=1] msg#1 rawChunkLen=2 deltaLen=2 emittedChars=2
+2026-09-09T18:24:08.257Z D/LiteRtRepository [main] stream[rid=1 msg#1] done=false deltaLen=2 outLen=2 outPreview='{"' deltaPreview='{"'
+2026-09-09T18:24:08.257Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[1].preview='{"'
+2026-09-09T18:24:08.441Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[2].preview='score'
+2026-09-09T18:24:08.598Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[3].preview='":'
+2026-09-09T18:24:08.756Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[4].preview='␠'
+2026-09-09T18:24:08.917Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[5].preview='6'
+2026-09-09T18:24:09.075Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[6].preview='5'
+2026-09-09T18:24:09.236Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[7].preview=','
+2026-09-09T18:24:09.395Z D/LiteRtRepository [main] stream[rid=1 msg#8] done=false deltaLen=2 outLen=15 outPreview='{"score": 65, "' deltaPreview=' "'
+2026-09-09T18:24:09.395Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[8].preview='␠"'
+2026-09-09T18:24:09.557Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[9].preview='missing'
+2026-09-09T18:24:09.716Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[10].preview='_'
+2026-09-09T18:24:09.871Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[11].preview='points'
+2026-09-09T18:24:10.034Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[12].preview='":'
+2026-09-09T18:24:10.194Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[13].preview='␠["'
+2026-09-09T18:24:10.357Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[14].preview='ath'
+2026-09-09T18:24:10.516Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[15].preview='ari'
+2026-09-09T18:24:10.670Z D/LiteRtLM [Thread-20] stream[key=gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm runId=1] msg#16 rawChunkLen=5 deltaLen=5 emittedChars=45
+2026-09-09T18:24:10.672Z D/LiteRtRepository [main] stream[rid=1 msg#16] done=false deltaLen=5 outLen=45 outPreview='{"score": 65, "missing_points": ["athari hiyo' deltaPreview=' hiyo'
+2026-09-09T18:24:10.672Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[16].preview='␠hiyo'
+2026-09-09T18:24:10.830Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[17].preview='␠zaidi'
+2026-09-09T18:24:11.010Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[18].preview='␠ilmu'
+2026-09-09T18:24:11.191Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[19].preview='ahili'
+2026-09-09T18:24:11.360Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[20].preview='␠kama'
+2026-09-09T18:24:11.519Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[21].preview='␠up'
+2026-09-09T18:24:11.688Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[22].preview='ote'
+2026-09-09T18:24:11.848Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[23].preview='vu'
+2026-09-09T18:24:12.009Z D/LiteRtRepository [main] stream[rid=1 msg#24] done=false deltaLen=3 outLen=77 outPreview='{"score": 65, "missing_points": ["athari hiyo zaidi ilmuahili kama upotevu wa' deltaPreview=' wa'
+2026-09-09T18:24:12.010Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[24].preview='␠wa'
+2026-09-09T18:24:12.165Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[25].preview='␠mav'
+2026-09-09T18:24:12.323Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[26].preview='uno'
+2026-09-09T18:24:12.487Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[27].preview='␠au'
+2026-09-09T18:24:12.646Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[28].preview='␠aina'
+2026-09-09T18:24:12.807Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[29].preview='␠ya'
+2026-09-09T18:24:12.967Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[30].preview='␠uh'
+2026-09-09T18:24:13.127Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[31].preview='ar'
+2026-09-09T18:24:13.288Z D/LiteRtLM [Thread-36] stream[key=gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm runId=1] msg#32 rawChunkLen=2 deltaLen=2 emittedChars=102
+2026-09-09T18:24:13.289Z D/LiteRtRepository [main] stream[rid=1 msg#32] done=false deltaLen=2 outLen=102 outPreview='{"score": 65, "missing_points": ["athari hiyo zaidi ilmuahili kama upotevu wa mavuno au aina ya uharib' deltaPreview='ib'
+2026-09-09T18:24:13.289Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[32].preview='ib'
+2026-09-09T18:24:13.445Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[33].preview='ifu'
+2026-09-09T18:24:13.602Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[34].preview='"],'
+2026-09-09T18:24:13.766Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[35].preview='␠"'
+2026-09-09T18:24:13.924Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[36].preview='follow'
+2026-09-09T18:24:14.083Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[37].preview='up'
+2026-09-09T18:24:14.247Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[38].preview='_'
+2026-09-09T18:24:14.404Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[39].preview='needed'
+2026-09-09T18:24:14.566Z D/LiteRtRepository [main] stream[rid=1 msg#40] done=false deltaLen=2 outLen=127 outPreview='{"score": 65, "missing_points": ["athari hiyo zaidi ilmuahili kama upotevu wa mavuno au aina ya uharibifu"], "followup_needed":' deltaPreview='":'
+2026-09-09T18:24:14.566Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[40].preview='":'
+2026-09-09T18:24:14.724Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[41].preview='␠true'
+2026-09-09T18:24:14.881Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[42].preview='}'
+2026-09-09T18:24:15.043Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[43].preview='↩'
+2026-09-09T18:24:15.196Z D/LiteRtLM [Thread-48] state[logicalDone] key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=1 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=2258967520 lastTermAt=2258967675
+2026-09-09T18:24:15.197Z D/LiteRtLM [Thread-48] state[nativeDone:beforeRelease] key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=1 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=2258967520 lastTermAt=2258967675
+2026-09-09T18:24:15.197Z W/LiteRtLM [Thread-48] Inference timing: key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=1 ttftMs=3171 dispatchMs=7 postDispatchTtftMs=3164 totalMs=10112 callbacks=43 outputChars=134 cancelled=false error=false requestTotalMs=10115
+2026-09-09T18:24:15.199Z D/LiteRtRepository [main] [1] logical done=true; responseClosed=true; waiting native cleanup
+2026-09-09T18:24:15.201Z D/LiteRtRepository [main] [1] native cleanup safepoint
+2026-09-09T18:24:15.202Z D/AiViewModel [DefaultDispatcher-worker-3] run[1] stats: chunks=43, chars=134, raw.len=134
+2026-09-09T18:24:15.203Z D/SLM [slm-jni] resetConversationAndWait: model='gemma-3n-E4B-it' image=false audio=false
+2026-09-09T18:24:15.204Z D/AiViewModel [DefaultDispatcher-worker-3] run[1] sha(raw)=ab66fc4415adbdf20c347e6588950631bb51eba6fee343ce979a697817a716c0
+2026-09-09T18:24:15.205Z D/AiViewModel [DefaultDispatcher-worker-3] run[1] rawVisible='{"score":␠65,␠"missing_points":␠["athari␠hiyo␠zaidi␠ilmuahili␠kama␠upotevu␠wa␠mavuno␠au␠aina␠ya␠uharibifu"],␠"followup_needed":␠true}↩'
+2026-09-09T18:24:15.223Z D/AiViewModel [DefaultDispatcher-worker-3] run[1]: EVAL_JSON parsed score=65 followups=0 fu0=''
+2026-09-09T18:24:15.224Z D/LiteRtRepository [DefaultDispatcher-worker-2] [1] Conversation reset completed after safepoint
+2026-09-09T18:24:15.224Z D/AiViewModel [DefaultDispatcher-worker-3] stepHistory+ runId=1 phase=EVAL mode=EVAL_JSON raw.len=134 score=65 FU=0 FU0='<none>' timeout=false err=null
+2026-09-09T18:24:15.224Z I/AiViewModel [DefaultDispatcher-worker-3] run[1] done: phase=EVAL mode=EVAL_JSON score=65 FU0.len=0 FU0.sha16=none commit=true err=<none>
+2026-09-09T18:24:15.224Z I/FullTextOut [DefaultDispatcher-worker-3] [part=000] run[1]: RawTextOut
+{"score": 65, "missing_points": ["athari hiyo zaidi ilmuahili kama upotevu wa mavuno au aina ya uharibifu"], "followup_needed": true}
+
+2026-09-09T18:24:15.226Z D/LiteRtRepository [DefaultDispatcher-worker-1] [part=000] [1] FINALIZE: native-terminated
+=== AI TRACE STATS (LiteRtRepository) ===
+rid=1 model='gemma-3n-E4B-it' reason=native-terminated
+totalMs=10153 inferenceMs=10149 firstTokenMs=3179
+logicalDone=true logicalDoneAt=2258967677
+nativeTerminated=true cancelTag='null'
+lastDeltaMsAgo=185 lastEventMsAgo=25
+chunks=43 emittedChars=134 capturedAll=true out.len=134
+=== OUTPUT (FULL) ===
+{"score": 65, "missing_points": ["athari hiyo zaidi ilmuahili kama upotevu wa mavuno au aina ya uharibifu"], "followup_needed": true}
+
+2026-09-09T18:24:15.235Z D/SurveyVM [DefaultDispatcher-worker-3] getFollowupPrompt[Q8] -> len=448 evalLen=134
+2026-09-09T18:24:15.237Z D/AiViewModel [DefaultDispatcher-worker-3] run[2]: mode=FOLLOWUP_JSON_OR_TEXT phase=FOLLOWUP commit=false prompt.len=448, fullPrompt.len=985, timeoutMs=60000
+2026-09-09T18:24:15.238Z D/AiViewModel [DefaultDispatcher-worker-3] run[2]: sha(prompt)=7307b23863ef917b20ddfa6ffb6b98ee0a3beec015e46c18c8b63536e33c1fc7 sha(full)=07736fd6bd7da118737a8db36428b63a0142d8c8c2be335bf21a3c8dc05d9bb1
+2026-09-09T18:24:15.238Z I/FullPromptReview [DefaultDispatcher-worker-3] [part=000] run[2]: phase=FOLLOWUP FullPrompt
+Evaluate only the original survey target using all supplied answers.
+Generate exactly one short Swahili question addressing one unresolved target-required deficiency in EVAL_JSON. Use the original target, original answer and accumulated answered followup pairs. Do not repeat an earlier question or ask for information already provided. Never add new objectives. Output only the question on one line; no JSON, score, analysis, labels, or quotes.
+Keep the question short and single-scope.
+Exactly one Swahili question on one line.
+INPUT:
+Lengo la jibu: kama FAW iliathiri mazao, na maelezo ya athari hiyo (upotevu wa mavuno, aina ya uharibifu, n.k.).
+Question: Je, minyoo ya majani (Fall Armyworm) imewahi kuathiri mahindi yako? Ikiwa ndiyo, iliathiri vipi mazao yako?
+Original answer: Ndiyo, ilisababisha matatizo.
+Answered followup pairs: 
+EVAL_JSON: {"score": 65, "missing_points": ["athari hiyo zaidi ilmuahili kama upotevu wa mavuno au aina ya uharibifu"], "followup_needed": true}
+2026-09-09T18:24:15.240Z D/LiteRtRepository [DefaultDispatcher-worker-3] [2] request start model='gemma-3n-E4B-it' prompt.len=985 sha=07736fd6bd7da118 gateWaitMs=1
+2026-09-09T18:24:15.241Z D/LiteRtRepository [DefaultDispatcher-worker-3] [part=000] [2] PROMPT (FULL) sha=07736fd6bd7da118
+Evaluate only the original survey target using all supplied answers.
+Generate exactly one short Swahili question addressing one unresolved target-required deficiency in EVAL_JSON. Use the original target, original answer and accumulated answered followup pairs. Do not repeat an earlier question or ask for information already provided. Never add new objectives. Output only the question on one line; no JSON, score, analysis, labels, or quotes.
+Keep the question short and single-scope.
+Exactly one Swahili question on one line.
+INPUT:
+Lengo la jibu: kama FAW iliathiri mazao, na maelezo ya athari hiyo (upotevu wa mavuno, aina ya uharibifu, n.k.).
+Question: Je, minyoo ya majani (Fall Armyworm) imewahi kuathiri mahindi yako? Ikiwa ndiyo, iliathiri vipi mazao yako?
+Original answer: Ndiyo, ilisababisha matatizo.
+Answered followup pairs: 
+EVAL_JSON: {"score": 65, "missing_points": ["athari hiyo zaidi ilmuahili kama upotevu wa mavuno au aina ya uharibifu"], "followup_needed": true}
+2026-09-09T18:24:15.242Z D/SLM [slm-jni] initializeIfNeeded: model='gemma-3n-E4B-it' image=false audio=false
+2026-09-09T18:24:15.243Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm'
+2026-09-09T18:24:15.244Z D/LiteRtRepository [DefaultDispatcher-worker-3] [2] initializeIfNeeded ok initMs=3
+2026-09-09T18:24:15.244Z D/SLM [slm-jni] runInference: model='gemma-3n-E4B-it' textLen=985 images=0 audio=0
+2026-09-09T18:24:15.245Z D/LiteRtLM [DefaultDispatcher-worker-3] state[run:start] key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=2 active=true terminated=false logicalDone=false cancel=false pendingCancel=false lastMsgAt=2258967724 lastTermAt=2258967675
+2026-09-09T18:24:15.245Z D/LiteRtLM [DefaultDispatcher-worker-3] runInference start: key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=2 hasText=true originalTextLen=985 effectiveTextLen=985 images=0 audioClips=0
+2026-09-09T18:24:15.245Z D/LiteRtLM [DefaultDispatcher-worker-3] LiteRT-LM sendMessageAsync(text): key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=2 len=985 maxOutputTokens=64
+2026-09-09T18:24:15.250Z D/LiteRtLM [DefaultDispatcher-worker-3] sendMessageAsync accepted: key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=2 dispatchMs=4
+2026-09-09T18:24:16.598Z W/LiteRtLM [Thread-51] Inference first output: key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=2 ttftMs=1352 dispatchMs=4 postDispatchTtftMs=1348 requestToFirstOutputMs=1353
+2026-09-09T18:24:16.599Z D/LiteRtLM [Thread-51] stream[key=gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm runId=2] msg#1 rawChunkLen=3 deltaLen=3 emittedChars=3
+2026-09-09T18:24:16.600Z D/LiteRtRepository [main] stream[rid=2 msg#1] done=false deltaLen=3 outLen=3 outPreview='Ath' deltaPreview='Ath'
+2026-09-09T18:24:16.601Z D/AiViewModel [DefaultDispatcher-worker-3] run[2] chunk[1].preview='Ath'
+2026-09-09T18:24:16.778Z D/AiViewModel [DefaultDispatcher-worker-3] run[2] chunk[2].preview='ari'
+2026-09-09T18:24:16.933Z D/AiViewModel [DefaultDispatcher-worker-3] run[2] chunk[3].preview='␠hiyo'
+2026-09-09T18:24:17.091Z D/AiViewModel [DefaultDispatcher-worker-3] run[2] chunk[4].preview='␠zaidi'
+2026-09-09T18:24:17.253Z D/AiViewModel [DefaultDispatcher-worker-3] run[2] chunk[5].preview='␠ilmu'
+2026-09-09T18:24:17.410Z D/AiViewModel [DefaultDispatcher-worker-3] run[2] chunk[6].preview='ahili'
+2026-09-09T18:24:17.576Z D/AiViewModel [DefaultDispatcher-worker-3] run[2] chunk[7].preview='␠kama'
+2026-09-09T18:24:17.735Z D/LiteRtRepository [main] stream[rid=2 msg#8] done=false deltaLen=3 outLen=35 outPreview='Athari hiyo zaidi ilmuahili kama up' deltaPreview=' up'
+2026-09-09T18:24:17.735Z D/AiViewModel [DefaultDispatcher-worker-3] run[2] chunk[8].preview='␠up'
+2026-09-09T18:24:17.895Z D/AiViewModel [DefaultDispatcher-worker-3] run[2] chunk[9].preview='ote'
+2026-09-09T18:24:18.053Z D/AiViewModel [DefaultDispatcher-worker-3] run[2] chunk[10].preview='vu'
+2026-09-09T18:24:18.211Z D/AiViewModel [DefaultDispatcher-worker-3] run[2] chunk[11].preview='␠wa'
+2026-09-09T18:24:18.369Z D/AiViewModel [DefaultDispatcher-worker-3] run[2] chunk[12].preview='␠mav'
+2026-09-09T18:24:18.529Z D/AiViewModel [DefaultDispatcher-worker-3] run[2] chunk[13].preview='uno'
+2026-09-09T18:24:18.693Z D/AiViewModel [DefaultDispatcher-worker-3] run[2] chunk[14].preview='␠au'
+2026-09-09T18:24:18.850Z D/AiViewModel [DefaultDispatcher-worker-3] run[2] chunk[15].preview='␠aina'
+2026-09-09T18:24:19.007Z D/LiteRtLM [Thread-66] stream[key=gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm runId=2] msg#16 rawChunkLen=3 deltaLen=3 emittedChars=61
+2026-09-09T18:24:19.008Z D/LiteRtRepository [main] stream[rid=2 msg#16] done=false deltaLen=3 outLen=61 outPreview='Athari hiyo zaidi ilmuahili kama upotevu wa mavuno au aina ya' deltaPreview=' ya'
+2026-09-09T18:24:19.009Z D/AiViewModel [DefaultDispatcher-worker-3] run[2] chunk[16].preview='␠ya'
+2026-09-09T18:24:19.170Z D/AiViewModel [DefaultDispatcher-worker-3] run[2] chunk[17].preview='␠uh'
+2026-09-09T18:24:19.331Z D/AiViewModel [DefaultDispatcher-worker-3] run[2] chunk[18].preview='ar'
+2026-09-09T18:24:19.485Z D/AiViewModel [DefaultDispatcher-worker-3] run[2] chunk[19].preview='ib'
+2026-09-09T18:24:19.643Z D/AiViewModel [DefaultDispatcher-worker-3] run[2] chunk[20].preview='ifu'
+2026-09-09T18:24:19.805Z D/AiViewModel [DefaultDispatcher-worker-3] run[2] chunk[21].preview='␠je'
+2026-09-09T18:24:19.967Z D/AiViewModel [DefaultDispatcher-worker-3] run[2] chunk[22].preview='?'
+2026-09-09T18:24:20.126Z D/LiteRtLM [Thread-73] state[logicalDone] key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=2 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=2258972445 lastTermAt=2258972606
+2026-09-09T18:24:20.127Z D/LiteRtLM [Thread-73] state[nativeDone:beforeRelease] key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=2 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=2258972445 lastTermAt=2258972606
+2026-09-09T18:24:20.127Z W/LiteRtLM [Thread-73] Inference timing: key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=2 ttftMs=1352 dispatchMs=4 postDispatchTtftMs=1348 totalMs=4881 callbacks=22 outputChars=75 cancelled=false error=false requestTotalMs=4882
+2026-09-09T18:24:20.129Z D/LiteRtRepository [main] [2] logical done=true; responseClosed=true; waiting native cleanup
+2026-09-09T18:24:20.130Z D/LiteRtRepository [main] [2] native cleanup safepoint
+2026-09-09T18:24:20.132Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] stats: chunks=22, chars=75, raw.len=75
+2026-09-09T18:24:20.133Z D/SLM [slm-jni] resetConversationAndWait: model='gemma-3n-E4B-it' image=false audio=false
+2026-09-09T18:24:20.135Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] sha(raw)=595cc287ef4fd3a3a5417ba262378ab6107f18a8bf73fcb9ce18c4ed35698c71
+2026-09-09T18:24:20.137Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] rawVisible='Athari␠hiyo␠zaidi␠ilmuahili␠kama␠upotevu␠wa␠mavuno␠au␠aina␠ya␠uharibifu␠je?'
+2026-09-09T18:24:20.143Z D/AiViewModel [DefaultDispatcher-worker-4] run[2]: FOLLOWUP parse extractorQ='Athari␠hiyo␠zaidi␠ilmuahili␠kama␠upotevu␠wa␠mavuno␠au␠aina␠ya␠uharibifu␠je?' textQ='Athari␠hiyo␠zaidi␠ilmuahili␠kama␠upotevu␠wa␠mavuno␠au␠aina␠ya␠uharibifu␠je?' best='Athari␠hiyo␠zaidi␠ilmuahili␠kama␠upotevu␠wa␠mavuno␠au␠aina␠ya␠uharibifu␠je?'
+2026-09-09T18:24:20.143Z D/AiViewModel [DefaultDispatcher-worker-4] stepHistory+ runId=2 phase=FOLLOWUP mode=FOLLOWUP_JSON_OR_TEXT raw.len=75 score=null FU=1 FU0='Athari␠hiyo␠zaidi␠ilmuahili␠kama␠upotevu␠wa␠mavuno␠au␠aina␠ya␠uharibifu␠je?' timeout=false err=null
+2026-09-09T18:24:20.144Z I/AiViewModel [DefaultDispatcher-worker-4] run[2] done: phase=FOLLOWUP mode=FOLLOWUP_JSON_OR_TEXT score=null FU0.len=75 FU0.sha16=595cc287ef4fd3a3 commit=false err=<none>
+2026-09-09T18:24:20.144Z I/FullTextOut [DefaultDispatcher-worker-4] [part=000] run[2]: RawTextOut
+Athari hiyo zaidi ilmuahili kama upotevu wa mavuno au aina ya uharibifu je?
+2026-09-09T18:24:20.147Z D/LiteRtRepository [DefaultDispatcher-worker-5] [2] Conversation reset completed after safepoint
+2026-09-09T18:24:20.148Z D/LiteRtRepository [DefaultDispatcher-worker-1] [part=000] [2] FINALIZE: native-terminated
+=== AI TRACE STATS (LiteRtRepository) ===
+rid=2 model='gemma-3n-E4B-it' reason=native-terminated
+totalMs=4907 inferenceMs=4904 firstTokenMs=1356
+logicalDone=true logicalDoneAt=2258972607
+nativeTerminated=true cancelTag='null'
+lastDeltaMsAgo=181 lastEventMsAgo=17
+chunks=22 emittedChars=75 capturedAll=true out.len=75
+=== OUTPUT (FULL) ===
+Athari hiyo zaidi ilmuahili kama upotevu wa mavuno au aina ya uharibifu je?
+2026-09-09T18:24:20.169Z D/SLM [Instr: androidx.test.runner.AndroidJUnitRunner] cancel: model='gemma-3n-E4B-it'
+2026-09-09T18:24:20.938Z D/SLM [Instr: androidx.test.runner.AndroidJUnitRunner] forceCleanUp: model='gemma-3n-E4B-it'
