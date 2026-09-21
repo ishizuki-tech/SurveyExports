@@ -1,0 +1,726 @@
+=== RuntimeLogStore Header ===
+ts=2026-09-21T22:50:13.928Z
+fileNameFormat=LEGACY
+appId=com.negi.survey
+versionName=0.0.1
+versionCode=1
+debug=true
+device=Google Pixel 9a
+sdk=36
+pid=24515
+==============================
+2026-09-21T22:50:13.928Z I/RuntimeLogStore [rtlog-io] --- rotated (reason=plain_snapshot:app_start) ---
+2026-09-21T22:50:51.790Z D/SLM [main] buildModelConfig: accel=GPU maxTokens=512 topK=1 topP=0.0 temperature=0.0
+2026-09-21T22:50:51.820Z D/LiteRtLM [DefaultDispatcher-worker-2] Initializing LiteRT-LM: model='Gemma3n4B', key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm'
+2026-09-21T22:50:51.820Z D/LiteRtLM [DefaultDispatcher-worker-2] Capabilities: image=false audio=false
+2026-09-21T22:50:51.820Z D/LiteRtLM [DefaultDispatcher-worker-2] Backend=com.google.ai.edge.litertlm.Backend$GPU@294ab7e maxNumTokens=512 (raw=512) topK=1 topP=0.0 temp=0.0
+2026-09-21T22:50:51.820Z D/LiteRtLM [DefaultDispatcher-worker-2] Model path='/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' sizeBytes=4919541760 lastModified=1789580037216
+2026-09-21T22:50:51.820Z D/LiteRtLM [DefaultDispatcher-worker-2] LiteRT-LM native benchmark policy: enabled=false emulator=false
+2026-09-21T22:50:51.821Z D/LiteRtLM [DefaultDispatcher-worker-2] Speculative decoding / MTP policy: enabled=false runtimeFlagUpdated=true model='Gemma3n4B'
+2026-09-21T22:50:51.822Z D/LiteRtLM [DefaultDispatcher-worker-2] Engine cacheDir resolved: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' backend=com.google.ai.edge.litertlm.Backend$GPU@294ab7e path='/data/user/0/com.negi.survey/no_backup/litertlm_cache/e503b301e275389b137ccc314517fd3f2d95681d' filesBefore=0
+2026-09-21T22:51:32.604Z W/LiteRtLM [DefaultDispatcher-worker-2] Engine.initialize completed: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' backend=com.google.ai.edge.litertlm.Backend$GPU@294ab7e took=40778ms cacheFilesAfter=2
+2026-09-21T22:51:32.652Z D/LiteRtLM [DefaultDispatcher-worker-2] createConversation completed: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' took=47ms
+2026-09-21T22:51:32.656Z D/LiteRtLM [DefaultDispatcher-worker-2] LiteRT-LM initialization succeeded: model='Gemma3n4B', key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' engineMs=40778 conversationMs=47 totalMs=40837
+2026-09-21T22:51:32.696Z D/AiTrace [main] Installed (enabled=true ringEnabled=true)
+2026-09-21T22:51:32.702Z D/SurveyVM [main] init -> Start, session=0, uuid=b9c771a2-4523-4082-bd52-561ec3fbca96, navSize=1, graphSize=20
+2026-09-21T22:51:32.707Z D/SurveyVM [main] config.validate -> issues=0
+2026-09-21T22:51:32.707Z D/SurveyVM [main] promptSources -> legacy=10, eval=0, follow=0
+2026-09-21T22:51:32.707Z D/SurveyVM [main] promptSources.preview -> legacy=[Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q8, Q9], eval=[], follow=[]
+2026-09-21T22:51:32.707Z D/SurveyVM [main] hasTwoStepPrompt[Q10] -> true (eval=195, fu=220)
+2026-09-21T22:51:32.707Z D/SurveyVM [main] hasTwoStepPrompt[Q11] -> true (eval=219, fu=244)
+2026-09-21T22:51:32.708Z D/SurveyVM [main] hasTwoStepPrompt[Q12] -> true (eval=229, fu=254)
+2026-09-21T22:51:32.708Z D/SurveyVM [main] hasTwoStepPrompt[Q13] -> true (eval=184, fu=209)
+2026-09-21T22:51:32.708Z D/SurveyVM [main] hasTwoStepPrompt[Q14] -> true (eval=221, fu=246)
+2026-09-21T22:51:32.708Z D/SurveyVM [main] hasTwoStepPrompt[Q15] -> true (eval=160, fu=185)
+2026-09-21T22:51:32.708Z D/SurveyVM [main] hasTwoStepPrompt[Q16] -> true (eval=185, fu=210)
+2026-09-21T22:51:32.708Z D/SurveyVM [main] hasTwoStepPrompt[Q17] -> true (eval=200, fu=225)
+2026-09-21T22:51:32.708Z D/SurveyVM [main] hasTwoStepPrompt[Q8] -> true (eval=248, fu=273)
+2026-09-21T22:51:32.708Z D/SurveyVM [main] hasTwoStepPrompt[Q9] -> true (eval=190, fu=215)
+2026-09-21T22:51:32.708Z D/SurveyVM [main] AI prompt coverage OK (aiCount=10)
+2026-09-21T22:51:32.772Z D/SLM [slm-jni] initializeIfNeeded: model='Gemma3n4B' image=false audio=false
+2026-09-21T22:51:32.774Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm'
+2026-09-21T22:51:32.777Z D/LiteRtRepository [main] warmUp: initializeIfNeeded ok gateWaitMs=0 initMs=9
+2026-09-21T22:51:32.777Z D/LiteRtRepository [main] warmUp: Engine ready; representative inference disabled totalMs=10
+2026-09-21T22:52:42.672Z D/SurveyVM [main] resetAudioRefs -> cleared
+2026-09-21T22:52:42.672Z D/SurveyVM [main] resetNavToStart -> key=com.negi.survey.vm.FlowHome@8755f4f, navSize=1
+2026-09-21T22:52:42.673Z D/SurveyVM [main] resetToStart -> Start, session=1, uuid=f418f46c-8666-429f-87af-ca4e423251ca, preserveDraft=true, draftLen=0
+2026-09-21T22:52:42.673Z D/SurveyVM [main] activateRunIfNeeded(advanceToNext:Q1) -> runNoteLen=0, draftCleared=true, uuid=f418f46c-8666-429f-87af-ca4e423251ca
+2026-09-21T22:52:42.673Z D/SurveyVM [main] push -> Q1, navSize=2, stackSize=2
+2026-09-21T22:54:00.686Z D/SurveyVM [main] push -> Q2, navSize=3, stackSize=3
+2026-09-21T22:54:20.692Z D/SurveyVM [main] push -> Q3, navSize=4, stackSize=4
+2026-09-21T22:54:41.679Z D/SurveyVM [main] push -> Q4, navSize=5, stackSize=5
+2026-09-21T22:55:05.129Z D/SurveyVM [main] push -> Q5, navSize=6, stackSize=6
+2026-09-21T22:55:49.469Z D/SurveyVM [main] push -> Q6, navSize=7, stackSize=7
+2026-09-21T22:56:04.140Z D/SurveyVM [main] backToPrevious -> Q5 (runActive=true, uiLen=0, runLen=0, draftLen=0)
+2026-09-21T22:56:05.377Z D/SurveyVM [main] push -> Q6, navSize=7, stackSize=7
+2026-09-21T22:56:44.415Z D/SurveyVM [main] push -> Q7, navSize=8, stackSize=8
+2026-09-21T22:57:06.287Z D/SurveyVM [main] push -> Q8, navSize=9, stackSize=9
+2026-09-21T22:57:06.317Z D/SurveyVM [main] hasTwoStepPrompt[Q8] -> true (eval=248, fu=273)
+2026-09-21T22:57:36.592Z D/SurveyVM [main] getEvalPrompt[Q8] -> len=331
+2026-09-21T22:57:36.599Z D/AiViewModel [DefaultDispatcher-worker-3] run[1]: mode=EVAL_JSON phase=EVAL commit=true prompt.len=330, fullPrompt.len=1919, timeoutMs=120000
+2026-09-21T22:57:36.605Z D/AiViewModel [DefaultDispatcher-worker-3] run[1]: sha(prompt)=4f8027c8a023d5f858ece41fe081dfc1779dd53eb5cb23ed5a4f78911d62758e sha(full)=a83b03c72fd594584f4b477e0028e2dc915d332eaff7eab3a6d86a616c5dc071
+2026-09-21T22:57:36.606Z I/FullPromptReview [DefaultDispatcher-worker-3] [part=000] run[1]: phase=EVAL FullPrompt
+Evaluate only the original survey target using all supplied answers.
+Return only compact JSON {"score":N,"missing_points":[],"followup_needed":false}. N must be an integer 1-100 for relevance, completeness and accuracy against the original target. Evaluate the original answer and all answered followup pairs together. Separate relevance from completeness. An answer can discuss the right topic but still be incomplete. Score 90-100 only when the respondent explicitly provides every material component requested by the Expected answer target and Question. Do not infer missing details from general knowledge, plausibility, or a bare statement that an event occurred. A concise answer may be complete. A verbose or relevant answer that omits any material requested component must score below 90. For example, saying that an event occurred without describing its requested effect is incomplete. Consistency rule: if missing_points is non-empty or followup_needed is true, score must be an integer from 1 to 89. Scores 90-100 are allowed only when missing_points=[] and followup_needed=false. Never use score 90 as a borderline value when anything is missing. For any score below 90, missing_points must contain the specific missing or ambiguous target-required information and followup_needed must be true. Otherwise missing_points is empty and followup_needed is false. Do not generate a question. Do not penalize style or request information outside the target. Write missing_points in English.
+Keep missing_points concise.
+One JSON object only; no markdown or generated question.
+INPUT:
+Expected answer target: Whether FAW affected the crop and, if yes, at least one concrete description of its effect, such as yield loss or a type of crop damage.
+Question: Has fall armyworm ever affected your maize? If yes, how did it affect your crop?
+Original answer: Yes the pest reduced my maize yield.
+Answered followup pairs:
+2026-09-21T22:57:36.613Z D/LiteRtRepository [DefaultDispatcher-worker-2] [1] request start model='Gemma3n4B' prompt.len=1919 sha=a83b03c72fd59458 gateWaitMs=4
+2026-09-21T22:57:36.613Z D/LiteRtRepository [DefaultDispatcher-worker-2] [part=000] [1] PROMPT (FULL) sha=a83b03c72fd59458
+Evaluate only the original survey target using all supplied answers.
+Return only compact JSON {"score":N,"missing_points":[],"followup_needed":false}. N must be an integer 1-100 for relevance, completeness and accuracy against the original target. Evaluate the original answer and all answered followup pairs together. Separate relevance from completeness. An answer can discuss the right topic but still be incomplete. Score 90-100 only when the respondent explicitly provides every material component requested by the Expected answer target and Question. Do not infer missing details from general knowledge, plausibility, or a bare statement that an event occurred. A concise answer may be complete. A verbose or relevant answer that omits any material requested component must score below 90. For example, saying that an event occurred without describing its requested effect is incomplete. Consistency rule: if missing_points is non-empty or followup_needed is true, score must be an integer from 1 to 89. Scores 90-100 are allowed only when missing_points=[] and followup_needed=false. Never use score 90 as a borderline value when anything is missing. For any score below 90, missing_points must contain the specific missing or ambiguous target-required information and followup_needed must be true. Otherwise missing_points is empty and followup_needed is false. Do not generate a question. Do not penalize style or request information outside the target. Write missing_points in English.
+Keep missing_points concise.
+One JSON object only; no markdown or generated question.
+INPUT:
+Expected answer target: Whether FAW affected the crop and, if yes, at least one concrete description of its effect, such as yield loss or a type of crop damage.
+Question: Has fall armyworm ever affected your maize? If yes, how did it affect your crop?
+Original answer: Yes the pest reduced my maize yield.
+Answered followup pairs:
+2026-09-21T22:57:36.614Z D/SLM [slm-jni] initializeIfNeeded: model='Gemma3n4B' image=false audio=false
+2026-09-21T22:57:36.615Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm'
+2026-09-21T22:57:36.616Z D/LiteRtRepository [DefaultDispatcher-worker-2] [1] initializeIfNeeded ok initMs=3
+2026-09-21T22:57:36.619Z D/SLM [slm-jni] runInference: model='Gemma3n4B' textLen=1919 images=0 audio=0
+2026-09-21T22:57:36.630Z D/LiteRtLM [DefaultDispatcher-worker-3] state[run:start] key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=1 active=true terminated=false logicalDone=false cancel=false pendingCancel=false lastMsgAt=658144488 lastTermAt=0
+2026-09-21T22:57:36.631Z D/LiteRtLM [DefaultDispatcher-worker-3] runInference start: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=1 hasText=true originalTextLen=1919 effectiveTextLen=1919 images=0 audioClips=0
+2026-09-21T22:57:36.634Z D/LiteRtLM [DefaultDispatcher-worker-3] LiteRT-LM sendMessageAsync(text): key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=1 len=1919 maxOutputTokens=64
+2026-09-21T22:57:36.688Z D/LiteRtLM [DefaultDispatcher-worker-3] sendMessageAsync accepted: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=1 dispatchMs=56
+2026-09-21T22:57:39.767Z W/LiteRtLM [Thread-9] Inference first output: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=1 ttftMs=3135 dispatchMs=56 postDispatchTtftMs=3079 requestToFirstOutputMs=3142
+2026-09-21T22:57:39.767Z D/LiteRtLM [Thread-9] stream[key=Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm runId=1] msg#1 rawChunkLen=2 deltaLen=2 emittedChars=2
+2026-09-21T22:57:39.788Z D/LiteRtRepository [main] stream[rid=1 msg#1] done=false deltaLen=2 outLen=2 outPreview='{"' deltaPreview='{"'
+2026-09-21T22:57:39.789Z D/AiViewModel [DefaultDispatcher-worker-3] run[1] chunk[1].preview='{"'
+2026-09-21T22:57:39.989Z D/AiViewModel [DefaultDispatcher-worker-3] run[1] chunk[2].preview='score'
+2026-09-21T22:57:40.157Z D/AiViewModel [DefaultDispatcher-worker-3] run[1] chunk[3].preview='":'
+2026-09-21T22:57:40.323Z D/AiViewModel [DefaultDispatcher-worker-3] run[1] chunk[4].preview='9'
+2026-09-21T22:57:40.472Z D/AiViewModel [DefaultDispatcher-worker-3] run[1] chunk[5].preview='5'
+2026-09-21T22:57:40.643Z D/AiViewModel [DefaultDispatcher-worker-3] run[1] chunk[6].preview=',"'
+2026-09-21T22:57:40.807Z D/AiViewModel [DefaultDispatcher-worker-3] run[1] chunk[7].preview='missing'
+2026-09-21T22:57:40.957Z D/LiteRtRepository [main] stream[rid=1 msg#8] done=false deltaLen=1 outLen=21 outPreview='{"score":95,"missing_' deltaPreview='_'
+2026-09-21T22:57:40.958Z D/AiViewModel [DefaultDispatcher-worker-3] run[1] chunk[8].preview='_'
+2026-09-21T22:57:41.125Z D/AiViewModel [DefaultDispatcher-worker-3] run[1] chunk[9].preview='points'
+2026-09-21T22:57:41.290Z D/AiViewModel [DefaultDispatcher-worker-3] run[1] chunk[10].preview='":[],'
+2026-09-21T22:57:41.441Z D/AiViewModel [DefaultDispatcher-worker-3] run[1] chunk[11].preview='"'
+2026-09-21T22:57:41.608Z D/AiViewModel [DefaultDispatcher-worker-3] run[1] chunk[12].preview='follow'
+2026-09-21T22:57:41.774Z D/AiViewModel [DefaultDispatcher-worker-3] run[1] chunk[13].preview='up'
+2026-09-21T22:57:41.926Z D/AiViewModel [DefaultDispatcher-worker-3] run[1] chunk[14].preview='_'
+2026-09-21T22:57:42.107Z D/AiViewModel [DefaultDispatcher-worker-3] run[1] chunk[15].preview='needed'
+2026-09-21T22:57:42.244Z D/LiteRtLM [Thread-24] stream[key=Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm runId=1] msg#16 rawChunkLen=2 deltaLen=2 emittedChars=50
+2026-09-21T22:57:42.257Z D/LiteRtRepository [main] stream[rid=1 msg#16] done=false deltaLen=2 outLen=50 outPreview='{"score":95,"missing_points":[],"followup_needed":' deltaPreview='":'
+2026-09-21T22:57:42.258Z D/AiViewModel [DefaultDispatcher-worker-3] run[1] chunk[16].preview='":'
+2026-09-21T22:57:42.426Z D/AiViewModel [DefaultDispatcher-worker-3] run[1] chunk[17].preview='false'
+2026-09-21T22:57:42.592Z D/AiViewModel [DefaultDispatcher-worker-3] run[1] chunk[18].preview='}'
+2026-09-21T22:57:42.743Z D/AiViewModel [DefaultDispatcher-worker-3] run[1] chunk[19].preview='↩'
+2026-09-21T22:57:42.889Z D/LiteRtLM [Thread-28] state[logicalDone] key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=1 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=658150586 lastTermAt=658150747
+2026-09-21T22:57:42.890Z D/LiteRtLM [Thread-28] state[nativeDone:beforeRelease] key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=1 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=658150586 lastTermAt=658150747
+2026-09-21T22:57:42.891Z W/LiteRtLM [Thread-28] Inference timing: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=1 ttftMs=3135 dispatchMs=56 postDispatchTtftMs=3079 totalMs=6257 callbacks=19 outputChars=57 cancelled=false error=false requestTotalMs=6264
+2026-09-21T22:57:42.892Z D/LiteRtRepository [main] [1] logical done=true; responseClosed=true; waiting native cleanup
+2026-09-21T22:57:42.893Z D/LiteRtRepository [main] [1] native cleanup safepoint
+2026-09-21T22:57:42.893Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] stats: chunks=19, chars=57, raw.len=57
+2026-09-21T22:57:42.894Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] sha(raw)=8d3bc1ac184ede55a7fda7341213618173536394a0dc1ee9002781dd5f3f75be
+2026-09-21T22:57:42.894Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] rawVisible='{"score":95,"missing_points":[],"followup_needed":false}↩'
+2026-09-21T22:57:42.894Z D/SLM [slm-jni] resetConversationAndWait: model='Gemma3n4B' image=false audio=false
+2026-09-21T22:57:42.898Z D/AiViewModel [DefaultDispatcher-worker-2] run[1]: EVAL_JSON parsed score=95 followups=0 fu0=''
+2026-09-21T22:57:42.898Z D/AiViewModel [DefaultDispatcher-worker-2] stepHistory+ runId=1 phase=EVAL mode=EVAL_JSON raw.len=57 score=95 FU=0 FU0='<none>' timeout=false err=null
+2026-09-21T22:57:42.899Z I/AiViewModel [DefaultDispatcher-worker-2] run[1] done: phase=EVAL mode=EVAL_JSON score=95 FU0.len=0 FU0.sha16=none commit=true err=<none>
+2026-09-21T22:57:42.899Z I/FullTextOut [DefaultDispatcher-worker-2] [part=000] run[1]: RawTextOut
+{"score":95,"missing_points":[],"followup_needed":false}
+
+2026-09-21T22:57:42.901Z D/AiViewModel [DefaultDispatcher-worker-2] chain2: step2 skipped (score=95, followups=0, timedOut=false, rawPreview='{"score":95,"missing_points":[],"followup_needed":false}↩')
+2026-09-21T22:57:42.909Z D/LiteRtRepository [DefaultDispatcher-worker-5] [1] Conversation reset completed after safepoint
+2026-09-21T22:57:42.910Z D/LiteRtRepository [DefaultDispatcher-worker-2] [part=000] [1] FINALIZE: native-terminated
+=== AI TRACE STATS (LiteRtRepository) ===
+rid=1 model='Gemma3n4B' reason=native-terminated
+totalMs=6297 inferenceMs=6293 firstTokenMs=3172
+logicalDone=true logicalDoneAt=658150751
+nativeTerminated=true cancelTag='null'
+lastDeltaMsAgo=167 lastEventMsAgo=17
+chunks=19 emittedChars=57 capturedAll=true out.len=57
+=== OUTPUT (FULL) ===
+{"score":95,"missing_points":[],"followup_needed":false}
+
+2026-09-21T22:58:16.362Z D/SurveyVM [main] push -> Q9, navSize=10, stackSize=10
+2026-09-21T22:58:16.371Z D/SurveyVM [main] hasTwoStepPrompt[Q9] -> true (eval=190, fu=215)
+2026-09-21T22:58:39.310Z D/SurveyVM [main] getEvalPrompt[Q9] -> len=323
+2026-09-21T22:58:39.312Z D/AiViewModel [DefaultDispatcher-worker-2] run[2]: mode=EVAL_JSON phase=EVAL commit=true prompt.len=322, fullPrompt.len=1911, timeoutMs=120000
+2026-09-21T22:58:39.314Z D/AiViewModel [DefaultDispatcher-worker-2] run[2]: sha(prompt)=fbf158c24b531903b3833bce8c91f260640c6a03f935ff6ca2ba308e714c70d0 sha(full)=47ad4d46d150161efa847f0c68b7bb707b9b6b9cc1a6e2c2477da703661c87d9
+2026-09-21T22:58:39.314Z I/FullPromptReview [DefaultDispatcher-worker-2] [part=000] run[2]: phase=EVAL FullPrompt
+Evaluate only the original survey target using all supplied answers.
+Return only compact JSON {"score":N,"missing_points":[],"followup_needed":false}. N must be an integer 1-100 for relevance, completeness and accuracy against the original target. Evaluate the original answer and all answered followup pairs together. Separate relevance from completeness. An answer can discuss the right topic but still be incomplete. Score 90-100 only when the respondent explicitly provides every material component requested by the Expected answer target and Question. Do not infer missing details from general knowledge, plausibility, or a bare statement that an event occurred. A concise answer may be complete. A verbose or relevant answer that omits any material requested component must score below 90. For example, saying that an event occurred without describing its requested effect is incomplete. Consistency rule: if missing_points is non-empty or followup_needed is true, score must be an integer from 1 to 89. Scores 90-100 are allowed only when missing_points=[] and followup_needed=false. Never use score 90 as a borderline value when anything is missing. For any score below 90, missing_points must contain the specific missing or ambiguous target-required information and followup_needed must be true. Otherwise missing_points is empty and followup_needed is false. Do not generate a question. Do not penalize style or request information outside the target. Write missing_points in English.
+Keep missing_points concise.
+One JSON object only; no markdown or generated question.
+INPUT:
+Expected answer target: Maximum yield loss acceptable for harvesting 20 days earlier (% or bags/acre).
+Question: If harvesting your maize 20 days earlier reduced your yield, how much yield would you be willing to lose to harvest 20 days earlier?
+Original answer: I would lose ten percent of yield.
+Answered followup pairs:
+2026-09-21T22:58:39.317Z D/LiteRtRepository [DefaultDispatcher-worker-1] [2] request start model='Gemma3n4B' prompt.len=1911 sha=47ad4d46d150161e gateWaitMs=1
+2026-09-21T22:58:39.318Z D/LiteRtRepository [DefaultDispatcher-worker-1] [part=000] [2] PROMPT (FULL) sha=47ad4d46d150161e
+Evaluate only the original survey target using all supplied answers.
+Return only compact JSON {"score":N,"missing_points":[],"followup_needed":false}. N must be an integer 1-100 for relevance, completeness and accuracy against the original target. Evaluate the original answer and all answered followup pairs together. Separate relevance from completeness. An answer can discuss the right topic but still be incomplete. Score 90-100 only when the respondent explicitly provides every material component requested by the Expected answer target and Question. Do not infer missing details from general knowledge, plausibility, or a bare statement that an event occurred. A concise answer may be complete. A verbose or relevant answer that omits any material requested component must score below 90. For example, saying that an event occurred without describing its requested effect is incomplete. Consistency rule: if missing_points is non-empty or followup_needed is true, score must be an integer from 1 to 89. Scores 90-100 are allowed only when missing_points=[] and followup_needed=false. Never use score 90 as a borderline value when anything is missing. For any score below 90, missing_points must contain the specific missing or ambiguous target-required information and followup_needed must be true. Otherwise missing_points is empty and followup_needed is false. Do not generate a question. Do not penalize style or request information outside the target. Write missing_points in English.
+Keep missing_points concise.
+One JSON object only; no markdown or generated question.
+INPUT:
+Expected answer target: Maximum yield loss acceptable for harvesting 20 days earlier (% or bags/acre).
+Question: If harvesting your maize 20 days earlier reduced your yield, how much yield would you be willing to lose to harvest 20 days earlier?
+Original answer: I would lose ten percent of yield.
+Answered followup pairs:
+2026-09-21T22:58:39.319Z D/SLM [slm-jni] initializeIfNeeded: model='Gemma3n4B' image=false audio=false
+2026-09-21T22:58:39.319Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm'
+2026-09-21T22:58:39.321Z D/LiteRtRepository [DefaultDispatcher-worker-1] [2] initializeIfNeeded ok initMs=2
+2026-09-21T22:58:39.322Z D/SLM [slm-jni] runInference: model='Gemma3n4B' textLen=1911 images=0 audio=0
+2026-09-21T22:58:39.325Z D/LiteRtLM [DefaultDispatcher-worker-4] state[run:start] key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=2 active=true terminated=false logicalDone=false cancel=false pendingCancel=false lastMsgAt=658207183 lastTermAt=658150747
+2026-09-21T22:58:39.325Z D/LiteRtLM [DefaultDispatcher-worker-4] runInference start: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=2 hasText=true originalTextLen=1911 effectiveTextLen=1911 images=0 audioClips=0
+2026-09-21T22:58:39.326Z D/LiteRtLM [DefaultDispatcher-worker-4] LiteRT-LM sendMessageAsync(text): key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=2 len=1911 maxOutputTokens=64
+2026-09-21T22:58:39.334Z D/LiteRtLM [DefaultDispatcher-worker-4] sendMessageAsync accepted: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=2 dispatchMs=9
+2026-09-21T22:58:41.219Z W/LiteRtLM [Thread-29] Inference first output: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=2 ttftMs=1894 dispatchMs=9 postDispatchTtftMs=1885 requestToFirstOutputMs=1895
+2026-09-21T22:58:41.219Z D/LiteRtLM [Thread-29] stream[key=Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm runId=2] msg#1 rawChunkLen=2 deltaLen=2 emittedChars=2
+2026-09-21T22:58:41.232Z D/LiteRtRepository [main] stream[rid=2 msg#1] done=false deltaLen=2 outLen=2 outPreview='{"' deltaPreview='{"'
+2026-09-21T22:58:41.232Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[1].preview='{"'
+2026-09-21T22:58:41.383Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[2].preview='score'
+2026-09-21T22:58:41.565Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[3].preview='":'
+2026-09-21T22:58:41.708Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[4].preview='9'
+2026-09-21T22:58:41.983Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[5].preview='0'
+2026-09-21T22:58:42.033Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[6].preview=',"'
+2026-09-21T22:58:42.217Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[7].preview='missing'
+2026-09-21T22:58:42.363Z D/LiteRtRepository [main] stream[rid=2 msg#8] done=false deltaLen=1 outLen=21 outPreview='{"score":90,"missing_' deltaPreview='_'
+2026-09-21T22:58:42.364Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[8].preview='_'
+2026-09-21T22:58:42.533Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[9].preview='points'
+2026-09-21T22:58:42.682Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[10].preview='":[],'
+2026-09-21T22:58:42.842Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[11].preview='"'
+2026-09-21T22:58:43.019Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[12].preview='follow'
+2026-09-21T22:58:43.169Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[13].preview='up'
+2026-09-21T22:58:43.349Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[14].preview='_'
+2026-09-21T22:58:43.488Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[15].preview='needed'
+2026-09-21T22:58:43.647Z D/LiteRtLM [Thread-44] stream[key=Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm runId=2] msg#16 rawChunkLen=2 deltaLen=2 emittedChars=50
+2026-09-21T22:58:43.666Z D/LiteRtRepository [main] stream[rid=2 msg#16] done=false deltaLen=2 outLen=50 outPreview='{"score":90,"missing_points":[],"followup_needed":' deltaPreview='":'
+2026-09-21T22:58:43.667Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[16].preview='":'
+2026-09-21T22:58:43.815Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[17].preview='false'
+2026-09-21T22:58:43.973Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[18].preview='}'
+2026-09-21T22:58:44.135Z D/LiteRtLM [Thread-47] state[logicalDone] key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=2 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=658211830 lastTermAt=658211993
+2026-09-21T22:58:44.136Z D/LiteRtLM [Thread-47] state[nativeDone:beforeRelease] key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=2 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=658211830 lastTermAt=658211993
+2026-09-21T22:58:44.136Z W/LiteRtLM [Thread-47] Inference timing: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=2 ttftMs=1894 dispatchMs=9 postDispatchTtftMs=1885 totalMs=4809 callbacks=18 outputChars=56 cancelled=false error=false requestTotalMs=4810
+2026-09-21T22:58:44.150Z D/LiteRtRepository [main] [2] logical done=true; responseClosed=true; waiting native cleanup
+2026-09-21T22:58:44.150Z D/LiteRtRepository [main] [2] native cleanup safepoint
+2026-09-21T22:58:44.151Z D/SLM [slm-jni] resetConversationAndWait: model='Gemma3n4B' image=false audio=false
+2026-09-21T22:58:44.152Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] stats: chunks=18, chars=56, raw.len=56
+2026-09-21T22:58:44.155Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] sha(raw)=dcd0c5a373a7fdfb4ff5ba981e14b999696c186ccc8b7f8c34146f132431b088
+2026-09-21T22:58:44.156Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] rawVisible='{"score":90,"missing_points":[],"followup_needed":false}'
+2026-09-21T22:58:44.163Z D/AiViewModel [DefaultDispatcher-worker-4] run[2]: EVAL_JSON parsed score=90 followups=0 fu0=''
+2026-09-21T22:58:44.163Z D/AiViewModel [DefaultDispatcher-worker-4] stepHistory+ runId=2 phase=EVAL mode=EVAL_JSON raw.len=56 score=90 FU=0 FU0='<none>' timeout=false err=null
+2026-09-21T22:58:44.163Z I/AiViewModel [DefaultDispatcher-worker-4] run[2] done: phase=EVAL mode=EVAL_JSON score=90 FU0.len=0 FU0.sha16=none commit=true err=<none>
+2026-09-21T22:58:44.164Z I/FullTextOut [DefaultDispatcher-worker-4] [part=000] run[2]: RawTextOut
+{"score":90,"missing_points":[],"followup_needed":false}
+2026-09-21T22:58:44.164Z D/LiteRtRepository [DefaultDispatcher-worker-2] [2] Conversation reset completed after safepoint
+2026-09-21T22:58:44.164Z D/AiViewModel [DefaultDispatcher-worker-4] chain2: step2 skipped (score=90, followups=0, timedOut=false, rawPreview='{"score":90,"missing_points":[],"followup_needed":false}')
+2026-09-21T22:58:44.165Z D/LiteRtRepository [DefaultDispatcher-worker-4] [part=000] [2] FINALIZE: native-terminated
+=== AI TRACE STATS (LiteRtRepository) ===
+rid=2 model='Gemma3n4B' reason=native-terminated
+totalMs=4849 inferenceMs=4843 firstTokenMs=1910
+logicalDone=true logicalDoneAt=658212008
+nativeTerminated=true cancelTag='null'
+lastDeltaMsAgo=192 lastEventMsAgo=14
+chunks=18 emittedChars=56 capturedAll=true out.len=56
+=== OUTPUT (FULL) ===
+{"score":90,"missing_points":[],"followup_needed":false}
+2026-09-21T22:59:13.939Z D/SurveyVM [main] push -> Q10, navSize=11, stackSize=11
+2026-09-21T22:59:13.951Z D/SurveyVM [main] hasTwoStepPrompt[Q10] -> true (eval=195, fu=220)
+2026-09-21T22:59:30.743Z D/SurveyVM [main] getEvalPrompt[Q10] -> len=288
+2026-09-21T22:59:30.748Z D/AiViewModel [DefaultDispatcher-worker-4] run[3]: mode=EVAL_JSON phase=EVAL commit=true prompt.len=287, fullPrompt.len=1876, timeoutMs=120000
+2026-09-21T22:59:30.755Z D/AiViewModel [DefaultDispatcher-worker-4] run[3]: sha(prompt)=9b96cf60b6759f007e973b17e016b5c295886393ed946ff741937ef62979a147 sha(full)=3c589932c06c9a7e72a5c82cf3bf4855f20fe7b27c89d1a21ed75fc457c1ab1a
+2026-09-21T22:59:30.756Z I/FullPromptReview [DefaultDispatcher-worker-4] [part=000] run[3]: phase=EVAL FullPrompt
+Evaluate only the original survey target using all supplied answers.
+Return only compact JSON {"score":N,"missing_points":[],"followup_needed":false}. N must be an integer 1-100 for relevance, completeness and accuracy against the original target. Evaluate the original answer and all answered followup pairs together. Separate relevance from completeness. An answer can discuss the right topic but still be incomplete. Score 90-100 only when the respondent explicitly provides every material component requested by the Expected answer target and Question. Do not infer missing details from general knowledge, plausibility, or a bare statement that an event occurred. A concise answer may be complete. A verbose or relevant answer that omits any material requested component must score below 90. For example, saying that an event occurred without describing its requested effect is incomplete. Consistency rule: if missing_points is non-empty or followup_needed is true, score must be an integer from 1 to 89. Scores 90-100 are allowed only when missing_points=[] and followup_needed=false. Never use score 90 as a borderline value when anything is missing. For any score below 90, missing_points must contain the specific missing or ambiguous target-required information and followup_needed must be true. Otherwise missing_points is empty and followup_needed is false. Do not generate a question. Do not penalize style or request information outside the target. Write missing_points in English.
+Keep missing_points concise.
+One JSON object only; no markdown or generated question.
+INPUT:
+Expected answer target: A clear pest/disease damage threshold that would trigger switching maize varieties.
+Question: How much pest or disease damage would make you switch to a different maize variety?
+Original answer: I would switch after twenty percent damage.
+Answered followup pairs:
+2026-09-21T22:59:30.759Z D/LiteRtRepository [DefaultDispatcher-worker-4] [3] request start model='Gemma3n4B' prompt.len=1876 sha=3c589932c06c9a7e gateWaitMs=0
+2026-09-21T22:59:30.759Z D/LiteRtRepository [DefaultDispatcher-worker-4] [part=000] [3] PROMPT (FULL) sha=3c589932c06c9a7e
+Evaluate only the original survey target using all supplied answers.
+Return only compact JSON {"score":N,"missing_points":[],"followup_needed":false}. N must be an integer 1-100 for relevance, completeness and accuracy against the original target. Evaluate the original answer and all answered followup pairs together. Separate relevance from completeness. An answer can discuss the right topic but still be incomplete. Score 90-100 only when the respondent explicitly provides every material component requested by the Expected answer target and Question. Do not infer missing details from general knowledge, plausibility, or a bare statement that an event occurred. A concise answer may be complete. A verbose or relevant answer that omits any material requested component must score below 90. For example, saying that an event occurred without describing its requested effect is incomplete. Consistency rule: if missing_points is non-empty or followup_needed is true, score must be an integer from 1 to 89. Scores 90-100 are allowed only when missing_points=[] and followup_needed=false. Never use score 90 as a borderline value when anything is missing. For any score below 90, missing_points must contain the specific missing or ambiguous target-required information and followup_needed must be true. Otherwise missing_points is empty and followup_needed is false. Do not generate a question. Do not penalize style or request information outside the target. Write missing_points in English.
+Keep missing_points concise.
+One JSON object only; no markdown or generated question.
+INPUT:
+Expected answer target: A clear pest/disease damage threshold that would trigger switching maize varieties.
+Question: How much pest or disease damage would make you switch to a different maize variety?
+Original answer: I would switch after twenty percent damage.
+Answered followup pairs:
+2026-09-21T22:59:30.760Z D/SLM [slm-jni] initializeIfNeeded: model='Gemma3n4B' image=false audio=false
+2026-09-21T22:59:30.761Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm'
+2026-09-21T22:59:30.762Z D/LiteRtRepository [DefaultDispatcher-worker-4] [3] initializeIfNeeded ok initMs=3
+2026-09-21T22:59:30.765Z D/SLM [slm-jni] runInference: model='Gemma3n4B' textLen=1876 images=0 audio=0
+2026-09-21T22:59:30.766Z D/LiteRtLM [DefaultDispatcher-worker-3] state[run:start] key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=3 active=true terminated=false logicalDone=false cancel=false pendingCancel=false lastMsgAt=658258625 lastTermAt=658211993
+2026-09-21T22:59:30.767Z D/LiteRtLM [DefaultDispatcher-worker-3] runInference start: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=3 hasText=true originalTextLen=1876 effectiveTextLen=1876 images=0 audioClips=0
+2026-09-21T22:59:30.768Z D/LiteRtLM [DefaultDispatcher-worker-3] LiteRT-LM sendMessageAsync(text): key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=3 len=1876 maxOutputTokens=64
+2026-09-21T22:59:30.783Z D/LiteRtLM [DefaultDispatcher-worker-3] sendMessageAsync accepted: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=3 dispatchMs=15
+2026-09-21T22:59:32.699Z W/LiteRtLM [Thread-48] Inference first output: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=3 ttftMs=1931 dispatchMs=15 postDispatchTtftMs=1916 requestToFirstOutputMs=1933
+2026-09-21T22:59:32.699Z D/LiteRtLM [Thread-48] stream[key=Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm runId=3] msg#1 rawChunkLen=2 deltaLen=2 emittedChars=2
+2026-09-21T22:59:32.700Z D/LiteRtRepository [main] stream[rid=3 msg#1] done=false deltaLen=2 outLen=2 outPreview='{"' deltaPreview='{"'
+2026-09-21T22:59:32.700Z D/AiViewModel [DefaultDispatcher-worker-3] run[3] chunk[1].preview='{"'
+2026-09-21T22:59:32.859Z D/AiViewModel [DefaultDispatcher-worker-3] run[3] chunk[2].preview='score'
+2026-09-21T22:59:33.019Z D/AiViewModel [DefaultDispatcher-worker-3] run[3] chunk[3].preview='":'
+2026-09-21T22:59:33.183Z D/AiViewModel [DefaultDispatcher-worker-3] run[3] chunk[4].preview='9'
+2026-09-21T22:59:33.336Z D/AiViewModel [DefaultDispatcher-worker-3] run[3] chunk[5].preview='5'
+2026-09-21T22:59:33.501Z D/AiViewModel [DefaultDispatcher-worker-3] run[3] chunk[6].preview=',"'
+2026-09-21T22:59:33.655Z D/AiViewModel [DefaultDispatcher-worker-3] run[3] chunk[7].preview='missing'
+2026-09-21T22:59:33.817Z D/LiteRtRepository [main] stream[rid=3 msg#8] done=false deltaLen=1 outLen=21 outPreview='{"score":95,"missing_' deltaPreview='_'
+2026-09-21T22:59:33.817Z D/AiViewModel [DefaultDispatcher-worker-3] run[3] chunk[8].preview='_'
+2026-09-21T22:59:33.985Z D/AiViewModel [DefaultDispatcher-worker-3] run[3] chunk[9].preview='points'
+2026-09-21T22:59:34.134Z D/AiViewModel [DefaultDispatcher-worker-3] run[3] chunk[10].preview='":[],'
+2026-09-21T22:59:34.303Z D/AiViewModel [DefaultDispatcher-worker-3] run[3] chunk[11].preview='"'
+2026-09-21T22:59:34.450Z D/AiViewModel [DefaultDispatcher-worker-3] run[3] chunk[12].preview='follow'
+2026-09-21T22:59:34.621Z D/AiViewModel [DefaultDispatcher-worker-3] run[3] chunk[13].preview='up'
+2026-09-21T22:59:34.774Z D/AiViewModel [DefaultDispatcher-worker-3] run[3] chunk[14].preview='_'
+2026-09-21T22:59:34.936Z D/AiViewModel [DefaultDispatcher-worker-4] run[3] chunk[15].preview='needed'
+2026-09-21T22:59:35.094Z D/LiteRtLM [Thread-63] stream[key=Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm runId=3] msg#16 rawChunkLen=2 deltaLen=2 emittedChars=50
+2026-09-21T22:59:35.101Z D/LiteRtRepository [main] stream[rid=3 msg#16] done=false deltaLen=2 outLen=50 outPreview='{"score":95,"missing_points":[],"followup_needed":' deltaPreview='":'
+2026-09-21T22:59:35.102Z D/AiViewModel [DefaultDispatcher-worker-4] run[3] chunk[16].preview='":'
+2026-09-21T22:59:35.269Z D/AiViewModel [DefaultDispatcher-worker-4] run[3] chunk[17].preview='false'
+2026-09-21T22:59:35.437Z D/AiViewModel [DefaultDispatcher-worker-4] run[3] chunk[18].preview='}'
+2026-09-21T22:59:35.584Z D/LiteRtLM [Thread-66] state[logicalDone] key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=3 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=658263282 lastTermAt=658263442
+2026-09-21T22:59:35.584Z D/LiteRtLM [Thread-66] state[nativeDone:beforeRelease] key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=3 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=658263282 lastTermAt=658263442
+2026-09-21T22:59:35.584Z W/LiteRtLM [Thread-66] Inference timing: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=3 ttftMs=1931 dispatchMs=15 postDispatchTtftMs=1916 totalMs=4816 callbacks=18 outputChars=56 cancelled=false error=false requestTotalMs=4818
+2026-09-21T22:59:35.586Z D/LiteRtRepository [main] [3] logical done=true; responseClosed=true; waiting native cleanup
+2026-09-21T22:59:35.586Z D/LiteRtRepository [main] [3] native cleanup safepoint
+2026-09-21T22:59:35.586Z D/SLM [slm-jni] resetConversationAndWait: model='Gemma3n4B' image=false audio=false
+2026-09-21T22:59:35.590Z D/AiViewModel [DefaultDispatcher-worker-5] run[3] stats: chunks=18, chars=56, raw.len=56
+2026-09-21T22:59:35.591Z D/LiteRtRepository [DefaultDispatcher-worker-1] [3] Conversation reset completed after safepoint
+2026-09-21T22:59:35.593Z D/LiteRtRepository [DefaultDispatcher-worker-2] [part=000] [3] FINALIZE: native-terminated
+=== AI TRACE STATS (LiteRtRepository) ===
+rid=3 model='Gemma3n4B' reason=native-terminated
+totalMs=4834 inferenceMs=4830 firstTokenMs=1937
+logicalDone=true logicalDoneAt=658263444
+nativeTerminated=true cancelTag='null'
+lastDeltaMsAgo=156 lastEventMsAgo=7
+chunks=18 emittedChars=56 capturedAll=true out.len=56
+=== OUTPUT (FULL) ===
+{"score":95,"missing_points":[],"followup_needed":false}
+2026-09-21T22:59:35.593Z D/AiViewModel [DefaultDispatcher-worker-5] run[3] sha(raw)=d582f4f94d38ce300b82f3aeedbda2d18275f3f88b20e7a1ca4fadec505e90e3
+2026-09-21T22:59:35.594Z D/AiViewModel [DefaultDispatcher-worker-5] run[3] rawVisible='{"score":95,"missing_points":[],"followup_needed":false}'
+2026-09-21T22:59:35.600Z D/AiViewModel [DefaultDispatcher-worker-5] run[3]: EVAL_JSON parsed score=95 followups=0 fu0=''
+2026-09-21T22:59:35.600Z D/AiViewModel [DefaultDispatcher-worker-5] stepHistory+ runId=3 phase=EVAL mode=EVAL_JSON raw.len=56 score=95 FU=0 FU0='<none>' timeout=false err=null
+2026-09-21T22:59:35.601Z I/AiViewModel [DefaultDispatcher-worker-5] run[3] done: phase=EVAL mode=EVAL_JSON score=95 FU0.len=0 FU0.sha16=none commit=true err=<none>
+2026-09-21T22:59:35.601Z I/FullTextOut [DefaultDispatcher-worker-5] [part=000] run[3]: RawTextOut
+{"score":95,"missing_points":[],"followup_needed":false}
+2026-09-21T22:59:35.601Z D/AiViewModel [DefaultDispatcher-worker-5] chain2: step2 skipped (score=95, followups=0, timedOut=false, rawPreview='{"score":95,"missing_points":[],"followup_needed":false}')
+2026-09-21T23:00:33.698Z D/SurveyVM [main] push -> Q11, navSize=12, stackSize=12
+2026-09-21T23:00:33.711Z D/SurveyVM [main] hasTwoStepPrompt[Q11] -> true (eval=219, fu=244)
+2026-09-21T23:00:52.380Z D/SurveyVM [main] getEvalPrompt[Q11] -> len=329
+2026-09-21T23:00:52.383Z D/AiViewModel [DefaultDispatcher-worker-5] run[4]: mode=EVAL_JSON phase=EVAL commit=true prompt.len=328, fullPrompt.len=1917, timeoutMs=120000
+2026-09-21T23:00:52.385Z D/AiViewModel [DefaultDispatcher-worker-5] run[4]: sha(prompt)=0af627ba31162c47a5977d159e347b64f50d256eb371a4ee837bc8466430fec6 sha(full)=5dea63c5e82400004dc84b6b93334b1a87cc2aa7865e4aec61ed487ef97db953
+2026-09-21T23:00:52.385Z I/FullPromptReview [DefaultDispatcher-worker-5] [part=000] run[4]: phase=EVAL FullPrompt
+Evaluate only the original survey target using all supplied answers.
+Return only compact JSON {"score":N,"missing_points":[],"followup_needed":false}. N must be an integer 1-100 for relevance, completeness and accuracy against the original target. Evaluate the original answer and all answered followup pairs together. Separate relevance from completeness. An answer can discuss the right topic but still be incomplete. Score 90-100 only when the respondent explicitly provides every material component requested by the Expected answer target and Question. Do not infer missing details from general knowledge, plausibility, or a bare statement that an event occurred. A concise answer may be complete. A verbose or relevant answer that omits any material requested component must score below 90. For example, saying that an event occurred without describing its requested effect is incomplete. Consistency rule: if missing_points is non-empty or followup_needed is true, score must be an integer from 1 to 89. Scores 90-100 are allowed only when missing_points=[] and followup_needed=false. Never use score 90 as a borderline value when anything is missing. For any score below 90, missing_points must contain the specific missing or ambiguous target-required information and followup_needed must be true. Otherwise missing_points is empty and followup_needed is false. Do not generate a question. Do not penalize style or request information outside the target. Write missing_points in English.
+Keep missing_points concise.
+One JSON object only; no markdown or generated question.
+INPUT:
+Expected answer target: Priority traits a new maize variety must have to replace the current one, ideally with a measurable target.
+Question: What traits would a new maize variety need to have for you to plant it instead of your current one?
+Original answer: It should resist pests and give high yields.
+Answered followup pairs:
+2026-09-21T23:00:52.387Z D/LiteRtRepository [DefaultDispatcher-worker-5] [4] request start model='Gemma3n4B' prompt.len=1917 sha=5dea63c5e8240000 gateWaitMs=1
+2026-09-21T23:00:52.387Z D/LiteRtRepository [DefaultDispatcher-worker-5] [part=000] [4] PROMPT (FULL) sha=5dea63c5e8240000
+Evaluate only the original survey target using all supplied answers.
+Return only compact JSON {"score":N,"missing_points":[],"followup_needed":false}. N must be an integer 1-100 for relevance, completeness and accuracy against the original target. Evaluate the original answer and all answered followup pairs together. Separate relevance from completeness. An answer can discuss the right topic but still be incomplete. Score 90-100 only when the respondent explicitly provides every material component requested by the Expected answer target and Question. Do not infer missing details from general knowledge, plausibility, or a bare statement that an event occurred. A concise answer may be complete. A verbose or relevant answer that omits any material requested component must score below 90. For example, saying that an event occurred without describing its requested effect is incomplete. Consistency rule: if missing_points is non-empty or followup_needed is true, score must be an integer from 1 to 89. Scores 90-100 are allowed only when missing_points=[] and followup_needed=false. Never use score 90 as a borderline value when anything is missing. For any score below 90, missing_points must contain the specific missing or ambiguous target-required information and followup_needed must be true. Otherwise missing_points is empty and followup_needed is false. Do not generate a question. Do not penalize style or request information outside the target. Write missing_points in English.
+Keep missing_points concise.
+One JSON object only; no markdown or generated question.
+INPUT:
+Expected answer target: Priority traits a new maize variety must have to replace the current one, ideally with a measurable target.
+Question: What traits would a new maize variety need to have for you to plant it instead of your current one?
+Original answer: It should resist pests and give high yields.
+Answered followup pairs:
+2026-09-21T23:00:52.388Z D/SLM [slm-jni] initializeIfNeeded: model='Gemma3n4B' image=false audio=false
+2026-09-21T23:00:52.389Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm'
+2026-09-21T23:00:52.392Z D/LiteRtRepository [DefaultDispatcher-worker-5] [4] initializeIfNeeded ok initMs=5
+2026-09-21T23:00:52.394Z D/SLM [slm-jni] runInference: model='Gemma3n4B' textLen=1917 images=0 audio=0
+2026-09-21T23:00:52.395Z D/LiteRtLM [DefaultDispatcher-worker-3] state[run:start] key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=4 active=true terminated=false logicalDone=false cancel=false pendingCancel=false lastMsgAt=658340254 lastTermAt=658263442
+2026-09-21T23:00:52.396Z D/LiteRtLM [DefaultDispatcher-worker-3] runInference start: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=4 hasText=true originalTextLen=1917 effectiveTextLen=1917 images=0 audioClips=0
+2026-09-21T23:00:52.396Z D/LiteRtLM [DefaultDispatcher-worker-3] LiteRT-LM sendMessageAsync(text): key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=4 len=1917 maxOutputTokens=64
+2026-09-21T23:00:52.407Z D/LiteRtLM [DefaultDispatcher-worker-3] sendMessageAsync accepted: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=4 dispatchMs=12
+2026-09-21T23:00:54.275Z W/LiteRtLM [Thread-67] Inference first output: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=4 ttftMs=1879 dispatchMs=12 postDispatchTtftMs=1867 requestToFirstOutputMs=1879
+2026-09-21T23:00:54.275Z D/LiteRtLM [Thread-67] stream[key=Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm runId=4] msg#1 rawChunkLen=2 deltaLen=2 emittedChars=2
+2026-09-21T23:00:54.278Z D/LiteRtRepository [main] stream[rid=4 msg#1] done=false deltaLen=2 outLen=2 outPreview='{"' deltaPreview='{"'
+2026-09-21T23:00:54.279Z D/AiViewModel [DefaultDispatcher-worker-3] run[4] chunk[1].preview='{"'
+2026-09-21T23:00:54.439Z D/AiViewModel [DefaultDispatcher-worker-2] run[4] chunk[2].preview='score'
+2026-09-21T23:00:54.599Z D/AiViewModel [DefaultDispatcher-worker-2] run[4] chunk[3].preview='":'
+2026-09-21T23:00:54.765Z D/AiViewModel [DefaultDispatcher-worker-2] run[4] chunk[4].preview='␠'
+2026-09-21T23:00:54.921Z D/AiViewModel [DefaultDispatcher-worker-2] run[4] chunk[5].preview='7'
+2026-09-21T23:00:55.082Z D/AiViewModel [DefaultDispatcher-worker-2] run[4] chunk[6].preview='5'
+2026-09-21T23:00:55.246Z D/AiViewModel [DefaultDispatcher-worker-2] run[4] chunk[7].preview=','
+2026-09-21T23:00:55.401Z D/LiteRtRepository [main] stream[rid=4 msg#8] done=false deltaLen=2 outLen=15 outPreview='{"score": 75, "' deltaPreview=' "'
+2026-09-21T23:00:55.402Z D/AiViewModel [DefaultDispatcher-worker-2] run[4] chunk[8].preview='␠"'
+2026-09-21T23:00:55.583Z D/AiViewModel [DefaultDispatcher-worker-2] run[4] chunk[9].preview='missing'
+2026-09-21T23:00:55.730Z D/AiViewModel [DefaultDispatcher-worker-2] run[4] chunk[10].preview='_'
+2026-09-21T23:00:55.898Z D/AiViewModel [DefaultDispatcher-worker-2] run[4] chunk[11].preview='points'
+2026-09-21T23:00:56.052Z D/AiViewModel [DefaultDispatcher-worker-2] run[4] chunk[12].preview='":'
+2026-09-21T23:00:56.231Z D/AiViewModel [DefaultDispatcher-worker-2] run[4] chunk[13].preview='␠["'
+2026-09-21T23:00:56.370Z D/AiViewModel [DefaultDispatcher-worker-2] run[4] chunk[14].preview='Meas'
+2026-09-21T23:00:56.563Z D/AiViewModel [DefaultDispatcher-worker-2] run[4] chunk[15].preview='urable'
+2026-09-21T23:00:56.731Z D/LiteRtLM [Thread-82] stream[key=Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm runId=4] msg#16 rawChunkLen=6 deltaLen=6 emittedChars=50
+2026-09-21T23:00:56.747Z D/LiteRtRepository [main] stream[rid=4 msg#16] done=false deltaLen=6 outLen=50 outPreview='{"score": 75, "missing_points": ["Measurable yield' deltaPreview=' yield'
+2026-09-21T23:00:56.747Z D/AiViewModel [DefaultDispatcher-worker-3] run[4] chunk[16].preview='␠yield'
+2026-09-21T23:00:56.893Z D/AiViewModel [DefaultDispatcher-worker-2] run[4] chunk[17].preview='␠target'
+2026-09-21T23:00:57.063Z D/AiViewModel [DefaultDispatcher-worker-2] run[4] chunk[18].preview='"],'
+2026-09-21T23:00:57.221Z D/AiViewModel [DefaultDispatcher-worker-2] run[4] chunk[19].preview='␠"'
+2026-09-21T23:00:57.380Z D/AiViewModel [DefaultDispatcher-worker-2] run[4] chunk[20].preview='follow'
+2026-09-21T23:00:57.540Z D/AiViewModel [DefaultDispatcher-worker-2] run[4] chunk[21].preview='up'
+2026-09-21T23:00:57.716Z D/AiViewModel [DefaultDispatcher-worker-2] run[4] chunk[22].preview='_'
+2026-09-21T23:00:57.860Z D/AiViewModel [DefaultDispatcher-worker-2] run[4] chunk[23].preview='needed'
+2026-09-21T23:00:58.033Z D/LiteRtRepository [main] stream[rid=4 msg#24] done=false deltaLen=2 outLen=79 outPreview='{"score": 75, "missing_points": ["Measurable yield target"], "followup_needed":' deltaPreview='":'
+2026-09-21T23:00:58.034Z D/AiViewModel [DefaultDispatcher-worker-2] run[4] chunk[24].preview='":'
+2026-09-21T23:00:58.184Z D/AiViewModel [DefaultDispatcher-worker-2] run[4] chunk[25].preview='␠true'
+2026-09-21T23:00:58.348Z D/AiViewModel [DefaultDispatcher-worker-2] run[4] chunk[26].preview='}'
+2026-09-21T23:00:58.502Z D/LiteRtLM [Thread-93] state[logicalDone] key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=4 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=658346202 lastTermAt=658346361
+2026-09-21T23:00:58.503Z D/LiteRtLM [Thread-93] state[nativeDone:beforeRelease] key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=4 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=658346202 lastTermAt=658346361
+2026-09-21T23:00:58.503Z W/LiteRtLM [Thread-93] Inference timing: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=4 ttftMs=1879 dispatchMs=12 postDispatchTtftMs=1867 totalMs=6107 callbacks=26 outputChars=85 cancelled=false error=false requestTotalMs=6107
+2026-09-21T23:00:58.504Z D/LiteRtRepository [main] [4] logical done=true; responseClosed=true; waiting native cleanup
+2026-09-21T23:00:58.504Z D/LiteRtRepository [main] [4] native cleanup safepoint
+2026-09-21T23:00:58.505Z D/SLM [slm-jni] resetConversationAndWait: model='Gemma3n4B' image=false audio=false
+2026-09-21T23:00:58.506Z D/AiViewModel [DefaultDispatcher-worker-3] run[4] stats: chunks=26, chars=85, raw.len=85
+2026-09-21T23:00:58.509Z D/AiViewModel [DefaultDispatcher-worker-3] run[4] sha(raw)=7b79706e90d82cb6bf5611b7d65a162bafa93b382d032c2f1f26d9e2706d5405
+2026-09-21T23:00:58.510Z D/AiViewModel [DefaultDispatcher-worker-3] run[4] rawVisible='{"score":␠75,␠"missing_points":␠["Measurable␠yield␠target"],␠"followup_needed":␠true}'
+2026-09-21T23:00:58.512Z D/LiteRtRepository [DefaultDispatcher-worker-1] [4] Conversation reset completed after safepoint
+2026-09-21T23:00:58.513Z D/LiteRtRepository [DefaultDispatcher-worker-5] [part=000] [4] FINALIZE: native-terminated
+=== AI TRACE STATS (LiteRtRepository) ===
+rid=4 model='Gemma3n4B' reason=native-terminated
+totalMs=6126 inferenceMs=6119 firstTokenMs=1885
+logicalDone=true logicalDoneAt=658346363
+nativeTerminated=true cancelTag='null'
+lastDeltaMsAgo=165 lastEventMsAgo=8
+chunks=26 emittedChars=85 capturedAll=true out.len=85
+=== OUTPUT (FULL) ===
+{"score": 75, "missing_points": ["Measurable yield target"], "followup_needed": true}
+2026-09-21T23:00:58.514Z D/AiViewModel [DefaultDispatcher-worker-3] run[4]: EVAL_JSON parsed score=75 followups=0 fu0=''
+2026-09-21T23:00:58.514Z D/AiViewModel [DefaultDispatcher-worker-3] stepHistory+ runId=4 phase=EVAL mode=EVAL_JSON raw.len=85 score=75 FU=0 FU0='<none>' timeout=false err=null
+2026-09-21T23:00:58.514Z I/AiViewModel [DefaultDispatcher-worker-3] run[4] done: phase=EVAL mode=EVAL_JSON score=75 FU0.len=0 FU0.sha16=none commit=true err=<none>
+2026-09-21T23:00:58.514Z I/FullTextOut [DefaultDispatcher-worker-3] [part=000] run[4]: RawTextOut
+{"score": 75, "missing_points": ["Measurable yield target"], "followup_needed": true}
+2026-09-21T23:00:58.515Z D/SurveyVM [DefaultDispatcher-worker-3] getFollowupPrompt[Q11] -> len=426 evalLen=85
+2026-09-21T23:00:58.517Z D/AiViewModel [DefaultDispatcher-worker-3] run[5]: mode=FOLLOWUP_JSON_OR_TEXT phase=FOLLOWUP commit=false prompt.len=426, fullPrompt.len=963, timeoutMs=120000
+2026-09-21T23:00:58.519Z D/AiViewModel [DefaultDispatcher-worker-3] run[5]: sha(prompt)=0e8855bf8881fbdd1d2779a21a1d91a8b8df9e6fca9ac1a27bf83bd4579afef5 sha(full)=d538056ce1d1e66d932fd8b5bbd65875d3ce3809cd911bede69aa30626320b0f
+2026-09-21T23:00:58.519Z I/FullPromptReview [DefaultDispatcher-worker-3] [part=000] run[5]: phase=FOLLOWUP FullPrompt
+Evaluate only the original survey target using all supplied answers.
+Generate exactly one short English question addressing one unresolved target-required deficiency in EVAL_JSON. Use the original target, original answer and accumulated answered followup pairs. Do not repeat an earlier question or ask for information already provided. Never add new objectives. Output only the question on one line; no JSON, score, analysis, labels, or quotes.
+Keep the question short and single-scope.
+Exactly one English question on one line.
+INPUT:
+Expected answer target: Priority traits a new maize variety must have to replace the current one, ideally with a measurable target.
+Question: What traits would a new maize variety need to have for you to plant it instead of your current one?
+Original answer: It should resist pests and give high yields.
+Answered followup pairs: 
+EVAL_JSON: {"score": 75, "missing_points": ["Measurable yield target"], "followup_needed": true}
+2026-09-21T23:00:58.521Z D/LiteRtRepository [DefaultDispatcher-worker-3] [5] request start model='Gemma3n4B' prompt.len=963 sha=d538056ce1d1e66d gateWaitMs=1
+2026-09-21T23:00:58.522Z D/LiteRtRepository [DefaultDispatcher-worker-3] [part=000] [5] PROMPT (FULL) sha=d538056ce1d1e66d
+Evaluate only the original survey target using all supplied answers.
+Generate exactly one short English question addressing one unresolved target-required deficiency in EVAL_JSON. Use the original target, original answer and accumulated answered followup pairs. Do not repeat an earlier question or ask for information already provided. Never add new objectives. Output only the question on one line; no JSON, score, analysis, labels, or quotes.
+Keep the question short and single-scope.
+Exactly one English question on one line.
+INPUT:
+Expected answer target: Priority traits a new maize variety must have to replace the current one, ideally with a measurable target.
+Question: What traits would a new maize variety need to have for you to plant it instead of your current one?
+Original answer: It should resist pests and give high yields.
+Answered followup pairs: 
+EVAL_JSON: {"score": 75, "missing_points": ["Measurable yield target"], "followup_needed": true}
+2026-09-21T23:00:58.523Z D/SLM [slm-jni] initializeIfNeeded: model='Gemma3n4B' image=false audio=false
+2026-09-21T23:00:58.523Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm'
+2026-09-21T23:00:58.524Z D/LiteRtRepository [DefaultDispatcher-worker-3] [5] initializeIfNeeded ok initMs=1
+2026-09-21T23:00:58.525Z D/SLM [slm-jni] runInference: model='Gemma3n4B' textLen=963 images=0 audio=0
+2026-09-21T23:00:58.527Z D/LiteRtLM [DefaultDispatcher-worker-5] state[run:start] key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=5 active=true terminated=false logicalDone=false cancel=false pendingCancel=false lastMsgAt=658346385 lastTermAt=658346361
+2026-09-21T23:00:58.530Z D/LiteRtLM [DefaultDispatcher-worker-5] runInference start: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=5 hasText=true originalTextLen=963 effectiveTextLen=963 images=0 audioClips=0
+2026-09-21T23:00:58.532Z D/LiteRtLM [DefaultDispatcher-worker-5] LiteRT-LM sendMessageAsync(text): key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=5 len=963 maxOutputTokens=64
+2026-09-21T23:00:58.543Z D/LiteRtLM [DefaultDispatcher-worker-5] sendMessageAsync accepted: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=5 dispatchMs=12
+2026-09-21T23:00:59.604Z W/LiteRtLM [Thread-94] Inference first output: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=5 ttftMs=1073 dispatchMs=12 postDispatchTtftMs=1061 requestToFirstOutputMs=1078
+2026-09-21T23:00:59.604Z D/LiteRtLM [Thread-94] stream[key=Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm runId=5] msg#1 rawChunkLen=4 deltaLen=4 emittedChars=4
+2026-09-21T23:00:59.618Z D/LiteRtRepository [main] stream[rid=5 msg#1] done=false deltaLen=4 outLen=4 outPreview='What' deltaPreview='What'
+2026-09-21T23:00:59.618Z D/AiViewModel [DefaultDispatcher-worker-5] run[5] chunk[1].preview='What'
+2026-09-21T23:00:59.767Z D/AiViewModel [DefaultDispatcher-worker-5] run[5] chunk[2].preview='␠specific'
+2026-09-21T23:00:59.924Z D/AiViewModel [DefaultDispatcher-worker-5] run[5] chunk[3].preview='␠yield'
+2026-09-21T23:01:00.086Z D/AiViewModel [DefaultDispatcher-worker-5] run[5] chunk[4].preview='␠target'
+2026-09-21T23:01:00.251Z D/AiViewModel [DefaultDispatcher-worker-5] run[5] chunk[5].preview='␠would'
+2026-09-21T23:01:00.410Z D/AiViewModel [DefaultDispatcher-worker-5] run[5] chunk[6].preview='␠make'
+2026-09-21T23:01:00.585Z D/AiViewModel [DefaultDispatcher-worker-5] run[5] chunk[7].preview='␠a'
+2026-09-21T23:01:00.736Z D/LiteRtRepository [main] stream[rid=5 msg#8] done=false deltaLen=4 outLen=43 outPreview='What specific yield target would make a new' deltaPreview=' new'
+2026-09-21T23:01:00.736Z D/AiViewModel [DefaultDispatcher-worker-5] run[5] chunk[8].preview='␠new'
+2026-09-21T23:01:00.903Z D/AiViewModel [DefaultDispatcher-worker-5] run[5] chunk[9].preview='␠maize'
+2026-09-21T23:01:01.069Z D/AiViewModel [DefaultDispatcher-worker-5] run[5] chunk[10].preview='␠variety'
+2026-09-21T23:01:01.220Z D/AiViewModel [DefaultDispatcher-worker-5] run[5] chunk[11].preview='␠preferable'
+2026-09-21T23:01:01.402Z D/AiViewModel [DefaultDispatcher-worker-5] run[5] chunk[12].preview='␠to'
+2026-09-21T23:01:01.553Z D/AiViewModel [DefaultDispatcher-worker-5] run[5] chunk[13].preview='␠your'
+2026-09-21T23:01:01.743Z D/AiViewModel [DefaultDispatcher-worker-5] run[5] chunk[14].preview='␠current'
+2026-09-21T23:01:01.878Z D/AiViewModel [DefaultDispatcher-worker-5] run[5] chunk[15].preview='␠one'
+2026-09-21T23:01:02.036Z D/LiteRtLM [Thread-109] stream[key=Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm runId=5] msg#16 rawChunkLen=1 deltaLen=1 emittedChars=89
+2026-09-21T23:01:02.053Z D/LiteRtRepository [main] stream[rid=5 msg#16] done=false deltaLen=1 outLen=89 outPreview='What specific yield target would make a new maize variety preferable to your current one?' deltaPreview='?'
+2026-09-21T23:01:02.053Z D/AiViewModel [DefaultDispatcher-worker-5] run[5] chunk[16].preview='?'
+2026-09-21T23:01:02.192Z D/LiteRtLM [Thread-110] state[logicalDone] key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=5 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=658349894 lastTermAt=658350051
+2026-09-21T23:01:02.193Z D/LiteRtLM [Thread-110] state[nativeDone:beforeRelease] key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=5 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=658349894 lastTermAt=658350051
+2026-09-21T23:01:02.193Z W/LiteRtLM [Thread-110] Inference timing: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=5 ttftMs=1073 dispatchMs=12 postDispatchTtftMs=1061 totalMs=3661 callbacks=16 outputChars=89 cancelled=false error=false requestTotalMs=3666
+2026-09-21T23:01:02.195Z D/LiteRtRepository [main] [5] logical done=true; responseClosed=true; waiting native cleanup
+2026-09-21T23:01:02.195Z D/LiteRtRepository [main] [5] native cleanup safepoint
+2026-09-21T23:01:02.196Z D/SLM [slm-jni] resetConversationAndWait: model='Gemma3n4B' image=false audio=false
+2026-09-21T23:01:02.197Z D/AiViewModel [DefaultDispatcher-worker-3] run[5] stats: chunks=16, chars=89, raw.len=89
+2026-09-21T23:01:02.201Z D/AiViewModel [DefaultDispatcher-worker-3] run[5] sha(raw)=eceb9e97cbcf4fed77d8886e3646a4392d45391cf275129dc76b994891c9d634
+2026-09-21T23:01:02.202Z D/AiViewModel [DefaultDispatcher-worker-3] run[5] rawVisible='What␠specific␠yield␠target␠would␠make␠a␠new␠maize␠variety␠preferable␠to␠your␠current␠one?'
+2026-09-21T23:01:02.206Z D/AiViewModel [DefaultDispatcher-worker-3] run[5]: FOLLOWUP parse extractorQ='What␠specific␠yield␠target␠would␠make␠a␠new␠maize␠variety␠preferable␠to␠your␠current␠one?' textQ='What␠specific␠yield␠target␠would␠make␠a␠new␠maize␠variety␠preferable␠to␠your␠current␠one?' best='What␠specific␠yield␠target␠would␠make␠a␠new␠maize␠variety␠preferable␠to␠your␠current␠one?'
+2026-09-21T23:01:02.207Z D/AiViewModel [DefaultDispatcher-worker-3] stepHistory+ runId=5 phase=FOLLOWUP mode=FOLLOWUP_JSON_OR_TEXT raw.len=89 score=null FU=1 FU0='What␠specific␠yield␠target␠would␠make␠a␠new␠maize␠variety␠preferable␠to␠your␠current␠one?' timeout=false err=null
+2026-09-21T23:01:02.207Z D/LiteRtRepository [DefaultDispatcher-worker-5] [5] Conversation reset completed after safepoint
+2026-09-21T23:01:02.208Z I/AiViewModel [DefaultDispatcher-worker-3] run[5] done: phase=FOLLOWUP mode=FOLLOWUP_JSON_OR_TEXT score=null FU0.len=89 FU0.sha16=eceb9e97cbcf4fed commit=false err=<none>
+2026-09-21T23:01:02.209Z I/FullTextOut [DefaultDispatcher-worker-3] [part=000] run[5]: RawTextOut
+What specific yield target would make a new maize variety preferable to your current one?
+2026-09-21T23:01:02.209Z D/LiteRtRepository [DefaultDispatcher-worker-2] [part=000] [5] FINALIZE: native-terminated
+=== AI TRACE STATS (LiteRtRepository) ===
+rid=5 model='Gemma3n4B' reason=native-terminated
+totalMs=3686 inferenceMs=3683 firstTokenMs=1093
+logicalDone=true logicalDoneAt=658350053
+nativeTerminated=true cancelTag='null'
+lastDeltaMsAgo=155 lastEventMsAgo=13
+chunks=16 emittedChars=89 capturedAll=true out.len=89
+=== OUTPUT (FULL) ===
+What specific yield target would make a new maize variety preferable to your current one?
+2026-09-21T23:02:20.345Z D/SurveyVM [main] getEvalPrompt[Q11] -> len=479
+2026-09-21T23:02:20.351Z D/AiViewModel [DefaultDispatcher-worker-2] run[6]: mode=EVAL_JSON phase=EVAL commit=true prompt.len=479, fullPrompt.len=2068, timeoutMs=120000
+2026-09-21T23:02:20.356Z D/AiViewModel [DefaultDispatcher-worker-2] run[6]: sha(prompt)=281eba6f8118ac98905575d747c97861a59e7da12f04eaa48057a4e35810c15c sha(full)=8f9f4e7e7d58fecdf6ca15f9bd11b6554b95c763dbed11baa21a79bec39da75b
+2026-09-21T23:02:20.357Z I/FullPromptReview [DefaultDispatcher-worker-2] [part=000] run[6]: phase=EVAL FullPrompt
+Evaluate only the original survey target using all supplied answers.
+Return only compact JSON {"score":N,"missing_points":[],"followup_needed":false}. N must be an integer 1-100 for relevance, completeness and accuracy against the original target. Evaluate the original answer and all answered followup pairs together. Separate relevance from completeness. An answer can discuss the right topic but still be incomplete. Score 90-100 only when the respondent explicitly provides every material component requested by the Expected answer target and Question. Do not infer missing details from general knowledge, plausibility, or a bare statement that an event occurred. A concise answer may be complete. A verbose or relevant answer that omits any material requested component must score below 90. For example, saying that an event occurred without describing its requested effect is incomplete. Consistency rule: if missing_points is non-empty or followup_needed is true, score must be an integer from 1 to 89. Scores 90-100 are allowed only when missing_points=[] and followup_needed=false. Never use score 90 as a borderline value when anything is missing. For any score below 90, missing_points must contain the specific missing or ambiguous target-required information and followup_needed must be true. Otherwise missing_points is empty and followup_needed is false. Do not generate a question. Do not penalize style or request information outside the target. Write missing_points in English.
+Keep missing_points concise.
+One JSON object only; no markdown or generated question.
+INPUT:
+Expected answer target: Priority traits a new maize variety must have to replace the current one, ideally with a measurable target.
+Question: What traits would a new maize variety need to have for you to plant it instead of your current one?
+Original answer: It should resist pests and give high yields.
+Answered followup pairs: Follow-up 1: What specific yield target would make a new maize variety preferable to your current one?
+Answer 1: At least twenty percent higher yield.
+2026-09-21T23:02:20.360Z D/LiteRtRepository [DefaultDispatcher-worker-2] [6] request start model='Gemma3n4B' prompt.len=2068 sha=8f9f4e7e7d58fecd gateWaitMs=1
+2026-09-21T23:02:20.360Z D/LiteRtRepository [DefaultDispatcher-worker-2] [part=000] [6] PROMPT (FULL) sha=8f9f4e7e7d58fecd
+Evaluate only the original survey target using all supplied answers.
+Return only compact JSON {"score":N,"missing_points":[],"followup_needed":false}. N must be an integer 1-100 for relevance, completeness and accuracy against the original target. Evaluate the original answer and all answered followup pairs together. Separate relevance from completeness. An answer can discuss the right topic but still be incomplete. Score 90-100 only when the respondent explicitly provides every material component requested by the Expected answer target and Question. Do not infer missing details from general knowledge, plausibility, or a bare statement that an event occurred. A concise answer may be complete. A verbose or relevant answer that omits any material requested component must score below 90. For example, saying that an event occurred without describing its requested effect is incomplete. Consistency rule: if missing_points is non-empty or followup_needed is true, score must be an integer from 1 to 89. Scores 90-100 are allowed only when missing_points=[] and followup_needed=false. Never use score 90 as a borderline value when anything is missing. For any score below 90, missing_points must contain the specific missing or ambiguous target-required information and followup_needed must be true. Otherwise missing_points is empty and followup_needed is false. Do not generate a question. Do not penalize style or request information outside the target. Write missing_points in English.
+Keep missing_points concise.
+One JSON object only; no markdown or generated question.
+INPUT:
+Expected answer target: Priority traits a new maize variety must have to replace the current one, ideally with a measurable target.
+Question: What traits would a new maize variety need to have for you to plant it instead of your current one?
+Original answer: It should resist pests and give high yields.
+Answered followup pairs: Follow-up 1: What specific yield target would make a new maize variety preferable to your current one?
+Answer 1: At least twenty percent higher yield.
+2026-09-21T23:02:20.362Z D/SLM [slm-jni] initializeIfNeeded: model='Gemma3n4B' image=false audio=false
+2026-09-21T23:02:20.362Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm'
+2026-09-21T23:02:20.363Z D/LiteRtRepository [DefaultDispatcher-worker-2] [6] initializeIfNeeded ok initMs=2
+2026-09-21T23:02:20.364Z D/SLM [slm-jni] runInference: model='Gemma3n4B' textLen=2068 images=0 audio=0
+2026-09-21T23:02:20.366Z D/LiteRtLM [DefaultDispatcher-worker-4] state[run:start] key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=6 active=true terminated=false logicalDone=false cancel=false pendingCancel=false lastMsgAt=658428225 lastTermAt=658350051
+2026-09-21T23:02:20.367Z D/LiteRtLM [DefaultDispatcher-worker-4] runInference start: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=6 hasText=true originalTextLen=2068 effectiveTextLen=2068 images=0 audioClips=0
+2026-09-21T23:02:20.368Z D/LiteRtLM [DefaultDispatcher-worker-4] LiteRT-LM sendMessageAsync(text): key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=6 len=2068 maxOutputTokens=64
+2026-09-21T23:02:20.378Z D/LiteRtLM [DefaultDispatcher-worker-4] sendMessageAsync accepted: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=6 dispatchMs=11
+2026-09-21T23:02:22.253Z W/LiteRtLM [Thread-111] Inference first output: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=6 ttftMs=1885 dispatchMs=11 postDispatchTtftMs=1874 requestToFirstOutputMs=1887
+2026-09-21T23:02:22.253Z D/LiteRtLM [Thread-111] stream[key=Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm runId=6] msg#1 rawChunkLen=2 deltaLen=2 emittedChars=2
+2026-09-21T23:02:22.262Z D/LiteRtRepository [main] stream[rid=6 msg#1] done=false deltaLen=2 outLen=2 outPreview='{"' deltaPreview='{"'
+2026-09-21T23:02:22.262Z D/AiViewModel [DefaultDispatcher-worker-4] run[6] chunk[1].preview='{"'
+2026-09-21T23:02:22.420Z D/AiViewModel [DefaultDispatcher-worker-4] run[6] chunk[2].preview='score'
+2026-09-21T23:02:22.596Z D/AiViewModel [DefaultDispatcher-worker-4] run[6] chunk[3].preview='":'
+2026-09-21T23:02:22.738Z D/AiViewModel [DefaultDispatcher-worker-4] run[6] chunk[4].preview='␠'
+2026-09-21T23:02:22.913Z D/AiViewModel [DefaultDispatcher-worker-4] run[6] chunk[5].preview='8'
+2026-09-21T23:02:23.063Z D/AiViewModel [DefaultDispatcher-worker-4] run[6] chunk[6].preview='5'
+2026-09-21T23:02:23.230Z D/AiViewModel [DefaultDispatcher-worker-4] run[6] chunk[7].preview=','
+2026-09-21T23:02:23.378Z D/LiteRtRepository [main] stream[rid=6 msg#8] done=false deltaLen=2 outLen=15 outPreview='{"score": 85, "' deltaPreview=' "'
+2026-09-21T23:02:23.379Z D/AiViewModel [DefaultDispatcher-worker-4] run[6] chunk[8].preview='␠"'
+2026-09-21T23:02:23.546Z D/AiViewModel [DefaultDispatcher-worker-4] run[6] chunk[9].preview='missing'
+2026-09-21T23:02:23.701Z D/AiViewModel [DefaultDispatcher-worker-4] run[6] chunk[10].preview='_'
+2026-09-21T23:02:23.880Z D/AiViewModel [DefaultDispatcher-worker-4] run[6] chunk[11].preview='points'
+2026-09-21T23:02:24.021Z D/AiViewModel [DefaultDispatcher-worker-4] run[6] chunk[12].preview='":'
+2026-09-21T23:02:24.197Z D/AiViewModel [DefaultDispatcher-worker-4] run[6] chunk[13].preview='␠["'
+2026-09-21T23:02:24.340Z D/AiViewModel [DefaultDispatcher-worker-4] run[6] chunk[14].preview='Specific'
+2026-09-21T23:02:24.530Z D/AiViewModel [DefaultDispatcher-worker-4] run[6] chunk[15].preview='␠pest'
+2026-09-21T23:02:24.675Z D/LiteRtLM [Thread-126] stream[key=Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm runId=6] msg#16 rawChunkLen=12 deltaLen=12 emittedChars=59
+2026-09-21T23:02:24.679Z D/LiteRtRepository [main] stream[rid=6 msg#16] done=false deltaLen=12 outLen=59 outPreview='{"score": 85, "missing_points": ["Specific pest resistances' deltaPreview=' resistances'
+2026-09-21T23:02:24.680Z D/AiViewModel [DefaultDispatcher-worker-4] run[6] chunk[16].preview='␠resistances'
+2026-09-21T23:02:24.881Z D/AiViewModel [DefaultDispatcher-worker-4] run[6] chunk[17].preview='"],'
+2026-09-21T23:02:25.022Z D/AiViewModel [DefaultDispatcher-worker-4] run[6] chunk[18].preview='␠"'
+2026-09-21T23:02:25.197Z D/AiViewModel [DefaultDispatcher-worker-4] run[6] chunk[19].preview='follow'
+2026-09-21T23:02:25.347Z D/AiViewModel [DefaultDispatcher-worker-4] run[6] chunk[20].preview='up'
+2026-09-21T23:02:25.514Z D/AiViewModel [DefaultDispatcher-worker-4] run[6] chunk[21].preview='_'
+2026-09-21T23:02:25.672Z D/AiViewModel [DefaultDispatcher-worker-4] run[6] chunk[22].preview='needed'
+2026-09-21T23:02:25.849Z D/AiViewModel [DefaultDispatcher-worker-4] run[6] chunk[23].preview='":'
+2026-09-21T23:02:25.997Z D/LiteRtRepository [main] stream[rid=6 msg#24] done=false deltaLen=5 outLen=86 outPreview='{"score": 85, "missing_points": ["Specific pest resistances"], "followup_needed": true' deltaPreview=' true'
+2026-09-21T23:02:25.998Z D/AiViewModel [DefaultDispatcher-worker-4] run[6] chunk[24].preview='␠true'
+2026-09-21T23:02:26.159Z D/AiViewModel [DefaultDispatcher-worker-4] run[6] chunk[25].preview='}'
+2026-09-21T23:02:26.334Z D/AiViewModel [DefaultDispatcher-worker-4] run[6] chunk[26].preview='↩'
+2026-09-21T23:02:26.482Z D/LiteRtLM [Thread-137] state[logicalDone] key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=6 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=658434177 lastTermAt=658434340
+2026-09-21T23:02:26.482Z D/LiteRtLM [Thread-137] state[nativeDone:beforeRelease] key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=6 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=658434177 lastTermAt=658434340
+2026-09-21T23:02:26.483Z W/LiteRtLM [Thread-137] Inference timing: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=6 ttftMs=1885 dispatchMs=11 postDispatchTtftMs=1874 totalMs=6114 callbacks=26 outputChars=88 cancelled=false error=false requestTotalMs=6116
+2026-09-21T23:02:26.497Z D/LiteRtRepository [main] [6] logical done=true; responseClosed=true; waiting native cleanup
+2026-09-21T23:02:26.498Z D/LiteRtRepository [main] [6] native cleanup safepoint
+2026-09-21T23:02:26.499Z D/SLM [slm-jni] resetConversationAndWait: model='Gemma3n4B' image=false audio=false
+2026-09-21T23:02:26.499Z D/AiViewModel [DefaultDispatcher-worker-2] run[6] stats: chunks=26, chars=88, raw.len=88
+2026-09-21T23:02:26.500Z D/AiViewModel [DefaultDispatcher-worker-2] run[6] sha(raw)=ff6a97f54636d92e10b710ee67f80fc19cae049ad2de953b5797f1a3f63c567c
+2026-09-21T23:02:26.500Z D/AiViewModel [DefaultDispatcher-worker-2] run[6] rawVisible='{"score":␠85,␠"missing_points":␠["Specific␠pest␠resistances"],␠"followup_needed":␠true}↩'
+2026-09-21T23:02:26.504Z D/AiViewModel [DefaultDispatcher-worker-2] run[6]: EVAL_JSON parsed score=85 followups=0 fu0=''
+2026-09-21T23:02:26.505Z D/AiViewModel [DefaultDispatcher-worker-2] stepHistory+ runId=6 phase=EVAL mode=EVAL_JSON raw.len=88 score=85 FU=0 FU0='<none>' timeout=false err=null
+2026-09-21T23:02:26.505Z I/AiViewModel [DefaultDispatcher-worker-2] run[6] done: phase=EVAL mode=EVAL_JSON score=85 FU0.len=0 FU0.sha16=none commit=true err=<none>
+2026-09-21T23:02:26.505Z I/FullTextOut [DefaultDispatcher-worker-2] [part=000] run[6]: RawTextOut
+{"score": 85, "missing_points": ["Specific pest resistances"], "followup_needed": true}
+
+2026-09-21T23:02:26.507Z D/SurveyVM [DefaultDispatcher-worker-2] getFollowupPrompt[Q11] -> len=578 evalLen=88
+2026-09-21T23:02:26.509Z D/AiViewModel [DefaultDispatcher-worker-2] run[7]: mode=FOLLOWUP_JSON_OR_TEXT phase=FOLLOWUP commit=false prompt.len=578, fullPrompt.len=1115, timeoutMs=120000
+2026-09-21T23:02:26.510Z D/AiViewModel [DefaultDispatcher-worker-2] run[7]: sha(prompt)=bc810b91c6aed646d03d5f2605474705db82158652a5fe16e530df202a91bf22 sha(full)=1068c97d8c6494d5d141a71a003bad33e89295a47800efd0c1efdf0b4ef1b324
+2026-09-21T23:02:26.511Z I/FullPromptReview [DefaultDispatcher-worker-2] [part=000] run[7]: phase=FOLLOWUP FullPrompt
+Evaluate only the original survey target using all supplied answers.
+Generate exactly one short English question addressing one unresolved target-required deficiency in EVAL_JSON. Use the original target, original answer and accumulated answered followup pairs. Do not repeat an earlier question or ask for information already provided. Never add new objectives. Output only the question on one line; no JSON, score, analysis, labels, or quotes.
+Keep the question short and single-scope.
+Exactly one English question on one line.
+INPUT:
+Expected answer target: Priority traits a new maize variety must have to replace the current one, ideally with a measurable target.
+Question: What traits would a new maize variety need to have for you to plant it instead of your current one?
+Original answer: It should resist pests and give high yields.
+Answered followup pairs: Follow-up 1: What specific yield target would make a new maize variety preferable to your current one?
+Answer 1: At least twenty percent higher yield.
+EVAL_JSON: {"score": 85, "missing_points": ["Specific pest resistances"], "followup_needed": true}
+2026-09-21T23:02:26.512Z D/LiteRtRepository [DefaultDispatcher-worker-1] [6] Conversation reset completed after safepoint
+2026-09-21T23:02:26.514Z D/LiteRtRepository [DefaultDispatcher-worker-4] [part=000] [6] FINALIZE: native-terminated
+=== AI TRACE STATS (LiteRtRepository) ===
+rid=6 model='Gemma3n4B' reason=native-terminated
+totalMs=6155 inferenceMs=6149 firstTokenMs=1897
+logicalDone=true logicalDoneAt=658434356
+nativeTerminated=true cancelTag='null'
+lastDeltaMsAgo=181 lastEventMsAgo=16
+chunks=26 emittedChars=88 capturedAll=true out.len=88
+=== OUTPUT (FULL) ===
+{"score": 85, "missing_points": ["Specific pest resistances"], "followup_needed": true}
+
+2026-09-21T23:02:26.516Z D/LiteRtRepository [DefaultDispatcher-worker-5] [7] request start model='Gemma3n4B' prompt.len=1115 sha=1068c97d8c6494d5 gateWaitMs=4
+2026-09-21T23:02:26.517Z D/LiteRtRepository [DefaultDispatcher-worker-5] [part=000] [7] PROMPT (FULL) sha=1068c97d8c6494d5
+Evaluate only the original survey target using all supplied answers.
+Generate exactly one short English question addressing one unresolved target-required deficiency in EVAL_JSON. Use the original target, original answer and accumulated answered followup pairs. Do not repeat an earlier question or ask for information already provided. Never add new objectives. Output only the question on one line; no JSON, score, analysis, labels, or quotes.
+Keep the question short and single-scope.
+Exactly one English question on one line.
+INPUT:
+Expected answer target: Priority traits a new maize variety must have to replace the current one, ideally with a measurable target.
+Question: What traits would a new maize variety need to have for you to plant it instead of your current one?
+Original answer: It should resist pests and give high yields.
+Answered followup pairs: Follow-up 1: What specific yield target would make a new maize variety preferable to your current one?
+Answer 1: At least twenty percent higher yield.
+EVAL_JSON: {"score": 85, "missing_points": ["Specific pest resistances"], "followup_needed": true}
+2026-09-21T23:02:26.519Z D/SLM [slm-jni] initializeIfNeeded: model='Gemma3n4B' image=false audio=false
+2026-09-21T23:02:26.520Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm'
+2026-09-21T23:02:26.522Z D/LiteRtRepository [DefaultDispatcher-worker-5] [7] initializeIfNeeded ok initMs=5
+2026-09-21T23:02:26.524Z D/SLM [slm-jni] runInference: model='Gemma3n4B' textLen=1115 images=0 audio=0
+2026-09-21T23:02:26.528Z D/LiteRtLM [DefaultDispatcher-worker-5] state[run:start] key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=7 active=true terminated=false logicalDone=false cancel=false pendingCancel=false lastMsgAt=658434386 lastTermAt=658434340
+2026-09-21T23:02:26.528Z D/LiteRtLM [DefaultDispatcher-worker-5] runInference start: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=7 hasText=true originalTextLen=1115 effectiveTextLen=1115 images=0 audioClips=0
+2026-09-21T23:02:26.529Z D/LiteRtLM [DefaultDispatcher-worker-5] LiteRT-LM sendMessageAsync(text): key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=7 len=1115 maxOutputTokens=64
+2026-09-21T23:02:26.539Z D/LiteRtLM [DefaultDispatcher-worker-5] sendMessageAsync accepted: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=7 dispatchMs=10
+2026-09-21T23:02:27.540Z W/LiteRtLM [Thread-138] Inference first output: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=7 ttftMs=1011 dispatchMs=10 postDispatchTtftMs=1001 requestToFirstOutputMs=1013
+2026-09-21T23:02:27.540Z D/LiteRtLM [Thread-138] stream[key=Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm runId=7] msg#1 rawChunkLen=4 deltaLen=4 emittedChars=4
+2026-09-21T23:02:27.550Z D/LiteRtRepository [main] stream[rid=7 msg#1] done=false deltaLen=4 outLen=4 outPreview='What' deltaPreview='What'
+2026-09-21T23:02:27.550Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[1].preview='What'
+2026-09-21T23:02:27.718Z D/AiViewModel [DefaultDispatcher-worker-3] run[7] chunk[2].preview='␠specific'
+2026-09-21T23:02:27.883Z D/AiViewModel [DefaultDispatcher-worker-3] run[7] chunk[3].preview='␠pests'
+2026-09-21T23:02:28.035Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[4].preview='␠should'
+2026-09-21T23:02:28.201Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[5].preview='␠the'
+2026-09-21T23:02:28.357Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[6].preview='␠new'
+2026-09-21T23:02:28.534Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[7].preview='␠maize'
+2026-09-21T23:02:28.679Z D/LiteRtRepository [main] stream[rid=7 msg#8] done=false deltaLen=8 outLen=48 outPreview='What specific pests should the new maize variety' deltaPreview=' variety'
+2026-09-21T23:02:28.680Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[8].preview='␠variety'
+2026-09-21T23:02:28.844Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[9].preview='␠resist'
+2026-09-21T23:02:29.019Z D/AiViewModel [DefaultDispatcher-worker-5] run[7] chunk[10].preview='?'
+2026-09-21T23:02:29.168Z D/LiteRtLM [Thread-148] state[logicalDone] key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=7 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=658436861 lastTermAt=658437026
+2026-09-21T23:02:29.169Z D/LiteRtLM [Thread-148] state[nativeDone:beforeRelease] key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=7 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=658436861 lastTermAt=658437026
+2026-09-21T23:02:29.169Z W/LiteRtLM [Thread-148] Inference timing: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=7 ttftMs=1011 dispatchMs=10 postDispatchTtftMs=1001 totalMs=2638 callbacks=10 outputChars=56 cancelled=false error=false requestTotalMs=2640
+2026-09-21T23:02:29.171Z D/LiteRtRepository [main] [7] logical done=true; responseClosed=true; waiting native cleanup
+2026-09-21T23:02:29.171Z D/LiteRtRepository [main] [7] native cleanup safepoint
+2026-09-21T23:02:29.173Z D/SLM [slm-jni] resetConversationAndWait: model='Gemma3n4B' image=false audio=false
+2026-09-21T23:02:29.175Z D/AiViewModel [DefaultDispatcher-worker-4] run[7] stats: chunks=10, chars=56, raw.len=56
+2026-09-21T23:02:29.179Z D/AiViewModel [DefaultDispatcher-worker-4] run[7] sha(raw)=90c78f3ccefb19a75faaf8604b72cc26ea36c3245a48c4479372e956946c5f31
+2026-09-21T23:02:29.180Z D/AiViewModel [DefaultDispatcher-worker-4] run[7] rawVisible='What␠specific␠pests␠should␠the␠new␠maize␠variety␠resist?'
+2026-09-21T23:02:29.181Z D/LiteRtRepository [DefaultDispatcher-worker-3] [7] Conversation reset completed after safepoint
+2026-09-21T23:02:29.182Z D/LiteRtRepository [DefaultDispatcher-worker-5] [part=000] [7] FINALIZE: native-terminated
+=== AI TRACE STATS (LiteRtRepository) ===
+rid=7 model='Gemma3n4B' reason=native-terminated
+totalMs=2667 inferenceMs=2658 firstTokenMs=1027
+logicalDone=true logicalDoneAt=658437029
+nativeTerminated=true cancelTag='null'
+lastDeltaMsAgo=163 lastEventMsAgo=10
+chunks=10 emittedChars=56 capturedAll=true out.len=56
+=== OUTPUT (FULL) ===
+What specific pests should the new maize variety resist?
+2026-09-21T23:02:29.182Z D/AiViewModel [DefaultDispatcher-worker-4] run[7]: FOLLOWUP parse extractorQ='What␠specific␠pests␠should␠the␠new␠maize␠variety␠resist?' textQ='What␠specific␠pests␠should␠the␠new␠maize␠variety␠resist?' best='What␠specific␠pests␠should␠the␠new␠maize␠variety␠resist?'
+2026-09-21T23:02:29.183Z D/AiViewModel [DefaultDispatcher-worker-4] stepHistory+ runId=7 phase=FOLLOWUP mode=FOLLOWUP_JSON_OR_TEXT raw.len=56 score=null FU=1 FU0='What␠specific␠pests␠should␠the␠new␠maize␠variety␠resist?' timeout=false err=null
+2026-09-21T23:02:29.183Z I/AiViewModel [DefaultDispatcher-worker-4] run[7] done: phase=FOLLOWUP mode=FOLLOWUP_JSON_OR_TEXT score=null FU0.len=56 FU0.sha16=90c78f3ccefb19a7 commit=false err=<none>
+2026-09-21T23:02:29.184Z I/FullTextOut [DefaultDispatcher-worker-4] [part=000] run[7]: RawTextOut
+What specific pests should the new maize variety resist?
+2026-09-21T23:02:49.853Z D/SurveyVM [main] getEvalPrompt[Q11] -> len=596
+2026-09-21T23:02:49.856Z D/AiViewModel [DefaultDispatcher-worker-4] run[8]: mode=EVAL_JSON phase=EVAL commit=true prompt.len=596, fullPrompt.len=2185, timeoutMs=120000
+2026-09-21T23:02:49.860Z D/AiViewModel [DefaultDispatcher-worker-4] run[8]: sha(prompt)=2384a8c4552074855e1a185fa819fa608d85c24fd5cf564b6619a0f3a1673f8f sha(full)=fd462f5e08a0845bd494aa4105dc1eaa74d2bade5ce1e69125798f02c240d6c5
+2026-09-21T23:02:49.861Z I/FullPromptReview [DefaultDispatcher-worker-4] [part=000] run[8]: phase=EVAL FullPrompt
+Evaluate only the original survey target using all supplied answers.
+Return only compact JSON {"score":N,"missing_points":[],"followup_needed":false}. N must be an integer 1-100 for relevance, completeness and accuracy against the original target. Evaluate the original answer and all answered followup pairs together. Separate relevance from completeness. An answer can discuss the right topic but still be incomplete. Score 90-100 only when the respondent explicitly provides every material component requested by the Expected answer target and Question. Do not infer missing details from general knowledge, plausibility, or a bare statement that an event occurred. A concise answer may be complete. A verbose or relevant answer that omits any material requested component must score below 90. For example, saying that an event occurred without describing its requested effect is incomplete. Consistency rule: if missing_points is non-empty or followup_needed is true, score must be an integer from 1 to 89. Scores 90-100 are allowed only when missing_points=[] and followup_needed=false. Never use score 90 as a borderline value when anything is missing. For any score below 90, missing_points must contain the specific missing or ambiguous target-required information and followup_needed must be true. Otherwise missing_points is empty and followup_needed is false. Do not generate a question. Do not penalize style or request information outside the target. Write missing_points in English.
+Keep missing_points concise.
+One JSON object only; no markdown or generated question.
+INPUT:
+Expected answer target: Priority traits a new maize variety must have to replace the current one, ideally with a measurable target.
+Question: What traits would a new maize variety need to have for you to plant it instead of your current one?
+Original answer: It should resist pests and give high yields.
+Answered followup pairs: Follow-up 1: What specific yield target would make a new maize variety preferable to your current one?
+Answer 1: At least twenty percent higher yield.
+Follow-up 2: What specific pests should the new maize variety resist?
+Answer 2: Fall armyworm and maize stalk borer.
+2026-09-21T23:02:49.863Z D/LiteRtRepository [DefaultDispatcher-worker-4] [8] request start model='Gemma3n4B' prompt.len=2185 sha=fd462f5e08a0845b gateWaitMs=2
+2026-09-21T23:02:49.864Z D/LiteRtRepository [DefaultDispatcher-worker-4] [part=000] [8] PROMPT (FULL) sha=fd462f5e08a0845b
+Evaluate only the original survey target using all supplied answers.
+Return only compact JSON {"score":N,"missing_points":[],"followup_needed":false}. N must be an integer 1-100 for relevance, completeness and accuracy against the original target. Evaluate the original answer and all answered followup pairs together. Separate relevance from completeness. An answer can discuss the right topic but still be incomplete. Score 90-100 only when the respondent explicitly provides every material component requested by the Expected answer target and Question. Do not infer missing details from general knowledge, plausibility, or a bare statement that an event occurred. A concise answer may be complete. A verbose or relevant answer that omits any material requested component must score below 90. For example, saying that an event occurred without describing its requested effect is incomplete. Consistency rule: if missing_points is non-empty or followup_needed is true, score must be an integer from 1 to 89. Scores 90-100 are allowed only when missing_points=[] and followup_needed=false. Never use score 90 as a borderline value when anything is missing. For any score below 90, missing_points must contain the specific missing or ambiguous target-required information and followup_needed must be true. Otherwise missing_points is empty and followup_needed is false. Do not generate a question. Do not penalize style or request information outside the target. Write missing_points in English.
+Keep missing_points concise.
+One JSON object only; no markdown or generated question.
+INPUT:
+Expected answer target: Priority traits a new maize variety must have to replace the current one, ideally with a measurable target.
+Question: What traits would a new maize variety need to have for you to plant it instead of your current one?
+Original answer: It should resist pests and give high yields.
+Answered followup pairs: Follow-up 1: What specific yield target would make a new maize variety preferable to your current one?
+Answer 1: At least twenty percent higher yield.
+Follow-up 2: What specific pests should the new maize variety resist?
+Answer 2: Fall armyworm and maize stalk borer.
+2026-09-21T23:02:49.865Z D/SLM [slm-jni] initializeIfNeeded: model='Gemma3n4B' image=false audio=false
+2026-09-21T23:02:49.866Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm'
+2026-09-21T23:02:49.867Z D/LiteRtRepository [DefaultDispatcher-worker-4] [8] initializeIfNeeded ok initMs=2
+2026-09-21T23:02:49.868Z D/SLM [slm-jni] runInference: model='Gemma3n4B' textLen=2185 images=0 audio=0
+2026-09-21T23:02:49.868Z D/LiteRtLM [DefaultDispatcher-worker-2] state[run:start] key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=8 active=true terminated=false logicalDone=false cancel=false pendingCancel=false lastMsgAt=658457727 lastTermAt=658437026
+2026-09-21T23:02:49.869Z D/LiteRtLM [DefaultDispatcher-worker-2] runInference start: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=8 hasText=true originalTextLen=2185 effectiveTextLen=2185 images=0 audioClips=0
+2026-09-21T23:02:49.869Z D/LiteRtLM [DefaultDispatcher-worker-2] LiteRT-LM sendMessageAsync(text): key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=8 len=2185 maxOutputTokens=64
+2026-09-21T23:02:49.874Z D/LiteRtLM [DefaultDispatcher-worker-2] sendMessageAsync accepted: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=8 dispatchMs=6
+2026-09-21T23:02:51.748Z W/LiteRtLM [Thread-149] Inference first output: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=8 ttftMs=1880 dispatchMs=6 postDispatchTtftMs=1874 requestToFirstOutputMs=1880
+2026-09-21T23:02:51.748Z D/LiteRtLM [Thread-149] stream[key=Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm runId=8] msg#1 rawChunkLen=2 deltaLen=2 emittedChars=2
+2026-09-21T23:02:51.754Z D/LiteRtRepository [main] stream[rid=8 msg#1] done=false deltaLen=2 outLen=2 outPreview='{"' deltaPreview='{"'
+2026-09-21T23:02:51.755Z D/AiViewModel [DefaultDispatcher-worker-2] run[8] chunk[1].preview='{"'
+2026-09-21T23:02:51.913Z D/AiViewModel [DefaultDispatcher-worker-5] run[8] chunk[2].preview='score'
+2026-09-21T23:02:52.089Z D/AiViewModel [DefaultDispatcher-worker-5] run[8] chunk[3].preview='":'
+2026-09-21T23:02:52.242Z D/AiViewModel [DefaultDispatcher-worker-5] run[8] chunk[4].preview='␠'
+2026-09-21T23:02:52.423Z D/AiViewModel [DefaultDispatcher-worker-5] run[8] chunk[5].preview='9'
+2026-09-21T23:02:52.564Z D/AiViewModel [DefaultDispatcher-worker-5] run[8] chunk[6].preview='5'
+2026-09-21T23:02:52.741Z D/AiViewModel [DefaultDispatcher-worker-5] run[8] chunk[7].preview=','
+2026-09-21T23:02:52.883Z D/LiteRtRepository [main] stream[rid=8 msg#8] done=false deltaLen=2 outLen=15 outPreview='{"score": 95, "' deltaPreview=' "'
+2026-09-21T23:02:52.884Z D/AiViewModel [DefaultDispatcher-worker-5] run[8] chunk[8].preview='␠"'
+2026-09-21T23:02:53.056Z D/AiViewModel [DefaultDispatcher-worker-5] run[8] chunk[9].preview='missing'
+2026-09-21T23:02:53.208Z D/AiViewModel [DefaultDispatcher-worker-5] run[8] chunk[10].preview='_'
+2026-09-21T23:02:53.373Z D/AiViewModel [DefaultDispatcher-worker-5] run[8] chunk[11].preview='points'
+2026-09-21T23:02:53.524Z D/AiViewModel [DefaultDispatcher-worker-5] run[8] chunk[12].preview='":'
+2026-09-21T23:02:53.692Z D/AiViewModel [DefaultDispatcher-worker-5] run[8] chunk[13].preview='␠["'
+2026-09-21T23:02:53.848Z D/AiViewModel [DefaultDispatcher-worker-5] run[8] chunk[14].preview='Specific'
+2026-09-21T23:02:54.026Z D/AiViewModel [DefaultDispatcher-worker-5] run[8] chunk[15].preview='␠yield'
+2026-09-21T23:02:54.170Z D/LiteRtLM [Thread-164] stream[key=Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm runId=8] msg#16 rawChunkLen=7 deltaLen=7 emittedChars=55
+2026-09-21T23:02:54.174Z D/LiteRtRepository [main] stream[rid=8 msg#16] done=false deltaLen=7 outLen=55 outPreview='{"score": 95, "missing_points": ["Specific yield target' deltaPreview=' target'
+2026-09-21T23:02:54.174Z D/AiViewModel [DefaultDispatcher-worker-5] run[8] chunk[16].preview='␠target'
+2026-09-21T23:02:54.341Z D/AiViewModel [DefaultDispatcher-worker-5] run[8] chunk[17].preview='"],'
+2026-09-21T23:02:54.492Z D/AiViewModel [DefaultDispatcher-worker-2] run[8] chunk[18].preview='␠"'
+2026-09-21T23:02:54.657Z D/AiViewModel [DefaultDispatcher-worker-2] run[8] chunk[19].preview='follow'
+2026-09-21T23:02:54.815Z D/AiViewModel [DefaultDispatcher-worker-2] run[8] chunk[20].preview='up'
+2026-09-21T23:02:54.994Z D/AiViewModel [DefaultDispatcher-worker-2] run[8] chunk[21].preview='_'
+2026-09-21T23:02:55.135Z D/AiViewModel [DefaultDispatcher-worker-2] run[8] chunk[22].preview='needed'
+2026-09-21T23:02:55.308Z D/AiViewModel [DefaultDispatcher-worker-2] run[8] chunk[23].preview='":'
+2026-09-21T23:02:55.463Z D/LiteRtRepository [main] stream[rid=8 msg#24] done=false deltaLen=6 outLen=83 outPreview='{"score": 95, "missing_points": ["Specific yield target"], "followup_needed": false' deltaPreview=' false'
+2026-09-21T23:02:55.464Z D/AiViewModel [DefaultDispatcher-worker-2] run[8] chunk[24].preview='␠false'
+2026-09-21T23:02:55.643Z D/AiViewModel [DefaultDispatcher-worker-2] run[8] chunk[25].preview='}'
+2026-09-21T23:02:55.785Z D/LiteRtLM [Thread-174] state[logicalDone] key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=8 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=658463483 lastTermAt=658463644
+2026-09-21T23:02:55.786Z D/LiteRtLM [Thread-174] state[nativeDone:beforeRelease] key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=8 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=658463483 lastTermAt=658463644
+2026-09-21T23:02:55.787Z W/LiteRtLM [Thread-174] Inference timing: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=8 ttftMs=1880 dispatchMs=6 postDispatchTtftMs=1874 totalMs=5917 callbacks=25 outputChars=84 cancelled=false error=false requestTotalMs=5917
