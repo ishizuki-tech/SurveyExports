@@ -1,0 +1,141 @@
+=== Previous Session Logcat ===
+captured_time_utc=20260924_011608
+captured_time_local=20260923_181608
+marker=2026-09-23 18:11:56.580
+preferred_prev_pid=-1
+note=best-effort; buffers may be overwritten before next start
+sdk=36
+device=Google Pixel 9a
+appId=com.negi.survey
+versionName=0.0.1
+versionCode=1
+
+=== Logcat (since marker) ===
+--------- beginning of main
+09-23 18:16:04.985  8281  8281 I Zygote  : Process 8281 created for com.negi.survey
+09-23 18:16:04.986  8281  8281 I com.negi.survey: Late-enabling -Xcheck:jni
+09-23 18:16:05.033  8281  8281 I com.negi.survey: Using CollectorTypeCMC GC.
+09-23 18:16:05.073  8281  8281 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+09-23 18:16:05.144  8281  8281 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+09-23 18:16:05.144  8281  8281 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+09-23 18:16:05.927  8281  8281 D nativeloader: Configuring clns-9 for other apk /data/app/~~qGIR6O2iKHw0SFEyaFaRJw==/com.negi.survey-Hms5wp331P7I3NZQrYrAPA==/base.apk. target_sdk_version=36, uses_libraries=libOpenCL.so:libOpenCL-pixel.so, library_path=/data/app/~~qGIR6O2iKHw0SFEyaFaRJw==/com.negi.survey-Hms5wp331P7I3NZQrYrAPA==/lib/arm64:/data/app/~~qGIR6O2iKHw0SFEyaFaRJw==/com.negi.survey-Hms5wp331P7I3NZQrYrAPA==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.negi.survey
+09-23 18:16:05.935  8281  8281 V GraphicsEnvironment: Currently set values for:
+09-23 18:16:05.935  8281  8281 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[com.android.angle]
+09-23 18:16:05.935  8281  8281 V GraphicsEnvironment:   angle_gl_driver_selection_values=[angle]
+09-23 18:16:05.935  8281  8281 V GraphicsEnvironment: com.negi.survey is not listed in per-application setting
+09-23 18:16:05.936  8281  8281 V GraphicsEnvironment: No special selections for ANGLE, returning default driver choice
+09-23 18:16:05.936  8281  8281 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+09-23 18:16:06.027  8281  8281 D nativeloader: Load /data/app/~~qGIR6O2iKHw0SFEyaFaRJw==/com.negi.survey-Hms5wp331P7I3NZQrYrAPA==/base.apk!/lib/arm64-v8a/liblitertlm_jni.so using class loader ns clns-9 (caller=/data/app/~~qGIR6O2iKHw0SFEyaFaRJw==/com.negi.survey-Hms5wp331P7I3NZQrYrAPA==/base.apk!classes10.dex): ok
+09-23 18:16:06.027  8281  8281 D SurveyApp: Loaded LiteRTLM JNI: litertlm_jni where=attachBaseContext
+09-23 18:16:06.053  8281  8281 D AppRingLogStore: installed: dir=/data/user/0/com.negi.survey/files/diagnostics/applog_ring idx=0
+09-23 18:16:06.053  8281  8281 D SurveyApp: attachBaseContext: pid=8281 process=com.negi.survey isMain=true sdk=36
+09-23 18:16:06.054  8281  8281 D SurveyApp: bootTiming: attachBaseContext total=71ms
+09-23 18:16:06.055  8281  8281 D SurveyApp: Skipping WorkManager init in attachBaseContext; will init lazily on first enqueue.
+09-23 18:16:06.060  8281  8281 D CrashCapture: install: ensured default handler. where=SurveyApp:attachBaseContext pid=8281 default=com.negi.survey.CrashCapture$CrashHandler@80b8781
+09-23 18:16:06.060  8281  8281 D SurveyApp: CrashCapture installed: where=SurveyApp:attachBaseContext
+09-23 18:16:06.081  8281  8281 E com.negi.survey: hiddenapi: Accessing hidden method Landroid/net/ssl/EchConfigMismatchException;->getRetryConfigList()Landroid/net/ssl/EchConfigList; (runtime_flags=0, domain=core-platform, api=blocked) from /data/app/~~qGIR6O2iKHw0SFEyaFaRJw==/com.negi.survey-Hms5wp331P7I3NZQrYrAPA==/base.apk!classes17.dex (domain=app, TargetSdkVersion=36) using linking: denied
+09-23 18:16:06.081  8281  8281 E com.negi.survey: hiddenapi: Accessing hidden method Landroid/net/ssl/EchConfigList;->toBytes()[B (runtime_flags=0, domain=core-platform, api=blocked) from /data/app/~~qGIR6O2iKHw0SFEyaFaRJw==/com.negi.survey-Hms5wp331P7I3NZQrYrAPA==/base.apk!classes17.dex (domain=app, TargetSdkVersion=36) using linking: denied
+09-23 18:16:06.082  8281  8281 E com.negi.survey: hiddenapi: Accessing hidden method Landroid/net/ssl/EchConfigList;->fromBytes([B)Landroid/net/ssl/EchConfigList; (runtime_flags=0, domain=core-platform, api=blocked) from /data/app/~~qGIR6O2iKHw0SFEyaFaRJw==/com.negi.survey-Hms5wp331P7I3NZQrYrAPA==/base.apk!classes17.dex (domain=app, TargetSdkVersion=36) using linking: denied
+09-23 18:16:06.082  8281  8281 E com.negi.survey: hiddenapi: Accessing hidden method Landroid/net/ssl/SSLSockets;->setEchConfigList(Ljavax/net/ssl/SSLSocket;Landroid/net/ssl/EchConfigList;)V (runtime_flags=0, domain=core-platform, api=blocked) from /data/app/~~qGIR6O2iKHw0SFEyaFaRJw==/com.negi.survey-Hms5wp331P7I3NZQrYrAPA==/base.apk!classes17.dex (domain=app, TargetSdkVersion=36) using linking: denied
+09-23 18:16:06.100  8281  8281 D SurveyApp: LiteRTLM JNI already loaded; skip. where=onCreate(retry)
+09-23 18:16:06.101  8281  8281 D SurveyApp: bootTiming: RuntimeLogStore.start took=1ms
+09-23 18:16:06.101  8281  8281 D SurveyApp: bootTiming: AppRingLogStore.install took=0ms
+09-23 18:16:06.101  8281  8281 D SurveyApp: onCreate: pid=8281 process=com.negi.survey isMain=true sdk=36
+09-23 18:16:06.108  8281  8368 D RuntimeLogStore: openWriter: start -> /data/user/0/com.negi.survey/files/diagnostics/runtime_logs/rtlog_20260924_011606_043_pid8281_seq1.log (bytes=0 format=LEGACY)
+09-23 18:16:06.110  8281  8281 D CrashCapture: install: ensured default handler. where=SurveyApp:onCreate(rewrap) pid=8281 default=com.negi.survey.CrashCapture$CrashHandler@80b8781
+09-23 18:16:06.110  8281  8281 D SurveyApp: CrashCapture installed: where=SurveyApp:onCreate(rewrap)
+09-23 18:16:06.110  8281  8281 D CrashCapture: registerSelfHealing: ActivityLifecycleCallbacks registered. mode=onResumedOnly
+09-23 18:16:06.110  8281  8281 D SurveyApp: CrashCapture self-healing registered.
+09-23 18:16:06.110  8281  8281 W SurveyApp: Startup enqueues deferred: delay=2500ms (to reduce init contention)
+09-23 18:16:06.111  8281  8281 D SurveyApp: Startup survey recovery deferred: delay=2500ms
+09-23 18:16:06.111  8281  8281 D SurveyApp: bootTiming: onCreate total=11ms
+09-23 18:16:06.116  8281  8368 D RuntimeLogStore: retention: start files=4 kept=4 totalBytes=47959
+09-23 18:16:06.568  8281  8370 D WM-PackageManagerHelper: Skipping component enablement for androidx.work.impl.background.systemjob.SystemJobService
+09-23 18:16:06.568  8281  8370 D WM-Schedulers: Created SystemJobScheduler and enabled SystemJobService
+09-23 18:16:06.580  8281  8377 D WM-ForceStopRunnable: Is default app process = true
+09-23 18:16:06.581  8281  8377 D WM-ForceStopRunnable: Performing cleanup operations.
+09-23 18:16:06.797  8281  8377 D WM-SystemJobScheduler: Reconciling jobs
+09-23 18:16:06.915  8281  8377 D WM-ForceStopRunnable: Found unfinished work, scheduling it.
+09-23 18:16:07.104  8281  8377 D WM-SystemJobScheduler: Scheduling work ID b68751bd-199b-4340-bd1a-6a6e559f563aJob ID 30
+09-23 18:16:07.132  8281  8377 D WM-SystemJobScheduler: Scheduling work ID 20a0427f-f7aa-40d6-9ce4-feb94a6d63b5Job ID 31
+09-23 18:16:07.154  8281  8377 D WM-SystemJobScheduler: Scheduling work ID 931ebcbf-050b-4911-b160-611bc365b6c2Job ID 32
+09-23 18:16:07.171  8281  8377 D WM-SystemJobScheduler: Scheduling work ID 29db92d0-5523-4a76-b4af-1c5cd063385fJob ID 33
+09-23 18:16:07.187  8281  8377 D WM-SystemJobScheduler: Scheduling work ID 8df6899d-27c0-4039-a9ab-307b187242d7Job ID 34
+09-23 18:16:07.201  8281  8377 D WM-SystemJobScheduler: Scheduling work ID 4ee7d620-a300-4076-9770-0f8530a38adeJob ID 35
+09-23 18:16:07.217  8281  8377 D WM-SystemJobScheduler: Scheduling work ID d96b8e57-02be-4950-a9ed-f186a097ab2aJob ID 36
+09-23 18:16:07.233  8281  8377 D WM-SystemJobScheduler: Scheduling work ID b1b53beb-43c3-43c1-822e-293812717d9eJob ID 37
+09-23 18:16:07.249  8281  8377 D WM-SystemJobScheduler: Scheduling work ID 61739bdf-a3d4-40ce-be95-61fd63089c87Job ID 38
+09-23 18:16:07.266  8281  8377 D WM-SystemJobScheduler: Scheduling work ID 2961bc2a-942f-4009-a4ab-8bbab668833eJob ID 39
+09-23 18:16:07.284  8281  8377 D WM-SystemJobScheduler: Scheduling work ID dc7b0ba9-b4d7-4e1f-b58e-bbc05075f777Job ID 40
+09-23 18:16:07.301  8281  8377 D WM-SystemJobScheduler: Scheduling work ID bebc00fa-4bfb-42a8-81cf-bd0ecb60c41fJob ID 41
+09-23 18:16:07.315  8281  8377 D WM-SystemJobScheduler: Scheduling work ID 44cd1f38-e064-4000-991d-a0180fa7fad5Job ID 42
+09-23 18:16:07.328  8281  8377 D WM-SystemJobScheduler: Scheduling work ID b83cdd90-d420-4344-b7e9-15bfbd6c85b1Job ID 43
+09-23 18:16:07.342  8281  8377 D WM-SystemJobScheduler: Scheduling work ID cdc84717-59fb-496f-811c-961f9626623dJob ID 44
+09-23 18:16:07.355  8281  8377 D WM-SystemJobScheduler: Scheduling work ID ca5edaf3-1be3-4ba3-b7df-c3a9999888d1Job ID 45
+09-23 18:16:07.372  8281  8377 D WM-SystemJobScheduler: Scheduling work ID d02c2d56-fc30-4af5-a217-589def777234Job ID 46
+09-23 18:16:07.387  8281  8377 D WM-SystemJobScheduler: Scheduling work ID 60264701-68c3-4e81-9e07-cbbb3b652b98Job ID 47
+09-23 18:16:07.404  8281  8377 D WM-SystemJobScheduler: Scheduling work ID f9004dd0-5857-482e-b6a6-a7cc2a7c9dddJob ID 48
+09-23 18:16:07.421  8281  8377 D WM-SystemJobScheduler: Scheduling work ID e9b166f9-a026-4bea-97c2-e44533f3adf7Job ID 49
+09-23 18:16:07.432  8281  8377 D WM-GreedyScheduler: Starting tracking for 4b8f398a-7e09-4f82-bcd6-6f9e77892b81,b1b53beb-43c3-43c1-822e-293812717d9e,4ee7d620-a300-4076-9770-0f8530a38ade,d02c2d56-fc30-4af5-a217-589def777234,e9b166f9-a026-4bea-97c2-e44533f3adf7,61739bdf-a3d4-40ce-be95-61fd63089c87,d96b8e57-02be-4950-a9ed-f186a097ab2a,29db92d0-5523-4a76-b4af-1c5cd063385f,1e0c7758-df05-4e6c-9310-6523d0ffe45d,b83cdd90-d420-4344-b7e9-15bfbd6c85b1,60264701-68c3-4e81-9e07-cbbb3b652b98,cdc84717-59fb-496f-811c-961f9626623d,8df6899d-27c0-4039-a9ab-307b187242d7,69d84cac-f717-4ed2-a79b-40ca9d70d75d,c250791a-547a-442f-be2b-09b8ef839141,b68751bd-199b-4340-bd1a-6a6e559f563a,bebc00fa-4bfb-42a8-81cf-bd0ecb60c41f,44cd1f38-e064-4000-991d-a0180fa7fad5,2961bc2a-942f-4009-a4ab-8bbab668833e,ca5edaf3-1be3-4ba3-b7df-c3a9999888d1,c860ff5f-9400-4ebd-8588-b6a62022c0e1,197ed8ad-3de1-4a6e-82b0-d26ca046977c,931ebcbf-050b-4911-b160-611bc365b6c2,dc7b0ba9-b4d7-4e1f-b58e-bbc05075f777,20a0427f-f7aa-40d6-9ce4-feb94a6d63b5,f9004dd0-5857-482e-b6a6-a7cc2a7c9ddd
+09-23 18:16:07.453  8281  8385 I com.negi.survey: hiddenapi: Accessing hidden method Landroid/database/sqlite/SQLiteDatabase;->getThreadSession()Landroid/database/sqlite/SQLiteSession; (runtime_flags=0, domain=platform, api=unsupported) from Landroidx/sqlite/db/framework/FrameworkSQLiteDatabase; (domain=app, TargetSdkVersion=36) using reflection: allowed
+09-23 18:16:07.454  8281  8385 I com.negi.survey: hiddenapi: Accessing hidden method Landroid/database/sqlite/SQLiteSession;->beginTransaction(ILandroid/database/sqlite/SQLiteTransactionListener;ILandroid/os/CancellationSignal;)V (runtime_flags=0, domain=platform, api=unsupported) from Landroidx/sqlite/db/framework/FrameworkSQLiteDatabase; (domain=app, TargetSdkVersion=36) using reflection: allowed
+09-23 18:16:07.601  8281  8385 D WM-WorkConstraintsTrack: NetworkRequestConstraintController register shared callback
+09-23 18:16:07.655  8281  8385 D WM-PackageManagerHelper: Skipping component enablement for androidx.work.impl.background.systemalarm.RescheduleReceiver
+09-23 18:16:07.662  8281  8370 I UploadRescheduleRcvr: Survey recovery action=android.intent.action.MY_PACKAGE_REPLACED discovered=5 reconciled=5 duplicates=0 unclassified=5 operationalFailures=0 classifications={DEFERRED=2, ACTIVE=3}
+09-23 18:16:07.665  8281  8370 D UploadRescheduleRcvr: Found pending: dir=/data/user/0/com.negi.survey/files/pending_uploads files=10
+09-23 18:16:07.718  8281  8370 D UploadRescheduleRcvr: Rescheduling 5 generic GitHub pending uploads for action=android.intent.action.MY_PACKAGE_REPLACED
+09-23 18:16:07.737  8281  8370 D UploadRescheduleRcvr: choosePolicy: uniqueName=upload_gh_logcat_2026-09-23_18-04-55_pid27063_2110ac3b.log.gz_874_1790211895177 policy=KEEP states=[ENQUEUED]
+09-23 18:16:07.737  8281  8370 D UploadRescheduleRcvr: enqueueGenericGitHubFileUpload: uniqueName=upload_gh_logcat_2026-09-23_18-04-55_pid27063_2110ac3b.log.gz_874_1790211895177 policy=KEEP file=/data/user/0/com.negi.survey/files/pending_uploads/logcat_2026-09-23_18-04-55_pid27063_2110ac3b.log.gz bytes=874 mtime=1790211895177
+09-23 18:16:07.755  8281  8370 D UploadRescheduleRcvr: choosePolicy: uniqueName=upload_gh_logcat_2026-09-23_18-06-45_pid28806_647d7c4e.log.gz_1723_1790212005309 policy=KEEP states=[ENQUEUED]
+09-23 18:16:07.755  8281  8370 D UploadRescheduleRcvr: enqueueGenericGitHubFileUpload: uniqueName=upload_gh_logcat_2026-09-23_18-06-45_pid28806_647d7c4e.log.gz_1723_1790212005309 policy=KEEP file=/data/user/0/com.negi.survey/files/pending_uploads/logcat_2026-09-23_18-06-45_pid28806_647d7c4e.log.gz bytes=1723 mtime=1790212005309
+09-23 18:16:07.767  8281  8370 D UploadRescheduleRcvr: choosePolicy: uniqueName=upload_gh_logcat_2026-09-23_18-07-05_pid28806_b7101ac7.log.gz_828_1790212025869 policy=KEEP states=[ENQUEUED]
+09-23 18:16:07.767  8281  8370 D UploadRescheduleRcvr: enqueueGenericGitHubFileUpload: uniqueName=upload_gh_logcat_2026-09-23_18-07-05_pid28806_b7101ac7.log.gz_828_1790212025869 policy=KEEP file=/data/user/0/com.negi.survey/files/pending_uploads/logcat_2026-09-23_18-07-05_pid28806_b7101ac7.log.gz bytes=828 mtime=1790212025869
+09-23 18:16:07.781  8281  8370 D UploadRescheduleRcvr: choosePolicy: uniqueName=upload_gh_logcat_2026-09-23_18-08-30_pid28806_0549a6ba.log.gz_813_1790212110841 policy=KEEP states=[ENQUEUED]
+09-23 18:16:07.782  8281  8370 D UploadRescheduleRcvr: enqueueGenericGitHubFileUpload: uniqueName=upload_gh_logcat_2026-09-23_18-08-30_pid28806_0549a6ba.log.gz_813_1790212110841 policy=KEEP file=/data/user/0/com.negi.survey/files/pending_uploads/logcat_2026-09-23_18-08-30_pid28806_0549a6ba.log.gz bytes=813 mtime=1790212110841
+09-23 18:16:07.791  8281  8370 D UploadRescheduleRcvr: choosePolicy: uniqueName=upload_gh_logcat_2026-09-23_18-15-01_pid7497_bc386d0d.log.gz_1247_1790212501684 policy=REPLACE states=[]
+09-23 18:16:07.791  8281  8370 D UploadRescheduleRcvr: enqueueGenericGitHubFileUpload: uniqueName=upload_gh_logcat_2026-09-23_18-15-01_pid7497_bc386d0d.log.gz_1247_1790212501684 policy=REPLACE file=/data/user/0/com.negi.survey/files/pending_uploads/logcat_2026-09-23_18-15-01_pid7497_bc386d0d.log.gz bytes=1247 mtime=1790212501684
+09-23 18:16:07.821  8281  8370 D github_upload: enqueueStartupRuntimeLogsUpload: uniqueName=upload_runtime_logs_startup policy=KEEP session=startup_runtime_20260924_011607_c32a731e
+09-23 18:16:07.822  8281  8370 D UploadRescheduleRcvr: Enqueued runtime logs upload for action=android.intent.action.MY_PACKAGE_REPLACED reason=receiver_my_package_replaced
+09-23 18:16:07.847  8281  8386 D WM-GreedyScheduler: Starting tracking for 4b8f398a-7e09-4f82-bcd6-6f9e77892b81,b1b53beb-43c3-43c1-822e-293812717d9e,4ee7d620-a300-4076-9770-0f8530a38ade,d02c2d56-fc30-4af5-a217-589def777234,e9b166f9-a026-4bea-97c2-e44533f3adf7,61739bdf-a3d4-40ce-be95-61fd63089c87,d96b8e57-02be-4950-a9ed-f186a097ab2a,29db92d0-5523-4a76-b4af-1c5cd063385f,1e0c7758-df05-4e6c-9310-6523d0ffe45d,b83cdd90-d420-4344-b7e9-15bfbd6c85b1,60264701-68c3-4e81-9e07-cbbb3b652b98,abc45ed0-5126-4653-9b5a-b9473ba16b8b,cdc84717-59fb-496f-811c-961f9626623d,8df6899d-27c0-4039-a9ab-307b187242d7,69d84cac-f717-4ed2-a79b-40ca9d70d75d,c250791a-547a-442f-be2b-09b8ef839141,b68751bd-199b-4340-bd1a-6a6e559f563a,bebc00fa-4bfb-42a8-81cf-bd0ecb60c41f,44cd1f38-e064-4000-991d-a0180fa7fad5,2961bc2a-942f-4009-a4ab-8bbab668833e,ca5edaf3-1be3-4ba3-b7df-c3a9999888d1,c860ff5f-9400-4ebd-8588-b6a62022c0e1,197ed8ad-3de1-4a6e-82b0-d26ca046977c,931ebcbf-050b-4911-b160-611bc365b6c2,dc7b0ba9-b4d7-4e1f-b58e-bbc05075f777,20a0427f-f7aa-40d6-9ce4-feb94a6d63b5,f9004dd0-5857-482e-b6a6-a7cc2a7c9ddd
+09-23 18:16:08.613  8281  8281 W SurveyApp: Deferred startup enqueues begin...
+09-23 18:16:08.616  8281  8281 D SurveyApp: WorkManager available. where=startupRtLogs(immediate) took=0ms
+09-23 18:16:08.629  8281  8281 D SurveyApp: Startup runtime logs target -> owner=ishizuki-tech repo=SurveyExports branch=main base='/diagnostics/runtime_logs'
+09-23 18:16:08.637  8281  8281 D github_upload: enqueueStartupRuntimeLogsUpload: uniqueName=upload_runtime_logs_startup policy=KEEP session=startup_runtime_20260924_011608_9aecc378
+09-23 18:16:08.638  8281  8281 D SurveyApp: Startup runtime logs: enqueue requested (immediate).
+09-23 18:16:08.639  8281  8281 D SurveyApp: WorkManager available. where=startupRingLogs(immediate) took=0ms
+09-23 18:16:08.647  8281  8281 D SurveyApp: Startup ring logs target -> owner=ishizuki-tech repo=SurveyExports branch=main base='/diagnostics/applog_ring'
+09-23 18:16:08.648  8281  8385 D WM-WorkConstraintsTrack: NetworkRequestConstraintController didn't receive neither onCapabilitiesChanged/onLost callback, sending `ConstraintsNotMet` after 1000 ms
+09-23 18:16:08.651  8281  8281 D github_upload: enqueueStartupRingLogsUpload: uniqueName=upload_ring_logs_startup policy=KEEP session=startup_ring_20260924_011608_39a257ed
+09-23 18:16:08.652  8281  8281 D SurveyApp: Startup ring logs: enqueue requested (immediate).
+09-23 18:16:08.653  8281  8384 D WM-WorkConstraintsTrack: NetworkRequestConstraintController didn't receive neither onCapabilitiesChanged/onLost callback, sending `ConstraintsNotMet` after 1000 ms
+09-23 18:16:08.654  8281  8281 D SurveyApp: WorkManager available. where=enqueuePending(immediate) took=0ms
+09-23 18:16:08.655  8281  8281 D SurveyApp: CrashCapture pending uploads requested (immediate).
+09-23 18:16:08.655  8281  8281 W SurveyApp: Deferred startup enqueues done: took=43ms
+09-23 18:16:08.656  8281  8395 D CrashCapture: enqueuePendingCrashUploadsIfPossible enter where=SurveyApp:enqueuePending(immediate):bg pid=8281 thread=CrashCapture-Enqueue
+09-23 18:16:08.658  8281  8370 D SurveyApp: Survey recovery WorkManager available. where=startupSurveyUploads(initial) took=0ms
+09-23 18:16:08.666  8281  8384 D WM-WorkConstraintsTrack: NetworkRequestConstraintController didn't receive neither onCapabilitiesChanged/onLost callback, sending `ConstraintsNotMet` after 1000 ms
+09-23 18:16:08.666  8281  8384 D WM-WorkConstraintsTrack: NetworkRequestConstraintController didn't receive neither onCapabilitiesChanged/onLost callback, sending `ConstraintsNotMet` after 1000 ms
+09-23 18:16:08.667  8281  8384 D WM-WorkConstraintsTrack: NetworkRequestConstraintController didn't receive neither onCapabilitiesChanged/onLost callback, sending `ConstraintsNotMet` after 1000 ms
+09-23 18:16:08.667  8281  8384 D WM-WorkConstraintsTrack: NetworkRequestConstraintController didn't receive neither onCapabilitiesChanged/onLost callback, sending `ConstraintsNotMet` after 1000 ms
+09-23 18:16:08.691  8281  8384 D WM-WorkConstraintsTrack: NetworkRequestConstraintController didn't receive neither onCapabilitiesChanged/onLost callback, sending `ConstraintsNotMet` after 1000 ms
+09-23 18:16:08.692  8281  8384 D WM-WorkConstraintsTrack: NetworkRequestConstraintController didn't receive neither onCapabilitiesChanged/onLost callback, sending `ConstraintsNotMet` after 1000 ms
+09-23 18:16:08.698  8281  8384 D WM-GreedyScheduler: Constraints not met: Cancelling work ID WorkGenerationalId(workSpecId=dc7b0ba9-b4d7-4e1f-b58e-bbc05075f777, generation=0)
+09-23 18:16:08.707  8281  8384 D WM-WorkConstraintsTrack: NetworkRequestConstraintController didn't receive neither onCapabilitiesChanged/onLost callback, sending `ConstraintsNotMet` after 1000 ms
+09-23 18:16:08.708  8281  8384 D WM-WorkConstraintsTrack: NetworkRequestConstraintController didn't receive neither onCapabilitiesChanged/onLost callback, sending `ConstraintsNotMet` after 1000 ms
+09-23 18:16:08.708  8281  8384 D WM-WorkConstraintsTrack: NetworkRequestConstraintController didn't receive neither onCapabilitiesChanged/onLost callback, sending `ConstraintsNotMet` after 1000 ms
+09-23 18:16:08.709  8281  8384 D WM-WorkConstraintsTrack: NetworkRequestConstraintController didn't receive neither onCapabilitiesChanged/onLost callback, sending `ConstraintsNotMet` after 1000 ms
+09-23 18:16:08.709  8281  8384 D WM-WorkConstraintsTrack: NetworkRequestConstraintController didn't receive neither onCapabilitiesChanged/onLost callback, sending `ConstraintsNotMet` after 1000 ms
+09-23 18:16:08.714  8281  8384 D WM-WorkConstraintsTrack: NetworkRequestConstraintController didn't receive neither onCapabilitiesChanged/onLost callback, sending `ConstraintsNotMet` after 1000 ms
+09-23 18:16:08.714  8281  8384 D WM-WorkConstraintsTrack: NetworkRequestConstraintController didn't receive neither onCapabilitiesChanged/onLost callback, sending `ConstraintsNotMet` after 1000 ms
+09-23 18:16:08.715  8281  8384 D WM-WorkConstraintsTrack: NetworkRequestConstraintController didn't receive neither onCapabilitiesChanged/onLost callback, sending `ConstraintsNotMet` after 1000 ms
+09-23 18:16:08.716  8281  8384 D WM-WorkConstraintsTrack: NetworkRequestConstraintController didn't receive neither onCapabilitiesChanged/onLost callback, sending `ConstraintsNotMet` after 1000 ms
+09-23 18:16:08.716  8281  8384 D WM-WorkConstraintsTrack: NetworkRequestConstraintController didn't receive neither onCapabilitiesChanged/onLost callback, sending `ConstraintsNotMet` after 1000 ms
+09-23 18:16:08.717  8281  8384 D WM-WorkConstraintsTrack: NetworkRequestConstraintController didn't receive neither onCapabilitiesChanged/onLost callback, sending `ConstraintsNotMet` after 1000 ms
+09-23 18:16:08.722  8281  8384 D WM-WorkConstraintsTrack: NetworkRequestConstraintController didn't receive neither onCapabilitiesChanged/onLost callback, sending `ConstraintsNotMet` after 1000 ms
+09-23 18:16:08.722  8281  8384 D WM-WorkConstraintsTrack: NetworkRequestConstraintController didn't receive neither onCapabilitiesChanged/onLost callback, sending `ConstraintsNotMet` after 1000 ms
+09-23 18:16:08.723  8281  8384 D WM-WorkConstraintsTrack: NetworkRequestConstraintController didn't receive neither onCapabilitiesChanged/onLost callback, sending `ConstraintsNotMet` after 1000 ms
+09-23 18:16:08.723  8281  8384 D WM-WorkConstraintsTrack: NetworkRequestConstraintController didn't receive neither onCapabilitiesChanged/onLost callback, sending `ConstraintsNotMet` after 1000 ms
+09-23 18:16:08.723  8281  8384 D WM-WorkConstraintsTrack: NetworkRequestConstraintController didn't receive neither onCapabilitiesChanged/onLost callback, sending `ConstraintsNotMet` after 1000 ms
+09-23 18:16:08.724  8281  8384 D WM-WorkConstraintsTrack: NetworkRequestConstraintController didn't receive neither onCapabilitiesChanged/onLost callback, sending `ConstraintsNotMet` after 1000 ms
+09-23 18:16:08.724  8281  8384 D WM-WorkConstraintsTrack: NetworkRequestConstraintController didn't receive neither onCapabilitiesChanged/onLost callback, sending `ConstraintsNotMet` after 1000 ms
+09-23 18:16:08.738  8281  8384 D WM-GreedyScheduler: Constraints not met: Cancelling work ID WorkGenerationalId(workSpecId=cdc84717-59fb-496f-811c-961f9626623d, generation=0)
