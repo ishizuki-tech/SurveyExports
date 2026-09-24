@@ -1,0 +1,75 @@
+=== RuntimeLogStore Header ===
+ts=2026-09-24T18:13:17.919Z
+fileNameFormat=LEGACY
+appId=com.negi.survey
+versionName=0.0.1
+versionCode=88
+debug=false
+device=Google Pixel 9a
+sdk=36
+pid=27443
+==============================
+2026-09-24T18:13:17.919Z I/RuntimeLogStore [rtlog-io] --- rotated (reason=plain_snapshot:receiver_my_package_repl) ---
+2026-09-24T18:13:18.728Z W/SurveyApp [main] Deferred startup enqueues begin...
+2026-09-24T18:13:18.728Z D/SurveyApp [main] WorkManager available. where=startupRtLogs(immediate) took=0ms
+2026-09-24T18:13:18.729Z D/SurveyApp [main] Startup runtime logs target -> owner=ishizuki-tech repo=SurveyExports branch=main base='/diagnostics/runtime_logs'
+2026-09-24T18:13:18.729Z D/SurveyApp [main] Startup runtime logs: enqueue requested (immediate).
+2026-09-24T18:13:18.729Z D/SurveyApp [main] WorkManager available. where=startupRingLogs(immediate) took=0ms
+2026-09-24T18:13:18.729Z D/SurveyApp [main] Startup ring logs target -> owner=ishizuki-tech repo=SurveyExports branch=main base='/diagnostics/applog_ring'
+2026-09-24T18:13:18.730Z D/SurveyApp [main] Startup ring logs: enqueue requested (immediate).
+2026-09-24T18:13:18.730Z D/SurveyApp [main] WorkManager available. where=enqueuePending(immediate) took=0ms
+2026-09-24T18:13:18.730Z D/SurveyApp [main] CrashCapture pending uploads requested (immediate).
+2026-09-24T18:13:18.730Z W/SurveyApp [main] Deferred startup enqueues done: took=2ms
+2026-09-24T18:13:18.730Z D/SurveyApp [DefaultDispatcher-worker-1] Survey recovery WorkManager available. where=startupSurveyUploads(initial) took=0ms
+2026-09-24T18:13:18.731Z D/SurveyApp [DefaultDispatcher-worker-1] Startup survey recovery complete: discovered=0 attempted=0 submitted=0 active=0 trackerUnconfirmed=0 uploaded=0 deferred=0 invalid=0 operationalFailures=0 duplicates=0 unclassified=0
+2026-09-24T18:13:23.497Z D/LiteRtLM [DefaultDispatcher-worker-6] Initializing LiteRT-LM: model='Gemma3n4B', key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm'
+2026-09-24T18:13:23.498Z D/LiteRtLM [DefaultDispatcher-worker-6] Capabilities: image=false audio=false
+2026-09-24T18:13:23.498Z D/LiteRtLM [DefaultDispatcher-worker-6] Backend=com.google.ai.edge.litertlm.Backend$GPU@ef3f0b0 maxNumTokens=512 (raw=512) topK=1 topP=0.0 temp=0.0
+2026-09-24T18:13:23.498Z D/LiteRtLM [DefaultDispatcher-worker-6] Model path='/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' sizeBytes=4919541760 lastModified=1790273393406
+2026-09-24T18:13:23.499Z D/LiteRtLM [DefaultDispatcher-worker-6] LiteRT-LM native benchmark policy: enabled=false emulator=false
+2026-09-24T18:13:23.500Z D/LiteRtLM [DefaultDispatcher-worker-6] Speculative decoding / MTP policy: enabled=false runtimeFlagUpdated=true model='Gemma3n4B'
+2026-09-24T18:13:23.503Z D/LiteRtLM [DefaultDispatcher-worker-6] Engine cacheDir resolved: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' backend=com.google.ai.edge.litertlm.Backend$GPU@ef3f0b0 path='/data/user/0/com.negi.survey/no_backup/litertlm_cache/7276119b44dabbb10469b72641135a14208c1743' filesBefore=0
+2026-09-24T18:13:59.637Z W/LiteRtLM [DefaultDispatcher-worker-6] Engine.initialize completed: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' backend=com.google.ai.edge.litertlm.Backend$GPU@ef3f0b0 took=36127ms cacheFilesAfter=2
+2026-09-24T18:13:59.683Z D/LiteRtLM [DefaultDispatcher-worker-6] createConversation completed: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' took=44ms
+2026-09-24T18:13:59.684Z D/LiteRtLM [DefaultDispatcher-worker-6] LiteRT-LM initialization succeeded: model='Gemma3n4B', key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' engineMs=36127 conversationMs=44 totalMs=36188
+2026-09-24T18:13:59.720Z D/AiTrace [main] Installed (enabled=false ringEnabled=true)
+2026-09-24T18:13:59.724Z D/SurveyVM [main] init -> Start, session=0, uuid=6054750c-d874-4927-8b03-d675110d2c42, navSize=1, graphSize=20
+2026-09-24T18:13:59.728Z D/SurveyVM [main] config.validate -> issues=0
+2026-09-24T18:13:59.728Z D/SurveyVM [main] promptSources -> legacy=10, eval=0, follow=0
+2026-09-24T18:13:59.728Z D/SurveyVM [main] promptSources.preview -> legacy=[Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q8, Q9], eval=[], follow=[]
+2026-09-24T18:13:59.728Z D/SurveyVM [main] hasTwoStepPrompt[Q10] -> true (eval=195, fu=220)
+2026-09-24T18:13:59.728Z D/SurveyVM [main] hasTwoStepPrompt[Q11] -> true (eval=219, fu=244)
+2026-09-24T18:13:59.728Z D/SurveyVM [main] hasTwoStepPrompt[Q12] -> true (eval=229, fu=254)
+2026-09-24T18:13:59.728Z D/SurveyVM [main] hasTwoStepPrompt[Q13] -> true (eval=184, fu=209)
+2026-09-24T18:13:59.728Z D/SurveyVM [main] hasTwoStepPrompt[Q14] -> true (eval=221, fu=246)
+2026-09-24T18:13:59.728Z D/SurveyVM [main] hasTwoStepPrompt[Q15] -> true (eval=160, fu=185)
+2026-09-24T18:13:59.728Z D/SurveyVM [main] hasTwoStepPrompt[Q16] -> true (eval=185, fu=210)
+2026-09-24T18:13:59.728Z D/SurveyVM [main] hasTwoStepPrompt[Q17] -> true (eval=200, fu=225)
+2026-09-24T18:13:59.728Z D/SurveyVM [main] hasTwoStepPrompt[Q8] -> true (eval=248, fu=273)
+2026-09-24T18:13:59.728Z D/SurveyVM [main] hasTwoStepPrompt[Q9] -> true (eval=190, fu=215)
+2026-09-24T18:13:59.728Z D/SurveyVM [main] AI prompt coverage OK (aiCount=10)
+2026-09-24T18:13:59.903Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm'
+2026-09-24T18:13:59.905Z D/LiteRtRepository [main] warmUp: initializeIfNeeded ok gateWaitMs=0 initMs=3
+2026-09-24T18:13:59.905Z D/LiteRtRepository [main] warmUp: Engine ready; representative inference disabled totalMs=3
+2026-09-24T19:17:56.502Z D/SurveyVM [main] resetAudioRefs -> cleared
+2026-09-24T19:17:56.503Z D/SurveyVM [main] resetNavToStart -> key=com.negi.survey.vm.FlowHome@5dda60b, navSize=1
+2026-09-24T19:17:56.503Z D/SurveyVM [main] resetToStart -> Start, session=1, uuid=97824cef-80c8-441f-ac0c-0897c408b7fb, preserveDraft=true, draftLen=0
+2026-09-24T19:17:56.504Z D/SurveyVM [main] activateRunIfNeeded(advanceToNext:Q1) -> runNoteLen=0, draftCleared=true, uuid=97824cef-80c8-441f-ac0c-0897c408b7fb
+2026-09-24T19:17:56.504Z D/SurveyVM [main] push -> Q1, navSize=2, stackSize=2
+2026-09-24T19:18:00.303Z D/SurveyVM [main] push -> Q2, navSize=3, stackSize=3
+2026-09-24T19:18:00.834Z D/SurveyVM [main] push -> Q3, navSize=4, stackSize=4
+2026-09-24T19:18:01.289Z D/SurveyVM [main] push -> Q4, navSize=5, stackSize=5
+2026-09-24T19:18:01.897Z D/SurveyVM [main] push -> Q5, navSize=6, stackSize=6
+2026-09-24T19:18:02.749Z D/SurveyVM [main] push -> Q6, navSize=7, stackSize=7
+2026-09-24T19:18:03.443Z D/SurveyVM [main] push -> Q7, navSize=8, stackSize=8
+2026-09-24T19:18:03.956Z D/SurveyVM [main] push -> Q8, navSize=9, stackSize=9
+2026-09-24T19:18:04.009Z D/SurveyVM [main] hasTwoStepPrompt[Q8] -> true (eval=248, fu=273)
+2026-09-24T19:18:07.499Z D/SurveyVM [main] getEvalPrompt[Q8] -> len=297
+2026-09-24T19:18:07.508Z D/LiteRtRepository [DefaultDispatcher-worker-6] [1] request start model='Gemma3n4B' prompt.len=2202 sha=2caf8396be2b87f3 gateWaitMs=2
+2026-09-24T19:18:07.512Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm'
+2026-09-24T19:18:07.513Z D/LiteRtRepository [DefaultDispatcher-worker-6] [1] initializeIfNeeded ok initMs=4
+2026-09-24T19:18:07.517Z D/LiteRtLM [DefaultDispatcher-worker-6] runInference start: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=1 hasText=true originalTextLen=2202 effectiveTextLen=2202 images=0 audioClips=0
+2026-09-24T19:18:07.518Z D/LiteRtLM [DefaultDispatcher-worker-6] LiteRT-LM sendMessageAsync(text): key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=1 len=2202 maxOutputTokens=64
+2026-09-24T19:18:07.585Z D/LiteRtLM [DefaultDispatcher-worker-6] sendMessageAsync accepted: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=1 dispatchMs=68
+2026-09-24T19:18:10.819Z W/LiteRtLM [Thread-8] Inference first output: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=1 ttftMs=3300 dispatchMs=68 postDispatchTtftMs=3232 requestToFirstOutputMs=3302
+2026-09-24T19:18:13.833Z W/LiteRtLM [Thread-25] Inference timing: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' runId=1 ttftMs=3300 dispatchMs=68 postDispatchTtftMs=3232 totalMs=6310 callbacks=17 outputChars=67 cancelled=false error=false requestTotalMs=6312
