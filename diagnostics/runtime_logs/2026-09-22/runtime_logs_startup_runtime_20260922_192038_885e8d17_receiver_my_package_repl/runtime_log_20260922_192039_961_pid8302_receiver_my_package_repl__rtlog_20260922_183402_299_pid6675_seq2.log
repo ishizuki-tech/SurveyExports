@@ -1,0 +1,334 @@
+=== RuntimeLogStore Header ===
+ts=2026-09-22T18:34:02.303Z
+fileNameFormat=LEGACY
+appId=com.negi.survey
+versionName=0.0.1
+versionCode=1
+debug=true
+device=Google Pixel 9a
+sdk=36
+pid=6675
+==============================
+2026-09-22T18:34:02.304Z I/RuntimeLogStore [rtlog-io] --- rotated (reason=plain_snapshot:receiver_my_package_repl) ---
+2026-09-22T18:34:02.371Z W/SurveyApp [main] Deferred startup enqueues begin...
+2026-09-22T18:34:02.372Z D/SurveyApp [main] WorkManager available. where=startupRtLogs(immediate) took=0ms
+2026-09-22T18:34:02.384Z D/SurveyApp [main] Startup runtime logs target -> owner=ishizuki-tech repo=SurveyExports branch=main base='/diagnostics/runtime_logs'
+2026-09-22T18:34:02.394Z D/SurveyApp [main] Startup runtime logs: enqueue requested (immediate).
+2026-09-22T18:34:02.394Z D/SurveyApp [main] WorkManager available. where=startupRingLogs(immediate) took=0ms
+2026-09-22T18:34:02.401Z D/SurveyApp [main] Startup ring logs target -> owner=ishizuki-tech repo=SurveyExports branch=main base='/diagnostics/applog_ring'
+2026-09-22T18:34:02.405Z D/SurveyApp [main] Startup ring logs: enqueue requested (immediate).
+2026-09-22T18:34:02.406Z D/SurveyApp [main] WorkManager available. where=enqueuePending(immediate) took=0ms
+2026-09-22T18:34:02.407Z D/SurveyApp [main] CrashCapture pending uploads requested (immediate).
+2026-09-22T18:34:02.408Z W/SurveyApp [main] Deferred startup enqueues done: took=37ms
+2026-09-22T18:35:16.870Z D/SLM [main] buildModelConfig: accel=GPU maxTokens=512 topK=1 topP=0.0 temperature=0.0
+2026-09-22T18:35:16.898Z D/LiteRtLM [DefaultDispatcher-worker-2] Initializing LiteRT-LM: model='Gemma3n4B', key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm'
+2026-09-22T18:35:16.898Z D/LiteRtLM [DefaultDispatcher-worker-2] Capabilities: image=false audio=false
+2026-09-22T18:35:16.898Z D/LiteRtLM [DefaultDispatcher-worker-2] Backend=com.google.ai.edge.litertlm.Backend$GPU@ccd8c5d maxNumTokens=512 (raw=512) topK=1 topP=0.0 temp=0.0
+2026-09-22T18:35:16.898Z D/LiteRtLM [DefaultDispatcher-worker-2] Model path='/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' sizeBytes=4919541760 lastModified=1789580037216
+2026-09-22T18:35:16.898Z D/LiteRtLM [DefaultDispatcher-worker-2] LiteRT-LM native benchmark policy: enabled=false emulator=false
+2026-09-22T18:35:16.898Z D/LiteRtLM [DefaultDispatcher-worker-2] Speculative decoding / MTP policy: enabled=false runtimeFlagUpdated=true model='Gemma3n4B'
+2026-09-22T18:35:16.900Z D/LiteRtLM [DefaultDispatcher-worker-2] Engine cacheDir resolved: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' backend=com.google.ai.edge.litertlm.Backend$GPU@ccd8c5d path='/data/user/0/com.negi.survey/no_backup/litertlm_cache/e503b301e275389b137ccc314517fd3f2d95681d' filesBefore=2
+2026-09-22T18:35:23.512Z W/LiteRtLM [DefaultDispatcher-worker-2] Engine.initialize completed: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' backend=com.google.ai.edge.litertlm.Backend$GPU@ccd8c5d took=6610ms cacheFilesAfter=2
+2026-09-22T18:35:23.536Z D/LiteRtLM [DefaultDispatcher-worker-2] createConversation completed: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' took=23ms
+2026-09-22T18:35:23.536Z D/LiteRtLM [DefaultDispatcher-worker-2] LiteRT-LM initialization succeeded: model='Gemma3n4B', key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' engineMs=6610 conversationMs=23 totalMs=6639
+2026-09-22T18:35:23.552Z D/AiTrace [main] Installed (enabled=true ringEnabled=true)
+2026-09-22T18:35:23.556Z D/SurveyVM [main] init -> Start, session=0, uuid=168fdac5-86c7-4d46-ab23-9221739e76e7, navSize=1, graphSize=20
+2026-09-22T18:35:23.565Z D/SurveyVM [main] config.validate -> issues=0
+2026-09-22T18:35:23.565Z D/SurveyVM [main] promptSources -> legacy=10, eval=0, follow=0
+2026-09-22T18:35:23.566Z D/SurveyVM [main] promptSources.preview -> legacy=[Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q8, Q9], eval=[], follow=[]
+2026-09-22T18:35:23.566Z D/SurveyVM [main] hasTwoStepPrompt[Q10] -> true (eval=195, fu=220)
+2026-09-22T18:35:23.566Z D/SurveyVM [main] hasTwoStepPrompt[Q11] -> true (eval=219, fu=244)
+2026-09-22T18:35:23.566Z D/SurveyVM [main] hasTwoStepPrompt[Q12] -> true (eval=229, fu=254)
+2026-09-22T18:35:23.566Z D/SurveyVM [main] hasTwoStepPrompt[Q13] -> true (eval=184, fu=209)
+2026-09-22T18:35:23.566Z D/SurveyVM [main] hasTwoStepPrompt[Q14] -> true (eval=221, fu=246)
+2026-09-22T18:35:23.566Z D/SurveyVM [main] hasTwoStepPrompt[Q15] -> true (eval=160, fu=185)
+2026-09-22T18:35:23.567Z D/SurveyVM [main] hasTwoStepPrompt[Q16] -> true (eval=185, fu=210)
+2026-09-22T18:35:23.567Z D/SurveyVM [main] hasTwoStepPrompt[Q17] -> true (eval=200, fu=225)
+2026-09-22T18:35:23.567Z D/SurveyVM [main] hasTwoStepPrompt[Q8] -> true (eval=248, fu=273)
+2026-09-22T18:35:23.567Z D/SurveyVM [main] hasTwoStepPrompt[Q9] -> true (eval=190, fu=215)
+2026-09-22T18:35:23.567Z D/SurveyVM [main] AI prompt coverage OK (aiCount=10)
+2026-09-22T18:35:23.723Z D/SLM [slm-jni] initializeIfNeeded: model='Gemma3n4B' image=false audio=false
+2026-09-22T18:35:23.724Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm'
+2026-09-22T18:35:23.730Z D/LiteRtRepository [main] warmUp: initializeIfNeeded ok gateWaitMs=0 initMs=9
+2026-09-22T18:35:23.730Z D/LiteRtRepository [main] warmUp: Engine ready; representative inference disabled totalMs=9
+2026-09-22T18:35:26.805Z D/SurveyVM [main] resetAudioRefs -> cleared
+2026-09-22T18:35:26.805Z D/SurveyVM [main] resetNavToStart -> key=com.negi.survey.vm.FlowHome@e684f18, navSize=1
+2026-09-22T18:35:26.805Z D/SurveyVM [main] resetToStart -> Start, session=1, uuid=46ed2d55-3f40-48e8-9a15-6b9f3b16c64a, preserveDraft=true, draftLen=0
+2026-09-22T18:35:26.805Z D/SurveyVM [main] activateRunIfNeeded(advanceToNext:Q1) -> runNoteLen=0, draftCleared=true, uuid=46ed2d55-3f40-48e8-9a15-6b9f3b16c64a
+2026-09-22T18:35:26.805Z D/SurveyVM [main] push -> Q1, navSize=2, stackSize=2
+2026-09-22T18:35:28.738Z D/SurveyVM [main] push -> Q2, navSize=3, stackSize=3
+2026-09-22T18:35:29.338Z D/SurveyVM [main] push -> Q3, navSize=4, stackSize=4
+2026-09-22T18:35:30.838Z D/SurveyVM [main] push -> Q4, navSize=5, stackSize=5
+2026-09-22T18:35:31.829Z D/SurveyVM [main] push -> Q5, navSize=6, stackSize=6
+2026-09-22T18:35:32.631Z D/SurveyVM [main] push -> Q6, navSize=7, stackSize=7
+2026-09-22T18:35:33.315Z D/SurveyVM [main] push -> Q7, navSize=8, stackSize=8
+2026-09-22T18:35:33.905Z D/SurveyVM [main] push -> Q8, navSize=9, stackSize=9
+2026-09-22T18:35:33.962Z D/SurveyVM [main] hasTwoStepPrompt[Q8] -> true (eval=248, fu=273)
+2026-09-22T18:35:35.528Z D/SurveyVM [main] push -> Q9, navSize=10, stackSize=10
+2026-09-22T18:35:35.539Z D/SurveyVM [main] hasTwoStepPrompt[Q9] -> true (eval=190, fu=215)
+2026-09-22T18:35:35.927Z D/SurveyVM [main] push -> Q10, navSize=11, stackSize=11
+2026-09-22T18:35:35.937Z D/SurveyVM [main] hasTwoStepPrompt[Q10] -> true (eval=195, fu=220)
+2026-09-22T18:35:36.381Z D/SurveyVM [main] push -> Q11, navSize=12, stackSize=12
+2026-09-22T18:35:36.390Z D/SurveyVM [main] hasTwoStepPrompt[Q11] -> true (eval=219, fu=244)
+2026-09-22T18:35:36.750Z D/SurveyVM [main] push -> Q12, navSize=13, stackSize=13
+2026-09-22T18:35:36.757Z D/SurveyVM [main] hasTwoStepPrompt[Q12] -> true (eval=229, fu=254)
+2026-09-22T18:35:37.142Z D/SurveyVM [main] push -> Q13, navSize=14, stackSize=14
+2026-09-22T18:35:37.154Z D/SurveyVM [main] hasTwoStepPrompt[Q13] -> true (eval=184, fu=209)
+2026-09-22T18:35:37.575Z D/SurveyVM [main] push -> Q14, navSize=15, stackSize=15
+2026-09-22T18:35:37.588Z D/SurveyVM [main] hasTwoStepPrompt[Q14] -> true (eval=221, fu=246)
+2026-09-22T18:35:37.963Z D/SurveyVM [main] push -> Q15, navSize=16, stackSize=16
+2026-09-22T18:35:37.974Z D/SurveyVM [main] hasTwoStepPrompt[Q15] -> true (eval=160, fu=185)
+2026-09-22T18:35:38.384Z D/SurveyVM [main] push -> Q16, navSize=17, stackSize=17
+2026-09-22T18:35:38.394Z D/SurveyVM [main] hasTwoStepPrompt[Q16] -> true (eval=185, fu=210)
+2026-09-22T18:35:38.868Z D/SurveyVM [main] push -> Q17, navSize=18, stackSize=18
+2026-09-22T18:35:38.875Z D/SurveyVM [main] hasTwoStepPrompt[Q17] -> true (eval=200, fu=225)
+2026-09-22T18:35:39.257Z D/SurveyVM [main] push -> Review, navSize=19, stackSize=19
+2026-09-22T18:35:39.274Z D/SurveyVM [main] hasTwoStepPrompt[Review] -> false (eval=0, fu=0)
+2026-09-22T18:35:44.522Z D/SurveyVM [main] push -> Done, navSize=20, stackSize=20
+2026-09-22T18:36:50.726Z D/SurveyVM [main] resetAudioRefs -> cleared
+2026-09-22T18:36:50.727Z D/SurveyVM [main] resetNavToStart -> key=com.negi.survey.vm.FlowHome@e684f18, navSize=1
+2026-09-22T18:36:50.727Z D/SurveyVM [main] resetToStart -> Start, session=2, uuid=fc9fc086-1536-409a-b728-da07c1494efa, preserveDraft=false, draftLen=0
+2026-09-22T18:36:50.730Z I/AiViewModel [main] onCleared: ViewModel is being cleared -> stopCurrentRunInternal()
+2026-09-22T18:36:55.449Z D/SLM [main] buildModelConfig: accel=GPU maxTokens=512 topK=1 topP=0.0 temperature=0.0
+2026-09-22T18:36:55.469Z D/LiteRtLM [DefaultDispatcher-worker-1] initializeIfNeeded: warm runtime already ready: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm'
+2026-09-22T18:36:55.479Z D/AiTrace [main] Installed (enabled=true ringEnabled=true)
+2026-09-22T18:36:55.480Z D/SurveyVM [main] init -> Start, session=0, uuid=3b074b2a-0c1d-41cf-909e-e167eab2c433, navSize=1, graphSize=20
+2026-09-22T18:36:55.490Z D/SurveyVM [main] config.validate -> issues=0
+2026-09-22T18:36:55.491Z D/SurveyVM [main] promptSources -> legacy=10, eval=0, follow=0
+2026-09-22T18:36:55.491Z D/SurveyVM [main] promptSources.preview -> legacy=[Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q8, Q9], eval=[], follow=[]
+2026-09-22T18:36:55.491Z D/SurveyVM [main] hasTwoStepPrompt[Q10] -> true (eval=195, fu=220)
+2026-09-22T18:36:55.491Z D/SurveyVM [main] hasTwoStepPrompt[Q11] -> true (eval=219, fu=244)
+2026-09-22T18:36:55.491Z D/SurveyVM [main] hasTwoStepPrompt[Q12] -> true (eval=229, fu=254)
+2026-09-22T18:36:55.491Z D/SurveyVM [main] hasTwoStepPrompt[Q13] -> true (eval=184, fu=209)
+2026-09-22T18:36:55.491Z D/SurveyVM [main] hasTwoStepPrompt[Q14] -> true (eval=221, fu=246)
+2026-09-22T18:36:55.491Z D/SurveyVM [main] hasTwoStepPrompt[Q15] -> true (eval=160, fu=185)
+2026-09-22T18:36:55.492Z D/SurveyVM [main] hasTwoStepPrompt[Q16] -> true (eval=185, fu=210)
+2026-09-22T18:36:55.492Z D/SurveyVM [main] hasTwoStepPrompt[Q17] -> true (eval=200, fu=225)
+2026-09-22T18:36:55.492Z D/SurveyVM [main] hasTwoStepPrompt[Q8] -> true (eval=248, fu=273)
+2026-09-22T18:36:55.492Z D/SurveyVM [main] hasTwoStepPrompt[Q9] -> true (eval=190, fu=215)
+2026-09-22T18:36:55.492Z D/SurveyVM [main] AI prompt coverage OK (aiCount=10)
+2026-09-22T18:36:55.525Z D/SLM [slm-jni] initializeIfNeeded: model='Gemma3n4B' image=false audio=false
+2026-09-22T18:36:55.527Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm'
+2026-09-22T18:36:55.529Z D/LiteRtRepository [main] warmUp: initializeIfNeeded ok gateWaitMs=0 initMs=5
+2026-09-22T18:36:55.530Z D/LiteRtRepository [main] warmUp: Engine ready; representative inference disabled totalMs=5
+2026-09-22T18:36:56.916Z D/SurveyVM [main] resetAudioRefs -> cleared
+2026-09-22T18:36:56.916Z D/SurveyVM [main] resetNavToStart -> key=com.negi.survey.vm.FlowHome@e684f18, navSize=1
+2026-09-22T18:36:56.916Z D/SurveyVM [main] resetToStart -> Start, session=1, uuid=bb53a51b-79d8-4191-be5c-548fb3d548c1, preserveDraft=true, draftLen=0
+2026-09-22T18:36:56.916Z D/SurveyVM [main] activateRunIfNeeded(advanceToNext:Q1) -> runNoteLen=0, draftCleared=true, uuid=bb53a51b-79d8-4191-be5c-548fb3d548c1
+2026-09-22T18:36:56.917Z D/SurveyVM [main] push -> Q1, navSize=2, stackSize=2
+2026-09-22T18:36:58.020Z D/SurveyVM [main] push -> Q2, navSize=3, stackSize=3
+2026-09-22T18:36:58.223Z D/SurveyVM [main] push -> Q3, navSize=4, stackSize=4
+2026-09-22T18:36:58.429Z D/SurveyVM [main] push -> Q4, navSize=5, stackSize=5
+2026-09-22T18:36:59.538Z D/SurveyVM [main] push -> Q5, navSize=6, stackSize=6
+2026-09-22T18:36:59.772Z D/SurveyVM [main] backToPrevious -> Q4 (runActive=true, uiLen=0, runLen=0, draftLen=0)
+2026-09-22T18:37:00.385Z D/SurveyVM [main] push -> Q5, navSize=6, stackSize=6
+2026-09-22T18:37:00.608Z D/SurveyVM [main] backToPrevious -> Q4 (runActive=true, uiLen=0, runLen=0, draftLen=0)
+2026-09-22T18:37:01.222Z D/SurveyVM [main] push -> Q5, navSize=6, stackSize=6
+2026-09-22T18:37:02.014Z D/SurveyVM [main] push -> Q6, navSize=7, stackSize=7
+2026-09-22T18:37:02.541Z D/SurveyVM [main] push -> Q7, navSize=8, stackSize=8
+2026-09-22T18:37:03.003Z D/SurveyVM [main] push -> Q8, navSize=9, stackSize=9
+2026-09-22T18:37:03.080Z D/SurveyVM [main] hasTwoStepPrompt[Q8] -> true (eval=248, fu=273)
+2026-09-22T18:37:04.556Z D/SurveyVM [main] push -> Q9, navSize=10, stackSize=10
+2026-09-22T18:37:04.572Z D/SurveyVM [main] hasTwoStepPrompt[Q9] -> true (eval=190, fu=215)
+2026-09-22T18:37:05.028Z D/SurveyVM [main] push -> Q10, navSize=11, stackSize=11
+2026-09-22T18:37:05.038Z D/SurveyVM [main] hasTwoStepPrompt[Q10] -> true (eval=195, fu=220)
+2026-09-22T18:37:05.357Z D/SurveyVM [main] push -> Q11, navSize=12, stackSize=12
+2026-09-22T18:37:05.368Z D/SurveyVM [main] hasTwoStepPrompt[Q11] -> true (eval=219, fu=244)
+2026-09-22T18:37:05.601Z D/SurveyVM [main] push -> Q12, navSize=13, stackSize=13
+2026-09-22T18:37:05.607Z D/SurveyVM [main] hasTwoStepPrompt[Q12] -> true (eval=229, fu=254)
+2026-09-22T18:37:06.291Z D/SurveyVM [main] push -> Q13, navSize=14, stackSize=14
+2026-09-22T18:37:06.303Z D/SurveyVM [main] hasTwoStepPrompt[Q13] -> true (eval=184, fu=209)
+2026-09-22T18:37:06.574Z D/SurveyVM [main] push -> Q14, navSize=15, stackSize=15
+2026-09-22T18:37:06.587Z D/SurveyVM [main] hasTwoStepPrompt[Q14] -> true (eval=221, fu=246)
+2026-09-22T18:37:07.321Z D/SurveyVM [main] push -> Q15, navSize=16, stackSize=16
+2026-09-22T18:37:07.328Z D/SurveyVM [main] hasTwoStepPrompt[Q15] -> true (eval=160, fu=185)
+2026-09-22T18:37:07.893Z D/SurveyVM [main] push -> Q16, navSize=17, stackSize=17
+2026-09-22T18:37:07.905Z D/SurveyVM [main] hasTwoStepPrompt[Q16] -> true (eval=185, fu=210)
+2026-09-22T18:37:08.743Z D/SurveyVM [main] push -> Q17, navSize=18, stackSize=18
+2026-09-22T18:37:08.755Z D/SurveyVM [main] hasTwoStepPrompt[Q17] -> true (eval=200, fu=225)
+2026-09-22T18:37:09.508Z D/SurveyVM [main] push -> Review, navSize=19, stackSize=19
+2026-09-22T18:37:09.525Z D/SurveyVM [main] hasTwoStepPrompt[Review] -> false (eval=0, fu=0)
+2026-09-22T18:37:12.437Z D/SurveyVM [main] push -> Done, navSize=20, stackSize=20
+2026-09-22T18:37:28.406Z D/SurveyVM [main] resetAudioRefs -> cleared
+2026-09-22T18:37:28.407Z D/SurveyVM [main] resetNavToStart -> key=com.negi.survey.vm.FlowHome@e684f18, navSize=1
+2026-09-22T18:37:28.407Z D/SurveyVM [main] resetToStart -> Start, session=2, uuid=c920e979-61a0-46e6-8522-d4ec40fce55e, preserveDraft=false, draftLen=0
+2026-09-22T18:37:28.408Z I/AiViewModel [main] onCleared: ViewModel is being cleared -> stopCurrentRunInternal()
+2026-09-22T18:37:32.988Z D/SLM [main] buildModelConfig: accel=GPU maxTokens=512 topK=1 topP=0.0 temperature=0.0
+2026-09-22T18:37:33.006Z D/LiteRtLM [DefaultDispatcher-worker-1] initializeIfNeeded: warm runtime already ready: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm'
+2026-09-22T18:37:33.016Z D/AiTrace [main] Installed (enabled=true ringEnabled=true)
+2026-09-22T18:37:33.017Z D/SurveyVM [main] init -> Start, session=0, uuid=d25d3779-a465-4224-8383-9a14eaf84498, navSize=1, graphSize=20
+2026-09-22T18:37:33.025Z D/SurveyVM [main] config.validate -> issues=0
+2026-09-22T18:37:33.025Z D/SurveyVM [main] promptSources -> legacy=10, eval=0, follow=0
+2026-09-22T18:37:33.025Z D/SurveyVM [main] promptSources.preview -> legacy=[Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q8, Q9], eval=[], follow=[]
+2026-09-22T18:37:33.025Z D/SurveyVM [main] hasTwoStepPrompt[Q10] -> true (eval=195, fu=220)
+2026-09-22T18:37:33.025Z D/SurveyVM [main] hasTwoStepPrompt[Q11] -> true (eval=219, fu=244)
+2026-09-22T18:37:33.025Z D/SurveyVM [main] hasTwoStepPrompt[Q12] -> true (eval=229, fu=254)
+2026-09-22T18:37:33.025Z D/SurveyVM [main] hasTwoStepPrompt[Q13] -> true (eval=184, fu=209)
+2026-09-22T18:37:33.026Z D/SurveyVM [main] hasTwoStepPrompt[Q14] -> true (eval=221, fu=246)
+2026-09-22T18:37:33.026Z D/SurveyVM [main] hasTwoStepPrompt[Q15] -> true (eval=160, fu=185)
+2026-09-22T18:37:33.026Z D/SurveyVM [main] hasTwoStepPrompt[Q16] -> true (eval=185, fu=210)
+2026-09-22T18:37:33.026Z D/SurveyVM [main] hasTwoStepPrompt[Q17] -> true (eval=200, fu=225)
+2026-09-22T18:37:33.026Z D/SurveyVM [main] hasTwoStepPrompt[Q8] -> true (eval=248, fu=273)
+2026-09-22T18:37:33.026Z D/SurveyVM [main] hasTwoStepPrompt[Q9] -> true (eval=190, fu=215)
+2026-09-22T18:37:33.026Z D/SurveyVM [main] AI prompt coverage OK (aiCount=10)
+2026-09-22T18:37:33.062Z D/SLM [slm-jni] initializeIfNeeded: model='Gemma3n4B' image=false audio=false
+2026-09-22T18:37:33.064Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm'
+2026-09-22T18:37:33.066Z D/LiteRtRepository [main] warmUp: initializeIfNeeded ok gateWaitMs=0 initMs=4
+2026-09-22T18:37:33.066Z D/LiteRtRepository [main] warmUp: Engine ready; representative inference disabled totalMs=4
+2026-09-22T18:37:36.064Z D/SurveyVM [main] resetAudioRefs -> cleared
+2026-09-22T18:37:36.064Z D/SurveyVM [main] resetNavToStart -> key=com.negi.survey.vm.FlowHome@e684f18, navSize=1
+2026-09-22T18:37:36.064Z D/SurveyVM [main] resetToStart -> Start, session=1, uuid=1ab2b0d7-1005-4f13-a236-a9f361c72158, preserveDraft=true, draftLen=0
+2026-09-22T18:37:36.064Z D/SurveyVM [main] activateRunIfNeeded(advanceToNext:Q1) -> runNoteLen=0, draftCleared=true, uuid=1ab2b0d7-1005-4f13-a236-a9f361c72158
+2026-09-22T18:37:36.064Z D/SurveyVM [main] push -> Q1, navSize=2, stackSize=2
+2026-09-22T18:37:36.274Z D/SurveyVM [main] push -> Q2, navSize=3, stackSize=3
+2026-09-22T18:37:36.452Z D/SurveyVM [main] push -> Q3, navSize=4, stackSize=4
+2026-09-22T18:37:36.658Z D/SurveyVM [main] push -> Q4, navSize=5, stackSize=5
+2026-09-22T18:37:37.576Z D/SurveyVM [main] push -> Q5, navSize=6, stackSize=6
+2026-09-22T18:37:38.452Z D/SurveyVM [main] push -> Q6, navSize=7, stackSize=7
+2026-09-22T18:37:39.033Z D/SurveyVM [main] push -> Q7, navSize=8, stackSize=8
+2026-09-22T18:37:39.283Z D/SurveyVM [main] push -> Q8, navSize=9, stackSize=9
+2026-09-22T18:37:39.314Z D/SurveyVM [main] hasTwoStepPrompt[Q8] -> true (eval=248, fu=273)
+2026-09-22T18:37:41.660Z D/SurveyVM [main] push -> Q9, navSize=10, stackSize=10
+2026-09-22T18:37:41.674Z D/SurveyVM [main] hasTwoStepPrompt[Q9] -> true (eval=190, fu=215)
+2026-09-22T18:37:42.271Z D/SurveyVM [main] push -> Q10, navSize=11, stackSize=11
+2026-09-22T18:37:42.278Z D/SurveyVM [main] hasTwoStepPrompt[Q10] -> true (eval=195, fu=220)
+2026-09-22T18:37:42.636Z D/SurveyVM [main] push -> Q11, navSize=12, stackSize=12
+2026-09-22T18:37:42.644Z D/SurveyVM [main] hasTwoStepPrompt[Q11] -> true (eval=219, fu=244)
+2026-09-22T18:37:43.011Z D/SurveyVM [main] push -> Q12, navSize=13, stackSize=13
+2026-09-22T18:37:43.025Z D/SurveyVM [main] hasTwoStepPrompt[Q12] -> true (eval=229, fu=254)
+2026-09-22T18:37:43.420Z D/SurveyVM [main] push -> Q13, navSize=14, stackSize=14
+2026-09-22T18:37:43.426Z D/SurveyVM [main] hasTwoStepPrompt[Q13] -> true (eval=184, fu=209)
+2026-09-22T18:37:43.912Z D/SurveyVM [main] push -> Q14, navSize=15, stackSize=15
+2026-09-22T18:37:43.925Z D/SurveyVM [main] hasTwoStepPrompt[Q14] -> true (eval=221, fu=246)
+2026-09-22T18:37:44.479Z D/SurveyVM [main] push -> Q15, navSize=16, stackSize=16
+2026-09-22T18:37:44.495Z D/SurveyVM [main] hasTwoStepPrompt[Q15] -> true (eval=160, fu=185)
+2026-09-22T18:37:44.945Z D/SurveyVM [main] push -> Q16, navSize=17, stackSize=17
+2026-09-22T18:37:44.963Z D/SurveyVM [main] hasTwoStepPrompt[Q16] -> true (eval=185, fu=210)
+2026-09-22T18:37:45.347Z D/SurveyVM [main] push -> Q17, navSize=18, stackSize=18
+2026-09-22T18:37:45.363Z D/SurveyVM [main] hasTwoStepPrompt[Q17] -> true (eval=200, fu=225)
+2026-09-22T18:37:45.683Z D/SurveyVM [main] push -> Review, navSize=19, stackSize=19
+2026-09-22T18:37:45.695Z D/SurveyVM [main] hasTwoStepPrompt[Review] -> false (eval=0, fu=0)
+2026-09-22T18:37:48.275Z D/SurveyVM [main] push -> Done, navSize=20, stackSize=20
+2026-09-22T18:38:29.542Z D/SurveyVM [main] resetAudioRefs -> cleared
+2026-09-22T18:38:29.545Z D/SurveyVM [main] resetNavToStart -> key=com.negi.survey.vm.FlowHome@e684f18, navSize=1
+2026-09-22T18:38:29.545Z D/SurveyVM [main] resetToStart -> Start, session=2, uuid=fc0992ea-2edb-42b5-90d3-1b875a4d60a4, preserveDraft=false, draftLen=0
+2026-09-22T18:38:29.546Z I/AiViewModel [main] onCleared: ViewModel is being cleared -> stopCurrentRunInternal()
+2026-09-22T18:38:38.372Z D/SLM [main] buildModelConfig: accel=GPU maxTokens=512 topK=1 topP=0.0 temperature=0.0
+2026-09-22T18:38:38.397Z D/LiteRtLM [DefaultDispatcher-worker-2] initializeIfNeeded: warm runtime already ready: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm'
+2026-09-22T18:38:38.399Z D/AiTrace [main] Installed (enabled=true ringEnabled=true)
+2026-09-22T18:38:38.400Z D/SurveyVM [main] init -> Start, session=0, uuid=e014e068-07c9-443a-b953-7c70e2f57364, navSize=1, graphSize=20
+2026-09-22T18:38:38.405Z D/SurveyVM [main] config.validate -> issues=0
+2026-09-22T18:38:38.405Z D/SurveyVM [main] promptSources -> legacy=10, eval=0, follow=0
+2026-09-22T18:38:38.405Z D/SurveyVM [main] promptSources.preview -> legacy=[Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q8, Q9], eval=[], follow=[]
+2026-09-22T18:38:38.405Z D/SurveyVM [main] hasTwoStepPrompt[Q10] -> true (eval=195, fu=220)
+2026-09-22T18:38:38.405Z D/SurveyVM [main] hasTwoStepPrompt[Q11] -> true (eval=219, fu=244)
+2026-09-22T18:38:38.405Z D/SurveyVM [main] hasTwoStepPrompt[Q12] -> true (eval=229, fu=254)
+2026-09-22T18:38:38.405Z D/SurveyVM [main] hasTwoStepPrompt[Q13] -> true (eval=184, fu=209)
+2026-09-22T18:38:38.405Z D/SurveyVM [main] hasTwoStepPrompt[Q14] -> true (eval=221, fu=246)
+2026-09-22T18:38:38.405Z D/SurveyVM [main] hasTwoStepPrompt[Q15] -> true (eval=160, fu=185)
+2026-09-22T18:38:38.405Z D/SurveyVM [main] hasTwoStepPrompt[Q16] -> true (eval=185, fu=210)
+2026-09-22T18:38:38.405Z D/SurveyVM [main] hasTwoStepPrompt[Q17] -> true (eval=200, fu=225)
+2026-09-22T18:38:38.405Z D/SurveyVM [main] hasTwoStepPrompt[Q8] -> true (eval=248, fu=273)
+2026-09-22T18:38:38.405Z D/SurveyVM [main] hasTwoStepPrompt[Q9] -> true (eval=190, fu=215)
+2026-09-22T18:38:38.405Z D/SurveyVM [main] AI prompt coverage OK (aiCount=10)
+2026-09-22T18:38:38.431Z D/SLM [slm-jni] initializeIfNeeded: model='Gemma3n4B' image=false audio=false
+2026-09-22T18:38:38.433Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm'
+2026-09-22T18:38:38.435Z D/LiteRtRepository [main] warmUp: initializeIfNeeded ok gateWaitMs=0 initMs=4
+2026-09-22T18:38:38.435Z D/LiteRtRepository [main] warmUp: Engine ready; representative inference disabled totalMs=4
+2026-09-22T18:38:39.801Z D/SurveyVM [main] resetAudioRefs -> cleared
+2026-09-22T18:38:39.801Z D/SurveyVM [main] resetNavToStart -> key=com.negi.survey.vm.FlowHome@e684f18, navSize=1
+2026-09-22T18:38:39.801Z D/SurveyVM [main] resetToStart -> Start, session=1, uuid=3dbf1b6d-7d7d-4c63-86af-168026cb9e7a, preserveDraft=true, draftLen=0
+2026-09-22T18:38:39.801Z D/SurveyVM [main] activateRunIfNeeded(advanceToNext:Q1) -> runNoteLen=0, draftCleared=true, uuid=3dbf1b6d-7d7d-4c63-86af-168026cb9e7a
+2026-09-22T18:38:39.801Z D/SurveyVM [main] push -> Q1, navSize=2, stackSize=2
+2026-09-22T18:38:40.342Z D/SurveyVM [main] push -> Q2, navSize=3, stackSize=3
+2026-09-22T18:38:41.045Z D/SurveyVM [main] push -> Q3, navSize=4, stackSize=4
+2026-09-22T18:38:41.697Z D/SurveyVM [main] push -> Q4, navSize=5, stackSize=5
+2026-09-22T18:38:42.377Z D/SurveyVM [main] push -> Q5, navSize=6, stackSize=6
+2026-09-22T18:38:43.186Z D/SurveyVM [main] push -> Q6, navSize=7, stackSize=7
+2026-09-22T18:38:43.915Z D/SurveyVM [main] push -> Q7, navSize=8, stackSize=8
+2026-09-22T18:38:44.758Z D/SurveyVM [main] push -> Q8, navSize=9, stackSize=9
+2026-09-22T18:38:44.796Z D/SurveyVM [main] hasTwoStepPrompt[Q8] -> true (eval=248, fu=273)
+2026-09-22T18:38:46.112Z D/SurveyVM [main] push -> Q9, navSize=10, stackSize=10
+2026-09-22T18:38:46.125Z D/SurveyVM [main] hasTwoStepPrompt[Q9] -> true (eval=190, fu=215)
+2026-09-22T18:38:46.705Z D/SurveyVM [main] push -> Q10, navSize=11, stackSize=11
+2026-09-22T18:38:46.709Z D/SurveyVM [main] hasTwoStepPrompt[Q10] -> true (eval=195, fu=220)
+2026-09-22T18:38:47.218Z D/SurveyVM [main] push -> Q11, navSize=12, stackSize=12
+2026-09-22T18:38:47.225Z D/SurveyVM [main] hasTwoStepPrompt[Q11] -> true (eval=219, fu=244)
+2026-09-22T18:38:47.750Z D/SurveyVM [main] push -> Q12, navSize=13, stackSize=13
+2026-09-22T18:38:47.760Z D/SurveyVM [main] hasTwoStepPrompt[Q12] -> true (eval=229, fu=254)
+2026-09-22T18:38:48.347Z D/SurveyVM [main] push -> Q13, navSize=14, stackSize=14
+2026-09-22T18:38:48.360Z D/SurveyVM [main] hasTwoStepPrompt[Q13] -> true (eval=184, fu=209)
+2026-09-22T18:38:49.029Z D/SurveyVM [main] push -> Q14, navSize=15, stackSize=15
+2026-09-22T18:38:49.043Z D/SurveyVM [main] hasTwoStepPrompt[Q14] -> true (eval=221, fu=246)
+2026-09-22T18:38:49.599Z D/SurveyVM [main] push -> Q15, navSize=16, stackSize=16
+2026-09-22T18:38:49.611Z D/SurveyVM [main] hasTwoStepPrompt[Q15] -> true (eval=160, fu=185)
+2026-09-22T18:38:49.951Z D/SurveyVM [main] push -> Q16, navSize=17, stackSize=17
+2026-09-22T18:38:49.962Z D/SurveyVM [main] hasTwoStepPrompt[Q16] -> true (eval=185, fu=210)
+2026-09-22T18:38:50.306Z D/SurveyVM [main] push -> Q17, navSize=18, stackSize=18
+2026-09-22T18:38:50.316Z D/SurveyVM [main] hasTwoStepPrompt[Q17] -> true (eval=200, fu=225)
+2026-09-22T18:38:50.786Z D/SurveyVM [main] push -> Review, navSize=19, stackSize=19
+2026-09-22T18:38:50.794Z D/SurveyVM [main] hasTwoStepPrompt[Review] -> false (eval=0, fu=0)
+2026-09-22T18:38:52.775Z D/SurveyVM [main] push -> Done, navSize=20, stackSize=20
+2026-09-22T18:39:19.618Z D/SurveyVM [main] resetAudioRefs -> cleared
+2026-09-22T18:39:19.619Z D/SurveyVM [main] resetNavToStart -> key=com.negi.survey.vm.FlowHome@e684f18, navSize=1
+2026-09-22T18:39:19.620Z D/SurveyVM [main] resetToStart -> Start, session=2, uuid=a06e0a04-3364-4300-83e6-eafb3d8c3548, preserveDraft=false, draftLen=0
+2026-09-22T18:39:19.620Z I/AiViewModel [main] onCleared: ViewModel is being cleared -> stopCurrentRunInternal()
+2026-09-22T18:39:25.764Z D/SLM [main] buildModelConfig: accel=GPU maxTokens=512 topK=1 topP=0.0 temperature=0.0
+2026-09-22T18:39:25.782Z D/LiteRtLM [DefaultDispatcher-worker-2] initializeIfNeeded: warm runtime already ready: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm'
+2026-09-22T18:39:25.793Z D/AiTrace [main] Installed (enabled=true ringEnabled=true)
+2026-09-22T18:39:25.795Z D/SurveyVM [main] init -> Start, session=0, uuid=af968e51-505b-447a-a669-bd6132306653, navSize=1, graphSize=20
+2026-09-22T18:39:25.799Z D/SurveyVM [main] config.validate -> issues=0
+2026-09-22T18:39:25.799Z D/SurveyVM [main] promptSources -> legacy=10, eval=0, follow=0
+2026-09-22T18:39:25.799Z D/SurveyVM [main] promptSources.preview -> legacy=[Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q8, Q9], eval=[], follow=[]
+2026-09-22T18:39:25.799Z D/SurveyVM [main] hasTwoStepPrompt[Q10] -> true (eval=195, fu=220)
+2026-09-22T18:39:25.799Z D/SurveyVM [main] hasTwoStepPrompt[Q11] -> true (eval=219, fu=244)
+2026-09-22T18:39:25.799Z D/SurveyVM [main] hasTwoStepPrompt[Q12] -> true (eval=229, fu=254)
+2026-09-22T18:39:25.799Z D/SurveyVM [main] hasTwoStepPrompt[Q13] -> true (eval=184, fu=209)
+2026-09-22T18:39:25.800Z D/SurveyVM [main] hasTwoStepPrompt[Q14] -> true (eval=221, fu=246)
+2026-09-22T18:39:25.800Z D/SurveyVM [main] hasTwoStepPrompt[Q15] -> true (eval=160, fu=185)
+2026-09-22T18:39:25.800Z D/SurveyVM [main] hasTwoStepPrompt[Q16] -> true (eval=185, fu=210)
+2026-09-22T18:39:25.800Z D/SurveyVM [main] hasTwoStepPrompt[Q17] -> true (eval=200, fu=225)
+2026-09-22T18:39:25.800Z D/SurveyVM [main] hasTwoStepPrompt[Q8] -> true (eval=248, fu=273)
+2026-09-22T18:39:25.800Z D/SurveyVM [main] hasTwoStepPrompt[Q9] -> true (eval=190, fu=215)
+2026-09-22T18:39:25.800Z D/SurveyVM [main] AI prompt coverage OK (aiCount=10)
+2026-09-22T18:39:25.822Z D/SLM [slm-jni] initializeIfNeeded: model='Gemma3n4B' image=false audio=false
+2026-09-22T18:39:25.823Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm'
+2026-09-22T18:39:25.825Z D/LiteRtRepository [main] warmUp: initializeIfNeeded ok gateWaitMs=0 initMs=3
+2026-09-22T18:39:25.825Z D/LiteRtRepository [main] warmUp: Engine ready; representative inference disabled totalMs=4
+2026-09-22T18:39:26.725Z D/SurveyVM [main] resetAudioRefs -> cleared
+2026-09-22T18:39:26.725Z D/SurveyVM [main] resetNavToStart -> key=com.negi.survey.vm.FlowHome@e684f18, navSize=1
+2026-09-22T18:39:26.725Z D/SurveyVM [main] resetToStart -> Start, session=1, uuid=fbb98ea2-a401-4b94-8085-8d4150e6211f, preserveDraft=true, draftLen=0
+2026-09-22T18:39:26.725Z D/SurveyVM [main] activateRunIfNeeded(advanceToNext:Q1) -> runNoteLen=0, draftCleared=true, uuid=fbb98ea2-a401-4b94-8085-8d4150e6211f
+2026-09-22T18:39:26.725Z D/SurveyVM [main] push -> Q1, navSize=2, stackSize=2
+2026-09-22T18:39:27.649Z D/SurveyVM [main] backToPrevious -> Start (runActive=true, uiLen=0, runLen=0, draftLen=0)
+2026-09-22T18:39:28.244Z D/SurveyVM [main] push -> Q1, navSize=2, stackSize=2
+2026-09-22T18:39:29.013Z D/SurveyVM [main] push -> Q2, navSize=3, stackSize=3
+2026-09-22T18:39:29.229Z D/SurveyVM [main] push -> Q3, navSize=4, stackSize=4
+2026-09-22T18:39:29.419Z D/SurveyVM [main] push -> Q4, navSize=5, stackSize=5
+2026-09-22T18:39:30.253Z D/SurveyVM [main] push -> Q5, navSize=6, stackSize=6
+2026-09-22T18:39:31.100Z D/SurveyVM [main] push -> Q6, navSize=7, stackSize=7
+2026-09-22T18:39:31.676Z D/SurveyVM [main] push -> Q7, navSize=8, stackSize=8
+2026-09-22T18:39:32.528Z D/SurveyVM [main] push -> Q8, navSize=9, stackSize=9
+2026-09-22T18:39:32.551Z D/SurveyVM [main] hasTwoStepPrompt[Q8] -> true (eval=248, fu=273)
+2026-09-22T18:39:34.059Z D/SurveyVM [main] push -> Q9, navSize=10, stackSize=10
+2026-09-22T18:39:34.072Z D/SurveyVM [main] hasTwoStepPrompt[Q9] -> true (eval=190, fu=215)
+2026-09-22T18:39:35.224Z D/SurveyVM [main] push -> Q10, navSize=11, stackSize=11
+2026-09-22T18:39:35.238Z D/SurveyVM [main] hasTwoStepPrompt[Q10] -> true (eval=195, fu=220)
+2026-09-22T18:39:35.789Z D/SurveyVM [main] push -> Q11, navSize=12, stackSize=12
+2026-09-22T18:39:35.805Z D/SurveyVM [main] hasTwoStepPrompt[Q11] -> true (eval=219, fu=244)
+2026-09-22T18:39:36.133Z D/SurveyVM [main] push -> Q12, navSize=13, stackSize=13
+2026-09-22T18:39:36.141Z D/SurveyVM [main] hasTwoStepPrompt[Q12] -> true (eval=229, fu=254)
+2026-09-22T18:39:36.559Z D/SurveyVM [main] push -> Q13, navSize=14, stackSize=14
+2026-09-22T18:39:36.570Z D/SurveyVM [main] hasTwoStepPrompt[Q13] -> true (eval=184, fu=209)
+2026-09-22T18:39:36.910Z D/SurveyVM [main] push -> Q14, navSize=15, stackSize=15
+2026-09-22T18:39:36.922Z D/SurveyVM [main] hasTwoStepPrompt[Q14] -> true (eval=221, fu=246)
+2026-09-22T18:39:37.529Z D/SurveyVM [main] push -> Q15, navSize=16, stackSize=16
+2026-09-22T18:39:37.540Z D/SurveyVM [main] hasTwoStepPrompt[Q15] -> true (eval=160, fu=185)
+2026-09-22T18:39:37.901Z D/SurveyVM [main] push -> Q16, navSize=17, stackSize=17
+2026-09-22T18:39:37.907Z D/SurveyVM [main] hasTwoStepPrompt[Q16] -> true (eval=185, fu=210)
+2026-09-22T18:39:38.466Z D/SurveyVM [main] push -> Q17, navSize=18, stackSize=18
+2026-09-22T18:39:38.476Z D/SurveyVM [main] hasTwoStepPrompt[Q17] -> true (eval=200, fu=225)
+2026-09-22T18:39:38.855Z D/SurveyVM [main] push -> Review, navSize=19, stackSize=19
+2026-09-22T18:39:38.863Z D/SurveyVM [main] hasTwoStepPrompt[Review] -> false (eval=0, fu=0)
+2026-09-22T18:39:42.218Z D/SurveyVM [main] push -> Done, navSize=20, stackSize=20
+2026-09-22T18:44:55.900Z D/SurveyVM [main] resetAudioRefs -> cleared

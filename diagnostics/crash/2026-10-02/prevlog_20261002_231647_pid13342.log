@@ -1,0 +1,94 @@
+=== Previous Session Logcat ===
+captured_time_utc=20261002_231647
+captured_time_local=20261002_181647
+marker=2026-10-02 16:47:09.078
+preferred_prev_pid=17453
+note=best-effort; buffers may be overwritten before next start
+sdk=36
+device=samsung SM-S731U
+appId=com.negi.survey
+versionName=0.0.1
+versionCode=110
+
+=== Logcat (since marker) ===
+--------- beginning of main
+10-02 16:49:50.881 17453 17453 I VRI[MainActivity]@2b76931: ViewPostIme pointer 0
+10-02 16:49:50.888 17453 17453 I VRI[MainActivity]@2b76931: call setFrameRateCategory for touch hint category=high hint, reason=touch, vri=VRI[MainActivity]@2b76931
+10-02 16:49:50.934 17453 17453 I VRI[MainActivity]@2b76931: ViewPostIme pointer 1
+10-02 16:49:50.937 17453 17453 D WhisperSpeechController: updateContext: surveyId=893aaee8-b50e-4ede-a5c3-aa751655f15f, questionId=__home_free_text__
+10-02 16:49:50.944 17453 17453 D WhisperSpeechController: startRecording: requested
+10-02 16:49:50.947 17453 17625 D WhisperSpeechController: startRecording: recorder.startRecording -> /data/user/0/com.negi.survey/cache/whisper_rec/survey_input_1959747975048221772.wav
+10-02 16:49:50.948 17453 17625 D WhisperSpeechController: startRecording: started
+10-02 16:49:50.964 17453 17453 I View    : setRequestedFrameRate frameRate=-4.0, this=android.view.View{6bb2bdf V.ED..... ........ 0,0-0,0}, caller=androidx.compose.ui.platform.Api35Impl.setRequestedFrameRate:4047 androidx.compose.ui.platform.AndroidComposeView.dispatchDraw:2282 android.view.View.draw:26758 android.view.View.updateDisplayListIfDirty:25577 android.view.ViewGroup.recreateChildDisplayList:4881 
+10-02 16:49:50.965 17453 17453 I View    : setRequestedFrameRate frameRate=NaN, this=android.view.View{6bb2bdf V.ED..... ........ 0,0-0,0}, caller=androidx.compose.ui.platform.Api35Impl.setRequestedFrameRate:4047 androidx.compose.ui.platform.AndroidComposeView.dispatchDraw:2282 android.view.View.draw:26758 android.view.View.updateDisplayListIfDirty:25577 android.view.ViewGroup.recreateChildDisplayList:4881 
+10-02 16:49:51.058 17453 17625 I Recorder: 🎙 start 16000Hz buf=2048
+10-02 16:49:51.611 17453 17453 I VRI[MainActivity]@2b76931: handleResized, frames=ClientWindowFrames{frame=[0,0][1080,2340] display=[0,0][1080,2340] parentFrame=[0,0][0,0]} displayId=0 dragResizing=false compatScale=1.0 frameChanged=false attachedFrameChanged=false configChanged=false displayChanged=false compatScaleChanged=false dragResizingChanged=false
+10-02 16:49:53.697 17453 17453 I VRI[MainActivity]@2b76931: ViewPostIme pointer 0
+10-02 16:49:53.756 17453 17453 I VRI[MainActivity]@2b76931: ViewPostIme pointer 1
+10-02 16:49:53.757 17453 17453 D WhisperSpeechController: updateContext: surveyId=893aaee8-b50e-4ede-a5c3-aa751655f15f, questionId=__home_free_text__
+10-02 16:49:53.757 17453 17453 D WhisperSpeechController: stopRecording: requested
+10-02 16:49:53.759 17453 17498 D WhisperSpeechController: stopRecording: awaiting recorder.stopRecording()
+10-02 16:49:53.760 17453 18505 D Recorder: stopRecording() invoked (state=Recording)
+10-02 16:49:53.760 17453 18505 D Recorder: Calling AudioRecord.stop() to unblock read() ...
+10-02 16:49:53.774 17453 17453 I View    : setRequestedFrameRate frameRate=-4.0, this=android.view.View{6bb2bdf V.ED..... ........ 0,0-0,0}, caller=androidx.compose.ui.platform.Api35Impl.setRequestedFrameRate:4047 androidx.compose.ui.platform.AndroidComposeView.dispatchDraw:2282 android.view.View.draw:26758 android.view.View.updateDisplayListIfDirty:25577 android.view.ViewGroup.recreateChildDisplayList:4881 
+10-02 16:49:53.776 17453 17453 I View    : setRequestedFrameRate frameRate=NaN, this=android.view.View{6bb2bdf V.ED..... ........ 0,0-0,0}, caller=androidx.compose.ui.platform.Api35Impl.setRequestedFrameRate:4047 androidx.compose.ui.platform.AndroidComposeView.dispatchDraw:2282 android.view.View.draw:26758 android.view.View.updateDisplayListIfDirty:25577 android.view.ViewGroup.recreateChildDisplayList:4881 
+10-02 16:49:53.797 17453 18505 D Recorder: Joining writer job ...
+10-02 16:49:53.800 17453 17625 I Recorder: 🎙 stopped & released (writer exit)
+10-02 16:49:53.800 17453 18505 D Recorder: Writer job joined successfully
+10-02 16:49:53.801 17453 18505 D Recorder: post-join: pcm=/data/user/0/com.negi.survey/cache/rec_232515432431899580.pcm wav=/data/user/0/com.negi.survey/cache/whisper_rec/survey_input_1959747975048221772.wav cfg=Config(sampleRate=16000, channelMask=16, format=2, bufferSize=2048)
+10-02 16:49:53.802 17453 18505 D Recorder: WAV header written
+10-02 16:49:53.802 17453 18505 I Recorder: ✅ WAV finalized: /data/user/0/com.negi.survey/cache/whisper_rec/survey_input_1959747975048221772.wav (83244 bytes)
+10-02 16:49:53.803 17453 18505 D Recorder: Cleanup complete, state=Idle
+10-02 16:49:53.804 17453 17625 D WhisperSpeechController: recorder.stopRecording OK in 45ms
+10-02 16:49:53.865 17453 17625 D WhisperSpeechController: stopRecording: wav.size(stable)=83244 path=/data/user/0/com.negi.survey/cache/whisper_rec/survey_input_1959747975048221772.wav
+10-02 16:49:53.867 17453 17625 D WhisperSpeechController: stopRecording: wav.info fmt=1 ch=1 sr=16000 bits=16 dataBytes=83200 durationSec=2.600
+10-02 16:49:53.879 17453 17625 D WhisperSpeechController: stopRecording: wav.stats rms=0.18399 peak=1.00000 nonSilent=0.766 samples=41600
+10-02 16:49:53.885 17453 17625 D ExportUtils: exportRecordedVoice: copying /data/user/0/com.negi.survey/cache/whisper_rec/survey_input_1959747975048221772.wav -> /storage/emulated/0/Android/data/com.negi.survey/files/exports/voice/2026-10-02_21-49-53_voice_SM-S731U_414A86B07D91_893aaee8-b50e-4ede-a5c3-aa751655f15f_home_free_text.wav
+10-02 16:49:53.886 17453 17625 D ExportUtils: exportRecordedVoice: done, size=83244 bytes
+10-02 16:49:53.886 17453 17625 D ExportUtils: writeVoiceMeta: wrote /storage/emulated/0/Android/data/com.negi.survey/files/exports/voice/2026-10-02_21-49-53_voice_SM-S731U_414A86B07D91_893aaee8-b50e-4ede-a5c3-aa751655f15f_home_free_text.meta.json
+10-02 16:49:53.887 17453 17625 D MainActivity: onVoiceExported: q=__home_free_text__, file=2026-10-02_21-49-53_voice_SM-S731U_414A86B07D91_893aaee8-b50e-4ede-a5c3-aa751655f15f_home_free_text.wav, bytes=83244, checksum=6236b825e985d2e8a1b8d34c5cc5ea48489632ce175e52415de8d4729dac1ce0
+10-02 16:49:53.887 17453 17625 D WhisperSpeechController: onVoiceExported -> file=2026-10-02_21-49-53_voice_SM-S731U_414A86B07D91_893aaee8-b50e-4ede-a5c3-aa751655f15f_home_free_text.wav, bytes=83244, qid=__home_free_text__, sid=893aaee8-b50e-4ede-a5c3-aa751655f15f, checksum=6236b825e985...
+10-02 16:49:53.887 17453 17625 D WhisperSpeechController: stopRecording: transcribing -> /data/user/0/com.negi.survey/cache/whisper_rec/survey_input_1959747975048221772.wav
+10-02 16:49:53.887 17453 17625 D WhisperEngine: [2][asr] Start. file=survey_input_1959747975048221772.wav bytes=81.29KB approxSec(pcm16mono@16000Hz)=2.60 lang=en translate=false printTimestamp=false sr=16000 modelKey=asset:models/ggml-small-q5_1.bin thread=DefaultDispatcher-worker-5
+10-02 16:49:53.887 17453 17625 D WhisperEngine: [2][asr] mem: javaUsed=8.85MB javaTotal=30.82MB javaMax=256.00MB nativeAllocated=1.16GB
+10-02 16:49:53.888 17453 17625 D WaveCodec: fmt: format=1, ch=1, rate=16000, bits=16
+10-02 16:49:53.888 17453 17625 V WaveCodec: data chunk start=44 declared=83200 effective=83200
+10-02 16:49:53.890 17453 17625 D WaveCodec: Decoded WAV: 1ch 16000Hz 16-bit (frames=41600, dataHeader=83200, effective=83200)
+10-02 16:49:53.893 17453 17625 D WhisperEngine: [2][asr] PCM stats(sampled): samples=41600 seconds=2.60 min=-1.0 max=0.9515381 rms=0.18 decodeMs=3
+10-02 16:49:53.893 17453 17625 I WhisperEngine: [2][asr] Mutex acquired. lockWaitMs=0 attempts=en audio=2.60s modelKey=asset:models/ggml-small-q5_1.bin
+10-02 16:49:53.893 17453 17625 I WhisperEngine: [2][asr] Transcribing: lang=en translate=false ts=false samples=41600 audio=2.60s
+10-02 16:49:53.894 17453 17936 I WhisperJNI: Transcribe start: threads=6 lang=en translate=false samples=41600
+10-02 16:49:53.895 17453 17936 I JNI-Whisper: Starting whisper_full(): samples=41600 threads=6 translate=0 lang=en
+10-02 16:49:53.903 17453 17453 I View    : setRequestedFrameRate frameRate=-4.0, this=android.view.View{6bb2bdf V.ED..... ........ 0,0-0,0}, caller=androidx.compose.ui.platform.Api35Impl.setRequestedFrameRate:4047 androidx.compose.ui.platform.AndroidComposeView.dispatchDraw:2282 android.view.View.draw:26758 android.view.View.updateDisplayListIfDirty:25577 android.view.ViewGroup.recreateChildDisplayList:4881 
+10-02 16:49:53.905 17453 17453 I View    : setRequestedFrameRate frameRate=NaN, this=android.view.View{6bb2bdf V.ED..... ........ 0,0-0,0}, caller=androidx.compose.ui.platform.Api35Impl.setRequestedFrameRate:4047 androidx.compose.ui.platform.AndroidComposeView.dispatchDraw:2282 android.view.View.draw:26758 android.view.View.updateDisplayListIfDirty:25577 android.view.ViewGroup.recreateChildDisplayList:4881 
+10-02 16:49:54.094 17453 17453 I InsetsSourceConsumer: applyRequestedVisibilityToControl: visible=true, type=statusBars, host=com.negi.survey/com.negi.survey.MainActivity
+10-02 16:49:56.762 17453 17453 I VRI[MainActivity]@2b76931: call setFrameRateCategory for touch hint category=no preference, reason=boost timeout, vri=VRI[MainActivity]@2b76931
+10-02 16:49:58.345 17453 17936 I WhisperJNI: Transcribe complete: segments=1 chars=42
+10-02 16:49:58.345 17453 17625 D WhisperEngine: [2][asr] Attempt done: lang=en transcribeMs=4453 rtf=1.71 textLen=40 preview="Tester, tester, tester, can you hear me?"
+10-02 16:49:58.346 17453 17625 I WhisperEngine: [2][asr] OK. totalMs=4458 decodeMs=3 lockWaitMs=0 lockHoldMs=4453 selectedLang=en modelKey=asset:models/ggml-small-q5_1.bin
+10-02 16:49:58.346 17453 17625 D WhisperEngine: [2][asr] mem: javaUsed=9.10MB javaTotal=30.82MB javaMax=256.00MB nativeAllocated=1.17GB
+10-02 16:49:58.346 17453 17625 D WhisperSpeechController: Transcription success: Tester, tester, tester, can you hear me?
+10-02 16:49:58.346 17453 17625 D WhisperSpeechController: updatePartialText: len=40
+10-02 16:49:58.346 17453 17625 D WhisperSpeechController: temp delete=true reason=stop_finally -> /data/user/0/com.negi.survey/cache/whisper_rec/survey_input_1959747975048221772.wav
+10-02 16:49:58.359 17453 17453 I View    : setRequestedFrameRate frameRate=-4.0, this=android.view.View{6bb2bdf V.ED..... ........ 0,0-0,0}, caller=androidx.compose.ui.platform.Api35Impl.setRequestedFrameRate:4047 androidx.compose.ui.platform.AndroidComposeView.dispatchDraw:2282 android.view.View.draw:26758 android.view.View.updateDisplayListIfDirty:25577 android.view.ViewGroup.recreateChildDisplayList:4881 
+10-02 16:49:58.401 17453 17453 I View    : setRequestedFrameRate frameRate=NaN, this=android.view.View{6bb2bdf V.ED..... ........ 0,0-0,0}, caller=androidx.compose.ui.platform.Api35Impl.setRequestedFrameRate:4047 androidx.compose.ui.platform.AndroidComposeView.dispatchDraw:2282 android.view.View.draw:26758 android.view.View.updateDisplayListIfDirty:25577 android.view.ViewGroup.recreateChildDisplayList:4881 
+10-02 16:58:49.447 17453 17453 I VRI[MainActivity]@2b76931: ViewPostIme pointer 0
+10-02 16:58:49.456 17453 17453 I VRI[MainActivity]@2b76931: call setFrameRateCategory for touch hint category=high hint, reason=touch, vri=VRI[MainActivity]@2b76931
+10-02 16:58:49.603 17453 17453 I VRI[MainActivity]@2b76931: ViewPostIme pointer 1
+10-02 16:58:52.608 17453 17453 I VRI[MainActivity]@2b76931: call setFrameRateCategory for touch hint category=no preference, reason=boost timeout, vri=VRI[MainActivity]@2b76931
+--------- beginning of system
+10-02 17:30:20.918 17453 17453 D ActivityThread: Package [com.negi.survey.local] reported as REPLACED, but missing application info. Assuming REMOVED.
+10-02 17:30:20.919 17453 17453 D ActivityThread: Package [com.negi.survey.local] reported as REPLACED, but missing application info. Assuming REMOVED.
+10-02 17:30:35.398 17453 17453 I ImeFocusController: onPreWindowFocus: skipped hasWindowFocus=false mHasImeFocus=true
+10-02 17:30:35.419 17453 17453 I ImeFocusController: onPostWindowFocus: skipped hasWindowFocus=false mHasImeFocus=true
+10-02 17:30:35.788 17453 17453 D InputTransport: Input channel destroyed: 'ClientS', fd=140
+10-02 17:30:36.181 17453 17453 I VRI[MainActivity]@2b76931: handleAppVisibility mAppVisible = true visible = false
+10-02 17:30:36.181 17453 17453 D VRI[MainActivity]@2b76931: visibilityChanged oldVisibility=true newVisibility=false
+10-02 17:30:36.193 17453 17561 D HWUI    : CacheManager::trimMemory(20)
+10-02 17:30:36.205 17453 17453 I VRI[MainActivity]@2b76931: Relayout returned: old=(0,0,1080,2340) new=(0,0,1080,2340) relayoutAsync=false req=(1080,2340)8 dur=4 res=0x2 s={false 0x0} ch=true seqId=0
+10-02 17:30:36.205 17453 17453 D VRI[MainActivity]@2b76931: Not drawing due to not visible. Reason=!mAppVisible && !mForceDecorViewVisibility
+10-02 17:30:36.211 17453 17561 D HWUI    : CacheManager::trimMemory(20)
+10-02 17:30:36.222 17453 17453 I VRI[MainActivity]@2b76931: stopped(true) old = false
+10-02 17:30:36.222 17453 17453 D VRI[MainActivity]@2b76931: WindowStopped on com.negi.survey/com.negi.survey.MainActivity set to true
+10-02 17:30:36.223 17453 17561 D HWUI    : CacheManager::trimMemory(20)
+10-02 17:30:36.260 17453 17453 D BBA2    : setIsFg isFg = false; delayValue 3999ms

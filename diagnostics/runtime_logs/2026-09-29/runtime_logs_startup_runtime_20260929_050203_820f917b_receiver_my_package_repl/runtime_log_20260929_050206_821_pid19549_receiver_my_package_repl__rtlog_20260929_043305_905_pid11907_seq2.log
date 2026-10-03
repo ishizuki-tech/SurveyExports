@@ -1,0 +1,74 @@
+=== RuntimeLogStore Header ===
+ts=2026-09-29T04:33:05.906Z
+fileNameFormat=LEGACY
+appId=com.negi.survey
+versionName=0.0.1
+versionCode=1
+debug=true
+device=Google Pixel 9a
+sdk=36
+pid=11907
+==============================
+2026-09-29T04:33:05.906Z I/RuntimeLogStore [rtlog-io] --- rotated (reason=plain_snapshot:receiver_boot_completed) ---
+2026-09-29T04:33:06.898Z W/SurveyApp [main] Deferred startup enqueues begin...
+2026-09-29T04:33:06.899Z D/SurveyApp [main] WorkManager available. where=startupRtLogs(immediate) took=0ms
+2026-09-29T04:33:06.900Z D/SurveyApp [main] Startup runtime logs target -> owner=ishizuki-tech repo=SurveyExports branch=main base='/diagnostics/runtime_logs'
+2026-09-29T04:33:06.901Z D/SurveyApp [main] Startup runtime logs: enqueue requested (immediate).
+2026-09-29T04:33:06.901Z D/SurveyApp [main] WorkManager available. where=startupRingLogs(immediate) took=0ms
+2026-09-29T04:33:06.902Z D/SurveyApp [main] Startup ring logs target -> owner=ishizuki-tech repo=SurveyExports branch=main base='/diagnostics/applog_ring'
+2026-09-29T04:33:06.903Z D/SurveyApp [main] Startup ring logs: enqueue requested (immediate).
+2026-09-29T04:33:06.903Z D/SurveyApp [main] WorkManager available. where=enqueuePending(immediate) took=0ms
+2026-09-29T04:33:06.903Z D/SurveyApp [main] CrashCapture pending uploads requested (immediate).
+2026-09-29T04:33:06.903Z W/SurveyApp [main] Deferred startup enqueues done: took=5ms
+2026-09-29T04:33:06.911Z D/SurveyApp [DefaultDispatcher-worker-4] Survey recovery WorkManager available. where=startupSurveyUploads(initial) took=0ms
+2026-09-29T04:33:06.919Z D/SurveyApp [DefaultDispatcher-worker-4] Startup survey recovery complete: discovered=0 attempted=0 submitted=0 active=0 trackerUnconfirmed=0 uploaded=0 deferred=0 invalid=0 operationalFailures=0 duplicates=0 unclassified=0
+2026-09-29T04:33:10.098Z D/SLM [main] buildModelConfig: accel=GPU maxTokens=1024 topK=1 topP=0.0 temperature=0.0
+2026-09-29T04:33:10.134Z D/LiteRtLM [DefaultDispatcher-worker-1] Initializing LiteRT-LM: model='Gemma3n4B', key='fs|dev=65086|ino=78619|size=4919541760|mtime=1790655940755'
+2026-09-29T04:33:10.134Z D/LiteRtLM [DefaultDispatcher-worker-1] Capabilities: image=false audio=false
+2026-09-29T04:33:10.135Z D/LiteRtLM [DefaultDispatcher-worker-1] Backend=com.google.ai.edge.litertlm.Backend$GPU@67f0551 maxNumTokens=1024 (raw=1024) topK=1 topP=0.0 temp=0.0
+2026-09-29T04:33:10.135Z D/LiteRtLM [DefaultDispatcher-worker-1] Model path='/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' sizeBytes=4919541760 lastModified=1790655940755
+2026-09-29T04:33:10.135Z D/LiteRtLM [DefaultDispatcher-worker-1] LiteRT-LM native benchmark policy: enabled=false emulator=false
+2026-09-29T04:33:10.135Z D/LiteRtLM [DefaultDispatcher-worker-1] Speculative decoding / MTP policy: enabled=false runtimeFlagUpdated=true model='Gemma3n4B'
+2026-09-29T04:33:10.137Z D/LiteRtLM [DefaultDispatcher-worker-1] Engine cacheDir resolved: key='fs|dev=65086|ino=78619|size=4919541760|mtime=1790655940755' backend=com.google.ai.edge.litertlm.Backend$GPU@67f0551 path='/data/user/0/com.negi.survey/no_backup/litertlm_cache/3674fc6eb51f6ee9f1109258530b3f42620719b3' filesBefore=2
+2026-09-29T04:33:17.177Z W/LiteRtLM [DefaultDispatcher-worker-1] Engine.initialize completed: key='fs|dev=65086|ino=78619|size=4919541760|mtime=1790655940755' backend=com.google.ai.edge.litertlm.Backend$GPU@67f0551 took=7039ms cacheFilesAfter=2
+2026-09-29T04:33:17.199Z D/LiteRtLM [DefaultDispatcher-worker-1] createConversation completed: key='fs|dev=65086|ino=78619|size=4919541760|mtime=1790655940755' took=22ms
+2026-09-29T04:33:17.199Z D/LiteRtLM [DefaultDispatcher-worker-1] LiteRT-LM initialization succeeded: model='Gemma3n4B', key='fs|dev=65086|ino=78619|size=4919541760|mtime=1790655940755' engineMs=7039 conversationMs=22 totalMs=7066
+2026-09-29T04:33:17.220Z D/AiTrace [main] Installed (enabled=true ringEnabled=true)
+2026-09-29T04:33:17.224Z D/SurveyVM [main] init -> Start, session=0, uuid=5c166d28-896e-4d0d-8907-479ae60c1355, navSize=1, graphSize=22
+2026-09-29T04:33:17.231Z D/SurveyVM [main] config.validate -> issues=0
+2026-09-29T04:33:17.232Z D/SurveyVM [main] promptSources -> legacy=10, eval=0, follow=0
+2026-09-29T04:33:17.232Z D/SurveyVM [main] promptSources.preview -> legacy=[Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q7, Q8, Q9], eval=[], follow=[]
+2026-09-29T04:33:17.232Z D/SurveyVM [main] hasTwoStepPrompt[Q10] -> true (eval=219, fu=244)
+2026-09-29T04:33:17.232Z D/SurveyVM [main] hasTwoStepPrompt[Q11] -> true (eval=229, fu=254)
+2026-09-29T04:33:17.232Z D/SurveyVM [main] hasTwoStepPrompt[Q12] -> true (eval=184, fu=209)
+2026-09-29T04:33:17.232Z D/SurveyVM [main] hasTwoStepPrompt[Q13] -> true (eval=221, fu=246)
+2026-09-29T04:33:17.232Z D/SurveyVM [main] hasTwoStepPrompt[Q14] -> true (eval=160, fu=185)
+2026-09-29T04:33:17.233Z D/SurveyVM [main] hasTwoStepPrompt[Q15] -> true (eval=185, fu=210)
+2026-09-29T04:33:17.233Z D/SurveyVM [main] hasTwoStepPrompt[Q16] -> true (eval=200, fu=225)
+2026-09-29T04:33:17.233Z D/SurveyVM [main] hasTwoStepPrompt[Q7] -> true (eval=248, fu=273)
+2026-09-29T04:33:17.233Z D/SurveyVM [main] hasTwoStepPrompt[Q8] -> true (eval=190, fu=215)
+2026-09-29T04:33:17.233Z D/SurveyVM [main] hasTwoStepPrompt[Q9] -> true (eval=195, fu=220)
+2026-09-29T04:33:17.233Z D/SurveyVM [main] AI prompt coverage OK (aiCount=10)
+2026-09-29T04:33:17.427Z D/SLM [slm-jni] initializeIfNeeded: model='Gemma3n4B' image=false audio=false
+2026-09-29T04:33:17.429Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='fs|dev=65086|ino=78619|size=4919541760|mtime=1790655940755'
+2026-09-29T04:33:17.436Z D/LiteRtRepository [main] warmUp: initializeIfNeeded ok gateWaitMs=0 initMs=12
+2026-09-29T04:33:17.436Z D/LiteRtRepository [main] warmUp: Engine ready; representative inference disabled totalMs=12
+2026-09-29T04:33:17.451Z D/LiteRtRepository [DefaultDispatcher-worker-1] [1] request start model='Gemma3n4B' prompt.len=111 sha=19a803cba166cfa8 gateWaitMs=13
+2026-09-29T04:33:17.451Z D/LiteRtRepository [DefaultDispatcher-worker-1] [part=000] [1] PROMPT (FULL) sha=19a803cba166cfa8
+Evaluate only the original survey target using all supplied answers.
+INPUT:
+Reply with exactly one word: ready.
+2026-09-29T04:33:17.452Z D/SLM [slm-jni] initializeIfNeeded: model='Gemma3n4B' image=false audio=false
+2026-09-29T04:33:17.454Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='fs|dev=65086|ino=78619|size=4919541760|mtime=1790655940755'
+2026-09-29T04:33:17.455Z D/LiteRtRepository [DefaultDispatcher-worker-1] [1] initializeIfNeeded ok initMs=3
+2026-09-29T04:33:17.456Z D/SLM [slm-jni] runInference: model='Gemma3n4B' textLen=111 images=0 audio=0
+2026-09-29T04:33:17.462Z D/LiteRtLM [DefaultDispatcher-worker-9] state[run:start] key='fs|dev=65086|ino=78619|size=4919541760|mtime=1790655940755' runId=1 active=true terminated=false logicalDone=false cancel=false pendingCancel=false lastMsgAt=444153578 lastTermAt=0
+2026-09-29T04:33:17.462Z D/LiteRtLM [DefaultDispatcher-worker-9] runInference start: key='fs|dev=65086|ino=78619|size=4919541760|mtime=1790655940755' runId=1 hasText=true originalTextLen=111 effectiveTextLen=111 images=0 audioClips=0
+2026-09-29T04:33:17.463Z D/LiteRtLM [DefaultDispatcher-worker-9] LiteRT-LM sendMessageAsync(text): key='fs|dev=65086|ino=78619|size=4919541760|mtime=1790655940755' runId=1 len=111 maxOutputTokens=64
+2026-09-29T04:33:17.466Z D/LiteRtLM [DefaultDispatcher-worker-9] sendMessageAsync accepted: key='fs|dev=65086|ino=78619|size=4919541760|mtime=1790655940755' runId=1 dispatchMs=4
+2026-09-29T04:33:18.915Z W/LiteRtLM [Thread-13] Inference first output: key='fs|dev=65086|ino=78619|size=4919541760|mtime=1790655940755' runId=1 ttftMs=1453 dispatchMs=4 postDispatchTtftMs=1449 requestToFirstOutputMs=1454
+2026-09-29T04:33:18.915Z D/LiteRtLM [Thread-13] stream[key=fs|dev=65086|ino=78619|size=4919541760|mtime=1790655940755 runId=1] msg#1 rawChunkLen=5 deltaLen=5 emittedChars=5
+2026-09-29T04:33:18.916Z D/LiteRtRepository [main] stream[rid=1 msg#1] done=false deltaLen=5 outLen=5 outPreview='ready' deltaPreview='ready'
+2026-09-29T04:33:19.253Z D/LiteRtLM [Thread-15] state[logicalDone] key='fs|dev=65086|ino=78619|size=4919541760|mtime=1790655940755' runId=1 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=444155205 lastTermAt=444155369
+2026-09-29T04:33:19.255Z D/LiteRtLM [Thread-15] state[nativeDone:beforeRelease] key='fs|dev=65086|ino=78619|size=4919541760|mtime=1790655940755' runId=1 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=444155205 lastTermAt=444155369
+2026-09-29T04:33:19.255Z W/LiteRtLM [Thread-15] Inference timing: key='fs|dev=65086|ino=78619|size=4919541760|mtime=1790655940755' runId=1 ttftMs=1453 dispatchMs=4 postDispatchTtftMs=1449 totalMs=1791 callbacks=2 outputChars=6 cancelled=false error=false requestTotalMs=1792

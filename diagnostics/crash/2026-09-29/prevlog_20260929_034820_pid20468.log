@@ -1,0 +1,210 @@
+=== Previous Session Logcat ===
+captured_time_utc=20260929_034820
+captured_time_local=20260928_224820
+marker=2026-09-28 22:39:35.950
+preferred_prev_pid=-1
+note=best-effort; buffers may be overwritten before next start
+sdk=36
+device=samsung SM-S731U
+appId=com.negi.survey
+versionName=0.0.1
+versionCode=1
+
+=== Logcat (since marker) ===
+--------- beginning of main
+09-28 22:48:17.215 20468 20468 I Zygote  : Process 20468 created for com.negi.survey
+09-28 22:48:17.215 20468 20468 I com.negi.survey: Late-enabling -Xcheck:jni
+09-28 22:48:17.237 20468 20468 I com.negi.survey: Using CollectorTypeCMC GC.
+09-28 22:48:17.243 20468 20468 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+09-28 22:48:17.246 20468 20468 D ActivityThread: setConscryptValidator
+09-28 22:48:17.246 20468 20468 D ActivityThread: setConscryptValidator - put
+09-28 22:48:17.260 20468 20468 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+09-28 22:48:17.260 20468 20468 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+09-28 22:48:17.572 20468 20468 D nativeloader: Configuring clns-9 for other apk /data/app/~~S1D8OU7G4b4LQBozyjNLMw==/com.negi.survey-RPPDf56xPXyLn4EkMBcUmQ==/base.apk. target_sdk_version=36, uses_libraries=libOpenCL.so, library_path=/data/app/~~S1D8OU7G4b4LQBozyjNLMw==/com.negi.survey-RPPDf56xPXyLn4EkMBcUmQ==/lib/arm64:/data/app/~~S1D8OU7G4b4LQBozyjNLMw==/com.negi.survey-RPPDf56xPXyLn4EkMBcUmQ==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.negi.survey
+09-28 22:48:17.577 20468 20468 V GraphicsEnvironment: Currently set values for:
+09-28 22:48:17.577 20468 20468 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+09-28 22:48:17.577 20468 20468 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+09-28 22:48:17.577 20468 20468 V GraphicsEnvironment: com.negi.survey is not listed in per-application setting
+09-28 22:48:17.578 20468 20468 V GraphicsEnvironment: ANGLE allowlist from config: com.dreamgames.royalmatch com.dts.freefiremax com.dxx.firenow com.gramgames.mergedragons com.ludo.king com.mojang.minecraftpe com.my.defense com.nintendo.zaka com.os.airforce com.playrix.fishdomdd.gplay io.teslatech.callbreak jp.konami.prospia net.peakgames.toonblast
+09-28 22:48:17.578 20468 20468 V GraphicsEnvironment: No special selections for ANGLE, returning default driver choice
+09-28 22:48:17.578 20468 20468 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+09-28 22:48:17.613 20468 20468 D nativeloader: Load /data/app/~~S1D8OU7G4b4LQBozyjNLMw==/com.negi.survey-RPPDf56xPXyLn4EkMBcUmQ==/base.apk!/lib/arm64-v8a/liblitertlm_jni.so using class loader ns clns-9 (caller=/data/app/~~S1D8OU7G4b4LQBozyjNLMw==/com.negi.survey-RPPDf56xPXyLn4EkMBcUmQ==/base.apk!classes10.dex): ok
+09-28 22:48:17.613 20468 20468 D SurveyApp: Loaded LiteRTLM JNI: litertlm_jni where=attachBaseContext
+09-28 22:48:17.625 20468 20468 D AppRingLogStore: installed: dir=/data/user/0/com.negi.survey/files/diagnostics/applog_ring idx=0
+09-28 22:48:17.626 20468 20468 D SurveyApp: attachBaseContext: pid=20468 process=com.negi.survey isMain=true sdk=36
+09-28 22:48:17.626 20468 20468 D SurveyApp: bootTiming: attachBaseContext total=32ms
+09-28 22:48:17.626 20468 20468 D SurveyApp: Skipping WorkManager init in attachBaseContext; will init lazily on first enqueue.
+09-28 22:48:17.628 20468 20468 D CrashCapture: install: ensured default handler. where=SurveyApp:attachBaseContext pid=20468 default=com.negi.survey.CrashCapture$CrashHandler@1a1b692
+09-28 22:48:17.629 20468 20468 D SurveyApp: CrashCapture installed: where=SurveyApp:attachBaseContext
+09-28 22:48:17.631 20468 20485 D RuntimeLogStore: openWriter: start -> /data/user/0/com.negi.survey/files/diagnostics/runtime_logs/rtlog_20260929_034817_620_pid20468_seq1.log (bytes=0 format=LEGACY)
+09-28 22:48:17.632 20468 20485 D RuntimeLogStore: retention: start files=2 kept=2 totalBytes=5776
+09-28 22:48:17.632 20468 20468 E com.negi.survey: hiddenapi: Accessing hidden method Landroid/net/ssl/EchConfigMismatchException;->getRetryConfigList()Landroid/net/ssl/EchConfigList; (runtime_flags=0, domain=core-platform, api=blocked) from /data/app/~~S1D8OU7G4b4LQBozyjNLMw==/com.negi.survey-RPPDf56xPXyLn4EkMBcUmQ==/base.apk!classes17.dex (domain=app, TargetSdkVersion=36) using linking: denied
+09-28 22:48:17.632 20468 20468 E com.negi.survey: hiddenapi: Accessing hidden method Landroid/net/ssl/EchConfigList;->toBytes()[B (runtime_flags=0, domain=core-platform, api=blocked) from /data/app/~~S1D8OU7G4b4LQBozyjNLMw==/com.negi.survey-RPPDf56xPXyLn4EkMBcUmQ==/base.apk!classes17.dex (domain=app, TargetSdkVersion=36) using linking: denied
+09-28 22:48:17.632 20468 20468 E com.negi.survey: hiddenapi: Accessing hidden method Landroid/net/ssl/EchConfigList;->fromBytes([B)Landroid/net/ssl/EchConfigList; (runtime_flags=0, domain=core-platform, api=blocked) from /data/app/~~S1D8OU7G4b4LQBozyjNLMw==/com.negi.survey-RPPDf56xPXyLn4EkMBcUmQ==/base.apk!classes17.dex (domain=app, TargetSdkVersion=36) using linking: denied
+09-28 22:48:17.632 20468 20468 E com.negi.survey: hiddenapi: Accessing hidden method Landroid/net/ssl/SSLSockets;->setEchConfigList(Ljavax/net/ssl/SSLSocket;Landroid/net/ssl/EchConfigList;)V (runtime_flags=0, domain=core-platform, api=blocked) from /data/app/~~S1D8OU7G4b4LQBozyjNLMw==/com.negi.survey-RPPDf56xPXyLn4EkMBcUmQ==/base.apk!classes17.dex (domain=app, TargetSdkVersion=36) using linking: denied
+09-28 22:48:17.639 20468 20468 D SurveyApp: LiteRTLM JNI already loaded; skip. where=onCreate(retry)
+09-28 22:48:17.639 20468 20468 D SurveyApp: bootTiming: RuntimeLogStore.start took=0ms
+09-28 22:48:17.640 20468 20468 D SurveyApp: bootTiming: AppRingLogStore.install took=0ms
+09-28 22:48:17.640 20468 20468 D SurveyApp: onCreate: pid=20468 process=com.negi.survey isMain=true sdk=36
+09-28 22:48:17.644 20468 20468 D CrashCapture: install: ensured default handler. where=SurveyApp:onCreate(rewrap) pid=20468 default=com.negi.survey.CrashCapture$CrashHandler@1a1b692
+09-28 22:48:17.644 20468 20468 D SurveyApp: CrashCapture installed: where=SurveyApp:onCreate(rewrap)
+09-28 22:48:17.645 20468 20468 D CrashCapture: registerSelfHealing: ActivityLifecycleCallbacks registered. mode=onResumedOnly
+09-28 22:48:17.645 20468 20468 D SurveyApp: CrashCapture self-healing registered.
+09-28 22:48:17.645 20468 20468 W SurveyApp: Startup enqueues deferred: delay=2500ms (to reduce init contention)
+09-28 22:48:17.645 20468 20468 D SurveyApp: Startup survey recovery deferred: delay=2500ms
+09-28 22:48:17.645 20468 20468 D SurveyApp: bootTiming: onCreate total=7ms
+--------- beginning of system
+09-28 22:48:17.650 20468 20468 D ActivityThread: com.negi.survey will use render engine as VK
+09-28 22:48:17.650 20468 20468 D HWUI    : HWUI - treat SMPTE_170M as sRGB
+09-28 22:48:17.651 20468 20490 I DisplayManager: Choreographer implicitly registered for the refresh rate.
+09-28 22:48:17.654 20468 20490 D HWUI    : CacheManager constructor. deviceInfo=(1080, 1920)
+09-28 22:48:17.654 20468 20490 D vulkan  : searching for layers in '/data/app/~~S1D8OU7G4b4LQBozyjNLMw==/com.negi.survey-RPPDf56xPXyLn4EkMBcUmQ==/lib/arm64'
+09-28 22:48:17.655 20468 20490 D vulkan  : searching for layers in '/data/app/~~S1D8OU7G4b4LQBozyjNLMw==/com.negi.survey-RPPDf56xPXyLn4EkMBcUmQ==/base.apk!/lib/arm64-v8a'
+09-28 22:48:17.655 20468 20490 V XGL     : ----------------------------------------------------------------------
+09-28 22:48:17.655 20468 20490 V XGL     : SUMD version compiled date     = 2026-01-09 09:57 - KST
+09-28 22:48:17.655 20468 20490 V XGL     : SUMD version revision number   = 1900168dcb
+09-28 22:48:17.655 20468 20490 V XGL     : SUMD version info              = Driver version: 24.0.534, git hash: 1900168dcb
+09-28 22:48:17.655 20468 20490 V XGL     : ----------------------------------------------------------------------
+09-28 22:48:17.655 20468 20490 V XGL     : Entering: Create
+09-28 22:48:17.657 20468 20487 I UploadRescheduleRcvr: Survey recovery action=android.intent.action.BOOT_COMPLETED discovered=0 reconciled=0 duplicates=0 unclassified=0 operationalFailures=0 classifications={}
+09-28 22:48:17.658 20468 20487 D UploadRescheduleRcvr: No generic GitHub pending files for action=android.intent.action.BOOT_COMPLETED
+09-28 22:48:17.660 20468 20468 D DesktopExperienceFlags: Toggle override initialized to: false
+09-28 22:48:17.662 20468 20468 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+09-28 22:48:17.670 20468 20468 D CompatChangeReporter: Compat change id reported: 377864165; UID 10350; state: ENABLED
+09-28 22:48:17.670 20468 20487 D github_upload: enqueueStartupRuntimeLogsUpload: uniqueName=upload_runtime_logs_startup policy=KEEP session=startup_runtime_20260929_034817_31edce4f
+09-28 22:48:17.670 20468 20468 D DesktopModeFlags: Toggle override initialized to: OVERRIDE_UNSET
+09-28 22:48:17.672 20468 20468 I DecorView: setWindowBackground: isPopOver=false color=fffafafa d=android.graphics.drawable.ColorDrawable@8a32816
+09-28 22:48:17.674 20468 20468 D PhoneWindow: forceLight changed to false [] from com.android.internal.policy.PhoneWindow.updateForceLightNavigationBar:663 com.android.internal.policy.PhoneWindow.setNavigationBarColor:4435 androidx.activity.EdgeToEdgeApi35.setUp:353 androidx.activity.EdgeToEdge.enableEdgeToEdge$lambda$1:101 androidx.activity.EdgeToEdge$$ExternalSyntheticLambda0.run:0 
+09-28 22:48:17.680 20468 20490 V XGL     : Exiting: Create
+09-28 22:48:17.687 20468 20468 D CrashCapture: install: ensured default handler. where=selfHeal:onActivityResumed pid=20468 default=com.negi.survey.CrashCapture$CrashHandler@1a1b692
+09-28 22:48:17.694 20468 20487 D WM-PackageManagerHelper: Skipping component enablement for androidx.work.impl.background.systemjob.SystemJobService
+09-28 22:48:17.694 20468 20487 D WM-Schedulers: Created SystemJobScheduler and enabled SystemJobService
+09-28 22:48:17.694 20468 20468 D ViewRootImpl: desktopMode is false
+09-28 22:48:17.695 20468 20468 I ViewRootImpl: dVRR is disabled
+09-28 22:48:17.696 20468 20468 D HardwareRenderer: onDisplayChanged. displayId=0 current wxh=1080x2340 mLargest wxh=0x0
+09-28 22:48:17.696 20468 20490 D HWUI    : setMaxSurfaceArea requested wxh=(1080,2340) requestedSurfaceArea(2527200) mMaxSurfaceArea(2073600)
+09-28 22:48:17.696 20468 20468 D HardwareRenderer: Set largestWidth and largestHeight as logical resolution. (1080x2340)
+09-28 22:48:17.696 20468 20490 D NativeCustomFrequencyManager: [NativeCFMS] BpCustomFrequencyManager::BpCustomFrequencyManager()
+09-28 22:48:17.697 20468 20504 D WM-ForceStopRunnable: Is default app process = true
+09-28 22:48:17.697 20468 20504 D WM-ForceStopRunnable: Performing cleanup operations.
+09-28 22:48:17.699 20468 20468 D InputTransport: Input channel constructed: 'cfa3f45', fd=113
+09-28 22:48:17.700 20468 20468 I InsetsController: onStateChanged: host=com.negi.survey/com.negi.survey.MainActivity, from=android.view.ViewRootImpl.onInsetsStateChanged:3038, state=InsetsState: {mDisplayFrame=Rect(0, 0 - 1080, 2340), mDisplayCutout=DisplayCutout{insets=Rect(0, 82 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(511, 24 - 569, 82), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1080 displayHeight=2340 physicalDisplayWidth=1080 physicalDisplayHeight=2340 density={2.8125} cutoutSpec={M 0,0 M 0, 8.533333333333333 a 10.31111111111111,10.31111111111111 0 1,0 0,20.62222222222222 a 10.31111111111111,10.31111111111111 0 1,0 0,-20.62222222222222 Z @dp} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={1.0}}} sideOverrides={}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=113, center=Point(113, 113)}, RoundedCorner{position=TopRight, radius=113, center=Point(967, 113)}, RoundedCorner{position=BottomRight, radius=113, center=Point(967, 2227)}, RoundedCorner{position=BottomLeft, radius=113, center=Point(113, 2227)}]}  mRoundedCornerFrame=Rect(0, 0 - 1080, 2340), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(956, 0 - 1080, 97) rotation=0}, mDisplayShape=DisplayShape{ spec=-311912193 displayWidth=1080 displayHeight=2340 physicalPixelDisplaySizeRatio=1.0 rotation=0 offsetX=0 offsetY=0 scale=1.0}, mSources= { InsetsSource: {dc020001 mType=navigationBars mFrame=[0,2205][1080,2340] mAttachedInsets=null mVisible=true mFlags= mSideHint=BOTTOM mBoundingRects=null}, InsetsSource: {dc020004 mType=systemGestures mFrame=[0,0][0,0] mAttachedInsets=null mVisible=true mFlags= mSideHint=NONE mBoundingRects=null}, InsetsSource: {dc020005 mType=mandatorySystemGestures mFrame=[0,2205][1080,2340] mAttachedInsets=null mVisible=true mFlags= mSideHint=BOTTOM mBoundingRects=null}, InsetsSource: {dc020006 mType=tappableElement mFrame=[0,2205][1080,2340] mAttachedInsets=null mVisible=true mFlags= mSideHint=BOTTOM mBoundingRects=null}, InsetsSource: {dc020024 mType=systemGestures mFrame=[0,0][0,0] mAttachedInsets=null mVisible=true mFlags= mSideHint=NONE mBoundingRects=null}, InsetsSource: {3 mType=ime mFrame=[0,0][0,0] mAttachedInsets=null mVisible=false mFlags=INVALID mSideHint=NONE mBoundingRects=null}, InsetsSource: {27 mType=displayCutout mFrame=[0,0][1080,82] mAttachedInsets=null mVisible=true mFlags= mSideHint=TOP mBoundingRects=null}, InsetsSource: {23ca0000 mType=statusBars mFrame=[0,0][1080,97] mAttachedInsets=null mVisible=true mFlags= mSideHint=TOP mBoundingRects=null}, InsetsSource: {23ca0005 mType=mandatorySystemGestures mFrame=[0,0][1080,116] mAttachedInsets=null mVisible=true mFlags= mSideHint=TOP mBoundingRects=null}, InsetsSource: {23ca0006 mType=tappableElement mFrame=[0,0][1080,97] mAttachedInsets=null mVisible=true mFlags= mSideHint=TOP mBoundingRects=null} }
+09-28 22:48:17.701 20468 20468 I VRI[MainActivity]@fadd4b2: synced displayState. AttachInfo displayState=2
+09-28 22:48:17.701 20468 20468 I VRI[MainActivity]@fadd4b2: setView = com.android.internal.policy.DecorView@a77480a IsHRR=false mFlingFrameRateChange=0 TM=true
+09-28 22:48:17.701 20468 20468 I IDS_TAG : Clearing training data of com.negi.survey.SurveyApp@dfce324
+09-28 22:48:17.702 20468 20487 D UploadRescheduleRcvr: Enqueued runtime logs upload for action=android.intent.action.BOOT_COMPLETED reason=receiver_boot_completed
+09-28 22:48:17.702 20468 20468 I IDS_TAG : Starting IDS observe window
+09-28 22:48:17.702 20468 20468 I IDS_TAG : Getting Shared Preference for com.negi.survey.SurveyApp@dfce324 uid = 10350
+09-28 22:48:17.702 20468 20468 I IDS_TAG : App com.negi.survey.SurveyApp@dfce324 has not finished training
+09-28 22:48:17.703 20468 20490 D HWUI    : HWUI - treat SMPTE_170M as sRGB
+09-28 22:48:17.703 20468 20468 I IDS_TAG : Closing IDS observe window
+09-28 22:48:17.703 20468 20468 I IDS_TAG : Getting Shared Preference for com.negi.survey.SurveyApp@dfce324 uid = 10350
+09-28 22:48:17.703 20468 20468 I IDS_TAG : IDS count updated to 1 for com.negi.survey.SurveyApp@dfce324
+09-28 22:48:17.704 20468 20468 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@3236ef1
+09-28 22:48:17.704 20468 20502 I com.negi.survey: [HIDL_FETCH_IMapper] android.hardware.graphics.mapper@4.0: Loaded Mapper successfully.
+09-28 22:48:17.717 20468 20504 D WM-SystemJobScheduler: Reconciling jobs
+09-28 22:48:17.729 20468 20504 D WM-ForceStopRunnable: Found unfinished work, scheduling it.
+09-28 22:48:17.754 20468 20510 D WM-SystemJobScheduler: Scheduling work ID bf96a3e5-d555-4361-bdc6-850aeac36344Job ID 100
+09-28 22:48:17.757 20468 20510 D WM-GreedyScheduler: Starting tracking for bf96a3e5-d555-4361-bdc6-850aeac36344
+09-28 22:48:17.766 20468 20511 D WM-WorkConstraintsTrack: NetworkRequestConstraintController register shared callback
+09-28 22:48:17.766 20468 20511 D ConnectivityManager: StackLog: [android.net.ConnectivityManager.sendRequestForNetwork(ConnectivityManager.java:4738)] [android.net.ConnectivityManager.registerDefaultNetworkCallbackForUid(ConnectivityManager.java:5463)] [android.net.ConnectivityManager.registerDefaultNetworkCallback(ConnectivityManager.java:5430)] [android.net.ConnectivityManager.registerDefaultNetworkCallback(ConnectivityManager.java:5404)] [androidx.work.impl.constraints.SharedNetworkCallback.addCallback(WorkConstraintsTracker.kt:362)] [androidx.work.impl.constraints.NetworkRequestConstraintController$track$1.invokeSuspend(WorkConstraintsTracker.kt:179)] [androidx.work.impl.constraints.NetworkRequestConstraintController$track$1.invoke(Unknown Source:8)] [androidx.work.impl.constraints.NetworkRequestConstraintController$track$1.invoke(Unknown Source:4)] [kotlinx.coroutines.flow.ChannelFlowBuilder.collectTo$suspendImpl(Builders.kt:316)] [kotlinx.coroutines.flow.ChannelFlowBuilder.collectTo(Unknown Source:0)] [kotlinx.coroutines.flow.CallbackFlowBuilder.collectTo(Builders.kt:330)] [kotlinx.coroutines.flow.internal.ChannelFlow$collectToFun$1.invokeSuspend(ChannelFlow.kt:56)] [kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)] [kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)] [androidx.work.impl.utils.SerialExecutorImpl$Task.run(SerialExecutorImpl.java:96)] [java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1154)] [java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:652)] [java.lang.Thread.run(Thread.java:1563)]
+09-28 22:48:17.770 20468 20511 D WM-PackageManagerHelper: androidx.work.impl.background.systemalarm.RescheduleReceiver enabled
+09-28 22:48:17.771 20468 20512 D WM-WorkConstraintsTrack: NetworkRequestConstraintController onCapabilitiesChanged callback
+09-28 22:48:17.771 20468 20512 D WM-WorkConstraintsTrack: Not dispatching constraint state yet: isBlocked=null, capabilitiesInitialized=true
+09-28 22:48:17.771 20468 20512 D WM-WorkConstraintsTrack: NetworkRequestConstraintController onBlockedStatusChanged callback false
+09-28 22:48:17.772 20468 20510 D WM-GreedyScheduler: Constraints met: Scheduling work ID WorkGenerationalId(workSpecId=bf96a3e5-d555-4361-bdc6-850aeac36344, generation=0)
+09-28 22:48:17.777 20468 20510 D WM-Processor: Processor: processing WorkGenerationalId(workSpecId=bf96a3e5-d555-4361-bdc6-850aeac36344, generation=0)
+09-28 22:48:17.800 20468 20509 I com.negi.survey: hiddenapi: Accessing hidden method Landroid/database/sqlite/SQLiteDatabase;->getThreadSession()Landroid/database/sqlite/SQLiteSession; (runtime_flags=0, domain=platform, api=unsupported) from Landroidx/sqlite/db/framework/FrameworkSQLiteDatabase; (domain=app, TargetSdkVersion=36) using reflection: allowed
+09-28 22:48:17.800 20468 20509 I com.negi.survey: hiddenapi: Accessing hidden method Landroid/database/sqlite/SQLiteSession;->beginTransaction(ILandroid/database/sqlite/SQLiteTransactionListener;ILandroid/os/CancellationSignal;)V (runtime_flags=0, domain=platform, api=unsupported) from Landroidx/sqlite/db/framework/FrameworkSQLiteDatabase; (domain=app, TargetSdkVersion=36) using reflection: allowed
+09-28 22:48:17.846 20468 20468 D VRI[MainActivity]@fadd4b2: WindowInsets changed: 1080x2340 statusBars:[0,97,0,0] navigationBars:[0,0,0,135] mandatorySystemGestures:[0,116,0,135] 
+09-28 22:48:17.857 20468 20468 I HWUI    : Using FreeType backend (prop=Auto)
+09-28 22:48:17.878 20468 20468 W libc    : Access denied finding property "vendor.perf.ems.egg"
+09-28 22:48:17.879 20468 20468 I BLASTBufferQueue_Java: new BLASTBufferQueue, mName= VRI[MainActivity]@fadd4b2 mNativeObject= 0xb400007887f45240 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3603 android.view.ViewRootImpl.relayoutWindow:11813 android.view.ViewRootImpl.performTraversals:4840 android.view.ViewRootImpl.doTraversal:3959 android.view.ViewRootImpl$TraversalRunnable.run:13034 android.view.Choreographer$CallbackRecord.run:1961 android.view.Choreographer$CallbackRecord.run:1970 android.view.Choreographer.doCallbacks:1423 android.view.Choreographer.doFrame:1348 android.view.Choreographer$FrameDisplayEventReceiver.run:1930 
+09-28 22:48:17.879 20468 20468 I BLASTBufferQueue_Java: update, w= 1080 h= 2340 mName = VRI[MainActivity]@fadd4b2 mNativeObject= 0xb400007887f45240 sc.mNativeObject= 0xb400007937f28a50 format= -1 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3608 android.view.ViewRootImpl.relayoutWindow:11813 android.view.ViewRootImpl.performTraversals:4840 android.view.ViewRootImpl.doTraversal:3959 android.view.ViewRootImpl$TraversalRunnable.run:13034 android.view.Choreographer$CallbackRecord.run:1961 
+09-28 22:48:17.879 20468 20468 W libc    : Access denied finding property "vendor.perf.ems.egg"
+09-28 22:48:17.880 20468 20468 I VRI[MainActivity]@fadd4b2: Relayout returned: old=(0,0,1080,2340) new=(0,0,1080,2340) relayoutAsync=false req=(1080,2340)0 dur=3 res=0x3 s={true 0xb4000078c7f530e0} ch=true seqId=0
+09-28 22:48:17.880 20468 20468 I VRI[MainActivity]@fadd4b2: performConfigurationChange setNightDimText nightDimLevel=0
+09-28 22:48:17.881 20468 20468 D VRI[MainActivity]@fadd4b2: mThreadedRenderer.initialize() mSurface={isValid=true 0xb4000078c7f530e0} hwInitialized=true
+09-28 22:48:17.894 20468 20468 D VRI[MainActivity]@fadd4b2: reportNextDraw android.view.ViewRootImpl.performTraversals:5507 android.view.ViewRootImpl.doTraversal:3959 android.view.ViewRootImpl$TraversalRunnable.run:13034 android.view.Choreographer$CallbackRecord.run:1961 android.view.Choreographer$CallbackRecord.run:1970 
+09-28 22:48:17.894 20468 20468 D VRI[MainActivity]@fadd4b2: Setup new sync=wmsSync-VRI[MainActivity]@fadd4b2#0
+09-28 22:48:17.894 20468 20468 I VRI[MainActivity]@fadd4b2: Creating new active sync group VRI[MainActivity]@fadd4b2#1
+09-28 22:48:17.895 20468 20468 D VRI[MainActivity]@fadd4b2: registerCallbacksForSync syncBuffer=false
+09-28 22:48:17.901 20468 20468 I View    : setRequestedFrameRate frameRate=-4.0, this=android.view.View{240bb52 V.ED..... ......I. 0,0-0,0}, caller=androidx.compose.ui.platform.Api35Impl.setRequestedFrameRate:4047 androidx.compose.ui.platform.AndroidComposeView.dispatchDraw:2282 android.view.View.draw:26758 android.view.View.updateDisplayListIfDirty:25577 android.view.View.draw:26477 
+09-28 22:48:17.903 20468 20503 D VRI[MainActivity]@fadd4b2: Received frameDrawingCallback syncResult=0 frameNum=1.
+09-28 22:48:17.903 20468 20503 I VRI[MainActivity]@fadd4b2: mWNT: t=0xb4000078d7f4d190 mBlastBufferQueue=0xb400007887f45240 fn= 1 HdrRenderState mRenderHdrSdrRatio=1.0 caller= android.view.ViewRootImpl$12.onFrameDraw:15561 android.view.ThreadedRenderer$1.onFrameDraw:751 <bottom of call stack> 
+09-28 22:48:17.903 20468 20503 I VRI[MainActivity]@fadd4b2: Setting up sync and frameCommitCallback
+09-28 22:48:17.911 20468 20490 I BLASTBufferQueue: [VRI[MainActivity]@fadd4b2#0](f:0,a:0,s:0) onFrameAvailable the first frame is available
+09-28 22:48:17.912 20468 20490 I VRI[MainActivity]@fadd4b2: Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true
+09-28 22:48:17.912 20468 20490 D HWUI    : CFMS:: SetUp Pid : 20468    Tid : 20490
+09-28 22:48:17.912 20468 20468 D VRI[MainActivity]@fadd4b2: reportDrawFinished seqId=0
+09-28 22:48:17.913 20468 20468 I com.negi.survey: hiddenapi: Accessing hidden method Landroid/os/SystemProperties;->addChangeCallback(Ljava/lang/Runnable;)V (runtime_flags=0, domain=platform, api=unsupported) from Landroidx/compose/ui/platform/AndroidComposeView$Companion; (domain=app, TargetSdkVersion=36) using reflection: allowed
+09-28 22:48:17.920 20468 20468 I View    : setRequestedFrameRate frameRate=NaN, this=android.view.View{240bb52 V.ED..... ........ 0,0-0,0}, caller=androidx.compose.ui.platform.Api35Impl.setRequestedFrameRate:4047 androidx.compose.ui.platform.AndroidComposeView.dispatchDraw:2282 android.view.View.draw:26758 android.view.View.updateDisplayListIfDirty:25577 android.view.ViewGroup.recreateChildDisplayList:4881 
+09-28 22:48:17.922 20468 20468 D WM-WorkerWrapper: Starting work for com.negi.survey.net.GitHubUploadWorker
+09-28 22:48:17.922 20468 20468 I InsetsSourceConsumer: applyRequestedVisibilityToControl: visible=true, type=statusBars, host=com.negi.survey/com.negi.survey.MainActivity
+09-28 22:48:17.923 20468 20468 I InsetsSourceConsumer: applyRequestedVisibilityToControl: visible=true, type=navigationBars, host=com.negi.survey/com.negi.survey.MainActivity
+09-28 22:48:17.923 20468 20468 D WM-SystemJobService: onStartJob for WorkGenerationalId(workSpecId=bf96a3e5-d555-4361-bdc6-850aeac36344, generation=0)
+09-28 22:48:17.928 20468 20504 D WM-Processor: Work WorkGenerationalId(workSpecId=bf96a3e5-d555-4361-bdc6-850aeac36344, generation=0) is already enqueued for processing
+09-28 22:48:17.930 20468 20468 D VRI[MainActivity]@fadd4b2: mThreadedRenderer.initializeIfNeeded()#2 mSurface={isValid=true 0xb4000078c7f530e0}
+09-28 22:48:17.931 20468 20468 D InputMethodManagerUtils: startInputInner - Id : 0
+09-28 22:48:17.931 20468 20468 I InputMethodManager: startInputInner - IInputMethodManagerGlobalInvoker.startInputOrWindowGainedFocus
+09-28 22:48:17.931 20468 20504 I WM-Processor: Moving WorkSpec (bf96a3e5-d555-4361-bdc6-850aeac36344) to the foreground
+09-28 22:48:17.937 20468 20468 D InsetsController: hide(ime())
+09-28 22:48:17.937 20468 20468 I ImeTracker: com.negi.survey:a92b299e: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+09-28 22:48:17.938 20468 20518 D InputTransport: Input channel constructed: 'ClientS', fd=147
+09-28 22:48:17.942 20468 20468 I WM-SystemFgDispatcher: Started foreground service Intent { act=ACTION_START_FOREGROUND xflg=0x4 cmp=com.negi.survey/androidx.work.impl.foreground.SystemForegroundService (has extras) }
+09-28 22:48:17.942 20468 20468 D WM-SystemFgDispatcher: Notifying with (id:8582, workSpecId: bf96a3e5-d555-4361-bdc6-850aeac36344, notificationType :1)
+09-28 22:48:17.948 20468 20504 D WM-WorkProgressUpdater: Updating progress for bf96a3e5-d555-4361-bdc6-850aeac36344 (Data {pct : 3, mode : startup_runtime_logs})
+09-28 22:48:17.949 20468 20468 D WM-SystemFgDispatcher: Notifying with (id:8582, workSpecId: bf96a3e5-d555-4361-bdc6-850aeac36344, notificationType :1)
+09-28 22:48:17.949 20468 20468 I NotificationManager: com.negi.survey: notify(8582, null, Notification(channel=uploads shortcut=null contentView=null vibrate=null sound=null defaults=0 flags=ONGOING_EVENT|ONLY_ALERT_ONCE color=0x00000000 category=progress vis=PRIVATE semFlags=0x0 semPriority=0 semMissedCount=0 semScenarioType=0)) as user
+09-28 22:48:17.950 20468 20468 D NotificationManager: BOOTING pkg =com.negi.survey mBlockedChannelsForOverflowNoti=[]
+09-28 22:48:17.956 20468 20504 D WM-WorkConstraintsTrack: NetworkRequestConstraintController send initial capabilities
+09-28 22:48:17.958 20468 20504 I WM-Processor: Moving WorkSpec (bf96a3e5-d555-4361-bdc6-850aeac36344) to the foreground
+09-28 22:48:17.962 20468 20468 D WM-SystemFgDispatcher: Notifying with (id:8582, workSpecId: bf96a3e5-d555-4361-bdc6-850aeac36344, notificationType :1)
+09-28 22:48:17.962 20468 20468 I NotificationManager: com.negi.survey: notify(8582, null, Notification(channel=uploads shortcut=null contentView=null vibrate=null sound=null defaults=0 flags=ONGOING_EVENT|ONLY_ALERT_ONCE color=0x00000000 category=progress vis=PRIVATE semFlags=0x0 semPriority=0 semMissedCount=0 semScenarioType=0)) as user
+09-28 22:48:17.989 20468 20474 I com.negi.survey: Compiler allocated 5214KB to compile void android.view.ViewRootImpl.performTraversals()
+09-28 22:48:18.163 20468 20468 D IntroScreen: Resolved config details: id=survey_config10.yaml in 248ms
+09-28 22:48:18.188 20468 20468 I View    : setRequestedFrameRate frameRate=-4.0, this=android.view.View{240bb52 V.ED..... ........ 0,0-0,0}, caller=androidx.compose.ui.platform.Api35Impl.setRequestedFrameRate:4047 androidx.compose.ui.platform.AndroidComposeView.dispatchDraw:2282 android.view.View.draw:26758 android.view.View.updateDisplayListIfDirty:25577 android.view.ViewGroup.recreateChildDisplayList:4881 
+09-28 22:48:18.502 20468 20468 I View    : setRequestedFrameRate frameRate=NaN, this=android.view.View{240bb52 V.ED..... ........ 0,0-0,0}, caller=androidx.compose.ui.platform.Api35Impl.setRequestedFrameRate:4047 androidx.compose.ui.platform.AndroidComposeView.dispatchDraw:2282 android.view.View.draw:26758 android.view.View.updateDisplayListIfDirty:25577 android.view.ViewGroup.recreateChildDisplayList:4881 
+09-28 22:48:18.519 20468 20468 I View    : setRequestedFrameRate frameRate=-4.0, this=android.view.View{240bb52 V.ED..... ........ 0,0-0,0}, caller=androidx.compose.ui.platform.Api35Impl.setRequestedFrameRate:4047 androidx.compose.ui.platform.AndroidComposeView.dispatchDraw:2282 android.view.View.draw:26758 android.view.View.updateDisplayListIfDirty:25577 android.view.ViewGroup.recreateChildDisplayList:4881 
+09-28 22:48:18.521 20468 20468 I View    : setRequestedFrameRate frameRate=NaN, this=android.view.View{240bb52 V.ED..... ........ 0,0-0,0}, caller=androidx.compose.ui.platform.Api35Impl.setRequestedFrameRate:4047 androidx.compose.ui.platform.AndroidComposeView.dispatchDraw:2282 android.view.View.draw:26758 android.view.View.updateDisplayListIfDirty:25577 android.view.ViewGroup.recreateChildDisplayList:4881 
+09-28 22:48:18.530 20468 20468 I View    : setRequestedFrameRate frameRate=-4.0, this=android.view.View{240bb52 V.ED..... ........ 0,0-0,0}, caller=androidx.compose.ui.platform.Api35Impl.setRequestedFrameRate:4047 androidx.compose.ui.platform.AndroidComposeView.dispatchDraw:2282 android.view.View.draw:26758 android.view.View.updateDisplayListIfDirty:25577 android.view.ViewGroup.recreateChildDisplayList:4881 
+09-28 22:48:18.535 20468 20468 I View    : setRequestedFrameRate frameRate=NaN, this=android.view.View{240bb52 V.ED..... ........ 0,0-0,0}, caller=androidx.compose.ui.platform.Api35Impl.setRequestedFrameRate:4047 androidx.compose.ui.platform.AndroidComposeView.dispatchDraw:2282 android.view.View.draw:26758 android.view.View.updateDisplayListIfDirty:25577 android.view.ViewGroup.recreateChildDisplayList:4881 
+09-28 22:48:18.568 20468 20468 I View    : setRequestedFrameRate frameRate=-4.0, this=android.view.View{240bb52 V.ED..... ........ 0,0-0,0}, caller=androidx.compose.ui.platform.Api35Impl.setRequestedFrameRate:4047 androidx.compose.ui.platform.AndroidComposeView.dispatchDraw:2282 android.view.View.draw:26758 android.view.View.updateDisplayListIfDirty:25577 android.view.ViewGroup.recreateChildDisplayList:4881 
+09-28 22:48:18.571 20468 20468 I View    : setRequestedFrameRate frameRate=NaN, this=android.view.View{240bb52 V.ED..... ........ 0,0-0,0}, caller=androidx.compose.ui.platform.Api35Impl.setRequestedFrameRate:4047 androidx.compose.ui.platform.AndroidComposeView.dispatchDraw:2282 android.view.View.draw:26758 android.view.View.updateDisplayListIfDirty:25577 android.view.ViewGroup.recreateChildDisplayList:4881 
+09-28 22:48:18.583 20468 20468 I View    : setRequestedFrameRate frameRate=-4.0, this=android.view.View{240bb52 V.ED..... ........ 0,0-0,0}, caller=androidx.compose.ui.platform.Api35Impl.setRequestedFrameRate:4047 androidx.compose.ui.platform.AndroidComposeView.dispatchDraw:2282 android.view.View.draw:26758 android.view.View.updateDisplayListIfDirty:25577 android.view.ViewGroup.recreateChildDisplayList:4881 
+09-28 22:48:18.586 20468 20468 I View    : setRequestedFrameRate frameRate=NaN, this=android.view.View{240bb52 V.ED..... ........ 0,0-0,0}, caller=androidx.compose.ui.platform.Api35Impl.setRequestedFrameRate:4047 androidx.compose.ui.platform.AndroidComposeView.dispatchDraw:2282 android.view.View.draw:26758 android.view.View.updateDisplayListIfDirty:25577 android.view.ViewGroup.recreateChildDisplayList:4881 
+09-28 22:48:19.155 20468 20485 D RuntimeLogStore: openWriter: rotate:plain_snapshot:receiver_boot_completed -> /data/user/0/com.negi.survey/files/diagnostics/runtime_logs/rtlog_20260929_034819_154_pid20468_seq2.log (bytes=0 format=LEGACY)
+09-28 22:48:19.156 20468 20485 D RuntimeLogStore: retention: rotate:plain_snapshot:receiver_boot_completed files=3 kept=3 totalBytes=7576
+09-28 22:48:19.162 20468 20489 D github_upload: doRuntimeLogsUpload: remoteBaseDir=diagnostics/runtime_logs/2026-09-29/runtime_logs_startup_runtime_20260929_034817_31edce4f_receiver_boot_completed toUpload=2 bytes=7240 dedupe=true deleteSource=true deletedSourcePre=0 preview='runtime_log_20260929_034819_158_pid20468_receiver_boot_completed__rtlog_20260929_034817_620_pid20468_seq1.log|runtime_log_20260929_034819_158_pid20468_receiver_boot_completed__rtlog_20260929_033934_827_pid19041_seq2.log'
+09-28 22:48:19.164 20468 20489 D GitHubUploader: uploadStream: owner=ishizuki-tech repo=SurveyExports branch=main path=diagnostics/runtime_logs/2026-09-29/runtime_logs_startup_runtime_20260929_034817_31edce4f_receiver_boot_completed/runtime_log_20260929_034819_158_pid20468_receiver_boot_completed__rtlog_20260929_034817_620_pid20468_seq1.log size=1782 maxRawBytesHint=1000000 maxRequestBytesHint=2800000
+09-28 22:48:19.164 20468 20510 D WM-WorkProgressUpdater: Updating progress for bf96a3e5-d555-4361-bdc6-850aeac36344 (Data {pct : 10, mode : startup_runtime_logs})
+09-28 22:48:19.168 20468 20510 I WM-Processor: Moving WorkSpec (bf96a3e5-d555-4361-bdc6-850aeac36344) to the foreground
+09-28 22:48:19.171 20468 20468 D WM-SystemFgDispatcher: Notifying with (id:8582, workSpecId: bf96a3e5-d555-4361-bdc6-850aeac36344, notificationType :1)
+09-28 22:48:19.171 20468 20468 I NotificationManager: com.negi.survey: notify(8582, null, Notification(channel=uploads shortcut=null contentView=null vibrate=null sound=null defaults=0 flags=ONGOING_EVENT|ONLY_ALERT_ONCE color=0x00000000 category=progress vis=PRIVATE semFlags=0x0 semPriority=0 semMissedCount=0 semScenarioType=0)) as user
+09-28 22:48:19.580 20468 20504 D WM-WorkProgressUpdater: Updating progress for bf96a3e5-d555-4361-bdc6-850aeac36344 (Data {pct : 14, mode : startup_runtime_logs})
+09-28 22:48:19.586 20468 20504 I WM-Processor: Moving WorkSpec (bf96a3e5-d555-4361-bdc6-850aeac36344) to the foreground
+09-28 22:48:19.588 20468 20504 D WM-WorkProgressUpdater: Updating progress for bf96a3e5-d555-4361-bdc6-850aeac36344 (Data {pct : 50, mode : startup_runtime_logs})
+09-28 22:48:19.588 20468 20468 D WM-SystemFgDispatcher: Notifying with (id:8582, workSpecId: bf96a3e5-d555-4361-bdc6-850aeac36344, notificationType :1)
+09-28 22:48:19.588 20468 20468 I NotificationManager: com.negi.survey: notify(8582, null, Notification(channel=uploads shortcut=null contentView=null vibrate=null sound=null defaults=0 flags=ONGOING_EVENT|ONLY_ALERT_ONCE color=0x00000000 category=progress vis=PRIVATE semFlags=0x0 semPriority=0 semMissedCount=0 semScenarioType=0)) as user
+09-28 22:48:19.591 20468 20511 I WM-Processor: Moving WorkSpec (bf96a3e5-d555-4361-bdc6-850aeac36344) to the foreground
+09-28 22:48:19.592 20468 20468 D WM-SystemFgDispatcher: Notifying with (id:8582, workSpecId: bf96a3e5-d555-4361-bdc6-850aeac36344, notificationType :1)
+09-28 22:48:19.592 20468 20468 I NotificationManager: com.negi.survey: notify(8582, null, Notification(channel=uploads shortcut=null contentView=null vibrate=null sound=null defaults=0 flags=ONGOING_EVENT|ONLY_ALERT_ONCE color=0x00000000 category=progress vis=PRIVATE semFlags=0x0 semPriority=0 semMissedCount=0 semScenarioType=0)) as user
+09-28 22:48:20.148 20468 20468 W SurveyApp: Deferred startup enqueues begin...
+09-28 22:48:20.149 20468 20468 D SurveyApp: WorkManager available. where=startupRtLogs(immediate) took=0ms
+09-28 22:48:20.152 20468 20468 D SurveyApp: Startup runtime logs target -> owner=ishizuki-tech repo=SurveyExports branch=main base='/diagnostics/runtime_logs'
+09-28 22:48:20.154 20468 20468 D github_upload: enqueueStartupRuntimeLogsUpload: uniqueName=upload_runtime_logs_startup policy=KEEP session=startup_runtime_20260929_034820_26d12764
+09-28 22:48:20.155 20468 20468 D SurveyApp: Startup runtime logs: enqueue requested (immediate).
+09-28 22:48:20.155 20468 20468 D SurveyApp: WorkManager available. where=startupRingLogs(immediate) took=0ms
+09-28 22:48:20.157 20468 20468 D SurveyApp: Startup ring logs target -> owner=ishizuki-tech repo=SurveyExports branch=main base='/diagnostics/applog_ring'
+09-28 22:48:20.158 20468 20468 D github_upload: enqueueStartupRingLogsUpload: uniqueName=upload_ring_logs_startup policy=KEEP session=startup_ring_20260929_034820_2d9f875e
+09-28 22:48:20.158 20468 20468 D SurveyApp: Startup ring logs: enqueue requested (immediate).
+09-28 22:48:20.158 20468 20468 D SurveyApp: WorkManager available. where=enqueuePending(immediate) took=0ms
+09-28 22:48:20.159 20468 20468 D SurveyApp: CrashCapture pending uploads requested (immediate).
+09-28 22:48:20.159 20468 20468 W SurveyApp: Deferred startup enqueues done: took=12ms
+09-28 22:48:20.159 20468 20548 D CrashCapture: enqueuePendingCrashUploadsIfPossible enter where=SurveyApp:enqueuePending(immediate):bg pid=20468 thread=CrashCapture-Enqueue
+09-28 22:48:20.160 20468 20487 D SurveyApp: Survey recovery WorkManager available. where=startupSurveyUploads(initial) took=0ms
+09-28 22:48:20.162 20468 20487 D SurveyApp: Startup survey recovery complete: discovered=0 attempted=0 submitted=0 active=0 trackerUnconfirmed=0 uploaded=0 deferred=0 invalid=0 operationalFailures=0 duplicates=0 unclassified=0
+09-28 22:48:20.174 20468 20510 D WM-SystemJobScheduler: Scheduling work ID 57e37b28-22a3-43b4-bed0-9d0038b23800Job ID 101
+09-28 22:48:20.179 20468 20468 D WM-SystemJobService: onStartJob for WorkGenerationalId(workSpecId=57e37b28-22a3-43b4-bed0-9d0038b23800, generation=0)
+09-28 22:48:20.179 20468 20510 D WM-GreedyScheduler: Starting tracking for 57e37b28-22a3-43b4-bed0-9d0038b23800
+09-28 22:48:20.183 20468 20504 D WM-Processor: Processor: processing WorkGenerationalId(workSpecId=57e37b28-22a3-43b4-bed0-9d0038b23800, generation=0)

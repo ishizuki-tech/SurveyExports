@@ -1,0 +1,285 @@
+=== Previous Session Logcat ===
+captured_time_utc=20260909_015051
+captured_time_local=20260908_185051
+marker=2026-09-08 18:27:17.503
+preferred_prev_pid=-1
+note=best-effort; buffers may be overwritten before next start
+sdk=36
+device=Google Pixel 9a
+appId=com.negi.survey
+versionName=0.0.1
+versionCode=1
+
+=== Logcat (since marker) ===
+--------- beginning of system
+09-08 18:45:36.492 25584 25623 I DisplayManager: Choreographer implicitly registered for the refresh rate.
+09-08 18:45:36.597 25584 25584 D InsetsController: hide(ime())
+09-08 18:45:44.702 25584 25584 D InsetsController: show(ime())
+09-08 18:45:44.707 25584 25584 D InsetsController: Setting requestedVisibleTypes to 511 (was 503)
+09-08 18:45:44.766 25584 25584 D InsetsController: show(ime())
+09-08 18:45:44.908 25584 25584 D InsetsController: show(ime())
+09-08 18:45:44.923 25584 25584 D InsetsController: show(ime())
+09-08 18:45:45.592 25584 25584 D InsetsController: hide(ime())
+09-08 18:45:45.593 25584 25584 D InsetsController: Setting requestedVisibleTypes to 503 (was 511)
+--------- beginning of main
+09-08 18:45:49.138 25584 25691 W native  : W0000 00:00:1788918349.138200   25691 sampler_factory.cc:403] OpenCL sampler not available, falling back to statically linked C API: UNAVAILABLE: ERROR: [third_party/odml/litert_lm/runtime/components/sampler_factory.cc:319]
+09-08 18:45:49.138 25584 25691 W native  : └ Could not load shared library libLiteRtTopKOpenClSampler.so: dlopen failed: library "libLiteRtTopKOpenClSampler.so" not found.
+09-08 18:45:49.138 25584 25691 W native  : === Source Location Trace: === 
+09-08 18:45:49.138 25584 25691 W native  : ./third_party/odml/litert/litert/cc/litert_macros.h:573
+09-08 18:45:49.611 25584 25691 W LiteRtLM: Inference first output: key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=1 ttftMs=3987 dispatchMs=32 postDispatchTtftMs=3955 requestToFirstOutputMs=3993
+09-08 18:45:49.611 25584 25691 W LiteRtLM: Inference first output: key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=1 ttftMs=3987 dispatchMs=32 postDispatchTtftMs=3955 requestToFirstOutputMs=3993
+09-08 18:45:49.611 25584 25691 D LiteRtLM: stream[key=gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm runId=1] msg#1 rawChunkLen=2 deltaLen=2 emittedChars=2
+09-08 18:45:49.613 25584 25584 D LiteRtRepository: stream[rid=1 msg#1] done=false deltaLen=2 outLen=2 outPreview='{"' deltaPreview='{"'
+09-08 18:45:49.613 25584 25614 D AiViewModel: run[1] chunk[1].preview='{"'
+09-08 18:45:49.788 25584 25614 D AiViewModel: run[1] chunk[2].preview='score'
+09-08 18:45:49.944 25584 25614 D AiViewModel: run[1] chunk[3].preview='":'
+09-08 18:45:50.097 25584 25614 D AiViewModel: run[1] chunk[4].preview='␠'
+09-08 18:45:50.253 25584 25614 D AiViewModel: run[1] chunk[5].preview='8'
+09-08 18:45:50.406 25584 25614 D AiViewModel: run[1] chunk[6].preview='5'
+09-08 18:45:50.564 25584 25614 D AiViewModel: run[1] chunk[7].preview=','
+09-08 18:45:50.719 25584 25584 D LiteRtRepository: stream[rid=1 msg#8] done=false deltaLen=2 outLen=15 outPreview='{"score": 85, "' deltaPreview=' "'
+09-08 18:45:50.720 25584 25614 D AiViewModel: run[1] chunk[8].preview='␠"'
+09-08 18:45:50.875 25584 25614 D AiViewModel: run[1] chunk[9].preview='missing'
+09-08 18:45:51.033 25584 25614 D AiViewModel: run[1] chunk[10].preview='_'
+09-08 18:45:51.188 25584 25614 D AiViewModel: run[1] chunk[11].preview='points'
+09-08 18:45:51.350 25584 25614 D AiViewModel: run[1] chunk[12].preview='":'
+09-08 18:45:51.505 25584 25614 D AiViewModel: run[1] chunk[13].preview='␠["'
+09-08 18:45:51.663 25584 25614 D AiViewModel: run[1] chunk[14].preview='yield'
+09-08 18:45:51.817 25584 25614 D AiViewModel: run[1] chunk[15].preview='␠loss'
+09-08 18:45:51.975 25584 25691 D LiteRtLM: stream[key=gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm runId=1] msg#16 rawChunkLen=1 deltaLen=1 emittedChars=45
+09-08 18:45:51.976 25584 25584 D LiteRtRepository: stream[rid=1 msg#16] done=false deltaLen=1 outLen=45 outPreview='{"score": 85, "missing_points": ["yield loss,' deltaPreview=','
+09-08 18:45:51.977 25584 25614 D AiViewModel: run[1] chunk[16].preview=','
+09-08 18:45:52.137 25584 25614 D AiViewModel: run[1] chunk[17].preview='␠damage'
+09-08 18:45:52.291 25584 25614 D AiViewModel: run[1] chunk[18].preview='␠type'
+09-08 18:45:52.448 25584 25614 D AiViewModel: run[1] chunk[19].preview='"],'
+09-08 18:45:52.606 25584 25614 D AiViewModel: run[1] chunk[20].preview='␠"'
+09-08 18:45:52.766 25584 25614 D AiViewModel: run[1] chunk[21].preview='follow'
+09-08 18:45:52.925 25584 25614 D AiViewModel: run[1] chunk[22].preview='up'
+09-08 18:45:53.083 25584 25614 D AiViewModel: run[1] chunk[23].preview='_'
+09-08 18:45:53.238 25584 25584 D LiteRtRepository: stream[rid=1 msg#24] done=false deltaLen=6 outLen=77 outPreview='{"score": 85, "missing_points": ["yield loss, damage type"], "followup_needed' deltaPreview='needed'
+09-08 18:45:53.239 25584 25614 D AiViewModel: run[1] chunk[24].preview='needed'
+09-08 18:45:53.393 25584 25614 D AiViewModel: run[1] chunk[25].preview='":'
+09-08 18:45:53.550 25584 25614 D AiViewModel: run[1] chunk[26].preview='␠true'
+09-08 18:45:53.705 25584 25614 D AiViewModel: run[1] chunk[27].preview='}'
+09-08 18:45:53.862 25584 25703 D LiteRtLM: state[logicalDone] key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=1 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=2199066183 lastTermAt=2199066341
+09-08 18:45:53.863 25584 25703 D LiteRtLM: state[nativeDone:beforeRelease] key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=1 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=2199066183 lastTermAt=2199066341
+09-08 18:45:53.864 25584 25703 W LiteRtLM: Inference timing: key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=1 ttftMs=3987 dispatchMs=32 postDispatchTtftMs=3955 totalMs=8238 callbacks=27 outputChars=85 cancelled=false error=false requestTotalMs=8244
+09-08 18:45:53.864 25584 25703 W LiteRtLM: Inference timing: key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=1 ttftMs=3987 dispatchMs=32 postDispatchTtftMs=3955 totalMs=8238 callbacks=27 outputChars=85 cancelled=false error=false requestTotalMs=8244
+09-08 18:45:53.868 25584 25584 D LiteRtRepository: [1] logical done=true; responseClosed=true; waiting native cleanup
+09-08 18:45:53.869 25584 25584 D LiteRtRepository: [1] native cleanup safepoint
+09-08 18:45:53.870 25584 25613 D AiViewModel: run[1] stats: chunks=27, chars=85, raw.len=85
+09-08 18:45:53.872 25584 25613 D AiViewModel: run[1] sha(raw)=fc54d39ca92dffc403f8b90447b2f74fd739952d437cf803b69178a241b95870
+09-08 18:45:53.872 25584 25613 D AiViewModel: run[1] rawVisible='{"score":␠85,␠"missing_points":␠["yield␠loss,␠damage␠type"],␠"followup_needed":␠true}'
+09-08 18:45:53.873 25584 25690 D SLM     : resetConversationAndWait: model='gemma-3n-E4B-it' image=false audio=false
+09-08 18:45:53.891 25584 25708 D LiteRtRepository: [1] Conversation reset completed after safepoint
+09-08 18:45:53.893 25584 25614 D LiteRtRepository: [part=000] [1] FINALIZE: native-terminated
+09-08 18:45:53.893 25584 25614 D LiteRtRepository: === AI TRACE STATS (LiteRtRepository) ===
+09-08 18:45:53.893 25584 25614 D LiteRtRepository: rid=1 model='gemma-3n-E4B-it' reason=native-terminated
+09-08 18:45:53.893 25584 25614 D LiteRtRepository: totalMs=8290 inferenceMs=8279 firstTokenMs=3998
+09-08 18:45:53.893 25584 25614 D LiteRtRepository: logicalDone=true logicalDoneAt=2199066345
+09-08 18:45:53.893 25584 25614 D LiteRtRepository: nativeTerminated=true cancelTag='null'
+09-08 18:45:53.893 25584 25614 D LiteRtRepository: lastDeltaMsAgo=189 lastEventMsAgo=23
+09-08 18:45:53.893 25584 25614 D LiteRtRepository: chunks=27 emittedChars=85 capturedAll=true out.len=85
+09-08 18:45:53.893 25584 25614 D LiteRtRepository: === OUTPUT (FULL) ===
+09-08 18:45:53.893 25584 25614 D LiteRtRepository: {"score": 85, "missing_points": ["yield loss, damage type"], "followup_needed": true}
+09-08 18:45:53.898 25584 25613 D AiViewModel: run[1]: EVAL_JSON parsed score=85 followups=0 fu0=''
+09-08 18:45:53.898 25584 25613 D AiViewModel: stepHistory+ runId=1 phase=EVAL mode=EVAL_JSON raw.len=85 score=85 FU=0 FU0='<none>' timeout=false err=null
+09-08 18:45:53.899 25584 25613 I AiViewModel: run[1] done: phase=EVAL mode=EVAL_JSON score=85 FU0.len=0 FU0.sha16=none commit=true err=<none>
+09-08 18:45:53.899 25584 25613 I FullTextOut: [part=000] run[1]: RawTextOut
+09-08 18:45:53.899 25584 25613 I FullTextOut: {"score": 85, "missing_points": ["yield loss, damage type"], "followup_needed": true}
+09-08 18:45:53.904 25584 25613 D SurveyVM: getFollowupPrompt[Q8] -> len=390 evalLen=85
+09-08 18:45:53.905 25584 25613 D AiViewModel: run[2]: mode=FOLLOWUP_JSON_OR_TEXT phase=FOLLOWUP commit=false prompt.len=390, fullPrompt.len=927, timeoutMs=60000
+09-08 18:45:53.906 25584 25613 D AiViewModel: run[2]: sha(prompt)=02deb81b23579a09df7603d9e214d999d9df3313962d79dfe2c354243a685925 sha(full)=444bdd0bb0b7f6186fc4f4dbaf0544ac268195033304e15294a998d4b90d7698
+09-08 18:45:53.906 25584 25613 I FullPromptReview: [part=000] run[2]: phase=FOLLOWUP FullPrompt
+09-08 18:45:53.906 25584 25613 I FullPromptReview: Evaluate only the original survey target using all supplied answers.
+09-08 18:45:53.906 25584 25613 I FullPromptReview: Generate exactly one short English question addressing one unresolved target-required deficiency in EVAL_JSON. Use the original target, original answer and accumulated answered followup pairs. Do not repeat an earlier question or ask for information already provided. Never add new objectives. Output only the question on one line; no JSON, score, analysis, labels, or quotes.
+09-08 18:45:53.906 25584 25613 I FullPromptReview: Keep the question short and single-scope.
+09-08 18:45:53.906 25584 25613 I FullPromptReview: Exactly one English question on one line.
+09-08 18:45:53.906 25584 25613 I FullPromptReview: INPUT:
+09-08 18:45:53.906 25584 25613 I FullPromptReview: Expected answer target: Whether FAW affected the crop, and if so, a description of the effect (yield loss, damage type, etc.).
+09-08 18:45:53.906 25584 25613 I FullPromptReview: Question: Has fall armyworm ever affected your maize? If yes, how did it affect your crop?
+09-08 18:45:53.906 25584 25613 I FullPromptReview: Original answer: Fall armyworm affected my maize.
+09-08 18:45:53.906 25584 25613 I FullPromptReview: Answered followup pairs: 
+09-08 18:45:53.906 25584 25613 I FullPromptReview: EVAL_JSON: {"score": 85, "missing_points": ["yield loss, damage type"], "followup_needed": true}
+09-08 18:45:53.908 25584 25612 D LiteRtRepository: [2] request start model='gemma-3n-E4B-it' prompt.len=927 sha=444bdd0bb0b7f618 gateWaitMs=0
+09-08 18:45:53.908 25584 25612 D LiteRtRepository: [part=000] [2] PROMPT (FULL) sha=444bdd0bb0b7f618
+09-08 18:45:53.908 25584 25612 D LiteRtRepository: Evaluate only the original survey target using all supplied answers.
+09-08 18:45:53.908 25584 25612 D LiteRtRepository: Generate exactly one short English question addressing one unresolved target-required deficiency in EVAL_JSON. Use the original target, original answer and accumulated answered followup pairs. Do not repeat an earlier question or ask for information already provided. Never add new objectives. Output only the question on one line; no JSON, score, analysis, labels, or quotes.
+09-08 18:45:53.908 25584 25612 D LiteRtRepository: Keep the question short and single-scope.
+09-08 18:45:53.908 25584 25612 D LiteRtRepository: Exactly one English question on one line.
+09-08 18:45:53.908 25584 25612 D LiteRtRepository: INPUT:
+09-08 18:45:53.908 25584 25612 D LiteRtRepository: Expected answer target: Whether FAW affected the crop, and if so, a description of the effect (yield loss, damage type, etc.).
+09-08 18:45:53.908 25584 25612 D LiteRtRepository: Question: Has fall armyworm ever affected your maize? If yes, how did it affect your crop?
+09-08 18:45:53.908 25584 25612 D LiteRtRepository: Original answer: Fall armyworm affected my maize.
+09-08 18:45:53.908 25584 25612 D LiteRtRepository: Answered followup pairs: 
+09-08 18:45:53.908 25584 25612 D LiteRtRepository: EVAL_JSON: {"score": 85, "missing_points": ["yield loss, damage type"], "followup_needed": true}
+09-08 18:45:53.908 25584 25690 D SLM     : initializeIfNeeded: model='gemma-3n-E4B-it' image=false audio=false
+09-08 18:45:53.909 25584 25690 D LiteRtLM: initializeIfNeeded: warm runtime already ready: key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm'
+09-08 18:45:53.909 25584 25612 D LiteRtRepository: [2] initializeIfNeeded ok initMs=1
+09-08 18:45:53.911 25584 25690 D SLM     : runInference: model='gemma-3n-E4B-it' textLen=927 images=0 audio=0
+09-08 18:45:53.912 25584 25613 D LiteRtLM: state[run:start] key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=2 active=true terminated=false logicalDone=false cancel=false pendingCancel=false lastMsgAt=2199066391 lastTermAt=2199066341
+09-08 18:45:53.912 25584 25613 D LiteRtLM: runInference start: key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=2 hasText=true originalTextLen=927 effectiveTextLen=927 images=0 audioClips=0
+09-08 18:45:53.912 25584 25613 D LiteRtLM: LiteRT-LM sendMessageAsync(text): key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=2 len=927 maxOutputTokens=64
+09-08 18:45:53.919 25584 25613 D LiteRtLM: sendMessageAsync accepted: key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=2 dispatchMs=8
+09-08 18:45:54.999 25584 25691 W LiteRtLM: Inference first output: key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=2 ttftMs=1087 dispatchMs=8 postDispatchTtftMs=1079 requestToFirstOutputMs=1087
+09-08 18:45:54.999 25584 25691 W LiteRtLM: Inference first output: key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=2 ttftMs=1087 dispatchMs=8 postDispatchTtftMs=1079 requestToFirstOutputMs=1087
+09-08 18:45:54.999 25584 25691 D LiteRtLM: stream[key=gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm runId=2] msg#1 rawChunkLen=3 deltaLen=3 emittedChars=3
+09-08 18:45:55.000 25584 25584 D LiteRtRepository: stream[rid=2 msg#1] done=false deltaLen=3 outLen=3 outPreview='Can' deltaPreview='Can'
+09-08 18:45:55.001 25584 25613 D AiViewModel: run[2] chunk[1].preview='Can'
+09-08 18:45:55.165 25584 25613 D AiViewModel: run[2] chunk[2].preview='␠you'
+09-08 18:45:55.324 25584 25613 D AiViewModel: run[2] chunk[3].preview='␠describe'
+09-08 18:45:55.482 25584 25613 D AiViewModel: run[2] chunk[4].preview='␠the'
+09-08 18:45:55.637 25584 25613 D AiViewModel: run[2] chunk[5].preview='␠specific'
+09-08 18:45:55.796 25584 25613 D AiViewModel: run[2] chunk[6].preview='␠yield'
+09-08 18:45:55.953 25584 25613 D AiViewModel: run[2] chunk[7].preview='␠loss'
+09-08 18:45:56.110 25584 25584 D LiteRtRepository: stream[rid=2 msg#8] done=false deltaLen=3 outLen=43 outPreview='Can you describe the specific yield loss or' deltaPreview=' or'
+09-08 18:45:56.111 25584 25613 D AiViewModel: run[2] chunk[8].preview='␠or'
+09-08 18:45:56.269 25584 25613 D AiViewModel: run[2] chunk[9].preview='␠damage'
+09-08 18:45:56.427 25584 25613 D AiViewModel: run[2] chunk[10].preview='␠caused'
+09-08 18:45:56.584 25584 25613 D AiViewModel: run[2] chunk[11].preview='␠by'
+09-08 18:45:56.744 25584 25613 D AiViewModel: run[2] chunk[12].preview='␠the'
+09-08 18:45:56.900 25584 25613 D AiViewModel: run[2] chunk[13].preview='␠fall'
+09-08 18:45:57.057 25584 25613 D AiViewModel: run[2] chunk[14].preview='␠army'
+09-08 18:45:57.212 25584 25613 D AiViewModel: run[2] chunk[15].preview='worm'
+09-08 18:45:57.367 25584 25691 D LiteRtLM: stream[key=gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm runId=2] msg#16 rawChunkLen=3 deltaLen=3 emittedChars=81
+09-08 18:45:57.368 25584 25584 D LiteRtRepository: stream[rid=2 msg#16] done=false deltaLen=3 outLen=81 outPreview='Can you describe the specific yield loss or damage caused by the fall armyworm on' deltaPreview=' on'
+09-08 18:45:57.369 25584 25613 D AiViewModel: run[2] chunk[16].preview='␠on'
+09-08 18:45:57.524 25584 25613 D AiViewModel: run[2] chunk[17].preview='␠your'
+09-08 18:45:57.683 25584 25613 D AiViewModel: run[2] chunk[18].preview='␠maize'
+09-08 18:45:57.841 25584 25613 D AiViewModel: run[2] chunk[19].preview='?'
+09-08 18:45:57.997 25584 25703 D LiteRtLM: state[logicalDone] key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=2 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=2199070319 lastTermAt=2199070476
+09-08 18:45:57.998 25584 25703 D LiteRtLM: state[nativeDone:beforeRelease] key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=2 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=2199070319 lastTermAt=2199070476
+09-08 18:45:57.999 25584 25703 W LiteRtLM: Inference timing: key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=2 ttftMs=1087 dispatchMs=8 postDispatchTtftMs=1079 totalMs=4085 callbacks=19 outputChars=93 cancelled=false error=false requestTotalMs=4085
+09-08 18:45:58.000 25584 25703 W LiteRtLM: Inference timing: key='gemma-3n-E4B-it|/data/user/0/com.negi.survey/files/models/gemma-3n-E4B-it-int4.litertlm' runId=2 ttftMs=1087 dispatchMs=8 postDispatchTtftMs=1079 totalMs=4085 callbacks=19 outputChars=93 cancelled=false error=false requestTotalMs=4085
+09-08 18:45:58.002 25584 25584 D LiteRtRepository: [2] logical done=true; responseClosed=true; waiting native cleanup
+09-08 18:45:58.003 25584 25613 D AiViewModel: run[2] stats: chunks=19, chars=93, raw.len=93
+09-08 18:45:58.003 25584 25584 D LiteRtRepository: [2] native cleanup safepoint
+09-08 18:45:58.006 25584 25690 D SLM     : resetConversationAndWait: model='gemma-3n-E4B-it' image=false audio=false
+09-08 18:45:58.007 25584 25613 D AiViewModel: run[2] sha(raw)=900eb5a23a12a30d2aa36564da4e4d1929d93cc7d6b14110f0764f17ddc126e3
+09-08 18:45:58.008 25584 25613 D AiViewModel: run[2] rawVisible='Can␠you␠describe␠the␠specific␠yield␠loss␠or␠damage␠caused␠by␠the␠fall␠armyworm␠on␠your␠maize?'
+09-08 18:45:58.014 25584 25613 D AiViewModel: run[2]: FOLLOWUP parse extractorQ='Can␠you␠describe␠the␠specific␠yield␠loss␠or␠damage␠caused␠by␠the␠fall␠armyworm␠on␠your␠maize?' textQ='Can␠you␠describe␠the␠specific␠yield␠loss␠or␠damage␠caused␠by␠the␠fall␠armyworm␠on␠your␠maize?' best='Can␠you␠describe␠the␠specific␠yield␠loss␠or␠damage␠caused␠by␠the␠fall␠armyworm␠on␠your␠maize?'
+09-08 18:45:58.016 25584 25613 D AiViewModel: stepHistory+ runId=2 phase=FOLLOWUP mode=FOLLOWUP_JSON_OR_TEXT raw.len=93 score=null FU=1 FU0='Can␠you␠describe␠the␠specific␠yield␠loss␠or␠damage␠caused␠by␠the␠fall␠armyworm␠on␠your␠maize?' timeout=false err=null
+09-08 18:45:58.016 25584 25613 I AiViewModel: run[2] done: phase=FOLLOWUP mode=FOLLOWUP_JSON_OR_TEXT score=null FU0.len=93 FU0.sha16=900eb5a23a12a30d commit=false err=<none>
+09-08 18:45:58.017 25584 25613 I FullTextOut: [part=000] run[2]: RawTextOut
+09-08 18:45:58.017 25584 25613 I FullTextOut: Can you describe the specific yield loss or damage caused by the fall armyworm on your maize?
+09-08 18:45:58.021 25584 25708 D LiteRtRepository: [2] Conversation reset completed after safepoint
+09-08 18:45:58.021 25584 25613 D LiteRtRepository: [part=000] [2] FINALIZE: native-terminated
+09-08 18:45:58.021 25584 25613 D LiteRtRepository: === AI TRACE STATS (LiteRtRepository) ===
+09-08 18:45:58.021 25584 25613 D LiteRtRepository: rid=2 model='gemma-3n-E4B-it' reason=native-terminated
+09-08 18:45:58.021 25584 25613 D LiteRtRepository: totalMs=4114 inferenceMs=4112 firstTokenMs=1090
+09-08 18:45:58.021 25584 25613 D LiteRtRepository: logicalDone=true logicalDoneAt=2199070480
+09-08 18:45:58.021 25584 25613 D LiteRtRepository: nativeTerminated=true cancelTag='null'
+09-08 18:45:58.021 25584 25613 D LiteRtRepository: lastDeltaMsAgo=181 lastEventMsAgo=18
+09-08 18:45:58.021 25584 25613 D LiteRtRepository: chunks=19 emittedChars=93 capturedAll=true out.len=93
+09-08 18:45:58.021 25584 25613 D LiteRtRepository: === OUTPUT (FULL) ===
+09-08 18:45:58.021 25584 25613 D LiteRtRepository: Can you describe the specific yield loss or damage caused by the fall armyworm on your maize?
+09-08 18:45:58.042 25584 25607 I RealLiteRtAiFollowup: REAL_AI_Q8_FIXTURE iter=1 expected=incomplete answer=Fall armyworm affected my maize. raw={"score": 85, "missing_points": ["yield loss, damage type"], "followup_needed": true} score=85 missingPoints=[yield loss, damage type] followupNeeded=true policy=GENERATE secondStepRan=true generatedFollowup=Can you describe the specific yield loss or damage caused by the fall armyworm on your maize? persistedFollowups=1 remaining=1 composer=FOLLOWUP turnCompleted=false elapsedMs=13229
+09-08 18:45:58.048 25584 25607 D SLM     : cancel: model='gemma-3n-E4B-it'
+09-08 18:45:58.115 25584 25584 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@86475e4 in: PAUSED
+09-08 18:45:58.116 25584 25584 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=androidx.activity.ComponentActivity@86475e4
+09-08 18:45:58.693 25584 25584 D VRI[ComponentActivity]: visibilityChanged oldVisibility=true newVisibility=false
+09-08 18:45:58.780 25584 25584 I AutofillManager: onInvisibleForAutofill(): expiringResponse
+09-08 18:45:58.781 25584 25584 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@86475e4 in: STOPPED
+09-08 18:45:58.781 25584 25584 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=androidx.activity.ComponentActivity@86475e4
+09-08 18:45:58.812 25584 25584 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): null
+09-08 18:45:58.813 25584 25584 D LifecycleMonitor: Lifecycle status change: androidx.activity.ComponentActivity@86475e4 in: DESTROYED
+09-08 18:45:58.813 25584 25584 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+09-08 18:45:58.822 25584 25584 D ViewRootImpl: Skipping stats log for color mode
+09-08 18:45:58.844 25584 25607 D IdlingRegistry: Unregistering idling resources: [androidx.compose.ui.test.EspressoLink@a1535ee]
+09-08 18:45:58.849 25584 25607 I TestRunner: finished: q8_real_model_two_step_acceptance(com.negi.survey.screens.RealLiteRtAiFollowupFlowInstrumentationTest)
+09-08 18:45:58.862 25584 25607 D SLM     : forceCleanUp: model='gemma-3n-E4B-it'
+09-08 18:45:59.464 25584 25709 I litert  : [accelerator_registry.cc:43] DestroyAccelerator: ptr=0xb40000747146db70, name=CpuAccelerator
+09-08 18:45:59.464 25584 25709 I litert  : [accelerator_registry.cc:43] DestroyAccelerator: ptr=0xb40000747146e350, name=LiteRT GPU
+09-08 18:45:59.620 25584 25607 I TestRunner: run finished: 1 tests, 0 failed, 0 ignored
+09-08 18:50:47.562 25991 25991 I Zygote  : Process 25991 created for com.negi.survey
+09-08 18:50:47.563 25991 25991 I com.negi.survey: Late-enabling -Xcheck:jni
+09-08 18:50:47.769 25991 25991 I com.negi.survey: Using CollectorTypeCMC GC.
+09-08 18:50:47.794 25991 25991 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+09-08 18:50:47.879 25991 25991 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+09-08 18:50:47.879 25991 25991 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+09-08 18:50:48.585 25991 25991 D nativeloader: Configuring clns-9 for other apk /data/app/~~wQ70F0SlU0Vs5BjdhZ83rg==/com.negi.survey-XVQWCLX1prQdRcDgZ8hCkQ==/base.apk. target_sdk_version=36, uses_libraries=libOpenCL.so:libOpenCL-pixel.so, library_path=/data/app/~~wQ70F0SlU0Vs5BjdhZ83rg==/com.negi.survey-XVQWCLX1prQdRcDgZ8hCkQ==/lib/arm64:/data/app/~~wQ70F0SlU0Vs5BjdhZ83rg==/com.negi.survey-XVQWCLX1prQdRcDgZ8hCkQ==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.negi.survey
+09-08 18:50:48.594 25991 25991 V GraphicsEnvironment: Currently set values for:
+09-08 18:50:48.594 25991 25991 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[com.android.angle]
+09-08 18:50:48.594 25991 25991 V GraphicsEnvironment:   angle_gl_driver_selection_values=[angle]
+09-08 18:50:48.594 25991 25991 V GraphicsEnvironment: com.negi.survey is not listed in per-application setting
+09-08 18:50:48.594 25991 25991 V GraphicsEnvironment: No special selections for ANGLE, returning default driver choice
+09-08 18:50:48.594 25991 25991 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+09-08 18:50:48.638 25991 25991 D nativeloader: Load /data/app/~~wQ70F0SlU0Vs5BjdhZ83rg==/com.negi.survey-XVQWCLX1prQdRcDgZ8hCkQ==/base.apk!/lib/arm64-v8a/liblitertlm_jni.so using class loader ns clns-9 (caller=/data/app/~~wQ70F0SlU0Vs5BjdhZ83rg==/com.negi.survey-XVQWCLX1prQdRcDgZ8hCkQ==/base.apk!classes10.dex): ok
+09-08 18:50:48.639 25991 25991 D SurveyApp: Loaded LiteRTLM JNI: litertlm_jni where=attachBaseContext
+09-08 18:50:48.666 25991 25991 D AppRingLogStore: installed: dir=/data/user/0/com.negi.survey/files/diagnostics/applog_ring idx=0
+09-08 18:50:48.666 25991 25991 D SurveyApp: attachBaseContext: pid=25991 process=com.negi.survey isMain=true sdk=36
+09-08 18:50:48.667 25991 25991 D SurveyApp: bootTiming: attachBaseContext total=61ms
+09-08 18:50:48.667 25991 25991 D SurveyApp: Skipping WorkManager init in attachBaseContext; will init lazily on first enqueue.
+09-08 18:50:48.670 25991 25991 D CrashCapture: install: ensured default handler. where=SurveyApp:attachBaseContext pid=25991 default=com.negi.survey.CrashCapture$CrashHandler@40755f6
+09-08 18:50:48.670 25991 25991 D SurveyApp: CrashCapture installed: where=SurveyApp:attachBaseContext
+09-08 18:50:48.678 25991 25991 E com.negi.survey: hiddenapi: Accessing hidden method Landroid/net/ssl/EchConfigMismatchException;->getRetryConfigList()Landroid/net/ssl/EchConfigList; (runtime_flags=0, domain=core-platform, api=blocked) from /data/app/~~wQ70F0SlU0Vs5BjdhZ83rg==/com.negi.survey-XVQWCLX1prQdRcDgZ8hCkQ==/base.apk!classes17.dex (domain=app, TargetSdkVersion=36) using linking: denied
+09-08 18:50:48.678 25991 25991 E com.negi.survey: hiddenapi: Accessing hidden method Landroid/net/ssl/EchConfigList;->toBytes()[B (runtime_flags=0, domain=core-platform, api=blocked) from /data/app/~~wQ70F0SlU0Vs5BjdhZ83rg==/com.negi.survey-XVQWCLX1prQdRcDgZ8hCkQ==/base.apk!classes17.dex (domain=app, TargetSdkVersion=36) using linking: denied
+09-08 18:50:48.679 25991 25991 E com.negi.survey: hiddenapi: Accessing hidden method Landroid/net/ssl/EchConfigList;->fromBytes([B)Landroid/net/ssl/EchConfigList; (runtime_flags=0, domain=core-platform, api=blocked) from /data/app/~~wQ70F0SlU0Vs5BjdhZ83rg==/com.negi.survey-XVQWCLX1prQdRcDgZ8hCkQ==/base.apk!classes17.dex (domain=app, TargetSdkVersion=36) using linking: denied
+09-08 18:50:48.679 25991 25991 E com.negi.survey: hiddenapi: Accessing hidden method Landroid/net/ssl/SSLSockets;->setEchConfigList(Ljavax/net/ssl/SSLSocket;Landroid/net/ssl/EchConfigList;)V (runtime_flags=0, domain=core-platform, api=blocked) from /data/app/~~wQ70F0SlU0Vs5BjdhZ83rg==/com.negi.survey-XVQWCLX1prQdRcDgZ8hCkQ==/base.apk!classes17.dex (domain=app, TargetSdkVersion=36) using linking: denied
+09-08 18:50:48.722 25991 26068 D RuntimeLogStore: openWriter: start -> /data/user/0/com.negi.survey/files/diagnostics/runtime_logs/rtlog_20260909_015048_660_pid25991_seq1.log (bytes=0 format=LEGACY)
+09-08 18:50:48.725 25991 25991 D SurveyApp: LiteRTLM JNI already loaded; skip. where=onCreate(retry)
+09-08 18:50:48.725 25991 25991 D SurveyApp: bootTiming: RuntimeLogStore.start took=0ms
+09-08 18:50:48.725 25991 25991 D SurveyApp: bootTiming: AppRingLogStore.install took=0ms
+09-08 18:50:48.725 25991 25991 D SurveyApp: onCreate: pid=25991 process=com.negi.survey isMain=true sdk=36
+09-08 18:50:48.727 25991 26068 D RuntimeLogStore: retention: start files=2 kept=2 totalBytes=27777
+09-08 18:50:48.734 25991 25991 D CrashCapture: install: ensured default handler. where=SurveyApp:onCreate(rewrap) pid=25991 default=com.negi.survey.CrashCapture$CrashHandler@40755f6
+09-08 18:50:48.734 25991 25991 D SurveyApp: CrashCapture installed: where=SurveyApp:onCreate(rewrap)
+09-08 18:50:48.734 25991 25991 D CrashCapture: registerSelfHealing: ActivityLifecycleCallbacks registered. mode=onResumedOnly
+09-08 18:50:48.734 25991 25991 D SurveyApp: CrashCapture self-healing registered.
+09-08 18:50:48.734 25991 25991 W SurveyApp: Startup enqueues deferred: delay=2500ms (to reduce init contention)
+09-08 18:50:48.734 25991 25991 D SurveyApp: bootTiming: onCreate total=10ms
+09-08 18:50:48.792 25991 26070 D UploadRescheduleRcvr: No GitHub pending files for action=android.intent.action.MY_PACKAGE_REPLACED
+09-08 18:50:48.838 25991 26070 D github_upload: enqueueStartupRuntimeLogsUpload: uniqueName=upload_runtime_logs_startup policy=KEEP session=startup_runtime_20260909_015048_f37ccf59
+09-08 18:50:48.949 25991 26070 D WM-PackageManagerHelper: Skipping component enablement for androidx.work.impl.background.systemjob.SystemJobService
+09-08 18:50:48.949 25991 26070 D WM-Schedulers: Created SystemJobScheduler and enabled SystemJobService
+09-08 18:50:48.962 25991 26079 D WM-ForceStopRunnable: Is default app process = true
+09-08 18:50:48.963 25991 26079 D WM-ForceStopRunnable: Performing cleanup operations.
+09-08 18:50:48.980 25991 26070 D UploadRescheduleRcvr: Enqueued runtime logs upload for action=android.intent.action.MY_PACKAGE_REPLACED reason=receiver_my_package_replaced
+09-08 18:50:49.101 25991 26079 D WM-SystemJobScheduler: Reconciling jobs
+09-08 18:50:49.144 25991 26079 D WM-ForceStopRunnable: Application was force-stopped, rescheduling.
+09-08 18:50:49.417 25991 26085 D WM-SystemJobScheduler: Scheduling work ID a8122301-c039-4169-a5e5-0ce7566207d9Job ID 133
+09-08 18:50:49.431 25991 26085 D WM-GreedyScheduler: Starting tracking for a8122301-c039-4169-a5e5-0ce7566207d9
+09-08 18:50:49.437 25991 25991 D WM-SystemJobService: onStartJob for WorkGenerationalId(workSpecId=a8122301-c039-4169-a5e5-0ce7566207d9, generation=0)
+09-08 18:50:49.476 25991 26094 D WM-Processor: Processor: processing WorkGenerationalId(workSpecId=a8122301-c039-4169-a5e5-0ce7566207d9, generation=0)
+09-08 18:50:49.580 25991 25991 D WM-WorkerWrapper: Starting work for com.negi.survey.net.GitHubUploadWorker
+09-08 18:50:49.593 25991 26094 D WM-WorkConstraintsTrack: NetworkRequestConstraintController register shared callback
+09-08 18:50:49.616 25991 26094 D WM-PackageManagerHelper: androidx.work.impl.background.systemalarm.RescheduleReceiver enabled
+09-08 18:50:49.622 25991 26095 D WM-WorkConstraintsTrack: NetworkRequestConstraintController onCapabilitiesChanged callback
+09-08 18:50:49.622 25991 26095 D WM-WorkConstraintsTrack: Not dispatching constraint state yet: isBlocked=null, capabilitiesInitialized=true
+09-08 18:50:49.622 25991 26095 D WM-WorkConstraintsTrack: NetworkRequestConstraintController onBlockedStatusChanged callback false
+09-08 18:50:49.627 25991 26079 D WM-GreedyScheduler: Constraints met: Scheduling work ID WorkGenerationalId(workSpecId=a8122301-c039-4169-a5e5-0ce7566207d9, generation=0)
+09-08 18:50:49.647 25991 26079 D WM-Processor: Work WorkGenerationalId(workSpecId=a8122301-c039-4169-a5e5-0ce7566207d9, generation=0) is already enqueued for processing
+09-08 18:50:49.658 25991 26079 I WM-Processor: Moving WorkSpec (a8122301-c039-4169-a5e5-0ce7566207d9) to the foreground
+09-08 18:50:49.689 25991 25991 I WM-SystemFgDispatcher: Started foreground service Intent { act=ACTION_START_FOREGROUND xflg=0x4 cmp=com.negi.survey/androidx.work.impl.foreground.SystemForegroundService (has extras) }
+09-08 18:50:49.690 25991 25991 D WM-SystemFgDispatcher: Notifying with (id:8857, workSpecId: a8122301-c039-4169-a5e5-0ce7566207d9, notificationType :1)
+09-08 18:50:49.692 25991 26079 D WM-WorkProgressUpdater: Updating progress for a8122301-c039-4169-a5e5-0ce7566207d9 (Data {pct : 3, mode : startup_runtime_logs})
+09-08 18:50:49.695 25991 25991 D WM-SystemFgDispatcher: Notifying with (id:8857, workSpecId: a8122301-c039-4169-a5e5-0ce7566207d9, notificationType :1)
+09-08 18:50:49.710 25991 26079 I WM-Processor: Moving WorkSpec (a8122301-c039-4169-a5e5-0ce7566207d9) to the foreground
+09-08 18:50:49.714 25991 25991 D WM-SystemFgDispatcher: Notifying with (id:8857, workSpecId: a8122301-c039-4169-a5e5-0ce7566207d9, notificationType :1)
+09-08 18:50:49.714 25991 26079 D WM-WorkConstraintsTrack: NetworkRequestConstraintController send initial capabilities
+09-08 18:50:50.897 25991 25991 D ActivityThread: Package [com.negi.survey.test] reported as REPLACED, but missing application info. Assuming REMOVED.
+09-08 18:50:50.907 25991 25991 D ActivityThread: Package [com.negi.survey.test] reported as REPLACED, but missing application info. Assuming REMOVED.
+09-08 18:50:50.912 25991 26068 D RuntimeLogStore: openWriter: rotate:plain_snapshot:receiver_my_package_repl -> /data/user/0/com.negi.survey/files/diagnostics/runtime_logs/rtlog_20260909_015050_909_pid25991_seq2.log (bytes=0 format=LEGACY)
+09-08 18:50:50.913 25991 26068 D RuntimeLogStore: retention: rotate:plain_snapshot:receiver_my_package_repl files=3 kept=3 totalBytes=29487
+09-08 18:50:50.965 25991 26071 D github_upload: doRuntimeLogsUpload: remoteBaseDir=diagnostics/runtime_logs/2026-09-09/runtime_logs_startup_runtime_20260909_015048_f37ccf59_receiver_my_package_repl toUpload=2 bytes=29151 dedupe=true deleteSource=true deletedSourcePre=0 preview='runtime_log_20260909_015050_929_pid25991_receiver_my_package_repl__rtlog_20260909_015048_660_pid25991_seq1.log|runtime_log_20260909_015050_929_pid25991_receiver_my_package_repl__rtlog_20260909_014537_716_pid25584_seq2.log'
+09-08 18:50:50.971 25991 26071 D GitHubUploader: uploadStream: owner=ishizuki-tech repo=SurveyExports branch=main path=diagnostics/runtime_logs/2026-09-09/runtime_logs_startup_runtime_20260909_015048_f37ccf59_receiver_my_package_repl/runtime_log_20260909_015050_929_pid25991_receiver_my_package_repl__rtlog_20260909_015048_660_pid25991_seq1.log size=1691 maxRawBytesHint=1000000 maxRequestBytesHint=2800000
+09-08 18:50:50.972 25991 26079 D WM-WorkProgressUpdater: Updating progress for a8122301-c039-4169-a5e5-0ce7566207d9 (Data {pct : 10, mode : startup_runtime_logs})
+09-08 18:50:50.999 25991 26079 I WM-Processor: Moving WorkSpec (a8122301-c039-4169-a5e5-0ce7566207d9) to the foreground
+09-08 18:50:51.007 25991 25991 D WM-SystemFgDispatcher: Notifying with (id:8857, workSpecId: a8122301-c039-4169-a5e5-0ce7566207d9, notificationType :1)
+09-08 18:50:51.235 25991 25991 W SurveyApp: Deferred startup enqueues begin...
+09-08 18:50:51.236 25991 25991 D SurveyApp: WorkManager available. where=startupRtLogs(immediate) took=0ms
+09-08 18:50:51.242 25991 25991 D SurveyApp: Startup runtime logs target -> owner=ishizuki-tech repo=SurveyExports branch=main base='/diagnostics/runtime_logs'
+09-08 18:50:51.246 25991 25991 D github_upload: enqueueStartupRuntimeLogsUpload: uniqueName=upload_runtime_logs_startup policy=KEEP session=startup_runtime_20260909_015051_b6f61c5a
+09-08 18:50:51.247 25991 25991 D SurveyApp: Startup runtime logs: enqueue requested (immediate).
+09-08 18:50:51.248 25991 25991 D SurveyApp: WorkManager available. where=startupRingLogs(immediate) took=0ms
+09-08 18:50:51.253 25991 25991 D SurveyApp: Startup ring logs target -> owner=ishizuki-tech repo=SurveyExports branch=main base='/diagnostics/applog_ring'
+09-08 18:50:51.256 25991 25991 D github_upload: enqueueStartupRingLogsUpload: uniqueName=upload_ring_logs_startup policy=KEEP session=startup_ring_20260909_015051_d6a105d6
+09-08 18:50:51.256 25991 25991 D SurveyApp: Startup ring logs: enqueue requested (immediate).
+09-08 18:50:51.256 25991 25991 D SurveyApp: WorkManager available. where=enqueuePending(immediate) took=0ms
+09-08 18:50:51.257 25991 25991 D SurveyApp: CrashCapture pending uploads requested (immediate).
+09-08 18:50:51.258 25991 26117 D CrashCapture: enqueuePendingCrashUploadsIfPossible enter where=SurveyApp:enqueuePending(immediate):bg pid=25991 thread=CrashCapture-Enqueue
+09-08 18:50:51.258 25991 25991 W SurveyApp: Deferred startup enqueues done: took=22ms
+09-08 18:50:51.318 25991 26094 D WM-SystemJobScheduler: Scheduling work ID aeae484d-7007-4c2e-ba87-2328de7f313dJob ID 134
+09-08 18:50:51.322 25991 26094 D WM-GreedyScheduler: Starting tracking for aeae484d-7007-4c2e-ba87-2328de7f313d
+09-08 18:50:51.323 25991 25991 D WM-SystemJobService: onStartJob for WorkGenerationalId(workSpecId=aeae484d-7007-4c2e-ba87-2328de7f313d, generation=0)
+09-08 18:50:51.328 25991 26094 D WM-Processor: Processor: processing WorkGenerationalId(workSpecId=aeae484d-7007-4c2e-ba87-2328de7f313d, generation=0)

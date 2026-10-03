@@ -1,0 +1,59 @@
+=== RuntimeLogStore Header ===
+ts=2026-10-02T21:47:07.657Z
+fileNameFormat=LEGACY
+appId=com.negi.survey
+versionName=0.0.1
+versionCode=110
+debug=false
+device=samsung SM-S731U
+sdk=36
+pid=17453
+==============================
+2026-10-02T21:47:07.657Z I/RuntimeLogStore [rtlog-io] --- rotated (reason=plain_snapshot:receiver_my_package_repl) ---
+2026-10-02T21:47:08.783Z W/SurveyApp [main] Deferred startup enqueues begin...
+2026-10-02T21:47:08.783Z D/SurveyApp [main] WorkManager available. where=startupRtLogs(immediate) took=0ms
+2026-10-02T21:47:08.784Z D/SurveyApp [main] Startup runtime logs target -> owner=ishizuki-tech repo=SurveyExports branch=main base='/diagnostics/runtime_logs'
+2026-10-02T21:47:08.786Z D/SurveyApp [main] Startup runtime logs: enqueue requested (immediate).
+2026-10-02T21:47:08.787Z D/SurveyApp [main] WorkManager available. where=startupRingLogs(immediate) took=0ms
+2026-10-02T21:47:08.787Z D/SurveyApp [main] Startup ring logs target -> owner=ishizuki-tech repo=SurveyExports branch=main base='/diagnostics/applog_ring'
+2026-10-02T21:47:08.788Z D/SurveyApp [main] Startup ring logs: enqueue requested (immediate).
+2026-10-02T21:47:08.788Z D/SurveyApp [main] WorkManager available. where=enqueuePending(immediate) took=0ms
+2026-10-02T21:47:08.789Z D/SurveyApp [main] CrashCapture pending uploads requested (immediate).
+2026-10-02T21:47:08.789Z W/SurveyApp [main] Deferred startup enqueues done: took=7ms
+2026-10-02T21:47:08.790Z D/SurveyApp [DefaultDispatcher-worker-2] Survey recovery WorkManager available. where=startupSurveyUploads(initial) took=0ms
+2026-10-02T21:47:08.792Z D/SurveyApp [DefaultDispatcher-worker-2] Startup survey recovery complete: discovered=0 attempted=0 submitted=0 active=0 trackerUnconfirmed=0 uploaded=0 deferred=0 invalid=0 operationalFailures=0 duplicates=0 unclassified=0
+2026-10-02T21:47:12.488Z D/LiteRtLM [DefaultDispatcher-worker-9] Initializing LiteRT-LM: model='Gemma3n4B', key='fs|dev=65088|ino=34395|size=4919541760|mtime=1790893403654'
+2026-10-02T21:47:12.488Z D/LiteRtLM [DefaultDispatcher-worker-9] Capabilities: image=false audio=false
+2026-10-02T21:47:12.488Z D/LiteRtLM [DefaultDispatcher-worker-9] Backend=com.google.ai.edge.litertlm.Backend$GPU@d975115 maxNumTokens=1024 (raw=1024) topK=1 topP=0.0 temp=0.0
+2026-10-02T21:47:12.488Z D/LiteRtLM [DefaultDispatcher-worker-9] Model path='/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' sizeBytes=4919541760 lastModified=1790893403654
+2026-10-02T21:47:12.488Z D/LiteRtLM [DefaultDispatcher-worker-9] LiteRT-LM native benchmark policy: enabled=false emulator=false
+2026-10-02T21:47:12.488Z D/LiteRtLM [DefaultDispatcher-worker-9] Speculative decoding / MTP policy: enabled=false runtimeFlagUpdated=true model='Gemma3n4B'
+2026-10-02T21:47:12.495Z D/LiteRtLM [DefaultDispatcher-worker-9] Engine cacheDir resolved: key='fs|dev=65088|ino=34395|size=4919541760|mtime=1790893403654' backend=com.google.ai.edge.litertlm.Backend$GPU@d975115 path='/data/user/0/com.negi.survey/no_backup/litertlm_cache/e99f4a8207fc82b82c116d63e91df981ac444f6e' filesBefore=2
+2026-10-02T21:47:21.976Z W/LiteRtLM [DefaultDispatcher-worker-9] Engine.initialize completed: key='fs|dev=65088|ino=34395|size=4919541760|mtime=1790893403654' backend=com.google.ai.edge.litertlm.Backend$GPU@d975115 took=9479ms cacheFilesAfter=2
+2026-10-02T21:47:22.019Z D/LiteRtLM [DefaultDispatcher-worker-9] createConversation completed: key='fs|dev=65088|ino=34395|size=4919541760|mtime=1790893403654' took=40ms
+2026-10-02T21:47:22.020Z D/LiteRtLM [DefaultDispatcher-worker-9] LiteRT-LM initialization succeeded: model='Gemma3n4B', key='fs|dev=65088|ino=34395|size=4919541760|mtime=1790893403654' engineMs=9479 conversationMs=40 totalMs=9533
+2026-10-02T21:47:22.043Z D/AiTrace [main] Installed (enabled=false ringEnabled=true)
+2026-10-02T21:47:22.057Z D/SurveyVM [main] init -> Start, session=0, uuid=893aaee8-b50e-4ede-a5c3-aa751655f15f, navSize=1, graphSize=22
+2026-10-02T21:47:22.062Z D/SurveyVM [main] config.validate -> issues=0
+2026-10-02T21:47:22.062Z D/SurveyVM [main] promptSources -> legacy=10, eval=0, follow=0
+2026-10-02T21:47:22.062Z D/SurveyVM [main] promptSources.preview -> legacy=[Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q7, Q8, Q9], eval=[], follow=[]
+2026-10-02T21:47:22.063Z D/SurveyVM [main] hasTwoStepPrompt[Q10] -> true (eval=219, fu=244)
+2026-10-02T21:47:22.063Z D/SurveyVM [main] hasTwoStepPrompt[Q11] -> true (eval=229, fu=254)
+2026-10-02T21:47:22.063Z D/SurveyVM [main] hasTwoStepPrompt[Q12] -> true (eval=184, fu=209)
+2026-10-02T21:47:22.063Z D/SurveyVM [main] hasTwoStepPrompt[Q13] -> true (eval=221, fu=246)
+2026-10-02T21:47:22.063Z D/SurveyVM [main] hasTwoStepPrompt[Q14] -> true (eval=160, fu=185)
+2026-10-02T21:47:22.063Z D/SurveyVM [main] hasTwoStepPrompt[Q15] -> true (eval=185, fu=210)
+2026-10-02T21:47:22.063Z D/SurveyVM [main] hasTwoStepPrompt[Q16] -> true (eval=200, fu=225)
+2026-10-02T21:47:22.063Z D/SurveyVM [main] hasTwoStepPrompt[Q7] -> true (eval=248, fu=273)
+2026-10-02T21:47:22.063Z D/SurveyVM [main] hasTwoStepPrompt[Q8] -> true (eval=190, fu=215)
+2026-10-02T21:47:22.063Z D/SurveyVM [main] hasTwoStepPrompt[Q9] -> true (eval=195, fu=220)
+2026-10-02T21:47:22.063Z D/SurveyVM [main] AI prompt coverage OK (aiCount=10)
+2026-10-02T21:47:22.561Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='fs|dev=65088|ino=34395|size=4919541760|mtime=1790893403654'
+2026-10-02T21:47:22.562Z D/LiteRtRepository [main] warmUp: initializeIfNeeded ok gateWaitMs=0 initMs=3
+2026-10-02T21:47:22.562Z D/LiteRtRepository [main] warmUp: Engine ready; representative inference disabled totalMs=3
+2026-10-02T21:47:27.580Z D/SurveyVM [DefaultDispatcher-worker-5] addAudioRef -> q=__home_free_text__, file=2026-10-02_21-47-27_voice_SM-S731U_414A86B07D91_893aaee8-b50e-4ede-a5c3-aa751655f15f_home_free_text.wav, sid=893aaee8-b50e-4ede-a5c3-aa751655f15f
+2026-10-02T21:47:27.581Z D/SurveyVM [DefaultDispatcher-worker-5] onVoiceExported -> q=__home_free_text__, file=2026-10-02_21-47-27_voice_SM-S731U_414A86B07D91_893aaee8-b50e-4ede-a5c3-aa751655f15f_home_free_text.wav, replace=false
+2026-10-02T21:47:32.228Z D/SurveyVM [main] setRunFreeText(draft) -> len=30
+2026-10-02T21:49:53.887Z D/SurveyVM [DefaultDispatcher-worker-5] addAudioRef -> q=__home_free_text__, file=2026-10-02_21-49-53_voice_SM-S731U_414A86B07D91_893aaee8-b50e-4ede-a5c3-aa751655f15f_home_free_text.wav, sid=893aaee8-b50e-4ede-a5c3-aa751655f15f
+2026-10-02T21:49:53.887Z D/SurveyVM [DefaultDispatcher-worker-5] onVoiceExported -> q=__home_free_text__, file=2026-10-02_21-49-53_voice_SM-S731U_414A86B07D91_893aaee8-b50e-4ede-a5c3-aa751655f15f_home_free_text.wav, replace=false
+2026-10-02T21:49:58.359Z D/SurveyVM [main] setRunFreeText(draft) -> len=71

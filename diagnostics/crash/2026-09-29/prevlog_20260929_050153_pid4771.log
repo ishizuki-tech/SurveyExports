@@ -1,0 +1,422 @@
+=== Previous Session Logcat ===
+captured_time_utc=20260929_050153
+captured_time_local=20260929_000153
+marker=2026-09-28 23:50:15.268
+preferred_prev_pid=-1
+note=best-effort; buffers may be overwritten before next start
+sdk=36
+device=samsung SM-S731U
+appId=com.negi.survey
+versionName=0.0.1
+versionCode=1
+
+=== Logcat (since marker) ===
+--------- beginning of main
+09-28 23:52:29.871 31884 31884 I VRI[MainActivity]@4737bac: ViewPostIme pointer 0
+09-28 23:52:29.877 31884 31884 I VRI[MainActivity]@4737bac: call setFrameRateCategory for touch hint category=high hint, reason=touch, vri=VRI[MainActivity]@4737bac
+09-28 23:52:29.879 31884 31884 I VRI[MainActivity]@4737bac: ViewPostIme pointer 1
+09-28 23:52:29.881 31884 31884 D MainActivity: Intro -> Start session. epoch=1, file=survey_config10.yaml
+09-28 23:52:29.904 31884 31884 I View    : setRequestedFrameRate frameRate=-4.0, this=android.view.View{240bb52 V.ED..... ........ 0,0-0,0}, caller=androidx.compose.ui.platform.Api35Impl.setRequestedFrameRate:4047 androidx.compose.ui.platform.AndroidComposeView.dispatchDraw:2282 android.view.View.draw:26758 android.view.View.updateDisplayListIfDirty:25577 android.view.View.draw:26477 
+09-28 23:52:29.909 31884 32067 D SurveyConfigLoader: fromStringStrictValidated -> format=YAML, reason=file extension .yml/.yaml, firstLine='ai_interaction:', leading='ai_interaction:\n  max_followups...' file='survey_config10.yaml'
+09-28 23:52:29.914 31884 31884 I View    : setRequestedFrameRate frameRate=NaN, this=android.view.View{240bb52 V.ED..... ........ 0,0-0,0}, caller=androidx.compose.ui.platform.Api35Impl.setRequestedFrameRate:4047 androidx.compose.ui.platform.AndroidComposeView.dispatchDraw:2282 android.view.View.draw:26758 android.view.View.updateDisplayListIfDirty:25577 android.view.ViewGroup.recreateChildDisplayList:4881 
+09-28 23:52:29.967 31884 31896 I com.negi.survey: Explicit concurrent mark compact GC freed 16MB AllocSpace bytes, 7(240KB) LOS objects, 77% free, 7165KB/30MB, paused 272us,1.518ms total 44.317ms
+09-28 23:52:30.013 31884 32067 D SurveyConfigLoader: strict config loaded (survey_config10.yaml): legacy=10(one=0,inline2=10) splitEval=0 splitFollow=0 followMode=TEXT legacyIds=[Q7,Q8,Q9,Q10,Q11,Q12,Q13,Q14] evalIds=[-] followIds=[-]
+09-28 23:52:30.020 31884 32067 D SurveyConfigLoader: fromStringStrictValidated -> issues=0 (legacy=10(one=0,inline2=10) splitEval=0 splitFollow=0 followMode=TEXT legacyIds=[Q7,Q8,Q9,Q10,Q11,Q12,Q13,Q14] evalIds=[-] followIds=[-])
+09-28 23:52:30.020 31884 31884 D MainActivity: Config loaded. session=survey_config10.yaml@1
+09-28 23:52:30.029 31884 31884 D MainActivity: DownloadGate idle -> start download. session=survey_config10.yaml@1
+09-28 23:52:30.030 31884 31884 I AppViewModel: private model reused: name=gemma-3n-E4B-it-int4.litertlm bytes=4919541760
+09-28 23:52:30.039 31884 31884 I Dialog  : mIsDeviceDefault = false, mIsSamsungBasicInteraction = false, isMetaDataInActivity = false
+09-28 23:52:30.041 31884 31884 I DecorView: setWindowBackground: isPopOver=false color=0 d=android.graphics.drawable.ColorDrawable@3931f8e
+09-28 23:52:30.048 31884 31884 I WindowManager: WindowManagerGlobal#addView, ty=2, view=com.android.internal.policy.DecorView{ab67dbb V.E...... R.....I. 0,0-0,0}[MainActivity], caller=android.view.WindowManagerImpl.addView:167 android.app.Dialog.show:544 androidx.compose.ui.window.AndroidDialog_androidKt.Dialog$lambda$3$0:272 
+09-28 23:52:30.048 31884 31884 D ViewRootImpl: desktopMode is false
+09-28 23:52:30.049 31884 31884 I ViewRootImpl: dVRR is disabled
+09-28 23:52:30.049 31884 31929 D NativeCustomFrequencyManager: [NativeCFMS] BpCustomFrequencyManager::BpCustomFrequencyManager()
+09-28 23:52:30.054 31884 31884 D InputTransport: Input channel constructed: 'd1c6ac5', fd=151
+09-28 23:52:30.054 31884 31884 I InsetsController: onStateChanged: host=com.negi.survey/com.negi.survey.MainActivity, from=android.view.ViewRootImpl.onInsetsStateChanged:3038, state=InsetsState: {mDisplayFrame=Rect(0, 0 - 1080, 2340), mDisplayCutout=DisplayCutout{insets=Rect(0, 82 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(511, 24 - 569, 82), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1080 displayHeight=2340 physicalDisplayWidth=1080 physicalDisplayHeight=2340 density={2.8125} cutoutSpec={M 0,0 M 0, 8.533333333333333 a 10.31111111111111,10.31111111111111 0 1,0 0,20.62222222222222 a 10.31111111111111,10.31111111111111 0 1,0 0,-20.62222222222222 Z @dp} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={1.0}}} sideOverrides={}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=113, center=Point(113, 113)}, RoundedCorner{position=TopRight, radius=113, center=Point(967, 113)}, RoundedCorner{position=BottomRight, radius=113, center=Point(967, 2227)}, RoundedCorner{position=BottomLeft, radius=113, center=Point(113, 2227)}]}  mRoundedCornerFrame=Rect(0, 0 - 1080, 2340), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(956, 0 - 1080, 97) rotation=0}, mDisplayShape=DisplayShape{ spec=-311912193 displayWidth=1080 displayHeight=2340 physicalPixelDisplaySizeRatio=1.0 rotation=0 offsetX=0 offsetY=0 scale=1.0}, mSources= { InsetsSource: {dc020001 mType=navigationBars mFrame=[0,2205][1080,2340] mAttachedInsets=null mVisible=true mFlags= mSideHint=BOTTOM mBoundingRects=null}, InsetsSource: {dc020004 mType=systemGestures mFrame=[0,0][0,0] mAttachedInsets=null mVisible=true mFlags= mSideHint=NONE mBoundingRects=null}, InsetsSource: {dc020005 mType=mandatorySystemGestures mFrame=[0,2205][1080,2340] mAttachedInsets=null mVisible=true mFlags= mSideHint=BOTTOM mBoundingRects=null}, InsetsSource: {dc020006 mType=tappableElement mFrame=[0,2205][1080,2340] mAttachedInsets=null mVisible=true mFlags= mSideHint=BOTTOM mBoundingRects=null}, InsetsSource: {dc020024 mType=systemGestures mFrame=[0,0][0,0] mAttachedInsets=null mVisible=true mFlags= mSideHint=NONE mBoundingRects=null}, InsetsSource: {3 mType=ime mFrame=[0,0][0,0] mAttachedInsets=null mVisible=false mFlags=INVALID mSideHint=NONE mBoundingRects=null}, InsetsSource: {27 mType=displayCutout mFrame=[0,0][1080,82] mAttachedInsets=null mVisible=true mFlags= mSideHint=TOP mBoundingRects=null}, InsetsSource: {23ca0000 mType=statusBars mFrame=[0,0][1080,97] mAttachedInsets=null mVisible=true mFlags= mSideHint=TOP mBoundingRects=null}, InsetsSource: {23ca0005 mType=mandatorySystemGestures mFrame=[0,0][1080,116] mAttachedInsets=null mVisible=true mFlags= mSideHint=TOP mBoundingRects=null}, InsetsSource: {23ca0006 mType=tappableElement mFrame=[0,0][1080,97] mAttachedInsets=null mVisible=true mFlags= mSideHint=TOP mBoundingRects=null} }
+09-28 23:52:30.054 31884 31884 I VRI[MainActivity]@3a4b2d8: synced displayState. AttachInfo displayState=2
+09-28 23:52:30.054 31884 31884 I VRI[MainActivity]@3a4b2d8: setView = com.android.internal.policy.DecorView@ab67dbb IsHRR=false mFlingFrameRateChange=0 TM=true
+09-28 23:52:30.055 31884 31884 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.app.Dialog$$ExternalSyntheticLambda4@a1e2484
+09-28 23:52:30.055 31884 31884 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): androidx.navigationevent.OnBackInvokedInput$createOnBackAnimationCallback$1@df46d
+09-28 23:52:30.079 31884 31884 I InsetsSourceConsumer: applyRequestedVisibilityToControl: visible=true, type=statusBars, host=com.negi.survey/com.negi.survey.MainActivity
+09-28 23:52:30.079 31884 31884 I InsetsSourceConsumer: applyRequestedVisibilityToControl: visible=true, type=navigationBars, host=com.negi.survey/com.negi.survey.MainActivity
+09-28 23:52:30.080 31884 31884 W libc    : Access denied finding property "vendor.perf.ems.egg"
+09-28 23:52:30.081 31884 31884 I BLASTBufferQueue_Java: new BLASTBufferQueue, mName= VRI[MainActivity]@3a4b2d8 mNativeObject= 0xb400007888017f60 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3603 android.view.ViewRootImpl.relayoutWindow:11813 android.view.ViewRootImpl.performTraversals:4840 android.view.ViewRootImpl.doTraversal:3959 android.view.ViewRootImpl$TraversalRunnable.run:13034 android.view.Choreographer$CallbackRecord.run:1961 android.view.Choreographer$CallbackRecord.run:1970 android.view.Choreographer.doCallbacks:1423 android.view.Choreographer.doFrame:1348 android.view.Choreographer$FrameDisplayEventReceiver.run:1930 
+09-28 23:52:30.081 31884 31884 I BLASTBufferQueue_Java: update, w= 1170 h= 972 mName = VRI[MainActivity]@3a4b2d8 mNativeObject= 0xb400007888017f60 sc.mNativeObject= 0xb400007937f27250 format= -2 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3608 android.view.ViewRootImpl.relayoutWindow:11813 android.view.ViewRootImpl.performTraversals:4840 android.view.ViewRootImpl.doTraversal:3959 android.view.ViewRootImpl$TraversalRunnable.run:13034 android.view.Choreographer$CallbackRecord.run:1961 
+09-28 23:52:30.082 31884 31884 W libc    : Access denied finding property "vendor.perf.ems.egg"
+09-28 23:52:30.082 31884 31884 I VRI[MainActivity]@3a4b2d8: Relayout returned: old=(0,97,1080,2205) new=(90,800,990,1502) relayoutAsync=false req=(900,702)0 dur=3 res=0x3 s={true 0xb4000078c7f75410} ch=true seqId=0
+09-28 23:52:30.082 31884 31884 I VRI[MainActivity]@3a4b2d8: performConfigurationChange setNightDimText nightDimLevel=0
+09-28 23:52:30.083 31884 31884 D VRI[MainActivity]@3a4b2d8: mThreadedRenderer.initialize() mSurface={isValid=true 0xb4000078c7f75410} hwInitialized=true
+09-28 23:52:30.089 31884 31884 D VRI[MainActivity]@3a4b2d8: reportNextDraw android.view.ViewRootImpl.performTraversals:5507 android.view.ViewRootImpl.doTraversal:3959 android.view.ViewRootImpl$TraversalRunnable.run:13034 android.view.Choreographer$CallbackRecord.run:1961 android.view.Choreographer$CallbackRecord.run:1970 
+09-28 23:52:30.089 31884 31884 D VRI[MainActivity]@3a4b2d8: Setup new sync=wmsSync-VRI[MainActivity]@3a4b2d8#6
+09-28 23:52:30.089 31884 31884 I VRI[MainActivity]@3a4b2d8: Creating new active sync group VRI[MainActivity]@3a4b2d8#7
+09-28 23:52:30.089 31884 31884 D VRI[MainActivity]@3a4b2d8: registerCallbacksForSync syncBuffer=false
+09-28 23:52:30.091 31884 31884 I View    : setRequestedFrameRate frameRate=-4.0, this=android.view.View{6bcc7ae V.ED..... ......I. 0,0-0,0}, caller=androidx.compose.ui.platform.Api35Impl.setRequestedFrameRate:4047 androidx.compose.ui.platform.AndroidComposeView.dispatchDraw:2282 android.view.View.draw:26758 android.view.View.updateDisplayListIfDirty:25577 android.view.View.draw:26477 
+09-28 23:52:30.091 31884 31940 D VRI[MainActivity]@3a4b2d8: Received frameDrawingCallback syncResult=0 frameNum=1.
+09-28 23:52:30.091 31884 31940 I VRI[MainActivity]@3a4b2d8: mWNT: t=0xb4000078d7f80680 mBlastBufferQueue=0xb400007888017f60 fn= 1 HdrRenderState mRenderHdrSdrRatio=1.0 caller= android.view.ViewRootImpl$12.onFrameDraw:15561 android.view.ThreadedRenderer$1.onFrameDraw:751 <bottom of call stack> 
+09-28 23:52:30.091 31884 31940 I VRI[MainActivity]@3a4b2d8: Setting up sync and frameCommitCallback
+09-28 23:52:30.092 31884 31929 I BLASTBufferQueue: [VRI[MainActivity]@3a4b2d8#2](f:0,a:0,s:0) onFrameAvailable the first frame is available
+09-28 23:52:30.092 31884 31929 I VRI[MainActivity]@3a4b2d8: Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true
+09-28 23:52:30.093 31884 31929 D HWUI    : CFMS:: SetUp Pid : 31884    Tid : 31929
+09-28 23:52:30.093 31884 31884 D VRI[MainActivity]@3a4b2d8: reportDrawFinished seqId=0
+09-28 23:52:30.094 31884 31929 D HWUI    : HWUI - treat SMPTE_170M as sRGB
+09-28 23:52:30.095 31884 31884 I BLASTBufferQueue_Java: update, w= 1170 h= 972 mName = VRI[MainActivity]@3a4b2d8 mNativeObject= 0xb400007888017f60 sc.mNativeObject= 0xb400007937f27250 format= -2 caller= android.view.ViewRootImpl.updateBlastSurfaceIfNeeded:3592 android.view.ViewRootImpl.relayoutWindow:11813 android.view.ViewRootImpl.performTraversals:4840 android.view.ViewRootImpl.doTraversal:3959 android.view.ViewRootImpl$TraversalRunnable.run:13034 android.view.Choreographer$CallbackRecord.run:1961 
+09-28 23:52:30.095 31884 31884 I VRI[MainActivity]@3a4b2d8: Relayout returned: old=(90,800,990,1502) new=(90,800,990,1502) relayoutAsync=true req=(900,702)0 dur=0 res=0x0 s={true 0xb4000078c7f75410} ch=false seqId=0
+09-28 23:52:30.098 31884 31884 I VRI[MainActivity]@3a4b2d8: registerCallbackForPendingTransactions
+09-28 23:52:30.098 31884 31939 I VRI[MainActivity]@3a4b2d8: mWNT: t=0xb4000078d7f81da0 mBlastBufferQueue=0xb400007888017f60 fn= 2 HdrRenderState mRenderHdrSdrRatio=1.0 caller= android.view.ViewRootImpl$10.onFrameDraw:6615 android.view.ViewRootImpl$4.onFrameDraw:2485 android.view.ThreadedRenderer$1.onFrameDraw:751 
+09-28 23:52:30.098 31884 31884 I ImeFocusController: onPreWindowFocus: skipped hasWindowFocus=false mHasImeFocus=true
+09-28 23:52:30.099 31884 31884 I ImeFocusController: onPostWindowFocus: skipped hasWindowFocus=false mHasImeFocus=true
+09-28 23:52:30.130 31884 31884 D VRI[MainActivity]@3a4b2d8: mThreadedRenderer.initializeIfNeeded()#2 mSurface={isValid=true 0xb4000078c7f75410}
+09-28 23:52:30.131 31884 31884 D InputMethodManagerUtils: startInputInner - Id : 0
+09-28 23:52:30.131 31884 31884 I InputMethodManager: startInputInner - IInputMethodManagerGlobalInvoker.startInputOrWindowGainedFocus
+--------- beginning of system
+09-28 23:52:30.134 31884 31884 D InsetsController: hide(ime())
+09-28 23:52:30.134 31884 31884 I ImeTracker: com.negi.survey:171ff438: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+09-28 23:52:30.140 31884 31902 D InputTransport: Input channel constructed: 'ClientS', fd=190
+09-28 23:52:31.180 31884 31902 I com.negi.survey: Explicit concurrent mark compact GC freed 2564KB AllocSpace bytes, 5(120KB) LOS objects, 78% free, 6562KB/30MB, paused 112us,1.568ms total 31.085ms
+09-28 23:52:31.194 31884 31893 D InputTransport: Input channel destroyed: 'ClientS', fd=190
+09-28 23:52:32.389 31884 31902 I com.negi.survey: Explicit concurrent mark compact GC freed 224KB AllocSpace bytes, 1(20KB) LOS objects, 79% free, 6530KB/30MB, paused 139us,1.886ms total 23.540ms
+09-28 23:52:32.886 31884 31884 I VRI[MainActivity]@4737bac: call setFrameRateCategory for touch hint category=no preference, reason=boost timeout, vri=VRI[MainActivity]@4737bac
+09-28 23:52:33.048 31884 31884 D SLM     : buildModelConfig: accel=GPU maxTokens=1024 topK=1 topP=0.0 temperature=0.0
+09-28 23:52:33.049 31884 31884 I MainActivity: LiteRT-LM startup config: configuredBackend=GPU debugBackendOverride=gpu effectiveBackend=gpu configuredMaxTokens=1024 debugMaxTokensOverride=1024 effectiveMaxTokens=1024
+09-28 23:52:33.065 31884 31884 I View    : setRequestedFrameRate frameRate=-4.0, this=android.view.View{240bb52 V.ED..... ........ 0,0-0,0}, caller=androidx.compose.ui.platform.Api35Impl.setRequestedFrameRate:4047 androidx.compose.ui.platform.AndroidComposeView.dispatchDraw:2282 android.view.View.draw:26758 android.view.View.updateDisplayListIfDirty:25577 android.view.View.draw:26477 
+09-28 23:52:33.067 31884 32067 D HeavyModelRuntime: Whisper -> SLM: releasing Whisper
+09-28 23:52:33.068 31884 32067 D HeavyModelRuntime: Whisper -> SLM: Whisper released
+09-28 23:52:33.080 31884 32067 D LiteRtLM: Initializing LiteRT-LM: model='Gemma3n4B', key='fs|dev=65088|ino=23726|size=4919541760|mtime=1790636955288'
+09-28 23:52:33.080 31884 32067 D LiteRtLM: Capabilities: image=false audio=false
+09-28 23:52:33.080 31884 32067 D LiteRtLM: Backend=com.google.ai.edge.litertlm.Backend$GPU@f1277ed maxNumTokens=1024 (raw=1024) topK=1 topP=0.0 temp=0.0
+09-28 23:52:33.080 31884 32067 D LiteRtLM: Model path='/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' sizeBytes=4919541760 lastModified=1790636955288
+09-28 23:52:33.080 31884 32067 D LiteRtLM: LiteRT-LM native benchmark policy: enabled=false emulator=false
+09-28 23:52:33.080 31884 32067 D LiteRtLM: LiteRT-LM native benchmark policy: enabled=false emulator=false
+09-28 23:52:33.080 31884 32067 D LiteRtLM: Speculative decoding / MTP policy: enabled=false runtimeFlagUpdated=true model='Gemma3n4B'
+09-28 23:52:33.084 31884 32067 D LiteRtLM: Engine cacheDir resolved: key='fs|dev=65088|ino=23726|size=4919541760|mtime=1790636955288' backend=com.google.ai.edge.litertlm.Backend$GPU@f1277ed path='/data/user/0/com.negi.survey/no_backup/litertlm_cache/4549a6c891a4e76dde09c34405530147305a6842' filesBefore=2
+09-28 23:52:33.089 31884 32067 I litert  : [environment.cc:36] Creating LiteRT environment with options
+09-28 23:52:33.090 31884 32067 W litert  : [npu_registry.cc:34] NPU accelerator could not be loaded and registered: kLiteRtStatusErrorInvalidArgument.
+09-28 23:52:33.090 31884 32067 I litert  : [accelerator_registry.cc:54] RegisterAccelerator: ptr=0xb400007967f50d90, name=LiteRT GPU
+09-28 23:52:33.090 31884 32067 I litert  : [gpu_registry.cc:87] Statically linked GPU accelerator registered.
+09-28 23:52:33.090 31884 32067 I litert  : [accelerator_registry.cc:54] RegisterAccelerator: ptr=0xb400007967f50670, name=CpuAccelerator
+09-28 23:52:33.090 31884 32067 I litert  : [cpu_registry.cc:75] XNNPACK CPU accelerator registered.
+09-28 23:52:33.108 31884 31884 I WindowManager: WindowManagerGlobal#removeView, ty=2, view=com.android.internal.policy.DecorView{ab67dbb V.E...... R....... 0,0-900,702 aid=1073741826}[MainActivity], caller=android.view.WindowManagerGlobal.removeView:654 android.view.WindowManagerImpl.removeViewImmediate:254 android.app.Dialog.dismissDialog:854 
+09-28 23:52:33.108 31884 31884 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): null
+09-28 23:52:33.113 31884 31884 I VRI[MainActivity]@3a4b2d8: dispatchDetachedFromWindow
+09-28 23:52:33.116 31884 31884 D InputTransport: Input channel destroyed: 'd1c6ac5', fd=151
+09-28 23:52:33.118 31884 31884 I View    : setRequestedFrameRate frameRate=NaN, this=android.view.View{240bb52 V.ED..... ........ 0,0-0,0}, caller=androidx.compose.ui.platform.Api35Impl.setRequestedFrameRate:4047 androidx.compose.ui.platform.AndroidComposeView.dispatchDraw:2282 android.view.View.draw:26758 android.view.View.updateDisplayListIfDirty:25577 android.view.ViewGroup.recreateChildDisplayList:4881 
+09-28 23:52:33.132 31884 31884 I InsetsController: onStateChanged: host=com.negi.survey/com.negi.survey.MainActivity, from=android.view.ViewRootImpl.onInsetsStateChanged:3038, state=InsetsState: {mDisplayFrame=Rect(0, 0 - 1080, 2340), mDisplayCutout=DisplayCutout{insets=Rect(0, 82 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(511, 24 - 569, 82), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1080 displayHeight=2340 physicalDisplayWidth=1080 physicalDisplayHeight=2340 density={2.8125} cutoutSpec={M 0,0 M 0, 8.533333333333333 a 10.31111111111111,10.31111111111111 0 1,0 0,20.62222222222222 a 10.31111111111111,10.31111111111111 0 1,0 0,-20.62222222222222 Z @dp} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={1.0}}} sideOverrides={}}, mRoundedCorners=RoundedCorners{[RoundedCorner{position=TopLeft, radius=113, center=Point(113, 113)}, RoundedCorner{position=TopRight, radius=113, center=Point(967, 113)}, RoundedCorner{position=BottomRight, radius=113, center=Point(967, 2227)}, RoundedCorner{position=BottomLeft, radius=113, center=Point(113, 2227)}]}  mRoundedCornerFrame=Rect(0, 0 - 1080, 2340), mPrivacyIndicatorBounds=PrivacyIndicatorBounds {static bounds=Rect(956, 0 - 1080, 97) rotation=0}, mDisplayShape=DisplayShape{ spec=-311912193 displayWidth=1080 displayHeight=2340 physicalPixelDisplaySizeRatio=1.0 rotation=0 offsetX=0 offsetY=0 scale=1.0}, mSources= { InsetsSource: {dc020001 mType=navigationBars mFrame=[0,2205][1080,2340] mAttachedInsets=null mVisible=true mFlags= mSideHint=BOTTOM mBoundingRects=null}, InsetsSource: {dc020004 mType=systemGestures mFrame=[0,0][0,0] mAttachedInsets=null mVisible=true mFlags= mSideHint=NONE mBoundingRects=null}, InsetsSource: {dc020005 mType=mandatorySystemGestures mFrame=[0,2205][1080,2340] mAttachedInsets=null mVisible=true mFlags= mSideHint=BOTTOM mBoundingRects=null}, InsetsSource: {dc020006 mType=tappableElement mFrame=[0,2205][1080,2340] mAttachedInsets=null mVisible=true mFlags= mSideHint=BOTTOM mBoundingRects=null}, InsetsSource: {dc020024 mType=systemGestures mFrame=[0,0][0,0] mAttachedInsets=null mVisible=true mFlags= mSideHint=NONE mBoundingRects=null}, InsetsSource: {27 mType=displayCutout mFrame=[0,0][1080,82] mAttachedInsets=null mVisible=true mFlags= mSideHint=TOP mBoundingRects=null}, InsetsSource: {23ca0000 mType=statusBars mFrame=[0,0][1080,97] mAttachedInsets=null mVisible=true mFlags= mSideHint=TOP mBoundingRects=null}, InsetsSource: {23ca0005 mType=mandatorySystemGestures mFrame=[0,0][1080,116] mAttachedInsets=null mVisible=true mFlags= mSideHint=TOP mBoundingRects=null}, InsetsSource: {23ca0006 mType=tappableElement mFrame=[0,0][1080,97] mAttachedInsets=null mVisible=true mFlags= mSideHint=TOP mBoundingRects=null} }
+09-28 23:52:33.132 31884 31884 I InsetsSourceConsumer: applyRequestedVisibilityToControl: visible=true, type=statusBars, host=com.negi.survey/com.negi.survey.MainActivity
+09-28 23:52:33.133 31884 31884 I InsetsSourceConsumer: applyRequestedVisibilityToControl: visible=true, type=navigationBars, host=com.negi.survey/com.negi.survey.MainActivity
+09-28 23:52:33.136 31884 31884 D VRI[MainActivity]@4737bac: mThreadedRenderer.initializeIfNeeded()#2 mSurface={isValid=true 0xb4000078c7f43c40}
+09-28 23:52:33.136 31884 31884 D InputMethodManagerUtils: startInputInner - Id : 0
+09-28 23:52:33.136 31884 31884 I InputMethodManager: startInputInner - IInputMethodManagerGlobalInvoker.startInputOrWindowGainedFocus
+09-28 23:52:33.143 31884 31884 D InsetsController: hide(ime())
+09-28 23:52:33.143 31884 31884 I ImeTracker: com.negi.survey:bdbf999c: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+09-28 23:52:33.145 31884 31902 D InputTransport: Input channel constructed: 'ClientS', fd=147
+09-28 23:52:33.376 31884 32067 I litert  : [environment.cc:36] Creating LiteRT environment with options
+09-28 23:52:33.376 31884 32067 W litert  : [npu_registry.cc:34] NPU accelerator could not be loaded and registered: kLiteRtStatusErrorInvalidArgument.
+09-28 23:52:33.376 31884 32067 I litert  : [accelerator_registry.cc:54] RegisterAccelerator: ptr=0xb400007967f4fc50, name=LiteRT GPU
+09-28 23:52:33.376 31884 32067 I litert  : [gpu_registry.cc:87] Statically linked GPU accelerator registered.
+09-28 23:52:33.376 31884 32067 I litert  : [accelerator_registry.cc:54] RegisterAccelerator: ptr=0xb400007967f4b570, name=CpuAccelerator
+09-28 23:52:33.376 31884 32067 I litert  : [cpu_registry.cc:75] XNNPACK CPU accelerator registered.
+09-28 23:52:33.376 31884 32067 W native  : W0000 00:00:1790657553.376285   32067 litert_lm_loader.cc:291] Section not found: 	
+09-28 23:52:33.376 31884 32067 W native  : W0000 00:00:1790657553.376406   32067 litert_lm_loader.cc:291] Section not found: 	
+09-28 23:52:33.376 31884 32067 I litert  : [compiled_model.cc:833] Flatbuffer model initialized directly from incoming litert model.
+09-28 23:52:33.377 31884 32067 I tflite  : Initialized TensorFlow Lite runtime.
+09-28 23:52:33.401 31884 32067 W libc    : Access denied finding property "ro.mediatek.platform"
+09-28 23:52:33.451 31884 32067 W libc    : Access denied finding property "vendor.socl.trace.events"
+09-28 23:52:33.451 31884 32067 W libc    : Access denied finding property "vendor.socl.pagefault.dump"
+09-28 23:52:33.451 31884 32067 V SOCL    : -------------------------------------------------------
+09-28 23:52:33.452 31884 32067 V SOCL    : OCL version revision number = 32a2eed9e0
+09-28 23:52:33.452 31884 32067 V SOCL    : -------------------------------------------------------
+09-28 23:52:33.536 31884 32067 I native  : I0000 00:00:1790657553.536828   32067 delegate_opencl.cc:603] options->hint_waiting_for_completion: false
+09-28 23:52:33.536 31884 32067 I native  : I0000 00:00:1790657553.536935   32067 delegate_opencl.cc:605] options->kernel_batch_size: -1
+09-28 23:52:33.541 31884 32067 V XGL     : ----------------------------------------------------------------------
+09-28 23:52:33.541 31884 32067 V XGL     : SUMD version compiled date     = 2026-01-09 09:57 - KST
+09-28 23:52:33.541 31884 32067 V XGL     : SUMD version revision number   = 1900168dcb
+09-28 23:52:33.541 31884 32067 V XGL     : SUMD version info              = Driver version: 24.0.534, git hash: 1900168dcb
+09-28 23:52:33.541 31884 32067 V XGL     : ----------------------------------------------------------------------
+09-28 23:52:33.541 31884 32067 V XGL     : Entering: Create
+09-28 23:52:33.546 31884 32067 V XGL     : Exiting: Create
+09-28 23:52:33.549 31884 32067 I vulkan  : CreateInfoWrapper::FilterExtension: already have 'VK_KHR_external_fence_fd'.
+09-28 23:52:33.552 31884 32067 I ANGLE   : Version (24.1.307 git hash: 86f99cfe6317), Renderer ((Samsung Xclipse 940) on Vulkan 1.3.279)
+09-28 23:52:33.555 31884 32067 E libEGL  : call to OpenGL ES API with no current context (logged once per thread)
+09-28 23:52:33.556 31884  1651 W libEGL  : ANGLE Warn:DisplayVk.cpp:115 (LoadPipelineCacheDataFromDisk): Failed to load pipeline blob cache data from disk. Performance may degrade.
+09-28 23:52:33.571 31884 32067 I litert  : [environment.cc:47] Adding options to the existing LiteRT environment
+09-28 23:52:33.572 31884 32067 I tflite  : Loaded OpenCL library with dlopen.
+09-28 23:52:33.572 31884 32067 I litert  : [gpu_environment.cc:220] Created OpenCL device from provided device id and platform id.
+09-28 23:52:33.573 31884 32067 I litert  : [gpu_environment.cc:283] Reusing provided EGL environment.
+09-28 23:52:33.573 31884 32067 I litert  : [gpu_environment.h:155] Created LiteRT GpuEnvironment.
+09-28 23:52:33.573 31884 32067 I litert  : [environment.cc:47] Adding options to the existing LiteRT environment
+09-28 23:52:33.582 31884 31896 I com.negi.survey: Explicit concurrent mark compact GC freed 992KB AllocSpace bytes, 1(20KB) LOS objects, 79% free, 6529KB/30MB, paused 231us,1.968ms total 50.442ms
+09-28 23:52:33.591 31884 31893 D InputTransport: Input channel destroyed: 'ClientS', fd=147
+09-28 23:52:33.608 31884 32067 I tflite  : Replacing 3326 out of 3326 node(s) with delegate (LITERT_CL) node, yielding 1 partitions for subgraph 0 (decode).
+09-28 23:52:34.935 31884 31902 I com.negi.survey: Explicit concurrent mark compact GC freed 960KB AllocSpace bytes, 1(20KB) LOS objects, 79% free, 6529KB/30MB, paused 129us,4.598ms total 51.436ms
+09-28 23:52:36.178 31884 31902 I com.negi.survey: Explicit concurrent mark compact GC freed 960KB AllocSpace bytes, 1(20KB) LOS objects, 79% free, 6497KB/30MB, paused 129us,1.930ms total 51.043ms
+09-28 23:52:37.367 31884 31902 I com.negi.survey: Explicit concurrent mark compact GC freed 992KB AllocSpace bytes, 1(20KB) LOS objects, 79% free, 6497KB/30MB, paused 174us,1.966ms total 33.172ms
+09-28 23:52:38.539 31884 31902 I com.negi.survey: Explicit concurrent mark compact GC freed 960KB AllocSpace bytes, 1(20KB) LOS objects, 79% free, 6497KB/30MB, paused 127us,2.473ms total 28.448ms
+09-28 23:52:39.728 31884 31902 I com.negi.survey: Explicit concurrent mark compact GC freed 960KB AllocSpace bytes, 1(20KB) LOS objects, 79% free, 6497KB/30MB, paused 158us,2.434ms total 32.735ms
+09-28 23:52:40.870 31884 31902 I com.negi.survey: Explicit concurrent mark compact GC freed 960KB AllocSpace bytes, 1(20KB) LOS objects, 79% free, 6497KB/30MB, paused 164us,2.486ms total 33.709ms
+09-28 23:52:42.075 31884 31902 I com.negi.survey: Explicit concurrent mark compact GC freed 960KB AllocSpace bytes, 1(20KB) LOS objects, 79% free, 6497KB/30MB, paused 163us,2.365ms total 37.722ms
+09-28 23:52:42.147 31884 32067 I native  : I0000 00:00:1790657562.144346   32067 delegate_kernel.cc:330] Total 81 external tensors are used for delegate inputs and outputs
+09-28 23:52:42.148 31884 32067 I native  : I0000 00:00:1790657562.147547   32067 delegate_kernel.cc:906] Initializing OpenCL-based API from serialized data.
+09-28 23:52:42.340 31884 32067 I native  : I0000 00:00:1790657562.339875   32067 delegate_kernel.cc:804] Initialized InferenceContext from serialized data.
+09-28 23:52:42.630 31884 32067 I tflite  : Replacing 2145 out of 2145 node(s) with delegate (LITERT_CL) node, yielding 1 partitions for subgraph 1 (prefill_16).
+09-28 23:52:42.659 31884 32067 I native  : I0000 00:00:1790657562.659697   32067 delegate_kernel.cc:330] Total 80 external tensors are used for delegate inputs and outputs
+09-28 23:52:42.659 31884 32067 I native  : I0000 00:00:1790657562.659765   32067 delegate_kernel.cc:906] Initializing OpenCL-based API from serialized data.
+09-28 23:52:42.736 31884 32067 I native  : I0000 00:00:1790657562.736256   32067 delegate_kernel.cc:804] Initialized InferenceContext from serialized data.
+09-28 23:52:42.775 31884 32067 I tflite  : Replacing 2145 out of 2145 node(s) with delegate (LITERT_CL) node, yielding 1 partitions for subgraph 2 (prefill_256).
+09-28 23:52:42.797 31884 32067 I native  : I0000 00:00:1790657562.797378   32067 delegate_kernel.cc:330] Total 80 external tensors are used for delegate inputs and outputs
+09-28 23:52:42.797 31884 32067 I native  : I0000 00:00:1790657562.797463   32067 delegate_kernel.cc:906] Initializing OpenCL-based API from serialized data.
+09-28 23:52:42.917 31884 32067 I native  : I0000 00:00:1790657562.917927   32067 delegate_kernel.cc:804] Initialized InferenceContext from serialized data.
+09-28 23:52:42.931 31884 32067 I litert  : [environment.cc:36] Creating LiteRT environment with options
+09-28 23:52:42.932 31884 32067 W litert  : [npu_registry.cc:34] NPU accelerator could not be loaded and registered: kLiteRtStatusErrorInvalidArgument.
+09-28 23:52:42.932 31884 32067 I litert  : [accelerator_registry.cc:54] RegisterAccelerator: ptr=0xb400007968c24ef0, name=LiteRT GPU
+09-28 23:52:42.932 31884 32067 I litert  : [gpu_registry.cc:87] Statically linked GPU accelerator registered.
+09-28 23:52:42.932 31884 32067 I litert  : [accelerator_registry.cc:54] RegisterAccelerator: ptr=0xb4000079680048b0, name=CpuAccelerator
+09-28 23:52:42.932 31884 32067 I litert  : [cpu_registry.cc:75] XNNPACK CPU accelerator registered.
+09-28 23:52:43.115 31884 32067 W native  : W0000 00:00:1790657563.115292   32067 litert_lm_loader.cc:291] Section not found: 
+09-28 23:52:43.115 31884 32067 W native  : W0000 00:00:1790657563.115369   32067 litert_lm_loader.h:129] TFLite model for type: TF_LITE_END_OF_VISION not found. Skipping.
+09-28 23:52:43.118 31884 32067 I litert  : [compiled_model.cc:833] Flatbuffer model initialized directly from incoming litert model.
+09-28 23:52:43.128 31884 32067 W litert  : [compiled_model.cc:986] You should provide the `DispatchLibraryDir` option to use NPU.
+09-28 23:52:43.128 31884 32067 I tflite  : Created TensorFlow Lite XNNPACK delegate for CPU.
+09-28 23:52:43.128 31884 32067 I tflite  : Replacing 2 out of 10 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 2 partitions for subgraph 0 (main).
+09-28 23:52:43.131 31884 32067 I litert  : [compiled_model.cc:833] Flatbuffer model initialized directly from incoming litert model.
+09-28 23:52:43.131 31884 32067 W litert  : [compiled_model.cc:986] You should provide the `DispatchLibraryDir` option to use NPU.
+09-28 23:52:43.131 31884 32067 I litert  : [compiled_model.cc:1790] Tracked constant output tensor eoa_embedding with locked address
+09-28 23:52:43.172 31884 32067 I litert  : [compiled_model.cc:833] Flatbuffer model initialized directly from incoming litert model.
+09-28 23:52:43.312 31884 32067 W litert  : [compiled_model.cc:986] You should provide the `DispatchLibraryDir` option to use NPU.
+09-28 23:52:43.312 31884 32067 I tflite  : Replacing 1 out of 44 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 2 partitions for subgraph 0 (main).
+09-28 23:52:43.315 31884 31896 I com.negi.survey: Explicit concurrent mark compact GC freed 1024KB AllocSpace bytes, 1(20KB) LOS objects, 79% free, 6529KB/30MB, paused 364us,2.038ms total 25.569ms
+09-28 23:52:43.333 31884 32067 W LiteRtLM: Engine.initialize completed: key='fs|dev=65088|ino=23726|size=4919541760|mtime=1790636955288' backend=com.google.ai.edge.litertlm.Backend$GPU@f1277ed took=10230ms cacheFilesAfter=2
+09-28 23:52:43.337 31884 32067 W LiteRtLM: Engine.initialize completed: key='fs|dev=65088|ino=23726|size=4919541760|mtime=1790636955288' backend=com.google.ai.edge.litertlm.Backend$GPU@f1277ed took=10230ms cacheFilesAfter=2
+09-28 23:52:43.375 31884 32067 D LiteRtLM: createConversation completed: key='fs|dev=65088|ino=23726|size=4919541760|mtime=1790636955288' took=38ms
+09-28 23:52:43.377 31884 32067 D LiteRtLM: LiteRT-LM initialization succeeded: model='Gemma3n4B', key='fs|dev=65088|ino=23726|size=4919541760|mtime=1790636955288' engineMs=10230 conversationMs=38 totalMs=10297
+09-28 23:52:43.378 31884 32067 D HeavyModelRuntime: SLM lease released
+09-28 23:52:43.391 31884 31884 D AiTrace : Installed (enabled=true ringEnabled=true)
+09-28 23:52:43.402 31884 31884 D SurveyVM: init -> Start, session=0, uuid=81233133-ee63-4e02-8843-4008ff7a045c, navSize=1, graphSize=22
+09-28 23:52:43.412 31884 31884 D SurveyVM: config.validate -> issues=0
+09-28 23:52:43.413 31884 31884 D SurveyVM: promptSources -> legacy=10, eval=0, follow=0
+09-28 23:52:43.413 31884 31884 D SurveyVM: promptSources.preview -> legacy=[Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q7, Q8, Q9], eval=[], follow=[]
+09-28 23:52:43.413 31884 31884 D SurveyVM: hasTwoStepPrompt[Q10] -> true (eval=219, fu=244)
+09-28 23:52:43.413 31884 31884 D SurveyVM: hasTwoStepPrompt[Q11] -> true (eval=229, fu=254)
+09-28 23:52:43.413 31884 31884 D SurveyVM: hasTwoStepPrompt[Q12] -> true (eval=184, fu=209)
+09-28 23:52:43.414 31884 31884 D SurveyVM: hasTwoStepPrompt[Q13] -> true (eval=221, fu=246)
+09-28 23:52:43.414 31884 31884 D SurveyVM: hasTwoStepPrompt[Q14] -> true (eval=160, fu=185)
+09-28 23:52:43.414 31884 31884 D SurveyVM: hasTwoStepPrompt[Q15] -> true (eval=185, fu=210)
+09-28 23:52:43.414 31884 31884 D SurveyVM: hasTwoStepPrompt[Q16] -> true (eval=200, fu=225)
+09-28 23:52:43.414 31884 31884 D SurveyVM: hasTwoStepPrompt[Q7] -> true (eval=248, fu=273)
+09-28 23:52:43.414 31884 31884 D SurveyVM: hasTwoStepPrompt[Q8] -> true (eval=190, fu=215)
+09-28 23:52:43.414 31884 31884 D SurveyVM: hasTwoStepPrompt[Q9] -> true (eval=195, fu=220)
+09-28 23:52:43.414 31884 31884 D SurveyVM: AI prompt coverage OK (aiCount=10)
+09-28 23:52:43.444 31884 31884 I TextToSpeech: Create TextToSpeech : caller process id[31884] / name[com.negi.survey] / target[null]
+09-28 23:52:44.088 31884 31884 I TextToSpeech: com.negi.survey is not allowed to bind to private engine.
+09-28 23:52:44.096 31884 31884 I TextToSpeech: getHighestRankedPublicEngineName = com.google.android.tts
+09-28 23:52:44.101 31884 31884 I TextToSpeech: Sucessfully bound to com.google.android.tts
+09-28 23:52:44.311 31884 31884 I View    : setRequestedFrameRate frameRate=-4.0, this=android.view.View{240bb52 V.ED..... ........ 0,0-0,0}, caller=androidx.compose.ui.platform.Api35Impl.setRequestedFrameRate:4047 androidx.compose.ui.platform.AndroidComposeView.dispatchDraw:2282 android.view.View.draw:26758 android.view.View.updateDisplayListIfDirty:25577 android.view.View.draw:26477 
+09-28 23:52:44.318 31884 31884 D MainActivity: SLM Engine warm-up started. session=survey_config10.yaml@1 model=Gemma3n4B
+09-28 23:52:44.318 31884 31884 D HeavyModelRuntime: Whisper -> SLM: releasing Whisper
+09-28 23:52:44.318 31884 31884 D HeavyModelRuntime: Whisper -> SLM: Whisper released
+09-28 23:52:44.320 31884 31884 D WhisperSpeechController: updateContext: surveyId=81233133-ee63-4e02-8843-4008ff7a045c, questionId=Start
+09-28 23:52:44.320 31884  2006 D SLM     : initializeIfNeeded: model='Gemma3n4B' image=false audio=false
+09-28 23:52:44.320 31884  2006 D LiteRtLM: initializeIfNeeded: warm runtime already ready: key='fs|dev=65088|ino=23726|size=4919541760|mtime=1790636955288'
+09-28 23:52:44.324 31884 31884 D LiteRtRepository: warmUp: initializeIfNeeded ok gateWaitMs=0 initMs=5
+09-28 23:52:44.324 31884 31884 D HeavyModelRuntime: SLM lease released
+09-28 23:52:44.324 31884 31884 D LiteRtRepository: warmUp: Engine ready; representative inference disabled totalMs=6
+09-28 23:52:44.324 31884 31884 D MainActivity: SLM Engine warm-up finished. session=survey_config10.yaml@1 model=Gemma3n4B elapsedMs=6
+09-28 23:52:44.325 31884 31884 W MainActivity: SLM diagnostic inference start: session=survey_config10.yaml@1 promptChars=111
+09-28 23:52:44.325 31884 31884 I Choreographer: Skipped 112 frames!  The application may be doing too much work on its main thread.
+09-28 23:52:44.327 31884 31884 I View    : setRequestedFrameRate frameRate=NaN, this=android.view.View{240bb52 V.ED..... ........ 0,0-0,0}, caller=androidx.compose.ui.platform.Api35Impl.setRequestedFrameRate:4047 androidx.compose.ui.platform.AndroidComposeView.dispatchDraw:2282 android.view.View.draw:26758 android.view.View.updateDisplayListIfDirty:25577 android.view.ViewGroup.recreateChildDisplayList:4881 
+09-28 23:52:44.337 31884 32067 D HeavyModelRuntime: Whisper -> SLM: releasing Whisper
+09-28 23:52:44.337 31884 32067 D HeavyModelRuntime: Whisper -> SLM: Whisper released
+09-28 23:52:44.338 31884 32067 D LiteRtRepository: [1] request start model='Gemma3n4B' prompt.len=111 sha=19a803cba166cfa8 gateWaitMs=13
+09-28 23:52:44.338 31884 32067 D LiteRtRepository: [part=000] [1] PROMPT (FULL) sha=19a803cba166cfa8
+09-28 23:52:44.338 31884 32067 D LiteRtRepository: Evaluate only the original survey target using all supplied answers.
+09-28 23:52:44.338 31884 32067 D LiteRtRepository: INPUT:
+09-28 23:52:44.338 31884 32067 D LiteRtRepository: Reply with exactly one word: ready.
+09-28 23:52:44.339 31884  2006 D SLM     : initializeIfNeeded: model='Gemma3n4B' image=false audio=false
+09-28 23:52:44.339 31884  2006 D LiteRtLM: initializeIfNeeded: warm runtime already ready: key='fs|dev=65088|ino=23726|size=4919541760|mtime=1790636955288'
+09-28 23:52:44.340 31884 32067 D LiteRtRepository: [1] initializeIfNeeded ok initMs=1
+09-28 23:52:44.341 31884  2006 D SLM     : runInference: model='Gemma3n4B' textLen=111 images=0 audio=0
+09-28 23:52:44.347 31884 32067 D LiteRtLM: state[run:start] key='fs|dev=65088|ino=23726|size=4919541760|mtime=1790636955288' runId=1 active=true terminated=false logicalDone=false cancel=false pendingCancel=false lastMsgAt=616468913 lastTermAt=0
+09-28 23:52:44.347 31884 32067 D LiteRtLM: runInference start: key='fs|dev=65088|ino=23726|size=4919541760|mtime=1790636955288' runId=1 hasText=true originalTextLen=111 effectiveTextLen=111 images=0 audioClips=0
+09-28 23:52:44.347 31884 32067 D LiteRtLM: LiteRT-LM sendMessageAsync(text): key='fs|dev=65088|ino=23726|size=4919541760|mtime=1790636955288' runId=1 len=111 maxOutputTokens=64
+09-28 23:52:44.352 31884 32067 D LiteRtLM: sendMessageAsync accepted: key='fs|dev=65088|ino=23726|size=4919541760|mtime=1790636955288' runId=1 dispatchMs=5
+09-28 23:52:44.371 31884 31896 I HWUI    : Davey! duration=966ms; Flags=0, FrameTimelineVsyncId=19077217, IntendedVsync=41908496556781, Vsync=41908496556781, InputEventId=0, HandleInputStart=41908497017459, AnimationStart=41908497017967, PerformTraversalsStart=41909347629803, DrawStart=41909412527772, FrameDeadline=41908513254820, FrameStartTime=41908497014490, FrameInterval=8331865, WorkloadTarget=8333333, SyncQueued=41909430263514, SyncStart=41909436622420, IssueDrawCommandsStart=41909436703123, SwapBuffers=41909467722537, FrameCompleted=41909469372186, DequeueBufferDuration=12852, QueueBufferDuration=360079, GpuCompleted=41909469372186, SwapBuffersCompleted=41909468160428, DisplayPresentTime=41907496723475, CommandSubmissionCompleted=41909467722537, 
+09-28 23:52:44.519 31884 31896 I com.negi.survey: Explicit concurrent mark compact GC freed 1292KB AllocSpace bytes, 6(200KB) LOS objects, 77% free, 7327KB/31MB, paused 153us,2.646ms total 30.320ms
+09-28 23:52:44.551 31884 31896 I TextToSpeech: Connected to TTS engine
+09-28 23:52:44.591 31884 31930 I TextToSpeech: Setting up the connection to TTS engine...
+09-28 23:52:44.658 31884 31884 D TtsController: TextToSpeech ready: locale=en_US rate=1.0 pitch=1.0
+09-28 23:52:44.875 31884  2013 W native  : W0000 00:00:1790657564.875678    2013 sampler_factory.cc:403] OpenCL sampler not available, falling back to statically linked C API: UNAVAILABLE: ERROR: [third_party/odml/litert_lm/runtime/components/sampler_factory.cc:319]
+09-28 23:52:44.875 31884  2013 W native  : └ Could not load shared library libLiteRtTopKOpenClSampler.so: dlopen failed: library "libLiteRtTopKOpenClSampler.so" not found.
+09-28 23:52:44.875 31884  2013 W native  : === Source Location Trace: === 
+09-28 23:52:44.875 31884  2013 W native  : ./third_party/odml/litert/litert/cc/litert_macros.h:573
+09-28 23:52:45.437 31884  2013 W LiteRtLM: Inference first output: key='fs|dev=65088|ino=23726|size=4919541760|mtime=1790636955288' runId=1 ttftMs=1089 dispatchMs=5 postDispatchTtftMs=1084 requestToFirstOutputMs=1092
+09-28 23:52:45.437 31884  2013 W LiteRtLM: Inference first output: key='fs|dev=65088|ino=23726|size=4919541760|mtime=1790636955288' runId=1 ttftMs=1089 dispatchMs=5 postDispatchTtftMs=1084 requestToFirstOutputMs=1092
+09-28 23:52:45.437 31884  2013 D LiteRtLM: stream[key=fs|dev=65088|ino=23726|size=4919541760|mtime=1790636955288 runId=1] msg#1 rawChunkLen=5 deltaLen=5 emittedChars=5
+09-28 23:52:45.438 31884 31884 D LiteRtRepository: stream[rid=1 msg#1] done=false deltaLen=5 outLen=5 outPreview='ready' deltaPreview='ready'
+09-28 23:52:45.688 31884  2043 D LiteRtLM: state[logicalDone] key='fs|dev=65088|ino=23726|size=4919541760|mtime=1790636955288' runId=1 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=616470139 lastTermAt=616470255
+09-28 23:52:45.691 31884  2043 D LiteRtLM: state[nativeDone:beforeRelease] key='fs|dev=65088|ino=23726|size=4919541760|mtime=1790636955288' runId=1 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=616470139 lastTermAt=616470255
+09-28 23:52:45.691 31884  2043 W LiteRtLM: Inference timing: key='fs|dev=65088|ino=23726|size=4919541760|mtime=1790636955288' runId=1 ttftMs=1089 dispatchMs=5 postDispatchTtftMs=1084 totalMs=1341 callbacks=2 outputChars=6 cancelled=false error=false requestTotalMs=1344
+09-28 23:52:45.691 31884  2043 W LiteRtLM: Inference timing: key='fs|dev=65088|ino=23726|size=4919541760|mtime=1790636955288' runId=1 ttftMs=1089 dispatchMs=5 postDispatchTtftMs=1084 totalMs=1341 callbacks=2 outputChars=6 cancelled=false error=false requestTotalMs=1344
+09-28 23:52:45.691 31884  2043 I LiteRtLM: LiteRT completion: runId=1 terminal=normal_onDone phase=unavailable engineTokenCapacity=1024 prefillTokens=-1 decodeTokens=-1 kvTokens=-1 outputChars=6 callbacks=2
+09-28 23:52:45.691 31884  2043 I LiteRtLM: LiteRT completion: runId=1 terminal=normal_onDone phase=unavailable engineTokenCapacity=1024 prefillTokens=-1 decodeTokens=-1 kvTokens=-1 outputChars=6 callbacks=2
+09-28 23:52:45.691 31884 31884 D LiteRtRepository: [1] logical done=true; responseClosed=true; waiting native cleanup
+09-28 23:52:45.692 31884 31884 D LiteRtRepository: [1] native cleanup safepoint
+09-28 23:52:45.692 31884 31884 W MainActivity: SLM diagnostic inference completed: session=survey_config10.yaml@1 elapsedMs=1368 outputChars=6
+09-28 23:52:45.693 31884  2006 D SLM     : resetConversationAndWait: model='Gemma3n4B' image=false audio=false
+09-28 23:52:45.696 31884 32072 D LiteRtRepository: [1] Conversation reset completed after safepoint
+09-28 23:52:45.697 31884 32072 D HeavyModelRuntime: SLM lease released
+09-28 23:52:45.697 31884 32072 D LiteRtRepository: [part=000] [1] FINALIZE: native-terminated
+09-28 23:52:45.697 31884 32072 D LiteRtRepository: === AI TRACE STATS (LiteRtRepository) ===
+09-28 23:52:45.697 31884 32072 D LiteRtRepository: rid=1 model='Gemma3n4B' reason=native-terminated
+09-28 23:52:45.697 31884 32072 D LiteRtRepository: totalMs=1360 inferenceMs=1357 firstTokenMs=1097
+09-28 23:52:45.697 31884 32072 D LiteRtRepository: logicalDone=true logicalDoneAt=616470258
+09-28 23:52:45.697 31884 32072 D LiteRtRepository: nativeTerminated=true cancelTag='null'
+09-28 23:52:45.697 31884 32072 D LiteRtRepository: lastDeltaMsAgo=124 lastEventMsAgo=6
+09-28 23:52:45.697 31884 32072 D LiteRtRepository: chunks=2 emittedChars=6 capturedAll=true out.len=6
+09-28 23:52:45.697 31884 32072 D LiteRtRepository: === OUTPUT (FULL) ===
+09-28 23:52:45.697 31884 32072 D LiteRtRepository: ready
+09-28 23:52:45.720 31884 31896 I com.negi.survey: Explicit concurrent mark compact GC freed 3336KB AllocSpace bytes, 4(128KB) LOS objects, 76% free, 7355KB/31MB, paused 142us,1.756ms total 27.423ms
+09-28 23:52:46.894 31884 31896 I com.negi.survey: Explicit concurrent mark compact GC freed 236KB AllocSpace bytes, 2(56KB) LOS objects, 77% free, 7307KB/31MB, paused 126us,1.793ms total 28.359ms
+09-28 23:52:48.071 31884 31896 I com.negi.survey: Explicit concurrent mark compact GC freed 192KB AllocSpace bytes, 1(20KB) LOS objects, 77% free, 7307KB/31MB, paused 121us,1.559ms total 24.808ms
+09-28 23:52:49.301 31884 31896 I com.negi.survey: Explicit concurrent mark compact GC freed 192KB AllocSpace bytes, 1(20KB) LOS objects, 77% free, 7307KB/31MB, paused 121us,1.541ms total 27.497ms
+09-28 23:52:50.527 31884 31896 I com.negi.survey: Explicit concurrent mark compact GC freed 192KB AllocSpace bytes, 1(20KB) LOS objects, 77% free, 7307KB/31MB, paused 132us,1.586ms total 24.326ms
+09-28 23:52:51.751 31884 31896 I com.negi.survey: Explicit concurrent mark compact GC freed 192KB AllocSpace bytes, 1(20KB) LOS objects, 77% free, 7307KB/31MB, paused 147us,1.700ms total 26.380ms
+09-28 23:52:52.980 31884 31896 I com.negi.survey: Explicit concurrent mark compact GC freed 192KB AllocSpace bytes, 1(20KB) LOS objects, 77% free, 7307KB/31MB, paused 122us,1.630ms total 24.068ms
+09-28 23:52:54.167 31884 31896 I com.negi.survey: Explicit concurrent mark compact GC freed 192KB AllocSpace bytes, 1(20KB) LOS objects, 77% free, 7307KB/31MB, paused 119us,1.476ms total 24.026ms
+09-28 23:52:55.390 31884 31896 I com.negi.survey: Explicit concurrent mark compact GC freed 192KB AllocSpace bytes, 1(20KB) LOS objects, 77% free, 7307KB/31MB, paused 144us,1.992ms total 26.335ms
+09-28 23:52:56.617 31884 31902 I com.negi.survey: Explicit concurrent mark compact GC freed 228KB AllocSpace bytes, 1(20KB) LOS objects, 77% free, 7303KB/31MB, paused 119us,1.704ms total 33.052ms
+09-28 23:52:57.814 31884 31902 I com.negi.survey: Explicit concurrent mark compact GC freed 192KB AllocSpace bytes, 1(20KB) LOS objects, 77% free, 7303KB/31MB, paused 123us,1.556ms total 23.831ms
+09-28 23:52:59.057 31884 31902 I com.negi.survey: Explicit concurrent mark compact GC freed 192KB AllocSpace bytes, 1(20KB) LOS objects, 77% free, 7303KB/31MB, paused 132us,1.964ms total 26.757ms
+09-28 23:53:00.286 31884 31902 I com.negi.survey: Explicit concurrent mark compact GC freed 192KB AllocSpace bytes, 1(20KB) LOS objects, 77% free, 7303KB/31MB, paused 119us,1.493ms total 23.993ms
+09-28 23:53:01.493 31884 31902 I com.negi.survey: Explicit concurrent mark compact GC freed 192KB AllocSpace bytes, 1(20KB) LOS objects, 77% free, 7303KB/31MB, paused 129us,1.617ms total 23.740ms
+09-28 23:53:02.737 31884 31902 I com.negi.survey: Explicit concurrent mark compact GC freed 192KB AllocSpace bytes, 1(20KB) LOS objects, 77% free, 7303KB/31MB, paused 130us,1.669ms total 28.260ms
+09-28 23:53:03.938 31884 31902 I com.negi.survey: Explicit concurrent mark compact GC freed 192KB AllocSpace bytes, 1(20KB) LOS objects, 77% free, 7303KB/31MB, paused 130us,1.665ms total 27.010ms
+09-28 23:53:05.168 31884 31902 I com.negi.survey: Explicit concurrent mark compact GC freed 192KB AllocSpace bytes, 1(20KB) LOS objects, 77% free, 7303KB/31MB, paused 125us,1.604ms total 23.820ms
+09-28 23:53:06.420 31884 31902 I com.negi.survey: Explicit concurrent mark compact GC freed 192KB AllocSpace bytes, 1(20KB) LOS objects, 77% free, 7303KB/31MB, paused 245us,1.883ms total 32.766ms
+09-28 23:53:07.654 31884 31902 I com.negi.survey: Explicit concurrent mark compact GC freed 192KB AllocSpace bytes, 1(20KB) LOS objects, 77% free, 7303KB/31MB, paused 123us,1.551ms total 23.841ms
+09-28 23:53:08.885 31884 31902 I com.negi.survey: Explicit concurrent mark compact GC freed 192KB AllocSpace bytes, 1(20KB) LOS objects, 77% free, 7303KB/31MB, paused 114us,1.518ms total 25.603ms
+09-28 23:53:10.091 31884 31902 I com.negi.survey: Explicit concurrent mark compact GC freed 192KB AllocSpace bytes, 1(20KB) LOS objects, 77% free, 7303KB/31MB, paused 121us,1.468ms total 23.156ms
+09-28 23:53:11.266 31884 31902 I com.negi.survey: Explicit concurrent mark compact GC freed 192KB AllocSpace bytes, 1(20KB) LOS objects, 77% free, 7303KB/31MB, paused 123us,1.518ms total 24.119ms
+09-28 23:53:12.474 31884 31902 I com.negi.survey: Explicit concurrent mark compact GC freed 192KB AllocSpace bytes, 1(20KB) LOS objects, 77% free, 7303KB/31MB, paused 150us,1.664ms total 26.154ms
+09-28 23:53:13.676 31884 31902 I com.negi.survey: Explicit concurrent mark compact GC freed 192KB AllocSpace bytes, 1(20KB) LOS objects, 77% free, 7303KB/31MB, paused 122us,1.694ms total 25.070ms
+09-28 23:53:14.895 31884 31902 I com.negi.survey: Explicit concurrent mark compact GC freed 192KB AllocSpace bytes, 1(20KB) LOS objects, 77% free, 7303KB/31MB, paused 138us,1.842ms total 23.959ms
+09-28 23:53:16.089 31884 31902 I com.negi.survey: Explicit concurrent mark compact GC freed 192KB AllocSpace bytes, 1(20KB) LOS objects, 77% free, 7303KB/31MB, paused 149us,1.796ms total 26.599ms
+09-28 23:53:17.307 31884 31902 I com.negi.survey: Explicit concurrent mark compact GC freed 192KB AllocSpace bytes, 1(20KB) LOS objects, 77% free, 7303KB/31MB, paused 134us,1.527ms total 23.395ms
+09-28 23:53:18.500 31884 31902 I com.negi.survey: Explicit concurrent mark compact GC freed 192KB AllocSpace bytes, 1(20KB) LOS objects, 77% free, 7303KB/31MB, paused 124us,1.559ms total 25.328ms
+09-28 23:53:19.720 31884 31902 I com.negi.survey: Explicit concurrent mark compact GC freed 192KB AllocSpace bytes, 1(20KB) LOS objects, 77% free, 7303KB/31MB, paused 125us,1.582ms total 23.860ms
+09-28 23:53:20.953 31884 31902 I com.negi.survey: Explicit concurrent mark compact GC freed 192KB AllocSpace bytes, 1(20KB) LOS objects, 77% free, 7303KB/31MB, paused 122us,1.530ms total 26.273ms
+09-28 23:53:22.187 31884 31902 I com.negi.survey: Explicit concurrent mark compact GC freed 192KB AllocSpace bytes, 1(20KB) LOS objects, 77% free, 7303KB/31MB, paused 125us,1.500ms total 24.715ms
+09-28 23:53:23.433 31884 31902 I com.negi.survey: Explicit concurrent mark compact GC freed 192KB AllocSpace bytes, 1(20KB) LOS objects, 77% free, 7303KB/31MB, paused 123us,1.544ms total 27.904ms
+09-28 23:53:24.631 31884 31902 I com.negi.survey: Explicit concurrent mark compact GC freed 192KB AllocSpace bytes, 1(20KB) LOS objects, 77% free, 7303KB/31MB, paused 149us,1.503ms total 26.492ms
+09-28 23:53:25.825 31884 31902 I com.negi.survey: Explicit concurrent mark compact GC freed 192KB AllocSpace bytes, 1(20KB) LOS objects, 77% free, 7303KB/31MB, paused 121us,1.564ms total 26.575ms
+09-28 23:53:27.045 31884 31902 I com.negi.survey: Explicit concurrent mark compact GC freed 192KB AllocSpace bytes, 1(20KB) LOS objects, 77% free, 7303KB/31MB, paused 121us,1.548ms total 24.232ms
+09-28 23:55:40.996 31884 31902 I com.negi.survey: Explicit concurrent mark compact GC freed 228KB AllocSpace bytes, 1(20KB) LOS objects, 77% free, 7299KB/31MB, paused 180us,1.693ms total 30.939ms
+09-29 00:01:50.120  4771  4771 I Zygote  : Process 4771 created for com.negi.survey
+09-29 00:01:50.121  4771  4771 I com.negi.survey: Late-enabling -Xcheck:jni
+09-29 00:01:50.152  4771  4771 I com.negi.survey: Using CollectorTypeCMC GC.
+09-29 00:01:50.160  4771  4771 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+09-29 00:01:50.166  4771  4771 D ActivityThread: setConscryptValidator
+09-29 00:01:50.167  4771  4771 D ActivityThread: setConscryptValidator - put
+09-29 00:01:50.187  4771  4771 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+09-29 00:01:50.187  4771  4771 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+09-29 00:01:50.510  4771  4771 D nativeloader: Configuring clns-9 for other apk /data/app/~~-q9HbAY4wbXAVsa_y9GtQg==/com.negi.survey-VaqaTcEq8pNF9KIEaDbbjw==/base.apk. target_sdk_version=36, uses_libraries=libOpenCL.so, library_path=/data/app/~~-q9HbAY4wbXAVsa_y9GtQg==/com.negi.survey-VaqaTcEq8pNF9KIEaDbbjw==/lib/arm64:/data/app/~~-q9HbAY4wbXAVsa_y9GtQg==/com.negi.survey-VaqaTcEq8pNF9KIEaDbbjw==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.negi.survey
+09-29 00:01:50.515  4771  4771 V GraphicsEnvironment: Currently set values for:
+09-29 00:01:50.515  4771  4771 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+09-29 00:01:50.515  4771  4771 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+09-29 00:01:50.515  4771  4771 V GraphicsEnvironment: com.negi.survey is not listed in per-application setting
+09-29 00:01:50.515  4771  4771 V GraphicsEnvironment: ANGLE allowlist from config: com.dreamgames.royalmatch com.dts.freefiremax com.dxx.firenow com.gramgames.mergedragons com.ludo.king com.mojang.minecraftpe com.my.defense com.nintendo.zaka com.os.airforce com.playrix.fishdomdd.gplay io.teslatech.callbreak jp.konami.prospia net.peakgames.toonblast
+09-29 00:01:50.515  4771  4771 V GraphicsEnvironment: No special selections for ANGLE, returning default driver choice
+09-29 00:01:50.516  4771  4771 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+09-29 00:01:50.556  4771  4771 D nativeloader: Load /data/app/~~-q9HbAY4wbXAVsa_y9GtQg==/com.negi.survey-VaqaTcEq8pNF9KIEaDbbjw==/base.apk!/lib/arm64-v8a/liblitertlm_jni.so using class loader ns clns-9 (caller=/data/app/~~-q9HbAY4wbXAVsa_y9GtQg==/com.negi.survey-VaqaTcEq8pNF9KIEaDbbjw==/base.apk!classes10.dex): ok
+09-29 00:01:50.556  4771  4771 D SurveyApp: Loaded LiteRTLM JNI: litertlm_jni where=attachBaseContext
+09-29 00:01:50.566  4771  4771 D AppRingLogStore: installed: dir=/data/user/0/com.negi.survey/files/diagnostics/applog_ring idx=0
+09-29 00:01:50.566  4771  4771 D SurveyApp: attachBaseContext: pid=4771 process=com.negi.survey isMain=true sdk=36
+09-29 00:01:50.567  4771  4771 D SurveyApp: bootTiming: attachBaseContext total=29ms
+09-29 00:01:50.567  4771  4771 D SurveyApp: Skipping WorkManager init in attachBaseContext; will init lazily on first enqueue.
+09-29 00:01:50.568  4771  4771 D CrashCapture: install: ensured default handler. where=SurveyApp:attachBaseContext pid=4771 default=com.negi.survey.CrashCapture$CrashHandler@b2054f4
+09-29 00:01:50.568  4771  4771 D SurveyApp: CrashCapture installed: where=SurveyApp:attachBaseContext
+09-29 00:01:50.572  4771  4771 E com.negi.survey: hiddenapi: Accessing hidden method Landroid/net/ssl/EchConfigMismatchException;->getRetryConfigList()Landroid/net/ssl/EchConfigList; (runtime_flags=0, domain=core-platform, api=blocked) from /data/app/~~-q9HbAY4wbXAVsa_y9GtQg==/com.negi.survey-VaqaTcEq8pNF9KIEaDbbjw==/base.apk!classes17.dex (domain=app, TargetSdkVersion=36) using linking: denied
+09-29 00:01:50.572  4771  4771 E com.negi.survey: hiddenapi: Accessing hidden method Landroid/net/ssl/EchConfigList;->toBytes()[B (runtime_flags=0, domain=core-platform, api=blocked) from /data/app/~~-q9HbAY4wbXAVsa_y9GtQg==/com.negi.survey-VaqaTcEq8pNF9KIEaDbbjw==/base.apk!classes17.dex (domain=app, TargetSdkVersion=36) using linking: denied
+09-29 00:01:50.572  4771  4771 E com.negi.survey: hiddenapi: Accessing hidden method Landroid/net/ssl/EchConfigList;->fromBytes([B)Landroid/net/ssl/EchConfigList; (runtime_flags=0, domain=core-platform, api=blocked) from /data/app/~~-q9HbAY4wbXAVsa_y9GtQg==/com.negi.survey-VaqaTcEq8pNF9KIEaDbbjw==/base.apk!classes17.dex (domain=app, TargetSdkVersion=36) using linking: denied
+09-29 00:01:50.572  4771  4771 E com.negi.survey: hiddenapi: Accessing hidden method Landroid/net/ssl/SSLSockets;->setEchConfigList(Ljavax/net/ssl/SSLSocket;Landroid/net/ssl/EchConfigList;)V (runtime_flags=0, domain=core-platform, api=blocked) from /data/app/~~-q9HbAY4wbXAVsa_y9GtQg==/com.negi.survey-VaqaTcEq8pNF9KIEaDbbjw==/base.apk!classes17.dex (domain=app, TargetSdkVersion=36) using linking: denied
+09-29 00:01:50.574  4771  4828 D RuntimeLogStore: openWriter: start -> /data/user/0/com.negi.survey/files/diagnostics/runtime_logs/rtlog_20260929_050150_563_pid4771_seq1.log (bytes=0 format=LEGACY)
+09-29 00:01:50.575  4771  4828 D RuntimeLogStore: retention: start files=4 kept=4 totalBytes=27088
+09-29 00:01:50.584  4771  4771 D SurveyApp: LiteRTLM JNI already loaded; skip. where=onCreate(retry)
+09-29 00:01:50.584  4771  4771 D SurveyApp: bootTiming: RuntimeLogStore.start took=1ms
+09-29 00:01:50.584  4771  4771 D SurveyApp: bootTiming: AppRingLogStore.install took=0ms
+09-29 00:01:50.584  4771  4771 D SurveyApp: onCreate: pid=4771 process=com.negi.survey isMain=true sdk=36
+09-29 00:01:50.589  4771  4771 D CrashCapture: install: ensured default handler. where=SurveyApp:onCreate(rewrap) pid=4771 default=com.negi.survey.CrashCapture$CrashHandler@b2054f4
+09-29 00:01:50.589  4771  4771 D SurveyApp: CrashCapture installed: where=SurveyApp:onCreate(rewrap)
+09-29 00:01:50.590  4771  4771 D CrashCapture: registerSelfHealing: ActivityLifecycleCallbacks registered. mode=onResumedOnly
+09-29 00:01:50.590  4771  4771 D SurveyApp: CrashCapture self-healing registered.
+09-29 00:01:50.590  4771  4771 W SurveyApp: Startup enqueues deferred: delay=2500ms (to reduce init contention)
+09-29 00:01:50.590  4771  4771 D SurveyApp: Startup survey recovery deferred: delay=2500ms
+09-29 00:01:50.590  4771  4771 D SurveyApp: bootTiming: onCreate total=7ms
+09-29 00:01:50.620  4771  4830 I UploadRescheduleRcvr: Survey recovery action=android.intent.action.MY_PACKAGE_REPLACED discovered=0 reconciled=0 duplicates=0 unclassified=0 operationalFailures=0 classifications={}
+09-29 00:01:50.623  4771  4830 D UploadRescheduleRcvr: No generic GitHub pending files for action=android.intent.action.MY_PACKAGE_REPLACED
+09-29 00:01:50.656  4771  4830 D github_upload: enqueueStartupRuntimeLogsUpload: uniqueName=upload_runtime_logs_startup policy=KEEP session=startup_runtime_20260929_050150_f1b2bd72
+09-29 00:01:50.720  4771  4830 D WM-PackageManagerHelper: Skipping component enablement for androidx.work.impl.background.systemjob.SystemJobService
+09-29 00:01:50.720  4771  4830 D WM-Schedulers: Created SystemJobScheduler and enabled SystemJobService
+09-29 00:01:50.726  4771  4838 D WM-ForceStopRunnable: Is default app process = true
+09-29 00:01:50.727  4771  4838 D WM-ForceStopRunnable: Performing cleanup operations.
+09-29 00:01:50.740  4771  4830 D UploadRescheduleRcvr: Enqueued runtime logs upload for action=android.intent.action.MY_PACKAGE_REPLACED reason=receiver_my_package_replaced
+09-29 00:01:50.746  4771  4838 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+09-29 00:01:50.776  4771  4838 D WM-SystemJobScheduler: Reconciling jobs
+09-29 00:01:50.824  4771  4838 D WM-ForceStopRunnable: Found unfinished work, scheduling it.
+09-29 00:01:50.909  4771  4841 D WM-SystemJobScheduler: Scheduling work ID 6f3476dc-3d1e-4b11-bf5b-6af47ee64830Job ID 210
+09-29 00:01:50.918  4771  4771 D WM-SystemJobService: onStartJob for WorkGenerationalId(workSpecId=6f3476dc-3d1e-4b11-bf5b-6af47ee64830, generation=0)
+09-29 00:01:50.918  4771  4841 D WM-GreedyScheduler: Starting tracking for 6f3476dc-3d1e-4b11-bf5b-6af47ee64830
+09-29 00:01:50.938  4771  4842 D WM-Processor: Processor: processing WorkGenerationalId(workSpecId=6f3476dc-3d1e-4b11-bf5b-6af47ee64830, generation=0)
+09-29 00:01:50.970  4771  4771 D WM-WorkerWrapper: Starting work for com.negi.survey.net.GitHubUploadWorker
+09-29 00:01:50.979  4771  4841 D WM-WorkConstraintsTrack: NetworkRequestConstraintController register shared callback
+09-29 00:01:50.981  4771  4841 D ConnectivityManager: StackLog: [android.net.ConnectivityManager.sendRequestForNetwork(ConnectivityManager.java:4738)] [android.net.ConnectivityManager.registerDefaultNetworkCallbackForUid(ConnectivityManager.java:5463)] [android.net.ConnectivityManager.registerDefaultNetworkCallback(ConnectivityManager.java:5430)] [android.net.ConnectivityManager.registerDefaultNetworkCallback(ConnectivityManager.java:5404)] [androidx.work.impl.constraints.SharedNetworkCallback.addCallback(WorkConstraintsTracker.kt:362)] [androidx.work.impl.constraints.NetworkRequestConstraintController$track$1.invokeSuspend(WorkConstraintsTracker.kt:179)] [androidx.work.impl.constraints.NetworkRequestConstraintController$track$1.invoke(Unknown Source:8)] [androidx.work.impl.constraints.NetworkRequestConstraintController$track$1.invoke(Unknown Source:4)] [kotlinx.coroutines.flow.ChannelFlowBuilder.collectTo$suspendImpl(Builders.kt:316)] [kotlinx.coroutines.flow.ChannelFlowBuilder.collectTo(Unknown Source:0)] [kotlinx.coroutines.flow.CallbackFlowBuilder.collectTo(Builders.kt:330)] [kotlinx.coroutines.flow.internal.ChannelFlow$collectToFun$1.invokeSuspend(ChannelFlow.kt:56)] [kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)] [kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)] [androidx.work.impl.utils.SerialExecutorImpl$Task.run(SerialExecutorImpl.java:96)] [java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1154)] [java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:652)] [java.lang.Thread.run(Thread.java:1563)]
+09-29 00:01:50.990  4771  4841 D WM-PackageManagerHelper: androidx.work.impl.background.systemalarm.RescheduleReceiver enabled
+09-29 00:01:50.990  4771  4843 D WM-WorkConstraintsTrack: NetworkRequestConstraintController onCapabilitiesChanged callback
+09-29 00:01:50.990  4771  4843 D WM-WorkConstraintsTrack: Not dispatching constraint state yet: isBlocked=null, capabilitiesInitialized=true
+09-29 00:01:50.990  4771  4843 D WM-WorkConstraintsTrack: NetworkRequestConstraintController onBlockedStatusChanged callback false
+09-29 00:01:50.996  4771  4841 I WM-Processor: Moving WorkSpec (6f3476dc-3d1e-4b11-bf5b-6af47ee64830) to the foreground
+09-29 00:01:51.007  4771  4771 I WM-SystemFgDispatcher: Started foreground service Intent { act=ACTION_START_FOREGROUND xflg=0x4 cmp=com.negi.survey/androidx.work.impl.foreground.SystemForegroundService (has extras) }
+09-29 00:01:51.007  4771  4771 D WM-SystemFgDispatcher: Notifying with (id:7064, workSpecId: 6f3476dc-3d1e-4b11-bf5b-6af47ee64830, notificationType :1)
+09-29 00:01:51.009  4771  4771 D WM-SystemFgDispatcher: Notifying with (id:7064, workSpecId: 6f3476dc-3d1e-4b11-bf5b-6af47ee64830, notificationType :1)
+09-29 00:01:51.009  4771  4841 D WM-WorkProgressUpdater: Updating progress for 6f3476dc-3d1e-4b11-bf5b-6af47ee64830 (Data {pct : 3, mode : startup_runtime_logs})
+09-29 00:01:51.010  4771  4771 I NotificationManager: com.negi.survey: notify(7064, null, Notification(channel=uploads shortcut=null contentView=null vibrate=null sound=null defaults=0 flags=ONGOING_EVENT|ONLY_ALERT_ONCE color=0x00000000 category=progress vis=PRIVATE semFlags=0x0 semPriority=0 semMissedCount=0 semScenarioType=0)) as user
+09-29 00:01:51.010  4771  4771 D NotificationManager: BOOTING pkg =com.negi.survey mBlockedChannelsForOverflowNoti=[]
+09-29 00:01:51.015  4771  4841 I WM-Processor: Moving WorkSpec (6f3476dc-3d1e-4b11-bf5b-6af47ee64830) to the foreground
+09-29 00:01:51.017  4771  4771 D WM-SystemFgDispatcher: Notifying with (id:7064, workSpecId: 6f3476dc-3d1e-4b11-bf5b-6af47ee64830, notificationType :1)
+09-29 00:01:51.017  4771  4841 D WM-GreedyScheduler: Constraints met: Scheduling work ID WorkGenerationalId(workSpecId=6f3476dc-3d1e-4b11-bf5b-6af47ee64830, generation=0)
+09-29 00:01:51.018  4771  4771 I NotificationManager: com.negi.survey: notify(7064, null, Notification(channel=uploads shortcut=null contentView=null vibrate=null sound=null defaults=0 flags=ONGOING_EVENT|ONLY_ALERT_ONCE color=0x00000000 category=progress vis=PRIVATE semFlags=0x0 semPriority=0 semMissedCount=0 semScenarioType=0)) as user
+09-29 00:01:51.021  4771  4841 D WM-Processor: Work WorkGenerationalId(workSpecId=6f3476dc-3d1e-4b11-bf5b-6af47ee64830, generation=0) is already enqueued for processing
+09-29 00:01:51.022  4771  4841 D WM-WorkConstraintsTrack: NetworkRequestConstraintController send initial capabilities
+09-29 00:01:52.223  4771  4828 D RuntimeLogStore: openWriter: rotate:plain_snapshot:receiver_my_package_repl -> /data/user/0/com.negi.survey/files/diagnostics/runtime_logs/rtlog_20260929_050152_221_pid4771_seq2.log (bytes=0 format=LEGACY)
+09-29 00:01:52.225  4771  4828 D RuntimeLogStore: retention: rotate:plain_snapshot:receiver_my_package_repl files=5 kept=5 totalBytes=28886
+09-29 00:01:52.250  4771  4830 D github_upload: doRuntimeLogsUpload: remoteBaseDir=diagnostics/runtime_logs/2026-09-29/runtime_logs_startup_runtime_20260929_050150_f1b2bd72_receiver_my_package_repl toUpload=4 bytes=28550 dedupe=true deleteSource=true deletedSourcePre=0 preview='runtime_log_20260929_050152_227_pid4771_receiver_my_package_repl__rtlog_20260929_050150_563_pid4771_seq1.log|runtime_log_20260929_050152_227_pid4771_receiver_my_package_repl__rtlog_20260929_045014_492_pid31884_seq2.log|runtime_log_20260929_050152_227_pid4771_receiver_my_package_repl__rtlog_20260929_040451_202_pid25868_seq2.log|runtime_log_20260929_050152_227_pid4771_receiver_my_package_repl__rtlog_20260929_040311_354_pid24508_seq2.log'
+09-29 00:01:52.256  4771  4830 D GitHubUploader: uploadStream: owner=ishizuki-tech repo=SurveyExports branch=main path=diagnostics/runtime_logs/2026-09-29/runtime_logs_startup_runtime_20260929_050150_f1b2bd72_receiver_my_package_repl/runtime_log_20260929_050152_227_pid4771_receiver_my_package_repl__rtlog_20260929_050150_563_pid4771_seq1.log size=1779 maxRawBytesHint=1000000 maxRequestBytesHint=2800000
+09-29 00:01:52.257  4771  4838 D WM-WorkProgressUpdater: Updating progress for 6f3476dc-3d1e-4b11-bf5b-6af47ee64830 (Data {pct : 10, mode : startup_runtime_logs})
+09-29 00:01:52.266  4771  4838 I WM-Processor: Moving WorkSpec (6f3476dc-3d1e-4b11-bf5b-6af47ee64830) to the foreground
+09-29 00:01:52.270  4771  4771 D WM-SystemFgDispatcher: Notifying with (id:7064, workSpecId: 6f3476dc-3d1e-4b11-bf5b-6af47ee64830, notificationType :1)
+09-29 00:01:52.270  4771  4771 I NotificationManager: com.negi.survey: notify(7064, null, Notification(channel=uploads shortcut=null contentView=null vibrate=null sound=null defaults=0 flags=ONGOING_EVENT|ONLY_ALERT_ONCE color=0x00000000 category=progress vis=PRIVATE semFlags=0x0 semPriority=0 semMissedCount=0 semScenarioType=0)) as user
+09-29 00:01:52.797  4771  4841 D WM-WorkProgressUpdater: Updating progress for 6f3476dc-3d1e-4b11-bf5b-6af47ee64830 (Data {pct : 12, mode : startup_runtime_logs})
+09-29 00:01:52.810  4771  4841 I WM-Processor: Moving WorkSpec (6f3476dc-3d1e-4b11-bf5b-6af47ee64830) to the foreground
+09-29 00:01:52.812  4771  4841 D WM-WorkProgressUpdater: Updating progress for 6f3476dc-3d1e-4b11-bf5b-6af47ee64830 (Data {pct : 29, mode : startup_runtime_logs})
+09-29 00:01:52.812  4771  4771 D WM-SystemFgDispatcher: Notifying with (id:7064, workSpecId: 6f3476dc-3d1e-4b11-bf5b-6af47ee64830, notificationType :1)
+09-29 00:01:52.812  4771  4771 I NotificationManager: com.negi.survey: notify(7064, null, Notification(channel=uploads shortcut=null contentView=null vibrate=null sound=null defaults=0 flags=ONGOING_EVENT|ONLY_ALERT_ONCE color=0x00000000 category=progress vis=PRIVATE semFlags=0x0 semPriority=0 semMissedCount=0 semScenarioType=0)) as user
+09-29 00:01:52.816  4771  4841 I WM-Processor: Moving WorkSpec (6f3476dc-3d1e-4b11-bf5b-6af47ee64830) to the foreground
+09-29 00:01:52.818  4771  4771 D WM-SystemFgDispatcher: Notifying with (id:7064, workSpecId: 6f3476dc-3d1e-4b11-bf5b-6af47ee64830, notificationType :1)
+09-29 00:01:52.818  4771  4771 I NotificationManager: com.negi.survey: notify(7064, null, Notification(channel=uploads shortcut=null contentView=null vibrate=null sound=null defaults=0 flags=ONGOING_EVENT|ONLY_ALERT_ONCE color=0x00000000 category=progress vis=PRIVATE semFlags=0x0 semPriority=0 semMissedCount=0 semScenarioType=0)) as user
+09-29 00:01:53.091  4771  4771 W SurveyApp: Deferred startup enqueues begin...
+09-29 00:01:53.093  4771  4771 D SurveyApp: WorkManager available. where=startupRtLogs(immediate) took=1ms
+09-29 00:01:53.103  4771  4771 D SurveyApp: Startup runtime logs target -> owner=ishizuki-tech repo=SurveyExports branch=main base='/diagnostics/runtime_logs'
+09-29 00:01:53.109  4771  4771 D github_upload: enqueueStartupRuntimeLogsUpload: uniqueName=upload_runtime_logs_startup policy=KEEP session=startup_runtime_20260929_050153_15be24e8
+09-29 00:01:53.109  4771  4771 D SurveyApp: Startup runtime logs: enqueue requested (immediate).
+09-29 00:01:53.110  4771  4771 D SurveyApp: WorkManager available. where=startupRingLogs(immediate) took=0ms
+09-29 00:01:53.113  4771  4771 D SurveyApp: Startup ring logs target -> owner=ishizuki-tech repo=SurveyExports branch=main base='/diagnostics/applog_ring'
+09-29 00:01:53.116  4771  4771 D github_upload: enqueueStartupRingLogsUpload: uniqueName=upload_ring_logs_startup policy=KEEP session=startup_ring_20260929_050153_ffc86530
+09-29 00:01:53.117  4771  4771 D SurveyApp: Startup ring logs: enqueue requested (immediate).
+09-29 00:01:53.117  4771  4771 D SurveyApp: WorkManager available. where=enqueuePending(immediate) took=0ms
+09-29 00:01:53.118  4771  4771 D SurveyApp: CrashCapture pending uploads requested (immediate).
+09-29 00:01:53.119  4771  4771 W SurveyApp: Deferred startup enqueues done: took=28ms
+09-29 00:01:53.119  4771  4858 D CrashCapture: enqueuePendingCrashUploadsIfPossible enter where=SurveyApp:enqueuePending(immediate):bg pid=4771 thread=CrashCapture-Enqueue
+09-29 00:01:53.121  4771  4831 D SurveyApp: Survey recovery WorkManager available. where=startupSurveyUploads(initial) took=0ms
+09-29 00:01:53.127  4771  4831 D SurveyApp: Startup survey recovery complete: discovered=0 attempted=0 submitted=0 active=0 trackerUnconfirmed=0 uploaded=0 deferred=0 invalid=0 operationalFailures=0 duplicates=0 unclassified=0
+09-29 00:01:53.161  4771  4840 D WM-SystemJobScheduler: Scheduling work ID 1558115b-4774-45cf-9b9d-fa57d803a092Job ID 211
+09-29 00:01:53.165  4771  4771 D WM-SystemJobService: onStartJob for WorkGenerationalId(workSpecId=1558115b-4774-45cf-9b9d-fa57d803a092, generation=0)
+09-29 00:01:53.166  4771  4840 D WM-GreedyScheduler: Starting tracking for 1558115b-4774-45cf-9b9d-fa57d803a092
+09-29 00:01:53.179  4771  4840 D WM-Processor: Processor: processing WorkGenerationalId(workSpecId=1558115b-4774-45cf-9b9d-fa57d803a092, generation=0)

@@ -1,0 +1,55 @@
+=== Previous Session Logcat ===
+captured_time_utc=20260917_115634
+captured_time_local=20260917_145634
+marker=2026-09-10 15:09:27.509
+preferred_prev_pid=-1
+note=best-effort; buffers may be overwritten before next start
+sdk=35
+device=samsung SM-S936B
+appId=com.negi.survey
+versionName=0.0.1
+versionCode=43
+
+=== Logcat (since marker) ===
+--------- beginning of main
+09-17 14:56:31.514 12646 12646 I com.negi.survey: Using CollectorTypeCMC GC.
+09-17 14:56:31.515 12646 12646 E com.negi.survey: Not starting debugger since process cannot load the jdwp agent.
+09-17 14:56:31.517 12646 12646 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+09-17 14:56:31.518 12646 12646 D ActivityThread: setConscryptValidator
+09-17 14:56:31.518 12646 12646 D ActivityThread: setConscryptValidator - put
+09-17 14:56:31.526 12646 12646 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+09-17 14:56:31.526 12646 12646 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+09-17 14:56:31.536 12646 12646 D nativeloader: Configuring clns-7 for other apk /data/app/~~yF0NOu8IRNgDyS1PkF9lIw==/com.negi.survey-WVu7ZegJRjEKch_crhEyFg==/base.apk. target_sdk_version=36, uses_libraries=libOpenCL.so, library_path=/data/app/~~yF0NOu8IRNgDyS1PkF9lIw==/com.negi.survey-WVu7ZegJRjEKch_crhEyFg==/lib/arm64:/data/app/~~yF0NOu8IRNgDyS1PkF9lIw==/com.negi.survey-WVu7ZegJRjEKch_crhEyFg==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.negi.survey
+09-17 14:56:31.542 12646 12646 V GraphicsEnvironment: Currently set values for:
+09-17 14:56:31.542 12646 12646 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+09-17 14:56:31.542 12646 12646 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+09-17 14:56:31.542 12646 12646 V GraphicsEnvironment: Global.Settings values are invalid: number of packages: 0, number of values: 0
+09-17 14:56:31.542 12646 12646 V GraphicsEnvironment: App is not on the allowlist for updatable production driver.
+09-17 14:56:31.571 12646 12646 D nativeloader: Load /data/app/~~yF0NOu8IRNgDyS1PkF9lIw==/com.negi.survey-WVu7ZegJRjEKch_crhEyFg==/base.apk!/lib/arm64-v8a/liblitertlm_jni.so using ns clns-7 from class loader (caller=/data/app/~~yF0NOu8IRNgDyS1PkF9lIw==/com.negi.survey-WVu7ZegJRjEKch_crhEyFg==/base.apk!classes4.dex): ok
+09-17 14:56:31.571 12646 12646 D SurveyApp: Loaded LiteRTLM JNI: litertlm_jni where=attachBaseContext
+09-17 14:56:31.601 12646 12646 D AppRingLogStore: installed: dir=/data/user/0/com.negi.survey/files/diagnostics/applog_ring idx=0
+09-17 14:56:31.601 12646 12675 D RuntimeLogStore: openWriter: start -> /data/user/0/com.negi.survey/files/diagnostics/runtime_logs/rtlog_20260917_115631_594_pid12646_seq1.log (bytes=0 format=LEGACY)
+09-17 14:56:31.602 12646 12646 D CrashCapture: install: ensured default handler. where=SurveyApp:attachBaseContext pid=12646 default=com.negi.survey.CrashCapture$CrashHandler@dcfa66e
+09-17 14:56:31.603 12646 12675 D RuntimeLogStore: retention: start files=2 kept=2 totalBytes=644
+09-17 14:56:31.630 12646 12646 D SurveyApp: LiteRTLM JNI already loaded; skip. where=onCreate(retry)
+09-17 14:56:31.631 12646 12646 D CrashCapture: install: ensured default handler. where=SurveyApp:onCreate(rewrap) pid=12646 default=com.negi.survey.CrashCapture$CrashHandler@dcfa66e
+09-17 14:56:31.631 12646 12646 D CrashCapture: registerSelfHealing: ActivityLifecycleCallbacks registered. mode=onResumedOnly
+09-17 14:56:31.636 12646 12692 D UploadRescheduleRcvr: No GitHub pending files for action=android.intent.action.BOOT_COMPLETED
+09-17 14:56:31.640 12646 12692 D github_upload: enqueueStartupRuntimeLogsUpload: uniqueName=upload_runtime_logs_startup policy=KEEP session=startup_runtime_20260917_115631_bea41d03
+09-17 14:56:31.646 12646 12692 D WM-PackageManagerHelper: Skipping component enablement for androidx.work.impl.background.systemjob.SystemJobService
+09-17 14:56:31.647 12646 12692 D WM-Schedulers: Created SystemJobScheduler and enabled SystemJobService
+09-17 14:56:31.647 12646 12703 D WM-ForceStopRunnable: Is default app process = true
+09-17 14:56:31.647 12646 12703 D WM-ForceStopRunnable: Performing cleanup operations.
+09-17 14:56:31.649 12646 12692 D UploadRescheduleRcvr: Enqueued runtime logs upload for action=android.intent.action.BOOT_COMPLETED reason=receiver_boot_completed
+09-17 14:56:31.678 12646 12723 D WM-SystemJobScheduler: Scheduling work ID 6f2069ab-cc24-4312-93d2-6be29ed92fd3Job ID 11
+09-17 14:56:31.679 12646 12723 D WM-GreedyScheduler: Starting tracking for 6f2069ab-cc24-4312-93d2-6be29ed92fd3
+09-17 14:56:31.682 12646 12726 D WM-WorkConstraintsTrack: NetworkRequestConstraintController register shared callback
+09-17 14:56:31.683 12646 12726 D ConnectivityManager: StackLog: [android.net.ConnectivityManager.sendRequestForNetwork(ConnectivityManager.java:4671)] [android.net.ConnectivityManager.registerDefaultNetworkCallbackForUid(ConnectivityManager.java:5360)] [android.net.ConnectivityManager.registerDefaultNetworkCallback(ConnectivityManager.java:5327)] [android.net.ConnectivityManager.registerDefaultNetworkCallback(ConnectivityManager.java:5301)] [androidx.work.impl.constraints.SharedNetworkCallback.addCallback(WorkConstraintsTracker.kt:362)] [androidx.work.impl.constraints.NetworkRequestConstraintController$track$1.invokeSuspend(WorkConstraintsTracker.kt:179)] [androidx.work.impl.constraints.NetworkRequestConstraintController$track$1.invoke(Unknown Source:8)] [androidx.work.impl.constraints.NetworkRequestConstraintController$track$1.invoke(Unknown Source:4)] [kotlinx.coroutines.flow.ChannelFlowBuilder.collectTo$suspendImpl(Builders.kt:316)] [kotlinx.coroutines.flow.ChannelFlowBuilder.collectTo(Unknown Source:0)] [kotlinx.coroutines.flow.CallbackFlowBuilder.collectTo(Builders.kt:330)] [kotlinx.coroutines.flow.internal.ChannelFlow$collectToFun$1.invokeSuspend(ChannelFlow.kt:56)] [kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)] [kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)] [androidx.work.impl.utils.SerialExecutorImpl$Task.run(SerialExecutorImpl.java:96)] [java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)] [java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)] [java.lang.Thread.run(Thread.java:1012)]
+09-17 14:56:31.686 12646 12726 D WM-PackageManagerHelper: androidx.work.impl.background.systemalarm.RescheduleReceiver enabled
+09-17 14:56:32.686 12646 12723 D WM-WorkConstraintsTrack: NetworkRequestConstraintController didn't receive neither onCapabilitiesChanged/onLost callback, sending `ConstraintsNotMet` after 1000 ms
+09-17 14:56:32.687 12646 12723 D WM-GreedyScheduler: Constraints not met: Cancelling work ID WorkGenerationalId(workSpecId=6f2069ab-cc24-4312-93d2-6be29ed92fd3, generation=0)
+09-17 14:56:34.134 12646 12646 D github_upload: enqueueStartupRuntimeLogsUpload: uniqueName=upload_runtime_logs_startup policy=KEEP session=startup_runtime_20260917_115634_636be6c7
+09-17 14:56:34.135 12646 12646 D github_upload: enqueueStartupRingLogsUpload: uniqueName=upload_ring_logs_startup policy=KEEP session=startup_ring_20260917_115634_eacc41f7
+09-17 14:56:34.135 12646 13404 D CrashCapture: enqueuePendingCrashUploadsIfPossible enter where=SurveyApp:enqueuePending(immediate):bg pid=12646 thread=CrashCapture-Enqueue
+09-17 14:56:34.141 12646 12703 D WM-SystemJobScheduler: Scheduling work ID 7f2cee27-2059-4a96-9bea-8a9d58d69535Job ID 12
+09-17 14:56:34.142 12646 12703 D WM-GreedyScheduler: Starting tracking for 6f2069ab-cc24-4312-93d2-6be29ed92fd3,7f2cee27-2059-4a96-9bea-8a9d58d69535

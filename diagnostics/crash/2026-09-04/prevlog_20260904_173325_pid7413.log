@@ -1,0 +1,97 @@
+=== Previous Session Logcat ===
+captured_time_utc=20260904_173325
+captured_time_local=20260904_103325
+marker=2026-09-04 10:06:01.158
+preferred_prev_pid=-1
+note=best-effort; buffers may be overwritten before next start
+sdk=36
+device=Google Pixel 9a
+appId=com.negi.survey
+versionName=0.0.1
+versionCode=1
+
+=== Logcat (since marker) ===
+--------- beginning of main
+09-04 10:33:21.732  7413  7413 I Zygote  : Process 7413 created for com.negi.survey
+09-04 10:33:21.733  7413  7413 I com.negi.survey: Late-enabling -Xcheck:jni
+09-04 10:33:22.038  7413  7413 I com.negi.survey: Using CollectorTypeCMC GC.
+09-04 10:33:22.078  7413  7413 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+09-04 10:33:22.128  7413  7413 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+09-04 10:33:22.128  7413  7413 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+09-04 10:33:22.563  7413  7413 D nativeloader: Configuring clns-9 for other apk /data/app/~~AFmKUOXQfKsGnHNB_Zl6mw==/com.negi.survey-VP5-TdRRatah5ooFnxif4Q==/base.apk. target_sdk_version=36, uses_libraries=libOpenCL.so:libOpenCL-pixel.so, library_path=/data/app/~~AFmKUOXQfKsGnHNB_Zl6mw==/com.negi.survey-VP5-TdRRatah5ooFnxif4Q==/lib/arm64:/data/app/~~AFmKUOXQfKsGnHNB_Zl6mw==/com.negi.survey-VP5-TdRRatah5ooFnxif4Q==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.negi.survey
+09-04 10:33:22.581  7413  7413 V GraphicsEnvironment: Currently set values for:
+09-04 10:33:22.581  7413  7413 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[com.android.angle]
+09-04 10:33:22.581  7413  7413 V GraphicsEnvironment:   angle_gl_driver_selection_values=[angle]
+09-04 10:33:22.581  7413  7413 V GraphicsEnvironment: com.negi.survey is not listed in per-application setting
+09-04 10:33:22.581  7413  7413 V GraphicsEnvironment: No special selections for ANGLE, returning default driver choice
+09-04 10:33:22.581  7413  7413 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+09-04 10:33:22.632  7413  7413 D nativeloader: Load /data/app/~~AFmKUOXQfKsGnHNB_Zl6mw==/com.negi.survey-VP5-TdRRatah5ooFnxif4Q==/base.apk!/lib/arm64-v8a/liblitertlm_jni.so using class loader ns clns-9 (caller=/data/app/~~AFmKUOXQfKsGnHNB_Zl6mw==/com.negi.survey-VP5-TdRRatah5ooFnxif4Q==/base.apk!classes10.dex): ok
+09-04 10:33:22.632  7413  7413 D SurveyApp: Loaded LiteRTLM JNI: litertlm_jni where=attachBaseContext
+09-04 10:33:22.657  7413  7413 D AppRingLogStore: installed: dir=/data/user/0/com.negi.survey/files/diagnostics/applog_ring idx=0
+09-04 10:33:22.657  7413  7413 D SurveyApp: attachBaseContext: pid=7413 process=com.negi.survey isMain=true sdk=36
+09-04 10:33:22.657  7413  7413 D SurveyApp: bootTiming: attachBaseContext total=66ms
+09-04 10:33:22.658  7413  7413 D SurveyApp: Skipping WorkManager init in attachBaseContext; will init lazily on first enqueue.
+09-04 10:33:22.659  7413  7413 D CrashCapture: install: ensured default handler. where=SurveyApp:attachBaseContext pid=7413 default=com.negi.survey.CrashCapture$CrashHandler@594bdf7
+09-04 10:33:22.659  7413  7413 D SurveyApp: CrashCapture installed: where=SurveyApp:attachBaseContext
+09-04 10:33:22.660  7413  7428 D RuntimeLogStore: openWriter: start -> /data/user/0/com.negi.survey/files/diagnostics/runtime_logs/rtlog_20260904_173322_645_pid7413_seq1.log (bytes=0 format=LEGACY)
+09-04 10:33:22.662  7413  7428 D RuntimeLogStore: retention: start files=2 kept=2 totalBytes=75906
+09-04 10:33:22.669  7413  7413 E com.negi.survey: hiddenapi: Accessing hidden method Landroid/net/ssl/EchConfigMismatchException;->getRetryConfigList()Landroid/net/ssl/EchConfigList; (runtime_flags=0, domain=core-platform, api=blocked) from /data/app/~~AFmKUOXQfKsGnHNB_Zl6mw==/com.negi.survey-VP5-TdRRatah5ooFnxif4Q==/base.apk!classes17.dex (domain=app, TargetSdkVersion=36) using linking: denied
+09-04 10:33:22.669  7413  7413 E com.negi.survey: hiddenapi: Accessing hidden method Landroid/net/ssl/EchConfigList;->toBytes()[B (runtime_flags=0, domain=core-platform, api=blocked) from /data/app/~~AFmKUOXQfKsGnHNB_Zl6mw==/com.negi.survey-VP5-TdRRatah5ooFnxif4Q==/base.apk!classes17.dex (domain=app, TargetSdkVersion=36) using linking: denied
+09-04 10:33:22.669  7413  7413 E com.negi.survey: hiddenapi: Accessing hidden method Landroid/net/ssl/EchConfigList;->fromBytes([B)Landroid/net/ssl/EchConfigList; (runtime_flags=0, domain=core-platform, api=blocked) from /data/app/~~AFmKUOXQfKsGnHNB_Zl6mw==/com.negi.survey-VP5-TdRRatah5ooFnxif4Q==/base.apk!classes17.dex (domain=app, TargetSdkVersion=36) using linking: denied
+09-04 10:33:22.669  7413  7413 E com.negi.survey: hiddenapi: Accessing hidden method Landroid/net/ssl/SSLSockets;->setEchConfigList(Ljavax/net/ssl/SSLSocket;Landroid/net/ssl/EchConfigList;)V (runtime_flags=0, domain=core-platform, api=blocked) from /data/app/~~AFmKUOXQfKsGnHNB_Zl6mw==/com.negi.survey-VP5-TdRRatah5ooFnxif4Q==/base.apk!classes17.dex (domain=app, TargetSdkVersion=36) using linking: denied
+09-04 10:33:22.672  7413  7413 D SurveyApp: LiteRTLM JNI already loaded; skip. where=onCreate(retry)
+09-04 10:33:22.673  7413  7413 D SurveyApp: bootTiming: RuntimeLogStore.start took=0ms
+09-04 10:33:22.673  7413  7413 D SurveyApp: bootTiming: AppRingLogStore.install took=0ms
+09-04 10:33:22.673  7413  7413 D SurveyApp: onCreate: pid=7413 process=com.negi.survey isMain=true sdk=36
+09-04 10:33:22.677  7413  7413 D CrashCapture: install: ensured default handler. where=SurveyApp:onCreate(rewrap) pid=7413 default=com.negi.survey.CrashCapture$CrashHandler@594bdf7
+09-04 10:33:22.677  7413  7413 D SurveyApp: CrashCapture installed: where=SurveyApp:onCreate(rewrap)
+09-04 10:33:22.678  7413  7413 D CrashCapture: registerSelfHealing: ActivityLifecycleCallbacks registered. mode=onResumedOnly
+09-04 10:33:22.678  7413  7413 D SurveyApp: CrashCapture self-healing registered.
+09-04 10:33:22.678  7413  7413 W SurveyApp: Startup enqueues deferred: delay=2500ms (to reduce init contention)
+09-04 10:33:22.678  7413  7413 D SurveyApp: bootTiming: onCreate total=6ms
+--------- beginning of system
+09-04 10:33:22.685  7413  7433 I DisplayManager: Choreographer implicitly registered for the refresh rate.
+09-04 10:33:22.687  7413  7433 D vulkan  : searching for layers in '/data/app/~~AFmKUOXQfKsGnHNB_Zl6mw==/com.negi.survey-VP5-TdRRatah5ooFnxif4Q==/lib/arm64'
+09-04 10:33:22.687  7413  7433 D vulkan  : searching for layers in '/data/app/~~AFmKUOXQfKsGnHNB_Zl6mw==/com.negi.survey-VP5-TdRRatah5ooFnxif4Q==/base.apk!/lib/arm64-v8a'
+09-04 10:33:22.691  7413  7430 D UploadRescheduleRcvr: No GitHub pending files for action=android.intent.action.BOOT_COMPLETED
+09-04 10:33:22.692  7413  7413 D DesktopExperienceFlags: Toggle override initialized to: false
+09-04 10:33:22.704  7413  7430 D github_upload: enqueueStartupRuntimeLogsUpload: uniqueName=upload_runtime_logs_startup policy=KEEP session=startup_runtime_20260904_173322_e3ae6634
+09-04 10:33:22.709  7413  7413 D CompatChangeReporter: Compat change id reported: 377864165; UID 14811; state: ENABLED
+09-04 10:33:22.709  7413  7413 D DesktopModeFlags: Toggle override initialized to: OVERRIDE_UNSET
+09-04 10:33:22.725  7413  7413 I ContentCaptureHelper: Setting logging level to OFF
+09-04 10:33:22.727  7413  7430 D WM-PackageManagerHelper: Skipping component enablement for androidx.work.impl.background.systemjob.SystemJobService
+09-04 10:33:22.727  7413  7430 D WM-Schedulers: Created SystemJobScheduler and enabled SystemJobService
+09-04 10:33:22.727  7413  7413 D CrashCapture: install: ensured default handler. where=selfHeal:onActivityResumed pid=7413 default=com.negi.survey.CrashCapture$CrashHandler@594bdf7
+09-04 10:33:22.729  7413  7442 D WM-ForceStopRunnable: Is default app process = true
+09-04 10:33:22.730  7413  7442 D WM-ForceStopRunnable: Performing cleanup operations.
+09-04 10:33:22.734  7413  7430 D UploadRescheduleRcvr: Enqueued runtime logs upload for action=android.intent.action.BOOT_COMPLETED reason=receiver_boot_completed
+09-04 10:33:22.757  7413  7413 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@58aaa8f
+09-04 10:33:22.759  7413  7442 D WM-ForceStopRunnable: Application was force-stopped, rescheduling.
+09-04 10:33:22.784  7413  7448 D WM-SystemJobScheduler: Scheduling work ID 0a99320d-1f20-4b2c-a608-8441c1cb41c5Job ID 6
+09-04 10:33:22.786  7413  7448 D WM-GreedyScheduler: Starting tracking for 0a99320d-1f20-4b2c-a608-8441c1cb41c5
+09-04 10:33:22.793  7413  7449 D WM-WorkConstraintsTrack: NetworkRequestConstraintController register shared callback
+09-04 10:33:22.797  7413  7449 D WM-PackageManagerHelper: androidx.work.impl.background.systemalarm.RescheduleReceiver enabled
+09-04 10:33:22.916  7413  7413 D VRI[MainActivity]: WindowInsets changed: 1080x2424 statusBars:[0,152,0,0] navigationBars:[0,0,0,69] mandatorySystemGestures:[0,187,0,92] 
+09-04 10:33:22.928  7413  7413 I HWUI    : Using FreeType backend (prop=Auto)
+09-04 10:33:23.117  7413  7413 I com.negi.survey: hiddenapi: Accessing hidden method Landroid/os/SystemProperties;->addChangeCallback(Ljava/lang/Runnable;)V (runtime_flags=0, domain=platform, api=unsupported) from Landroidx/compose/ui/platform/AndroidComposeView$Companion; (domain=app, TargetSdkVersion=36) using reflection: allowed
+09-04 10:33:23.118  7413  7418 I com.negi.survey: Compiler allocated 5038KB to compile void android.view.ViewRootImpl.performTraversals()
+09-04 10:33:23.158  7413  7413 D InsetsController: hide(ime())
+09-04 10:33:23.158  7413  7413 I ImeTracker: com.negi.survey:7d1b6754: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+09-04 10:33:23.206  7413  7413 D IntroScreen: Resolved config details: id=survey_config10.yaml in 88ms
+09-04 10:33:23.798  7413  7448 D WM-WorkConstraintsTrack: NetworkRequestConstraintController didn't receive neither onCapabilitiesChanged/onLost callback, sending `ConstraintsNotMet` after 1000 ms
+09-04 10:33:23.799  7413  7448 D WM-GreedyScheduler: Constraints not met: Cancelling work ID WorkGenerationalId(workSpecId=0a99320d-1f20-4b2c-a608-8441c1cb41c5, generation=0)
+09-04 10:33:25.181  7413  7413 W SurveyApp: Deferred startup enqueues begin...
+09-04 10:33:25.182  7413  7413 D SurveyApp: WorkManager available. where=startupRtLogs(immediate) took=0ms
+09-04 10:33:25.184  7413  7413 D SurveyApp: Startup runtime logs target -> owner=ishizuki-tech repo=SurveyExports branch=main base='/diagnostics/runtime_logs'
+09-04 10:33:25.186  7413  7413 D github_upload: enqueueStartupRuntimeLogsUpload: uniqueName=upload_runtime_logs_startup policy=KEEP session=startup_runtime_20260904_173325_e41dc785
+09-04 10:33:25.187  7413  7413 D SurveyApp: Startup runtime logs: enqueue requested (immediate).
+09-04 10:33:25.187  7413  7413 D SurveyApp: WorkManager available. where=startupRingLogs(immediate) took=0ms
+09-04 10:33:25.189  7413  7413 D SurveyApp: Startup ring logs target -> owner=ishizuki-tech repo=SurveyExports branch=main base='/diagnostics/applog_ring'
+09-04 10:33:25.190  7413  7413 D github_upload: enqueueStartupRingLogsUpload: uniqueName=upload_ring_logs_startup policy=KEEP session=startup_ring_20260904_173325_7ad2c6c5
+09-04 10:33:25.190  7413  7413 D SurveyApp: Startup ring logs: enqueue requested (immediate).
+09-04 10:33:25.190  7413  7413 D SurveyApp: WorkManager available. where=enqueuePending(immediate) took=0ms
+09-04 10:33:25.192  7413  7413 D SurveyApp: CrashCapture pending uploads requested (immediate).
+09-04 10:33:25.192  7413  7413 W SurveyApp: Deferred startup enqueues done: took=12ms
+09-04 10:33:25.192  7413  7459 D CrashCapture: enqueuePendingCrashUploadsIfPossible enter where=SurveyApp:enqueuePending(immediate):bg pid=7413 thread=CrashCapture-Enqueue
+09-04 10:33:25.218  7413  7442 D WM-SystemJobScheduler: Scheduling work ID f5402834-cb69-4e56-87bb-2598231d3cbeJob ID 7
+09-04 10:33:25.220  7413  7442 D WM-GreedyScheduler: Starting tracking for f5402834-cb69-4e56-87bb-2598231d3cbe,0a99320d-1f20-4b2c-a608-8441c1cb41c5

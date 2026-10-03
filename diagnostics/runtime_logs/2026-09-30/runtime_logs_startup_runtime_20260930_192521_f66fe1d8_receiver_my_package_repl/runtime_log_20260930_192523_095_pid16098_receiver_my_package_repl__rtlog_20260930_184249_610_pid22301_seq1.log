@@ -1,0 +1,862 @@
+=== RuntimeLogStore Header ===
+ts=2026-09-30T18:42:49.621Z
+fileNameFormat=LEGACY
+appId=com.negi.survey
+versionName=0.0.1
+versionCode=1
+debug=true
+device=samsung SM-S731U
+sdk=36
+pid=22301
+==============================
+2026-09-30T18:42:49.621Z I/RuntimeLogStore [rtlog-io] start: actor launched (fileNameFormat=LEGACY)
+2026-09-30T18:42:49.619Z D/SurveyApp [main] attachBaseContext: pid=22301 process=com.negi.survey isMain=true sdk=36
+2026-09-30T18:42:49.620Z D/SurveyApp [main] bootTiming: attachBaseContext total=36ms
+2026-09-30T18:42:49.620Z D/SurveyApp [main] Skipping WorkManager init in attachBaseContext; will init lazily on first enqueue.
+2026-09-30T18:42:49.622Z D/SurveyApp [main] CrashCapture installed: where=SurveyApp:attachBaseContext
+2026-09-30T18:42:49.640Z I/RuntimeLogStore [main] start repair: ctx/dir refreshed
+2026-09-30T18:42:49.640Z D/SurveyApp [main] bootTiming: RuntimeLogStore.start took=0ms
+2026-09-30T18:42:49.640Z D/SurveyApp [main] bootTiming: AppRingLogStore.install took=0ms
+2026-09-30T18:42:49.640Z D/SurveyApp [main] onCreate: pid=22301 process=com.negi.survey isMain=true sdk=36
+2026-09-30T18:42:49.645Z D/SurveyApp [main] CrashCapture installed: where=SurveyApp:onCreate(rewrap)
+2026-09-30T18:42:49.645Z D/SurveyApp [main] CrashCapture self-healing registered.
+2026-09-30T18:42:49.646Z W/SurveyApp [main] Startup enqueues deferred: delay=2500ms (to reduce init contention)
+2026-09-30T18:42:49.646Z D/SurveyApp [main] Startup survey recovery deferred: delay=2500ms
+2026-09-30T18:42:49.646Z D/SurveyApp [main] bootTiming: onCreate total=7ms
+2026-09-30T18:42:52.149Z W/SurveyApp [main] Deferred startup enqueues begin...
+2026-09-30T18:42:52.260Z D/SurveyApp [main] WorkManager available. where=startupRtLogs(immediate) took=109ms
+2026-09-30T18:42:52.277Z D/SurveyApp [main] Startup runtime logs: GitHub config not available (immediate).
+2026-09-30T18:42:52.278Z W/SurveyApp [main] Startup runtime logs: scheduling one retry; reason=config
+2026-09-30T18:42:52.278Z D/SurveyApp [main] WorkManager available. where=startupRingLogs(immediate) took=0ms
+2026-09-30T18:42:52.286Z D/SurveyApp [main] Startup ring logs: GitHub config not available (immediate).
+2026-09-30T18:42:52.287Z W/SurveyApp [main] Startup ring logs: scheduling one retry; reason=config
+2026-09-30T18:42:52.287Z D/SurveyApp [main] WorkManager available. where=enqueuePending(immediate) took=0ms
+2026-09-30T18:42:52.288Z D/SurveyApp [main] CrashCapture pending uploads requested (immediate).
+2026-09-30T18:42:52.289Z W/SurveyApp [main] Deferred startup enqueues done: took=140ms
+2026-09-30T18:42:52.290Z D/SurveyApp [DefaultDispatcher-worker-1] Survey recovery WorkManager available. where=startupSurveyUploads(initial) took=0ms
+2026-09-30T18:42:52.299Z W/SurveyApp [DefaultDispatcher-worker-1] Startup survey recovery: GitHub config unavailable (initial).
+2026-09-30T18:42:52.300Z W/SurveyApp [DefaultDispatcher-worker-1] Startup survey recovery: scheduling one retry; reason=config delay=1600ms
+2026-09-30T18:42:53.881Z D/SurveyApp [main] WorkManager available. where=startupRtLogs(delayed) took=0ms
+2026-09-30T18:42:53.896Z D/SurveyApp [main] Startup runtime logs: GitHub config not available (delayed).
+2026-09-30T18:42:53.896Z D/SurveyApp [main] Startup runtime logs: retry already scheduled; reason=config
+2026-09-30T18:42:53.896Z D/SurveyApp [main] WorkManager available. where=startupRingLogs(delayed) took=0ms
+2026-09-30T18:42:53.904Z D/SurveyApp [main] Startup ring logs: GitHub config not available (delayed).
+2026-09-30T18:42:53.904Z D/SurveyApp [main] Startup ring logs: retry already scheduled; reason=config
+2026-09-30T18:42:53.905Z D/SurveyApp [DefaultDispatcher-worker-1] Survey recovery WorkManager available. where=startupSurveyUploads(delayed) took=0ms
+2026-09-30T18:42:53.917Z W/SurveyApp [DefaultDispatcher-worker-1] Startup survey recovery: GitHub config unavailable (delayed).
+2026-09-30T18:42:53.917Z W/SurveyApp [DefaultDispatcher-worker-1] Startup survey recovery: retry exhausted; reason=config
+2026-09-30T18:43:12.733Z D/SLM [main] buildModelConfig: accel=GPU maxTokens=4096 topK=64 topP=0.95 temperature=1.0
+2026-09-30T18:43:12.763Z D/LiteRtLM [DefaultDispatcher-worker-2] Initializing LiteRT-LM: model='Gemma3n4B', key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227'
+2026-09-30T18:43:12.764Z D/LiteRtLM [DefaultDispatcher-worker-2] Capabilities: image=false audio=false
+2026-09-30T18:43:12.764Z D/LiteRtLM [DefaultDispatcher-worker-2] Backend=com.google.ai.edge.litertlm.Backend$GPU@a7b7ed1 maxNumTokens=4096 (raw=4096) topK=64 topP=0.95 temp=1.0
+2026-09-30T18:43:12.764Z D/LiteRtLM [DefaultDispatcher-worker-2] Model path='/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' sizeBytes=4919541760 lastModified=1790720708227
+2026-09-30T18:43:12.764Z W/LiteRtLM [DefaultDispatcher-worker-2] Large maxNumTokens=4096 requested. This increases KV-cache capacity and memory pressure. For short survey JSON/follow-up generation, validate whether a smaller configured value is sufficient.
+2026-09-30T18:43:12.764Z D/LiteRtLM [DefaultDispatcher-worker-2] LiteRT-LM native benchmark policy: enabled=false emulator=false
+2026-09-30T18:43:12.765Z D/LiteRtLM [DefaultDispatcher-worker-2] Speculative decoding / MTP policy: enabled=false runtimeFlagUpdated=true model='Gemma3n4B'
+2026-09-30T18:43:12.768Z D/LiteRtLM [DefaultDispatcher-worker-2] Engine cacheDir resolved: key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' backend=com.google.ai.edge.litertlm.Backend$GPU@a7b7ed1 path='/data/user/0/com.negi.survey/no_backup/litertlm_cache/a490fe1a78de86252361553afaf45384d9958910' filesBefore=2
+2026-09-30T18:43:21.685Z W/LiteRtLM [DefaultDispatcher-worker-2] Engine.initialize completed: key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' backend=com.google.ai.edge.litertlm.Backend$GPU@a7b7ed1 took=8915ms cacheFilesAfter=2
+2026-09-30T18:43:21.704Z D/LiteRtLM [DefaultDispatcher-worker-2] createConversation completed: key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' took=19ms
+2026-09-30T18:43:21.705Z D/LiteRtLM [DefaultDispatcher-worker-2] LiteRT-LM initialization succeeded: model='Gemma3n4B', key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' engineMs=8915 conversationMs=19 totalMs=8943
+2026-09-30T18:43:21.727Z D/AiTrace [main] Installed (enabled=true ringEnabled=true)
+2026-09-30T18:43:21.745Z D/SurveyVM [main] init -> Start, session=0, uuid=24c79084-d4f7-4a3a-9617-48c7e06d45e3, navSize=1, graphSize=22
+2026-09-30T18:43:21.757Z D/SurveyVM [main] config.validate -> issues=0
+2026-09-30T18:43:21.757Z D/SurveyVM [main] promptSources -> legacy=10, eval=0, follow=0
+2026-09-30T18:43:21.757Z D/SurveyVM [main] promptSources.preview -> legacy=[Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q7, Q8, Q9], eval=[], follow=[]
+2026-09-30T18:43:21.758Z D/SurveyVM [main] hasTwoStepPrompt[Q10] -> true (eval=179, fu=204)
+2026-09-30T18:43:21.758Z D/SurveyVM [main] hasTwoStepPrompt[Q11] -> true (eval=171, fu=196)
+2026-09-30T18:43:21.758Z D/SurveyVM [main] hasTwoStepPrompt[Q12] -> true (eval=159, fu=184)
+2026-09-30T18:43:21.758Z D/SurveyVM [main] hasTwoStepPrompt[Q13] -> true (eval=209, fu=234)
+2026-09-30T18:43:21.758Z D/SurveyVM [main] hasTwoStepPrompt[Q14] -> true (eval=150, fu=175)
+2026-09-30T18:43:21.758Z D/SurveyVM [main] hasTwoStepPrompt[Q15] -> true (eval=167, fu=192)
+2026-09-30T18:43:21.758Z D/SurveyVM [main] hasTwoStepPrompt[Q16] -> true (eval=194, fu=219)
+2026-09-30T18:43:21.759Z D/SurveyVM [main] hasTwoStepPrompt[Q7] -> true (eval=244, fu=155)
+2026-09-30T18:43:21.759Z D/SurveyVM [main] hasTwoStepPrompt[Q8] -> true (eval=186, fu=211)
+2026-09-30T18:43:21.759Z D/SurveyVM [main] hasTwoStepPrompt[Q9] -> true (eval=169, fu=194)
+2026-09-30T18:43:21.759Z D/SurveyVM [main] AI prompt coverage OK (aiCount=10)
+2026-09-30T18:43:22.156Z D/SLM [slm-jni] initializeIfNeeded: model='Gemma3n4B' image=false audio=false
+2026-09-30T18:43:22.156Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227'
+2026-09-30T18:43:22.160Z D/LiteRtRepository [main] warmUp: initializeIfNeeded ok gateWaitMs=1 initMs=5
+2026-09-30T18:43:22.160Z D/LiteRtRepository [main] warmUp: Engine ready; representative inference disabled totalMs=6
+2026-09-30T18:43:54.414Z D/SurveyVM [main] resetAudioRefs -> cleared
+2026-09-30T18:43:54.415Z D/SurveyVM [main] resetNavToStart -> key=com.negi.survey.vm.FlowHome@9913e64, navSize=1
+2026-09-30T18:43:54.415Z D/SurveyVM [main] resetToStart -> Start, session=1, uuid=86789403-e7e5-4640-b3bd-e1002137e108, preserveDraft=true, draftLen=0
+2026-09-30T18:43:54.416Z D/SurveyVM [main] activateRunIfNeeded(advanceToNext:Introduction) -> runNoteLen=0, draftCleared=true, uuid=86789403-e7e5-4640-b3bd-e1002137e108
+2026-09-30T18:43:54.416Z D/SurveyVM [main] push -> Introduction, navSize=2, stackSize=2
+2026-09-30T18:43:58.403Z D/SurveyVM [main] push -> Consent, navSize=3, stackSize=3
+2026-09-30T18:44:01.996Z D/SurveyVM [main] push -> Q1, navSize=4, stackSize=4
+2026-09-30T18:44:04.579Z D/SurveyVM [main] push -> Q2, navSize=5, stackSize=5
+2026-09-30T18:44:07.129Z D/SurveyVM [main] push -> Q3, navSize=6, stackSize=6
+2026-09-30T18:44:11.330Z D/SurveyVM [main] push -> Q4, navSize=7, stackSize=7
+2026-09-30T18:44:14.959Z D/SurveyVM [main] push -> Q5, navSize=8, stackSize=8
+2026-09-30T18:44:15.744Z D/SurveyVM [main] push -> Q6, navSize=9, stackSize=9
+2026-09-30T18:44:20.213Z D/SurveyVM [main] push -> Q7, navSize=10, stackSize=10
+2026-09-30T18:44:20.264Z D/SurveyVM [main] hasTwoStepPrompt[Q7] -> true (eval=244, fu=155)
+2026-09-30T18:44:27.485Z D/SurveyVM [main] push -> Q8, navSize=11, stackSize=11
+2026-09-30T18:44:27.494Z D/SurveyVM [main] hasTwoStepPrompt[Q8] -> true (eval=186, fu=211)
+2026-09-30T18:44:27.899Z D/SurveyVM [main] push -> Q9, navSize=12, stackSize=12
+2026-09-30T18:44:27.909Z D/SurveyVM [main] hasTwoStepPrompt[Q9] -> true (eval=169, fu=194)
+2026-09-30T18:44:28.284Z D/SurveyVM [main] push -> Q10, navSize=13, stackSize=13
+2026-09-30T18:44:28.292Z D/SurveyVM [main] hasTwoStepPrompt[Q10] -> true (eval=179, fu=204)
+2026-09-30T18:44:28.725Z D/SurveyVM [main] push -> Q11, navSize=14, stackSize=14
+2026-09-30T18:44:28.734Z D/SurveyVM [main] hasTwoStepPrompt[Q11] -> true (eval=171, fu=196)
+2026-09-30T18:44:29.190Z D/SurveyVM [main] push -> Q12, navSize=15, stackSize=15
+2026-09-30T18:44:29.201Z D/SurveyVM [main] hasTwoStepPrompt[Q12] -> true (eval=159, fu=184)
+2026-09-30T18:44:29.612Z D/SurveyVM [main] push -> Q13, navSize=16, stackSize=16
+2026-09-30T18:44:29.617Z D/SurveyVM [main] hasTwoStepPrompt[Q13] -> true (eval=209, fu=234)
+2026-09-30T18:44:30.033Z D/SurveyVM [main] push -> Q14, navSize=17, stackSize=17
+2026-09-30T18:44:30.043Z D/SurveyVM [main] hasTwoStepPrompt[Q14] -> true (eval=150, fu=175)
+2026-09-30T18:44:30.556Z D/SurveyVM [main] push -> Q15, navSize=18, stackSize=18
+2026-09-30T18:44:30.567Z D/SurveyVM [main] hasTwoStepPrompt[Q15] -> true (eval=167, fu=192)
+2026-09-30T18:44:31.123Z D/SurveyVM [main] push -> Q16, navSize=19, stackSize=19
+2026-09-30T18:44:31.136Z D/SurveyVM [main] hasTwoStepPrompt[Q16] -> true (eval=194, fu=219)
+2026-09-30T18:45:25.197Z D/SurveyVM [main] getEvalPrompt[Q16] -> len=463
+2026-09-30T18:45:25.200Z D/AiViewModel [DefaultDispatcher-worker-2] run[1]: mode=EVAL_JSON phase=EVAL commit=true prompt.len=463, fullPrompt.len=2982, timeoutMs=120000
+2026-09-30T18:45:25.201Z D/AiViewModel [DefaultDispatcher-worker-2] run[1]: sha(prompt)=6083dc7947b3f90e2b3c9614a84984456d22c9f73077a9e38375547f8d6146eb sha(full)=16ad1a4acacfc54d8e3a38cfd573a744861211f799ff86da97eef833677d9f2d
+2026-09-30T18:45:25.201Z I/FullPromptReview [DefaultDispatcher-worker-2] [part=000] run[1]: phase=EVAL FullPrompt
+Evaluate only the original survey target using all supplied answers.
+Return only compact JSON {"score":N,"missing_points":[],"followup_needed":false}. N must be an integer 1-100 for relevance, completeness and accuracy against the original target. Evaluate the original answer and all answered followup pairs together. Kabla ya kutoa JSON, linganisha kila taarifa inayodhaniwa kukosekana na jibu la awali na kila jozi ya swali la ufuatiliaji na jibu lake iliyojibiwa. Ikiwa jibu la ufuatiliaji lililojibiwa linatoa moja kwa moja taarifa hiyo, usiiweke katika missing_points. Hesabu upya score, missing_points, na followup_needed pamoja kama uamuzi mmoja wa mwisho unaolingana. Wakati Required component catalog ipo, tathmini kila kipengele cha catalog kivyake: missing_points inaweza kuwa na ID za vipengele vilivyosanidiwa pekee. Ondoa ID ambayo kipengele chake kimetolewa katika jibu la awali au jozi za maswali ya ufuatiliaji zilizojibiwa; kamwe usirudishe maelezo ya kipengele au maswali katika missing_points. Wakati Required components block ya zamani ipo, missing_points inaweza kuwa na maandishi halisi ya vipengele vilivyosanidiwa ambavyo bado havijajibiwa. Wakati hakuna catalog wala Required components block, missing_points inaweza kuandikwa kwa Kiswahili. Tofautisha uhusiano na ukamilifu. Jibu linaweza kuwa kuhusu mada husika lakini bado lisikamilike. Toa alama 90-100 tu wakati mhojiwa ametoa kwa wazi kila kipengele muhimu kinachohitajika katika Lengo la jibu na Swali. Usikisie maelezo yanayokosekana kutokana na maarifa ya jumla, uwezekano, au kauli tupu kwamba tukio lilitokea. Jibu fupi linaweza kuwa kamili. Jibu refu au linalohusu mada lakini linaloacha kipengele chochote muhimu kinachohitajika lipate chini ya 90. Kwa mfano, kusema kwamba tukio lilitokea bila kueleza athari iliyoombwa ni jibu lisilokamilika. Kanuni ya ulinganifu: ikiwa missing_points si tupu au followup_needed ni true, score lazima iwe nambari kamili kutoka 1 hadi 89. Alama 90-100 zinaruhusiwa tu wakati missing_points=[] na followup_needed=false. Usitumie score 90 kama alama ya mpaka wakati kuna kitu chochote kinachokosekana. For score below 90, missing_points must contain the specific missing or ambiguous target-required information and followup_needed must be true. Otherwise missing_points is empty and followup_needed is false. Do not generate a question. Do not penalize style or request information outside the target.
+Keep missing_points concise.
+One JSON object only; no markdown or generated question.
+INPUT:
+Lengo la jibu: mahali pa kawaida pa kuuza mahindi baada ya kuvuna na sababu ya kuchagua soko/mnunuzi huyo.
+Question: Kwa kawaida baada ya kuvuna, unauza mahindi yako wapi, na kwa nini unapendelea kuuza huko au kwa mnunuzi huyo?
+Original answer: Ninauza kwa mfanyabiashara wa kijijini.
+Answered followup pairs: 
+Required component catalog:
+- sale_destination: Soko au mnunuzi wa kawaida baada ya mavuno
+- destination_reason: Sababu ya kuchagua soko au mnunuzi huyo
+2026-09-30T18:45:25.206Z D/LiteRtRepository [DefaultDispatcher-worker-2] [1] request start model='Gemma3n4B' prompt.len=2982 sha=16ad1a4acacfc54d gateWaitMs=3
+2026-09-30T18:45:25.206Z D/LiteRtRepository [DefaultDispatcher-worker-2] [part=000] [1] PROMPT (FULL) sha=16ad1a4acacfc54d
+Evaluate only the original survey target using all supplied answers.
+Return only compact JSON {"score":N,"missing_points":[],"followup_needed":false}. N must be an integer 1-100 for relevance, completeness and accuracy against the original target. Evaluate the original answer and all answered followup pairs together. Kabla ya kutoa JSON, linganisha kila taarifa inayodhaniwa kukosekana na jibu la awali na kila jozi ya swali la ufuatiliaji na jibu lake iliyojibiwa. Ikiwa jibu la ufuatiliaji lililojibiwa linatoa moja kwa moja taarifa hiyo, usiiweke katika missing_points. Hesabu upya score, missing_points, na followup_needed pamoja kama uamuzi mmoja wa mwisho unaolingana. Wakati Required component catalog ipo, tathmini kila kipengele cha catalog kivyake: missing_points inaweza kuwa na ID za vipengele vilivyosanidiwa pekee. Ondoa ID ambayo kipengele chake kimetolewa katika jibu la awali au jozi za maswali ya ufuatiliaji zilizojibiwa; kamwe usirudishe maelezo ya kipengele au maswali katika missing_points. Wakati Required components block ya zamani ipo, missing_points inaweza kuwa na maandishi halisi ya vipengele vilivyosanidiwa ambavyo bado havijajibiwa. Wakati hakuna catalog wala Required components block, missing_points inaweza kuandikwa kwa Kiswahili. Tofautisha uhusiano na ukamilifu. Jibu linaweza kuwa kuhusu mada husika lakini bado lisikamilike. Toa alama 90-100 tu wakati mhojiwa ametoa kwa wazi kila kipengele muhimu kinachohitajika katika Lengo la jibu na Swali. Usikisie maelezo yanayokosekana kutokana na maarifa ya jumla, uwezekano, au kauli tupu kwamba tukio lilitokea. Jibu fupi linaweza kuwa kamili. Jibu refu au linalohusu mada lakini linaloacha kipengele chochote muhimu kinachohitajika lipate chini ya 90. Kwa mfano, kusema kwamba tukio lilitokea bila kueleza athari iliyoombwa ni jibu lisilokamilika. Kanuni ya ulinganifu: ikiwa missing_points si tupu au followup_needed ni true, score lazima iwe nambari kamili kutoka 1 hadi 89. Alama 90-100 zinaruhusiwa tu wakati missing_points=[] na followup_needed=false. Usitumie score 90 kama alama ya mpaka wakati kuna kitu chochote kinachokosekana. For score below 90, missing_points must contain the specific missing or ambiguous target-required information and followup_needed must be true. Otherwise missing_points is empty and followup_needed is false. Do not generate a question. Do not penalize style or request information outside the target.
+Keep missing_points concise.
+One JSON object only; no markdown or generated question.
+INPUT:
+Lengo la jibu: mahali pa kawaida pa kuuza mahindi baada ya kuvuna na sababu ya kuchagua soko/mnunuzi huyo.
+Question: Kwa kawaida baada ya kuvuna, unauza mahindi yako wapi, na kwa nini unapendelea kuuza huko au kwa mnunuzi huyo?
+Original answer: Ninauza kwa mfanyabiashara wa kijijini.
+Answered followup pairs: 
+Required component catalog:
+- sale_destination: Soko au mnunuzi wa kawaida baada ya mavuno
+- destination_reason: Sababu ya kuchagua soko au mnunuzi huyo
+2026-09-30T18:45:25.207Z D/SLM [slm-jni] initializeIfNeeded: model='Gemma3n4B' image=false audio=false
+2026-09-30T18:45:25.208Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227'
+2026-09-30T18:45:25.209Z D/LiteRtRepository [DefaultDispatcher-worker-1] [1] initializeIfNeeded ok initMs=2
+2026-09-30T18:45:25.212Z D/SLM [slm-jni] runInference: model='Gemma3n4B' textLen=2982 images=0 audio=0
+2026-09-30T18:45:25.217Z D/LiteRtLM [DefaultDispatcher-worker-2] state[run:start] key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=1 active=true terminated=false logicalDone=false cancel=false pendingCancel=false lastMsgAt=752831213 lastTermAt=0
+2026-09-30T18:45:25.217Z D/LiteRtLM [DefaultDispatcher-worker-2] runInference start: key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=1 hasText=true originalTextLen=2982 effectiveTextLen=2982 images=0 audioClips=0
+2026-09-30T18:45:25.218Z D/LiteRtLM [DefaultDispatcher-worker-2] LiteRT-LM sendMessageAsync(text): key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=1 len=2982 maxOutputTokens=64
+2026-09-30T18:45:25.272Z D/LiteRtLM [DefaultDispatcher-worker-2] sendMessageAsync accepted: key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=1 dispatchMs=55
+2026-09-30T18:45:33.102Z W/LiteRtLM [Thread-5] Inference first output: key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=1 ttftMs=7884 dispatchMs=55 postDispatchTtftMs=7829 requestToFirstOutputMs=7887
+2026-09-30T18:45:33.102Z D/LiteRtLM [Thread-5] stream[key=fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227 runId=1] msg#1 rawChunkLen=2 deltaLen=2 emittedChars=2
+2026-09-30T18:45:33.102Z D/LiteRtRepository [main] stream[rid=1 msg#1] done=false deltaLen=2 outLen=2 outPreview='{"' deltaPreview='{"'
+2026-09-30T18:45:33.103Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[1].preview='{"'
+2026-09-30T18:45:33.242Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[2].preview='score'
+2026-09-30T18:45:33.358Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[3].preview='":'
+2026-09-30T18:45:33.483Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[4].preview='7'
+2026-09-30T18:45:33.601Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[5].preview='5'
+2026-09-30T18:45:33.728Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[6].preview=',"'
+2026-09-30T18:45:33.852Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[7].preview='missing'
+2026-09-30T18:45:33.977Z D/LiteRtRepository [main] stream[rid=1 msg#8] done=false deltaLen=1 outLen=21 outPreview='{"score":75,"missing_' deltaPreview='_'
+2026-09-30T18:45:33.977Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[8].preview='_'
+2026-09-30T18:45:34.101Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[9].preview='points'
+2026-09-30T18:45:34.223Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[10].preview='":["'
+2026-09-30T18:45:34.355Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[11].preview='destination'
+2026-09-30T18:45:34.485Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[12].preview='_'
+2026-09-30T18:45:34.618Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[13].preview='reason'
+2026-09-30T18:45:34.735Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[14].preview='"],"'
+2026-09-30T18:45:34.869Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[15].preview='follow'
+2026-09-30T18:45:34.992Z D/LiteRtLM [Thread-20] stream[key=fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227 runId=1] msg#16 rawChunkLen=2 deltaLen=2 emittedChars=61
+2026-09-30T18:45:34.993Z D/LiteRtRepository [main] stream[rid=1 msg#16] done=false deltaLen=2 outLen=61 outPreview='{"score":75,"missing_points":["destination_reason"],"followup' deltaPreview='up'
+2026-09-30T18:45:34.993Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[16].preview='up'
+2026-09-30T18:45:35.118Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[17].preview='_'
+2026-09-30T18:45:35.243Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[18].preview='needed'
+2026-09-30T18:45:35.370Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[19].preview='":'
+2026-09-30T18:45:35.493Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[20].preview='true'
+2026-09-30T18:45:35.613Z D/AiViewModel [DefaultDispatcher-worker-1] run[1] chunk[21].preview='}'
+2026-09-30T18:45:35.742Z D/LiteRtLM [Thread-26] state[logicalDone] key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=1 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=752841609 lastTermAt=752841738
+2026-09-30T18:45:35.743Z D/LiteRtLM [Thread-26] state[nativeDone:beforeRelease] key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=1 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=752841609 lastTermAt=752841738
+2026-09-30T18:45:35.743Z W/LiteRtLM [Thread-26] Inference timing: key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=1 ttftMs=7884 dispatchMs=55 postDispatchTtftMs=7829 totalMs=10525 callbacks=21 outputChars=75 cancelled=false error=false requestTotalMs=10528
+2026-09-30T18:45:35.743Z I/LiteRtLM [Thread-26] LiteRT completion: runId=1 terminal=normal_onDone phase=unavailable engineTokenCapacity=4096 prefillTokens=-1 decodeTokens=-1 kvTokens=-1 outputChars=75 callbacks=21
+2026-09-30T18:45:35.744Z D/LiteRtRepository [main] [1] logical done=true; responseClosed=true; waiting native cleanup
+2026-09-30T18:45:35.745Z D/LiteRtRepository [main] [1] native cleanup safepoint
+2026-09-30T18:45:35.746Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] stats: chunks=21, chars=75, raw.len=75
+2026-09-30T18:45:35.746Z D/SLM [slm-jni] resetConversationAndWait: model='Gemma3n4B' image=false audio=false
+2026-09-30T18:45:35.747Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] sha(raw)=5cae570a54be3f8f47ca27b7d5177524819bafd8ae7ae48b73d2e15bd2ab36b1
+2026-09-30T18:45:35.747Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] rawVisible='{"score":75,"missing_points":["destination_reason"],"followup_needed":true}'
+2026-09-30T18:45:35.755Z D/AiViewModel [DefaultDispatcher-worker-2] run[1]: EVAL_JSON parsed score=75 followups=0 fu0=''
+2026-09-30T18:45:35.755Z D/AiViewModel [DefaultDispatcher-worker-2] stepHistory+ runId=1 phase=EVAL mode=EVAL_JSON raw.len=75 score=75 FU=0 FU0='<none>' timeout=false err=null
+2026-09-30T18:45:35.755Z I/AiViewModel [DefaultDispatcher-worker-2] run[1] done: phase=EVAL mode=EVAL_JSON score=75 FU0.len=0 FU0.sha16=none commit=true err=<none>
+2026-09-30T18:45:35.756Z D/LiteRtRepository [DefaultDispatcher-worker-5] [1] Conversation reset completed after safepoint
+2026-09-30T18:45:35.756Z I/FullTextOut [DefaultDispatcher-worker-2] [part=000] run[1]: RawTextOut
+{"score":75,"missing_points":["destination_reason"],"followup_needed":true}
+2026-09-30T18:45:35.760Z D/LiteRtRepository [DefaultDispatcher-worker-5] [part=000] [1] FINALIZE: native-terminated
+=== AI TRACE STATS (LiteRtRepository) ===
+rid=1 model='Gemma3n4B' reason=native-terminated
+totalMs=10552 inferenceMs=10548 firstTokenMs=7893
+logicalDone=true logicalDoneAt=752841740
+nativeTerminated=true cancelTag='null'
+lastDeltaMsAgo=144 lastEventMsAgo=12
+chunks=21 emittedChars=75 capturedAll=true out.len=75
+=== OUTPUT (FULL) ===
+{"score":75,"missing_points":["destination_reason"],"followup_needed":true}
+2026-09-30T18:45:35.763Z D/SurveyVM [DefaultDispatcher-worker-2] getFollowupPrompt[Q16] -> len=501 evalLen=75
+2026-09-30T18:45:35.764Z D/AiViewModel [DefaultDispatcher-worker-2] run[2]: mode=FOLLOWUP_JSON_OR_TEXT phase=FOLLOWUP commit=false prompt.len=501, fullPrompt.len=1463, timeoutMs=120000
+2026-09-30T18:45:35.764Z D/AiViewModel [DefaultDispatcher-worker-2] run[2]: sha(prompt)=ffe6091f4ea0cf5766120195f7e954cbcff65b33ccf82047be8286f61b5bb965 sha(full)=4c40bc2c7e7156a07dde6676bd4c071bdccd67dfa0e0d4159bf4e6eb3a51695c
+2026-09-30T18:45:35.765Z I/FullPromptReview [DefaultDispatcher-worker-2] [part=000] run[2]: phase=FOLLOWUP FullPrompt
+Evaluate only the original survey target using all supplied answers.
+Uliza swali moja tu la Kiswahili, fupi na la mazungumzo ya kawaida kwa mhojiwa. Uliza moja kwa moja taarifa moja tu ambayo imeorodheshwa kuwa inakosekana katika EVAL_JSON. Tumia Lengo la jibu, jibu la awali na majibu ya ufuatiliaji yaliyopo kwa muktadha pekee. Usirudie au kufafanua tena swali lote la awali, wala usiulize taarifa ambayo tayari imetolewa. Tumia sentensi moja rahisi; usieleze kwa nini taarifa inahitajika, usitumie maneno ya kujaza kama "ili kujua" au "ili kuelewa", na usirudie nomino, dhana au kifungu bila sababu. Usiongeze malengo mapya, usibuni ukweli, wala usikisie jibu linalokosekana. Usichanganye taarifa nyingi zisizohusiana katika sentensi ndefu. Toa swali pekee kwenye mstari mmoja; hakuna JSON, alama, uchambuzi, lebo au nukuu.
+Liwe fupi, la moja kwa moja na lenye jambo moja tu.
+Swali moja la Kiswahili (Swahili), fupi, la mazungumzo na sentensi moja tu.
+INPUT:
+Lengo la jibu: mahali pa kawaida pa kuuza mahindi baada ya kuvuna na sababu ya kuchagua soko/mnunuzi huyo.
+Question: Kwa kawaida baada ya kuvuna, unauza mahindi yako wapi, na kwa nini unapendelea kuuza huko au kwa mnunuzi huyo?
+Original answer: Ninauza kwa mfanyabiashara wa kijijini.
+Answered followup pairs: 
+EVAL_JSON: {"score":75,"missing_points":["destination_reason"],"followup_needed":true}
+Resolved missing component:
+ID: destination_reason
+Description: Sababu ya kuchagua soko au mnunuzi huyo
+2026-09-30T18:45:35.766Z D/LiteRtRepository [DefaultDispatcher-worker-5] [2] request start model='Gemma3n4B' prompt.len=1463 sha=4c40bc2c7e7156a0 gateWaitMs=1
+2026-09-30T18:45:35.766Z D/LiteRtRepository [DefaultDispatcher-worker-5] [part=000] [2] PROMPT (FULL) sha=4c40bc2c7e7156a0
+Evaluate only the original survey target using all supplied answers.
+Uliza swali moja tu la Kiswahili, fupi na la mazungumzo ya kawaida kwa mhojiwa. Uliza moja kwa moja taarifa moja tu ambayo imeorodheshwa kuwa inakosekana katika EVAL_JSON. Tumia Lengo la jibu, jibu la awali na majibu ya ufuatiliaji yaliyopo kwa muktadha pekee. Usirudie au kufafanua tena swali lote la awali, wala usiulize taarifa ambayo tayari imetolewa. Tumia sentensi moja rahisi; usieleze kwa nini taarifa inahitajika, usitumie maneno ya kujaza kama "ili kujua" au "ili kuelewa", na usirudie nomino, dhana au kifungu bila sababu. Usiongeze malengo mapya, usibuni ukweli, wala usikisie jibu linalokosekana. Usichanganye taarifa nyingi zisizohusiana katika sentensi ndefu. Toa swali pekee kwenye mstari mmoja; hakuna JSON, alama, uchambuzi, lebo au nukuu.
+Liwe fupi, la moja kwa moja na lenye jambo moja tu.
+Swali moja la Kiswahili (Swahili), fupi, la mazungumzo na sentensi moja tu.
+INPUT:
+Lengo la jibu: mahali pa kawaida pa kuuza mahindi baada ya kuvuna na sababu ya kuchagua soko/mnunuzi huyo.
+Question: Kwa kawaida baada ya kuvuna, unauza mahindi yako wapi, na kwa nini unapendelea kuuza huko au kwa mnunuzi huyo?
+Original answer: Ninauza kwa mfanyabiashara wa kijijini.
+Answered followup pairs: 
+EVAL_JSON: {"score":75,"missing_points":["destination_reason"],"followup_needed":true}
+Resolved missing component:
+ID: destination_reason
+Description: Sababu ya kuchagua soko au mnunuzi huyo
+2026-09-30T18:45:35.767Z D/SLM [slm-jni] initializeIfNeeded: model='Gemma3n4B' image=false audio=false
+2026-09-30T18:45:35.767Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227'
+2026-09-30T18:45:35.768Z D/LiteRtRepository [DefaultDispatcher-worker-5] [2] initializeIfNeeded ok initMs=1
+2026-09-30T18:45:35.768Z D/SLM [slm-jni] runInference: model='Gemma3n4B' textLen=1463 images=0 audio=0
+2026-09-30T18:45:35.769Z D/LiteRtLM [DefaultDispatcher-worker-2] state[run:start] key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=2 active=true terminated=false logicalDone=false cancel=false pendingCancel=false lastMsgAt=752841765 lastTermAt=752841738
+2026-09-30T18:45:35.769Z D/LiteRtLM [DefaultDispatcher-worker-2] runInference start: key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=2 hasText=true originalTextLen=1463 effectiveTextLen=1463 images=0 audioClips=0
+2026-09-30T18:45:35.769Z D/LiteRtLM [DefaultDispatcher-worker-2] LiteRT-LM sendMessageAsync(text): key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=2 len=1463 maxOutputTokens=64
+2026-09-30T18:45:35.774Z D/LiteRtLM [DefaultDispatcher-worker-2] sendMessageAsync accepted: key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=2 dispatchMs=5
+2026-09-30T18:45:39.000Z W/LiteRtLM [Thread-29] Inference first output: key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=2 ttftMs=3231 dispatchMs=5 postDispatchTtftMs=3226 requestToFirstOutputMs=3231
+2026-09-30T18:45:39.001Z D/LiteRtLM [Thread-29] stream[key=fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227 runId=2] msg#1 rawChunkLen=3 deltaLen=3 emittedChars=3
+2026-09-30T18:45:39.001Z D/LiteRtRepository [main] stream[rid=2 msg#1] done=false deltaLen=3 outLen=3 outPreview='Kwa' deltaPreview='Kwa'
+2026-09-30T18:45:39.002Z D/AiViewModel [DefaultDispatcher-worker-2] run[2] chunk[1].preview='Kwa'
+2026-09-30T18:45:39.153Z D/AiViewModel [DefaultDispatcher-worker-2] run[2] chunk[2].preview='␠n'
+2026-09-30T18:45:39.269Z D/AiViewModel [DefaultDispatcher-worker-2] run[2] chunk[3].preview='ini'
+2026-09-30T18:45:39.392Z D/AiViewModel [DefaultDispatcher-worker-2] run[2] chunk[4].preview='␠un'
+2026-09-30T18:45:39.511Z D/AiViewModel [DefaultDispatcher-worker-2] run[2] chunk[5].preview='emp'
+2026-09-30T18:45:39.638Z D/AiViewModel [DefaultDispatcher-worker-2] run[2] chunk[6].preview='ende'
+2026-09-30T18:45:39.768Z D/AiViewModel [DefaultDispatcher-worker-2] run[2] chunk[7].preview='lea'
+2026-09-30T18:45:39.896Z D/LiteRtRepository [main] stream[rid=2 msg#8] done=false deltaLen=3 outLen=24 outPreview='Kwa nini unempendelea mf' deltaPreview=' mf'
+2026-09-30T18:45:39.896Z D/AiViewModel [DefaultDispatcher-worker-2] run[2] chunk[8].preview='␠mf'
+2026-09-30T18:45:40.017Z D/AiViewModel [DefaultDispatcher-worker-2] run[2] chunk[9].preview='any'
+2026-09-30T18:45:40.128Z D/AiViewModel [DefaultDispatcher-worker-2] run[2] chunk[10].preview='abi'
+2026-09-30T18:45:40.251Z D/AiViewModel [DefaultDispatcher-worker-2] run[2] chunk[11].preview='ash'
+2026-09-30T18:45:40.367Z D/AiViewModel [DefaultDispatcher-worker-2] run[2] chunk[12].preview='ara'
+2026-09-30T18:45:40.494Z D/AiViewModel [DefaultDispatcher-worker-2] run[2] chunk[13].preview='␠wa'
+2026-09-30T18:45:40.621Z D/AiViewModel [DefaultDispatcher-worker-2] run[2] chunk[14].preview='␠kij'
+2026-09-30T18:45:40.741Z D/AiViewModel [DefaultDispatcher-worker-2] run[2] chunk[15].preview='ij'
+2026-09-30T18:45:40.861Z D/LiteRtLM [Thread-44] stream[key=fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227 runId=2] msg#16 rawChunkLen=3 deltaLen=3 emittedChars=48
+2026-09-30T18:45:40.862Z D/LiteRtRepository [main] stream[rid=2 msg#16] done=false deltaLen=3 outLen=48 outPreview='Kwa nini unempendelea mfanyabiashara wa kijijini' deltaPreview='ini'
+2026-09-30T18:45:40.862Z D/AiViewModel [DefaultDispatcher-worker-2] run[2] chunk[16].preview='ini'
+2026-09-30T18:45:40.991Z D/AiViewModel [DefaultDispatcher-worker-2] run[2] chunk[17].preview='␠juu'
+2026-09-30T18:45:41.119Z D/AiViewModel [DefaultDispatcher-worker-2] run[2] chunk[18].preview='␠ya'
+2026-09-30T18:45:41.252Z D/AiViewModel [DefaultDispatcher-worker-2] run[2] chunk[19].preview='␠w'
+2026-09-30T18:45:41.375Z D/AiViewModel [DefaultDispatcher-worker-2] run[2] chunk[20].preview='alian'
+2026-09-30T18:45:41.509Z D/AiViewModel [DefaultDispatcher-worker-2] run[2] chunk[21].preview='zi'
+2026-09-30T18:45:41.641Z D/AiViewModel [DefaultDispatcher-worker-2] run[2] chunk[22].preview='␠w'
+2026-09-30T18:45:41.759Z D/AiViewModel [DefaultDispatcher-worker-2] run[2] chunk[23].preview='engine'
+2026-09-30T18:45:41.891Z D/LiteRtRepository [main] stream[rid=2 msg#24] done=false deltaLen=1 outLen=73 outPreview='Kwa nini unempendelea mfanyabiashara wa kijijini juu ya walianzi wengine?' deltaPreview='?'
+2026-09-30T18:45:41.891Z D/AiViewModel [DefaultDispatcher-worker-2] run[2] chunk[24].preview='?'
+2026-09-30T18:45:42.019Z D/LiteRtLM [Thread-53] state[logicalDone] key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=2 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=752847887 lastTermAt=752848015
+2026-09-30T18:45:42.019Z D/LiteRtLM [Thread-53] state[nativeDone:beforeRelease] key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=2 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=752847887 lastTermAt=752848015
+2026-09-30T18:45:42.019Z W/LiteRtLM [Thread-53] Inference timing: key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=2 ttftMs=3231 dispatchMs=5 postDispatchTtftMs=3226 totalMs=6250 callbacks=24 outputChars=73 cancelled=false error=false requestTotalMs=6250
+2026-09-30T18:45:42.019Z I/LiteRtLM [Thread-53] LiteRT completion: runId=2 terminal=normal_onDone phase=unavailable engineTokenCapacity=4096 prefillTokens=-1 decodeTokens=-1 kvTokens=-1 outputChars=73 callbacks=24
+2026-09-30T18:45:42.020Z D/LiteRtRepository [main] [2] logical done=true; responseClosed=true; waiting native cleanup
+2026-09-30T18:45:42.020Z D/LiteRtRepository [main] [2] native cleanup safepoint
+2026-09-30T18:45:42.020Z D/AiViewModel [DefaultDispatcher-worker-2] run[2] stats: chunks=24, chars=73, raw.len=73
+2026-09-30T18:45:42.021Z D/SLM [slm-jni] resetConversationAndWait: model='Gemma3n4B' image=false audio=false
+2026-09-30T18:45:42.021Z D/AiViewModel [DefaultDispatcher-worker-2] run[2] sha(raw)=76d89d1b225789e032e3a231926c9be32ea647b74907a11c6eaafb85af0beb78
+2026-09-30T18:45:42.021Z D/AiViewModel [DefaultDispatcher-worker-2] run[2] rawVisible='Kwa␠nini␠unempendelea␠mfanyabiashara␠wa␠kijijini␠juu␠ya␠walianzi␠wengine?'
+2026-09-30T18:45:42.023Z D/AiViewModel [DefaultDispatcher-worker-2] run[2]: FOLLOWUP parse extractorQ='Kwa␠nini␠unempendelea␠mfanyabiashara␠wa␠kijijini␠juu␠ya␠walianzi␠wengine?' textQ='Kwa␠nini␠unempendelea␠mfanyabiashara␠wa␠kijijini␠juu␠ya␠walianzi␠wengine?' best='Kwa␠nini␠unempendelea␠mfanyabiashara␠wa␠kijijini␠juu␠ya␠walianzi␠wengine?'
+2026-09-30T18:45:42.024Z D/AiViewModel [DefaultDispatcher-worker-2] stepHistory+ runId=2 phase=FOLLOWUP mode=FOLLOWUP_JSON_OR_TEXT raw.len=73 score=null FU=1 FU0='Kwa␠nini␠unempendelea␠mfanyabiashara␠wa␠kijijini␠juu␠ya␠walianzi␠wengine?' timeout=false err=null
+2026-09-30T18:45:42.024Z I/AiViewModel [DefaultDispatcher-worker-2] run[2] done: phase=FOLLOWUP mode=FOLLOWUP_JSON_OR_TEXT score=null FU0.len=73 FU0.sha16=76d89d1b225789e0 commit=false err=<none>
+2026-09-30T18:45:42.025Z I/FullTextOut [DefaultDispatcher-worker-2] [part=000] run[2]: RawTextOut
+Kwa nini unempendelea mfanyabiashara wa kijijini juu ya walianzi wengine?
+2026-09-30T18:45:42.026Z D/LiteRtRepository [DefaultDispatcher-worker-1] [2] Conversation reset completed after safepoint
+2026-09-30T18:45:42.028Z D/LiteRtRepository [DefaultDispatcher-worker-4] [part=000] [2] FINALIZE: native-terminated
+=== AI TRACE STATS (LiteRtRepository) ===
+rid=2 model='Gemma3n4B' reason=native-terminated
+totalMs=6261 inferenceMs=6259 firstTokenMs=3233
+logicalDone=true logicalDoneAt=752848016
+nativeTerminated=true cancelTag='null'
+lastDeltaMsAgo=136 lastEventMsAgo=7
+chunks=24 emittedChars=73 capturedAll=true out.len=73
+=== OUTPUT (FULL) ===
+Kwa nini unempendelea mfanyabiashara wa kijijini juu ya walianzi wengine?
+2026-09-30T18:48:30.164Z D/SurveyVM [main] push -> Review, navSize=20, stackSize=20
+2026-09-30T18:48:30.172Z D/SurveyVM [main] hasTwoStepPrompt[Review] -> false (eval=0, fu=0)
+2026-09-30T18:48:35.818Z I/AiViewModel [main] onCleared: ViewModel is being cleared -> stopCurrentRunInternal()
+2026-09-30T18:54:49.524Z D/SLM [main] buildModelConfig: accel=GPU maxTokens=4096 topK=64 topP=0.95 temperature=1.0
+2026-09-30T18:54:49.561Z D/LiteRtLM [DefaultDispatcher-worker-4] initializeIfNeeded: warm runtime already ready: key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227'
+2026-09-30T18:54:49.584Z D/AiTrace [main] Installed (enabled=true ringEnabled=true)
+2026-09-30T18:54:49.594Z D/SurveyVM [main] init -> Start, session=0, uuid=ae629135-e042-4069-886d-6ab15907b8c4, navSize=1, graphSize=22
+2026-09-30T18:54:49.606Z D/SurveyVM [main] config.validate -> issues=0
+2026-09-30T18:54:49.606Z D/SurveyVM [main] promptSources -> legacy=10, eval=0, follow=0
+2026-09-30T18:54:49.606Z D/SurveyVM [main] promptSources.preview -> legacy=[Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q7, Q8, Q9], eval=[], follow=[]
+2026-09-30T18:54:49.607Z D/SurveyVM [main] hasTwoStepPrompt[Q10] -> true (eval=179, fu=204)
+2026-09-30T18:54:49.607Z D/SurveyVM [main] hasTwoStepPrompt[Q11] -> true (eval=171, fu=196)
+2026-09-30T18:54:49.607Z D/SurveyVM [main] hasTwoStepPrompt[Q12] -> true (eval=159, fu=184)
+2026-09-30T18:54:49.607Z D/SurveyVM [main] hasTwoStepPrompt[Q13] -> true (eval=209, fu=234)
+2026-09-30T18:54:49.607Z D/SurveyVM [main] hasTwoStepPrompt[Q14] -> true (eval=150, fu=175)
+2026-09-30T18:54:49.607Z D/SurveyVM [main] hasTwoStepPrompt[Q15] -> true (eval=167, fu=192)
+2026-09-30T18:54:49.607Z D/SurveyVM [main] hasTwoStepPrompt[Q16] -> true (eval=194, fu=219)
+2026-09-30T18:54:49.607Z D/SurveyVM [main] hasTwoStepPrompt[Q7] -> true (eval=244, fu=155)
+2026-09-30T18:54:49.607Z D/SurveyVM [main] hasTwoStepPrompt[Q8] -> true (eval=186, fu=211)
+2026-09-30T18:54:49.607Z D/SurveyVM [main] hasTwoStepPrompt[Q9] -> true (eval=169, fu=194)
+2026-09-30T18:54:49.607Z D/SurveyVM [main] AI prompt coverage OK (aiCount=10)
+2026-09-30T18:54:49.787Z D/SLM [slm-jni] initializeIfNeeded: model='Gemma3n4B' image=false audio=false
+2026-09-30T18:54:49.788Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227'
+2026-09-30T18:54:49.788Z D/LiteRtRepository [main] warmUp: initializeIfNeeded ok gateWaitMs=1 initMs=2
+2026-09-30T18:54:49.788Z D/LiteRtRepository [main] warmUp: Engine ready; representative inference disabled totalMs=4
+2026-09-30T18:54:51.564Z D/SurveyVM [main] resetAudioRefs -> cleared
+2026-09-30T18:54:51.564Z D/SurveyVM [main] resetNavToStart -> key=com.negi.survey.vm.FlowHome@9913e64, navSize=1
+2026-09-30T18:54:51.564Z D/SurveyVM [main] resetToStart -> Start, session=1, uuid=0847f2e5-d1af-4040-ac1b-9bd1b59e9057, preserveDraft=true, draftLen=0
+2026-09-30T18:54:51.564Z D/SurveyVM [main] activateRunIfNeeded(advanceToNext:Introduction) -> runNoteLen=0, draftCleared=true, uuid=0847f2e5-d1af-4040-ac1b-9bd1b59e9057
+2026-09-30T18:54:51.564Z D/SurveyVM [main] push -> Introduction, navSize=2, stackSize=2
+2026-09-30T18:54:53.384Z D/SurveyVM [main] push -> Consent, navSize=3, stackSize=3
+2026-09-30T18:54:56.440Z D/SurveyVM [main] push -> Q1, navSize=4, stackSize=4
+2026-09-30T18:54:58.360Z D/SurveyVM [main] push -> Q2, navSize=5, stackSize=5
+2026-09-30T18:55:01.123Z D/SurveyVM [main] push -> Q3, navSize=6, stackSize=6
+2026-09-30T18:55:04.347Z D/SurveyVM [main] push -> Q4, navSize=7, stackSize=7
+2026-09-30T18:55:06.039Z D/SurveyVM [main] push -> Q5, navSize=8, stackSize=8
+2026-09-30T18:55:07.013Z D/SurveyVM [main] push -> Q6, navSize=9, stackSize=9
+2026-09-30T18:55:11.129Z D/SurveyVM [main] push -> Done, navSize=10, stackSize=10
+2026-09-30T18:55:18.330Z D/SurveyVM [main] resetAudioRefs -> cleared
+2026-09-30T18:55:18.331Z D/SurveyVM [main] resetNavToStart -> key=com.negi.survey.vm.FlowHome@9913e64, navSize=1
+2026-09-30T18:55:18.331Z D/SurveyVM [main] resetToStart -> Start, session=2, uuid=701eb995-b720-43a8-a7f0-303389ff06a9, preserveDraft=false, draftLen=0
+2026-09-30T18:55:18.332Z I/AiViewModel [main] onCleared: ViewModel is being cleared -> stopCurrentRunInternal()
+2026-09-30T18:55:23.954Z D/SLM [main] buildModelConfig: accel=GPU maxTokens=4096 topK=64 topP=0.95 temperature=1.0
+2026-09-30T18:55:23.988Z D/LiteRtLM [DefaultDispatcher-worker-3] initializeIfNeeded: warm runtime already ready: key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227'
+2026-09-30T18:55:24.015Z D/AiTrace [main] Installed (enabled=true ringEnabled=true)
+2026-09-30T18:55:24.028Z D/SurveyVM [main] init -> Start, session=0, uuid=00e5aa73-6abd-46b5-bfd8-b9e4411c32a2, navSize=1, graphSize=22
+2026-09-30T18:55:24.060Z D/SurveyVM [main] config.validate -> issues=0
+2026-09-30T18:55:24.060Z D/SurveyVM [main] promptSources -> legacy=10, eval=0, follow=0
+2026-09-30T18:55:24.061Z D/SurveyVM [main] promptSources.preview -> legacy=[Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q7, Q8, Q9], eval=[], follow=[]
+2026-09-30T18:55:24.061Z D/SurveyVM [main] hasTwoStepPrompt[Q10] -> true (eval=179, fu=204)
+2026-09-30T18:55:24.062Z D/SurveyVM [main] hasTwoStepPrompt[Q11] -> true (eval=171, fu=196)
+2026-09-30T18:55:24.062Z D/SurveyVM [main] hasTwoStepPrompt[Q12] -> true (eval=159, fu=184)
+2026-09-30T18:55:24.062Z D/SurveyVM [main] hasTwoStepPrompt[Q13] -> true (eval=209, fu=234)
+2026-09-30T18:55:24.063Z D/SurveyVM [main] hasTwoStepPrompt[Q14] -> true (eval=150, fu=175)
+2026-09-30T18:55:24.063Z D/SurveyVM [main] hasTwoStepPrompt[Q15] -> true (eval=167, fu=192)
+2026-09-30T18:55:24.063Z D/SurveyVM [main] hasTwoStepPrompt[Q16] -> true (eval=194, fu=219)
+2026-09-30T18:55:24.063Z D/SurveyVM [main] hasTwoStepPrompt[Q7] -> true (eval=244, fu=155)
+2026-09-30T18:55:24.063Z D/SurveyVM [main] hasTwoStepPrompt[Q8] -> true (eval=186, fu=211)
+2026-09-30T18:55:24.063Z D/SurveyVM [main] hasTwoStepPrompt[Q9] -> true (eval=169, fu=194)
+2026-09-30T18:55:24.063Z D/SurveyVM [main] AI prompt coverage OK (aiCount=10)
+2026-09-30T18:55:24.115Z D/SLM [slm-jni] initializeIfNeeded: model='Gemma3n4B' image=false audio=false
+2026-09-30T18:55:24.116Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227'
+2026-09-30T18:55:24.117Z D/LiteRtRepository [main] warmUp: initializeIfNeeded ok gateWaitMs=0 initMs=2
+2026-09-30T18:55:24.117Z D/LiteRtRepository [main] warmUp: Engine ready; representative inference disabled totalMs=3
+2026-09-30T18:55:25.207Z D/SurveyVM [main] resetAudioRefs -> cleared
+2026-09-30T18:55:25.207Z D/SurveyVM [main] resetNavToStart -> key=com.negi.survey.vm.FlowHome@9913e64, navSize=1
+2026-09-30T18:55:25.207Z D/SurveyVM [main] resetToStart -> Start, session=1, uuid=2a0236d2-84cf-4987-9f98-dcaeb0830fcb, preserveDraft=true, draftLen=0
+2026-09-30T18:55:25.208Z D/SurveyVM [main] activateRunIfNeeded(advanceToNext:Introduction) -> runNoteLen=0, draftCleared=true, uuid=2a0236d2-84cf-4987-9f98-dcaeb0830fcb
+2026-09-30T18:55:25.208Z D/SurveyVM [main] push -> Introduction, navSize=2, stackSize=2
+2026-09-30T18:55:27.655Z D/SurveyVM [main] push -> Consent, navSize=3, stackSize=3
+2026-09-30T18:55:30.254Z D/SurveyVM [main] push -> Q1, navSize=4, stackSize=4
+2026-09-30T18:55:31.796Z D/SurveyVM [main] push -> Q2, navSize=5, stackSize=5
+2026-09-30T18:55:33.363Z D/SurveyVM [main] push -> Q3, navSize=6, stackSize=6
+2026-09-30T18:55:37.769Z D/SurveyVM [main] push -> Q4, navSize=7, stackSize=7
+2026-09-30T18:55:39.293Z D/SurveyVM [main] push -> Q5, navSize=8, stackSize=8
+2026-09-30T18:55:40.202Z D/SurveyVM [main] push -> Q6, navSize=9, stackSize=9
+2026-09-30T18:55:43.234Z D/SurveyVM [main] push -> Q7, navSize=10, stackSize=10
+2026-09-30T18:55:43.266Z D/SurveyVM [main] hasTwoStepPrompt[Q7] -> true (eval=244, fu=155)
+2026-09-30T18:55:48.451Z D/SurveyVM [main] push -> Q8, navSize=11, stackSize=11
+2026-09-30T18:55:48.456Z D/SurveyVM [main] hasTwoStepPrompt[Q8] -> true (eval=186, fu=211)
+2026-09-30T18:55:48.706Z D/SurveyVM [main] push -> Q9, navSize=12, stackSize=12
+2026-09-30T18:55:48.715Z D/SurveyVM [main] hasTwoStepPrompt[Q9] -> true (eval=169, fu=194)
+2026-09-30T18:55:48.983Z D/SurveyVM [main] push -> Q10, navSize=13, stackSize=13
+2026-09-30T18:55:48.988Z D/SurveyVM [main] hasTwoStepPrompt[Q10] -> true (eval=179, fu=204)
+2026-09-30T18:55:49.400Z D/SurveyVM [main] push -> Q11, navSize=14, stackSize=14
+2026-09-30T18:55:49.408Z D/SurveyVM [main] hasTwoStepPrompt[Q11] -> true (eval=171, fu=196)
+2026-09-30T18:55:49.775Z D/SurveyVM [main] push -> Q12, navSize=15, stackSize=15
+2026-09-30T18:55:49.781Z D/SurveyVM [main] hasTwoStepPrompt[Q12] -> true (eval=159, fu=184)
+2026-09-30T18:55:50.183Z D/SurveyVM [main] push -> Q13, navSize=16, stackSize=16
+2026-09-30T18:55:50.192Z D/SurveyVM [main] hasTwoStepPrompt[Q13] -> true (eval=209, fu=234)
+2026-09-30T18:55:50.724Z D/SurveyVM [main] push -> Q14, navSize=17, stackSize=17
+2026-09-30T18:55:50.732Z D/SurveyVM [main] hasTwoStepPrompt[Q14] -> true (eval=150, fu=175)
+2026-09-30T18:55:51.523Z D/SurveyVM [main] push -> Q15, navSize=18, stackSize=18
+2026-09-30T18:55:51.531Z D/SurveyVM [main] hasTwoStepPrompt[Q15] -> true (eval=167, fu=192)
+2026-09-30T18:55:52.499Z D/SurveyVM [main] push -> Q16, navSize=19, stackSize=19
+2026-09-30T18:55:52.506Z D/SurveyVM [main] hasTwoStepPrompt[Q16] -> true (eval=194, fu=219)
+2026-09-30T18:55:59.870Z D/SurveyVM [main] getEvalPrompt[Q16] -> len=429
+2026-09-30T18:55:59.872Z D/AiViewModel [DefaultDispatcher-worker-3] run[1]: mode=EVAL_JSON phase=EVAL commit=true prompt.len=429, fullPrompt.len=2948, timeoutMs=120000
+2026-09-30T18:55:59.873Z D/AiViewModel [DefaultDispatcher-worker-3] run[1]: sha(prompt)=3a323e2ddb25c9a966cd97559895a7858281df8ba24343e6408aa103037b1e79 sha(full)=01ed80230d78047cd919a0e55d41e9f99eb7780c241101610f155ea83225b5f3
+2026-09-30T18:55:59.873Z I/FullPromptReview [DefaultDispatcher-worker-3] [part=000] run[1]: phase=EVAL FullPrompt
+Evaluate only the original survey target using all supplied answers.
+Return only compact JSON {"score":N,"missing_points":[],"followup_needed":false}. N must be an integer 1-100 for relevance, completeness and accuracy against the original target. Evaluate the original answer and all answered followup pairs together. Kabla ya kutoa JSON, linganisha kila taarifa inayodhaniwa kukosekana na jibu la awali na kila jozi ya swali la ufuatiliaji na jibu lake iliyojibiwa. Ikiwa jibu la ufuatiliaji lililojibiwa linatoa moja kwa moja taarifa hiyo, usiiweke katika missing_points. Hesabu upya score, missing_points, na followup_needed pamoja kama uamuzi mmoja wa mwisho unaolingana. Wakati Required component catalog ipo, tathmini kila kipengele cha catalog kivyake: missing_points inaweza kuwa na ID za vipengele vilivyosanidiwa pekee. Ondoa ID ambayo kipengele chake kimetolewa katika jibu la awali au jozi za maswali ya ufuatiliaji zilizojibiwa; kamwe usirudishe maelezo ya kipengele au maswali katika missing_points. Wakati Required components block ya zamani ipo, missing_points inaweza kuwa na maandishi halisi ya vipengele vilivyosanidiwa ambavyo bado havijajibiwa. Wakati hakuna catalog wala Required components block, missing_points inaweza kuandikwa kwa Kiswahili. Tofautisha uhusiano na ukamilifu. Jibu linaweza kuwa kuhusu mada husika lakini bado lisikamilike. Toa alama 90-100 tu wakati mhojiwa ametoa kwa wazi kila kipengele muhimu kinachohitajika katika Lengo la jibu na Swali. Usikisie maelezo yanayokosekana kutokana na maarifa ya jumla, uwezekano, au kauli tupu kwamba tukio lilitokea. Jibu fupi linaweza kuwa kamili. Jibu refu au linalohusu mada lakini linaloacha kipengele chochote muhimu kinachohitajika lipate chini ya 90. Kwa mfano, kusema kwamba tukio lilitokea bila kueleza athari iliyoombwa ni jibu lisilokamilika. Kanuni ya ulinganifu: ikiwa missing_points si tupu au followup_needed ni true, score lazima iwe nambari kamili kutoka 1 hadi 89. Alama 90-100 zinaruhusiwa tu wakati missing_points=[] na followup_needed=false. Usitumie score 90 kama alama ya mpaka wakati kuna kitu chochote kinachokosekana. For score below 90, missing_points must contain the specific missing or ambiguous target-required information and followup_needed must be true. Otherwise missing_points is empty and followup_needed is false. Do not generate a question. Do not penalize style or request information outside the target.
+Keep missing_points concise.
+One JSON object only; no markdown or generated question.
+INPUT:
+Lengo la jibu: mahali pa kawaida pa kuuza mahindi baada ya kuvuna na sababu ya kuchagua soko/mnunuzi huyo.
+Question: Kwa kawaida baada ya kuvuna, unauza mahindi yako wapi, na kwa nini unapendelea kuuza huko au kwa mnunuzi huyo?
+Original answer: ft gi
+Answered followup pairs: 
+Required component catalog:
+- sale_destination: Soko au mnunuzi wa kawaida baada ya mavuno
+- destination_reason: Sababu ya kuchagua soko au mnunuzi huyo
+2026-09-30T18:55:59.876Z D/LiteRtRepository [DefaultDispatcher-worker-4] [3] request start model='Gemma3n4B' prompt.len=2948 sha=01ed80230d78047c gateWaitMs=2
+2026-09-30T18:55:59.876Z D/LiteRtRepository [DefaultDispatcher-worker-4] [part=000] [3] PROMPT (FULL) sha=01ed80230d78047c
+Evaluate only the original survey target using all supplied answers.
+Return only compact JSON {"score":N,"missing_points":[],"followup_needed":false}. N must be an integer 1-100 for relevance, completeness and accuracy against the original target. Evaluate the original answer and all answered followup pairs together. Kabla ya kutoa JSON, linganisha kila taarifa inayodhaniwa kukosekana na jibu la awali na kila jozi ya swali la ufuatiliaji na jibu lake iliyojibiwa. Ikiwa jibu la ufuatiliaji lililojibiwa linatoa moja kwa moja taarifa hiyo, usiiweke katika missing_points. Hesabu upya score, missing_points, na followup_needed pamoja kama uamuzi mmoja wa mwisho unaolingana. Wakati Required component catalog ipo, tathmini kila kipengele cha catalog kivyake: missing_points inaweza kuwa na ID za vipengele vilivyosanidiwa pekee. Ondoa ID ambayo kipengele chake kimetolewa katika jibu la awali au jozi za maswali ya ufuatiliaji zilizojibiwa; kamwe usirudishe maelezo ya kipengele au maswali katika missing_points. Wakati Required components block ya zamani ipo, missing_points inaweza kuwa na maandishi halisi ya vipengele vilivyosanidiwa ambavyo bado havijajibiwa. Wakati hakuna catalog wala Required components block, missing_points inaweza kuandikwa kwa Kiswahili. Tofautisha uhusiano na ukamilifu. Jibu linaweza kuwa kuhusu mada husika lakini bado lisikamilike. Toa alama 90-100 tu wakati mhojiwa ametoa kwa wazi kila kipengele muhimu kinachohitajika katika Lengo la jibu na Swali. Usikisie maelezo yanayokosekana kutokana na maarifa ya jumla, uwezekano, au kauli tupu kwamba tukio lilitokea. Jibu fupi linaweza kuwa kamili. Jibu refu au linalohusu mada lakini linaloacha kipengele chochote muhimu kinachohitajika lipate chini ya 90. Kwa mfano, kusema kwamba tukio lilitokea bila kueleza athari iliyoombwa ni jibu lisilokamilika. Kanuni ya ulinganifu: ikiwa missing_points si tupu au followup_needed ni true, score lazima iwe nambari kamili kutoka 1 hadi 89. Alama 90-100 zinaruhusiwa tu wakati missing_points=[] na followup_needed=false. Usitumie score 90 kama alama ya mpaka wakati kuna kitu chochote kinachokosekana. For score below 90, missing_points must contain the specific missing or ambiguous target-required information and followup_needed must be true. Otherwise missing_points is empty and followup_needed is false. Do not generate a question. Do not penalize style or request information outside the target.
+Keep missing_points concise.
+One JSON object only; no markdown or generated question.
+INPUT:
+Lengo la jibu: mahali pa kawaida pa kuuza mahindi baada ya kuvuna na sababu ya kuchagua soko/mnunuzi huyo.
+Question: Kwa kawaida baada ya kuvuna, unauza mahindi yako wapi, na kwa nini unapendelea kuuza huko au kwa mnunuzi huyo?
+Original answer: ft gi
+Answered followup pairs: 
+Required component catalog:
+- sale_destination: Soko au mnunuzi wa kawaida baada ya mavuno
+- destination_reason: Sababu ya kuchagua soko au mnunuzi huyo
+2026-09-30T18:55:59.878Z D/SLM [slm-jni] initializeIfNeeded: model='Gemma3n4B' image=false audio=false
+2026-09-30T18:55:59.879Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227'
+2026-09-30T18:55:59.880Z D/LiteRtRepository [DefaultDispatcher-worker-4] [3] initializeIfNeeded ok initMs=4
+2026-09-30T18:55:59.881Z D/SLM [slm-jni] runInference: model='Gemma3n4B' textLen=2948 images=0 audio=0
+2026-09-30T18:55:59.882Z D/LiteRtLM [DefaultDispatcher-worker-4] state[run:start] key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=3 active=true terminated=false logicalDone=false cancel=false pendingCancel=false lastMsgAt=753465878 lastTermAt=752848015
+2026-09-30T18:55:59.882Z D/LiteRtLM [DefaultDispatcher-worker-4] runInference start: key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=3 hasText=true originalTextLen=2948 effectiveTextLen=2948 images=0 audioClips=0
+2026-09-30T18:55:59.882Z D/LiteRtLM [DefaultDispatcher-worker-4] LiteRT-LM sendMessageAsync(text): key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=3 len=2948 maxOutputTokens=64
+2026-09-30T18:55:59.948Z D/LiteRtLM [DefaultDispatcher-worker-4] sendMessageAsync accepted: key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=3 dispatchMs=66
+2026-09-30T18:56:07.123Z W/LiteRtLM [Thread-54] Inference first output: key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=3 ttftMs=7240 dispatchMs=66 postDispatchTtftMs=7174 requestToFirstOutputMs=7240
+2026-09-30T18:56:07.123Z D/LiteRtLM [Thread-54] stream[key=fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227 runId=3] msg#1 rawChunkLen=2 deltaLen=2 emittedChars=2
+2026-09-30T18:56:07.127Z D/LiteRtRepository [main] stream[rid=3 msg#1] done=false deltaLen=2 outLen=2 outPreview='{"' deltaPreview='{"'
+2026-09-30T18:56:07.127Z D/AiViewModel [DefaultDispatcher-worker-4] run[1] chunk[1].preview='{"'
+2026-09-30T18:56:07.235Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[2].preview='score'
+2026-09-30T18:56:07.352Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[3].preview='":'
+2026-09-30T18:56:07.486Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[4].preview='2'
+2026-09-30T18:56:07.621Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[5].preview='5'
+2026-09-30T18:56:07.746Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[6].preview=',"'
+2026-09-30T18:56:07.869Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[7].preview='missing'
+2026-09-30T18:56:07.993Z D/LiteRtRepository [main] stream[rid=3 msg#8] done=false deltaLen=1 outLen=21 outPreview='{"score":25,"missing_' deltaPreview='_'
+2026-09-30T18:56:07.993Z D/AiViewModel [DefaultDispatcher-worker-2] run[1] chunk[8].preview='_'
+2026-09-30T18:56:08.114Z D/AiViewModel [DefaultDispatcher-worker-4] run[1] chunk[9].preview='points'
+2026-09-30T18:56:08.244Z D/AiViewModel [DefaultDispatcher-worker-4] run[1] chunk[10].preview='":["'
+2026-09-30T18:56:08.377Z D/AiViewModel [DefaultDispatcher-worker-4] run[1] chunk[11].preview='sale'
+2026-09-30T18:56:08.510Z D/AiViewModel [DefaultDispatcher-worker-4] run[1] chunk[12].preview='_'
+2026-09-30T18:56:08.629Z D/AiViewModel [DefaultDispatcher-worker-4] run[1] chunk[13].preview='destination'
+2026-09-30T18:56:08.760Z D/AiViewModel [DefaultDispatcher-worker-4] run[1] chunk[14].preview='","'
+2026-09-30T18:56:08.885Z D/AiViewModel [DefaultDispatcher-worker-4] run[1] chunk[15].preview='destination'
+2026-09-30T18:56:09.012Z D/LiteRtLM [Thread-69] stream[key=fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227 runId=3] msg#16 rawChunkLen=1 deltaLen=1 emittedChars=62
+2026-09-30T18:56:09.013Z D/LiteRtRepository [main] stream[rid=3 msg#16] done=false deltaLen=1 outLen=62 outPreview='{"score":25,"missing_points":["sale_destination","destination_' deltaPreview='_'
+2026-09-30T18:56:09.013Z D/AiViewModel [DefaultDispatcher-worker-4] run[1] chunk[16].preview='_'
+2026-09-30T18:56:09.138Z D/AiViewModel [DefaultDispatcher-worker-4] run[1] chunk[17].preview='reason'
+2026-09-30T18:56:09.261Z D/AiViewModel [DefaultDispatcher-worker-4] run[1] chunk[18].preview='"],'
+2026-09-30T18:56:09.386Z D/AiViewModel [DefaultDispatcher-worker-4] run[1] chunk[19].preview='␠"'
+2026-09-30T18:56:09.511Z D/AiViewModel [DefaultDispatcher-worker-4] run[1] chunk[20].preview='follow'
+2026-09-30T18:56:09.643Z D/AiViewModel [DefaultDispatcher-worker-4] run[1] chunk[21].preview='up'
+2026-09-30T18:56:09.765Z D/AiViewModel [DefaultDispatcher-worker-4] run[1] chunk[22].preview='_'
+2026-09-30T18:56:09.886Z D/AiViewModel [DefaultDispatcher-worker-4] run[1] chunk[23].preview='needed'
+2026-09-30T18:56:10.005Z D/LiteRtRepository [main] stream[rid=3 msg#24] done=false deltaLen=2 outLen=90 outPreview='{"score":25,"missing_points":["sale_destination","destination_reason"], "followup_needed":' deltaPreview='":'
+2026-09-30T18:56:10.005Z D/AiViewModel [DefaultDispatcher-worker-4] run[1] chunk[24].preview='":'
+2026-09-30T18:56:10.137Z D/AiViewModel [DefaultDispatcher-worker-4] run[1] chunk[25].preview='true'
+2026-09-30T18:56:10.259Z D/AiViewModel [DefaultDispatcher-worker-4] run[1] chunk[26].preview='}'
+2026-09-30T18:56:10.383Z D/LiteRtLM [Thread-80] state[logicalDone] key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=3 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=753476255 lastTermAt=753476379
+2026-09-30T18:56:10.387Z D/LiteRtLM [Thread-80] state[nativeDone:beforeRelease] key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=3 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=753476255 lastTermAt=753476379
+2026-09-30T18:56:10.387Z W/LiteRtLM [Thread-80] Inference timing: key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=3 ttftMs=7240 dispatchMs=66 postDispatchTtftMs=7174 totalMs=10501 callbacks=26 outputChars=95 cancelled=false error=false requestTotalMs=10501
+2026-09-30T18:56:10.387Z I/LiteRtLM [Thread-80] LiteRT completion: runId=3 terminal=normal_onDone phase=unavailable engineTokenCapacity=4096 prefillTokens=-1 decodeTokens=-1 kvTokens=-1 outputChars=95 callbacks=26
+2026-09-30T18:56:10.388Z D/LiteRtRepository [main] [3] logical done=true; responseClosed=true; waiting native cleanup
+2026-09-30T18:56:10.388Z D/AiViewModel [DefaultDispatcher-worker-4] run[1] stats: chunks=26, chars=95, raw.len=95
+2026-09-30T18:56:10.388Z D/LiteRtRepository [main] [3] native cleanup safepoint
+2026-09-30T18:56:10.389Z D/SLM [slm-jni] resetConversationAndWait: model='Gemma3n4B' image=false audio=false
+2026-09-30T18:56:10.390Z D/AiViewModel [DefaultDispatcher-worker-4] run[1] sha(raw)=dedeb616fb4c9e757c610bf7602c21e0d65f0702dfac21bbb2b7034cc583a6a0
+2026-09-30T18:56:10.390Z D/AiViewModel [DefaultDispatcher-worker-4] run[1] rawVisible='{"score":25,"missing_points":["sale_destination","destination_reason"],␠"followup_needed":true}'
+2026-09-30T18:56:10.395Z D/AiViewModel [DefaultDispatcher-worker-4] run[1]: EVAL_JSON parsed score=25 followups=0 fu0=''
+2026-09-30T18:56:10.396Z D/AiViewModel [DefaultDispatcher-worker-4] stepHistory+ runId=1 phase=EVAL mode=EVAL_JSON raw.len=95 score=25 FU=0 FU0='<none>' timeout=false err=null
+2026-09-30T18:56:10.396Z I/AiViewModel [DefaultDispatcher-worker-4] run[1] done: phase=EVAL mode=EVAL_JSON score=25 FU0.len=0 FU0.sha16=none commit=true err=<none>
+2026-09-30T18:56:10.396Z I/FullTextOut [DefaultDispatcher-worker-4] [part=000] run[1]: RawTextOut
+{"score":25,"missing_points":["sale_destination","destination_reason"], "followup_needed":true}
+2026-09-30T18:56:10.398Z D/SurveyVM [DefaultDispatcher-worker-4] getFollowupPrompt[Q16] -> len=573 evalLen=95
+2026-09-30T18:56:10.400Z D/LiteRtRepository [DefaultDispatcher-worker-3] [3] Conversation reset completed after safepoint
+2026-09-30T18:56:10.400Z D/AiViewModel [DefaultDispatcher-worker-4] run[2]: mode=FOLLOWUP_JSON_OR_TEXT phase=FOLLOWUP commit=false prompt.len=573, fullPrompt.len=1535, timeoutMs=120000
+2026-09-30T18:56:10.401Z D/AiViewModel [DefaultDispatcher-worker-4] run[2]: sha(prompt)=6c3dd4d7462c4e1c7dcded02d594e45a59c07e1ff83e8a654534997d2839267f sha(full)=f4ef655939d24761c0835afa4fedf0382714b2510703cc2dd68dd219734e848f
+2026-09-30T18:56:10.402Z I/FullPromptReview [DefaultDispatcher-worker-4] [part=000] run[2]: phase=FOLLOWUP FullPrompt
+Evaluate only the original survey target using all supplied answers.
+Uliza swali moja tu la Kiswahili, fupi na la mazungumzo ya kawaida kwa mhojiwa. Uliza moja kwa moja taarifa moja tu ambayo imeorodheshwa kuwa inakosekana katika EVAL_JSON. Tumia Lengo la jibu, jibu la awali na majibu ya ufuatiliaji yaliyopo kwa muktadha pekee. Usirudie au kufafanua tena swali lote la awali, wala usiulize taarifa ambayo tayari imetolewa. Tumia sentensi moja rahisi; usieleze kwa nini taarifa inahitajika, usitumie maneno ya kujaza kama "ili kujua" au "ili kuelewa", na usirudie nomino, dhana au kifungu bila sababu. Usiongeze malengo mapya, usibuni ukweli, wala usikisie jibu linalokosekana. Usichanganye taarifa nyingi zisizohusiana katika sentensi ndefu. Toa swali pekee kwenye mstari mmoja; hakuna JSON, alama, uchambuzi, lebo au nukuu.
+Liwe fupi, la moja kwa moja na lenye jambo moja tu.
+Swali moja la Kiswahili (Swahili), fupi, la mazungumzo na sentensi moja tu.
+INPUT:
+Lengo la jibu: mahali pa kawaida pa kuuza mahindi baada ya kuvuna na sababu ya kuchagua soko/mnunuzi huyo.
+Question: Kwa kawaida baada ya kuvuna, unauza mahindi yako wapi, na kwa nini unapendelea kuuza huko au kwa mnunuzi huyo?
+Original answer: ft gi
+Answered followup pairs: 
+EVAL_JSON: {"score":25,"missing_points":["sale_destination","destination_reason"], "followup_needed":true}
+Resolved missing components:
+- ID: sale_destination
+  Description: Soko au mnunuzi wa kawaida baada ya mavuno
+- ID: destination_reason
+  Description: Sababu ya kuchagua soko au mnunuzi huyo
+2026-09-30T18:56:10.402Z D/LiteRtRepository [DefaultDispatcher-worker-3] [part=000] [3] FINALIZE: native-terminated
+=== AI TRACE STATS (LiteRtRepository) ===
+rid=3 model='Gemma3n4B' reason=native-terminated
+totalMs=10525 inferenceMs=10520 firstTokenMs=7247
+logicalDone=true logicalDoneAt=753476384
+nativeTerminated=true cancelTag='null'
+lastDeltaMsAgo=141 lastEventMsAgo=11
+chunks=26 emittedChars=95 capturedAll=true out.len=95
+=== OUTPUT (FULL) ===
+{"score":25,"missing_points":["sale_destination","destination_reason"], "followup_needed":true}
+2026-09-30T18:56:10.404Z D/LiteRtRepository [DefaultDispatcher-worker-4] [4] request start model='Gemma3n4B' prompt.len=1535 sha=f4ef655939d24761 gateWaitMs=1
+2026-09-30T18:56:10.405Z D/LiteRtRepository [DefaultDispatcher-worker-4] [part=000] [4] PROMPT (FULL) sha=f4ef655939d24761
+Evaluate only the original survey target using all supplied answers.
+Uliza swali moja tu la Kiswahili, fupi na la mazungumzo ya kawaida kwa mhojiwa. Uliza moja kwa moja taarifa moja tu ambayo imeorodheshwa kuwa inakosekana katika EVAL_JSON. Tumia Lengo la jibu, jibu la awali na majibu ya ufuatiliaji yaliyopo kwa muktadha pekee. Usirudie au kufafanua tena swali lote la awali, wala usiulize taarifa ambayo tayari imetolewa. Tumia sentensi moja rahisi; usieleze kwa nini taarifa inahitajika, usitumie maneno ya kujaza kama "ili kujua" au "ili kuelewa", na usirudie nomino, dhana au kifungu bila sababu. Usiongeze malengo mapya, usibuni ukweli, wala usikisie jibu linalokosekana. Usichanganye taarifa nyingi zisizohusiana katika sentensi ndefu. Toa swali pekee kwenye mstari mmoja; hakuna JSON, alama, uchambuzi, lebo au nukuu.
+Liwe fupi, la moja kwa moja na lenye jambo moja tu.
+Swali moja la Kiswahili (Swahili), fupi, la mazungumzo na sentensi moja tu.
+INPUT:
+Lengo la jibu: mahali pa kawaida pa kuuza mahindi baada ya kuvuna na sababu ya kuchagua soko/mnunuzi huyo.
+Question: Kwa kawaida baada ya kuvuna, unauza mahindi yako wapi, na kwa nini unapendelea kuuza huko au kwa mnunuzi huyo?
+Original answer: ft gi
+Answered followup pairs: 
+EVAL_JSON: {"score":25,"missing_points":["sale_destination","destination_reason"], "followup_needed":true}
+Resolved missing components:
+- ID: sale_destination
+  Description: Soko au mnunuzi wa kawaida baada ya mavuno
+- ID: destination_reason
+  Description: Sababu ya kuchagua soko au mnunuzi huyo
+2026-09-30T18:56:10.405Z D/SLM [slm-jni] initializeIfNeeded: model='Gemma3n4B' image=false audio=false
+2026-09-30T18:56:10.405Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227'
+2026-09-30T18:56:10.406Z D/LiteRtRepository [DefaultDispatcher-worker-4] [4] initializeIfNeeded ok initMs=1
+2026-09-30T18:56:10.406Z D/SLM [slm-jni] runInference: model='Gemma3n4B' textLen=1535 images=0 audio=0
+2026-09-30T18:56:10.407Z D/LiteRtLM [DefaultDispatcher-worker-3] state[run:start] key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=4 active=true terminated=false logicalDone=false cancel=false pendingCancel=false lastMsgAt=753476403 lastTermAt=753476379
+2026-09-30T18:56:10.407Z D/LiteRtLM [DefaultDispatcher-worker-3] runInference start: key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=4 hasText=true originalTextLen=1535 effectiveTextLen=1535 images=0 audioClips=0
+2026-09-30T18:56:10.407Z D/LiteRtLM [DefaultDispatcher-worker-3] LiteRT-LM sendMessageAsync(text): key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=4 len=1535 maxOutputTokens=64
+2026-09-30T18:56:10.413Z D/LiteRtLM [DefaultDispatcher-worker-3] sendMessageAsync accepted: key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=4 dispatchMs=6
+2026-09-30T18:56:13.623Z W/LiteRtLM [Thread-81] Inference first output: key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=4 ttftMs=3216 dispatchMs=6 postDispatchTtftMs=3210 requestToFirstOutputMs=3216
+2026-09-30T18:56:13.624Z D/LiteRtLM [Thread-81] stream[key=fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227 runId=4] msg#1 rawChunkLen=2 deltaLen=2 emittedChars=2
+2026-09-30T18:56:13.627Z D/LiteRtRepository [main] stream[rid=4 msg#1] done=false deltaLen=2 outLen=2 outPreview='Un' deltaPreview='Un'
+2026-09-30T18:56:13.627Z D/AiViewModel [DefaultDispatcher-worker-3] run[2] chunk[1].preview='Un'
+2026-09-30T18:56:13.751Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[2].preview='au'
+2026-09-30T18:56:13.877Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[3].preview='za'
+2026-09-30T18:56:14.011Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[4].preview='␠mah'
+2026-09-30T18:56:14.136Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[5].preview='indi'
+2026-09-30T18:56:14.273Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[6].preview='␠yako'
+2026-09-30T18:56:14.407Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[7].preview='␠w'
+2026-09-30T18:56:14.547Z D/LiteRtRepository [main] stream[rid=4 msg#8] done=false deltaLen=3 outLen=24 outPreview='Unauza mahindi yako wapi' deltaPreview='api'
+2026-09-30T18:56:14.547Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[8].preview='api'
+2026-09-30T18:56:14.677Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[9].preview='␠baada'
+2026-09-30T18:56:14.811Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[10].preview='␠ya'
+2026-09-30T18:56:14.935Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[11].preview='␠kuv'
+2026-09-30T18:56:15.061Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[12].preview='una'
+2026-09-30T18:56:15.196Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[13].preview='␠na'
+2026-09-30T18:56:15.318Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[14].preview='␠kwa'
+2026-09-30T18:56:15.438Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[15].preview='␠n'
+2026-09-30T18:56:15.565Z D/LiteRtLM [Thread-96] stream[key=fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227 runId=4] msg#16 rawChunkLen=3 deltaLen=3 emittedChars=52
+2026-09-30T18:56:15.567Z D/LiteRtRepository [main] stream[rid=4 msg#16] done=false deltaLen=3 outLen=52 outPreview='Unauza mahindi yako wapi baada ya kuvuna na kwa nini' deltaPreview='ini'
+2026-09-30T18:56:15.567Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] chunk[16].preview='ini'
+2026-09-30T18:56:15.693Z D/AiViewModel [DefaultDispatcher-worker-3] run[2] chunk[17].preview='␠un'
+2026-09-30T18:56:15.814Z D/AiViewModel [DefaultDispatcher-worker-3] run[2] chunk[18].preview='achan'
+2026-09-30T18:56:15.955Z D/AiViewModel [DefaultDispatcher-worker-3] run[2] chunk[19].preview='ua'
+2026-09-30T18:56:16.093Z D/AiViewModel [DefaultDispatcher-worker-3] run[2] chunk[20].preview='␠hivyo'
+2026-09-30T18:56:16.238Z D/AiViewModel [DefaultDispatcher-worker-3] run[2] chunk[21].preview='?'
+2026-09-30T18:56:16.359Z D/LiteRtLM [Thread-102] state[logicalDone] key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=4 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=753482233 lastTermAt=753482356
+2026-09-30T18:56:16.360Z D/LiteRtLM [Thread-102] state[nativeDone:beforeRelease] key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=4 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=753482233 lastTermAt=753482356
+2026-09-30T18:56:16.360Z W/LiteRtLM [Thread-102] Inference timing: key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=4 ttftMs=3216 dispatchMs=6 postDispatchTtftMs=3210 totalMs=5953 callbacks=21 outputChars=69 cancelled=false error=false requestTotalMs=5953
+2026-09-30T18:56:16.360Z I/LiteRtLM [Thread-102] LiteRT completion: runId=4 terminal=normal_onDone phase=unavailable engineTokenCapacity=4096 prefillTokens=-1 decodeTokens=-1 kvTokens=-1 outputChars=69 callbacks=21
+2026-09-30T18:56:16.361Z D/LiteRtRepository [main] [4] logical done=true; responseClosed=true; waiting native cleanup
+2026-09-30T18:56:16.361Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] stats: chunks=21, chars=69, raw.len=69
+2026-09-30T18:56:16.361Z D/LiteRtRepository [main] [4] native cleanup safepoint
+2026-09-30T18:56:16.361Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] sha(raw)=a240b464e37b8abe2c4bda68887e88ae8c008264cbc2cff726eccf221c785ea9
+2026-09-30T18:56:16.361Z D/SLM [slm-jni] resetConversationAndWait: model='Gemma3n4B' image=false audio=false
+2026-09-30T18:56:16.362Z D/AiViewModel [DefaultDispatcher-worker-4] run[2] rawVisible='Unauza␠mahindi␠yako␠wapi␠baada␠ya␠kuvuna␠na␠kwa␠nini␠unachanua␠hivyo?'
+2026-09-30T18:56:16.363Z D/AiViewModel [DefaultDispatcher-worker-4] run[2]: FOLLOWUP parse extractorQ='Unauza␠mahindi␠yako␠wapi␠baada␠ya␠kuvuna␠na␠kwa␠nini␠unachanua␠hivyo?' textQ='Unauza␠mahindi␠yako␠wapi␠baada␠ya␠kuvuna␠na␠kwa␠nini␠unachanua␠hivyo?' best='Unauza␠mahindi␠yako␠wapi␠baada␠ya␠kuvuna␠na␠kwa␠nini␠unachanua␠hivyo?'
+2026-09-30T18:56:16.363Z D/AiViewModel [DefaultDispatcher-worker-4] stepHistory+ runId=2 phase=FOLLOWUP mode=FOLLOWUP_JSON_OR_TEXT raw.len=69 score=null FU=1 FU0='Unauza␠mahindi␠yako␠wapi␠baada␠ya␠kuvuna␠na␠kwa␠nini␠unachanua␠hivyo?' timeout=false err=null
+2026-09-30T18:56:16.363Z I/AiViewModel [DefaultDispatcher-worker-4] run[2] done: phase=FOLLOWUP mode=FOLLOWUP_JSON_OR_TEXT score=null FU0.len=69 FU0.sha16=a240b464e37b8abe commit=false err=<none>
+2026-09-30T18:56:16.363Z I/FullTextOut [DefaultDispatcher-worker-4] [part=000] run[2]: RawTextOut
+Unauza mahindi yako wapi baada ya kuvuna na kwa nini unachanua hivyo?
+2026-09-30T18:56:16.366Z D/LiteRtRepository [DefaultDispatcher-worker-1] [4] Conversation reset completed after safepoint
+2026-09-30T18:56:16.368Z D/LiteRtRepository [DefaultDispatcher-worker-4] [part=000] [4] FINALIZE: native-terminated
+=== AI TRACE STATS (LiteRtRepository) ===
+rid=4 model='Gemma3n4B' reason=native-terminated
+totalMs=5964 inferenceMs=5962 firstTokenMs=3221
+logicalDone=true logicalDoneAt=753482356
+nativeTerminated=true cancelTag='null'
+lastDeltaMsAgo=130 lastEventMsAgo=7
+chunks=21 emittedChars=69 capturedAll=true out.len=69
+=== OUTPUT (FULL) ===
+Unauza mahindi yako wapi baada ya kuvuna na kwa nini unachanua hivyo?
+2026-09-30T18:56:18.689Z D/SurveyVM [main] push -> Review, navSize=20, stackSize=20
+2026-09-30T18:56:18.698Z D/SurveyVM [main] hasTwoStepPrompt[Review] -> false (eval=0, fu=0)
+2026-09-30T18:58:14.100Z D/SurveyVM [main] backToPrevious -> Q16 (runActive=true, uiLen=0, runLen=0, draftLen=0)
+2026-09-30T18:58:14.131Z D/SurveyVM [main] hasTwoStepPrompt[Q16] -> true (eval=194, fu=219)
+2026-09-30T18:58:31.827Z D/SurveyVM [main] getEvalPrompt[Q16] -> len=561
+2026-09-30T18:58:31.835Z D/AiViewModel [DefaultDispatcher-worker-4] run[3]: mode=EVAL_JSON phase=EVAL commit=true prompt.len=561, fullPrompt.len=3080, timeoutMs=120000
+2026-09-30T18:58:31.839Z D/AiViewModel [DefaultDispatcher-worker-4] run[3]: sha(prompt)=1f0b960b4d785a67c57622cc493b5330ba7fa116863434483421b4b9a7f01ca1 sha(full)=6fce8f7e6d62e490afcb2670c7411e537139f629dc72cf725831e8c0a5255c17
+2026-09-30T18:58:31.840Z I/FullPromptReview [DefaultDispatcher-worker-4] [part=000] run[3]: phase=EVAL FullPrompt
+Evaluate only the original survey target using all supplied answers.
+Return only compact JSON {"score":N,"missing_points":[],"followup_needed":false}. N must be an integer 1-100 for relevance, completeness and accuracy against the original target. Evaluate the original answer and all answered followup pairs together. Kabla ya kutoa JSON, linganisha kila taarifa inayodhaniwa kukosekana na jibu la awali na kila jozi ya swali la ufuatiliaji na jibu lake iliyojibiwa. Ikiwa jibu la ufuatiliaji lililojibiwa linatoa moja kwa moja taarifa hiyo, usiiweke katika missing_points. Hesabu upya score, missing_points, na followup_needed pamoja kama uamuzi mmoja wa mwisho unaolingana. Wakati Required component catalog ipo, tathmini kila kipengele cha catalog kivyake: missing_points inaweza kuwa na ID za vipengele vilivyosanidiwa pekee. Ondoa ID ambayo kipengele chake kimetolewa katika jibu la awali au jozi za maswali ya ufuatiliaji zilizojibiwa; kamwe usirudishe maelezo ya kipengele au maswali katika missing_points. Wakati Required components block ya zamani ipo, missing_points inaweza kuwa na maandishi halisi ya vipengele vilivyosanidiwa ambavyo bado havijajibiwa. Wakati hakuna catalog wala Required components block, missing_points inaweza kuandikwa kwa Kiswahili. Tofautisha uhusiano na ukamilifu. Jibu linaweza kuwa kuhusu mada husika lakini bado lisikamilike. Toa alama 90-100 tu wakati mhojiwa ametoa kwa wazi kila kipengele muhimu kinachohitajika katika Lengo la jibu na Swali. Usikisie maelezo yanayokosekana kutokana na maarifa ya jumla, uwezekano, au kauli tupu kwamba tukio lilitokea. Jibu fupi linaweza kuwa kamili. Jibu refu au linalohusu mada lakini linaloacha kipengele chochote muhimu kinachohitajika lipate chini ya 90. Kwa mfano, kusema kwamba tukio lilitokea bila kueleza athari iliyoombwa ni jibu lisilokamilika. Kanuni ya ulinganifu: ikiwa missing_points si tupu au followup_needed ni true, score lazima iwe nambari kamili kutoka 1 hadi 89. Alama 90-100 zinaruhusiwa tu wakati missing_points=[] na followup_needed=false. Usitumie score 90 kama alama ya mpaka wakati kuna kitu chochote kinachokosekana. For score below 90, missing_points must contain the specific missing or ambiguous target-required information and followup_needed must be true. Otherwise missing_points is empty and followup_needed is false. Do not generate a question. Do not penalize style or request information outside the target.
+Keep missing_points concise.
+One JSON object only; no markdown or generated question.
+INPUT:
+Lengo la jibu: mahali pa kawaida pa kuuza mahindi baada ya kuvuna na sababu ya kuchagua soko/mnunuzi huyo.
+Question: Kwa kawaida baada ya kuvuna, unauza mahindi yako wapi, na kwa nini unapendelea kuuza huko au kwa mnunuzi huyo?
+Original answer: ft gi
+Answered followup pairs: Follow-up 1: Unauza mahindi yako wapi baada ya kuvuna na kwa nini unachanua hivyo?
+Answer 1: Ninauza kwa mfanyabiashara wa kijijini.
+Required component catalog:
+- sale_destination: Soko au mnunuzi wa kawaida baada ya mavuno
+- destination_reason: Sababu ya kuchagua soko au mnunuzi huyo
+2026-09-30T18:58:31.845Z D/LiteRtRepository [DefaultDispatcher-worker-5] [5] request start model='Gemma3n4B' prompt.len=3080 sha=6fce8f7e6d62e490 gateWaitMs=2
+2026-09-30T18:58:31.845Z D/LiteRtRepository [DefaultDispatcher-worker-5] [part=000] [5] PROMPT (FULL) sha=6fce8f7e6d62e490
+Evaluate only the original survey target using all supplied answers.
+Return only compact JSON {"score":N,"missing_points":[],"followup_needed":false}. N must be an integer 1-100 for relevance, completeness and accuracy against the original target. Evaluate the original answer and all answered followup pairs together. Kabla ya kutoa JSON, linganisha kila taarifa inayodhaniwa kukosekana na jibu la awali na kila jozi ya swali la ufuatiliaji na jibu lake iliyojibiwa. Ikiwa jibu la ufuatiliaji lililojibiwa linatoa moja kwa moja taarifa hiyo, usiiweke katika missing_points. Hesabu upya score, missing_points, na followup_needed pamoja kama uamuzi mmoja wa mwisho unaolingana. Wakati Required component catalog ipo, tathmini kila kipengele cha catalog kivyake: missing_points inaweza kuwa na ID za vipengele vilivyosanidiwa pekee. Ondoa ID ambayo kipengele chake kimetolewa katika jibu la awali au jozi za maswali ya ufuatiliaji zilizojibiwa; kamwe usirudishe maelezo ya kipengele au maswali katika missing_points. Wakati Required components block ya zamani ipo, missing_points inaweza kuwa na maandishi halisi ya vipengele vilivyosanidiwa ambavyo bado havijajibiwa. Wakati hakuna catalog wala Required components block, missing_points inaweza kuandikwa kwa Kiswahili. Tofautisha uhusiano na ukamilifu. Jibu linaweza kuwa kuhusu mada husika lakini bado lisikamilike. Toa alama 90-100 tu wakati mhojiwa ametoa kwa wazi kila kipengele muhimu kinachohitajika katika Lengo la jibu na Swali. Usikisie maelezo yanayokosekana kutokana na maarifa ya jumla, uwezekano, au kauli tupu kwamba tukio lilitokea. Jibu fupi linaweza kuwa kamili. Jibu refu au linalohusu mada lakini linaloacha kipengele chochote muhimu kinachohitajika lipate chini ya 90. Kwa mfano, kusema kwamba tukio lilitokea bila kueleza athari iliyoombwa ni jibu lisilokamilika. Kanuni ya ulinganifu: ikiwa missing_points si tupu au followup_needed ni true, score lazima iwe nambari kamili kutoka 1 hadi 89. Alama 90-100 zinaruhusiwa tu wakati missing_points=[] na followup_needed=false. Usitumie score 90 kama alama ya mpaka wakati kuna kitu chochote kinachokosekana. For score below 90, missing_points must contain the specific missing or ambiguous target-required information and followup_needed must be true. Otherwise missing_points is empty and followup_needed is false. Do not generate a question. Do not penalize style or request information outside the target.
+Keep missing_points concise.
+One JSON object only; no markdown or generated question.
+INPUT:
+Lengo la jibu: mahali pa kawaida pa kuuza mahindi baada ya kuvuna na sababu ya kuchagua soko/mnunuzi huyo.
+Question: Kwa kawaida baada ya kuvuna, unauza mahindi yako wapi, na kwa nini unapendelea kuuza huko au kwa mnunuzi huyo?
+Original answer: ft gi
+Answered followup pairs: Follow-up 1: Unauza mahindi yako wapi baada ya kuvuna na kwa nini unachanua hivyo?
+Answer 1: Ninauza kwa mfanyabiashara wa kijijini.
+Required component catalog:
+- sale_destination: Soko au mnunuzi wa kawaida baada ya mavuno
+- destination_reason: Sababu ya kuchagua soko au mnunuzi huyo
+2026-09-30T18:58:31.846Z D/SLM [slm-jni] initializeIfNeeded: model='Gemma3n4B' image=false audio=false
+2026-09-30T18:58:31.847Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227'
+2026-09-30T18:58:31.848Z D/LiteRtRepository [DefaultDispatcher-worker-5] [5] initializeIfNeeded ok initMs=3
+2026-09-30T18:58:31.850Z D/SLM [slm-jni] runInference: model='Gemma3n4B' textLen=3080 images=0 audio=0
+2026-09-30T18:58:31.851Z D/LiteRtLM [DefaultDispatcher-worker-1] state[run:start] key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=5 active=true terminated=false logicalDone=false cancel=false pendingCancel=false lastMsgAt=753617847 lastTermAt=753482356
+2026-09-30T18:58:31.851Z D/LiteRtLM [DefaultDispatcher-worker-1] runInference start: key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=5 hasText=true originalTextLen=3080 effectiveTextLen=3080 images=0 audioClips=0
+2026-09-30T18:58:31.852Z D/LiteRtLM [DefaultDispatcher-worker-1] LiteRT-LM sendMessageAsync(text): key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=5 len=3080 maxOutputTokens=64
+2026-09-30T18:58:31.883Z D/LiteRtLM [DefaultDispatcher-worker-1] sendMessageAsync accepted: key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=5 dispatchMs=32
+2026-09-30T18:58:38.204Z W/LiteRtLM [Thread-103] Inference first output: key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=5 ttftMs=6352 dispatchMs=32 postDispatchTtftMs=6320 requestToFirstOutputMs=6352
+2026-09-30T18:58:38.204Z D/LiteRtLM [Thread-103] stream[key=fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227 runId=5] msg#1 rawChunkLen=2 deltaLen=2 emittedChars=2
+2026-09-30T18:58:38.206Z D/LiteRtRepository [main] stream[rid=5 msg#1] done=false deltaLen=2 outLen=2 outPreview='{"' deltaPreview='{"'
+2026-09-30T18:58:38.206Z D/AiViewModel [DefaultDispatcher-worker-1] run[3] chunk[1].preview='{"'
+2026-09-30T18:58:38.331Z D/AiViewModel [DefaultDispatcher-worker-1] run[3] chunk[2].preview='score'
+2026-09-30T18:58:38.456Z D/AiViewModel [DefaultDispatcher-worker-1] run[3] chunk[3].preview='":'
+2026-09-30T18:58:38.577Z D/AiViewModel [DefaultDispatcher-worker-1] run[3] chunk[4].preview='6'
+2026-09-30T18:58:38.707Z D/AiViewModel [DefaultDispatcher-worker-1] run[3] chunk[5].preview='5'
+2026-09-30T18:58:38.831Z D/AiViewModel [DefaultDispatcher-worker-1] run[3] chunk[6].preview=',"'
+2026-09-30T18:58:38.956Z D/AiViewModel [DefaultDispatcher-worker-1] run[3] chunk[7].preview='missing'
+2026-09-30T18:58:39.073Z D/LiteRtRepository [main] stream[rid=5 msg#8] done=false deltaLen=1 outLen=21 outPreview='{"score":65,"missing_' deltaPreview='_'
+2026-09-30T18:58:39.073Z D/AiViewModel [DefaultDispatcher-worker-1] run[3] chunk[8].preview='_'
+2026-09-30T18:58:39.194Z D/AiViewModel [DefaultDispatcher-worker-1] run[3] chunk[9].preview='points'
+2026-09-30T18:58:39.324Z D/AiViewModel [DefaultDispatcher-worker-1] run[3] chunk[10].preview='":["'
+2026-09-30T18:58:39.461Z D/AiViewModel [DefaultDispatcher-worker-1] run[3] chunk[11].preview='destination'
+2026-09-30T18:58:39.585Z D/AiViewModel [DefaultDispatcher-worker-1] run[3] chunk[12].preview='_'
+2026-09-30T18:58:39.711Z D/AiViewModel [DefaultDispatcher-worker-1] run[3] chunk[13].preview='reason'
+2026-09-30T18:58:39.839Z D/AiViewModel [DefaultDispatcher-worker-1] run[3] chunk[14].preview='"],'
+2026-09-30T18:58:39.968Z D/AiViewModel [DefaultDispatcher-worker-1] run[3] chunk[15].preview='␠"'
+2026-09-30T18:58:40.097Z D/LiteRtLM [Thread-118] stream[key=fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227 runId=5] msg#16 rawChunkLen=6 deltaLen=6 emittedChars=60
+2026-09-30T18:58:40.098Z D/AiViewModel [DefaultDispatcher-worker-1] run[3] chunk[16].preview='follow'
+2026-09-30T18:58:40.098Z D/LiteRtRepository [main] stream[rid=5 msg#16] done=false deltaLen=6 outLen=60 outPreview='{"score":65,"missing_points":["destination_reason"], "follow' deltaPreview='follow'
+2026-09-30T18:58:40.219Z D/AiViewModel [DefaultDispatcher-worker-1] run[3] chunk[17].preview='up'
+2026-09-30T18:58:40.341Z D/AiViewModel [DefaultDispatcher-worker-1] run[3] chunk[18].preview='_'
+2026-09-30T18:58:40.467Z D/AiViewModel [DefaultDispatcher-worker-1] run[3] chunk[19].preview='needed'
+2026-09-30T18:58:40.594Z D/AiViewModel [DefaultDispatcher-worker-1] run[3] chunk[20].preview='":'
+2026-09-30T18:58:40.724Z D/AiViewModel [DefaultDispatcher-worker-2] run[3] chunk[21].preview='true'
+2026-09-30T18:58:40.856Z D/AiViewModel [DefaultDispatcher-worker-2] run[3] chunk[22].preview='}'
+2026-09-30T18:58:40.980Z D/LiteRtLM [Thread-125] state[logicalDone] key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=5 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=753626852 lastTermAt=753626976
+2026-09-30T18:58:40.982Z D/LiteRtLM [Thread-125] state[nativeDone:beforeRelease] key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=5 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=753626852 lastTermAt=753626976
+2026-09-30T18:58:40.983Z W/LiteRtLM [Thread-125] Inference timing: key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=5 ttftMs=6352 dispatchMs=32 postDispatchTtftMs=6320 totalMs=9129 callbacks=22 outputChars=76 cancelled=false error=false requestTotalMs=9129
+2026-09-30T18:58:40.983Z I/LiteRtLM [Thread-125] LiteRT completion: runId=5 terminal=normal_onDone phase=unavailable engineTokenCapacity=4096 prefillTokens=-1 decodeTokens=-1 kvTokens=-1 outputChars=76 callbacks=22
+2026-09-30T18:58:40.983Z D/LiteRtRepository [main] [5] logical done=true; responseClosed=true; waiting native cleanup
+2026-09-30T18:58:40.984Z D/LiteRtRepository [main] [5] native cleanup safepoint
+2026-09-30T18:58:40.984Z D/AiViewModel [DefaultDispatcher-worker-4] run[3] stats: chunks=22, chars=76, raw.len=76
+2026-09-30T18:58:40.985Z D/SLM [slm-jni] resetConversationAndWait: model='Gemma3n4B' image=false audio=false
+2026-09-30T18:58:40.985Z D/AiViewModel [DefaultDispatcher-worker-4] run[3] sha(raw)=cd38b27f1d8cf5fa76332139dcbaabc6bf0f850daa99c65c68b829507ba1b0a0
+2026-09-30T18:58:40.986Z D/AiViewModel [DefaultDispatcher-worker-4] run[3] rawVisible='{"score":65,"missing_points":["destination_reason"],␠"followup_needed":true}'
+2026-09-30T18:58:40.990Z D/AiViewModel [DefaultDispatcher-worker-4] run[3]: EVAL_JSON parsed score=65 followups=0 fu0=''
+2026-09-30T18:58:40.990Z D/AiViewModel [DefaultDispatcher-worker-4] stepHistory+ runId=3 phase=EVAL mode=EVAL_JSON raw.len=76 score=65 FU=0 FU0='<none>' timeout=false err=null
+2026-09-30T18:58:40.990Z I/AiViewModel [DefaultDispatcher-worker-4] run[3] done: phase=EVAL mode=EVAL_JSON score=65 FU0.len=0 FU0.sha16=none commit=true err=<none>
+2026-09-30T18:58:40.990Z I/FullTextOut [DefaultDispatcher-worker-4] [part=000] run[3]: RawTextOut
+{"score":65,"missing_points":["destination_reason"], "followup_needed":true}
+2026-09-30T18:58:40.992Z D/SurveyVM [DefaultDispatcher-worker-4] getFollowupPrompt[Q16] -> len=600 evalLen=76
+2026-09-30T18:58:40.993Z D/AiViewModel [DefaultDispatcher-worker-4] run[4]: mode=FOLLOWUP_JSON_OR_TEXT phase=FOLLOWUP commit=false prompt.len=600, fullPrompt.len=1562, timeoutMs=120000
+2026-09-30T18:58:40.993Z D/LiteRtRepository [DefaultDispatcher-worker-5] [5] Conversation reset completed after safepoint
+2026-09-30T18:58:40.994Z D/AiViewModel [DefaultDispatcher-worker-4] run[4]: sha(prompt)=1b3911b7f4b3d4e9898ddc1519071a0f8fbc94f20d1693fd5265d82e35bef9d7 sha(full)=3341f0fd2c222c9ac1d231b2eb88ac275c13a52ba6c6df8b23d4a0c74299c5f1
+2026-09-30T18:58:40.994Z D/LiteRtRepository [DefaultDispatcher-worker-3] [part=000] [5] FINALIZE: native-terminated
+=== AI TRACE STATS (LiteRtRepository) ===
+rid=5 model='Gemma3n4B' reason=native-terminated
+totalMs=9150 inferenceMs=9145 firstTokenMs=6357
+logicalDone=true logicalDoneAt=753626979
+nativeTerminated=true cancelTag='null'
+lastDeltaMsAgo=138 lastEventMsAgo=10
+chunks=22 emittedChars=76 capturedAll=true out.len=76
+=== OUTPUT (FULL) ===
+{"score":65,"missing_points":["destination_reason"], "followup_needed":true}
+2026-09-30T18:58:40.994Z I/FullPromptReview [DefaultDispatcher-worker-4] [part=000] run[4]: phase=FOLLOWUP FullPrompt
+Evaluate only the original survey target using all supplied answers.
+Uliza swali moja tu la Kiswahili, fupi na la mazungumzo ya kawaida kwa mhojiwa. Uliza moja kwa moja taarifa moja tu ambayo imeorodheshwa kuwa inakosekana katika EVAL_JSON. Tumia Lengo la jibu, jibu la awali na majibu ya ufuatiliaji yaliyopo kwa muktadha pekee. Usirudie au kufafanua tena swali lote la awali, wala usiulize taarifa ambayo tayari imetolewa. Tumia sentensi moja rahisi; usieleze kwa nini taarifa inahitajika, usitumie maneno ya kujaza kama "ili kujua" au "ili kuelewa", na usirudie nomino, dhana au kifungu bila sababu. Usiongeze malengo mapya, usibuni ukweli, wala usikisie jibu linalokosekana. Usichanganye taarifa nyingi zisizohusiana katika sentensi ndefu. Toa swali pekee kwenye mstari mmoja; hakuna JSON, alama, uchambuzi, lebo au nukuu.
+Liwe fupi, la moja kwa moja na lenye jambo moja tu.
+Swali moja la Kiswahili (Swahili), fupi, la mazungumzo na sentensi moja tu.
+INPUT:
+Lengo la jibu: mahali pa kawaida pa kuuza mahindi baada ya kuvuna na sababu ya kuchagua soko/mnunuzi huyo.
+Question: Kwa kawaida baada ya kuvuna, unauza mahindi yako wapi, na kwa nini unapendelea kuuza huko au kwa mnunuzi huyo?
+Original answer: ft gi
+Answered followup pairs: Follow-up 1: Unauza mahindi yako wapi baada ya kuvuna na kwa nini unachanua hivyo?
+Answer 1: Ninauza kwa mfanyabiashara wa kijijini.
+EVAL_JSON: {"score":65,"missing_points":["destination_reason"], "followup_needed":true}
+Resolved missing component:
+ID: destination_reason
+Description: Sababu ya kuchagua soko au mnunuzi huyo
+2026-09-30T18:58:40.995Z D/LiteRtRepository [DefaultDispatcher-worker-5] [6] request start model='Gemma3n4B' prompt.len=1562 sha=3341f0fd2c222c9a gateWaitMs=1
+2026-09-30T18:58:40.996Z D/LiteRtRepository [DefaultDispatcher-worker-5] [part=000] [6] PROMPT (FULL) sha=3341f0fd2c222c9a
+Evaluate only the original survey target using all supplied answers.
+Uliza swali moja tu la Kiswahili, fupi na la mazungumzo ya kawaida kwa mhojiwa. Uliza moja kwa moja taarifa moja tu ambayo imeorodheshwa kuwa inakosekana katika EVAL_JSON. Tumia Lengo la jibu, jibu la awali na majibu ya ufuatiliaji yaliyopo kwa muktadha pekee. Usirudie au kufafanua tena swali lote la awali, wala usiulize taarifa ambayo tayari imetolewa. Tumia sentensi moja rahisi; usieleze kwa nini taarifa inahitajika, usitumie maneno ya kujaza kama "ili kujua" au "ili kuelewa", na usirudie nomino, dhana au kifungu bila sababu. Usiongeze malengo mapya, usibuni ukweli, wala usikisie jibu linalokosekana. Usichanganye taarifa nyingi zisizohusiana katika sentensi ndefu. Toa swali pekee kwenye mstari mmoja; hakuna JSON, alama, uchambuzi, lebo au nukuu.
+Liwe fupi, la moja kwa moja na lenye jambo moja tu.
+Swali moja la Kiswahili (Swahili), fupi, la mazungumzo na sentensi moja tu.
+INPUT:
+Lengo la jibu: mahali pa kawaida pa kuuza mahindi baada ya kuvuna na sababu ya kuchagua soko/mnunuzi huyo.
+Question: Kwa kawaida baada ya kuvuna, unauza mahindi yako wapi, na kwa nini unapendelea kuuza huko au kwa mnunuzi huyo?
+Original answer: ft gi
+Answered followup pairs: Follow-up 1: Unauza mahindi yako wapi baada ya kuvuna na kwa nini unachanua hivyo?
+Answer 1: Ninauza kwa mfanyabiashara wa kijijini.
+EVAL_JSON: {"score":65,"missing_points":["destination_reason"], "followup_needed":true}
+Resolved missing component:
+ID: destination_reason
+Description: Sababu ya kuchagua soko au mnunuzi huyo
+2026-09-30T18:58:40.996Z D/SLM [slm-jni] initializeIfNeeded: model='Gemma3n4B' image=false audio=false
+2026-09-30T18:58:40.997Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227'
+2026-09-30T18:58:40.997Z D/LiteRtRepository [DefaultDispatcher-worker-3] [6] initializeIfNeeded ok initMs=1
+2026-09-30T18:58:40.997Z D/SLM [slm-jni] runInference: model='Gemma3n4B' textLen=1562 images=0 audio=0
+2026-09-30T18:58:40.998Z D/LiteRtLM [DefaultDispatcher-worker-5] state[run:start] key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=6 active=true terminated=false logicalDone=false cancel=false pendingCancel=false lastMsgAt=753626994 lastTermAt=753626976
+2026-09-30T18:58:40.998Z D/LiteRtLM [DefaultDispatcher-worker-5] runInference start: key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=6 hasText=true originalTextLen=1562 effectiveTextLen=1562 images=0 audioClips=0
+2026-09-30T18:58:40.998Z D/LiteRtLM [DefaultDispatcher-worker-5] LiteRT-LM sendMessageAsync(text): key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=6 len=1562 maxOutputTokens=64
+2026-09-30T18:58:41.002Z D/LiteRtLM [DefaultDispatcher-worker-5] sendMessageAsync accepted: key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=6 dispatchMs=3
+2026-09-30T18:58:44.231Z W/LiteRtLM [Thread-126] Inference first output: key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=6 ttftMs=3232 dispatchMs=3 postDispatchTtftMs=3229 requestToFirstOutputMs=3233
+2026-09-30T18:58:44.231Z D/LiteRtLM [Thread-126] stream[key=fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227 runId=6] msg#1 rawChunkLen=3 deltaLen=3 emittedChars=3
+2026-09-30T18:58:44.231Z D/LiteRtRepository [main] stream[rid=6 msg#1] done=false deltaLen=3 outLen=3 outPreview='Kwa' deltaPreview='Kwa'
+2026-09-30T18:58:44.231Z D/AiViewModel [DefaultDispatcher-worker-5] run[4] chunk[1].preview='Kwa'
+2026-09-30T18:58:44.365Z D/AiViewModel [DefaultDispatcher-worker-3] run[4] chunk[2].preview='␠n'
+2026-09-30T18:58:44.489Z D/AiViewModel [DefaultDispatcher-worker-3] run[4] chunk[3].preview='ini'
+2026-09-30T18:58:44.611Z D/AiViewModel [DefaultDispatcher-worker-3] run[4] chunk[4].preview='␠unap'
+2026-09-30T18:58:44.724Z D/AiViewModel [DefaultDispatcher-worker-5] run[4] chunk[5].preview='ende'
+2026-09-30T18:58:44.839Z D/AiViewModel [DefaultDispatcher-worker-5] run[4] chunk[6].preview='lea'
+2026-09-30T18:58:44.951Z D/AiViewModel [DefaultDispatcher-worker-5] run[4] chunk[7].preview='␠ku'
+2026-09-30T18:58:45.074Z D/LiteRtRepository [main] stream[rid=6 msg#8] done=false deltaLen=3 outLen=26 outPreview='Kwa nini unapendelea kuuza' deltaPreview='uza'
+2026-09-30T18:58:45.074Z D/AiViewModel [DefaultDispatcher-worker-5] run[4] chunk[8].preview='uza'
+2026-09-30T18:58:45.205Z D/AiViewModel [DefaultDispatcher-worker-5] run[4] chunk[9].preview='␠mah'
+2026-09-30T18:58:45.333Z D/AiViewModel [DefaultDispatcher-worker-5] run[4] chunk[10].preview='indi'
+2026-09-30T18:58:45.464Z D/AiViewModel [DefaultDispatcher-worker-5] run[4] chunk[11].preview='␠yako'
+2026-09-30T18:58:45.594Z D/AiViewModel [DefaultDispatcher-worker-5] run[4] chunk[12].preview='␠kwa'
+2026-09-30T18:58:45.725Z D/AiViewModel [DefaultDispatcher-worker-5] run[4] chunk[13].preview='␠mf'
+2026-09-30T18:58:45.847Z D/AiViewModel [DefaultDispatcher-worker-3] run[4] chunk[14].preview='any'
+2026-09-30T18:58:45.974Z D/AiViewModel [DefaultDispatcher-worker-3] run[4] chunk[15].preview='abi'
+2026-09-30T18:58:46.094Z D/LiteRtLM [Thread-141] stream[key=fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227 runId=6] msg#16 rawChunkLen=3 deltaLen=3 emittedChars=55
+2026-09-30T18:58:46.097Z D/LiteRtRepository [main] stream[rid=6 msg#16] done=false deltaLen=3 outLen=55 outPreview='Kwa nini unapendelea kuuza mahindi yako kwa mfanyabiash' deltaPreview='ash'
+2026-09-30T18:58:46.097Z D/AiViewModel [DefaultDispatcher-worker-3] run[4] chunk[16].preview='ash'
+2026-09-30T18:58:46.224Z D/AiViewModel [DefaultDispatcher-worker-5] run[4] chunk[17].preview='ara'
+2026-09-30T18:58:46.350Z D/AiViewModel [DefaultDispatcher-worker-5] run[4] chunk[18].preview='␠wa'
+2026-09-30T18:58:46.477Z D/AiViewModel [DefaultDispatcher-worker-5] run[4] chunk[19].preview='␠kij'
+2026-09-30T18:58:46.600Z D/AiViewModel [DefaultDispatcher-worker-5] run[4] chunk[20].preview='ij'
+2026-09-30T18:58:46.731Z D/AiViewModel [DefaultDispatcher-worker-5] run[4] chunk[21].preview='ini'
+2026-09-30T18:58:46.850Z D/AiViewModel [DefaultDispatcher-worker-5] run[4] chunk[22].preview='␠h'
+2026-09-30T18:58:46.972Z D/AiViewModel [DefaultDispatcher-worker-5] run[4] chunk[23].preview='apo'
+2026-09-30T18:58:47.106Z D/LiteRtRepository [main] stream[rid=6 msg#24] done=false deltaLen=1 outLen=76 outPreview='Kwa nini unapendelea kuuza mahindi yako kwa mfanyabiashara wa kijijini hapo?' deltaPreview='?'
+2026-09-30T18:58:47.106Z D/AiViewModel [DefaultDispatcher-worker-5] run[4] chunk[24].preview='?'
+2026-09-30T18:58:47.225Z D/LiteRtLM [Thread-150] state[logicalDone] key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=6 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=753633098 lastTermAt=753633221
+2026-09-30T18:58:47.228Z D/LiteRtLM [Thread-150] state[nativeDone:beforeRelease] key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=6 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=753633098 lastTermAt=753633221
+2026-09-30T18:58:47.228Z W/LiteRtLM [Thread-150] Inference timing: key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=6 ttftMs=3232 dispatchMs=3 postDispatchTtftMs=3229 totalMs=6226 callbacks=24 outputChars=76 cancelled=false error=false requestTotalMs=6227
+2026-09-30T18:58:47.228Z I/LiteRtLM [Thread-150] LiteRT completion: runId=6 terminal=normal_onDone phase=unavailable engineTokenCapacity=4096 prefillTokens=-1 decodeTokens=-1 kvTokens=-1 outputChars=76 callbacks=24
+2026-09-30T18:58:47.230Z D/LiteRtRepository [main] [6] logical done=true; responseClosed=true; waiting native cleanup
+2026-09-30T18:58:47.230Z D/LiteRtRepository [main] [6] native cleanup safepoint
+2026-09-30T18:58:47.231Z D/AiViewModel [DefaultDispatcher-worker-3] run[4] stats: chunks=24, chars=76, raw.len=76
+2026-09-30T18:58:47.231Z D/AiViewModel [DefaultDispatcher-worker-3] run[4] sha(raw)=2098bc918ffa221b649c7185629d746691c5719ac466919f05d5ba93798bf8ce
+2026-09-30T18:58:47.232Z D/AiViewModel [DefaultDispatcher-worker-3] run[4] rawVisible='Kwa␠nini␠unapendelea␠kuuza␠mahindi␠yako␠kwa␠mfanyabiashara␠wa␠kijijini␠hapo?'
+2026-09-30T18:58:47.232Z D/SLM [slm-jni] resetConversationAndWait: model='Gemma3n4B' image=false audio=false
+2026-09-30T18:58:47.234Z D/AiViewModel [DefaultDispatcher-worker-3] run[4]: FOLLOWUP parse extractorQ='Kwa␠nini␠unapendelea␠kuuza␠mahindi␠yako␠kwa␠mfanyabiashara␠wa␠kijijini␠hapo?' textQ='Kwa␠nini␠unapendelea␠kuuza␠mahindi␠yako␠kwa␠mfanyabiashara␠wa␠kijijini␠hapo?' best='Kwa␠nini␠unapendelea␠kuuza␠mahindi␠yako␠kwa␠mfanyabiashara␠wa␠kijijini␠hapo?'
+2026-09-30T18:58:47.234Z D/AiViewModel [DefaultDispatcher-worker-3] stepHistory+ runId=4 phase=FOLLOWUP mode=FOLLOWUP_JSON_OR_TEXT raw.len=76 score=null FU=1 FU0='Kwa␠nini␠unapendelea␠kuuza␠mahindi␠yako␠kwa␠mfanyabiashara␠wa␠kijijini␠hapo?' timeout=false err=null
+2026-09-30T18:58:47.235Z I/AiViewModel [DefaultDispatcher-worker-3] run[4] done: phase=FOLLOWUP mode=FOLLOWUP_JSON_OR_TEXT score=null FU0.len=76 FU0.sha16=2098bc918ffa221b commit=false err=<none>
+2026-09-30T18:58:47.235Z I/FullTextOut [DefaultDispatcher-worker-3] [part=000] run[4]: RawTextOut
+Kwa nini unapendelea kuuza mahindi yako kwa mfanyabiashara wa kijijini hapo?
+2026-09-30T18:58:47.239Z D/LiteRtRepository [DefaultDispatcher-worker-4] [6] Conversation reset completed after safepoint
+2026-09-30T18:58:47.240Z D/LiteRtRepository [DefaultDispatcher-worker-3] [part=000] [6] FINALIZE: native-terminated
+=== AI TRACE STATS (LiteRtRepository) ===
+rid=6 model='Gemma3n4B' reason=native-terminated
+totalMs=6245 inferenceMs=6243 firstTokenMs=3234
+logicalDone=true logicalDoneAt=753633226
+nativeTerminated=true cancelTag='null'
+lastDeltaMsAgo=134 lastEventMsAgo=9
+chunks=24 emittedChars=76 capturedAll=true out.len=76
+=== OUTPUT (FULL) ===
+Kwa nini unapendelea kuuza mahindi yako kwa mfanyabiashara wa kijijini hapo?
+2026-09-30T18:59:42.300Z D/SurveyVM [main] getEvalPrompt[Q16] -> len=706
+2026-09-30T18:59:42.303Z D/AiViewModel [DefaultDispatcher-worker-3] run[5]: mode=EVAL_JSON phase=EVAL commit=true prompt.len=706, fullPrompt.len=3225, timeoutMs=120000
+2026-09-30T18:59:42.304Z D/AiViewModel [DefaultDispatcher-worker-3] run[5]: sha(prompt)=596ad5bfa24edfafe6c1ba933f8908628f57636bbfd9a189ed5b7280361f0eef sha(full)=ed7d5b25273ff077beedef942af883a140b2dd7ccfcc01723e55fe1a821e888e
+2026-09-30T18:59:42.305Z I/FullPromptReview [DefaultDispatcher-worker-3] [part=000] run[5]: phase=EVAL FullPrompt
+Evaluate only the original survey target using all supplied answers.
+Return only compact JSON {"score":N,"missing_points":[],"followup_needed":false}. N must be an integer 1-100 for relevance, completeness and accuracy against the original target. Evaluate the original answer and all answered followup pairs together. Kabla ya kutoa JSON, linganisha kila taarifa inayodhaniwa kukosekana na jibu la awali na kila jozi ya swali la ufuatiliaji na jibu lake iliyojibiwa. Ikiwa jibu la ufuatiliaji lililojibiwa linatoa moja kwa moja taarifa hiyo, usiiweke katika missing_points. Hesabu upya score, missing_points, na followup_needed pamoja kama uamuzi mmoja wa mwisho unaolingana. Wakati Required component catalog ipo, tathmini kila kipengele cha catalog kivyake: missing_points inaweza kuwa na ID za vipengele vilivyosanidiwa pekee. Ondoa ID ambayo kipengele chake kimetolewa katika jibu la awali au jozi za maswali ya ufuatiliaji zilizojibiwa; kamwe usirudishe maelezo ya kipengele au maswali katika missing_points. Wakati Required components block ya zamani ipo, missing_points inaweza kuwa na maandishi halisi ya vipengele vilivyosanidiwa ambavyo bado havijajibiwa. Wakati hakuna catalog wala Required components block, missing_points inaweza kuandikwa kwa Kiswahili. Tofautisha uhusiano na ukamilifu. Jibu linaweza kuwa kuhusu mada husika lakini bado lisikamilike. Toa alama 90-100 tu wakati mhojiwa ametoa kwa wazi kila kipengele muhimu kinachohitajika katika Lengo la jibu na Swali. Usikisie maelezo yanayokosekana kutokana na maarifa ya jumla, uwezekano, au kauli tupu kwamba tukio lilitokea. Jibu fupi linaweza kuwa kamili. Jibu refu au linalohusu mada lakini linaloacha kipengele chochote muhimu kinachohitajika lipate chini ya 90. Kwa mfano, kusema kwamba tukio lilitokea bila kueleza athari iliyoombwa ni jibu lisilokamilika. Kanuni ya ulinganifu: ikiwa missing_points si tupu au followup_needed ni true, score lazima iwe nambari kamili kutoka 1 hadi 89. Alama 90-100 zinaruhusiwa tu wakati missing_points=[] na followup_needed=false. Usitumie score 90 kama alama ya mpaka wakati kuna kitu chochote kinachokosekana. For score below 90, missing_points must contain the specific missing or ambiguous target-required information and followup_needed must be true. Otherwise missing_points is empty and followup_needed is false. Do not generate a question. Do not penalize style or request information outside the target.
+Keep missing_points concise.
+One JSON object only; no markdown or generated question.
+INPUT:
+Lengo la jibu: mahali pa kawaida pa kuuza mahindi baada ya kuvuna na sababu ya kuchagua soko/mnunuzi huyo.
+Question: Kwa kawaida baada ya kuvuna, unauza mahindi yako wapi, na kwa nini unapendelea kuuza huko au kwa mnunuzi huyo?
+Original answer: ft gi
+Answered followup pairs: Follow-up 1: Unauza mahindi yako wapi baada ya kuvuna na kwa nini unachanua hivyo?
+Answer 1: Ninauza kwa mfanyabiashara wa kijijini.
+Follow-up 2: Kwa nini unapendelea kuuza mahindi yako kwa mfanyabiashara wa kijijini hapo?
+Answer 2: Kwa sababu yuko karibu na analipa bei nzuri.
+Required component catalog:
+- sale_destination: Soko au mnunuzi wa kawaida baada ya mavuno
+- dest
+2026-09-30T18:59:42.305Z I/FullPromptReview [DefaultDispatcher-worker-3] [part=001] ination_reason: Sababu ya kuchagua soko au mnunuzi huyo
+2026-09-30T18:59:42.307Z D/LiteRtRepository [DefaultDispatcher-worker-3] [7] request start model='Gemma3n4B' prompt.len=3225 sha=ed7d5b25273ff077 gateWaitMs=1
+2026-09-30T18:59:42.307Z D/LiteRtRepository [DefaultDispatcher-worker-3] [part=000] [7] PROMPT (FULL) sha=ed7d5b25273ff077
+Evaluate only the original survey target using all supplied answers.
+Return only compact JSON {"score":N,"missing_points":[],"followup_needed":false}. N must be an integer 1-100 for relevance, completeness and accuracy against the original target. Evaluate the original answer and all answered followup pairs together. Kabla ya kutoa JSON, linganisha kila taarifa inayodhaniwa kukosekana na jibu la awali na kila jozi ya swali la ufuatiliaji na jibu lake iliyojibiwa. Ikiwa jibu la ufuatiliaji lililojibiwa linatoa moja kwa moja taarifa hiyo, usiiweke katika missing_points. Hesabu upya score, missing_points, na followup_needed pamoja kama uamuzi mmoja wa mwisho unaolingana. Wakati Required component catalog ipo, tathmini kila kipengele cha catalog kivyake: missing_points inaweza kuwa na ID za vipengele vilivyosanidiwa pekee. Ondoa ID ambayo kipengele chake kimetolewa katika jibu la awali au jozi za maswali ya ufuatiliaji zilizojibiwa; kamwe usirudishe maelezo ya kipengele au maswali katika missing_points. Wakati Required components block ya zamani ipo, missing_points inaweza kuwa na maandishi halisi ya vipengele vilivyosanidiwa ambavyo bado havijajibiwa. Wakati hakuna catalog wala Required components block, missing_points inaweza kuandikwa kwa Kiswahili. Tofautisha uhusiano na ukamilifu. Jibu linaweza kuwa kuhusu mada husika lakini bado lisikamilike. Toa alama 90-100 tu wakati mhojiwa ametoa kwa wazi kila kipengele muhimu kinachohitajika katika Lengo la jibu na Swali. Usikisie maelezo yanayokosekana kutokana na maarifa ya jumla, uwezekano, au kauli tupu kwamba tukio lilitokea. Jibu fupi linaweza kuwa kamili. Jibu refu au linalohusu mada lakini linaloacha kipengele chochote muhimu kinachohitajika lipate chini ya 90. Kwa mfano, kusema kwamba tukio lilitokea bila kueleza athari iliyoombwa ni jibu lisilokamilika. Kanuni ya ulinganifu: ikiwa missing_points si tupu au followup_needed ni true, score lazima iwe nambari kamili kutoka 1 hadi 89. Alama 90-100 zinaruhusiwa tu wakati missing_points=[] na followup_needed=false. Usitumie score 90 kama alama ya mpaka wakati kuna kitu chochote kinachokosekana. For score below 90, missing_points must contain the specific missing or ambiguous target-required information and followup_needed must be true. Otherwise missing_points is empty and followup_needed is false. Do not generate a question. Do not penalize style or request information outside the target.
+Keep missing_points concise.
+One JSON object only; no markdown or generated question.
+INPUT:
+Lengo la jibu: mahali pa kawaida pa kuuza mahindi baada ya kuvuna na sababu ya kuchagua soko/mnunuzi huyo.
+Question: Kwa kawaida baada ya kuvuna, unauza mahindi yako wapi, na kwa nini unapendelea kuuza huko au kwa mnunuzi huyo?
+Original answer: ft gi
+Answered followup pairs: Follow-up 1: Unauza mahindi yako wapi baada ya kuvuna na kwa nini unachanua hivyo?
+Answer 1: Ninauza kwa mfanyabiashara wa kijijini.
+Follow-up 2: Kwa nini unapendelea kuuza mahindi yako kwa mfanyabiashara wa kijijini hapo?
+Answer 2: Kwa sababu yuko karibu na analipa bei nzuri.
+Required component catalog:
+- sale_destination: Soko au mnunuzi wa kawaida baada ya mavu
+2026-09-30T18:59:42.307Z D/LiteRtRepository [DefaultDispatcher-worker-3] [part=001] no
+- destination_reason: Sababu ya kuchagua soko au mnunuzi huyo
+2026-09-30T18:59:42.308Z D/SLM [slm-jni] initializeIfNeeded: model='Gemma3n4B' image=false audio=false
+2026-09-30T18:59:42.310Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227'
+2026-09-30T18:59:42.312Z D/LiteRtRepository [DefaultDispatcher-worker-3] [7] initializeIfNeeded ok initMs=4
+2026-09-30T18:59:42.314Z D/SLM [slm-jni] runInference: model='Gemma3n4B' textLen=3225 images=0 audio=0
+2026-09-30T18:59:42.323Z D/LiteRtLM [DefaultDispatcher-worker-1] state[run:start] key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=7 active=true terminated=false logicalDone=false cancel=false pendingCancel=false lastMsgAt=753688313 lastTermAt=753633221
+2026-09-30T18:59:42.323Z D/LiteRtLM [DefaultDispatcher-worker-1] runInference start: key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=7 hasText=true originalTextLen=3225 effectiveTextLen=3225 images=0 audioClips=0
+2026-09-30T18:59:42.324Z D/LiteRtLM [DefaultDispatcher-worker-1] LiteRT-LM sendMessageAsync(text): key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=7 len=3225 maxOutputTokens=64
+2026-09-30T18:59:42.346Z D/LiteRtLM [DefaultDispatcher-worker-1] sendMessageAsync accepted: key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=7 dispatchMs=22
+2026-09-30T18:59:47.963Z W/LiteRtLM [Thread-151] Inference first output: key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=7 ttftMs=5639 dispatchMs=22 postDispatchTtftMs=5617 requestToFirstOutputMs=5648
+2026-09-30T18:59:47.963Z D/LiteRtLM [Thread-151] stream[key=fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227 runId=7] msg#1 rawChunkLen=2 deltaLen=2 emittedChars=2
+2026-09-30T18:59:47.967Z D/LiteRtRepository [main] stream[rid=7 msg#1] done=false deltaLen=2 outLen=2 outPreview='{"' deltaPreview='{"'
+2026-09-30T18:59:47.967Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[1].preview='{"'
+2026-09-30T18:59:48.091Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[2].preview='score'
+2026-09-30T18:59:48.217Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[3].preview='":'
+2026-09-30T18:59:48.342Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[4].preview='␠'
+2026-09-30T18:59:48.466Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[5].preview='9'
+2026-09-30T18:59:48.585Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[6].preview='5'
+2026-09-30T18:59:48.711Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[7].preview=','
+2026-09-30T18:59:48.834Z D/LiteRtRepository [main] stream[rid=7 msg#8] done=false deltaLen=2 outLen=15 outPreview='{"score": 95, "' deltaPreview=' "'
+2026-09-30T18:59:48.834Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[8].preview='␠"'
+2026-09-30T18:59:48.966Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[9].preview='missing'
+2026-09-30T18:59:49.091Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[10].preview='_'
+2026-09-30T18:59:49.218Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[11].preview='points'
+2026-09-30T18:59:49.341Z D/AiViewModel [DefaultDispatcher-worker-3] run[5] chunk[12].preview='":'
+2026-09-30T18:59:49.466Z D/AiViewModel [DefaultDispatcher-worker-3] run[5] chunk[13].preview='␠[],'
+2026-09-30T18:59:49.594Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[14].preview='␠"'
+2026-09-30T18:59:49.718Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[15].preview='follow'
+2026-09-30T18:59:49.847Z D/LiteRtLM [Thread-166] stream[key=fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227 runId=7] msg#16 rawChunkLen=2 deltaLen=2 emittedChars=45
+2026-09-30T18:59:49.849Z D/LiteRtRepository [main] stream[rid=7 msg#16] done=false deltaLen=2 outLen=45 outPreview='{"score": 95, "missing_points": [], "followup' deltaPreview='up'
+2026-09-30T18:59:49.849Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[16].preview='up'
+2026-09-30T18:59:49.974Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[17].preview='_'
+2026-09-30T18:59:50.099Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[18].preview='needed'
+2026-09-30T18:59:50.225Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[19].preview='":'
+2026-09-30T18:59:50.350Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[20].preview='␠false'
+2026-09-30T18:59:50.477Z D/AiViewModel [DefaultDispatcher-worker-1] run[5] chunk[21].preview='}'
+2026-09-30T18:59:50.602Z D/LiteRtLM [Thread-172] state[logicalDone] key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=7 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=753696472 lastTermAt=753696598
+2026-09-30T18:59:50.602Z D/LiteRtLM [Thread-172] state[nativeDone:beforeRelease] key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=7 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=753696472 lastTermAt=753696598
+2026-09-30T18:59:50.602Z W/LiteRtLM [Thread-172] Inference timing: key='fs|dev=65088|ino=23728|size=4919541760|mtime=1790720708227' runId=7 ttftMs=5639 dispatchMs=22 postDispatchTtftMs=5617 totalMs=8278 callbacks=21 outputChars=61 cancelled=false error=false requestTotalMs=8287

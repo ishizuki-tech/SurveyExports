@@ -1,0 +1,153 @@
+=== Previous Session Logcat ===
+captured_time_utc=20260925_203540
+captured_time_local=20260925_133540
+marker=2026-09-25 13:22:49.198
+preferred_prev_pid=-1
+note=best-effort; buffers may be overwritten before next start
+sdk=36
+device=Google Pixel 9a
+appId=com.negi.survey.local
+versionName=0.0.1
+versionCode=1
+
+=== Logcat (since marker) ===
+--------- beginning of system
+09-25 13:22:49.661  5285  5285 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey.local, tag=null, id=9287], rate limit (5.0) exceeded: input 7.2854567, output would be 5.105399
+09-25 13:22:51.740  5285  5285 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey.local, tag=null, id=9287], rate limit (5.0) exceeded: input 9.79483, output would be 5.5250983
+09-25 13:22:52.887  5285  5285 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey.local, tag=null, id=7910], rate limit (5.0) exceeded: input 27.230328, output would be 5.099625
+09-25 13:22:54.368  5285  5285 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey.local, tag=null, id=9996], rate limit (5.0) exceeded: input 9.978318, output would be 5.3719263
+09-25 13:22:55.512  5285  5285 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey.local, tag=null, id=8404], rate limit (5.0) exceeded: input 16.540936, output would be 5.684619
+09-25 13:22:56.923  5285  5285 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey.local, tag=null, id=11180], rate limit (5.0) exceeded: input 13.746369, output would be 5.2447624
+09-25 13:22:57.925  5285  5285 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey.local, tag=null, id=6822], rate limit (5.0) exceeded: input 323.527, output would be 6.207742
+09-25 13:22:59.145  5285  5285 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey.local, tag=null, id=8804], rate limit (5.0) exceeded: input 14.890034, output would be 6.9067197
+09-25 13:23:00.328  5285  5285 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey.local, tag=null, id=6822], rate limit (5.0) exceeded: input 20.154888, output would be 6.5661435
+09-25 13:23:02.254  5285  5285 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey.local, tag=null, id=8404], rate limit (5.0) exceeded: input 9.625072, output would be 5.007956
+09-25 13:23:03.698  5285  5285 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey.local, tag=null, id=6822], rate limit (5.0) exceeded: input 9.337002, output would be 5.095983
+09-25 13:25:58.918  5285  5285 D InsetsController: hide(ime())
+09-25 13:25:59.965  5285  5285 D InsetsController: hide(ime())
+09-25 13:30:03.528  5285  5285 D InsetsController: hide(ime())
+09-25 13:30:04.708  5285  5285 D InsetsController: hide(ime())
+--------- beginning of main
+09-25 13:30:06.505  5285  5285 D MainActivity: SLM Engine warm-up started. session=survey_config10.yaml@2 model=Gemma3n4B
+09-25 13:30:06.506  5285  5285 D WhisperSpeechController: updateContext: surveyId=7128e40c-c704-4448-94b7-dcb33452c873, questionId=Start
+09-25 13:30:06.506  5285  5437 D SLM     : initializeIfNeeded: model='Gemma3n4B' image=false audio=false
+09-25 13:30:06.507  5285  5437 D LiteRtLM: initializeIfNeeded: warm runtime already ready: key='Gemma3n4B|/data/user/0/com.negi.survey.local/files/gemma-3n-E4B-it-int4.litertlm'
+09-25 13:30:06.511  5285  5285 D LiteRtRepository: warmUp: initializeIfNeeded ok gateWaitMs=0 initMs=5
+09-25 13:30:06.511  5285  5285 D LiteRtRepository: warmUp: Engine ready; representative inference disabled totalMs=6
+09-25 13:30:06.511  5285  5285 D MainActivity: SLM Engine warm-up finished. session=survey_config10.yaml@2 model=Gemma3n4B elapsedMs=6
+09-25 13:30:06.520  5285  5291 I gi.survey.local: Compiler allocated 9129KB to compile java.util.List com.negi.survey.config.SurveyConfig.validate()
+09-25 13:30:06.937  5285  5436 I TextToSpeech: Setting up the connection to TTS engine...
+09-25 13:30:07.017  5285  5285 D TtsController: TextToSpeech ready: locale=en_US rate=1.0 pitch=1.0
+09-25 13:30:08.673  5285  5285 D WhisperSpeechController: stopRecording: not recording, ignoring
+09-25 13:30:08.701  5285  5285 D MainActivity: Home -> Start survey. session=survey_config10.yaml@2 freeTextDraftLen=0 (run-scoped)
+09-25 13:30:08.701  5285  5285 D SurveyVM: resetAudioRefs -> cleared
+09-25 13:30:08.701  5285  5285 D SurveyVM: resetNavToStart -> key=com.negi.survey.vm.FlowHome@fdb1e32, navSize=1
+09-25 13:30:08.701  5285  5285 D SurveyVM: resetToStart -> Start, session=1, uuid=683fbe86-2f17-4cef-b465-2b6e6b5fea93, preserveDraft=true, draftLen=0
+09-25 13:30:08.701  5285  5285 D MainActivity: Home -> Start survey: runNoteLen=0 (restoredAfterReset)
+09-25 13:30:08.701  5285  5285 D SurveyVM: activateRunIfNeeded(advanceToNext:Introduction) -> runNoteLen=0, draftCleared=true, uuid=683fbe86-2f17-4cef-b465-2b6e6b5fea93
+09-25 13:30:08.701  5285  5285 D SurveyVM: push -> Introduction, navSize=2, stackSize=2
+09-25 13:30:08.711  5285  5285 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): androidx.navigationevent.OnBackInvokedInput$createOnBackAnimationCallback$1@aae98b7
+09-25 13:30:08.715  5285  5285 D WhisperSpeechController: updateContext: surveyId=683fbe86-2f17-4cef-b465-2b6e6b5fea93, questionId=Introduction
+09-25 13:30:10.746  5285  5285 D SurveyVM: push -> Consent, navSize=3, stackSize=3
+09-25 13:30:10.785  5285  5285 D WhisperSpeechController: updateContext: surveyId=683fbe86-2f17-4cef-b465-2b6e6b5fea93, questionId=Consent
+09-25 13:30:29.815  5285  5285 D SurveyVM: push -> Q1, navSize=4, stackSize=4
+09-25 13:30:29.853  5285  5285 D WhisperSpeechController: updateContext: surveyId=683fbe86-2f17-4cef-b465-2b6e6b5fea93, questionId=Q1
+09-25 13:31:09.480  5285  5285 D SurveyVM: backToPrevious -> Consent (runActive=true, uiLen=0, runLen=0, draftLen=0)
+09-25 13:31:09.506  5285  5285 D WhisperSpeechController: updateContext: surveyId=683fbe86-2f17-4cef-b465-2b6e6b5fea93, questionId=Consent
+09-25 13:31:10.797  5285  5285 D SurveyVM: backToPrevious -> Introduction (runActive=true, uiLen=0, runLen=0, draftLen=0)
+09-25 13:31:10.822  5285  5285 D WhisperSpeechController: updateContext: surveyId=683fbe86-2f17-4cef-b465-2b6e6b5fea93, questionId=Introduction
+09-25 13:31:12.764  5285  5285 D SurveyVM: push -> Consent, navSize=3, stackSize=3
+09-25 13:31:12.781  5285  5285 D WhisperSpeechController: updateContext: surveyId=683fbe86-2f17-4cef-b465-2b6e6b5fea93, questionId=Consent
+09-25 13:31:18.414  5285  5285 D SurveyVM: push -> Done, navSize=4, stackSize=4
+09-25 13:31:18.443  5285  5285 D WhisperSpeechController: updateContext: surveyId=683fbe86-2f17-4cef-b465-2b6e6b5fea93, questionId=Done
+09-25 13:35:37.062  5766  5766 I Zygote  : Process 5766 created for com.negi.survey.local
+09-25 13:35:37.065  5766  5766 I gi.survey.local: Late-enabling -Xcheck:jni
+09-25 13:35:37.159  5766  5766 I gi.survey.local: Using CollectorTypeCMC GC.
+09-25 13:35:37.216  5766  5766 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+09-25 13:35:37.343  5766  5766 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+09-25 13:35:37.343  5766  5766 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+09-25 13:35:38.102  5766  5766 D nativeloader: Configuring clns-9 for other apk /data/app/~~9ZnNyNTa37ldzihVH1oqVQ==/com.negi.survey.local-tKQm5A5Ar0ToBtPwREkX-A==/base.apk. target_sdk_version=36, uses_libraries=libOpenCL.so:libOpenCL-pixel.so, library_path=/data/app/~~9ZnNyNTa37ldzihVH1oqVQ==/com.negi.survey.local-tKQm5A5Ar0ToBtPwREkX-A==/lib/arm64:/data/app/~~9ZnNyNTa37ldzihVH1oqVQ==/com.negi.survey.local-tKQm5A5Ar0ToBtPwREkX-A==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.negi.survey.local
+09-25 13:35:38.116  5766  5766 V GraphicsEnvironment: Currently set values for:
+09-25 13:35:38.116  5766  5766 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[com.android.angle]
+09-25 13:35:38.116  5766  5766 V GraphicsEnvironment:   angle_gl_driver_selection_values=[angle]
+09-25 13:35:38.116  5766  5766 V GraphicsEnvironment: com.negi.survey.local is not listed in per-application setting
+09-25 13:35:38.116  5766  5766 V GraphicsEnvironment: No special selections for ANGLE, returning default driver choice
+09-25 13:35:38.116  5766  5766 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+09-25 13:35:38.164  5766  5766 D nativeloader: Load /data/app/~~9ZnNyNTa37ldzihVH1oqVQ==/com.negi.survey.local-tKQm5A5Ar0ToBtPwREkX-A==/base.apk!/lib/arm64-v8a/liblitertlm_jni.so using class loader ns clns-9 (caller=/data/app/~~9ZnNyNTa37ldzihVH1oqVQ==/com.negi.survey.local-tKQm5A5Ar0ToBtPwREkX-A==/base.apk!classes10.dex): ok
+09-25 13:35:38.164  5766  5766 D SurveyApp: Loaded LiteRTLM JNI: litertlm_jni where=attachBaseContext
+09-25 13:35:38.188  5766  5766 D AppRingLogStore: installed: dir=/data/user/0/com.negi.survey.local/files/diagnostics/applog_ring idx=0
+09-25 13:35:38.188  5766  5766 D SurveyApp: attachBaseContext: pid=5766 process=com.negi.survey.local isMain=true sdk=36
+09-25 13:35:38.188  5766  5766 D SurveyApp: bootTiming: attachBaseContext total=54ms
+09-25 13:35:38.189  5766  5766 D SurveyApp: Skipping WorkManager init in attachBaseContext; will init lazily on first enqueue.
+09-25 13:35:38.192  5766  5766 D CrashCapture: install: ensured default handler. where=SurveyApp:attachBaseContext pid=5766 default=com.negi.survey.CrashCapture$CrashHandler@80b8781
+09-25 13:35:38.192  5766  5766 D SurveyApp: CrashCapture installed: where=SurveyApp:attachBaseContext
+09-25 13:35:38.206  5766  5766 E gi.survey.local: hiddenapi: Accessing hidden method Landroid/net/ssl/EchConfigMismatchException;->getRetryConfigList()Landroid/net/ssl/EchConfigList; (runtime_flags=0, domain=core-platform, api=blocked) from /data/app/~~9ZnNyNTa37ldzihVH1oqVQ==/com.negi.survey.local-tKQm5A5Ar0ToBtPwREkX-A==/base.apk!classes17.dex (domain=app, TargetSdkVersion=36) using linking: denied
+09-25 13:35:38.206  5766  5766 E gi.survey.local: hiddenapi: Accessing hidden method Landroid/net/ssl/EchConfigList;->toBytes()[B (runtime_flags=0, domain=core-platform, api=blocked) from /data/app/~~9ZnNyNTa37ldzihVH1oqVQ==/com.negi.survey.local-tKQm5A5Ar0ToBtPwREkX-A==/base.apk!classes17.dex (domain=app, TargetSdkVersion=36) using linking: denied
+09-25 13:35:38.207  5766  5766 E gi.survey.local: hiddenapi: Accessing hidden method Landroid/net/ssl/EchConfigList;->fromBytes([B)Landroid/net/ssl/EchConfigList; (runtime_flags=0, domain=core-platform, api=blocked) from /data/app/~~9ZnNyNTa37ldzihVH1oqVQ==/com.negi.survey.local-tKQm5A5Ar0ToBtPwREkX-A==/base.apk!classes17.dex (domain=app, TargetSdkVersion=36) using linking: denied
+09-25 13:35:38.207  5766  5766 E gi.survey.local: hiddenapi: Accessing hidden method Landroid/net/ssl/SSLSockets;->setEchConfigList(Ljavax/net/ssl/SSLSocket;Landroid/net/ssl/EchConfigList;)V (runtime_flags=0, domain=core-platform, api=blocked) from /data/app/~~9ZnNyNTa37ldzihVH1oqVQ==/com.negi.survey.local-tKQm5A5Ar0ToBtPwREkX-A==/base.apk!classes17.dex (domain=app, TargetSdkVersion=36) using linking: denied
+09-25 13:35:38.237  5766  5766 D SurveyApp: LiteRTLM JNI already loaded; skip. where=onCreate(retry)
+09-25 13:35:38.237  5766  5766 D SurveyApp: bootTiming: RuntimeLogStore.start took=1ms
+09-25 13:35:38.237  5766  5766 D SurveyApp: bootTiming: AppRingLogStore.install took=0ms
+09-25 13:35:38.238  5766  5766 D SurveyApp: onCreate: pid=5766 process=com.negi.survey.local isMain=true sdk=36
+09-25 13:35:38.244  5766  5829 D RuntimeLogStore: openWriter: start -> /data/user/0/com.negi.survey.local/files/diagnostics/runtime_logs/rtlog_20260925_203538_175_pid5766_seq1.log (bytes=0 format=LEGACY)
+09-25 13:35:38.247  5766  5766 D CrashCapture: install: ensured default handler. where=SurveyApp:onCreate(rewrap) pid=5766 default=com.negi.survey.CrashCapture$CrashHandler@80b8781
+09-25 13:35:38.247  5766  5766 D SurveyApp: CrashCapture installed: where=SurveyApp:onCreate(rewrap)
+09-25 13:35:38.247  5766  5766 D CrashCapture: registerSelfHealing: ActivityLifecycleCallbacks registered. mode=onResumedOnly
+09-25 13:35:38.247  5766  5766 D SurveyApp: CrashCapture self-healing registered.
+09-25 13:35:38.247  5766  5766 W SurveyApp: Startup enqueues deferred: delay=2500ms (to reduce init contention)
+09-25 13:35:38.247  5766  5766 D SurveyApp: Startup survey recovery deferred: delay=2500ms
+09-25 13:35:38.247  5766  5766 D SurveyApp: bootTiming: onCreate total=12ms
+09-25 13:35:38.252  5766  5829 D RuntimeLogStore: retention: start files=2 kept=2 totalBytes=13018
+09-25 13:35:38.347  5766  5832 I UploadRescheduleRcvr: Survey recovery action=android.intent.action.MY_PACKAGE_REPLACED discovered=0 reconciled=0 duplicates=0 unclassified=0 operationalFailures=0 classifications={}
+09-25 13:35:38.360  5766  5832 D UploadRescheduleRcvr: No generic GitHub pending files for action=android.intent.action.MY_PACKAGE_REPLACED
+09-25 13:35:38.444  5766  5832 D github_upload: enqueueStartupRuntimeLogsUpload: uniqueName=upload_runtime_logs_startup policy=KEEP session=startup_runtime_20260925_203538_e5e25041
+09-25 13:35:38.566  5766  5832 D WM-PackageManagerHelper: Skipping component enablement for androidx.work.impl.background.systemjob.SystemJobService
+09-25 13:35:38.566  5766  5832 D WM-Schedulers: Created SystemJobScheduler and enabled SystemJobService
+09-25 13:35:38.576  5766  5842 D WM-ForceStopRunnable: Is default app process = true
+09-25 13:35:38.577  5766  5842 D WM-ForceStopRunnable: Performing cleanup operations.
+09-25 13:35:38.602  5766  5832 D UploadRescheduleRcvr: Enqueued runtime logs upload for action=android.intent.action.MY_PACKAGE_REPLACED reason=receiver_my_package_replaced
+09-25 13:35:38.918  5766  5842 D WM-SystemJobScheduler: Reconciling jobs
+09-25 13:35:38.979  5766  5842 D WM-ForceStopRunnable: Found unfinished work, scheduling it.
+09-25 13:35:39.146  5766  5844 D WM-SystemJobScheduler: Scheduling work ID 249e3f17-bc97-46d3-85fa-28de0778ae2fJob ID 165
+09-25 13:35:39.162  5766  5844 D WM-GreedyScheduler: Starting tracking for 249e3f17-bc97-46d3-85fa-28de0778ae2f
+09-25 13:35:39.173  5766  5766 D WM-SystemJobService: onStartJob for WorkGenerationalId(workSpecId=249e3f17-bc97-46d3-85fa-28de0778ae2f, generation=0)
+09-25 13:35:39.224  5766  5845 D WM-Processor: Processor: processing WorkGenerationalId(workSpecId=249e3f17-bc97-46d3-85fa-28de0778ae2f, generation=0)
+09-25 13:35:39.282  5766  5766 D WM-WorkerWrapper: Starting work for com.negi.survey.net.GitHubUploadWorker
+09-25 13:35:39.285  5766  5845 D WM-WorkConstraintsTrack: NetworkRequestConstraintController register shared callback
+09-25 13:35:39.306  5766  5845 D WM-PackageManagerHelper: androidx.work.impl.background.systemalarm.RescheduleReceiver enabled
+09-25 13:35:39.338  5766  5846 D WM-WorkConstraintsTrack: NetworkRequestConstraintController onCapabilitiesChanged callback
+09-25 13:35:39.339  5766  5846 D WM-WorkConstraintsTrack: Not dispatching constraint state yet: isBlocked=null, capabilitiesInitialized=true
+09-25 13:35:39.339  5766  5846 D WM-WorkConstraintsTrack: NetworkRequestConstraintController onBlockedStatusChanged callback false
+09-25 13:35:39.342  5766  5842 I WM-Processor: Moving WorkSpec (249e3f17-bc97-46d3-85fa-28de0778ae2f) to the foreground
+09-25 13:35:39.369  5766  5842 D WM-GreedyScheduler: Constraints met: Scheduling work ID WorkGenerationalId(workSpecId=249e3f17-bc97-46d3-85fa-28de0778ae2f, generation=0)
+09-25 13:35:39.369  5766  5766 I WM-SystemFgDispatcher: Started foreground service Intent { act=ACTION_START_FOREGROUND xflg=0x4 cmp=com.negi.survey.local/androidx.work.impl.foreground.SystemForegroundService (has extras) }
+09-25 13:35:39.371  5766  5766 D WM-SystemFgDispatcher: Notifying with (id:7264, workSpecId: 249e3f17-bc97-46d3-85fa-28de0778ae2f, notificationType :1)
+09-25 13:35:39.378  5766  5766 D WM-SystemFgDispatcher: Notifying with (id:7264, workSpecId: 249e3f17-bc97-46d3-85fa-28de0778ae2f, notificationType :1)
+09-25 13:35:39.385  5766  5842 D WM-Processor: Work WorkGenerationalId(workSpecId=249e3f17-bc97-46d3-85fa-28de0778ae2f, generation=0) is already enqueued for processing
+09-25 13:35:39.387  5766  5842 D WM-WorkProgressUpdater: Updating progress for 249e3f17-bc97-46d3-85fa-28de0778ae2f (Data {pct : 3, mode : startup_runtime_logs})
+09-25 13:35:39.405  5766  5842 I WM-Processor: Moving WorkSpec (249e3f17-bc97-46d3-85fa-28de0778ae2f) to the foreground
+09-25 13:35:39.409  5766  5766 D WM-SystemFgDispatcher: Notifying with (id:7264, workSpecId: 249e3f17-bc97-46d3-85fa-28de0778ae2f, notificationType :1)
+09-25 13:35:39.413  5766  5842 D WM-WorkConstraintsTrack: NetworkRequestConstraintController send initial capabilities
+09-25 13:35:40.595  5766  5829 D RuntimeLogStore: openWriter: rotate:plain_snapshot:receiver_my_package_repl -> /data/user/0/com.negi.survey.local/files/diagnostics/runtime_logs/rtlog_20260925_203540_591_pid5766_seq2.log (bytes=0 format=LEGACY)
+09-25 13:35:40.598  5766  5829 D RuntimeLogStore: retention: rotate:plain_snapshot:receiver_my_package_repl files=3 kept=3 totalBytes=14834
+09-25 13:35:40.643  5766  5832 D github_upload: doRuntimeLogsUpload: remoteBaseDir=diagnostics/runtime_logs/2026-09-25/runtime_logs_startup_runtime_20260925_203538_e5e25041_receiver_my_package_repl toUpload=2 bytes=14493 dedupe=true deleteSource=true deletedSourcePre=0 preview='runtime_log_20260925_203540_605_pid5766_receiver_my_package_repl__rtlog_20260925_203538_175_pid5766_seq1.log|runtime_log_20260925_203540_605_pid5766_receiver_my_package_repl__rtlog_20260925_202248_052_pid5285_seq2.log'
+09-25 13:35:40.653  5766  5832 D GitHubUploader: uploadStream: owner=ishizuki-tech repo=SurveyExports branch=main path=diagnostics/runtime_logs/2026-09-25/runtime_logs_startup_runtime_20260925_203538_e5e25041_receiver_my_package_repl/runtime_log_20260925_203540_605_pid5766_receiver_my_package_repl__rtlog_20260925_203538_175_pid5766_seq1.log size=1797 maxRawBytesHint=1000000 maxRequestBytesHint=2800000
+09-25 13:35:40.655  5766  5844 D WM-WorkProgressUpdater: Updating progress for 249e3f17-bc97-46d3-85fa-28de0778ae2f (Data {pct : 10, mode : startup_runtime_logs})
+09-25 13:35:40.677  5766  5844 I WM-Processor: Moving WorkSpec (249e3f17-bc97-46d3-85fa-28de0778ae2f) to the foreground
+09-25 13:35:40.685  5766  5766 D WM-SystemFgDispatcher: Notifying with (id:7264, workSpecId: 249e3f17-bc97-46d3-85fa-28de0778ae2f, notificationType :1)
+09-25 13:35:40.748  5766  5766 W SurveyApp: Deferred startup enqueues begin...
+09-25 13:35:40.750  5766  5766 D SurveyApp: WorkManager available. where=startupRtLogs(immediate) took=0ms
+09-25 13:35:40.761  5766  5766 D SurveyApp: Startup runtime logs target -> owner=ishizuki-tech repo=SurveyExports branch=main base='/diagnostics/runtime_logs'
+09-25 13:35:40.770  5766  5766 D github_upload: enqueueStartupRuntimeLogsUpload: uniqueName=upload_runtime_logs_startup policy=KEEP session=startup_runtime_20260925_203540_98941a5d
+09-25 13:35:40.771  5766  5766 D SurveyApp: Startup runtime logs: enqueue requested (immediate).
+09-25 13:35:40.771  5766  5766 D SurveyApp: WorkManager available. where=startupRingLogs(immediate) took=0ms
+09-25 13:35:40.780  5766  5766 D SurveyApp: Startup ring logs target -> owner=ishizuki-tech repo=SurveyExports branch=main base='/diagnostics/applog_ring'
+09-25 13:35:40.785  5766  5766 D github_upload: enqueueStartupRingLogsUpload: uniqueName=upload_ring_logs_startup policy=KEEP session=startup_ring_20260925_203540_76ee5b62
+09-25 13:35:40.787  5766  5766 D SurveyApp: Startup ring logs: enqueue requested (immediate).
+09-25 13:35:40.788  5766  5766 D SurveyApp: WorkManager available. where=enqueuePending(immediate) took=0ms
+09-25 13:35:40.790  5766  5766 D SurveyApp: CrashCapture pending uploads requested (immediate).
+09-25 13:35:40.791  5766  5853 D CrashCapture: enqueuePendingCrashUploadsIfPossible enter where=SurveyApp:enqueuePending(immediate):bg pid=5766 thread=CrashCapture-Enqueue
+09-25 13:35:40.791  5766  5766 W SurveyApp: Deferred startup enqueues done: took=43ms
+09-25 13:35:40.794  5766  5834 D SurveyApp: Survey recovery WorkManager available. where=startupSurveyUploads(initial) took=0ms
+09-25 13:35:40.807  5766  5834 D SurveyApp: Startup survey recovery complete: discovered=0 attempted=0 submitted=0 active=0 trackerUnconfirmed=0 uploaded=0 deferred=0 invalid=0 operationalFailures=0 duplicates=0 unclassified=0
+09-25 13:35:40.875  5766  5845 D WM-SystemJobScheduler: Scheduling work ID 4dd7024b-54bd-48b0-bef6-b32e89238786Job ID 166

@@ -1,0 +1,47 @@
+=== RuntimeLogStore Header ===
+ts=2026-10-02T19:49:31.108Z
+fileNameFormat=LEGACY
+appId=com.negi.survey.local
+versionName=0.0.1
+versionCode=1
+debug=true
+device=samsung SM-S731U
+sdk=36
+pid=18500
+==============================
+2026-10-02T19:49:31.108Z I/RuntimeLogStore [rtlog-io] start: actor launched (fileNameFormat=LEGACY)
+2026-10-02T19:49:31.104Z D/SurveyApp [main] attachBaseContext: pid=18500 process=com.negi.survey.local isMain=true sdk=36
+2026-10-02T19:49:31.105Z D/SurveyApp [main] bootTiming: attachBaseContext total=32ms
+2026-10-02T19:49:31.105Z D/SurveyApp [main] Skipping WorkManager init in attachBaseContext; will init lazily on first enqueue.
+2026-10-02T19:49:31.106Z D/SurveyApp [main] CrashCapture installed: where=SurveyApp:attachBaseContext
+2026-10-02T19:49:31.117Z I/RuntimeLogStore [main] start repair: ctx/dir refreshed
+2026-10-02T19:49:31.117Z D/SurveyApp [main] bootTiming: RuntimeLogStore.start took=0ms
+2026-10-02T19:49:31.117Z D/SurveyApp [main] bootTiming: AppRingLogStore.install took=0ms
+2026-10-02T19:49:31.117Z D/SurveyApp [main] onCreate: pid=18500 process=com.negi.survey.local isMain=true sdk=36
+2026-10-02T19:49:31.121Z D/SurveyApp [main] CrashCapture installed: where=SurveyApp:onCreate(rewrap)
+2026-10-02T19:49:31.121Z D/SurveyApp [main] CrashCapture self-healing registered.
+2026-10-02T19:49:31.121Z W/SurveyApp [main] Startup enqueues deferred: delay=2500ms (to reduce init contention)
+2026-10-02T19:49:31.121Z D/SurveyApp [main] Startup survey recovery deferred: delay=2500ms
+2026-10-02T19:49:31.121Z D/SurveyApp [main] bootTiming: onCreate total=5ms
+2026-10-02T19:49:33.622Z W/SurveyApp [main] Deferred startup enqueues begin...
+2026-10-02T19:49:33.623Z D/SurveyApp [main] WorkManager available. where=startupRtLogs(immediate) took=0ms
+2026-10-02T19:49:33.640Z D/SurveyApp [main] Startup runtime logs: GitHub config not available (immediate).
+2026-10-02T19:49:33.640Z W/SurveyApp [main] Startup runtime logs: scheduling one retry; reason=config
+2026-10-02T19:49:33.641Z D/SurveyApp [main] WorkManager available. where=startupRingLogs(immediate) took=0ms
+2026-10-02T19:49:33.648Z D/SurveyApp [main] Startup ring logs: GitHub config not available (immediate).
+2026-10-02T19:49:33.648Z W/SurveyApp [main] Startup ring logs: scheduling one retry; reason=config
+2026-10-02T19:49:33.648Z D/SurveyApp [main] WorkManager available. where=enqueuePending(immediate) took=0ms
+2026-10-02T19:49:33.649Z D/SurveyApp [main] CrashCapture pending uploads requested (immediate).
+2026-10-02T19:49:33.649Z W/SurveyApp [main] Deferred startup enqueues done: took=28ms
+2026-10-02T19:49:33.651Z D/SurveyApp [DefaultDispatcher-worker-2] Survey recovery WorkManager available. where=startupSurveyUploads(initial) took=0ms
+2026-10-02T19:49:33.658Z W/SurveyApp [DefaultDispatcher-worker-2] Startup survey recovery: GitHub config unavailable (initial).
+2026-10-02T19:49:33.659Z W/SurveyApp [DefaultDispatcher-worker-2] Startup survey recovery: scheduling one retry; reason=config delay=1600ms
+2026-10-02T19:49:35.244Z D/SurveyApp [main] WorkManager available. where=startupRtLogs(delayed) took=1ms
+2026-10-02T19:49:35.265Z D/SurveyApp [main] Startup runtime logs: GitHub config not available (delayed).
+2026-10-02T19:49:35.266Z D/SurveyApp [main] Startup runtime logs: retry already scheduled; reason=config
+2026-10-02T19:49:35.267Z D/SurveyApp [main] WorkManager available. where=startupRingLogs(delayed) took=0ms
+2026-10-02T19:49:35.277Z D/SurveyApp [main] Startup ring logs: GitHub config not available (delayed).
+2026-10-02T19:49:35.278Z D/SurveyApp [main] Startup ring logs: retry already scheduled; reason=config
+2026-10-02T19:49:35.280Z D/SurveyApp [DefaultDispatcher-worker-2] Survey recovery WorkManager available. where=startupSurveyUploads(delayed) took=0ms
+2026-10-02T19:49:35.291Z W/SurveyApp [DefaultDispatcher-worker-2] Startup survey recovery: GitHub config unavailable (delayed).
+2026-10-02T19:49:35.292Z W/SurveyApp [DefaultDispatcher-worker-2] Startup survey recovery: retry exhausted; reason=config

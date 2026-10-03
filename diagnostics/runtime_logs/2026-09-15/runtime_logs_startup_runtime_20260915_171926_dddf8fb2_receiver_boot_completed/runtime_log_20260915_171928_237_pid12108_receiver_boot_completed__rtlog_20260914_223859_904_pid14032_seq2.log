@@ -1,0 +1,94 @@
+=== RuntimeLogStore Header ===
+ts=2026-09-14T22:38:59.906Z
+fileNameFormat=LEGACY
+appId=com.negi.survey
+versionName=0.0.1
+versionCode=1
+debug=true
+device=Google Pixel 9a
+sdk=36
+pid=14032
+==============================
+2026-09-14T22:38:59.906Z I/RuntimeLogStore [rtlog-io] --- rotated (reason=plain_snapshot:receiver_boot_completed) ---
+2026-09-14T22:39:00.920Z W/SurveyApp [main] Deferred startup enqueues begin...
+2026-09-14T22:39:00.920Z D/SurveyApp [main] WorkManager available. where=startupRtLogs(immediate) took=0ms
+2026-09-14T22:39:00.922Z D/SurveyApp [main] Startup runtime logs target -> owner=ishizuki-tech repo=SurveyExports branch=main base='/diagnostics/runtime_logs'
+2026-09-14T22:39:00.925Z D/SurveyApp [main] Startup runtime logs: enqueue requested (immediate).
+2026-09-14T22:39:00.925Z D/SurveyApp [main] WorkManager available. where=startupRingLogs(immediate) took=0ms
+2026-09-14T22:39:00.926Z D/SurveyApp [main] Startup ring logs target -> owner=ishizuki-tech repo=SurveyExports branch=main base='/diagnostics/applog_ring'
+2026-09-14T22:39:00.927Z D/SurveyApp [main] Startup ring logs: enqueue requested (immediate).
+2026-09-14T22:39:00.927Z D/SurveyApp [main] WorkManager available. where=enqueuePending(immediate) took=0ms
+2026-09-14T22:39:00.927Z D/SurveyApp [main] CrashCapture pending uploads requested (immediate).
+2026-09-14T22:39:00.927Z W/SurveyApp [main] Deferred startup enqueues done: took=8ms
+2026-09-14T22:39:27.841Z D/SLM [main] buildModelConfig: accel=GPU maxTokens=512 topK=1 topP=0.0 temperature=0.0
+2026-09-14T22:39:27.867Z D/LiteRtLM [DefaultDispatcher-worker-5] Initializing LiteRT-LM: model='Gemma3n4B', key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm'
+2026-09-14T22:39:27.868Z D/LiteRtLM [DefaultDispatcher-worker-5] Capabilities: image=false audio=false
+2026-09-14T22:39:27.868Z D/LiteRtLM [DefaultDispatcher-worker-5] Backend=com.google.ai.edge.litertlm.Backend$GPU@d258ae6 maxNumTokens=512 (raw=512) topK=1 topP=0.0 temp=0.0
+2026-09-14T22:39:27.868Z D/LiteRtLM [DefaultDispatcher-worker-5] Model path='/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' sizeBytes=4919541760 lastModified=1789424560889
+2026-09-14T22:39:27.868Z D/LiteRtLM [DefaultDispatcher-worker-5] LiteRT-LM native benchmark policy: enabled=false emulator=false
+2026-09-14T22:39:27.868Z D/LiteRtLM [DefaultDispatcher-worker-5] Speculative decoding / MTP policy: enabled=false runtimeFlagUpdated=true model='Gemma3n4B'
+2026-09-14T22:39:27.871Z D/LiteRtLM [DefaultDispatcher-worker-5] Engine cacheDir resolved: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' backend=com.google.ai.edge.litertlm.Backend$GPU@d258ae6 path='/data/user/0/com.negi.survey/no_backup/litertlm_cache/063a9f130e7f8c9572c333f12577aadf420a56ad' filesBefore=2
+2026-09-14T22:39:34.656Z W/LiteRtLM [DefaultDispatcher-worker-5] Engine.initialize completed: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' backend=com.google.ai.edge.litertlm.Backend$GPU@d258ae6 took=6781ms cacheFilesAfter=2
+2026-09-14T22:39:34.673Z D/LiteRtLM [DefaultDispatcher-worker-5] createConversation completed: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' took=17ms
+2026-09-14T22:39:34.674Z D/LiteRtLM [DefaultDispatcher-worker-5] LiteRT-LM initialization succeeded: model='Gemma3n4B', key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' engineMs=6781 conversationMs=17 totalMs=6808
+2026-09-14T22:39:34.687Z D/AiTrace [main] Installed (enabled=true ringEnabled=true)
+2026-09-14T22:39:34.695Z D/SurveyVM [main] init -> Start, session=0, uuid=d0bfc46b-8087-45ce-9f2c-e2c1c89513af, navSize=1, graphSize=20
+2026-09-14T22:39:34.705Z D/SurveyVM [main] config.validate -> issues=0
+2026-09-14T22:39:34.705Z D/SurveyVM [main] promptSources -> legacy=10, eval=0, follow=0
+2026-09-14T22:39:34.705Z D/SurveyVM [main] promptSources.preview -> legacy=[Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q8, Q9], eval=[], follow=[]
+2026-09-14T22:39:34.705Z D/SurveyVM [main] hasTwoStepPrompt[Q10] -> false (eval=0, fu=0)
+2026-09-14T22:39:34.705Z D/SurveyVM [main] hasTwoStepPrompt[Q11] -> false (eval=0, fu=0)
+2026-09-14T22:39:34.705Z D/SurveyVM [main] hasTwoStepPrompt[Q12] -> false (eval=0, fu=0)
+2026-09-14T22:39:34.705Z D/SurveyVM [main] hasTwoStepPrompt[Q13] -> false (eval=0, fu=0)
+2026-09-14T22:39:34.706Z D/SurveyVM [main] hasTwoStepPrompt[Q14] -> false (eval=0, fu=0)
+2026-09-14T22:39:34.706Z D/SurveyVM [main] hasTwoStepPrompt[Q15] -> false (eval=0, fu=0)
+2026-09-14T22:39:34.706Z D/SurveyVM [main] hasTwoStepPrompt[Q16] -> false (eval=0, fu=0)
+2026-09-14T22:39:34.706Z D/SurveyVM [main] hasTwoStepPrompt[Q17] -> false (eval=0, fu=0)
+2026-09-14T22:39:34.706Z D/SurveyVM [main] hasTwoStepPrompt[Q8] -> false (eval=0, fu=0)
+2026-09-14T22:39:34.706Z D/SurveyVM [main] hasTwoStepPrompt[Q9] -> false (eval=0, fu=0)
+2026-09-14T22:39:34.706Z D/SurveyVM [main] AI prompt coverage OK (aiCount=10)
+2026-09-14T22:39:34.748Z D/SLM [slm-jni] initializeIfNeeded: model='Gemma3n4B' image=false audio=false
+2026-09-14T22:39:34.749Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='Gemma3n4B|/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm'
+2026-09-14T22:39:34.764Z D/LiteRtRepository [main] warmUp: initializeIfNeeded ok gateWaitMs=0 initMs=8
+2026-09-14T22:39:34.766Z D/LiteRtRepository [main] warmUp: Engine ready; representative inference disabled totalMs=21
+2026-09-14T22:40:45.294Z D/SurveyVM [main] resetAudioRefs -> cleared
+2026-09-14T22:40:45.294Z D/SurveyVM [main] resetNavToStart -> key=com.negi.survey.vm.FlowHome@e23484a, navSize=1
+2026-09-14T22:40:45.294Z D/SurveyVM [main] resetToStart -> Start, session=1, uuid=deb662f6-6679-4201-a6ee-9d430f8ef71b, preserveDraft=true, draftLen=0
+2026-09-14T22:40:45.294Z D/SurveyVM [main] activateRunIfNeeded(advanceToNext:Q1) -> runNoteLen=0, draftCleared=true, uuid=deb662f6-6679-4201-a6ee-9d430f8ef71b
+2026-09-14T22:40:45.295Z D/SurveyVM [main] push -> Q1, navSize=2, stackSize=2
+2026-09-14T22:40:47.871Z D/SurveyVM [main] backToPrevious -> Start (runActive=true, uiLen=0, runLen=0, draftLen=0)
+2026-09-14T22:40:50.230Z D/SurveyVM [main] setRunFreeText(run) -> len=1
+2026-09-14T22:40:50.306Z D/SurveyVM [main] setRunFreeText(run) -> len=2
+2026-09-14T22:40:50.310Z D/SurveyVM [main] setRunFreeText(run) -> len=3
+2026-09-14T22:40:50.312Z D/SurveyVM [main] setRunFreeText(run) -> len=4
+2026-09-14T22:41:13.566Z D/SurveyVM [main] resetAudioRefs -> cleared
+2026-09-14T22:41:13.566Z D/SurveyVM [main] resetNavToStart -> key=com.negi.survey.vm.FlowHome@e23484a, navSize=1
+2026-09-14T22:41:13.566Z D/SurveyVM [main] resetToStart -> Start, session=2, uuid=68dcb270-5ca6-4217-ac41-7e0db3ceb95b, preserveDraft=true, draftLen=4
+2026-09-14T22:41:13.566Z D/SurveyVM [main] setRunFreeText(draft) -> len=4
+2026-09-14T22:41:13.566Z D/SurveyVM [main] activateRunIfNeeded(advanceToNext:Q1) -> runNoteLen=4, draftCleared=true, uuid=68dcb270-5ca6-4217-ac41-7e0db3ceb95b
+2026-09-14T22:41:13.567Z D/SurveyVM [main] push -> Q1, navSize=2, stackSize=2
+2026-09-14T22:41:31.686Z D/SurveyVM [main] backToPrevious -> Start (runActive=true, uiLen=4, runLen=4, draftLen=0)
+2026-09-14T22:41:33.977Z D/SurveyVM [main] setRunFreeText(run) -> len=5
+2026-09-14T22:41:34.038Z D/SurveyVM [main] setRunFreeText(run) -> len=6
+2026-09-14T22:41:34.065Z D/SurveyVM [main] setRunFreeText(run) -> len=7
+2026-09-14T22:41:34.066Z D/SurveyVM [main] setRunFreeText(run) -> len=8
+2026-09-14T22:42:26.866Z D/SurveyVM [main] resetAudioRefs -> cleared
+2026-09-14T22:42:26.866Z D/SurveyVM [main] resetNavToStart -> key=com.negi.survey.vm.FlowHome@e23484a, navSize=1
+2026-09-14T22:42:26.866Z D/SurveyVM [main] resetToStart -> Start, session=3, uuid=206205e6-b1f1-440f-82b2-177fcbeacbfa, preserveDraft=true, draftLen=8
+2026-09-14T22:42:26.866Z D/SurveyVM [main] setRunFreeText(draft) -> len=8
+2026-09-14T22:42:26.867Z D/SurveyVM [main] activateRunIfNeeded(advanceToNext:Q1) -> runNoteLen=8, draftCleared=true, uuid=206205e6-b1f1-440f-82b2-177fcbeacbfa
+2026-09-14T22:42:26.867Z D/SurveyVM [main] push -> Q1, navSize=2, stackSize=2
+2026-09-14T22:42:49.750Z D/SurveyVM [main] push -> Q2, navSize=3, stackSize=3
+2026-09-14T22:42:54.358Z D/SurveyVM [main] push -> Q3, navSize=4, stackSize=4
+2026-09-14T22:43:09.367Z D/SurveyVM [main] push -> Q4, navSize=5, stackSize=5
+2026-09-14T22:43:11.661Z D/SurveyVM [main] push -> Q5, navSize=6, stackSize=6
+2026-09-14T22:43:33.113Z D/SurveyVM [main] push -> Q6, navSize=7, stackSize=7
+2026-09-14T22:43:37.635Z D/SurveyVM [main] push -> Q7, navSize=8, stackSize=8
+2026-09-14T22:43:53.947Z D/SurveyVM [main] push -> Q8, navSize=9, stackSize=9
+2026-09-14T22:43:53.988Z D/SurveyVM [main] hasTwoStepPrompt[Q8] -> false (eval=0, fu=0)
+2026-09-14T22:44:19.636Z D/AiScreen [main] Speech started (node=Q8 role=MAIN)
+2026-09-14T22:45:21.401Z D/AiScreen [main] Speech finished with empty/no-change (node=Q8 role=MAIN)
+2026-09-14T22:45:21.595Z D/SurveyVM [DefaultDispatcher-worker-4] addAudioRef -> q=Q8, file=voice_206205e6-b1f1-440f-82b2-177fcbeacbfa_Q8_20260914_224521.wav, sid=206205e6-b1f1-440f-82b2-177fcbeacbfa
+2026-09-14T22:45:21.595Z D/SurveyVM [DefaultDispatcher-worker-4] onVoiceExported -> q=Q8, file=voice_206205e6-b1f1-440f-82b2-177fcbeacbfa_Q8_20260914_224521.wav, replace=false
+2026-09-14T22:45:21.635Z D/AiScreen [main] Speech started (node=Q8 role=MAIN)
+2026-09-14T22:45:48.576Z D/AiScreen [main] Speech committed (node=Q8 role=MAIN len=172)
