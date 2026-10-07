@@ -177,3 +177,16 @@ Some ideas for future improvements:
 
 For questions about data structure, ingestion pipelines, or access policies,
 please contact the repository owner.
+# SurveyExports
+
+## SurveyViewer index
+
+`viewer-index/v1` is generated metadata for the separate SurveyViewer static application. It contains session-list metadata only; it never duplicates respondent answers, transcripts, follow-up text, AI text, or WAV content.
+
+Run locally with:
+
+```sh
+node scripts/generate-viewer-index.mjs --source production --repository ishizuki-tech/SurveyExports --commit-sha "$(git rev-parse HEAD)"
+```
+
+The workflow runs only when dated `exports/*.json` files change. It serializes runs per branch, refreshes from `origin/main` before each generation attempt, and retries a rejected push. Index-only commits do not trigger it, so generated commits cannot loop.
