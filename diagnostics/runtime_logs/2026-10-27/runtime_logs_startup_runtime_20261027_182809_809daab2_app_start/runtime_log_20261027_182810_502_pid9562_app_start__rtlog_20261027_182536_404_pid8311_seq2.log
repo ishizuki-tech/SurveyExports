@@ -1,0 +1,77 @@
+=== RuntimeLogStore Header ===
+ts=2026-10-27T18:25:36.407Z
+fileNameFormat=LEGACY
+appId=com.negi.survey
+versionName=0.0.1
+versionCode=133
+debug=false
+device=samsung SM-S731U
+sdk=36
+pid=8311
+==============================
+2026-10-27T18:25:36.407Z I/RuntimeLogStore [rtlog-io] --- rotated (reason=plain_snapshot:app_start) ---
+2026-10-27T18:28:04.950Z D/LiteRtLM [DefaultDispatcher-worker-4] Initializing LiteRT-LM: model='Gemma3n4B', key='fs|dev=65111|ino=54998|size=269227468|mtime=1793125684642'
+2026-10-27T18:28:04.951Z D/LiteRtLM [DefaultDispatcher-worker-4] Capabilities: image=false audio=false
+2026-10-27T18:28:04.951Z D/LiteRtLM [DefaultDispatcher-worker-4] Backend=com.google.ai.edge.litertlm.Backend$GPU@3caa11b maxNumTokens=1024 (raw=1024) topK=1 topP=0.0 temp=0.0
+2026-10-27T18:28:04.951Z D/LiteRtLM [DefaultDispatcher-worker-4] Model path='/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' sizeBytes=269227468 lastModified=1793125684642
+2026-10-27T18:28:04.951Z D/LiteRtLM [DefaultDispatcher-worker-4] LiteRT-LM native benchmark policy: enabled=false emulator=false
+2026-10-27T18:28:04.952Z D/LiteRtLM [DefaultDispatcher-worker-4] Speculative decoding / MTP policy: enabled=false runtimeFlagUpdated=true model='Gemma3n4B'
+2026-10-27T18:28:04.953Z D/LiteRtLM [DefaultDispatcher-worker-4] Engine cacheDir resolved: key='fs|dev=65111|ino=54998|size=269227468|mtime=1793125684642' backend=com.google.ai.edge.litertlm.Backend$GPU@3caa11b path='/data/user/0/com.negi.survey/no_backup/litertlm_cache/1113d047537350f3cf6b4a7cae5fb1ebab390195' filesBefore=0
+2026-10-27T18:28:04.965Z W/LiteRtLM [DefaultDispatcher-worker-4] GPU initialization failed; trying CPU fallback: Failed to create engine: INVALID_ARGUMENT: Invalid magic number or failed to read: PK
+com.google.ai.edge.litertlm.LiteRtLmJniException: Failed to create engine: INVALID_ARGUMENT: Invalid magic number or failed to read: PK
+	at com.google.ai.edge.litertlm.LiteRtLmJni.nativeCreateEngine(Native Method)
+	at com.google.ai.edge.litertlm.Engine.initialize(Engine.kt:75)
+	at com.negi.survey.slm.LiteRtLM$initialize$2.invokeSuspend(LiteRtLM.kt:2535)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:124)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:586)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:798)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:717)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:704)
+
+2026-10-27T18:28:04.968Z E/LiteRtLM [DefaultDispatcher-worker-4] Native close failed: key='fs|dev=65111|ino=54998|size=269227468|mtime=1793125684642' label='gpu-fallback' err=Engine is not initialized.
+java.lang.IllegalStateException: Engine is not initialized.
+	at com.google.ai.edge.litertlm.Engine.checkInitialized(Engine.kt:205)
+	at com.google.ai.edge.litertlm.Engine.close(Engine.kt:105)
+	at com.negi.survey.slm.LiteRtLM$initialize$2.invokeSuspend$closeInitializationEngine$lambda$3(LiteRtLM.kt:1936)
+	at com.negi.survey.slm.LiteRtLM$initialize$2$$ExternalSyntheticLambda3.invoke(D8$$SyntheticClass:0)
+	at com.negi.survey.slm.LiteRtLM$closeNativeDetached$2.invokeSuspend(LiteRtLM.kt:1328)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1154)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:652)
+	at java.lang.Thread.run(Thread.java:1563)
+
+2026-10-27T18:28:04.969Z E/LiteRtLM [DefaultDispatcher-worker-4] LiteRT-LM initialization failed: LiteRT-LM native runtime teardown could not be confirmed; process restart is required. totalMs=20
+com.negi.survey.slm.NativeRuntimePoisonedException: LiteRT-LM native runtime teardown could not be confirmed; process restart is required.
+	at com.negi.survey.slm.NativeLifecycleCoordinator.poisonLocked(NativeLifecycleCoordinator.kt:622)
+	at com.negi.survey.slm.NativeLifecycleCoordinator.poisonIfCloseUnconfirmed$app(NativeLifecycleCoordinator.kt:428)
+	at com.negi.survey.slm.NativeLifecycleCoordinator.recordCloseException$app(NativeLifecycleCoordinator.kt:436)
+	at com.negi.survey.slm.LiteRtLM.closeNativeDetached(LiteRtLM.kt:1343)
+	at com.negi.survey.slm.LiteRtLM.access$closeNativeDetached(LiteRtLM.kt:351)
+	at com.negi.survey.slm.LiteRtLM$closeNativeDetached$1.invokeSuspend(Unknown Source:20)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:35)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:101)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:47)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:124)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:586)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:798)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:717)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:704)
+Caused by: java.lang.IllegalStateException: Engine is not initialized.
+	at com.google.ai.edge.litertlm.Engine.checkInitialized(Engine.kt:205)
+	at com.google.ai.edge.litertlm.Engine.close(Engine.kt:105)
+	at com.negi.survey.slm.LiteRtLM$initialize$2.invokeSuspend$closeInitializationEngine$lambda$3(LiteRtLM.kt:1936)
+	at com.negi.survey.slm.LiteRtLM$initialize$2$$ExternalSyntheticLambda3.invoke(D8$$SyntheticClass:0)
+	at com.negi.survey.slm.LiteRtLM$closeNativeDetached$2.invokeSuspend(LiteRtLM.kt:1328)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1154)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:652)
+	at java.lang.Thread.run(Thread.java:1563)
+
