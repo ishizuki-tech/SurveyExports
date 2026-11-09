@@ -1,0 +1,99 @@
+event_utc=2026-11-09T23:50:39.632054Z
+capture_start_utc=2026-11-09T23:50:39.632054Z
+capture_end_utc=2026-11-09T23:51:18.104Z
+collection_scope=previous_process_runtime_segment
+collector_process_session=6e202d41-288e-4da8-800c-d0ba0eebec7a
+collector_process_pid=28187
+=== RuntimeLogStore Header ===
+ts=2026-11-09T23:50:39.632054Z
+v2_process_session=25b6a517-b23a-4ad4-9a7e-2e2144c18d7c
+v2_profile=PRODUCTION
+fileNameFormat=LEGACY
+appId=com.negi.survey
+versionName=0.0.1
+versionCode=164
+debug=false
+device=Google Pixel 9a
+sdk=36
+pid=28014
+==============================
+2026-11-09T23:50:39.632Z I/RuntimeLogStore [rtlog-io] start: actor launched (fileNameFormat=LEGACY)
+2026-11-09T23:50:39.629Z D/SurveyApp [main] attachBaseContext: pid=28014 process=com.negi.survey isMain=true sdk=36
+2026-11-09T23:50:39.630Z D/SurveyApp [main] bootTiming: attachBaseContext total=8ms
+2026-11-09T23:50:39.630Z D/SurveyApp [main] Skipping WorkManager init in attachBaseContext; will init lazily on first enqueue.
+2026-11-09T23:50:39.630Z D/SurveyApp [main] CrashCapture installed: where=SurveyApp:attachBaseContext
+2026-11-09T23:50:39.634Z I/RuntimeLogStore [main] start repair: ctx/dir refreshed
+2026-11-09T23:50:39.634Z D/SurveyApp [main] bootTiming: RuntimeLogStore.start took=0ms
+2026-11-09T23:50:39.634Z D/SurveyApp [main] bootTiming: AppRingLogStore.install took=0ms
+2026-11-09T23:50:39.634Z D/SurveyApp [main] onCreate: pid=28014 process=com.negi.survey isMain=true sdk=36
+2026-11-09T23:50:39.635Z D/SurveyApp [main] CrashCapture installed: where=SurveyApp:onCreate(rewrap)
+2026-11-09T23:50:39.635Z D/SurveyApp [main] CrashCapture self-healing registered.
+2026-11-09T23:50:39.635Z D/SurveyApp [main] Startup survey recovery deferred: delay=2500ms
+2026-11-09T23:50:39.635Z D/SurveyApp [main] bootTiming: onCreate total=0ms
+2026-11-09T23:50:42.141Z D/SurveyApp [DefaultDispatcher-worker-1] Survey recovery WorkManager available. where=startupSurveyUploads(initial) took=0ms
+2026-11-09T23:50:42.151Z D/SurveyApp [DefaultDispatcher-worker-1] Startup survey recovery complete: discovered=0 attempted=0 submitted=0 active=0 trackerUnconfirmed=0 uploaded=0 deferred=0 invalid=0 operationalFailures=0 duplicates=0 unclassified=0
+2026-11-09T23:51:18.098Z D/LiteRtLM [DefaultDispatcher-worker-1] Initializing LiteRT-LM: model='Gemma3n4B', key='fs|dev=65086|ino=89772|size=465085650|mtime=1794268276940'
+2026-11-09T23:51:18.098Z D/LiteRtLM [DefaultDispatcher-worker-1] Capabilities: image=false audio=false
+2026-11-09T23:51:18.098Z D/LiteRtLM [DefaultDispatcher-worker-1] Backend=com.google.ai.edge.litertlm.Backend$GPU@acc84de maxNumTokens=1024 (raw=1024) topK=1 topP=0.0 temp=0.0
+2026-11-09T23:51:18.098Z D/LiteRtLM [DefaultDispatcher-worker-1] Model path='/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' sizeBytes=465085650 lastModified=1794268276940
+2026-11-09T23:51:18.099Z D/LiteRtLM [DefaultDispatcher-worker-1] LiteRT-LM native benchmark policy: enabled=false emulator=false
+2026-11-09T23:51:18.099Z D/LiteRtLM [DefaultDispatcher-worker-1] Speculative decoding / MTP policy: enabled=false runtimeFlagUpdated=true model='Gemma3n4B'
+2026-11-09T23:51:18.100Z D/LiteRtLM [DefaultDispatcher-worker-1] Engine cacheDir resolved: key='fs|dev=65086|ino=89772|size=465085650|mtime=1794268276940' backend=com.google.ai.edge.litertlm.Backend$GPU@acc84de path='/data/user/0/com.negi.survey/no_backup/litertlm_cache/6466e0ac959f8c06a4a06118c33741ab3bf5428d' filesBefore=0
+2026-11-09T23:51:18.102Z W/LiteRtLM [DefaultDispatcher-worker-1] GPU initialization failed; trying CPU fallback: Failed to create engine: INVALID_ARGUMENT: Invalid magic number or failed to read: PK
+com.google.ai.edge.litertlm.LiteRtLmJniException: Failed to create engine: INVALID_ARGUMENT: Invalid magic number or failed to read: PK
+	at com.google.ai.edge.litertlm.LiteRtLmJni.nativeCreateEngine(Native Method)
+	at com.google.ai.edge.litertlm.Engine.initialize(Engine.kt:75)
+	at com.negi.survey.slm.LiteRtLM$initialize$2.invokeSuspend(LiteRtLM.kt:2663)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:124)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:586)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:798)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:717)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:704)
+
+2026-11-09T23:51:18.105Z E/LiteRtLM [DefaultDispatcher-worker-1] Native close failed: key='fs|dev=65086|ino=89772|size=465085650|mtime=1794268276940' label='gpu-fallback' err=Engine is not initialized.
+java.lang.IllegalStateException: Engine is not initialized.
+	at com.google.ai.edge.litertlm.Engine.checkInitialized(Engine.kt:205)
+	at com.google.ai.edge.litertlm.Engine.close(Engine.kt:105)
+	at com.negi.survey.slm.LiteRtLM$initialize$2.invokeSuspend$closeInitializationEngine$lambda$3(LiteRtLM.kt:2059)
+	at com.negi.survey.slm.LiteRtLM$initialize$2$$ExternalSyntheticLambda3.invoke(D8$$SyntheticClass:0)
+	at com.negi.survey.slm.LiteRtLM$closeNativeDetached$2.invokeSuspend(LiteRtLM.kt:1449)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1100)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:1571)
+
+2026-11-09T23:51:18.105Z E/LiteRtLM [DefaultDispatcher-worker-1] LiteRT-LM initialization failed: LiteRT-LM native runtime teardown could not be confirmed; process restart is required. totalMs=8
+com.negi.survey.slm.NativeRuntimePoisonedException: LiteRT-LM native runtime teardown could not be confirmed; process restart is required.
+	at com.negi.survey.slm.NativeLifecycleCoordinator.poisonLocked(NativeLifecycleCoordinator.kt:622)
+	at com.negi.survey.slm.NativeLifecycleCoordinator.poisonIfCloseUnconfirmed$app(NativeLifecycleCoordinator.kt:428)
+	at com.negi.survey.slm.NativeLifecycleCoordinator.recordCloseException$app(NativeLifecycleCoordinator.kt:436)
+	at com.negi.survey.slm.LiteRtLM.closeNativeDetached(LiteRtLM.kt:1464)
+	at com.negi.survey.slm.LiteRtLM.access$closeNativeDetached(LiteRtLM.kt:459)
+	at com.negi.survey.slm.LiteRtLM$closeNativeDetached$1.invokeSuspend(LiteRtLM.kt:20)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+	at kotlinx.coroutines.internal.ScopeCoroutine.afterResume(Scopes.kt:35)
+	at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:101)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:47)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+	at kotlinx.coroutines.internal.LimitedDispatcher$Worker.run(LimitedDispatcher.kt:124)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:586)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:798)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:717)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:704)
+Caused by: java.lang.IllegalStateException: Engine is not initialized.
+	at com.google.ai.edge.litertlm.Engine.checkInitialized(Engine.kt:205)
+	at com.google.ai.edge.litertlm.Engine.close(Engine.kt:105)
+	at com.negi.survey.slm.LiteRtLM$initialize$2.invokeSuspend$closeInitializationEngine$lambda$3(LiteRtLM.kt:2059)
+	at com.negi.survey.slm.LiteRtLM$initialize$2$$ExternalSyntheticLambda3.invoke(D8$$SyntheticClass:0)
+	at com.negi.survey.slm.LiteRtLM$closeNativeDetached$2.invokeSuspend(LiteRtLM.kt:1449)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1100)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:1571)
+
