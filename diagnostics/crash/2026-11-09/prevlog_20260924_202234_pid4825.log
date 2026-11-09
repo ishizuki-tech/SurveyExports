@@ -1,0 +1,235 @@
+=== Previous Session Logcat ===
+captured_time_utc=20260924_202234
+captured_time_local=20260924_132234
+marker=2026-09-24 13:16:50.628
+preferred_prev_pid=-1
+note=best-effort; buffers may be overwritten before next start
+sdk=36
+device=Google Pixel 9a
+appId=com.negi.survey.local
+versionName=0.0.1
+versionCode=1
+
+=== Logcat (since marker) ===
+--------- beginning of system
+09-24 13:16:51.303  4434  4434 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey.local, tag=null, id=9784], rate limit (5.0) exceeded: input 9.785975, output would be 6.860253
+09-24 13:16:53.460  4434  4434 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey.local, tag=null, id=7574], rate limit (5.0) exceeded: input 9.175407, output would be 5.5491214
+09-24 13:16:53.833  4434  4434 D InsetsController: hide(ime())
+09-24 13:16:54.994  4434  4434 D InsetsController: hide(ime())
+09-24 13:16:56.398  4434  4434 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey.local, tag=null, id=10301], rate limit (5.0) exceeded: input 10.63651, output would be 6.481999
+09-24 13:16:57.415  4434  4434 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey.local, tag=null, id=10301], rate limit (5.0) exceeded: input 18.15197, output would be 6.059202
+09-24 13:16:59.501  4434  4434 W NotificationManager: Shedding notify (update) of NotificationKey[user=UserHandle{0}, pkg=com.negi.survey.local, tag=null, id=10301], rate limit (5.0) exceeded: input 9.520873, output would be 5.856311
+09-24 13:17:16.003  4434  4434 D InsetsController: show(ime())
+09-24 13:17:16.018  4434  4434 D InsetsController: Setting requestedVisibleTypes to 511 (was 503)
+09-24 13:17:16.044  4434  4434 D InsetsController: show(ime())
+09-24 13:17:37.455  4434  4434 D InsetsController: show(ime())
+09-24 13:17:37.468  4434  4434 D InsetsController: show(ime())
+09-24 13:17:39.873  4434  4434 D InsetsController: hide(ime())
+09-24 13:17:39.874  4434  4434 D InsetsController: Setting requestedVisibleTypes to 503 (was 511)
+09-24 13:17:52.225  4434  4434 D InsetsController: show(ime())
+09-24 13:17:52.225  4434  4434 D InsetsController: Setting requestedVisibleTypes to 511 (was 503)
+09-24 13:17:52.240  4434  4434 D InsetsController: show(ime())
+--------- beginning of main
+09-24 13:17:52.322  4434  4434 D VRI[MainActivity]: WindowInsets changed: ime:[0,0,0,1043] 
+09-24 13:17:52.644  4434  4434 I ImeTracker: com.negi.survey.local:ea316bf3: onShown
+09-24 13:17:53.181  4434  4434 W RemoteInputConnectionImpl: sendKeyEvent on inactive InputConnection
+09-24 13:18:10.659  4434  4434 D InsetsController: show(ime())
+09-24 13:18:10.659  4434  4434 I ImeTracker: com.negi.survey.local:51697eb: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT_BY_INSETS_API fromUser false userId 0 displayId 0
+09-24 13:18:10.659  4434  4434 I ImeTracker: com.negi.survey.local:51697eb: onCancelled at PHASE_CLIENT_APPLY_ANIMATION
+09-24 13:18:10.671  4434  4434 I ImeTracker: com.negi.survey.local:66fda1b: onRequestShow at ORIGIN_CLIENT reason SHOW_SOFT_INPUT fromUser false userId 0 displayId 0
+09-24 13:18:10.671  4434  4434 D InsetsController: show(ime())
+09-24 13:18:10.671  4434  4434 I ImeTracker: com.negi.survey.local:66fda1b: onCancelled at PHASE_CLIENT_APPLY_ANIMATION
+09-24 13:18:10.696  4434  4434 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): androidx.compose.ui.window.Api33Impl$$ExternalSyntheticLambda0@876a06d
+09-24 13:18:11.315  4434  4434 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): null
+09-24 13:18:16.859  4434  4440 I gi.survey.local: Background young concurrent mark compact GC freed 25MB AllocSpace bytes, 0(0B) LOS objects, 74% free, 8590KB/33MB, paused 136us,5.370ms total 38.132ms
+09-24 13:18:16.911  4434  4434 D InsetsController: hide(ime())
+09-24 13:18:16.911  4434  4434 I ImeTracker: com.negi.survey.local:aa486e1e: onRequestHide at ORIGIN_CLIENT reason HIDE_SOFT_INPUT_BY_INSETS_API fromUser false userId 0 displayId 0
+09-24 13:18:16.912  4434  4434 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): androidx.navigationevent.OnBackInvokedInput$createOnBackAnimationCallback$1@40c9ff0
+09-24 13:18:16.912  4434  4434 D InsetsController: Setting requestedVisibleTypes to 503 (was 511)
+09-24 13:18:16.914  4434  4434 D SurveyVM: getEvalPrompt[Q8] -> len=446
+09-24 13:18:16.915  4434  4465 D AiViewModel: run[3]: mode=EVAL_JSON phase=EVAL commit=true prompt.len=446, fullPrompt.len=2352, timeoutMs=120000
+09-24 13:18:16.916  4434  4465 D AiViewModel: run[3]: sha(prompt)=3cc57b39609bba708839b4413c83e948637859b5a4fe0746cdfae0b411e7b448 sha(full)=26f3e073c0472d1bb0510bda7d8f4ef79816f2b5c72b3e7b6ef01cc362d0f1e8
+09-24 13:18:16.916  4434  4465 I FullPromptReview: [part=000] run[3]: phase=EVAL FullPrompt
+09-24 13:18:16.916  4434  4465 I FullPromptReview: Evaluate only the original survey target using all supplied answers.
+09-24 13:18:16.916  4434  4465 I FullPromptReview: Return only compact JSON {"score":N,"missing_points":[],"followup_needed":false}. N must be an integer 1-100 for relevance, completeness and accuracy against the original target. Evaluate the original answer and all answered followup pairs together. Before emitting JSON, compare every candidate missing point against the original answer and every answered follow-up pair. If an answered follow-up directly supplies that information, do not include it in missing_points. Recompute score, missing_points, and followup_needed together as one consistent final decision. Separate relevance from completeness. An answer can discuss the right topic but still be incomplete. Score 90-100 only when the respondent explicitly provides every material component requested by the Expected answer target and Question. Do not infer missing details from general knowledge, plausibility, or a bare statement that an event occurred. A concise answer may be complete. A verbose or relevant answer that omits any material requested component must score below 90. For example, saying that an event occurred without describing its requested effect is incomplete. Consistency rule: if missing_points is non-empty or followup_needed is true, score must be an integer from 1 to 89. Scores 90-100 are allowed only when missing_points=[] and followup_needed=false. Never use score 90 as a borderline value when anything is missing. For any score below 90, missing_points must contain the specific missing or ambiguous target-required information and followup_needed must be true. Otherwise missing_points is empty and followup_needed is false. Do not generate a question. Do not penalize style or request information outside the target. Write missing_points in English.
+09-24 13:18:16.916  4434  4465 I FullPromptReview: Keep missing_points concise.
+09-24 13:18:16.916  4434  4465 I FullPromptReview: One JSON object only; no markdown or generated question.
+09-24 13:18:16.916  4434  4465 I FullPromptReview: INPUT:
+09-24 13:18:16.916  4434  4465 I FullPromptReview: Expected answer target: Whether FAW affected the crop and, if yes, at least one concrete description of its effect, such as yield loss or a type of crop damage.
+09-24 13:18:16.916  4434  4465 I FullPromptReview: Question: Has fall armyworm ever affected your maize? If yes, how did it affect your crop?
+09-24 13:18:16.916  4434  4465 I FullPromptReview: Original answer: Yes, fall armyworm affected my maize.
+09-24 13:18:16.916  4434  4465 I FullPromptReview: Answered followup pairs: Follow-up 1: Can you describe how fall armyworm affected your maize crop?
+09-24 13:18:16.916  4434  4465 I FullPromptReview: Answer 1: It damaged some of the plants.
+09-24 13:18:16.919  4434  4463 D LiteRtRepository: [3] request start model='Gemma3n4B' prompt.len=2352 sha=26f3e073c0472d1b gateWaitMs=0
+09-24 13:18:16.920  4434  4463 D LiteRtRepository: [part=000] [3] PROMPT (FULL) sha=26f3e073c0472d1b
+09-24 13:18:16.920  4434  4463 D LiteRtRepository: Evaluate only the original survey target using all supplied answers.
+09-24 13:18:16.920  4434  4463 D LiteRtRepository: Return only compact JSON {"score":N,"missing_points":[],"followup_needed":false}. N must be an integer 1-100 for relevance, completeness and accuracy against the original target. Evaluate the original answer and all answered followup pairs together. Before emitting JSON, compare every candidate missing point against the original answer and every answered follow-up pair. If an answered follow-up directly supplies that information, do not include it in missing_points. Recompute score, missing_points, and followup_needed together as one consistent final decision. Separate relevance from completeness. An answer can discuss the right topic but still be incomplete. Score 90-100 only when the respondent explicitly provides every material component requested by the Expected answer target and Question. Do not infer missing details from general knowledge, plausibility, or a bare statement that an event occurred. A concise answer may be complete. A verbose or relevant answer that omits any material requested component must score below 90. For example, saying that an event occurred without describing its requested effect is incomplete. Consistency rule: if missing_points is non-empty or followup_needed is true, score must be an integer from 1 to 89. Scores 90-100 are allowed only when missing_points=[] and followup_needed=false. Never use score 90 as a borderline value when anything is missing. For any score below 90, missing_points must contain the specific missing or ambiguous target-required information and followup_needed must be true. Otherwise missing_points is empty and followup_needed is false. Do not generate a question. Do not penalize style or request information outside the target. Write missing_points in English.
+09-24 13:18:16.920  4434  4463 D LiteRtRepository: Keep missing_points concise.
+09-24 13:18:16.920  4434  4463 D LiteRtRepository: One JSON object only; no markdown or generated question.
+09-24 13:18:16.920  4434  4463 D LiteRtRepository: INPUT:
+09-24 13:18:16.920  4434  4463 D LiteRtRepository: Expected answer target: Whether FAW affected the crop and, if yes, at least one concrete description of its effect, such as yield loss or a type of crop damage.
+09-24 13:18:16.920  4434  4463 D LiteRtRepository: Question: Has fall armyworm ever affected your maize? If yes, how did it affect your crop?
+09-24 13:18:16.920  4434  4463 D LiteRtRepository: Original answer: Yes, fall armyworm affected my maize.
+09-24 13:18:16.920  4434  4463 D LiteRtRepository: Answered followup pairs: Follow-up 1: Can you describe how fall armyworm affected your maize crop?
+09-24 13:18:16.920  4434  4463 D LiteRtRepository: Answer 1: It damaged some of the plants.
+09-24 13:18:16.921  4434  4533 D SLM     : initializeIfNeeded: model='Gemma3n4B' image=false audio=false
+09-24 13:18:16.923  4434  4533 D LiteRtLM: initializeIfNeeded: warm runtime already ready: key='Gemma3n4B|/data/user/0/com.negi.survey.local/files/gemma-3n-E4B-it-int4.litertlm'
+09-24 13:18:16.924  4434  4463 D LiteRtRepository: [3] initializeIfNeeded ok initMs=4
+09-24 13:18:16.925  4434  4533 D SLM     : runInference: model='Gemma3n4B' textLen=2352 images=0 audio=0
+09-24 13:18:16.927  4434  4463 D LiteRtLM: state[run:start] key='Gemma3n4B|/data/user/0/com.negi.survey.local/files/gemma-3n-E4B-it-int4.litertlm' runId=3 active=true terminated=false logicalDone=false cancel=false pendingCancel=false lastMsgAt=68847241 lastTermAt=68819477
+09-24 13:18:16.927  4434  4434 D VRI[MainActivity]: WindowInsets changed: ime:null 
+09-24 13:18:16.927  4434  4463 D LiteRtLM: runInference start: key='Gemma3n4B|/data/user/0/com.negi.survey.local/files/gemma-3n-E4B-it-int4.litertlm' runId=3 hasText=true originalTextLen=2352 effectiveTextLen=2352 images=0 audioClips=0
+09-24 13:18:16.927  4434  4463 D LiteRtLM: LiteRT-LM sendMessageAsync(text): key='Gemma3n4B|/data/user/0/com.negi.survey.local/files/gemma-3n-E4B-it-int4.litertlm' runId=3 len=2352 maxOutputTokens=64
+09-24 13:18:16.935  4434  4463 D LiteRtLM: sendMessageAsync accepted: key='Gemma3n4B|/data/user/0/com.negi.survey.local/files/gemma-3n-E4B-it-int4.litertlm' runId=3 dispatchMs=8
+09-24 13:18:16.958  4434  4434 I ImeTracker: com.negi.survey.local:f6e64e47: onCancelled at PHASE_CLIENT_ON_CONTROLS_CHANGED
+09-24 13:18:17.080  4434  4434 I ImeTracker: system_server:fdda83a7: onCancelled at PHASE_CLIENT_ON_CONTROLS_CHANGED
+09-24 13:18:18.851  4434  4581 W LiteRtLM: Inference first output: key='Gemma3n4B|/data/user/0/com.negi.survey.local/files/gemma-3n-E4B-it-int4.litertlm' runId=3 ttftMs=1925 dispatchMs=8 postDispatchTtftMs=1917 requestToFirstOutputMs=1925
+09-24 13:18:18.852  4434  4581 W LiteRtLM: Inference first output: key='Gemma3n4B|/data/user/0/com.negi.survey.local/files/gemma-3n-E4B-it-int4.litertlm' runId=3 ttftMs=1925 dispatchMs=8 postDispatchTtftMs=1917 requestToFirstOutputMs=1925
+09-24 13:18:18.852  4434  4581 D LiteRtLM: stream[key=Gemma3n4B|/data/user/0/com.negi.survey.local/files/gemma-3n-E4B-it-int4.litertlm runId=3] msg#1 rawChunkLen=2 deltaLen=2 emittedChars=2
+09-24 13:18:18.855  4434  4434 D LiteRtRepository: stream[rid=3 msg#1] done=false deltaLen=2 outLen=2 outPreview='{"' deltaPreview='{"'
+09-24 13:18:18.856  4434  4463 D AiViewModel: run[3] chunk[1].preview='{"'
+09-24 13:18:19.024  4434  4463 D AiViewModel: run[3] chunk[2].preview='score'
+09-24 13:18:19.190  4434  4463 D AiViewModel: run[3] chunk[3].preview='":'
+09-24 13:18:19.349  4434  4463 D AiViewModel: run[3] chunk[4].preview='9'
+09-24 13:18:19.515  4434  4463 D AiViewModel: run[3] chunk[5].preview='5'
+09-24 13:18:19.680  4434  4463 D AiViewModel: run[3] chunk[6].preview=',"'
+09-24 13:18:19.846  4434  4463 D AiViewModel: run[3] chunk[7].preview='missing'
+09-24 13:18:20.008  4434  4434 D LiteRtRepository: stream[rid=3 msg#8] done=false deltaLen=1 outLen=21 outPreview='{"score":95,"missing_' deltaPreview='_'
+09-24 13:18:20.009  4434  4463 D AiViewModel: run[3] chunk[8].preview='_'
+09-24 13:18:20.175  4434  4463 D AiViewModel: run[3] chunk[9].preview='points'
+09-24 13:18:20.341  4434  4463 D AiViewModel: run[3] chunk[10].preview='":[],'
+09-24 13:18:20.509  4434  4463 D AiViewModel: run[3] chunk[11].preview='"'
+09-24 13:18:20.678  4434  4463 D AiViewModel: run[3] chunk[12].preview='follow'
+09-24 13:18:20.844  4434  4463 D AiViewModel: run[3] chunk[13].preview='up'
+09-24 13:18:21.000  4434  4463 D AiViewModel: run[3] chunk[14].preview='_'
+09-24 13:18:21.164  4434  4463 D AiViewModel: run[3] chunk[15].preview='needed'
+09-24 13:18:21.325  4434  4581 D LiteRtLM: stream[key=Gemma3n4B|/data/user/0/com.negi.survey.local/files/gemma-3n-E4B-it-int4.litertlm runId=3] msg#16 rawChunkLen=2 deltaLen=2 emittedChars=50
+09-24 13:18:21.326  4434  4434 D LiteRtRepository: stream[rid=3 msg#16] done=false deltaLen=2 outLen=50 outPreview='{"score":95,"missing_points":[],"followup_needed":' deltaPreview='":'
+09-24 13:18:21.327  4434  4463 D AiViewModel: run[3] chunk[16].preview='":'
+09-24 13:18:21.494  4434  4463 D AiViewModel: run[3] chunk[17].preview='false'
+09-24 13:18:21.658  4434  4463 D AiViewModel: run[3] chunk[18].preview='}'
+09-24 13:18:21.816  4434  4582 D LiteRtLM: state[logicalDone] key='Gemma3n4B|/data/user/0/com.negi.survey.local/files/gemma-3n-E4B-it-int4.litertlm' runId=3 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=68851968 lastTermAt=68852130
+09-24 13:18:21.816  4434  4582 D LiteRtLM: state[nativeDone:beforeRelease] key='Gemma3n4B|/data/user/0/com.negi.survey.local/files/gemma-3n-E4B-it-int4.litertlm' runId=3 active=true terminated=true logicalDone=true cancel=false pendingCancel=false lastMsgAt=68851968 lastTermAt=68852130
+09-24 13:18:21.817  4434  4582 W LiteRtLM: Inference timing: key='Gemma3n4B|/data/user/0/com.negi.survey.local/files/gemma-3n-E4B-it-int4.litertlm' runId=3 ttftMs=1925 dispatchMs=8 postDispatchTtftMs=1917 totalMs=4889 callbacks=18 outputChars=56 cancelled=false error=false requestTotalMs=4889
+09-24 13:18:21.817  4434  4582 W LiteRtLM: Inference timing: key='Gemma3n4B|/data/user/0/com.negi.survey.local/files/gemma-3n-E4B-it-int4.litertlm' runId=3 ttftMs=1925 dispatchMs=8 postDispatchTtftMs=1917 totalMs=4889 callbacks=18 outputChars=56 cancelled=false error=false requestTotalMs=4889
+09-24 13:18:21.817  4434  4582 I LiteRtLM: LiteRT completion: runId=3 terminal=normal_onDone phase=unavailable engineTokenCapacity=1024 prefillTokens=-1 decodeTokens=-1 kvTokens=-1 outputChars=56 callbacks=18
+09-24 13:18:21.817  4434  4582 I LiteRtLM: LiteRT completion: runId=3 terminal=normal_onDone phase=unavailable engineTokenCapacity=1024 prefillTokens=-1 decodeTokens=-1 kvTokens=-1 outputChars=56 callbacks=18
+09-24 13:18:21.818  4434  4434 D LiteRtRepository: [3] logical done=true; responseClosed=true; waiting native cleanup
+09-24 13:18:21.818  4434  4434 D LiteRtRepository: [3] native cleanup safepoint
+09-24 13:18:21.818  4434  4514 D AiViewModel: run[3] stats: chunks=18, chars=56, raw.len=56
+09-24 13:18:21.819  4434  4533 D SLM     : resetConversationAndWait: model='Gemma3n4B' image=false audio=false
+09-24 13:18:21.819  4434  4514 D AiViewModel: run[3] sha(raw)=d582f4f94d38ce300b82f3aeedbda2d18275f3f88b20e7a1ca4fadec505e90e3
+09-24 13:18:21.819  4434  4514 D AiViewModel: run[3] rawVisible='{"score":95,"missing_points":[],"followup_needed":false}'
+09-24 13:18:21.822  4434  4514 D AiViewModel: run[3]: EVAL_JSON parsed score=95 followups=0 fu0=''
+09-24 13:18:21.822  4434  4514 D AiViewModel: stepHistory+ runId=3 phase=EVAL mode=EVAL_JSON raw.len=56 score=95 FU=0 FU0='<none>' timeout=false err=null
+09-24 13:18:21.822  4434  4514 I AiViewModel: run[3] done: phase=EVAL mode=EVAL_JSON score=95 FU0.len=0 FU0.sha16=none commit=true err=<none>
+09-24 13:18:21.822  4434  4514 I FullTextOut: [part=000] run[3]: RawTextOut
+09-24 13:18:21.822  4434  4514 I FullTextOut: {"score":95,"missing_points":[],"followup_needed":false}
+09-24 13:18:21.823  4434  4514 D AiViewModel: chain2: step2 skipped (score=95, followups=0, timedOut=false, rawPreview='{"score":95,"missing_points":[],"followup_needed":false}')
+09-24 13:18:21.831  4434  4464 D LiteRtRepository: [3] Conversation reset completed after safepoint
+09-24 13:18:21.832  4434  4464 D LiteRtRepository: [part=000] [3] FINALIZE: native-terminated
+09-24 13:18:21.832  4434  4464 D LiteRtRepository: === AI TRACE STATS (LiteRtRepository) ===
+09-24 13:18:21.832  4434  4464 D LiteRtRepository: rid=3 model='Gemma3n4B' reason=native-terminated
+09-24 13:18:21.832  4434  4464 D LiteRtRepository: totalMs=4913 inferenceMs=4908 firstTokenMs=1931
+09-24 13:18:21.832  4434  4464 D LiteRtRepository: logicalDone=true logicalDoneAt=68852131
+09-24 13:18:21.832  4434  4464 D LiteRtRepository: nativeTerminated=true cancelTag='null'
+09-24 13:18:21.832  4434  4464 D LiteRtRepository: lastDeltaMsAgo=174 lastEventMsAgo=14
+09-24 13:18:21.832  4434  4464 D LiteRtRepository: chunks=18 emittedChars=56 capturedAll=true out.len=56
+09-24 13:18:21.832  4434  4464 D LiteRtRepository: === OUTPUT (FULL) ===
+09-24 13:18:21.832  4434  4464 D LiteRtRepository: {"score":95,"missing_points":[],"followup_needed":false}
+09-24 13:19:11.166  4434  4440 I gi.survey.local: Background young concurrent mark compact GC freed 26MB AllocSpace bytes, 0(0B) LOS objects, 74% free, 8998KB/35MB, paused 136us,6.609ms total 37.448ms
+09-24 13:22:26.696  4434  4434 I AutofillManager: onInvisibleForAutofill(): expiringResponse
+09-24 13:22:26.878  4434  4434 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@53f7117
+09-24 13:22:26.889  4434  4434 D WhisperSpeechController: stopRecording: not recording, ignoring
+09-24 13:22:26.911  4434  4434 D HeavyInitializer: cancel: no active initialization
+09-24 13:22:26.914  4434  4434 I AiViewModel: onCleared: ViewModel is being cleared -> stopCurrentRunInternal()
+09-24 13:22:26.924  4434  4434 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): null
+09-24 13:22:26.931  4434  4580 I TextToSpeech: Disconnected from TTS engine
+09-24 13:22:26.946  4434  4464 D WhisperEngine: Detach called. Keeping native context alive for key=null
+09-24 13:22:26.948  4434  4434 D ViewRootImpl: Skipping stats log for color mode
+09-24 13:22:31.802  4825  4825 I Zygote  : Process 4825 created for com.negi.survey.local
+09-24 13:22:31.803  4825  4825 I gi.survey.local: Late-enabling -Xcheck:jni
+09-24 13:22:31.830  4825  4825 I gi.survey.local: Using CollectorTypeCMC GC.
+09-24 13:22:31.834  4825  4825 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+09-24 13:22:31.855  4825  4825 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+09-24 13:22:31.855  4825  4825 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+09-24 13:22:32.270  4825  4825 D nativeloader: Configuring clns-9 for other apk /data/app/~~P_MdCMKrOSMMoM1ewa5poA==/com.negi.survey.local-C1ijAz53MvyN49k0E-eczw==/base.apk. target_sdk_version=36, uses_libraries=libOpenCL.so:libOpenCL-pixel.so, library_path=/data/app/~~P_MdCMKrOSMMoM1ewa5poA==/com.negi.survey.local-C1ijAz53MvyN49k0E-eczw==/lib/arm64:/data/app/~~P_MdCMKrOSMMoM1ewa5poA==/com.negi.survey.local-C1ijAz53MvyN49k0E-eczw==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.negi.survey.local
+09-24 13:22:32.278  4825  4825 V GraphicsEnvironment: Currently set values for:
+09-24 13:22:32.278  4825  4825 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[com.android.angle]
+09-24 13:22:32.278  4825  4825 V GraphicsEnvironment:   angle_gl_driver_selection_values=[angle]
+09-24 13:22:32.278  4825  4825 V GraphicsEnvironment: com.negi.survey.local is not listed in per-application setting
+09-24 13:22:32.278  4825  4825 V GraphicsEnvironment: No special selections for ANGLE, returning default driver choice
+09-24 13:22:32.278  4825  4825 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+09-24 13:22:32.318  4825  4825 D nativeloader: Load /data/app/~~P_MdCMKrOSMMoM1ewa5poA==/com.negi.survey.local-C1ijAz53MvyN49k0E-eczw==/base.apk!/lib/arm64-v8a/liblitertlm_jni.so using class loader ns clns-9 (caller=/data/app/~~P_MdCMKrOSMMoM1ewa5poA==/com.negi.survey.local-C1ijAz53MvyN49k0E-eczw==/base.apk!classes10.dex): ok
+09-24 13:22:32.318  4825  4825 D SurveyApp: Loaded LiteRTLM JNI: litertlm_jni where=attachBaseContext
+09-24 13:22:32.329  4825  4825 D AppRingLogStore: installed: dir=/data/user/0/com.negi.survey.local/files/diagnostics/applog_ring idx=0
+09-24 13:22:32.329  4825  4825 D SurveyApp: attachBaseContext: pid=4825 process=com.negi.survey.local isMain=true sdk=36
+09-24 13:22:32.329  4825  4825 D SurveyApp: bootTiming: attachBaseContext total=39ms
+09-24 13:22:32.329  4825  4825 D SurveyApp: Skipping WorkManager init in attachBaseContext; will init lazily on first enqueue.
+09-24 13:22:32.331  4825  4825 D CrashCapture: install: ensured default handler. where=SurveyApp:attachBaseContext pid=4825 default=com.negi.survey.CrashCapture$CrashHandler@a418a8b
+09-24 13:22:32.331  4825  4825 D SurveyApp: CrashCapture installed: where=SurveyApp:attachBaseContext
+09-24 13:22:32.338  4825  4844 D RuntimeLogStore: openWriter: start -> /data/user/0/com.negi.survey.local/files/diagnostics/runtime_logs/rtlog_20260924_202232_325_pid4825_seq1.log (bytes=0 format=LEGACY)
+09-24 13:22:32.339  4825  4825 E gi.survey.local: hiddenapi: Accessing hidden method Landroid/net/ssl/EchConfigMismatchException;->getRetryConfigList()Landroid/net/ssl/EchConfigList; (runtime_flags=0, domain=core-platform, api=blocked) from /data/app/~~P_MdCMKrOSMMoM1ewa5poA==/com.negi.survey.local-C1ijAz53MvyN49k0E-eczw==/base.apk!classes17.dex (domain=app, TargetSdkVersion=36) using linking: denied
+09-24 13:22:32.339  4825  4825 E gi.survey.local: hiddenapi: Accessing hidden method Landroid/net/ssl/EchConfigList;->toBytes()[B (runtime_flags=0, domain=core-platform, api=blocked) from /data/app/~~P_MdCMKrOSMMoM1ewa5poA==/com.negi.survey.local-C1ijAz53MvyN49k0E-eczw==/base.apk!classes17.dex (domain=app, TargetSdkVersion=36) using linking: denied
+09-24 13:22:32.339  4825  4825 E gi.survey.local: hiddenapi: Accessing hidden method Landroid/net/ssl/EchConfigList;->fromBytes([B)Landroid/net/ssl/EchConfigList; (runtime_flags=0, domain=core-platform, api=blocked) from /data/app/~~P_MdCMKrOSMMoM1ewa5poA==/com.negi.survey.local-C1ijAz53MvyN49k0E-eczw==/base.apk!classes17.dex (domain=app, TargetSdkVersion=36) using linking: denied
+09-24 13:22:32.339  4825  4825 E gi.survey.local: hiddenapi: Accessing hidden method Landroid/net/ssl/SSLSockets;->setEchConfigList(Ljavax/net/ssl/SSLSocket;Landroid/net/ssl/EchConfigList;)V (runtime_flags=0, domain=core-platform, api=blocked) from /data/app/~~P_MdCMKrOSMMoM1ewa5poA==/com.negi.survey.local-C1ijAz53MvyN49k0E-eczw==/base.apk!classes17.dex (domain=app, TargetSdkVersion=36) using linking: denied
+09-24 13:22:32.339  4825  4844 D RuntimeLogStore: retention: start files=2 kept=2 totalBytes=41869
+09-24 13:22:32.342  4825  4825 D SurveyApp: LiteRTLM JNI already loaded; skip. where=onCreate(retry)
+09-24 13:22:32.342  4825  4825 D SurveyApp: bootTiming: RuntimeLogStore.start took=1ms
+09-24 13:22:32.342  4825  4825 D SurveyApp: bootTiming: AppRingLogStore.install took=0ms
+09-24 13:22:32.343  4825  4825 D SurveyApp: onCreate: pid=4825 process=com.negi.survey.local isMain=true sdk=36
+09-24 13:22:32.346  4825  4825 D CrashCapture: install: ensured default handler. where=SurveyApp:onCreate(rewrap) pid=4825 default=com.negi.survey.CrashCapture$CrashHandler@a418a8b
+09-24 13:22:32.347  4825  4825 D SurveyApp: CrashCapture installed: where=SurveyApp:onCreate(rewrap)
+09-24 13:22:32.347  4825  4825 D CrashCapture: registerSelfHealing: ActivityLifecycleCallbacks registered. mode=onResumedOnly
+09-24 13:22:32.347  4825  4825 D SurveyApp: CrashCapture self-healing registered.
+09-24 13:22:32.347  4825  4825 W SurveyApp: Startup enqueues deferred: delay=2500ms (to reduce init contention)
+09-24 13:22:32.347  4825  4825 D SurveyApp: Startup survey recovery deferred: delay=2500ms
+09-24 13:22:32.347  4825  4825 D SurveyApp: bootTiming: onCreate total=6ms
+09-24 13:22:32.352  4825  4847 I DisplayManager: Choreographer implicitly registered for the refresh rate.
+09-24 13:22:32.353  4825  4847 D vulkan  : searching for layers in '/data/app/~~P_MdCMKrOSMMoM1ewa5poA==/com.negi.survey.local-C1ijAz53MvyN49k0E-eczw==/lib/arm64'
+09-24 13:22:32.353  4825  4847 D vulkan  : searching for layers in '/data/app/~~P_MdCMKrOSMMoM1ewa5poA==/com.negi.survey.local-C1ijAz53MvyN49k0E-eczw==/base.apk!/lib/arm64-v8a'
+09-24 13:22:32.357  4825  4825 D DesktopExperienceFlags: Toggle override initialized to: false
+09-24 13:22:32.367  4825  4825 D CompatChangeReporter: Compat change id reported: 377864165; UID 14912; state: ENABLED
+09-24 13:22:32.367  4825  4825 D DesktopModeFlags: Toggle override initialized to: OVERRIDE_UNSET
+09-24 13:22:32.383  4825  4825 I ContentCaptureHelper: Setting logging level to OFF
+09-24 13:22:32.385  4825  4825 D CrashCapture: install: ensured default handler. where=selfHeal:onActivityResumed pid=4825 default=com.negi.survey.CrashCapture$CrashHandler@a418a8b
+09-24 13:22:32.407  4825  4825 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@53f7117
+09-24 13:22:32.505  4825  4825 D WM-PackageManagerHelper: Skipping component enablement for androidx.work.impl.background.systemjob.SystemJobService
+09-24 13:22:32.505  4825  4825 D WM-Schedulers: Created SystemJobScheduler and enabled SystemJobService
+09-24 13:22:32.506  4825  4862 D WM-ForceStopRunnable: Is default app process = true
+09-24 13:22:32.507  4825  4862 D WM-ForceStopRunnable: Performing cleanup operations.
+09-24 13:22:32.521  4825  4862 D WM-SystemJobScheduler: Reconciling jobs
+09-24 13:22:32.529  4825  4862 D WM-ForceStopRunnable: Application was force-stopped, rescheduling.
+09-24 13:22:32.542  4825  4865 I gi.survey.local: hiddenapi: Accessing hidden method Landroid/database/sqlite/SQLiteDatabase;->getThreadSession()Landroid/database/sqlite/SQLiteSession; (runtime_flags=0, domain=platform, api=unsupported) from Landroidx/sqlite/db/framework/FrameworkSQLiteDatabase; (domain=app, TargetSdkVersion=36) using reflection: allowed
+09-24 13:22:32.542  4825  4865 I gi.survey.local: hiddenapi: Accessing hidden method Landroid/database/sqlite/SQLiteSession;->beginTransaction(ILandroid/database/sqlite/SQLiteTransactionListener;ILandroid/os/CancellationSignal;)V (runtime_flags=0, domain=platform, api=unsupported) from Landroidx/sqlite/db/framework/FrameworkSQLiteDatabase; (domain=app, TargetSdkVersion=36) using reflection: allowed
+09-24 13:22:32.552  4825  4868 D WM-PackageManagerHelper: Skipping component enablement for androidx.work.impl.background.systemalarm.RescheduleReceiver
+09-24 13:22:32.567  4825  4825 D VRI[MainActivity]: WindowInsets changed: 1080x2424 statusBars:[0,152,0,0] navigationBars:[0,0,0,69] mandatorySystemGestures:[0,187,0,92] 
+09-24 13:22:32.578  4825  4825 I HWUI    : Using FreeType backend (prop=Auto)
+09-24 13:22:32.706  4825  4825 I gi.survey.local: hiddenapi: Accessing hidden method Landroid/os/SystemProperties;->addChangeCallback(Ljava/lang/Runnable;)V (runtime_flags=0, domain=platform, api=unsupported) from Landroidx/compose/ui/platform/AndroidComposeView$Companion; (domain=app, TargetSdkVersion=36) using reflection: allowed
+09-24 13:22:32.750  4825  4825 D InsetsController: hide(ime())
+09-24 13:22:32.750  4825  4825 I ImeTracker: com.negi.survey.local:b238660a: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+09-24 13:22:32.766  4825  4832 I gi.survey.local: Compiler allocated 5038KB to compile void android.view.ViewRootImpl.performTraversals()
+09-24 13:22:32.929  4825  4825 D IntroScreen: Resolved config details: id=survey_config10.yaml in 221ms
+09-24 13:22:34.848  4825  4825 W SurveyApp: Deferred startup enqueues begin...
+09-24 13:22:34.848  4825  4825 D SurveyApp: WorkManager available. where=startupRtLogs(immediate) took=0ms
+09-24 13:22:34.854  4825  4825 D SurveyApp: Startup runtime logs target -> owner=ishizuki-tech repo=SurveyExports branch=main base='/diagnostics/runtime_logs'
+09-24 13:22:34.862  4825  4825 D github_upload: enqueueStartupRuntimeLogsUpload: uniqueName=upload_runtime_logs_startup policy=KEEP session=startup_runtime_20260924_202234_d7e85560
+09-24 13:22:34.865  4825  4825 D SurveyApp: Startup runtime logs: enqueue requested (immediate).
+09-24 13:22:34.866  4825  4825 D SurveyApp: WorkManager available. where=startupRingLogs(immediate) took=0ms
+09-24 13:22:34.867  4825  4825 D SurveyApp: Startup ring logs target -> owner=ishizuki-tech repo=SurveyExports branch=main base='/diagnostics/applog_ring'
+09-24 13:22:34.868  4825  4825 D github_upload: enqueueStartupRingLogsUpload: uniqueName=upload_ring_logs_startup policy=KEEP session=startup_ring_20260924_202234_4c5016ec
+09-24 13:22:34.868  4825  4825 D SurveyApp: Startup ring logs: enqueue requested (immediate).
+09-24 13:22:34.868  4825  4825 D SurveyApp: WorkManager available. where=enqueuePending(immediate) took=0ms
+09-24 13:22:34.868  4825  4825 D SurveyApp: CrashCapture pending uploads requested (immediate).
+09-24 13:22:34.868  4825  4825 W SurveyApp: Deferred startup enqueues done: took=20ms
+09-24 13:22:34.869  4825  4883 D CrashCapture: enqueuePendingCrashUploadsIfPossible enter where=SurveyApp:enqueuePending(immediate):bg pid=4825 thread=CrashCapture-Enqueue
+09-24 13:22:34.869  4825  4859 D SurveyApp: Survey recovery WorkManager available. where=startupSurveyUploads(initial) took=0ms
+09-24 13:22:34.871  4825  4859 D SurveyApp: Startup survey recovery complete: discovered=0 attempted=0 submitted=0 active=0 trackerUnconfirmed=0 uploaded=0 deferred=0 invalid=0 operationalFailures=0 duplicates=0 unclassified=0
+09-24 13:22:34.898  4825  4865 D WM-SystemJobScheduler: Scheduling work ID e14350ff-3f73-4211-b9d2-85b006854b3dJob ID 39
+09-24 13:22:34.905  4825  4865 D WM-GreedyScheduler: Starting tracking for e14350ff-3f73-4211-b9d2-85b006854b3d
+09-24 13:22:34.912  4825  4825 D WM-SystemJobService: onStartJob for WorkGenerationalId(workSpecId=e14350ff-3f73-4211-b9d2-85b006854b3d, generation=0)
+09-24 13:22:34.933  4825  4865 D WM-SystemJobScheduler: Scheduling work ID 9c993b80-eb0a-4a59-a02b-df7202b9b720Job ID 40
+09-24 13:22:34.936  4825  4865 D WM-GreedyScheduler: Starting tracking for e14350ff-3f73-4211-b9d2-85b006854b3d,9c993b80-eb0a-4a59-a02b-df7202b9b720
+09-24 13:22:34.942  4825  4825 D WM-SystemJobService: onStartJob for WorkGenerationalId(workSpecId=9c993b80-eb0a-4a59-a02b-df7202b9b720, generation=0)
+09-24 13:22:34.945  4825  4865 D WM-Processor: Processor: processing WorkGenerationalId(workSpecId=e14350ff-3f73-4211-b9d2-85b006854b3d, generation=0)
+09-24 13:22:34.949  4825  4865 D WM-Processor: Processor: processing WorkGenerationalId(workSpecId=9c993b80-eb0a-4a59-a02b-df7202b9b720, generation=0)
