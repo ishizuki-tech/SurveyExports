@@ -1,0 +1,178 @@
+event_utc=2026-11-10T05:35:06.014022Z
+capture_start_utc=2026-11-10T05:35:05.976Z
+capture_end_utc=2026-11-10T14:49:43.582551Z
+collection_scope=process_runtime_segment
+collector_process_session=8e6bb909-165d-444c-a8d4-de1c1ca74665
+collector_process_pid=1572
+survey_id=01a1c3f3-dbb0-7add-9118-b82e73f0f099
+survey_active_start_utc=2026-11-10T05:35:05.976Z
+survey_active_end_utc=active at capture
+survey_process_session=8e6bb909-165d-444c-a8d4-de1c1ca74665
+survey_process_pid=1572
+=== RuntimeLogStore Header ===
+ts=2026-11-10T05:35:06.014022Z
+v2_process_session=8e6bb909-165d-444c-a8d4-de1c1ca74665
+v2_profile=PRODUCTION
+fileNameFormat=LEGACY
+appId=com.negi.survey
+versionName=0.0.1
+versionCode=169
+debug=false
+device=samsung SM-S731U
+sdk=37
+pid=1572
+==============================
+2026-11-10T05:35:06.014Z I/RuntimeLogStore [rtlog-io] --- rotated (reason=survey_started) ---
+2026-11-10T05:35:05.976Z D/SurveyVM [main] activateRunIfNeeded(advanceToNext:Pre1) -> runNoteLen=0, draftCleared=true, uuid=01a1c3f3-dbb0-7add-9118-b82e73f0f099
+2026-11-10T05:35:05.976Z D/SurveyVM [main] push -> Pre1, navSize=2, stackSize=2
+2026-11-10T05:35:08.415Z D/SurveyVM [main] push -> Pre2, navSize=3, stackSize=3
+2026-11-10T05:35:10.530Z D/SurveyVM [main] push -> Pre3, navSize=4, stackSize=4
+2026-11-10T05:35:13.187Z D/SurveyVM [main] push -> Pre4, navSize=5, stackSize=5
+2026-11-10T05:35:17.521Z D/SurveyVM [main] push -> Pre5, navSize=6, stackSize=6
+2026-11-10T05:35:19.731Z D/SurveyVM [main] push -> Q00, navSize=7, stackSize=7
+2026-11-10T05:35:22.750Z D/SurveyVM [main] push -> Q01, navSize=8, stackSize=8
+2026-11-10T05:35:25.873Z D/SurveyVM [main] push -> Q02, navSize=9, stackSize=9
+2026-11-10T05:35:27.996Z D/SurveyVM [main] push -> Q03, navSize=10, stackSize=10
+2026-11-10T05:35:30.471Z D/SurveyVM [main] push -> Q04, navSize=11, stackSize=11
+2026-11-10T05:35:32.989Z D/SurveyVM [main] push -> Q05, navSize=12, stackSize=12
+2026-11-10T05:35:33.841Z D/SurveyVM [main] push -> Q06, navSize=13, stackSize=13
+2026-11-10T05:35:36.098Z D/SurveyVM [main] push -> Q07, navSize=14, stackSize=14
+2026-11-10T05:35:36.120Z D/SurveyVM [main] hasTwoStepPrompt[Q07] -> true (eval=248, fu=273)
+2026-11-10T05:35:40.948Z D/SurveyVM [main] getEvalPrompt[Q07] -> len=301
+2026-11-10T05:35:40.960Z D/LiteRtRepository [DefaultDispatcher-worker-11] [1] request start model='Gemma3n4B' prompt.len=2947 sha=61c9c8a6aa9b37da gateWaitMs=4
+2026-11-10T05:35:40.961Z D/LiteRtRepository [DefaultDispatcher-worker-11] [part=000] [1] PROMPT (FULL) sha=61c9c8a6aa9b37da
+Evaluate only the original survey target using all supplied answers.
+Return only compact JSON {"score":N,"missing_points":[],"followup_needed":false}. N must be an integer 1-100 for relevance, completeness and accuracy against the original target. Evaluate the original answer and all answered followup pairs together. Before emitting JSON, compare every candidate missing point against the original answer and every answered follow-up pair. If an answered follow-up directly supplies that information, do not include it in missing_points. Recompute score, missing_points, and followup_needed together as one consistent final decision. Treat each independently answerable required component as a separate missing_points item; never combine independently answerable deficiencies. After every answered follow-up, recompute components independently and omit each supplied component even when another component from the same target remains missing. When a Required component catalog is present, evaluate each catalog item independently: missing_points may contain only configured component IDs. Omit IDs whose component is supplied by the original answer or answered follow-up pairs; never return component descriptions or questions as missing_points. When a Required components block is present, missing_points may contain only the exact text of unresolved configured components. Separate relevance from completeness. An answer can discuss the right topic but still be incomplete. Score 90-100 only when the respondent explicitly provides every material component requested by the Expected answer target and Question. Do not infer missing details from general knowledge, plausibility, or a bare statement that an event occurred. A concise answer may be complete. A verbose or relevant answer that omits any material requested component must score below 90. For example, saying that an event occurred without describing its requested effect is incomplete. Consistency rule: if missing_points is non-empty or followup_needed is true, score must be an integer from 1 to 89. Scores 90-100 are allowed only when missing_points=[] and followup_needed=false. Never use score 90 as a borderline value when anything is missing. For any score below 90, missing_points must contain the specific missing or ambiguous target-required information and followup_needed must be true. Otherwise missing_points is empty and followup_needed is false. Do not generate a question. Do not penalize style or request information outside the target. Write missing_points in English.
+Keep missing_points concise.
+One JSON object only; no markdown or generated question.
+INPUT:
+Expected answer target: Whether FAW affected the crop and, if yes, at least one concrete description of its effect, such as yield loss or a type of crop damage.
+Question: Has fall armyworm ever attacked your maize? If yes, what loss did you get?
+Original answer: ft my see by
+Answered followup pairs:
+2026-11-10T05:35:40.963Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='fs|dev=65104|ino=83202|size=4919541760|mtime=1794288485090'
+2026-11-10T05:35:40.963Z D/LiteRtRepository [DefaultDispatcher-worker-11] [1] initializeIfNeeded ok initMs=1
+2026-11-10T05:35:40.964Z D/LiteRtLM [DefaultDispatcher-worker-11] runInference start: key='fs|dev=65104|ino=83202|size=4919541760|mtime=1794288485090' runId=1 hasText=true originalTextLen=2947 effectiveTextLen=2947 images=0 audioClips=0
+2026-11-10T05:35:40.965Z D/LiteRtLM [DefaultDispatcher-worker-11] LiteRT-LM sendMessageAsync(text): key='fs|dev=65104|ino=83202|size=4919541760|mtime=1794288485090' runId=1 len=2947 maxOutputTokens=64
+2026-11-10T05:35:40.990Z D/LiteRtLM [DefaultDispatcher-worker-11] sendMessageAsync accepted: key='fs|dev=65104|ino=83202|size=4919541760|mtime=1794288485090' runId=1 dispatchMs=25
+2026-11-10T05:35:46.452Z W/LiteRtLM [Thread-17] Inference first output: key='fs|dev=65104|ino=83202|size=4919541760|mtime=1794288485090' runId=1 ttftMs=5487 dispatchMs=25 postDispatchTtftMs=5462 requestToFirstOutputMs=5488
+2026-11-10T05:35:48.227Z W/LiteRtLM [Thread-33] Inference timing: key='fs|dev=65104|ino=83202|size=4919541760|mtime=1794288485090' runId=1 ttftMs=5487 dispatchMs=25 postDispatchTtftMs=5462 totalMs=7261 callbacks=16 outputChars=62 cancelled=false error=false requestTotalMs=7262
+2026-11-10T05:35:48.227Z I/LiteRtLM [Thread-33] LiteRT completion: runId=1 terminal=normal_onDone phase=unavailable engineTokenCapacity=1024 prefillTokens=-1 decodeTokens=-1 kvTokens=-1 outputChars=62 callbacks=16
+2026-11-10T05:35:48.230Z D/LiteRtRepository [main] [1] logical done=true; responseClosed=true; waiting native cleanup
+2026-11-10T05:35:48.230Z D/LiteRtRepository [main] [1] native cleanup safepoint
+2026-11-10T05:35:48.245Z D/LiteRtRepository [DefaultDispatcher-worker-11] [1] Conversation reset completed after safepoint
+2026-11-10T05:35:48.248Z D/LiteRtRepository [DefaultDispatcher-worker-1] [part=000] [1] FINALIZE: native-terminated
+=== AI TRACE STATS (LiteRtRepository) ===
+rid=1 model='Gemma3n4B' reason=native-terminated
+totalMs=7290 inferenceMs=7284 firstTokenMs=5490
+logicalDone=true logicalDoneAt=173428013
+nativeTerminated=true cancelTag='null'
+lastDeltaMsAgo=22 lastEventMsAgo=17
+chunks=16 emittedChars=62 capturedAll=true out.len=62
+=== OUTPUT (FULL) ===
+{"score":1,"missing_points":["fall armyworm attacked maize"]}
+
+2026-11-10T05:35:48.252Z I/AiViewModel [DefaultDispatcher-worker-4] run[1] done: phase=EVAL mode=EVAL_JSON score=1 FU0.len=0 FU0.sha16=none commit=true err=<none>
+2026-11-10T05:35:48.252Z D/SurveyVM [DefaultDispatcher-worker-4] getFollowupPrompt[Q07] -> len=374 evalLen=62
+2026-11-10T05:35:48.254Z D/LiteRtRepository [DefaultDispatcher-worker-1] [2] request start model='Gemma3n4B' prompt.len=911 sha=d5f8e3cc72a08ecf gateWaitMs=1
+2026-11-10T05:35:48.255Z D/LiteRtRepository [DefaultDispatcher-worker-1] [part=000] [2] PROMPT (FULL) sha=d5f8e3cc72a08ecf
+Evaluate only the original survey target using all supplied answers.
+Generate exactly one short English question addressing one unresolved target-required deficiency in EVAL_JSON. Use the original target, original answer and accumulated answered followup pairs. Do not repeat an earlier question or ask for information already provided. Never add new objectives. Output only the question on one line; no JSON, score, analysis, labels, or quotes.
+Keep the question short and single-scope.
+Exactly one English question on one line.
+INPUT:
+Expected answer target: Whether FAW affected the crop and, if yes, at least one concrete description of its effect, such as yield loss or a type of crop damage.
+Question: Has fall armyworm ever attacked your maize? If yes, what loss did you get?
+Original answer: ft my see by
+Answered followup pairs: 
+EVAL_JSON: {"score":1,"missing_points":["fall armyworm attacked maize"]}
+2026-11-10T05:35:48.256Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='fs|dev=65104|ino=83202|size=4919541760|mtime=1794288485090'
+2026-11-10T05:35:48.257Z D/LiteRtRepository [DefaultDispatcher-worker-1] [2] initializeIfNeeded ok initMs=2
+2026-11-10T05:35:48.258Z D/LiteRtLM [DefaultDispatcher-worker-1] runInference start: key='fs|dev=65104|ino=83202|size=4919541760|mtime=1794288485090' runId=2 hasText=true originalTextLen=911 effectiveTextLen=911 images=0 audioClips=0
+2026-11-10T05:35:48.258Z D/LiteRtLM [DefaultDispatcher-worker-1] LiteRT-LM sendMessageAsync(text): key='fs|dev=65104|ino=83202|size=4919541760|mtime=1794288485090' runId=2 len=911 maxOutputTokens=64
+2026-11-10T05:35:48.265Z D/LiteRtLM [DefaultDispatcher-worker-1] sendMessageAsync accepted: key='fs|dev=65104|ino=83202|size=4919541760|mtime=1794288485090' runId=2 dispatchMs=7
+2026-11-10T05:35:49.936Z W/LiteRtLM [Thread-34] Inference first output: key='fs|dev=65104|ino=83202|size=4919541760|mtime=1794288485090' runId=2 ttftMs=1678 dispatchMs=7 postDispatchTtftMs=1671 requestToFirstOutputMs=1678
+2026-11-10T05:35:51.739Z W/LiteRtLM [Thread-50] Inference timing: key='fs|dev=65104|ino=83202|size=4919541760|mtime=1794288485090' runId=2 ttftMs=1678 dispatchMs=7 postDispatchTtftMs=1671 totalMs=3481 callbacks=16 outputChars=76 cancelled=false error=false requestTotalMs=3481
+2026-11-10T05:35:51.739Z I/LiteRtLM [Thread-50] LiteRT completion: runId=2 terminal=normal_onDone phase=unavailable engineTokenCapacity=1024 prefillTokens=-1 decodeTokens=-1 kvTokens=-1 outputChars=76 callbacks=16
+2026-11-10T05:35:51.740Z D/LiteRtRepository [main] [2] logical done=true; responseClosed=true; waiting native cleanup
+2026-11-10T05:35:51.740Z D/LiteRtRepository [main] [2] native cleanup safepoint
+2026-11-10T05:35:51.743Z I/AiViewModel [DefaultDispatcher-worker-5] run[2] done: phase=FOLLOWUP mode=FOLLOWUP_JSON_OR_TEXT score=null FU0.len=76 FU0.sha16=36503390e88f7528 commit=false err=<none>
+2026-11-10T05:35:51.745Z D/LiteRtRepository [DefaultDispatcher-worker-10] [2] Conversation reset completed after safepoint
+2026-11-10T05:35:51.746Z D/LiteRtRepository [DefaultDispatcher-worker-10] [part=000] [2] FINALIZE: native-terminated
+=== AI TRACE STATS (LiteRtRepository) ===
+rid=2 model='Gemma3n4B' reason=native-terminated
+totalMs=3493 inferenceMs=3489 firstTokenMs=1679
+logicalDone=true logicalDoneAt=173431523
+nativeTerminated=true cancelTag='null'
+lastDeltaMsAgo=7 lastEventMsAgo=6
+chunks=16 emittedChars=76 capturedAll=true out.len=76
+=== OUTPUT (FULL) ===
+Did fall armyworm attack your maize and cause any crop damage or yield loss?
+2026-11-10T05:36:25.634Z D/LiteRtLM [DefaultDispatcher-worker-3] initializeIfNeeded: warm runtime already ready: key='fs|dev=65104|ino=83202|size=4919541760|mtime=1794288485090'
+2026-11-10T05:36:25.647Z D/SurveyVM [main] hasTwoStepPrompt[Q07] -> true (eval=248, fu=273)
+2026-11-10T05:36:25.651Z D/SurveyVM [main] attachNavigation -> navSize=14
+2026-11-10T05:36:25.662Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='fs|dev=65104|ino=83202|size=4919541760|mtime=1794288485090'
+2026-11-10T05:36:25.663Z D/LiteRtRepository [main] warmUp: initializeIfNeeded ok gateWaitMs=0 initMs=2
+2026-11-10T05:36:25.663Z D/LiteRtRepository [main] warmUp: Engine ready; representative inference disabled totalMs=2
+2026-11-10T05:37:23.145Z D/LiteRtLM [DefaultDispatcher-worker-5] initializeIfNeeded: warm runtime already ready: key='fs|dev=65104|ino=83202|size=4919541760|mtime=1794288485090'
+2026-11-10T05:37:23.158Z D/SurveyVM [main] hasTwoStepPrompt[Q07] -> true (eval=248, fu=273)
+2026-11-10T05:37:23.160Z D/SurveyVM [main] attachNavigation -> navSize=14
+2026-11-10T05:37:23.182Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='fs|dev=65104|ino=83202|size=4919541760|mtime=1794288485090'
+2026-11-10T05:37:23.183Z D/LiteRtRepository [main] warmUp: initializeIfNeeded ok gateWaitMs=0 initMs=1
+2026-11-10T05:37:23.183Z D/LiteRtRepository [main] warmUp: Engine ready; representative inference disabled totalMs=1
+2026-11-10T05:37:30.346Z D/AiScreen [main] Speech started (node=Q07 role=FOLLOWUP)
+2026-11-10T05:37:31.589Z D/LiteRtLM [DefaultDispatcher-worker-3] initializeIfNeeded: warm runtime already ready: key='fs|dev=65104|ino=83202|size=4919541760|mtime=1794288485090'
+2026-11-10T05:37:31.597Z D/SurveyVM [main] hasTwoStepPrompt[Q07] -> true (eval=248, fu=273)
+2026-11-10T05:37:31.599Z D/SurveyVM [main] attachNavigation -> navSize=14
+2026-11-10T05:37:31.607Z D/SurveyVM [DefaultDispatcher-worker-10] addAudioRef -> q=Q07, file=2026-11-10_05-35-01Z_voice_SM-S731U_414A86B07D91_01a1c3f3-dbb0-7add-9118-b82e73f0f099_Q07_f08234c3-f8a2-485c-8d12-ed2eb391f346.wav, sid=01a1c3f3-dbb0-7add-9118-b82e73f0f099
+2026-11-10T05:37:31.610Z D/AiScreen [main] Speech started (node=Q07 role=FOLLOWUP)
+2026-11-10T05:37:31.612Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='fs|dev=65104|ino=83202|size=4919541760|mtime=1794288485090'
+2026-11-10T05:37:31.622Z D/LiteRtRepository [main] warmUp: initializeIfNeeded ok gateWaitMs=0 initMs=13
+2026-11-10T05:37:31.623Z D/LiteRtRepository [main] warmUp: Engine ready; representative inference disabled totalMs=14
+2026-11-10T05:37:33.171Z D/LiteRtLM [DefaultDispatcher-worker-5] initializeIfNeeded: warm runtime already ready: key='fs|dev=65104|ino=83202|size=4919541760|mtime=1794288485090'
+2026-11-10T05:37:33.179Z D/SurveyVM [main] hasTwoStepPrompt[Q07] -> true (eval=248, fu=273)
+2026-11-10T05:37:33.181Z D/SurveyVM [main] attachNavigation -> navSize=14
+2026-11-10T05:37:33.213Z D/AiScreen [main] Speech started (node=Q07 role=FOLLOWUP)
+2026-11-10T05:37:33.213Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='fs|dev=65104|ino=83202|size=4919541760|mtime=1794288485090'
+2026-11-10T05:37:33.214Z D/LiteRtRepository [main] warmUp: initializeIfNeeded ok gateWaitMs=0 initMs=2
+2026-11-10T05:37:33.214Z D/LiteRtRepository [main] warmUp: Engine ready; representative inference disabled totalMs=2
+2026-11-10T05:37:35.402Z D/LiteRtLM [DefaultDispatcher-worker-10] initializeIfNeeded: warm runtime already ready: key='fs|dev=65104|ino=83202|size=4919541760|mtime=1794288485090'
+2026-11-10T05:37:35.413Z D/SurveyVM [main] hasTwoStepPrompt[Q07] -> true (eval=248, fu=273)
+2026-11-10T05:37:35.415Z D/SurveyVM [main] attachNavigation -> navSize=14
+2026-11-10T05:37:35.435Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='fs|dev=65104|ino=83202|size=4919541760|mtime=1794288485090'
+2026-11-10T05:37:35.436Z D/AiScreen [main] Speech started (node=Q07 role=FOLLOWUP)
+2026-11-10T05:37:35.437Z D/LiteRtRepository [main] warmUp: initializeIfNeeded ok gateWaitMs=0 initMs=2
+2026-11-10T05:37:35.437Z D/LiteRtRepository [main] warmUp: Engine ready; representative inference disabled totalMs=2
+2026-11-10T05:37:36.947Z D/AiScreen [main] Speech committed (node=Q07 role=FOLLOWUP len=6)
+2026-11-10T05:37:37.886Z D/LiteRtLM [DefaultDispatcher-worker-10] initializeIfNeeded: warm runtime already ready: key='fs|dev=65104|ino=83202|size=4919541760|mtime=1794288485090'
+2026-11-10T05:37:37.894Z D/SurveyVM [main] hasTwoStepPrompt[Q07] -> true (eval=248, fu=273)
+2026-11-10T05:37:37.896Z D/SurveyVM [main] attachNavigation -> navSize=14
+2026-11-10T05:37:37.910Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='fs|dev=65104|ino=83202|size=4919541760|mtime=1794288485090'
+2026-11-10T05:37:37.911Z D/LiteRtRepository [main] warmUp: initializeIfNeeded ok gateWaitMs=0 initMs=4
+2026-11-10T05:37:37.911Z D/LiteRtRepository [main] warmUp: Engine ready; representative inference disabled totalMs=4
+2026-11-10T05:38:17.597Z D/SurveyVM [main] backToPrevious -> Q06 (runActive=true, uiLen=0, runLen=0, draftLen=0)
+2026-11-10T05:38:17.602Z D/SurveyVM [main] hasTwoStepPrompt[Q06] -> false (eval=0, fu=0)
+2026-11-10T05:41:00.358Z D/LiteRtLM [DefaultDispatcher-worker-10] initializeIfNeeded: warm runtime already ready: key='fs|dev=65104|ino=83202|size=4919541760|mtime=1794288485090'
+2026-11-10T05:41:00.372Z D/SurveyVM [main] attachNavigation -> navSize=13
+2026-11-10T05:41:00.380Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='fs|dev=65104|ino=83202|size=4919541760|mtime=1794288485090'
+2026-11-10T05:41:00.383Z D/LiteRtRepository [main] warmUp: initializeIfNeeded ok gateWaitMs=0 initMs=3
+2026-11-10T05:41:00.383Z D/LiteRtRepository [main] warmUp: Engine ready; representative inference disabled totalMs=3
+2026-11-10T14:49:26.579Z D/LiteRtLM [DefaultDispatcher-worker-10] initializeIfNeeded: warm runtime already ready: key='fs|dev=65104|ino=83202|size=4919541760|mtime=1794288485090'
+2026-11-10T14:49:26.604Z D/SurveyVM [main] attachNavigation -> navSize=13
+2026-11-10T14:49:26.637Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='fs|dev=65104|ino=83202|size=4919541760|mtime=1794288485090'
+2026-11-10T14:49:26.672Z D/LiteRtRepository [main] warmUp: initializeIfNeeded ok gateWaitMs=0 initMs=37
+2026-11-10T14:49:26.672Z D/LiteRtRepository [main] warmUp: Engine ready; representative inference disabled totalMs=37
+2026-11-10T14:49:30.723Z D/SurveyVM [main] backToPrevious -> Q05 (runActive=true, uiLen=0, runLen=0, draftLen=0)
+2026-11-10T14:49:34.271Z D/SurveyVM [main] backToPrevious -> Q04 (runActive=true, uiLen=0, runLen=0, draftLen=0)
+2026-11-10T14:49:34.494Z D/SurveyVM [main] backToPrevious -> Q03 (runActive=true, uiLen=0, runLen=0, draftLen=0)
+2026-11-10T14:49:34.947Z D/SurveyVM [main] backToPrevious -> Q02 (runActive=true, uiLen=0, runLen=0, draftLen=0)
+2026-11-10T14:49:35.545Z D/SurveyVM [main] backToPrevious -> Q01 (runActive=true, uiLen=0, runLen=0, draftLen=0)
+2026-11-10T14:49:36.589Z D/SurveyVM [main] backToPrevious -> Q00 (runActive=true, uiLen=0, runLen=0, draftLen=0)
+2026-11-10T14:49:37.428Z D/SurveyVM [main] backToPrevious -> Pre5 (runActive=true, uiLen=0, runLen=0, draftLen=0)
+2026-11-10T14:49:38.270Z D/SurveyVM [main] backToPrevious -> Pre4 (runActive=true, uiLen=0, runLen=0, draftLen=0)
+2026-11-10T14:49:39.319Z D/SurveyVM [main] backToPrevious -> Pre3 (runActive=true, uiLen=0, runLen=0, draftLen=0)
+2026-11-10T14:49:40.627Z D/SurveyVM [main] backToPrevious -> Pre2 (runActive=true, uiLen=0, runLen=0, draftLen=0)
+2026-11-10T14:49:41.345Z D/SurveyVM [main] backToPrevious -> Pre1 (runActive=true, uiLen=0, runLen=0, draftLen=0)
+2026-11-10T14:49:41.804Z D/SurveyVM [main] backToPrevious -> Start (runActive=true, uiLen=0, runLen=0, draftLen=0)
+2026-11-10T14:49:42.016Z D/SurveyVM [main] backToPrevious: at root (no-op)
+2026-11-10T14:49:42.233Z D/SurveyVM [main] backToPrevious: at root (no-op)
