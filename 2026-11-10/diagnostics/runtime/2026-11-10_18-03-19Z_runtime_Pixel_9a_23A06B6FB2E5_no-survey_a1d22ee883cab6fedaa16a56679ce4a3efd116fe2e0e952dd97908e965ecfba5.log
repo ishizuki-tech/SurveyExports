@@ -1,0 +1,38 @@
+event_utc=2026-11-10T18:03:19.541185Z
+capture_start_utc=2026-11-10T18:03:19.541185Z
+capture_end_utc=2026-11-10T18:03:23.895Z
+collection_scope=previous_process_runtime_segment
+collector_process_session=8ff3358a-8767-42c5-ab0d-f336d8bfce23
+collector_process_pid=11744
+=== RuntimeLogStore Header ===
+ts=2026-11-10T18:03:19.541185Z
+v2_process_session=7c494b59-ea24-4728-abb8-dcfe30b88616
+v2_profile=PRODUCTION
+fileNameFormat=LEGACY
+appId=com.negi.survey.uitest
+versionName=0.0.1
+versionCode=1
+debug=true
+device=Google Pixel 9a
+sdk=36
+pid=11546
+==============================
+2026-11-10T18:03:19.541Z I/RuntimeLogStore [rtlog-io] start: actor launched (fileNameFormat=LEGACY)
+2026-11-10T18:03:19.417Z D/SurveyApp [main] attachBaseContext: pid=11546 process=com.negi.survey.uitest isMain=true sdk=36
+2026-11-10T18:03:19.418Z D/SurveyApp [main] bootTiming: attachBaseContext total=22ms
+2026-11-10T18:03:19.418Z D/SurveyApp [main] Skipping WorkManager init in attachBaseContext; will init lazily on first enqueue.
+2026-11-10T18:03:19.419Z D/SurveyApp [main] CrashCapture installed: where=SurveyApp:attachBaseContext
+2026-11-10T18:03:19.430Z I/RuntimeLogStore [main] start repair: ctx/dir refreshed
+2026-11-10T18:03:19.430Z D/SurveyApp [main] bootTiming: RuntimeLogStore.start took=1ms
+2026-11-10T18:03:19.430Z D/SurveyApp [main] bootTiming: AppRingLogStore.install took=0ms
+2026-11-10T18:03:19.431Z D/SurveyApp [main] onCreate: pid=11546 process=com.negi.survey.uitest isMain=true sdk=36
+2026-11-10T18:03:19.434Z D/SurveyApp [main] CrashCapture installed: where=SurveyApp:onCreate(rewrap)
+2026-11-10T18:03:19.435Z D/SurveyApp [main] CrashCapture self-healing registered.
+2026-11-10T18:03:19.435Z D/SurveyApp [main] bootTiming: onCreate total=6ms
+2026-11-10T18:03:19.786Z D/SurveyApp [DefaultDispatcher-worker-2] Startup survey recovery deferred: delay=2500ms
+2026-11-10T18:03:22.288Z D/SurveyApp [DefaultDispatcher-worker-3] Survey recovery WorkManager available. where=startupSurveyUploads(initial) took=0ms
+2026-11-10T18:03:22.294Z W/SurveyApp [DefaultDispatcher-worker-3] Startup survey recovery: GitHub config unavailable (initial).
+2026-11-10T18:03:22.294Z W/SurveyApp [DefaultDispatcher-worker-3] Startup survey recovery: scheduling one retry; reason=config delay=1600ms
+2026-11-10T18:03:23.896Z D/SurveyApp [DefaultDispatcher-worker-3] Survey recovery WorkManager available. where=startupSurveyUploads(delayed) took=0ms
+2026-11-10T18:03:23.897Z W/SurveyApp [DefaultDispatcher-worker-3] Startup survey recovery: GitHub config unavailable (delayed).
+2026-11-10T18:03:23.897Z W/SurveyApp [DefaultDispatcher-worker-3] Startup survey recovery: retry exhausted; reason=config
