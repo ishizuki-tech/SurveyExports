@@ -1,0 +1,107 @@
+event_utc=2026-11-10T17:31:55.483306Z
+capture_start_utc=2026-11-10T17:31:55.483306Z
+capture_end_utc=2026-11-10T17:32:01.331Z
+collection_scope=previous_process_runtime_segment
+collector_process_session=3d1b7526-9d90-43a3-be91-7cdb843b5c33
+collector_process_pid=8027
+=== RuntimeLogStore Header ===
+ts=2026-11-10T17:31:55.483306Z
+v2_process_session=fb60fb96-16a9-4825-9377-d5835fbf5398
+v2_profile=PRODUCTION
+fileNameFormat=LEGACY
+appId=com.negi.survey.uitest
+versionName=0.0.1
+versionCode=1
+debug=true
+device=Google Pixel 9a
+sdk=36
+pid=7890
+==============================
+2026-11-10T17:31:55.483Z I/RuntimeLogStore [rtlog-io] start: actor launched (fileNameFormat=LEGACY)
+2026-11-10T17:31:55.345Z D/SurveyApp [main] attachBaseContext: pid=7890 process=com.negi.survey.uitest isMain=true sdk=36
+2026-11-10T17:31:55.345Z D/SurveyApp [main] bootTiming: attachBaseContext total=34ms
+2026-11-10T17:31:55.345Z D/SurveyApp [main] Skipping WorkManager init in attachBaseContext; will init lazily on first enqueue.
+2026-11-10T17:31:55.347Z D/SurveyApp [main] CrashCapture installed: where=SurveyApp:attachBaseContext
+2026-11-10T17:31:55.405Z I/RuntimeLogStore [main] start repair: ctx/dir refreshed
+2026-11-10T17:31:55.405Z D/SurveyApp [main] bootTiming: RuntimeLogStore.start took=0ms
+2026-11-10T17:31:55.405Z D/SurveyApp [main] bootTiming: AppRingLogStore.install took=0ms
+2026-11-10T17:31:55.405Z D/SurveyApp [main] onCreate: pid=7890 process=com.negi.survey.uitest isMain=true sdk=36
+2026-11-10T17:31:55.413Z D/SurveyApp [main] CrashCapture installed: where=SurveyApp:onCreate(rewrap)
+2026-11-10T17:31:55.413Z D/SurveyApp [main] CrashCapture self-healing registered.
+2026-11-10T17:31:55.414Z D/SurveyApp [main] bootTiming: onCreate total=10ms
+2026-11-10T17:31:55.723Z D/SurveyApp [DefaultDispatcher-worker-1] Startup survey recovery deferred: delay=2500ms
+2026-11-10T17:31:56.312Z D/SurveyVM [main] init -> Start, session=0, uuid=01a1c684-3817-73f2-b305-2679da16da7e, navSize=1, graphSize=12
+2026-11-10T17:31:56.315Z D/SurveyVM [main] config.validate -> issues=5
+2026-11-10T17:31:56.315Z W/SurveyVM [main]   - AI node 'Q9' has no usable prompt (one-step or complete two-step)
+2026-11-10T17:31:56.315Z W/SurveyVM [main]   - AI node 'Q07' has no usable prompt (one-step or complete two-step)
+2026-11-10T17:31:56.315Z W/SurveyVM [main]   - AI node 'Q08' has no usable prompt (one-step or complete two-step)
+2026-11-10T17:31:56.315Z W/SurveyVM [main]   - AI node 'Q09' has no usable prompt (one-step or complete two-step)
+2026-11-10T17:31:56.315Z W/SurveyVM [main]   - unreachable nodes from startId='Start': Info,Multi,Q06,Q07,Q08,Q09,Single,Text
+2026-11-10T17:31:56.315Z D/SurveyVM [main] promptSources -> legacy=1, eval=0, follow=0
+2026-11-10T17:31:56.315Z D/SurveyVM [main] promptSources.preview -> legacy=[Q8], eval=[], follow=[]
+2026-11-10T17:31:56.315Z D/SurveyVM [main] hasTwoStepPrompt[Q07] -> false (eval=0, fu=0)
+2026-11-10T17:31:56.316Z D/SurveyVM [main] hasTwoStepPrompt[Q08] -> false (eval=0, fu=0)
+2026-11-10T17:31:56.316Z D/SurveyVM [main] hasTwoStepPrompt[Q09] -> false (eval=0, fu=0)
+2026-11-10T17:31:56.316Z D/SurveyVM [main] hasTwoStepPrompt[Q8] -> false (eval=0, fu=0)
+2026-11-10T17:31:56.316Z D/SurveyVM [main] hasTwoStepPrompt[Q9] -> false (eval=0, fu=0)
+2026-11-10T17:31:56.316Z E/SurveyVM [main] AI prompt coverage missing for nodeIds=[Q07, Q08, Q09, Q9] (count=4)
+2026-11-10T17:31:56.316Z D/SurveyVM [main] activateRunIfNeeded(goto:Q8) -> runNoteLen=0, draftCleared=true, uuid=01a1c684-3817-73f2-b305-2679da16da7e
+2026-11-10T17:31:56.316Z D/SurveyVM [main] push -> Q8, navSize=2, stackSize=2
+2026-11-10T17:31:56.333Z D/SurveyVM [main] hasTwoStepPrompt[Q8] -> false (eval=0, fu=0)
+2026-11-10T17:31:58.277Z D/SurveyApp [DefaultDispatcher-worker-1] Survey recovery WorkManager available. where=startupSurveyUploads(initial) took=54ms
+2026-11-10T17:31:58.285Z D/AiScreen [main] Speech started (node=Q8 role=MAIN)
+2026-11-10T17:31:58.289Z W/SurveyApp [DefaultDispatcher-worker-1] Startup survey recovery: GitHub config unavailable (initial).
+2026-11-10T17:31:58.289Z W/SurveyApp [DefaultDispatcher-worker-1] Startup survey recovery: scheduling one retry; reason=config delay=1600ms
+2026-11-10T17:31:58.673Z D/AiScreen [main] Speech committed (node=Q8 role=MAIN len=17)
+2026-11-10T17:31:59.909Z D/SurveyApp [DefaultDispatcher-worker-1] Survey recovery WorkManager available. where=startupSurveyUploads(delayed) took=0ms
+2026-11-10T17:31:59.909Z W/SurveyApp [DefaultDispatcher-worker-1] Startup survey recovery: GitHub config unavailable (delayed).
+2026-11-10T17:31:59.909Z W/SurveyApp [DefaultDispatcher-worker-1] Startup survey recovery: retry exhausted; reason=config
+2026-11-10T17:32:01.114Z D/SurveyVM [main] hasTwoStepPrompt[Q8] -> false (eval=0, fu=0)
+2026-11-10T17:32:01.115Z I/AiScreen [main] Submit begin runId=ai-Q8-51884674-51884674653507 node=Q8 role=MAIN isTwoStep=false sessionId=0 surveyUuid=01a1c684-3817-73f2-b305-2679da16da7e qLen=8 aLen=17 qSha6=289aff12b042 aSha6=6a7064907061
+2026-11-10T17:32:01.115Z D/AiScreen [main] Submit payload preview (debug) runId=ai-Q8-51884674-51884674653507 node=Q8 qPreview="Question" aPreview="edited transcript"
+2026-11-10T17:32:01.116Z D/SurveyVM [main] getPrompt[Q8] -> len=26 (src=one_step)
+2026-11-10T17:32:01.117Z D/AiViewModel [DefaultDispatcher-worker-1] run[1]: mode=EVAL_JSON phase=ONE_STEP commit=true prompt.len=26, fullPrompt.len=26, timeoutMs=120000
+2026-11-10T17:32:01.118Z D/AiViewModel [DefaultDispatcher-worker-1] run[1]: sha(prompt)=e3fa291d0a25974d79ed12295e5ba0a9e177b52c89c40d9fa008a01c553f9132 sha(full)=e3fa291d0a25974d79ed12295e5ba0a9e177b52c89c40d9fa008a01c553f9132
+2026-11-10T17:32:01.118Z I/FullPromptReview [DefaultDispatcher-worker-1] [part=000] run[1]: phase=ONE_STEP FullPrompt
+Question edited transcript
+2026-11-10T17:32:01.331Z W/AiViewModel [DefaultDispatcher-worker-1] run[1]: cancelled
+java.util.concurrent.CancellationException: reset
+	at com.negi.survey.vm.AiViewModel.resetStates(AiViewModel.kt:1339)
+	at com.negi.survey.vm.AiViewModel.resetStates$default(AiViewModel.kt:1320)
+	at com.negi.survey.screens.AiScreenKt$AiScreen$lambda$89$0$$inlined$onDispose$1.dispose(Effects.kt:782)
+	at androidx.compose.runtime.DisposableEffectImpl.onForgotten(Effects.kt:237)
+	at androidx.compose.runtime.internal.RememberEventDispatcher.dispatchRememberObservers(RememberEventDispatcher.kt:223)
+	at androidx.compose.runtime.CompositionImpl.dispose(Composition.kt:955)
+	at androidx.compose.ui.platform.WrappedComposition.dispose(Wrapper.android.kt:141)
+	at androidx.compose.ui.platform.WrappedComposition.onStateChanged(Wrapper.android.kt:152)
+	at androidx.lifecycle.LifecycleRegistry$ObserverWithState.dispatchEvent(LifecycleRegistry.kt:394)
+	at androidx.lifecycle.LifecycleRegistry.backwardPass$lambda$0(LifecycleRegistry.kt:329)
+	at androidx.lifecycle.LifecycleRegistry$$ExternalSyntheticLambda0.invoke(D8$$SyntheticClass:0)
+	at androidx.lifecycle.FastSafeIterableMap.forEachReversed(FastSafeIterableMap.kt:159)
+	at androidx.lifecycle.LifecycleRegistry.backwardPass(LifecycleRegistry.kt:322)
+	at androidx.lifecycle.LifecycleRegistry.sync(LifecycleRegistry.kt:363)
+	at androidx.lifecycle.LifecycleRegistry.moveToState(LifecycleRegistry.kt:180)
+	at androidx.lifecycle.LifecycleRegistry.handleLifecycleEvent(LifecycleRegistry.kt:157)
+	at androidx.lifecycle.ReportFragment$Companion.dispatch$lifecycle_runtime(ReportFragment.android.kt:181)
+	at androidx.lifecycle.ReportFragment$LifecycleCallbacks.onActivityPreDestroyed(ReportFragment.android.kt:137)
+	at android.app.Activity.dispatchActivityPreDestroyed(Activity.java:1784)
+	at android.app.Activity.performDestroy(Activity.java:9607)
+	at android.app.Instrumentation.callActivityOnDestroy(Instrumentation.java:1578)
+	at androidx.test.runner.MonitoringInstrumentation.callActivityOnDestroy(MonitoringInstrumentation.java:753)
+	at android.app.ActivityThread.performDestroyActivity(ActivityThread.java:6554)
+	at android.app.ActivityThread.handleDestroyActivity(ActivityThread.java:6599)
+	at android.app.servertransaction.DestroyActivityItem.execute(DestroyActivityItem.java:52)
+	at android.app.servertransaction.ActivityTransactionItem.execute(ActivityTransactionItem.java:63)
+	at android.app.servertransaction.TransactionExecutor.executeLifecycleItem(TransactionExecutor.java:169)
+	at android.app.servertransaction.TransactionExecutor.executeTransactionItems(TransactionExecutor.java:101)
+	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:80)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2987)
+	at android.os.Handler.dispatchMessageImpl(Handler.java:142)
+	at android.os.Handler.dispatchMessage(Handler.java:125)
+	at android.os.Looper.loopOnce(Looper.java:269)
+	at android.os.Looper.loop(Looper.java:367)
+	at android.app.ActivityThread.main(ActivityThread.java:9333)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:566)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:929)
+
