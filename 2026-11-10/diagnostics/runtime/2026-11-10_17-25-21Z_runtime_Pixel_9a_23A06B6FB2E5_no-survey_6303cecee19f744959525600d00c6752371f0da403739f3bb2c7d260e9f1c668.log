@@ -1,0 +1,54 @@
+event_utc=2026-11-10T17:25:21.892262Z
+capture_start_utc=2026-11-10T17:25:21.892262Z
+capture_end_utc=2026-11-10T17:25:24.663Z
+collection_scope=previous_process_runtime_segment
+collector_process_session=a61f3ed8-da99-445a-9b1f-ca6f65b41292
+collector_process_pid=6193
+=== RuntimeLogStore Header ===
+ts=2026-11-10T17:25:21.892262Z
+v2_process_session=c8758013-3857-421a-b483-480252118385
+v2_profile=PRODUCTION
+fileNameFormat=LEGACY
+appId=com.negi.survey.uitest
+versionName=0.0.1
+versionCode=1
+debug=true
+device=Google Pixel 9a
+sdk=36
+pid=5947
+==============================
+2026-11-10T17:25:21.892Z I/RuntimeLogStore [rtlog-io] start: actor launched (fileNameFormat=LEGACY)
+2026-11-10T17:25:21.742Z D/SurveyApp [main] attachBaseContext: pid=5947 process=com.negi.survey.uitest isMain=true sdk=36
+2026-11-10T17:25:21.743Z D/SurveyApp [main] bootTiming: attachBaseContext total=41ms
+2026-11-10T17:25:21.743Z D/SurveyApp [main] Skipping WorkManager init in attachBaseContext; will init lazily on first enqueue.
+2026-11-10T17:25:21.745Z D/SurveyApp [main] CrashCapture installed: where=SurveyApp:attachBaseContext
+2026-11-10T17:25:21.799Z I/RuntimeLogStore [main] start repair: ctx/dir refreshed
+2026-11-10T17:25:21.799Z D/SurveyApp [main] bootTiming: RuntimeLogStore.start took=0ms
+2026-11-10T17:25:21.799Z D/SurveyApp [main] bootTiming: AppRingLogStore.install took=0ms
+2026-11-10T17:25:21.799Z D/SurveyApp [main] onCreate: pid=5947 process=com.negi.survey.uitest isMain=true sdk=36
+2026-11-10T17:25:21.805Z D/SurveyApp [main] CrashCapture installed: where=SurveyApp:onCreate(rewrap)
+2026-11-10T17:25:21.805Z D/SurveyApp [main] CrashCapture self-healing registered.
+2026-11-10T17:25:21.814Z D/SurveyApp [main] bootTiming: onCreate total=15ms
+2026-11-10T17:25:22.092Z D/SurveyApp [DefaultDispatcher-worker-1] Startup survey recovery deferred: delay=2500ms
+2026-11-10T17:25:22.697Z D/SurveyVM [main] init -> Start, session=0, uuid=01a1c67e-3688-767a-9aa0-0a00409ab0a7, navSize=1, graphSize=12
+2026-11-10T17:25:22.700Z D/SurveyVM [main] config.validate -> issues=6
+2026-11-10T17:25:22.700Z W/SurveyVM [main]   - two-step prompts present but missing slm.key_contract_eval (and slm.key_contract fallback is also empty)
+2026-11-10T17:25:22.700Z W/SurveyVM [main]   - two-step prompts present but missing slm.key_contract_followup (and slm.key_contract fallback is also empty)
+2026-11-10T17:25:22.700Z W/SurveyVM [main]   - AI node 'Q9' has no usable prompt (one-step or complete two-step)
+2026-11-10T17:25:22.700Z W/SurveyVM [main]   - AI node 'Q08' has no usable prompt (one-step or complete two-step)
+2026-11-10T17:25:22.700Z W/SurveyVM [main]   - AI node 'Q09' has no usable prompt (one-step or complete two-step)
+2026-11-10T17:25:22.700Z W/SurveyVM [main]   - unreachable nodes from startId='Start': Info,Multi,Q06,Q07,Q08,Q09,Single,Text
+2026-11-10T17:25:22.700Z D/SurveyVM [main] promptSources -> legacy=2, eval=0, follow=0
+2026-11-10T17:25:22.701Z D/SurveyVM [main] promptSources.preview -> legacy=[Q07, Q8], eval=[], follow=[]
+2026-11-10T17:25:22.701Z D/SurveyVM [main] hasTwoStepPrompt[Q07] -> true (eval=23, fu=26)
+2026-11-10T17:25:22.701Z D/SurveyVM [main] hasTwoStepPrompt[Q08] -> false (eval=0, fu=0)
+2026-11-10T17:25:22.701Z D/SurveyVM [main] hasTwoStepPrompt[Q09] -> false (eval=0, fu=0)
+2026-11-10T17:25:22.701Z D/SurveyVM [main] hasTwoStepPrompt[Q8] -> true (eval=23, fu=26)
+2026-11-10T17:25:22.701Z D/SurveyVM [main] hasTwoStepPrompt[Q9] -> false (eval=0, fu=0)
+2026-11-10T17:25:22.701Z E/SurveyVM [main] AI prompt coverage missing for nodeIds=[Q08, Q09, Q9] (count=3)
+2026-11-10T17:25:22.701Z D/SurveyVM [main] activateRunIfNeeded(goto:Q8) -> runNoteLen=0, draftCleared=true, uuid=01a1c67e-3688-767a-9aa0-0a00409ab0a7
+2026-11-10T17:25:22.701Z D/SurveyVM [main] push -> Q8, navSize=2, stackSize=2
+2026-11-10T17:25:22.720Z D/SurveyVM [main] hasTwoStepPrompt[Q8] -> true (eval=23, fu=26)
+2026-11-10T17:25:24.659Z D/SurveyApp [DefaultDispatcher-worker-1] Survey recovery WorkManager available. where=startupSurveyUploads(initial) took=0ms
+2026-11-10T17:25:24.664Z W/SurveyApp [DefaultDispatcher-worker-1] Startup survey recovery: GitHub config unavailable (initial).
+2026-11-10T17:25:24.665Z W/SurveyApp [DefaultDispatcher-worker-1] Startup survey recovery: scheduling one retry; reason=config delay=1600ms
