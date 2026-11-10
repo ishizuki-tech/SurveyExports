@@ -1,0 +1,54 @@
+event_utc=2026-11-10T19:03:53.222825Z
+capture_start_utc=2026-11-10T19:03:53.198Z
+capture_end_utc=2026-11-10T19:04:16.626675Z
+collection_scope=process_runtime_segment
+collector_process_session=7936c8c6-19d8-4981-85f3-f9f17cb52f60
+collector_process_pid=16344
+=== RuntimeLogStore Header ===
+ts=2026-11-10T19:03:53.222825Z
+v2_process_session=7936c8c6-19d8-4981-85f3-f9f17cb52f60
+v2_profile=PRODUCTION
+fileNameFormat=LEGACY
+appId=com.negi.survey.uitest
+versionName=0.0.1
+versionCode=1
+debug=true
+device=Google Pixel 9a
+sdk=36
+pid=16344
+==============================
+2026-11-10T19:03:53.223Z I/RuntimeLogStore [rtlog-io] --- rotated (reason=survey_started) ---
+2026-11-10T19:03:53.198Z D/SurveyVM [main] activateRunIfNeeded(advanceToNext:Pre1) -> runNoteLen=0, draftCleared=true, uuid=01a1c6d8-5fd2-74ef-bca1-58b92b0cee2c
+2026-11-10T19:03:53.198Z D/SurveyVM [main] push -> Pre1, navSize=2, stackSize=2
+2026-11-10T19:03:57.204Z D/SurveyVM [main] push -> Pre2, navSize=3, stackSize=3
+2026-11-10T19:03:58.246Z D/SurveyVM [main] push -> Pre3, navSize=4, stackSize=4
+2026-11-10T19:03:58.785Z D/SurveyVM [main] push -> Pre4, navSize=5, stackSize=5
+2026-11-10T19:03:59.339Z D/SurveyVM [main] push -> Pre5, navSize=6, stackSize=6
+2026-11-10T19:04:06.189Z D/SurveyVM [main] push -> Q00, navSize=7, stackSize=7
+2026-11-10T19:04:12.718Z D/SurveyVM [main] push -> ConsentDeclined, navSize=8, stackSize=8
+2026-11-10T19:04:14.134Z D/SurveyVM [main] resetAudioRefs -> cleared
+2026-11-10T19:04:14.135Z D/SurveyVM [main] resetNavToStart -> key=com.negi.survey.vm.FlowHome@aef4a05, navSize=1
+2026-11-10T19:04:14.135Z D/SurveyVM [main] resetToStart -> Start, session=1, uuid=01a1c6d8-b831-7991-892c-7634aaffd628, preserveDraft=false, draftLen=0
+2026-11-10T19:04:14.137Z I/AiViewModel [main] onCleared: ViewModel is being cleared -> stopCurrentRunInternal()
+2026-11-10T19:04:15.570Z D/SLM [main] buildModelConfig: accel=GPU maxTokens=1024 topK=1 topP=0.0 temperature=0.0
+2026-11-10T19:04:15.574Z D/LiteRtLM [DefaultDispatcher-worker-1] initializeIfNeeded: warm runtime already ready: key='fs|dev=65086|ino=203890|size=4919541760|mtime=1794330433651'
+2026-11-10T19:04:15.587Z D/AiTrace [main] Installed (enabled=true ringEnabled=true)
+2026-11-10T19:04:15.590Z D/SurveyVM [main] init -> Start, session=0, uuid=01a1c6d8-bde3-7536-ae3a-f225d8bbaf41, navSize=1, graphSize=28
+2026-11-10T19:04:15.597Z D/SurveyVM [main] config.validate -> issues=0
+2026-11-10T19:04:15.597Z D/SurveyVM [main] promptSources -> legacy=10, eval=0, follow=0
+2026-11-10T19:04:15.597Z D/SurveyVM [main] promptSources.preview -> legacy=[Q07, Q08, Q09, Q10, Q11, Q12, Q13, Q14b, Q15, Q16], eval=[], follow=[]
+2026-11-10T19:04:15.597Z D/SurveyVM [main] hasTwoStepPrompt[Q07] -> true (eval=248, fu=273)
+2026-11-10T19:04:15.597Z D/SurveyVM [main] hasTwoStepPrompt[Q08] -> true (eval=218, fu=243)
+2026-11-10T19:04:15.597Z D/SurveyVM [main] hasTwoStepPrompt[Q09] -> true (eval=224, fu=249)
+2026-11-10T19:04:15.597Z D/SurveyVM [main] hasTwoStepPrompt[Q10] -> true (eval=258, fu=283)
+2026-11-10T19:04:15.597Z D/SurveyVM [main] hasTwoStepPrompt[Q11] -> true (eval=266, fu=291)
+2026-11-10T19:04:15.597Z D/SurveyVM [main] hasTwoStepPrompt[Q12] -> true (eval=248, fu=273)
+2026-11-10T19:04:15.597Z D/SurveyVM [main] hasTwoStepPrompt[Q13] -> true (eval=221, fu=246)
+2026-11-10T19:04:15.597Z D/SurveyVM [main] hasTwoStepPrompt[Q14b] -> true (eval=160, fu=185)
+2026-11-10T19:04:15.597Z D/SurveyVM [main] hasTwoStepPrompt[Q15] -> true (eval=185, fu=210)
+2026-11-10T19:04:15.598Z D/SurveyVM [main] hasTwoStepPrompt[Q16] -> true (eval=200, fu=225)
+2026-11-10T19:04:15.598Z D/SurveyVM [main] AI prompt coverage OK (aiCount=10)
+2026-11-10T19:04:15.653Z D/SLM [slm-jni] initializeIfNeeded: model='Gemma3n4B' image=false audio=false
+2026-11-10T19:04:15.653Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='fs|dev=65086|ino=203890|size=4919541760|mtime=1794330433651'
+2026-11-10T19:04:15.656Z D/LiteRtRepository [main] warmUp: initializeIfNeeded ok gateWaitMs=0 initMs=3
+2026-11-10T19:04:15.656Z D/LiteRtRepository [main] warmUp: Engine ready; representative inference disabled totalMs=3
