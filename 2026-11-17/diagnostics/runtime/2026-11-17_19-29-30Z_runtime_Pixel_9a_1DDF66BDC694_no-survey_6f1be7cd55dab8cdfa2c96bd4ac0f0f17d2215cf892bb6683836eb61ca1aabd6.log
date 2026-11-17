@@ -1,0 +1,42 @@
+event_utc=2026-11-17T19:29:30.955130Z
+capture_start_utc=2026-11-17T19:29:30.955130Z
+capture_end_utc=2026-11-17T19:29:39.091Z
+collection_scope=previous_process_runtime_segment
+collector_process_session=ab169833-f12f-4394-9ef0-4070106bbd49
+collector_process_pid=18420
+=== RuntimeLogStore Header ===
+ts=2026-11-17T19:29:30.955130Z
+v2_process_session=b1bc6297-4288-4761-9d5e-25b47bd43768
+v2_profile=PRODUCTION
+fileNameFormat=LEGACY
+appId=com.negi.survey
+versionName=0.0.1
+versionCode=174
+debug=false
+device=Google Pixel 9a
+sdk=36
+pid=16596
+==============================
+2026-11-17T19:29:30.955Z I/RuntimeLogStore [rtlog-io] start: actor launched (fileNameFormat=LEGACY)
+2026-11-17T19:29:30.850Z D/SurveyApp [main] attachBaseContext: pid=16596 process=com.negi.survey isMain=true sdk=36
+2026-11-17T19:29:30.850Z D/SurveyApp [main] bootTiming: attachBaseContext total=28ms
+2026-11-17T19:29:30.850Z D/SurveyApp [main] Skipping WorkManager init in attachBaseContext; will init lazily on first enqueue.
+2026-11-17T19:29:30.850Z D/SurveyApp [main] CrashCapture installed: where=SurveyApp:attachBaseContext
+2026-11-17T19:29:30.860Z I/RuntimeLogStore [main] start repair: ctx/dir refreshed
+2026-11-17T19:29:30.860Z D/SurveyApp [main] bootTiming: RuntimeLogStore.start took=0ms
+2026-11-17T19:29:30.860Z D/SurveyApp [main] bootTiming: AppRingLogStore.install took=0ms
+2026-11-17T19:29:30.860Z D/SurveyApp [main] onCreate: pid=16596 process=com.negi.survey isMain=true sdk=36
+2026-11-17T19:29:30.860Z D/SurveyApp [main] CrashCapture installed: where=SurveyApp:onCreate(rewrap)
+2026-11-17T19:29:30.860Z D/SurveyApp [main] CrashCapture self-healing registered.
+2026-11-17T19:29:30.861Z D/SurveyApp [main] bootTiming: onCreate total=1ms
+2026-11-17T19:29:31.429Z D/LiteRtLM [DefaultDispatcher-worker-7] Initializing LiteRT-LM: model='Gemma3n4B', key='fs|dev=65086|ino=193158|size=4919541760|mtime=1794548738318'
+2026-11-17T19:29:31.429Z D/LiteRtLM [DefaultDispatcher-worker-7] Capabilities: image=false audio=false
+2026-11-17T19:29:31.429Z D/LiteRtLM [DefaultDispatcher-worker-7] Backend=com.google.ai.edge.litertlm.Backend$GPU@dee7114 maxNumTokens=1024 (raw=1024) topK=1 topP=0.0 temp=0.0
+2026-11-17T19:29:31.429Z D/LiteRtLM [DefaultDispatcher-worker-7] Model path='/data/user/0/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' sizeBytes=4919541760 lastModified=1794548738318
+2026-11-17T19:29:31.429Z D/LiteRtLM [DefaultDispatcher-worker-7] LiteRT-LM native benchmark policy: enabled=false emulator=false
+2026-11-17T19:29:31.430Z D/LiteRtLM [DefaultDispatcher-worker-7] Speculative decoding / MTP policy: enabled=false runtimeFlagUpdated=true model='Gemma3n4B'
+2026-11-17T19:29:31.431Z D/LiteRtLM [DefaultDispatcher-worker-7] Engine cacheDir resolved: key='fs|dev=65086|ino=193158|size=4919541760|mtime=1794548738318' backend=com.google.ai.edge.litertlm.Backend$GPU@dee7114 path='/data/user/0/com.negi.survey/no_backup/litertlm_cache/f2e26f03b4f9790e41684bde9e4fcf677894d801' filesBefore=2
+2026-11-17T19:29:31.548Z D/SurveyApp [DefaultDispatcher-worker-1] Startup survey recovery deferred: delay=2500ms
+2026-11-17T19:29:34.049Z D/SurveyApp [DefaultDispatcher-worker-3] Survey recovery WorkManager available. where=startupSurveyUploads(initial) took=0ms
+2026-11-17T19:29:34.231Z D/SurveyApp [DefaultDispatcher-worker-3] Startup survey recovery complete: discovered=0 attempted=0 submitted=0 active=0 trackerUnconfirmed=0 uploaded=0 deferred=0 invalid=0 operationalFailures=0 duplicates=0 unclassified=0
+2026-11-17T19:29:39.095Z W/LiteRtLM [DefaultDispatcher-worker-7] Engine.initialize completed: key='fs|dev=65086|ino=193158|size=4919541760|mtime=1794548738318' backend=com.google.ai.edge.litertlm.Backend$GPU@dee7114 took=7663ms cacheFilesAfter=2
