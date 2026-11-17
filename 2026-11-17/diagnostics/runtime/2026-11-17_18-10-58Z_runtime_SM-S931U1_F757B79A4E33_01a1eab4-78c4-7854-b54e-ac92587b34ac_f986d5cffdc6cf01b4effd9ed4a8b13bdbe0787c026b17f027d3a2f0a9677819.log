@@ -1,0 +1,102 @@
+event_utc=2026-11-17T18:11:21.723364Z
+capture_start_utc=2026-11-17T18:11:21.708Z
+capture_end_utc=2026-11-17T18:14:38.555147Z
+collection_scope=process_runtime_segment
+collector_process_session=338c8f1d-533b-4615-992f-3e1b00c2037a
+collector_process_pid=1161
+survey_id=01a1eab4-78c4-7854-b54e-ac92587b34ac
+survey_active_start_utc=2026-11-17T18:11:21.708Z
+survey_active_end_utc=active at capture
+survey_process_session=338c8f1d-533b-4615-992f-3e1b00c2037a
+survey_process_pid=1161
+=== RuntimeLogStore Header ===
+ts=2026-11-17T18:11:21.723364Z
+v2_process_session=338c8f1d-533b-4615-992f-3e1b00c2037a
+v2_profile=PRODUCTION
+fileNameFormat=LEGACY
+appId=com.negi.survey
+versionName=0.0.1
+versionCode=175
+debug=false
+device=samsung SM-S931U1
+sdk=37
+pid=1161
+==============================
+2026-11-17T18:11:21.723Z I/RuntimeLogStore [rtlog-io] --- rotated (reason=survey_started) ---
+2026-11-17T18:11:21.708Z D/SurveyVM [main] activateRunIfNeeded(advanceToNext:Pre1) -> runNoteLen=34, draftCleared=true, uuid=01a1eab4-78c4-7854-b54e-ac92587b34ac
+2026-11-17T18:11:21.708Z D/SurveyVM [main] push -> Pre1, navSize=2, stackSize=2
+2026-11-17T18:11:24.776Z D/SurveyVM [main] push -> Pre2, navSize=3, stackSize=3
+2026-11-17T18:11:27.209Z D/SurveyVM [main] push -> Pre3, navSize=4, stackSize=4
+2026-11-17T18:11:29.608Z D/SurveyVM [main] push -> Pre4, navSize=5, stackSize=5
+2026-11-17T18:11:33.249Z D/SurveyVM [main] push -> Pre5, navSize=6, stackSize=6
+2026-11-17T18:11:35.273Z D/SurveyVM [main] push -> Q00, navSize=7, stackSize=7
+2026-11-17T18:11:41.155Z D/SurveyVM [main] push -> Q01, navSize=8, stackSize=8
+2026-11-17T18:11:43.527Z D/SurveyVM [main] push -> Q02, navSize=9, stackSize=9
+2026-11-17T18:12:08.556Z D/SurveyVM [main] push -> Q03, navSize=10, stackSize=10
+2026-11-17T18:12:10.765Z D/SurveyVM [main] push -> Q04, navSize=11, stackSize=11
+2026-11-17T18:12:16.238Z D/SurveyVM [main] push -> Q05, navSize=12, stackSize=12
+2026-11-17T18:12:19.339Z D/SurveyVM [main] push -> Q06, navSize=13, stackSize=13
+2026-11-17T18:12:21.462Z D/SurveyVM [main] push -> Q07, navSize=14, stackSize=14
+2026-11-17T18:12:21.478Z D/SurveyVM [main] hasTwoStepPrompt[Q07] -> true (eval=244, fu=155)
+2026-11-17T18:12:23.587Z D/SurveyVM [main] push -> Q08, navSize=15, stackSize=15
+2026-11-17T18:12:23.592Z D/SurveyVM [main] hasTwoStepPrompt[Q08] -> true (eval=198, fu=223)
+2026-11-17T18:12:24.401Z D/SurveyVM [main] push -> Q09, navSize=16, stackSize=16
+2026-11-17T18:12:24.408Z D/SurveyVM [main] hasTwoStepPrompt[Q09] -> true (eval=216, fu=241)
+2026-11-17T18:12:28.319Z D/SurveyVM [main] backToPrevious -> Q08 (runActive=true, uiLen=34, runLen=34, draftLen=0)
+2026-11-17T18:12:28.324Z D/SurveyVM [main] hasTwoStepPrompt[Q08] -> true (eval=198, fu=223)
+2026-11-17T18:12:42.316Z D/AiScreen [main] Speech started (node=Q08 role=MAIN)
+2026-11-17T18:13:02.334Z D/SurveyVM [DefaultDispatcher-worker-2] addAudioRef -> q=Q08, file=2026-11-17_18-10-58Z_voice_SM-S931U1_F757B79A4E33_01a1eab4-78c4-7854-b54e-ac92587b34ac_Q08_1a7501bd-b58a-4cd2-9f2d-ebdcacb4aa97.wav, sid=01a1eab4-78c4-7854-b54e-ac92587b34ac
+2026-11-17T18:13:08.526Z D/AiScreen [main] Speech committed (node=Q08 role=MAIN len=235)
+2026-11-17T18:13:12.141Z D/SurveyVM [main] getEvalPrompt[Q08] -> len=553
+2026-11-17T18:13:12.145Z D/LiteRtRepository [DefaultDispatcher-worker-5] [32] request start model='Gemma3n4B' prompt.len=3071 sha=1f598365a87e00ce gateWaitMs=2
+2026-11-17T18:13:12.145Z D/LiteRtRepository [DefaultDispatcher-worker-5] [part=000] [32] PROMPT (FULL) sha=1f598365a87e00ce
+Evaluate only the original survey target using all supplied answers.
+Return only compact JSON {"score":N,"missing_points":[],"followup_needed":false}. N must be an integer 1-100 for relevance, completeness and accuracy against the original target. Evaluate the original answer and all answered followup pairs together. Kabla ya kutoa JSON, linganisha kila taarifa inayodhaniwa kukosekana na jibu la awali na kila jozi ya swali la ufuatiliaji na jibu lake iliyojibiwa. Ikiwa jibu la ufuatiliaji lililojibiwa linatoa moja kwa moja taarifa hiyo, usiiweke katika missing_points. Hesabu upya score, missing_points, na followup_needed pamoja kama uamuzi mmoja wa mwisho unaolingana. Wakati Required component catalog ipo, tathmini kila kipengele cha catalog kivyake: missing_points inaweza kuwa na ID za vipengele vilivyosanidiwa pekee. Ondoa ID ambayo kipengele chake kimetolewa katika jibu la awali au jozi za maswali ya ufuatiliaji zilizojibiwa; kamwe usirudishe maelezo ya kipengele au maswali katika missing_points. Wakati Required components block ya zamani ipo, missing_points inaweza kuwa na maandishi halisi ya vipengele vilivyosanidiwa ambavyo bado havijajibiwa. Wakati hakuna catalog wala Required components block, missing_points inaweza kuandikwa kwa Kiswahili. Tofautisha uhusiano na ukamilifu. Jibu linaweza kuwa kuhusu mada husika lakini bado lisikamilike. Toa alama 90-100 tu wakati mhojiwa ametoa kwa wazi kila kipengele muhimu kinachohitajika katika Lengo la jibu na Swali. Usikisie maelezo yanayokosekana kutokana na maarifa ya jumla, uwezekano, au kauli tupu kwamba tukio lilitokea. Jibu fupi linaweza kuwa kamili. Jibu refu au linalohusu mada lakini linaloacha kipengele chochote muhimu kinachohitajika lipate chini ya 90. Kwa mfano, kusema kwamba tukio lilitokea bila kueleza athari iliyoombwa ni jibu lisilokamilika. Kanuni ya ulinganifu: ikiwa missing_points si tupu au followup_needed ni true, score lazima iwe nambari kamili kutoka 1 hadi 89. Alama 90-100 zinaruhusiwa tu wakati missing_points=[] na followup_needed=false. Usitumie score 90 kama alama ya mpaka wakati kuna kitu chochote kinachokosekana. For score below 90, missing_points must contain the specific missing or ambiguous target-required information and followup_needed must be true. Otherwise missing_points is empty and followup_needed is false. Do not generate a question. Do not penalize style or request information outside the target.
+Keep missing_points concise.
+One JSON object only; no markdown or generated question.
+INPUT:
+Lengo la jibu: idadi ya juu ya magunia ya mavuno ambayo mhojiwa angekubali kupoteza ili kuvuna siku 20 mapema.
+Question: Tafadhali sikiza mfano huu: ikiwa ungeweza kuvuna mahindi siku 20 mapema, lakini mavuno yatapungua kidogo, ungekubali kupoteza magunia mangapi ya mavuno?
+Original answer: ningekubali kupoteza dunia moja au mawili zaidi ili kuvuna mapema hilo lingenisaidia kwasababu mvua ikiendelea mahindi yanaweza kuoza shambani pia ningependa kuvuna maharagwe mapema lakini zaidi ya magunia mawili ni hasara kubwa kwangu
+Answered followup pairs:
+2026-11-17T18:13:12.146Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='fs|dev=65121|ino=179041|size=4919541760|mtime=1794936557671'
+2026-11-17T18:13:12.146Z D/LiteRtRepository [DefaultDispatcher-worker-2] [32] initializeIfNeeded ok initMs=1
+2026-11-17T18:13:12.147Z D/LiteRtLM [DefaultDispatcher-worker-2] runInference start: key='fs|dev=65121|ino=179041|size=4919541760|mtime=1794936557671' runId=32 hasText=true originalTextLen=3071 effectiveTextLen=3071 images=0 audioClips=0
+2026-11-17T18:13:12.147Z D/LiteRtLM [DefaultDispatcher-worker-2] LiteRT-LM sendMessageAsync(text): key='fs|dev=65121|ino=179041|size=4919541760|mtime=1794936557671' runId=32 len=3071 maxOutputTokens=64
+2026-11-17T18:13:12.155Z D/LiteRtLM [DefaultDispatcher-worker-2] sendMessageAsync accepted: key='fs|dev=65121|ino=179041|size=4919541760|mtime=1794936557671' runId=32 dispatchMs=8
+2026-11-17T18:13:14.137Z W/LiteRtLM [Thread-752] Inference first output: key='fs|dev=65121|ino=179041|size=4919541760|mtime=1794936557671' runId=32 ttftMs=1990 dispatchMs=8 postDispatchTtftMs=1982 requestToFirstOutputMs=1990
+2026-11-17T18:13:15.976Z W/LiteRtLM [Thread-779] Inference timing: key='fs|dev=65121|ino=179041|size=4919541760|mtime=1794936557671' runId=32 ttftMs=1990 dispatchMs=8 postDispatchTtftMs=1982 totalMs=3829 callbacks=27 outputChars=83 cancelled=false error=false requestTotalMs=3829
+2026-11-17T18:13:15.976Z I/LiteRtLM [Thread-779] LiteRT completion: runId=32 terminal=normal_onDone phase=unavailable engineTokenCapacity=4096 prefillTokens=-1 decodeTokens=-1 kvTokens=-1 outputChars=83 callbacks=27
+2026-11-17T18:13:15.976Z D/LiteRtRepository [main] [32] logical done=true; responseClosed=true; waiting native cleanup
+2026-11-17T18:13:15.976Z D/LiteRtRepository [main] [32] native cleanup safepoint
+2026-11-17T18:13:15.977Z I/AiViewModel [DefaultDispatcher-worker-5] run[1] done: phase=EVAL mode=EVAL_JSON score=85 FU0.len=0 FU0.sha16=none commit=true err=<none>
+2026-11-17T18:13:15.979Z D/LiteRtRepository [DefaultDispatcher-worker-6] [32] Conversation reset completed after safepoint
+2026-11-17T18:13:15.979Z D/LiteRtRepository [DefaultDispatcher-worker-5] [part=000] [32] FINALIZE: native-terminated
+=== AI TRACE STATS (LiteRtRepository) ===
+rid=32 model='Gemma3n4B' reason=native-terminated
+totalMs=3835 inferenceMs=3832 firstTokenMs=1991
+logicalDone=true logicalDoneAt=277115143
+nativeTerminated=true cancelTag='null'
+lastDeltaMsAgo=3 lastEventMsAgo=3
+chunks=27 emittedChars=83 capturedAll=true out.len=83
+=== OUTPUT (FULL) ===
+{"score": 85, "missing_points": ["magunia mawili zaidi"], "followup_needed": false}
+2026-11-17T18:14:28.439Z D/SurveyVM [main] push -> Q09, navSize=16, stackSize=16
+2026-11-17T18:14:28.442Z D/SurveyVM [main] hasTwoStepPrompt[Q09] -> true (eval=216, fu=241)
+2026-11-17T18:14:29.000Z D/SurveyVM [main] push -> Q10, navSize=17, stackSize=17
+2026-11-17T18:14:29.005Z D/SurveyVM [main] hasTwoStepPrompt[Q10] -> true (eval=257, fu=282)
+2026-11-17T18:14:29.500Z D/SurveyVM [main] push -> Q11, navSize=18, stackSize=18
+2026-11-17T18:14:29.506Z D/SurveyVM [main] hasTwoStepPrompt[Q11] -> true (eval=784, fu=336)
+2026-11-17T18:14:29.932Z D/SurveyVM [main] push -> Q12, navSize=19, stackSize=19
+2026-11-17T18:14:29.939Z D/SurveyVM [main] hasTwoStepPrompt[Q12] -> true (eval=234, fu=259)
+2026-11-17T18:14:30.391Z D/SurveyVM [main] push -> Q13, navSize=20, stackSize=20
+2026-11-17T18:14:30.397Z D/SurveyVM [main] hasTwoStepPrompt[Q13] -> true (eval=504, fu=234)
+2026-11-17T18:14:30.873Z D/SurveyVM [main] push -> Q14a, navSize=21, stackSize=21
+2026-11-17T18:14:30.880Z D/SurveyVM [main] hasTwoStepPrompt[Q14a] -> false (eval=0, fu=0)
+2026-11-17T18:14:33.248Z D/SurveyVM [main] push -> Q15, navSize=22, stackSize=22
+2026-11-17T18:14:33.264Z D/SurveyVM [main] hasTwoStepPrompt[Q15] -> true (eval=167, fu=192)
+2026-11-17T18:14:34.290Z D/SurveyVM [main] push -> Q16, navSize=23, stackSize=23
+2026-11-17T18:14:34.296Z D/SurveyVM [main] hasTwoStepPrompt[Q16] -> true (eval=194, fu=219)
+2026-11-17T18:14:35.123Z D/SurveyVM [main] push -> Q17, navSize=24, stackSize=24
+2026-11-17T18:14:35.129Z D/SurveyVM [main] hasTwoStepPrompt[Q17] -> false (eval=0, fu=0)
+2026-11-17T18:14:36.139Z D/SurveyVM [main] push -> Review, navSize=25, stackSize=25
