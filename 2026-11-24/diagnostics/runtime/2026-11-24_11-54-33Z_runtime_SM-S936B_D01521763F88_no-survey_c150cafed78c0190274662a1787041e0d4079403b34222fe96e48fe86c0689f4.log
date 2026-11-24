@@ -1,0 +1,64 @@
+event_utc=2026-11-24T11:54:33.702043Z
+capture_start_utc=2026-11-24T11:54:33.701Z
+capture_end_utc=2026-11-24T11:59:04.465053Z
+collection_scope=process_runtime_segment
+collector_process_session=2364bf94-928e-4e8e-ace1-206bee0cb707
+collector_process_pid=23520
+=== RuntimeLogStore Header ===
+ts=2026-11-24T11:54:33.702043Z
+v2_process_session=2364bf94-928e-4e8e-ace1-206bee0cb707
+v2_profile=PRODUCTION
+fileNameFormat=LEGACY
+appId=com.negi.survey
+versionName=0.0.1
+versionCode=184
+debug=false
+device=samsung SM-S936B
+sdk=35
+pid=23520
+==============================
+2026-11-24T11:54:33.702Z I/RuntimeLogStore [rtlog-io] start: actor launched (fileNameFormat=LEGACY)
+2026-11-24T11:54:33.701Z D/SurveyApp [main] attachBaseContext: pid=23520 process=com.negi.survey isMain=true sdk=35
+2026-11-24T11:54:33.701Z D/SurveyApp [main] bootTiming: attachBaseContext total=4ms
+2026-11-24T11:54:33.701Z D/SurveyApp [main] Skipping WorkManager init in attachBaseContext; will init lazily on first enqueue.
+2026-11-24T11:54:33.702Z D/SurveyApp [main] CrashCapture installed: where=SurveyApp:attachBaseContext
+2026-11-24T11:54:33.704Z I/RuntimeLogStore [main] start repair: ctx/dir refreshed
+2026-11-24T11:54:33.704Z D/SurveyApp [main] bootTiming: RuntimeLogStore.start took=0ms
+2026-11-24T11:54:33.704Z D/SurveyApp [main] bootTiming: AppRingLogStore.install took=0ms
+2026-11-24T11:54:33.704Z D/SurveyApp [main] onCreate: pid=23520 process=com.negi.survey isMain=true sdk=35
+2026-11-24T11:54:33.704Z D/SurveyApp [main] CrashCapture installed: where=SurveyApp:onCreate(rewrap)
+2026-11-24T11:54:33.704Z D/SurveyApp [main] CrashCapture self-healing registered.
+2026-11-24T11:54:33.704Z D/SurveyApp [main] bootTiming: onCreate total=1ms
+2026-11-24T11:54:33.714Z D/SurveyApp [DefaultDispatcher-worker-1] Startup survey recovery deferred: delay=2500ms
+2026-11-24T11:54:36.215Z D/SurveyApp [DefaultDispatcher-worker-3] Survey recovery WorkManager available. where=startupSurveyUploads(initial) took=0ms
+2026-11-24T11:54:36.221Z D/SurveyApp [DefaultDispatcher-worker-3] Startup survey recovery complete: discovered=0 attempted=0 submitted=0 active=0 trackerUnconfirmed=0 uploaded=0 deferred=0 invalid=0 operationalFailures=0 duplicates=0 unclassified=0
+2026-11-24T11:58:11.793Z D/LiteRtLM [DefaultDispatcher-worker-1] Initializing LiteRT-LM: model='Gemma3n4B', key='fs|dev=65083|ino=47169|size=4919541760|mtime=1795521481014'
+2026-11-24T11:58:11.793Z D/LiteRtLM [DefaultDispatcher-worker-1] Capabilities: image=false audio=false
+2026-11-24T11:58:11.793Z D/LiteRtLM [DefaultDispatcher-worker-1] Backend=com.google.ai.edge.litertlm.Backend$GPU@5d4a5d6 maxNumTokens=4096 (raw=4096) topK=64 topP=0.95 temp=1.0
+2026-11-24T11:58:11.793Z D/LiteRtLM [DefaultDispatcher-worker-1] Model path='/data/data/com.negi.survey/files/gemma-3n-E4B-it-int4.litertlm' sizeBytes=4919541760 lastModified=1795521481014
+2026-11-24T11:58:11.793Z W/LiteRtLM [DefaultDispatcher-worker-1] Large maxNumTokens=4096 requested. This increases KV-cache capacity and memory pressure. For short survey JSON/follow-up generation, validate whether a smaller configured value is sufficient.
+2026-11-24T11:58:11.793Z D/LiteRtLM [DefaultDispatcher-worker-1] LiteRT-LM native benchmark policy: enabled=false emulator=false
+2026-11-24T11:58:11.793Z D/LiteRtLM [DefaultDispatcher-worker-1] Speculative decoding / MTP policy: enabled=false runtimeFlagUpdated=true model='Gemma3n4B'
+2026-11-24T11:58:11.793Z D/LiteRtLM [DefaultDispatcher-worker-1] Engine cacheDir resolved: key='fs|dev=65083|ino=47169|size=4919541760|mtime=1795521481014' backend=com.google.ai.edge.litertlm.Backend$GPU@5d4a5d6 path='/data/user/0/com.negi.survey/no_backup/litertlm_cache/dc7de4b54174ecf18805248040aeda63f808fe7f' filesBefore=0
+2026-11-24T11:58:22.877Z W/LiteRtLM [DefaultDispatcher-worker-1] Engine.initialize completed: key='fs|dev=65083|ino=47169|size=4919541760|mtime=1795521481014' backend=com.google.ai.edge.litertlm.Backend$GPU@5d4a5d6 took=11084ms cacheFilesAfter=2
+2026-11-24T11:58:22.882Z D/LiteRtLM [DefaultDispatcher-worker-1] createConversation completed: key='fs|dev=65083|ino=47169|size=4919541760|mtime=1795521481014' took=4ms
+2026-11-24T11:58:22.882Z D/LiteRtLM [DefaultDispatcher-worker-1] LiteRT-LM initialization succeeded: model='Gemma3n4B', key='fs|dev=65083|ino=47169|size=4919541760|mtime=1795521481014' engineMs=11084 conversationMs=4 totalMs=11089
+2026-11-24T11:58:22.887Z D/AiTrace [main] Installed (enabled=true ringEnabled=true)
+2026-11-24T11:58:22.892Z D/SurveyVM [main] init -> Start, session=0, uuid=01a20d6b-dea9-7157-9c84-833a6637de8e, navSize=1, graphSize=28
+2026-11-24T11:58:22.898Z D/SurveyVM [main] config.validate -> issues=0
+2026-11-24T11:58:22.898Z D/SurveyVM [main] promptSources -> legacy=10, eval=0, follow=0
+2026-11-24T11:58:22.898Z D/SurveyVM [main] promptSources.preview -> legacy=[Q07, Q08, Q09, Q10, Q11, Q12, Q13, Q14b, Q15, Q16], eval=[], follow=[]
+2026-11-24T11:58:22.898Z D/SurveyVM [main] hasTwoStepPrompt[Q07] -> true (eval=244, fu=155)
+2026-11-24T11:58:22.898Z D/SurveyVM [main] hasTwoStepPrompt[Q08] -> true (eval=198, fu=223)
+2026-11-24T11:58:22.898Z D/SurveyVM [main] hasTwoStepPrompt[Q09] -> true (eval=216, fu=241)
+2026-11-24T11:58:22.898Z D/SurveyVM [main] hasTwoStepPrompt[Q10] -> true (eval=257, fu=282)
+2026-11-24T11:58:22.898Z D/SurveyVM [main] hasTwoStepPrompt[Q11] -> true (eval=784, fu=650)
+2026-11-24T11:58:22.898Z D/SurveyVM [main] hasTwoStepPrompt[Q12] -> true (eval=348, fu=259)
+2026-11-24T11:58:22.898Z D/SurveyVM [main] hasTwoStepPrompt[Q13] -> true (eval=781, fu=234)
+2026-11-24T11:58:22.898Z D/SurveyVM [main] hasTwoStepPrompt[Q14b] -> true (eval=150, fu=175)
+2026-11-24T11:58:22.898Z D/SurveyVM [main] hasTwoStepPrompt[Q15] -> true (eval=167, fu=192)
+2026-11-24T11:58:22.898Z D/SurveyVM [main] hasTwoStepPrompt[Q16] -> true (eval=194, fu=219)
+2026-11-24T11:58:22.898Z D/SurveyVM [main] AI prompt coverage OK (aiCount=10)
+2026-11-24T11:58:22.956Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='fs|dev=65083|ino=47169|size=4919541760|mtime=1795521481014'
+2026-11-24T11:58:22.957Z D/LiteRtRepository [main] warmUp: initializeIfNeeded ok gateWaitMs=0 initMs=1
+2026-11-24T11:58:22.957Z D/LiteRtRepository [main] warmUp: Engine ready; representative inference disabled totalMs=1
