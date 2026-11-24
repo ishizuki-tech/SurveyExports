@@ -1,0 +1,100 @@
+event_utc=2026-11-24T03:08:49.668761Z
+capture_start_utc=2026-11-24T03:08:49.633Z
+capture_end_utc=2026-11-24T03:09:56.488568Z
+collection_scope=process_runtime_segment
+collector_process_session=20daa002-214d-44be-9a52-c4e8aa776f42
+collector_process_pid=18463
+survey_id=01a20b86-9610-7f76-bc00-855b015d8df2
+survey_active_start_utc=2026-11-24T03:08:49.632Z
+survey_active_end_utc=active at capture
+survey_process_session=20daa002-214d-44be-9a52-c4e8aa776f42
+survey_process_pid=18463
+=== RuntimeLogStore Header ===
+ts=2026-11-24T03:08:49.668761Z
+v2_process_session=20daa002-214d-44be-9a52-c4e8aa776f42
+v2_profile=PRODUCTION
+fileNameFormat=LEGACY
+appId=com.negi.survey
+versionName=0.0.1
+versionCode=184
+debug=false
+device=samsung SM-S931U1
+sdk=37
+pid=18463
+==============================
+2026-11-24T03:08:49.668Z I/RuntimeLogStore [rtlog-io] --- rotated (reason=survey_started) ---
+2026-11-24T03:08:49.633Z D/SurveyVM [main] activateRunIfNeeded(advanceToNext:Pre1) -> runNoteLen=34, draftCleared=true, uuid=01a20b86-9610-7f76-bc00-855b015d8df2
+2026-11-24T03:08:49.633Z D/SurveyVM [main] push -> Pre1, navSize=2, stackSize=2
+2026-11-24T03:08:51.429Z D/SurveyVM [main] push -> Pre2, navSize=3, stackSize=3
+2026-11-24T03:08:51.937Z D/SurveyVM [main] push -> Pre3, navSize=4, stackSize=4
+2026-11-24T03:08:52.436Z D/SurveyVM [main] push -> Pre4, navSize=5, stackSize=5
+2026-11-24T03:08:53.253Z D/SurveyVM [main] push -> Pre5, navSize=6, stackSize=6
+2026-11-24T03:08:55.519Z D/SurveyVM [main] push -> Q00, navSize=7, stackSize=7
+2026-11-24T03:08:59.191Z D/SurveyVM [main] clearAudioRefs -> q=ConsentDeclined
+2026-11-24T03:08:59.191Z D/SurveyVM [main] push -> Q01, navSize=8, stackSize=8
+2026-11-24T03:09:05.875Z D/SurveyVM [main] push -> Q02, navSize=9, stackSize=9
+2026-11-24T03:09:08.298Z D/SurveyVM [main] push -> Q03, navSize=10, stackSize=10
+2026-11-24T03:09:09.822Z D/SurveyVM [main] push -> Q04, navSize=11, stackSize=11
+2026-11-24T03:09:12.989Z D/SurveyVM [main] push -> Q05, navSize=12, stackSize=12
+2026-11-24T03:09:15.447Z D/SurveyVM [main] push -> Q06, navSize=13, stackSize=13
+2026-11-24T03:09:17.256Z D/SurveyVM [main] push -> Q07, navSize=14, stackSize=14
+2026-11-24T03:09:17.276Z D/SurveyVM [main] hasTwoStepPrompt[Q07] -> true (eval=248, fu=273)
+2026-11-24T03:09:21.840Z D/AiScreen [main] Speech started (node=Q07 role=MAIN)
+2026-11-24T03:09:34.696Z D/SurveyVM [DefaultDispatcher-worker-1] addAudioRef -> q=Q07, file=2026-11-24_03-08-19Z_voice_SM-S931U1_F757B79A4E33_01a20b86-9610-7f76-bc00-855b015d8df2_Q07_5f40be50-ab1c-4fe1-baab-d098437e11d5.wav, sid=01a20b86-9610-7f76-bc00-855b015d8df2
+2026-11-24T03:09:34.748Z D/AiScreen [main] Speech committed (node=Q07 role=MAIN len=71)
+2026-11-24T03:09:37.935Z D/SurveyVM [main] getEvalPrompt[Q07] -> len=360
+2026-11-24T03:09:37.940Z D/LiteRtRepository [DefaultDispatcher-worker-1] [1] request start model='Gemma3n4B' prompt.len=3006 sha=59a03d56b7b0ae76 gateWaitMs=3
+2026-11-24T03:09:37.941Z D/LiteRtRepository [DefaultDispatcher-worker-1] [part=000] [1] PROMPT (FULL) sha=59a03d56b7b0ae76
+Evaluate only the original survey target using all supplied answers.
+Return only compact JSON {"score":N,"missing_points":[],"followup_needed":false}. N must be an integer 1-100 for relevance, completeness and accuracy against the original target. Evaluate the original answer and all answered followup pairs together. Before emitting JSON, compare every candidate missing point against the original answer and every answered follow-up pair. If an answered follow-up directly supplies that information, do not include it in missing_points. Recompute score, missing_points, and followup_needed together as one consistent final decision. Treat each independently answerable required component as a separate missing_points item; never combine independently answerable deficiencies. After every answered follow-up, recompute components independently and omit each supplied component even when another component from the same target remains missing. When a Required component catalog is present, evaluate each catalog item independently: missing_points may contain only configured component IDs. Omit IDs whose component is supplied by the original answer or answered follow-up pairs; never return component descriptions or questions as missing_points. When a Required components block is present, missing_points may contain only the exact text of unresolved configured components. Separate relevance from completeness. An answer can discuss the right topic but still be incomplete. Score 90-100 only when the respondent explicitly provides every material component requested by the Expected answer target and Question. Do not infer missing details from general knowledge, plausibility, or a bare statement that an event occurred. A concise answer may be complete. A verbose or relevant answer that omits any material requested component must score below 90. For example, saying that an event occurred without describing its requested effect is incomplete. Consistency rule: if missing_points is non-empty or followup_needed is true, score must be an integer from 1 to 89. Scores 90-100 are allowed only when missing_points=[] and followup_needed=false. Never use score 90 as a borderline value when anything is missing. For any score below 90, missing_points must contain the specific missing or ambiguous target-required information and followup_needed must be true. Otherwise missing_points is empty and followup_needed is false. Do not generate a question. Do not penalize style or request information outside the target. Write missing_points in English.
+Keep missing_points concise.
+One JSON object only; no markdown or generated question.
+INPUT:
+Expected answer target: Whether FAW affected the crop and, if yes, at least one concrete description of its effect, such as yield loss or a type of crop damage.
+Question: Has fall armyworm ever attacked your maize? If yes, what loss did you get?
+Original answer: I lost 50% of my crop due to a fall army worm over the last five years.
+Answered followup pairs:
+2026-11-24T03:09:37.942Z D/LiteRtLM [slm-jni] initializeIfNeeded: warm runtime already ready: key='fs|dev=65121|ino=117545|size=4919541760|mtime=1795489676892'
+2026-11-24T03:09:37.942Z D/LiteRtRepository [DefaultDispatcher-worker-1] [1] initializeIfNeeded ok initMs=1
+2026-11-24T03:09:37.943Z D/LiteRtLM [DefaultDispatcher-worker-4] runInference start: key='fs|dev=65121|ino=117545|size=4919541760|mtime=1795489676892' runId=1 hasText=true originalTextLen=3006 effectiveTextLen=3006 images=0 audioClips=0
+2026-11-24T03:09:37.943Z D/LiteRtLM [DefaultDispatcher-worker-4] LiteRT-LM sendMessageAsync(text): key='fs|dev=65121|ino=117545|size=4919541760|mtime=1795489676892' runId=1 len=3006 maxOutputTokens=64
+2026-11-24T03:09:37.959Z D/LiteRtLM [DefaultDispatcher-worker-4] sendMessageAsync accepted: key='fs|dev=65121|ino=117545|size=4919541760|mtime=1795489676892' runId=1 dispatchMs=17
+2026-11-24T03:09:40.172Z W/LiteRtLM [Thread-6] Inference first output: key='fs|dev=65121|ino=117545|size=4919541760|mtime=1795489676892' runId=1 ttftMs=2228 dispatchMs=17 postDispatchTtftMs=2211 requestToFirstOutputMs=2228
+2026-11-24T03:09:41.417Z W/LiteRtLM [Thread-24] Inference timing: key='fs|dev=65121|ino=117545|size=4919541760|mtime=1795489676892' runId=1 ttftMs=2228 dispatchMs=17 postDispatchTtftMs=2211 totalMs=3474 callbacks=18 outputChars=56 cancelled=false error=false requestTotalMs=3474
+2026-11-24T03:09:41.417Z I/LiteRtLM [Thread-24] LiteRT completion: runId=1 terminal=normal_onDone phase=unavailable engineTokenCapacity=1024 prefillTokens=-1 decodeTokens=-1 kvTokens=-1 outputChars=56 callbacks=18
+2026-11-24T03:09:41.418Z D/LiteRtRepository [main] [1] logical done=true; responseClosed=true; waiting native cleanup
+2026-11-24T03:09:41.418Z D/LiteRtRepository [main] [1] native cleanup safepoint
+2026-11-24T03:09:41.425Z I/AiViewModel [DefaultDispatcher-worker-4] run[1] done: phase=EVAL mode=EVAL_JSON score=95 FU0.len=0 FU0.sha16=none commit=true err=<none>
+2026-11-24T03:09:41.427Z D/LiteRtRepository [DefaultDispatcher-worker-2] [1] Conversation reset completed after safepoint
+2026-11-24T03:09:41.427Z D/LiteRtRepository [DefaultDispatcher-worker-4] [part=000] [1] FINALIZE: native-terminated
+=== AI TRACE STATS (LiteRtRepository) ===
+rid=1 model='Gemma3n4B' reason=native-terminated
+totalMs=3489 inferenceMs=3485 firstTokenMs=2230
+logicalDone=true logicalDoneAt=827700707
+nativeTerminated=true cancelTag='null'
+lastDeltaMsAgo=12 lastEventMsAgo=9
+chunks=18 emittedChars=56 capturedAll=true out.len=56
+=== OUTPUT (FULL) ===
+{"score":95,"missing_points":[],"followup_needed":false}
+2026-11-24T03:09:44.973Z D/SurveyVM [main] push -> Q08, navSize=15, stackSize=15
+2026-11-24T03:09:44.980Z D/SurveyVM [main] hasTwoStepPrompt[Q08] -> true (eval=218, fu=243)
+2026-11-24T03:09:45.624Z D/SurveyVM [main] push -> Q09, navSize=16, stackSize=16
+2026-11-24T03:09:45.630Z D/SurveyVM [main] hasTwoStepPrompt[Q09] -> true (eval=224, fu=249)
+2026-11-24T03:09:46.131Z D/SurveyVM [main] push -> Q10, navSize=17, stackSize=17
+2026-11-24T03:09:46.135Z D/SurveyVM [main] hasTwoStepPrompt[Q10] -> true (eval=258, fu=283)
+2026-11-24T03:09:46.607Z D/SurveyVM [main] push -> Q11, navSize=18, stackSize=18
+2026-11-24T03:09:46.613Z D/SurveyVM [main] hasTwoStepPrompt[Q11] -> true (eval=266, fu=291)
+2026-11-24T03:09:47.048Z D/SurveyVM [main] push -> Q12, navSize=19, stackSize=19
+2026-11-24T03:09:47.054Z D/SurveyVM [main] hasTwoStepPrompt[Q12] -> true (eval=248, fu=273)
+2026-11-24T03:09:47.496Z D/SurveyVM [main] push -> Q13, navSize=20, stackSize=20
+2026-11-24T03:09:47.502Z D/SurveyVM [main] hasTwoStepPrompt[Q13] -> true (eval=221, fu=246)
+2026-11-24T03:09:48.089Z D/SurveyVM [main] push -> Q14a, navSize=21, stackSize=21
+2026-11-24T03:09:48.095Z D/SurveyVM [main] hasTwoStepPrompt[Q14a] -> false (eval=0, fu=0)
+2026-11-24T03:09:50.852Z D/SurveyVM [main] clearAudioRefs -> q=Q14b
+2026-11-24T03:09:50.852Z D/SurveyVM [main] push -> Q15, navSize=22, stackSize=22
+2026-11-24T03:09:50.872Z D/SurveyVM [main] hasTwoStepPrompt[Q15] -> true (eval=185, fu=210)
+2026-11-24T03:09:52.030Z D/SurveyVM [main] push -> Q16, navSize=23, stackSize=23
+2026-11-24T03:09:52.035Z D/SurveyVM [main] hasTwoStepPrompt[Q16] -> true (eval=200, fu=225)
+2026-11-24T03:09:52.903Z D/SurveyVM [main] push -> Q17, navSize=24, stackSize=24
+2026-11-24T03:09:52.908Z D/SurveyVM [main] hasTwoStepPrompt[Q17] -> false (eval=0, fu=0)
+2026-11-24T03:09:54.095Z D/SurveyVM [main] push -> Review, navSize=25, stackSize=25
